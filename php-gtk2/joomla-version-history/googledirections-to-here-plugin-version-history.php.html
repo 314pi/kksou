@@ -1,0 +1,944 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr" class="com_content view-article itemid-455 j39 responsive-enabled offcanvas-menu">
+<!-- Copied from https://kksou.com/php-gtk2/joomla-version-history/googledirections-to-here-plugin-version-history.php by Cyotek WebCopy 1.7.0.600, 14 Tháng Sáu 2019, 04:23:30 -->
+<head>
+<link href="googledirections-to-here-plugin-version-history.php.html" rel="canonical">
+
+		
+
+			<meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=yes">
+		<meta name="HandheldFriendly" content="true">
+	<meta name="apple-mobile-web-app-capable" content="YES">
+	<base href="https://kksou.com/php-gtk2/joomla-version-history/googledirections-to-here-plugin-version-history.php">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="author" content="kksou">
+	<meta name="description" content="The Joy of Sharing and Learning Together">
+	<title>googleDirections - To Here plugin - Version History | Joomla Version History</title>
+	<link href="../templates/xero/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="../components/com_jcomments/tpl/default/style.css?v=3002" rel="stylesheet" type="text/css">
+	<link href="/templates/xero/css-compiled/master-11597c3e8d7d7a43ddef0800b7379988.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300:latin|Open+Sans:600:latin|Droid+Serif" rel="stylesheet" type="text/css">
+	<link href="../templates/xero/css/theme.flat.php.css" rel="stylesheet" type="text/css">
+	<link href="../templates/xero/css/custom.css" rel="stylesheet" type="text/css">
+	<link href="../media/mod_jcomments_latest/css/style.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+
+.article {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.article_desc {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	margin-bottom: 4px;
+}
+
+.article_views {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.infographic {
+   border:2px solid #aaaaaa;
+}
+
+tr.article_tr > td {
+   //padding-top: 2px;
+   padding-bottom: 6px;
+}
+
+
+	</style>
+	<script src="../media/jui/js/jquery.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-noconflict.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-migrate.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/bootstrap.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../templates/xero/js/template-66.php" type="text/javascript"></script>
+	<script type="text/javascript">
+
+		var j2storeURL = 'https://kksou.com/php-gtk2/';
+		
+jQuery(document).ready(function(){
+
+	jQuery("a.linkstat").click(function(e) {
+		e.preventDefault(); // needed for safari 4.0.5
+
+		jQuery.post("/plugins/content/GetArticles/ajax-linkstat.php", {url: jQuery(this).attr('href'), id: jQuery(this).attr('id')}, function success(data) {
+			window.location = data; // needed for safari 4.0.5
+		});
+		return true;
+	});
+
+		jQuery("a.vote_up").click(function(){
+	//get the id
+	the_id = jQuery(this).attr('id');
+
+	// show the spinner
+	jQuery(this).parent().html("<img src='/plugins/content/GetArticles/images/spinner.gif' style='display:inline'/>");
+
+	//fadeout the vote-count
+	jQuery("span#votes_count"+the_id).fadeOut("fast");
+
+	//the main ajax request
+		jQuery.ajax({
+			type: "POST",
+			data: "action=vote_up&id="+jQuery(this).attr("id"),
+			url: "/plugins/content/GetArticles/votes.php",
+			success: function(msg){
+				jQuery("span#votes_count"+the_id).html(msg);
+				//fadein the vote count
+				jQuery("span#votes_count"+the_id).fadeIn();
+				//remove the spinner
+				jQuery("span#vote_buttons"+the_id).remove();
+			}
+		});
+	});
+
+});
+
+
+jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+	</script>
+
+			
+		
+<style type="text/css">
+			html > body {
+				font-family: 'Open Sans';
+				
+			}
+				h1, h2, h3, h4, h5, h6, blockquote {
+				font-family: 'Open Sans';
+			}
+		
+					#navwrap li a {
+					font-family: 'Open Sans';
+				}
+			
+					#logo h2 {
+					font-family: 'Droid Serif';
+				}
+		
+	</style>	</head>
+    <body>
+<!-- Facebook SDK -->
+<div id='fb-root'></div>
+<script type='text/javascript'>
+
+      // Load the SDK Asynchronously
+      (function(d){
+      var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+      js = d.createElement('script'); js.id = id; js.async = true;
+      js.src = '//connect.facebook.net/en_GB/all.js';
+      d.getElementsByTagName('head')[0].appendChild(js);
+    }(document));
+
+</script>
+<!-- End Facebook SDK -->
+
+		<!-- Required for Slidebar / Offcanvas implementation -->
+		<div id="zen-wrap">
+	
+	   			    	
+	    	<a id="home-link" name="home-link"></a>
+	  
+	    	
+	    	
+	    	
+	<section id="logowrap" class="clearfix stack-phones" role="banner">
+		<div class="zen-container">
+			<div class="zen-row">
+	<div class="zen-spotlight">
+	
+			
+						<div id="logo" class="zg-col zg-col-6">
+			
+							
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					
+
+<div class="custom">
+	<h2>kksou.com</h2>
+<p>Tutorials, Sample Codes and Tips & Techniques for developing<br>Joomla plugins, modules and components.</p>
+<p>Developer of <a href="http://www.kksou.com/php-gtk2/Joomla/DirectPHP-plugin.php">DirectPHP</a>, <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps</a> and <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php">googleSearch</a>.</p>
+<p>Yes, this is also <i>"The Place for PHP-GTK2 sample codes"</i>, since 2005.</p></div>
+				</div>
+			</div>
+		</div>
+	
+		
+						</div>
+		
+							
+						<div id="search" class="zg-col zg-col-6">
+			
+							
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					<!-- SiteSearch Google CSE --><form method="get" action="https://kksou.com/php-gtk2/index.php" id="mod_googleSearch_cse"><input type="hidden" name="option" value="com_googlesearch_cse"><input type="hidden" name="n" value="30"><input type="hidden" name="view" value="googlesearchs"><div class="search hidden-navcollapse"><input type="hidden" name="Itemid" value="382"><input type="hidden" name="cx" value="partner-pub-5032765168656743:ost4rr-en3s"><input type="hidden" name="cof" value="FORID:11"><input type="hidden" name="ie" value="ISO-8859-1"><input type="text" name="q" maxlength="255" value="" class="form-control hidden-navcollapse" size="20"><button class="button hidden-navcollapse btn btn-primary">Search</button></div></form><script type="text/javascript"><!--
+(function() {var f = document.getElementById('mod_googleSearch_cse');if (f && f.q) {var q = f.q;var b = function(){if (q.value == '') {q.style.color = '#AAAAAA';q.style.background = '#FFFFFF url(https://cse.google.com/coop/intl/en/images/google_custom_search_watermark.gif) left no-repeat';}};	var f = function() {q.style.color = '#000000';q.style.background = '#ffffff';};q.onfocus = f;q.onblur = b;b();}})();
+//-->
+</script>				</div>
+			</div>
+		</div>
+	
+		
+						</div>
+		
+						</div>
+</div>		</div>
+	</section>
+	    	
+	    	
+	<!-- NAVBAR HEADER -->
+	
+		<div id="sticky-fill" class="hidden"></div>
+		
+	<section id="navwrap" class="wrap ">
+		<div class="zen-container">
+			<div class="navbar-default zen-row">
+				<div class="zen-spotlight">
+						<div id="menu" class="zen-menu zen-menu-horizontal zen-menu-left zen-menu-fading">
+							<div class="navbar-header ">
+								<nav role="navigation">
+								<!-- NAVBAR MAIN -->
+																					
+													
+									
+
+<ul id="zen-menu-404">
+<li class="item-101"><a href="../index.htm">
+		<span class="fa fa-home zen-icon-home zen-icon"></span>		Home			</a>
+	</li><li class="item-425"><a href="../category/Sample-Codes/index.htm">
+				Sample Codes			</a>
+	</li><li class="item-426 deeper parent"><a href="../category/Joomla/index.htm">
+				Joomla			</a>
+	<ul class="zen-menu-child cols-1"><li class="item-427"><a href="../category/Joomla-Gadgets/index.htm">
+				Joomla Gadgets			</a>
+	</li><li class="item-429"><a href="../category/Joomla-Tips-Techniques/index.htm">
+				Joomla Tips &amp; Techniques			</a>
+	</li><li class="item-430"><a href="../category/Joomla-News/index.htm">
+				Joomla News 			</a>
+	</li><li class="item-431"><a href="../category/Joomla-FAQs/index.htm">
+				Joomla FAQs			</a>
+	</li><li class="item-432"><a href="../category/Joomla-Developer-FAQs/index.htm">
+				Joomla Developer FAQs			</a>
+	</li></ul></li><li class="item-433"><a href="../geocoder2.php.html">
+				Geocoder2			</a>
+	</li><li class="item-428"><a href="../Feedback.php.html">
+				Feedback			</a>
+	</li></ul> 			
+ 	
+																				
+									<!-- //NAVBAR MAIN -->
+																			<a class="btn off-canvas-trigger sb-toggle-right visible-desktop"><span class="zen-icon zen-icon-bars"></span></a>
+																	</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	    	
+	    	
+	    	
+	    	
+	    	
+	    		
+
+
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
+<!-- MAIN CONTENT -->
+<section id="mainWrap" class="clearfix mr ">
+	<a id="main-link" name="main-link"></a>
+		<section id="breadcrumbwrap" class="clearfix">
+		<div class="zen-container">
+			<div class="zen-row">
+				<div class="zen-spotlight">
+				
+					<!-- Banner-slogan -->
+					<div id="breadcrumb" class="zg-col zg-col-12">
+						  
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					
+<ul class="breadcrumb zen-reset-list ">
+
+	<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../index.htm" class="pathway" itemprop="url"><span itemprop="title">Home</span></a></li><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../category/joomla-version-history/index.htm" class="pathway" itemprop="url"><span itemprop="title">Joomla Version History</span></a></li><li><span>googleDirections - To Here plugin - Version History</span></li></ul>				</div>
+			</div>
+		</div>
+	
+					</div>
+					<!-- //breadcrumb -->
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	
+		
+	<div class="zen-container">
+		<div class="zen-row">
+			<div class="mainwrap zen-spotlight">
+				<div id="midCol" class="zg-col zg-col-9 ">
+					
+					 
+
+			
+
+		<main role="main">
+		
+
+<div class="item-page clearfix">
+
+
+<!-- Article -->
+<article itemscope="" itemtype="http://schema.org/Article">
+	<meta itemprop="inLanguage" content="en-GB">
+
+	<header class="article-header clearfix">
+		<h1 class="article-title" itemprop="name">
+			googleDirections - To Here plugin - Version History				<meta itemprop="url" content="<br />
+<b>Notice</b>:  Undefined variable: url in <b>/var/www/kksou.com/public_html/php-gtk2/templates/xero/html/com_content/article/default.php</b> on line <b>51</b><br />
+<br />
+<b>Notice</b>:  Undefined variable: prefix in <b>/var/www/kksou.com/public_html/php-gtk2/templates/xero/html/com_content/article/default.php</b> on line <b>51</b><br />
+">
+		</h1>
+	
+							</header>
+	
+
+<!-- Aside -->
+<aside class="article-aside clearfix">
+    	<ul class="article-info  muted small flat-list">
+
+		
+			
+			
+						
+			
+					
+		
+										<li class="modified">
+			
+				<time datetime="2017-07-23T11:28:02+00:00" itemprop="dateModified">
+					Last Updated: 23 July 2017				</time>
+			</li>			
+										<li class="hits">
+				
+					<meta itemprop="interactionCount" content="UserPageVisits:684">
+					Hits: 684			</li>						</ul>
+    
+  </aside>  
+<!-- //Aside -->
+
+
+
+
+
+	
+
+	
+	
+	<section class="article-content" itemprop="articleBody">
+		<h3>Latest Version</h3>
+<p>You can download the latest version of the googleDirections here: <a href="https://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#download">googleDirections_tohere_v3.0.11.zip</a></p> <a id="history">
+<h3>Version History</h3></a>
+
+<ol>
+
+<li>v1.0.15 (for Joomla 1.0), v1.5.15 (for Joomla 1.5), v1.6.15 (for Joomla 1.6), v1.7.15 (for Joomla 1.7), v2.5.15 (for Joomla 2.5), v3.0.15 (for Joomla 3.0 and above)<br>
+Released Jul 23, 2017</li><p></p>
+<ul type="disc">
+<li>Added tohere from current locaqtion (e.g. mobile GPS) using html5 geolocation</li>
+</ul>
+<p></p>
+
+<li>v1.0.14 (for Joomla 1.0), v1.5.14 (for Joomla 1.5), v1.6.14 (for Joomla 1.6), v1.7.14 (for Joomla 1.7), v2.5.14 (for Joomla 2.5), v3.0.14 (for Joomla 3.0 and above)<br>
+Released Jul 20, 2017</li><p></p>
+<ul type="disc">
+<li>Support for responsive design!</li>
+<li>For larger screen, the map and the direction will be placed side by side - map on the left, directions on the right</li>
+<li>For smaller screen (e.g. mobile), the map will be displayed on the top and the directions below the map</li>
+<li>For iPad and iPhone 6/7 Plus, the landscape mode will show the map and directions side by side, and the portrait mode will show the map on top and directions below.</li>
+</ul>
+<p></p>
+
+<li>v1.0.11 (for Joomla 1.0), v1.5.11 (for Joomla 1.5), v1.6.11 (for Joomla 1.6), v1.7.11 (for Joomla 1.7), v2.5.11 (for Joomla 2.5), v3.0.11 (for Joomla 3.0 and above)<br>
+Released Apr 20, 2017</li><p></p>
+<ul type="disc">
+<li>Support for secured websites (https)</li>
+<li>Support for PHP7</li>
+<li>Support for different transportation mode - DRIVING / BICYCLING / TRANSIT / WALKING</li>
+</ul>
+
+<li>v1.0.10 (for Joomla 1.0), v1.5.10 (for Joomla 1.5), v1.6.10 (for Joomla 1.6), v1.7.10 (for Joomla 1.7), v2.5.10 (for Joomla 2.5), v3.0.10 (for Joomla 3.0 and above)<br>
+Released Nov 16, 2016</li><p></p>
+<p>As of June 22, 2016, Google now requires everyone to have an API key in order to display Google Maps on your website. Details <a href="https://googlegeodevelopers.blogspot.sg/2016/06/building-for-scale-updates-to-google.html">here</a>.</p>
+<p>If you do not have the Google Maps API key, you will receive the following error message: <a href="https://developers.google.com/maps/documentation/javascript/error-messages#no-api-keys">Google Maps API warning: NoApiKeys </a>.</p>
+<p>This latest version added support for Google Maps API key. Please <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">obtain an API key</a> from Google and then enter the API key in the Plugin Manager.</p>
+<p>Note that if you're using all the 3 plugins - the <a href="../Joomla-Gadgets/googleMaps-plugin.php.html">googleMaps</a>, <a href="../Joomla-Gadgets/googleDirections-plugin.php.html">googleDirections</a> and googleDirections - To Here plugins, you have to enter the Google Maps API Key for all the 3 plugins (in the Plugin Manager).</p>
+
+<li>v3.0.9 (for Joomla 3.0 and above)<br>
+Released Dec 20, 2014</li>
+<p>Support for the latest Joomla 3.3.6!</p>
+
+<li>v1.0.8 (for Joomla 1.0), v1.5.8 (for Joomla 1.5), v1.6.8 (for Joomla 1.6), v1.7.8 (for Joomla 1.7), v2.5.8 (for Joomla 2.5)<br>
+Released Feb 4, 2012</li>
+<ul type="disc">
+<li>added support for Joomla 2.5</li>
+<li>add flag w3c=1 => w3c compliant</li>
+<li>support for IE7!</li>
+<li>allow googleMaps to display in tabs</li>
+<li>now allows address to include ' (apostrophe)</li>
+<li>support for vertical alignment</li>
+</ul>
+
+<li>v1.0.7 (for Joomla 1.0), v1.5.7 (for Joomla 1.5), v1.6.7 (for Joomla 1.6), v1.7.7 (for Joomla 1.7)<br>
+Released Jan 03, 2012</li><p></p>
+<p>Thanks to feedback from <a href="http://www.kksou.com/php-gtk2/index.php?option=com_fireboard&func=view&catid=39&id=5064&limit=5&limitstart=0#5064">Florian</a> who found out that the reverse geocode lookup by Google sometimes do not gives the right mapping. Have modified the code so that the googleDirections_tohere plugin now maps the exact location when latitude/longitude is given when specifying the "home position".</p>
+<p>One other new feature for this new version is that: the user can now <b style="background:#ffff00">press the Enter key</b> (as oppose to pressing the "Get Directions" button) to get the directions to your home position.</p>
+
+<li>v1.0.7 (for Joomla 1.0), v1.5.7 (for Joomla 1.5), v1.6.7 (for Joomla 1.6), v1.7.7 (for Joomla 1.7), v2.5.7 (for Joomla 2.5)<br>
+Released Jan 26, 2012</li><p></p>
+<p>Native version of the googleDirections - To Here - plugin for Joomla 2.5!</p>
+
+<li>v1.0.6 (for Joomla 1.0), v1.5.6 (for Joomla 1.5), v1.6.6 (for Joomla 1.6), v1.7.6 (for Joomla 1.7)<br>
+Released Dec 24, 2011</li><p></p>
+<p>Support for <b style="background:#ffff00">multiple stopovers</b>!</p>
+
+<li>v1.0.5 (for Joomla 1.0), v1.5.5 (for Joomla 1.5), v1.6.5 (for Joomla 1.6), v1.7.5 (for Joomla 1.7)<br>
+Released Nov 15, 2011</li><p></p>
+<p>Now uses Google Maps API v3!</p>
+<p>Key advantages in Google Maps API v3 includes:</p>
+<ul type="disc">
+<li>Built-in <b style="background:#ffff00">street view</b>!</li>
+<li>You no longer require the Google API Key - what this means is that you can now access the google maps from your local machine!</li>
+<li>Google now provides road directions <b style="background:#ffff00">by bicycle</b>!</li>
+</ul><p></p>
+
+<li>v1.0.4 (for Joomla 1.0), v1.5.4 (for Joomla 1.5), v1.6.4 (for Joomla 1.6), v1.7.4 (for Joomla 1.7)<br>
+Released October 20, 2011</li><p></p>
+<p>Native version of the googleMaps plugin for <b style="background:#ffff00">Joomla 1.6</b> and <b style="background:#ffff00">Joomla 1.7</b>!</p>
+<p>Also, support for PHP v5.3.8 for both Joomla 1.6 and Joomla 1.7.</p>
+
+<li>v1.0.4 (for Joomla 1.0) and v1.5.4 (for Joomla 1.5)<br>
+Released June 15, 2010</li><p></p>
+<p>allow user to specify default country</p>
+<p>allow user to display multiple maps with to_here directions</p>
+
+<li>v1.0.3 (for Joomla 1.0) and v1.5.3 (for Joomla 1.5)<br>
+Released October 1, 2009</li><p></p>
+<p>Fixed the bug: "Notice: Undefined variable: map_id in /var/www/html/rcl122/plugins/content/googleDirections_tohere/googleDirections_tohere.lib.php on line 126". Thanks to <a href="http://www.kksou.com/php-gtk2/index.php?option=com_fireboard&func=view&catid=23&id=2709&limit=20&limitstart=0#2708">Rockiesrider</a> for highlighting this.</p>
+
+<li>v1.0.2 (for Joomla 1.0) and v1.5.2 (for Joomla 1.5)<br>
+Released August 15, 2009</li><p></p>
+<p>Fixed the bug: &lt;br /&gt; appears in destination. Thanks to <a href="http://www.kksou.com/php-gtk2/index.php?option=com_fireboard&Itemid=67&func=view&id=2370&catid=39#2471">Rentawebguy</a> for highlighting this.</p>
+<p>Also allows the user to specify a default country. This is in response to <a href="http://www.kksou.com/php-gtk2/index.php?option=com_fireboard&Itemid=67&func=view&id=2487&catid=39">Chriscundy's request</a>.</p>
+<p>You can <a href="http://kksou.com/t1510/index.php?option=com_content&view=article&id=71&catid=35&Itemid=55">view a sample here</a>.</p>
+
+<li>v1.0.1 (for Joomla 1.0) and v1.5.1 (for Joomla 1.5)<br>
+Released July 24, 2009</li><p></p>
+<p>This is in response to <a href="http://www.kksou.com/php-gtk2/index.php?option=com_fireboard&Itemid=67&func=view&id=2370&catid=39">Chris's request</a> to allow multiple lines for the home label.</p>
+<p>For new lines, please use ~ (similar to that of the googleMaps plugin). Please refer to <a href="#multiple_lines">here for details</a>.</p>
+
+</ol>
+	</section>
+
+  <!-- footer -->
+    <!-- //footer -->
+
+					
+			<ul class="pager pagenav">
+	<li class="next">
+		<a class="hasTooltip" title="googleDirections plugin - Version History" aria-label="Next article: googleDirections plugin - Version History" href="googledirections-plugin-version-history.php.html" rel="next">
+			<span aria-hidden="true">Next</span> <span class="icon-chevron-right" aria-hidden="true"></span>		</a>
+	</li>
+</ul>
+	
+	
+	
+</article>
+<!-- //Article -->
+
+<div class="clearfix"></div>
+
+</div>
+	</main>
+		
+	<!-- //MAIN CONTENT -->				</div>
+												<div id="sidebar-2" class="sidebar zg-col zg-col-3  " role="complementary">
+					
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+					<div class="zen-module-title">
+						<h3><span>Latest Comments</span><h3>
+					</h3></h3></div>
+							
+				<div class="zen-module-body">
+					<ul class="jcomments-latest">
+	
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">16.05.2019 15:18</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Patrick, I developed this plugin initially so that I can place a map on my website easily. I thought ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2184">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">Patrick</span>
+						<span class="date">13.05.2019 17:29</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi there, will it be possible to just show a link to the popup map? I don't want to show the map on my ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2180">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							DirectPHP plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">21.04.2019 16:05</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Mark, Sorry for the late reply. Recently there has been a huge influx of spam posts, and your post ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla/directphp-plugin.php.html#comment-2166">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							DirectPHP plugin					</h4>
+		
+		
+				<span class="author">Mark Hobbs</span>
+						<span class="date">08.04.2019 17:16</span>
+		
+		<div class="comment rounded ">
+					<div>
+				I've used DirectPHP for a few years... it's beautifully simple and convenient. I recently decided to ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla/directphp-plugin.php.html#comment-2160">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleDirections - To Here - plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">23.03.2019 09:35</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Greg, 1) First, make sure you have entered the Google Maps API key. You can apply it here ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleDirections-To-Here-plugin.php.html#comment-2146">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleDirections - To Here - plugin					</h4>
+		
+		
+				<span class="author">GREG</span>
+						<span class="date">22.03.2019 22:04</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi, I have installed all 3 plugins and when i enter my current location i get the error Google cannot ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleDirections-To-Here-plugin.php.html#comment-2145">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">15.01.2019 00:06</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Christian, Yes, you're right. For this plugin, you can show multiple KML files in a web page (using ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2094">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">Christian Teuber</span>
+						<span class="date">14.01.2019 16:30</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Can you point me to the sample map, I see only maps with one kml file on one map. I want to show 2 ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2093">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							New version of DirectPHP - support for PHP 7					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">14.01.2019 14:51</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Björn, Thanks for your support over so many years! I'm not running php 7.1, and I do not currently ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla-news/new-version-of-directphp-support-for-php-7.php.html#comment-2091">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">14.01.2019 14:44</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Christian, I have a sample page here with many KML files on it: googleMaps plugin Tutorial 05: KML ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2090">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+			</li>
+		</ul>
+
+				</div>
+			</div>
+		</div>
+	
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					<p>It's not that difficult to learn <a href="http://www.greengeeks.com/website-transfer/" title="how to transfer a website" target="_blank">how to transfer a website</a>.</p>				</div>
+			</div>
+		</div>
+	
+				</div>
+							</div>
+		</div>
+	</div>
+	
+		
+</section>	    	
+	    		    	
+	    	
+	    	
+	    	
+			
+			
+			
+			
+<!-- FOOTER -->
+<footer id="footerwrap" class="wrap zen-footer stack-tablets stack-phones" role="contentinfo">
+  <section class="zen-copyright">
+    <div class="zen-container">
+      <div class="zen-row">
+        	<div class="zg-col zg-col-9">
+	          
+
+<ul id="zen-menu-119">
+<li class="item-382"><a href="../index.php.html?option=com_googlesearch_cse&amp;view=googlesearchs&amp;Itemid=382&amp;lang=en">
+				Google Search			</a>
+	</li><li class="item-447"><a href="http://logistics-innovations.org/">Logistics Innovations</a></li><li class="item-456"><a href="https://www.rpa-sg.org/">RPA</a></li><li class="item-455 current active"><a href="../category/joomla-version-history/index.htm">
+				Joomla Version History			</a>
+	</li><li class="item-457"><a href="https://ask.rpa-sg.org/">RPA Community Forum</a></li></ul>
+
+<div class="custom">
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-700099-1', 'auto');
+  ga('send', 'pageview');
+
+</script></div>
+
+        	</div>
+        	<div class="zg-col zg-col-3">
+        		<div id="zen-copyright">
+        			
+        			        				Copyright © 2005-2015. kksou.com. All Rights Reserved         		</div>
+        	</div>
+      	</div>
+	</div>
+  </section>
+</footer>
+<!-- //FOOTER -->			
+			
+
+
+			
+		</div>	
+	
+		
+
+	<div class="social-wrap fixed">
+
+		
+		
+
+		
+		
+<a id="social-twitter123" href="https://twitter.com/kksou" target="_blank">
+			<span class="zen-animate fadeInRightBig animated-faster fa fa-twitter zen-icon zen-icon-twitter"></span>
+	</a>
+
+	<script>
+		jQuery(document).ready(function ($) {
+			// Twitter Link Constructor
+			var twitter_link = $('#social-twitter').attr('href');
+
+			// Get title on page
+			// Made it broad for anumber of use cases but will retrieve h1 or h2 if not available
+			var title = $('#midCol h1:first').text();
+
+				if(typeof title ==="undefined") {
+					description = $('h2:first').text();
+				}
+
+			twitter_link += title;
+
+			$('#social-twitter').attr('href', twitter_link);
+		});
+	</script>
+
+		 	</div>
+	<script>
+		jQuery(document).ready(function ($) {
+
+			$('.popup').live( 'click', function(){
+				newwindow=window.open($(this).attr('href'),'','height=200,width=450');
+			    if (window.focus) {newwindow.focus()}
+			    return false;
+			 });
+		});
+	</script>
+		
+		
+<div class="sb-slidebar off-canvas-right sb-width-wide">
+	<div class="off-canvas-inner">
+		<div class="off-canvas-heading">
+			<span class="sb-close"><span class="zen-icon-remove zen-icon fa fa-icon-remove"></span></span>
+		</div>
+		<div class="off-canvas-body">
+			<div id="off-canvas-menu"><ul></ul></div>
+			
+		</div>
+	</div>
+</div>
+  
+ 
+ 
+<script>
+	
+	jQuery(document).ready(function($) {
+			
+			
+			
+				// Append nav if required
+				$('body').append_nav('787');	
+						
+				$(window).resize(function() {
+					$('body').append_nav('787');			
+				});
+			
+			 						
+				 		$('#off-canvas-menu').zenaccordion({
+				 		
+				 							 				 openfirst: true,
+				 				 				 				 selector: '.off-canvas-body',
+				 				 openicon: 'plus',
+				 				 closeicon: 'minus',
+				 				 type:"panel"
+				 		});
+			 			
+			 				
+			 
+			
+			
+			
+			$.slidebars();
+		});
+
+</script>
+ 		
+				
+		
+	<script>
+		jQuery(document).ready(function($){
+			$("img").not(".none").lazyload({
+				effect : "fadeIn"
+		});
+	});
+	</script>
+
+
+
+
+
+<div id="toTop" class="hidden-phone"><a id="toTopLink"><span class="fa fa-icon-arrow-up zen-icon zen-icon-arrow-up"></span><span id="toTopText"> Back to top</span></a></div>
+<script>
+	jQuery(document).ready(function($){
+			
+			$(window).scroll(function () {
+			
+				if ($(this).scrollTop() >200) {
+				 	$("#toTop").fadeIn();
+				}
+				else {
+				 	$("#toTop").fadeOut();
+				}
+			});
+		
+			$("#toTop").click(function() {
+				$("html, body").animate({ scrollTop: 0 }, "slow");
+				 return false;
+			});
+	});
+</script>
+
+
+
+
+
+<script>
+jQuery(document).ready(function($){
+	
+	
+	$('.sidebar').zenaccordion({
+	
+		  		 openfirst: true,
+  		   		 type:"panel"
+ 	});
+ 	
+
+});
+</script>
+
+
+
+
+
+
+
+<script>
+jQuery(document).ready(function($){
+	
+	var win      = $(window),
+	    fxel     = $('#navwrap'),
+	    fill     = $('#sticky-fill'),
+	    navheight = $('#menu').height(),
+	    eloffset = fxel.offset().top;
+	 
+	    $(fill).height(navheight);
+
+	win.scroll(function() {
+	    if (eloffset < win.scrollTop()) {
+	        fxel.addClass("fixed");
+	        $('html').addClass("fixed");
+	        $(fill).addClass('visible').removeClass('hidden');
+	    } else {
+	        fxel.removeClass("fixed");
+	        $('html').removeClass("fixed");
+	        $(fill).removeClass('visible').addClass('hidden');
+	    }
+	});
+});
+</script>
+
+
+
+
+
+	<script>
+	 new WOW().init();
+	</script>
+
+
+
+
+<!-- Fonts -->
+
+		
+			
+	</body>
+<!-- Copied from https://kksou.com/php-gtk2/joomla-version-history/googledirections-to-here-plugin-version-history.php by Cyotek WebCopy 1.7.0.600, 14 Tháng Sáu 2019, 04:23:30 -->
+</html>

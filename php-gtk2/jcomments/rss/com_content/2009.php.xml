@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>How to enter HTML tags, javascript and PHP codes in Joomla 1.6 and 1.7?</title>
+		<description>Discuss How to enter HTML tags, javascript and PHP codes in Joomla 1.6 and 1.7?</description>
+		<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:06:13 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2009.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-1113</link>
+			<description><![CDATA[Hi, 1) Login as adminitrator 2) Go to Site - Global Configuration. 3) Click the rightmost tab is "Text Filters" This is the one you're looking for. Please give it a try and let me know if everything's ok now. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 16 Jul 2013 00:58:11 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-1113</guid>
+		</item>
+		<item>
+			<title>sheerkoshan says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-1112</link>
+			<description><![CDATA[Dear friend I'm using joomla2.5.8 and there is no "text filters" in article option tabs. what should i do now? I've installed and enabled the plugin but I can't get it worked]]></description>
+			<dc:creator>sheerkoshan</dc:creator>
+			<pubDate>Mon, 15 Jul 2013 15:46:22 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-1112</guid>
+		</item>
+		<item>
+			<title>Lens says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-785</link>
+			<description><![CDATA[Have problem.. "Parse error: syntax error, unexpected ';' in /home/a7576657/public_html/plugins/content/DirectP HP/DirectPHP.php(58) : eval()'d code on line 6 " :oops: If you can help would be nice]]></description>
+			<dc:creator>Lens</dc:creator>
+			<pubDate>Fri, 14 Dec 2012 10:41:07 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-785</guid>
+		</item>
+		<item>
+			<title>konika says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-702</link>
+			<description><![CDATA[please delete my previous post, I was able to enable directphp and it worked. Thanks a lot]]></description>
+			<dc:creator>konika</dc:creator>
+			<pubDate>Mon, 29 Oct 2012 04:49:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-702</guid>
+		</item>
+		<item>
+			<title>konika says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-701</link>
+			<description><![CDATA[I guess php script are not shown here - my last try with # #]]></description>
+			<dc:creator>konika</dc:creator>
+			<pubDate>Mon, 29 Oct 2012 04:47:33 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-701</guid>
+		</item>
+		<item>
+			<title>konika says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-700</link>
+			<description><![CDATA['']]></description>
+			<dc:creator>konika</dc:creator>
+			<pubDate>Mon, 29 Oct 2012 04:46:33 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-700</guid>
+		</item>
+		<item>
+			<title>konika says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-699</link>
+			<description><![CDATA[Hi, Thanks a lot for the plugin, I had used it before and it worked fine on older versions of Joomla. but recently I installed Joomla ver 2.5 and then saw that PhP scripts were not working. So I tried to install directphp for version 2.5, and got the error that there is already a folder with directphp name in plugins/content folder. So I removed the old one and reinstalled the downloaded direct Php plugin. My problem is that anything within the PHP script is not working at all- with no error I guess. Here is the sample script Hope you can help me find the problem.Thanks]]></description>
+			<dc:creator>konika</dc:creator>
+			<pubDate>Mon, 29 Oct 2012 04:44:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-699</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-504</link>
+			<description><![CDATA[Hi, Did you use the default visual editor mode or the HTML mode? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 23 Jul 2012 04:10:07 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-504</guid>
+		</item>
+		<item>
+			<title>Upul says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-503</link>
+			<description><![CDATA[Hi I'm working with xampp 1.7 and joomla 1.7 with tinymce editor. I have installed DirectPhp but it doesn' show the php content. It shows only "Now is:" in the sample code Now is: . I have already set text filtering to No filtering. Please help me.]]></description>
+			<dc:creator>Upul</dc:creator>
+			<pubDate>Sun, 22 Jul 2012 20:34:41 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-503</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-459</link>
+			<description><![CDATA[Hi, Please google for "php.ini turn on error reporting" and you will see tons of pages that show you how to turn on the display of error messages in PHP. However, please note that DirectPHP uses the standard PHP eval() function. If you have played with this function before, you will know that the error messages returned by eval() is not useful at all. It's almost impossible to debug based on the error messages returned by eval(). As such, if you really want to debug errors in your PHP statements, you might want to copy and paste your entire PHP scripts into a standalone .PHP file, and use DirectPHP to do a require_once() or include() to include that .PHP file. In this way, you will find that the error messages (if there's any) will be a lot more meaningful. Once your scripts runs ok in the standalone file, you can then copy and paste the entire script back into DirectPHP. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 07 Jul 2012 06:21:58 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-459</guid>
+		</item>
+		<item>
+			<title>PeterWinkels says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-448</link>
+			<description><![CDATA[Hello, I've installed directPHP. It works quite well, but I don't get any php Error-messages. It's a problem of Joomla in general (then: where it's possible to switch on showing error messages) or it's a problem of directPHP? Thanks * Peter]]></description>
+			<dc:creator>PeterWinkels</dc:creator>
+			<pubDate>Thu, 05 Jul 2012 02:27:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-448</guid>
+		</item>
+		<item>
+			<title>Ingrid Wood says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-410</link>
+			<description><![CDATA[I got it to work, see: http://greencitiescoalition.net/index.php/members The pbm I had in my code was that I was disconnecting from the server too soon. Let me know if you want the code. -Ingrid]]></description>
+			<dc:creator>Ingrid Wood</dc:creator>
+			<pubDate>Tue, 26 Jun 2012 09:46:25 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-410</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-409</link>
+			<description><![CDATA[Hi, Please refer to the following article: Using DirectPHP - intermixing PHP with HTML commands http://www.kksou.com/php-gtk2/Joomla/Using-DirectPHP-intermixing-PHP-with-HTML-commands.php Also, please take a look at your PHP file. You are trying to load a standalone PHP file with its own header into a Joomla article. It won't work. A Joomla article has its own Joomla header. Your PHP file is going to mess up the Joomla page. DirectPHP, or any other plugin that allows you to run PHP, is for inserting simple PHP codes into a Joomla article. If you want to run complicated PHP commands, would suggest you do it using a module or component, as oppose to loading it from within an article. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 26 Jun 2012 09:36:25 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-409</guid>
+		</item>
+		<item>
+			<title>pit says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-404</link>
+			<description><![CDATA[Thank you for your help. I insert the code into a txt file and uploadet. I hope you will find the strange code. here is the file http://www.2shared.com/document/Pdse7uIo/php.html regards pit]]></description>
+			<dc:creator>pit</dc:creator>
+			<pubDate>Mon, 25 Jun 2012 01:19:28 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-404</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-403</link>
+			<description><![CDATA[Hi, Most likely there's some error in the PHP codes you're trying to run. Can you list here the codes you're trying to run (if it's not too long)? If it's too long, would suggest you copy the entire PHP codes into a standalone PHP file and use include() or require() to load the file. Then make sure you set error_display in your PHP.ini file and you will be able to see the error messages. DirectPHP uses the standard PHP eval() function. It's almost impossible to debug as the error messages displayed does not tell you anything. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 25 Jun 2012 00:46:44 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-403</guid>
+		</item>
+		<item>
+			<title>pit says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-402</link>
+			<description><![CDATA[Hi, Thank you very much for this plugin. I get some strange error Parse error: syntax error, unexpected $end in /users/suryoye/www/joomla/plugins/content/DirectPH P/DirectPHP.php(58) : eval()'d code on line 3 can you tell me what to do? use joomla 2.5.4 regards, pit]]></description>
+			<dc:creator>pit</dc:creator>
+			<pubDate>Mon, 25 Jun 2012 00:41:01 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-402</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-319</link>
+			<description><![CDATA[Hi, First, let me emphasize again that I wrote this plugin so that I can embed PHP codes easily within a Joomla article. I thought this might be useful to others, so I decide to share this plugin with the rest on joomla.org. I use DirectPHP to embed simple PHP commands. For complicated PHP commands, I will write Joomla plugins or modules - it's more efficient and easier to debug. For Ajax, you need 2 portions - the client part and the server part. You can code the client part using DirectPHP inside your Joomla article. But for the server side, it's recommended that you code it using straight .PHP file. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 03 Jun 2012 18:54:22 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-319</guid>
+		</item>
+		<item>
+			<title>papwilly says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-316</link>
+			<description><![CDATA[Hi Kksou, Can use DirectPHP with Ajax code as well?]]></description>
+			<dc:creator>papwilly</dc:creator>
+			<pubDate>Sat, 02 Jun 2012 10:06:38 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-316</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-311</link>
+			<description><![CDATA[Hi Ingrid, Thanks for the tips! This will definitely help some of the people who have trouble getting this to work. I found that depending on what you're trying to run using DirectPHP, for simple PHP statements, the default WYSIWYG editor will work just fine. I've tried to make it work with the WYSIWYG editor because I think there are quite a number of people who feel more comfortable with the WYSIWYG editor (as opposed to the HTML mode). In any case, if people find that the WYSIWYG editor does not work, they can always switch to the HTML mode to see if it works. Thanks and Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 28 May 2012 07:37:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-311</guid>
+		</item>
+		<item>
+			<title>Ingrid Wood says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-305</link>
+			<description><![CDATA[kksou, I installed your DirectPHP plugin, and it works like a charm - thanks! You may want to add an instruction to turn off any WYSIWYG editor; set the global config to Editor - None. I mucked a bit around, thinking I still lost my PHP code. thanks!]]></description>
+			<dc:creator>Ingrid Wood</dc:creator>
+			<pubDate>Thu, 24 May 2012 12:59:21 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-305</guid>
+		</item>
+		<item>
+			<title>Sonyks says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-123</link>
+			<description><![CDATA[Thanks.. i was stuck in 2.5 joomla trying to find out text filtering.]]></description>
+			<dc:creator>Sonyks</dc:creator>
+			<pubDate>Sat, 10 Mar 2012 01:19:50 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-123</guid>
+		</item>
+		<item>
+			<title>Holger says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-106</link>
+			<description><![CDATA[In Version 2.5.1 I reached the settings simply by using the configuration. There you should find the "Text filter" on the last tab.]]></description>
+			<dc:creator>Holger</dc:creator>
+			<pubDate>Sat, 03 Mar 2012 01:40:04 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php#comment-106</guid>
+		</item>
+	</channel>
+</rss>

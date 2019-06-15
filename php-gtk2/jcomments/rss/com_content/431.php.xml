@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>379. How to select a thumbnail image using double click in GtkIconView?</title>
+		<description>Discuss 379. How to select a thumbnail image using double click in GtkIconView?</description>
+		<link>https://kksou.com/php-gtk2/sample-codes/select-a-thumbnail-image-using-double-click-in-GtkIconView.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 08:03:09 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/431.php" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>

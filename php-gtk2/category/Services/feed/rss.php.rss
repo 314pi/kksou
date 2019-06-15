@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Home</title>
+		<description><![CDATA[The Joy of Sharing and Learning Together]]></description>
+		<link>https://kksou.com/php-gtk2/category/Services/</link>
+		<lastBuildDate>Fri, 14 Jun 2019 08:35:55 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="https://kksou.com/php-gtk2/category/Services/feed/rss.php"/>
+		<language>en-gb</language>
+		<managingEditor>admin@kksou.com (kksou)</managingEditor>
+		<item>
+			<title>Aenean pulvinar, nisi</title>
+			<link>https://kksou.com/php-gtk2/Services/aenean-pulvinar-nisi-vitae.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Services/aenean-pulvinar-nisi-vitae.php</guid>
+			<description><![CDATA[<p><img src="https://kksou.com/php-gtk2/images/democontent/ugmonk/desktop.jpeg" /></p><p>Cras nec lorem eget ligula varius aliquet at et mi. Fusce id quam in justo suscipit porta. Fusce non nisl nunc, id vestibulum augue. Donec interdum sapien vitae sem condimentum vel adipiscing leo consequat. In quis nisi sed velit lobortis congue in vulputate risus. Aliquam molestie, risus sed congue ullamcorper, mauris lacus volutpat mauris, nec luctus est risus in libero.</p>
+]]></description>
+			<author>admin@yuchenkuang.com (Super User)</author>
+			<category>Services</category>
+			<pubDate>Thu, 20 Dec 2012 16:24:56 +0000</pubDate>
+		</item>
+		<item>
+			<title>Class aptent taciti </title>
+			<link>https://kksou.com/php-gtk2/Services/class-aptent-taciti.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Services/class-aptent-taciti.php</guid>
+			<description><![CDATA[<p><img src="https://kksou.com/php-gtk2/images/democontent/ugmonk/photo-1416339426675-1f96fd81b653-compressor.jpeg" /></p><p>Cras nec lorem eget ligula varius aliquet at et mi. Fusce id quam in justo suscipit porta. Fusce non nisl nunc, id vestibulum augue. Donec interdum sapien vitae sem condimentum vel adipiscing leo consequat. In quis nisi sed velit lobortis congue in vulputate risus. Aliquam molestie, risus sed congue ullamcorper, mauris lacus volutpat mauris, nec luctus est risus in libero.</p>
+]]></description>
+			<author>admin@yuchenkuang.com (Super User)</author>
+			<category>Services</category>
+			<pubDate>Thu, 20 Dec 2012 16:24:20 +0000</pubDate>
+		</item>
+		<item>
+			<title>Cras nec lorem eget</title>
+			<link>https://kksou.com/php-gtk2/Services/services-1.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Services/services-1.php</guid>
+			<description><![CDATA[<p><img src="https://kksou.com/php-gtk2/images/democontent/ugmonk/photo-1416339684178-3a239570f315-compressor.jpeg" /></p><p>Cras nec lorem eget ligula varius aliquet at et mi. Fusce id quam in justo suscipit porta. Fusce non nisl nunc, id vestibulum augue. Donec interdum sapien vitae sem condimentum vel adipiscing leo consequat. In quis nisi sed velit lobortis congue in vulputate risus. Aliquam molestie, risus sed congue ullamcorper, mauris lacus volutpat mauris, nec luctus est risus in libero.</p>
+]]></description>
+			<author>admin@yuchenkuang.com (Super User)</author>
+			<category>Services</category>
+			<pubDate>Thu, 20 Dec 2012 16:23:54 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

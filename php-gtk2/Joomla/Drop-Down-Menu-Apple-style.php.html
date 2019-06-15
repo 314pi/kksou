@@ -1,0 +1,1932 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr" class="com_content view-article itemid-426 j39 responsive-enabled offcanvas-menu">
+<!-- Copied from https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php by Cyotek WebCopy 1.7.0.600, 14 Tháng Sáu 2019, 04:23:30 -->
+<head>
+<link href="Drop-Down-Menu-Apple-style.php.html" rel="canonical">
+
+		
+
+			<meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=yes">
+		<meta name="HandheldFriendly" content="true">
+	<meta name="apple-mobile-web-app-capable" content="YES">
+	<base href="https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Joomla, plugin, Drop Down Menu Apple style, mambot">
+	<meta name="author" content="kksou">
+	<meta name="description" content="This plugin allows you to insert the Drop Down Menu Apple style from www.dynamicdrive.com with the tags {DropDown_Menu_Apple_style} ... {/DropDown_Menu_Apple_style}.">
+	<title>Drop Down Menu Apple style | Joomla</title>
+	<link href="../jcomments/rss/com_content/1230.php.xml" rel="alternate" type="application/rss+xml" title="Drop Down Menu Apple style">
+	<link href="../templates/xero/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="../components/com_jcomments/tpl/default/style.css?v=3002" rel="stylesheet" type="text/css">
+	<link href="/templates/xero/css-compiled/master-11597c3e8d7d7a43ddef0800b7379988.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300:latin|Open+Sans:600:latin|Droid+Serif" rel="stylesheet" type="text/css">
+	<link href="../templates/xero/css/theme.flat.php.css" rel="stylesheet" type="text/css">
+	<link href="../templates/xero/css/custom.css" rel="stylesheet" type="text/css">
+	<link href="../media/mod_jcomments_latest/css/style.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+
+.article {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.article_desc {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	margin-bottom: 4px;
+}
+
+.article_views {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.infographic {
+   border:2px solid #aaaaaa;
+}
+
+tr.article_tr > td {
+   //padding-top: 2px;
+   padding-bottom: 6px;
+}
+
+/* ######### Drop Down DIVs CSS ######### */
+
+
+.ddsubmenustyle, .ddsubmenustyle div{ /*topmost and sub DIVs, respectively*/
+font: normal 13px Verdana;
+margin: 0;
+padding: 0;
+position: absolute;
+left: 0;
+top: 0;
+list-style-type: none;
+background: white;
+border: 1px solid black;
+border-bottom-width: 0;
+visibility: hidden;
+z-index: 100;
+}
+
+.ddsubmenustyle ul{
+margin: 0;
+padding: 0;
+position: absolute;
+left: 0;
+top: 0;
+list-style-type: none;
+border: 0px none;
+text-align: left;
+}
+
+.ddsubmenustyle li a{
+display: block;
+width: 170px; /*width of menu (not including side paddings)*/
+color: black;
+background-color: lightyellow;
+text-decoration: none;
+padding: 4px 5px;
+border-bottom: 1px solid black;
+}
+
+* html .ddsubmenustyle li{ /*IE6 CSS hack*/
+display: inline-block;
+width: 170px; /*width of menu (include side paddings of LI A*/
+}
+
+.ddsubmenustyle li a:hover{
+background-color: black;
+color: white;
+background: url(../plugins/content/DropDownMenuApplestyle/DropDownMenuApplestyle/silvergradientover.gif) repeat-x center left !important;
+}
+
+/* ######### Neutral CSS  ######### */
+
+.downarrowpointer{ /*CSS for "down" arrow image added to top menu items*/
+padding-left: 4px;
+border: 0;
+}
+
+.rightarrowpointer{ /*CSS for "right" arrow image added to drop down menu items*/
+position: absolute;
+padding-top: 3px;
+left: 100px;
+border: 0;
+}
+
+.ddiframeshim{
+position: absolute;
+z-index: 500;
+background: transparent;
+border-width: 0;
+width: 0;
+height: 0;
+display: block;
+}/* ######### Marker List Vertical Menu ######### */
+
+.markermenu{
+width: 175px; /*width of side bar menu*/
+clear: left;
+position: relative; /*Preserve this for "right" arrow images (added by script) to be positioned correctly*/
+
+}
+
+.markermenu ul{
+list-style-type: none !important;
+margin: 5px 0;
+padding: 0 !important;
+border: 1px solid #9A9A9A;
+}
+
+.markermenu ul li a{
+background: #F2F2F2 url(../plugins/content/DropDownMenuApplestyle/DropDownMenuApplestyle/bulletlist.gif) no-repeat 3px center; /*light gray background*/
+font: bold 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+color: #00014e;
+display: block;
+width: auto;
+padding: 3px 0;
+padding-left: 20px;
+text-decoration: none;
+border-bottom: 1px solid #B5B5B5;
+}
+
+* html .markermenu ul li a{ /*IE6 hack*/
+width: 155px;
+}
+
+.markermenu ul li a:visited, .markermenu ul li a:active{
+color: #00014e;
+}
+
+.markermenu ul li a:hover, .markermenu ul li a.selected{
+color: white;
+/*background-color: black;*/
+background: url(../plugins/content/DropDownMenuApplestyle/DropDownMenuApplestyle/silvergradientover.gif) repeat-x center left !important;
+}
+
+/* ######### Customized Drop Down ULs CSS (inherits from ddlevelsmenu-base.css) ######### */
+
+.blackwhite li a{
+background: white;
+}
+
+.blackwhite li a:hover{
+background: black;
+color: white;
+}/* ######### Matt Black Strip Main Menu Bar CSS ######### */
+
+.mattblackmenu ul{
+margin: 0;
+padding: 0;
+font: bold 12px Verdana;
+list-style-type: none;
+border-bottom: 1px solid gray;
+background: #414141;
+overflow: hidden;
+width: 100%;
+background: rgb(146,178,255) url(../plugins/content/DropDownMenuApplestyle/DropDownMenuApplestyle/silvergradient.gif) repeat-x center left;
+}
+
+.mattblackmenu li{
+display: inline;
+margin: 0;
+}
+
+.mattblackmenu li a{
+float: left;
+display: block;
+text-decoration: none;
+margin: 0;
+padding: 6px 8px; /*padding inside each tab*/
+border-right: 1px solid white; /*right divider between tabs*/
+color: white;
+#background: #414141;
+background: rgb(146,178,255) url(../plugins/content/DropDownMenuApplestyle/DropDownMenuApplestyle/silvergradient.gif) repeat-x center left;
+}
+
+.mattblackmenu li a:visited{
+color: white;
+}
+
+.mattblackmenu li a:hover{
+/*background: black;*/ /*background of tabs for hover state */
+background: rgb(146,178,255) url(../plugins/content/DropDownMenuApplestyle/DropDownMenuApplestyle/silvergradientover.gif) repeat-x center left !important;
+}
+
+.mattblackmenu a.selected{
+/*background: black;*/ /*background of tab with "selected" class assigned to its LI */
+background: rgb(146,178,255) url(../plugins/content/DropDownMenuApplestyle/DropDownMenuApplestyle/silvergradientover.gif) repeat-x center left !important;
+}
+	</style>
+	<script src="../components/com_jcomments/js/jcomments-v2.3.js?v=12" type="text/javascript"></script>
+	<script src="../components/com_jcomments/libraries/joomlatune/ajax.js?v=4" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-noconflict.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-migrate.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/bootstrap.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../templates/xero/js/template-66.php" type="text/javascript"></script>
+	<script type="text/javascript">
+
+		var j2storeURL = 'https://kksou.com/php-gtk2/';
+		
+jQuery(document).ready(function(){
+
+	jQuery("a.linkstat").click(function(e) {
+		e.preventDefault(); // needed for safari 4.0.5
+
+		jQuery.post("/plugins/content/GetArticles/ajax-linkstat.php", {url: jQuery(this).attr('href'), id: jQuery(this).attr('id')}, function success(data) {
+			window.location = data; // needed for safari 4.0.5
+		});
+		return true;
+	});
+
+		jQuery("a.vote_up").click(function(){
+	//get the id
+	the_id = jQuery(this).attr('id');
+
+	// show the spinner
+	jQuery(this).parent().html("<img src='/plugins/content/GetArticles/images/spinner.gif' style='display:inline'/>");
+
+	//fadeout the vote-count
+	jQuery("span#votes_count"+the_id).fadeOut("fast");
+
+	//the main ajax request
+		jQuery.ajax({
+			type: "POST",
+			data: "action=vote_up&id="+jQuery(this).attr("id"),
+			url: "/plugins/content/GetArticles/votes.php",
+			success: function(msg){
+				jQuery("span#votes_count"+the_id).html(msg);
+				//fadein the vote count
+				jQuery("span#votes_count"+the_id).fadeIn();
+				//remove the spinner
+				jQuery("span#vote_buttons"+the_id).remove();
+			}
+		});
+	});
+
+});
+
+
+jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+	</script>
+
+			
+		
+<style type="text/css">
+			html > body {
+				font-family: 'Open Sans';
+				
+			}
+				h1, h2, h3, h4, h5, h6, blockquote {
+				font-family: 'Open Sans';
+			}
+		
+					#navwrap li a {
+					font-family: 'Open Sans';
+				}
+			
+					#logo h2 {
+					font-family: 'Droid Serif';
+				}
+		
+	</style>	</head>
+    <body>
+<!-- Facebook SDK -->
+<div id='fb-root'></div>
+<script type='text/javascript'>
+
+      // Load the SDK Asynchronously
+      (function(d){
+      var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+      js = d.createElement('script'); js.id = id; js.async = true;
+      js.src = '//connect.facebook.net/en_GB/all.js';
+      d.getElementsByTagName('head')[0].appendChild(js);
+    }(document));
+
+</script>
+<!-- End Facebook SDK -->
+
+		<!-- Required for Slidebar / Offcanvas implementation -->
+		<div id="zen-wrap">
+	
+	   			    	
+	    	<a id="home-link" name="home-link"></a>
+	  
+	    	
+	    	
+	    	
+	<section id="logowrap" class="clearfix stack-phones" role="banner">
+		<div class="zen-container">
+			<div class="zen-row">
+	<div class="zen-spotlight">
+	
+			
+						<div id="logo" class="zg-col zg-col-6">
+			
+							
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					
+
+<div class="custom">
+	<h2>kksou.com</h2>
+<p>Tutorials, Sample Codes and Tips & Techniques for developing<br>Joomla plugins, modules and components.</p>
+<p>Developer of <a href="http://www.kksou.com/php-gtk2/Joomla/DirectPHP-plugin.php">DirectPHP</a>, <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps</a> and <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php">googleSearch</a>.</p>
+<p>Yes, this is also <i>"The Place for PHP-GTK2 sample codes"</i>, since 2005.</p></div>
+				</div>
+			</div>
+		</div>
+	
+		
+						</div>
+		
+							
+						<div id="search" class="zg-col zg-col-6">
+			
+							
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					<!-- SiteSearch Google CSE --><form method="get" action="https://kksou.com/php-gtk2/index.php" id="mod_googleSearch_cse"><input type="hidden" name="option" value="com_googlesearch_cse"><input type="hidden" name="n" value="30"><input type="hidden" name="view" value="googlesearchs"><div class="search hidden-navcollapse"><input type="hidden" name="Itemid" value="382"><input type="hidden" name="cx" value="partner-pub-5032765168656743:ost4rr-en3s"><input type="hidden" name="cof" value="FORID:11"><input type="hidden" name="ie" value="ISO-8859-1"><input type="text" name="q" maxlength="255" value="" class="form-control hidden-navcollapse" size="20"><button class="button hidden-navcollapse btn btn-primary">Search</button></div></form><script type="text/javascript"><!--
+(function() {var f = document.getElementById('mod_googleSearch_cse');if (f && f.q) {var q = f.q;var b = function(){if (q.value == '') {q.style.color = '#AAAAAA';q.style.background = '#FFFFFF url(https://cse.google.com/coop/intl/en/images/google_custom_search_watermark.gif) left no-repeat';}};	var f = function() {q.style.color = '#000000';q.style.background = '#ffffff';};q.onfocus = f;q.onblur = b;b();}})();
+//-->
+</script>				</div>
+			</div>
+		</div>
+	
+		
+						</div>
+		
+						</div>
+</div>		</div>
+	</section>
+	    	
+	    	
+	<!-- NAVBAR HEADER -->
+	
+		<div id="sticky-fill" class="hidden"></div>
+		
+	<section id="navwrap" class="wrap ">
+		<div class="zen-container">
+			<div class="navbar-default zen-row">
+				<div class="zen-spotlight">
+						<div id="menu" class="zen-menu zen-menu-horizontal zen-menu-left zen-menu-fading">
+							<div class="navbar-header ">
+								<nav role="navigation">
+								<!-- NAVBAR MAIN -->
+																					
+													
+									
+
+<ul id="zen-menu-404">
+<li class="item-101"><a href="../index.htm">
+		<span class="fa fa-home zen-icon-home zen-icon"></span>		Home			</a>
+	</li><li class="item-425"><a href="../category/Sample-Codes/index.htm">
+				Sample Codes			</a>
+	</li><li class="item-426 current active deeper parent"><a href="../category/Joomla/index.htm">
+				Joomla			</a>
+	<ul class="zen-menu-child cols-1"><li class="item-427"><a href="../category/Joomla-Gadgets/index.htm">
+				Joomla Gadgets			</a>
+	</li><li class="item-429"><a href="../category/Joomla-Tips-Techniques/index.htm">
+				Joomla Tips &amp; Techniques			</a>
+	</li><li class="item-430"><a href="../category/Joomla-News/index.htm">
+				Joomla News 			</a>
+	</li><li class="item-431"><a href="../category/Joomla-FAQs/index.htm">
+				Joomla FAQs			</a>
+	</li><li class="item-432"><a href="../category/Joomla-Developer-FAQs/index.htm">
+				Joomla Developer FAQs			</a>
+	</li></ul></li><li class="item-433"><a href="../geocoder2.php.html">
+				Geocoder2			</a>
+	</li><li class="item-428"><a href="../Feedback.php.html">
+				Feedback			</a>
+	</li></ul> 			
+ 	
+																				
+									<!-- //NAVBAR MAIN -->
+																			<a class="btn off-canvas-trigger sb-toggle-right visible-desktop"><span class="zen-icon zen-icon-bars"></span></a>
+																	</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	    	
+	    	
+	    	
+	    	
+	    	
+	    		
+
+
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
+<!-- MAIN CONTENT -->
+<section id="mainWrap" class="clearfix mr ">
+	<a id="main-link" name="main-link"></a>
+		<section id="breadcrumbwrap" class="clearfix">
+		<div class="zen-container">
+			<div class="zen-row">
+				<div class="zen-spotlight">
+				
+					<!-- Banner-slogan -->
+					<div id="breadcrumb" class="zg-col zg-col-12">
+						  
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					
+<ul class="breadcrumb zen-reset-list ">
+
+	<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../index.htm" class="pathway" itemprop="url"><span itemprop="title">Home</span></a></li><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../category/Joomla/index.htm" class="pathway" itemprop="url"><span itemprop="title">Joomla</span></a></li><li><span>Drop Down Menu Apple style</span></li></ul>				</div>
+			</div>
+		</div>
+	
+					</div>
+					<!-- //breadcrumb -->
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	
+		
+	<div class="zen-container">
+		<div class="zen-row">
+			<div class="mainwrap zen-spotlight">
+				<div id="midCol" class="zg-col zg-col-9 ">
+					
+					 
+
+			
+
+		<main role="main">
+		
+
+<div class="item-page clearfix">
+
+
+<!-- Article -->
+<article itemscope="" itemtype="http://schema.org/Article">
+	<meta itemprop="inLanguage" content="en-GB">
+
+	<header class="article-header clearfix">
+		<h1 class="article-title" itemprop="name">
+			Drop Down Menu Apple style				<meta itemprop="url" content="<br />
+<b>Notice</b>:  Undefined variable: url in <b>/var/www/kksou.com/public_html/php-gtk2/templates/xero/html/com_content/article/default.php</b> on line <b>51</b><br />
+<br />
+<b>Notice</b>:  Undefined variable: prefix in <b>/var/www/kksou.com/public_html/php-gtk2/templates/xero/html/com_content/article/default.php</b> on line <b>51</b><br />
+">
+		</h1>
+	
+							</header>
+	
+
+<!-- Aside -->
+<aside class="article-aside clearfix">
+    	<ul class="article-info  muted small flat-list">
+
+		
+			
+			
+						
+			
+					
+		
+										<li class="modified">
+			
+				<time datetime="2017-07-02T22:12:00+00:00" itemprop="dateModified">
+					Last Updated: 02 July 2017				</time>
+			</li>			
+										<li class="hits">
+				
+					<meta itemprop="interactionCount" content="UserPageVisits:247897">
+					Hits: 247897			</li>						</ul>
+    
+  </aside>  
+<!-- //Aside -->
+
+
+
+
+
+	
+
+	
+	
+	<section class="article-content" itemprop="articleBody">
+		
+
+
+
+<script type="text/javascript">var j10=72; var j15=73; var j16=138; var j17=139; var j25=140;</script>
+<script type="text/javascript" src="../util/ajax/ajax_v1.2_25.js"></script>
+
+<a id="intro"></a>
+<p>The <b>Drop Down Menu Apple style</b> is a very neat and cool javascript-based drop down menu provided by <a href="http://www.dynamicdrive.com/dynamicindex1/ddlevelsmenu/index.htm">dynamicdrive.com</a>.</p>
+
+<a id="features">
+<h3>Unique Features</h3></a>
+<ol>
+<li>Support <b style="background:#ffff00">infinite</b> levels of sub menus!</li><p></p>
+<li>Display of submenus is fast and responsive</li><p></p>
+<li>Easily create a drop down menu within a content item or article.</li><p></p>
+<li>Defining the submenus is as easy as 123.</li><p></p>
+<li>Complete customization of the menu's look and feel through css (e.g. foreground/background color, color, padding, margin, fonts, etc.) </li><p></p>
+<li>You can have more than one menu, each with different submenus, within the same content item.</li><p></p>
+</ol>
+
+<p>Note that you might find that the plugin does not work right out of the box. You might need to tweak the css file a bit.</p>
+
+<p>However, after trying out numerous Drop Down Menus out there, I find that this is one of the better implementations that are <b>free</b>. The code is relatively light-weight. The interface is clean and responsive. And it supports infinite levels of sub menus! (If you see something that is even better, let me know...)</p>
+
+<p>That's why I still decide to go ahead and release this plugin. I would suggest you try this on a standard Joomla installation first (Joomla 1.0 ot Joomla 1.5). Once it works on your site, you can switch to your template and see if it works. If it doesn't, then follow some of the suggestions below to tweak the css file.</p>
+
+<div class="alert alert-info" id="latest"><h4>Latest Version</h4>
+v1.5.6 (for Joomla 1.5), v1.6.6 (for Joomla 1.6), v1.7.6 (for Joomla 1.7) and v2.5.6 (for Joomla 2.5)<br>
+Released Feb 25, 2012<br>
+<ul type="disc">
+<li>Native support for Joomla 1.6, 1.7 and 2.5!</li><p></p>
+<li>Updated the plugin with the latest code from <a href="http://www.dynamicdrive.com/dynamicindex1/ddlevelsmenu/index.htm">dynamicdrive.com</a></li><p></p>
+<li>The default menu is "Drop Down Menu" or "topbar". <a href="http://www.kksou.com/t16/index.php/test1/84-test-of-drop-down-menu-apple-style">Demo here</a>.</li><p></p>
+<li>There is now an additional "sidebar" menu type. <a href="http://www.kksou.com/t16/index.php/test1/85-test2-of-drop-down-menu-apple-style-sidebar">Demo here</a>. Use <code style="background:#ffff00">menutype:sidebar</code> to switch to sidebar.</li><p></p>
+<li>Note: For some reason, the latest code from dynamicdrive.com does not work within Joomla 1.0. So the version for Joomla 1.0 stays at v1.05. Also, the Joomla 1.0 version does not support sidebar.</li><p></p>
+</ul>
+</div>
+
+<a id="demo">
+<h3>Demo</h3></a>
+<p>The follow shows a live multi-level drop down menu. Play with it to have a feel of the menu in action.</p>
+
+
+<!-- 
+Powered by Joomla Gadgets from kksou.com
+http://www.kksou.com/php-gtk2/Joomla-Gadgets/
+-->
+
+
+<script type="text/javascript">
+<!--
+/***********************************************
+* All Levels Navigational Menu- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var gifbase = 'https://kksou.com/php-gtk2/plugins/content/DropDownMenuApplestyle/DropDownMenuApplestyle/';
+-->
+</script>
+<script type="text/javascript" src="../plugins/content/DropDownMenuApplestyle/DropDownMenuApplestyle/ddlevelsmenu.js"></script><div class="DropDownMenuApplestyle">
+
+<div id="ddtopmenubar" class="mattblackmenu">
+<ul>
+<li><a href="#intro" rel="ddtopmenubar_ddsubmenu1">General</a></li>
+<li><a href="#download" rel="ddtopmenubar_ddsubmenu2">Download</a></li>
+<li><a href="#readme" rel="ddtopmenubar_ddsubmenu3">Customizing</a></li>
+<li><a href="/php-gtk2/test1.html" rel="ddtopmenubar_ddsubmenu4">Test1</a></li>
+<li><a href="/php-gtk2/test2.html" rel="ddtopmenubar_ddsubmenu5">Test2</a></li>
+<li><a href="/php-gtk2/test3.html">Test3</a></li><li><a href="http://www.kksou.com" rel="ddtopmenubar_ddsubmenu6">Test4</a></li>
+</ul>
+</div>
+<script type="text/javascript">
+<!--
+ddlevelsmenu.setup("ddtopmenubar", "topbar") //ddlevelsmenu.setup("mainmenuid", "topbar|sidebar");
+-->
+</script>
+<ul id="ddtopmenubar_ddsubmenu1" class="ddsubmenustyle">
+<li><a href="#intro">Introduction</a></li>
+<li><a href="#latest">Latest Version</a></li>
+<li><a href="#features">Unique Features</a></li>
+<li><a href="#demo">Demo</a></li>
+<li><a href="#readme">VIP: Read Me First!</a></li>
+<li><a href="#history">Version History</a></li>
+</ul>
+<ul id="ddtopmenubar_ddsubmenu2" class="ddsubmenustyle">
+<li><a href="#download">Download</a></li>
+<li><a href="#readme">VIP: Read Me First!</a></li>
+</ul>
+<ul id="ddtopmenubar_ddsubmenu3" class="ddsubmenustyle">
+<li><a href="#readme">VIP: Read Me First!</a></li>
+<li><a href="#tweaking_the_css">Tweaking the CSS</a></li>
+<li><a href="#how_to_use">How to use</a></li>
+</ul>
+<ul id="ddtopmenubar_ddsubmenu4" class="ddsubmenustyle">
+<li><a href="#">Item 1a</a></li>
+<li><a href="#">Item 2a</a></li>
+<li><a href="#">Item Folder 3a</a>
+  <ul>
+  <li><a href="#">Sub Item 3.1a</a></li>
+  <li><a href="#">Sub Item 3.2a</a></li>
+  <li><a href="#">Sub Item 3.3a</a></li>
+  <li><a href="#">Sub Item 3.4a</a></li>
+  </ul>
+</li>
+<li><a href="#">Item 4a</a></li>
+<li><a href="#">Item Folder 5a</a>
+  <ul>
+  <li><a href="#">Sub Item 5.1a</a></li>
+  <li><a href="#">Item Folder 5.2a</a>
+    <ul>
+    <li><a href="#">Sub Item 5.2.1a</a></li>
+    <li><a href="#">Sub Item 5.2.2a</a></li>
+    <li><a href="#">Sub Item 5.2.3a</a></li>
+    <li><a href="#">Sub Item 5.2.4a</a></li>
+    </ul>
+</li>
+    </ul>
+</li>
+<li><a href="#">Item 6a</a></li>
+</ul>
+<ul id="ddtopmenubar_ddsubmenu5" class="ddsubmenustyle">
+<li><a href="#">Item 1b</a></li>
+<li><a href="#">Item 2b</a></li>
+<li><a href="#">Item Folder 3b</a>
+  <ul>
+  <li><a href="#">Sub Item 3.1b</a></li>
+  <li><a href="#">Sub Item 3.2b</a></li>
+  <li><a href="#">Sub Item 3.3b</a></li>
+  <li><a href="#">Sub Item 3.4b</a></li>
+  </ul>
+</li>
+<li><a href="#">Item 4b</a></li>
+<li><a href="#">Item Folder 5b</a>
+  <ul>
+  <li><a href="#">Sub Item 5.1b</a></li>
+  <li><a href="#">Item Folder 5.2b</a>
+    <ul>
+    <li><a href="#">Sub Item 5.2.1b</a></li>
+    <li><a href="#">Sub Item 5.2.2b</a></li>
+    <li><a href="#">Sub Item 5.2.3b</a></li>
+    </ul>
+</li>
+    </ul>
+</li>
+<li><a href="#">Item 6b</a></li>
+</ul>
+<ul id="ddtopmenubar_ddsubmenu6" class="ddsubmenustyle">
+<li><a href="/php-gtk2/test31.html">test4.1</a></li>
+<li><a href="/php-gtk2/test32.html">test4.2</a></li>
+<li><a href="/php-gtk2/test33.html">test4.3</a></li>
+</ul>
+</div><p>
+
+<a id="sample_code">
+<h3>Sample Code</h3></a>
+<p>You may use the sample code below to try out the menu. After installing the plugin, just copy and paste the following into your content item and you should see the menu:</p>
+
+<pre>
+&#123;DropDown_Menu_Apple_style&#125;
+&lt;a href="/php-gtk2/test1.html"&gt;Test1&lt;/a&gt;
++ &lt;a href="/php-gtk2/&#35;"&gt;Item 1a&lt;/a&gt;
++ &lt;a href="/php-gtk2/&#35;"&gt;Item 2a&lt;/a&gt;
++ &lt;a href="/php-gtk2/&#35;"&gt;Item Folder 3a&lt;/a&gt;
+++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 3.1a&lt;/a&gt;
+++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 3.2a&lt;/a&gt;
+++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 3.3a&lt;/a&gt;
+++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 3.4a&lt;/a&gt;
++ &lt;a href="/php-gtk2/&#35;"&gt;Item 4a&lt;/a&gt;
++ &lt;a href="/php-gtk2/&#35;"&gt;Item Folder 5a&lt;/a&gt;
+++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 5.1a&lt;/a&gt;
+++ &lt;a href="/php-gtk2/&#35;"&gt;Item Folder 5.2a&lt;/a&gt;
++++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 5.2.1a&lt;/a&gt;
++++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 5.2.2a&lt;/a&gt;
++++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 5.2.3a&lt;/a&gt;
++++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 5.2.4a&lt;/a&gt;
++ &lt;a href="/php-gtk2/&#35;"&gt;Item 6a&lt;/a&gt;
+
+&lt;a href="/php-gtk2/test2.html"&gt;Test2&lt;/a&gt;
++ &lt;a href="/php-gtk2/&#35;"&gt;Item 1b&lt;/a&gt;
++ &lt;a href="/php-gtk2/&#35;"&gt;Item 2b&lt;/a&gt;
++ &lt;a href="/php-gtk2/&#35;"&gt;Item Folder 3b&lt;/a&gt;
+++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 3.1b&lt;/a&gt;
+++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 3.2b&lt;/a&gt;
+++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 3.3b&lt;/a&gt;
+++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 3.4b&lt;/a&gt;
++ &lt;a href="/php-gtk2/&#35;"&gt;Item 4b&lt;/a&gt;
++ &lt;a href="/php-gtk2/&#35;"&gt;Item Folder 5b&lt;/a&gt;
+++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 5.1b&lt;/a&gt;
+++ &lt;a href="/php-gtk2/&#35;"&gt;Item Folder 5.2b&lt;/a&gt;
++++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 5.2.1b&lt;/a&gt;
++++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 5.2.2b&lt;/a&gt;
++++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 5.2.3b&lt;/a&gt;
++ &lt;a href="/php-gtk2/&#35;"&gt;Item 6b&lt;/a&gt;
+
+&lt;a href="/php-gtk2/test3.html"&gt;Test3&lt;/a&gt;
+
+&lt;a href="http://www.kksou.com"&gt;Test4&lt;/a&gt;
++ &lt;a href="/php-gtk2/test31.html"&gt;test4.1&lt;/a&gt;
++ &lt;a href="/php-gtk2/test32.html"&gt;test4.2&lt;/a&gt;
++ &lt;a href="/php-gtk2/test33.html"&gt;test4.3&lt;/a&gt;
+&#123;/DropDown_Menu_Apple_style&#125;
+</pre>
+
+
+
+  <a id="download">
+<h3>Download</h3></a>
+<p><b><span style="background:#ffff00">Extremely Important</span>:</b> Please make sure you read the <a href="#readme">Read Me First!</a> if you want to make this plugin work.</p>
+Joomla\CMS\User\User<div id="links">Joomla 1.0.x: <span id="link0"><a href="../products/DropDownMenuApplestyle_v1.05.zip?i=72">DropDownMenuApplestyle_v1.05.zip</a></span><br>Joomla 1.5.x: <span id="link1"><a href="../products/DropDownMenuApplestyle_v1.56.zip?i=73">DropDownMenuApplestyle_v1.56.zip</a></span><br>Joomla 1.6.x: <span id="link2"><a href="../products/DropDownMenuApplestyle_v1.66.zip?i=138">DropDownMenuApplestyle_v1.66.zip</a></span><br>Joomla 1.7.x: <span id="link3"><a href="../products/DropDownMenuApplestyle_v1.76.zip?i=139">DropDownMenuApplestyle_v1.76.zip</a></span><br>Joomla 2.5.x: <span id="link4"><a href="../products/DropDownMenuApplestyle_v2.56.zip?i=140">DropDownMenuApplestyle_v2.56.zip</a></span><br></div>
+
+<script type="text/javascript">prepareLinks();</script>
+
+<a id="install_10">
+<h3>How to install (Joomla 1.0.x)</h3></a>
+
+<ol>
+<li>Download the plugin and unzip it into a folder.</li>
+
+<li>From the Installers menu, select mambots. In the field "Install directory", enter the folder location (where you unzipped the file) and click Install.</li>
+
+<li>From the Mambots menu, select Site Mambots.</li>
+
+<li>Make sure the plugin "Drop Down Menu Apple style" is published. If you see a cross in the Published column, just click on it. It will turn into a green tick.</li>
+</ol>
+
+<p>You are now ready to use this plugin!</p>
+
+<a id="install_15">
+<h3>How to install (Joomla 1.5.x)</h3></a>
+
+<ol>
+<li>Download the plugin and unzip it into a folder.</li>
+
+<li>From the Extensions menu, select Install/Uninstall. In the field "Install directory", enter the folder location (where you unzipped the file) and click Install.</li>
+
+<li>From the Extensions menu, select Plugin Manager.</li>
+
+<li>Enable the plugin "Drop Down Menu Apple style" - make sure there is a green tick in the Enabled column.</li>
+<li><b>Very Important:</b> If you're using Joomla 1.5.8 and above, please refer to the article: <br>
+<a href="http://www.kksou.com/php-gtk2/Joomla/How-to-enter-HTML-tags-javascript-and-PHP-codes-in-Joomla-1.5.8.php">How to enter HTML tags, javascript and PHP codes in Joomla 1.5.8?</a>. Otherwise you might find that all your HTML tags, Javascript and PHP scripts will be removed the moment you click the Save or Apply button.</li>
+
+</ol>
+
+<p>You are now ready to use this plugin!</p>
+
+<a id="readme">
+<h3>Read Me First!</h3></a>
+
+<p>As mentioned earlier, the original code was from <a href="http://www.dynamicdrive.com/dynamicindex1/ddlevelsmenu/index.htm">dynamicdrive.com</a>. What I've done is to wrap the original code into a Joomla plugin so that you can display the menu within a Joomla article.</p>
+
+<p>The installer on this page will work with the standard Joomla template. However, I find that the css codes sometimes do not work with some of the Joomla templates.</p>
+
+<p>If this is the case for you, don't worry. The javascript code itself is ok. You should actually see the menus and submenus displayed. But it might not be positioned in the right place. You might need to modify a couple of lines in the css files of the plugin to make it work.</p>
+
+<p>To modify the css files, please refer to: <a href="#css">Customizing the menu with CSS</a>
+
+<p></p>
+
+
+
+
+<a id="how_to_use">
+<h3>How to use the "Drop Down Menu Apple style" plugin</h3></a>
+
+<span class="download">
+<b>Important:</b> If you're using Joomla 1.5.8, please refer to the article: <br>
+<a href="http://www.kksou.com/php-gtk2/Joomla/How-to-enter-HTML-tags-javascript-and-PHP-codes-in-Joomla-1.5.8.php">How to enter HTML tags, javascript and PHP codes in Joomla 1.5.8?</a><br> For Joomla 2.5, please refer to: <a href="http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/How-to-enter-HTML-tags-javascript-and-PHP-codes-in-Joomla-2.5.php">How to enter HTML tags, javascript and PHP codes in Joomla 2.5? </a><br>
+Otherwise you might find that all your HTML tags, Javascript and PHP scripts will be removed the moment you click the Save or Apply button.
+</span>
+
+<ol>
+
+<li>To insert the Drop Down Menu Apple style, use the syntax:</li>
+<pre>
+&#123;DropDown_Menu_Apple_style&#125;
+... menu items ... 
+&#123;/DropDown_Menu_Apple_style&#125;
+</pre>
+<p></p>
+
+<li>The default displays the menu as a "Drop Down Menu". To display the menu as a sidebar, use the syntax:</li>
+<pre>
+&#123;DropDown_Menu_Apple_style <b style="background:#ffff00">menutype:sidebar</b>&#125;
+... menu items ... 
+&#123;/DropDown_Menu_Apple_style&#125;
+</pre>
+<p>You can see a <a href="http://www.kksou.com/t16/index.php/test1/85-test2-of-drop-down-menu-apple-style-sidebar">Live Demo here.</a></p>
+<p></p>
+
+<li>Please refer to the <a href="/php-gtk2/sample_code">sample code</a> above. Each menu item is defined using the standard HTML links <span style="background:#ffff00">&lt;a href="/php-gtk2/url"&gt;label&lt;/a&gt;</span>. For example:</li>
+<pre>
+&#123;DropDown_Menu_Apple_style&#125;
+&lt;a href="/php-gtk2/test1.html"&gt;Test1&lt;/a&gt;
++ &lt;a href="/php-gtk2/&#35;"&gt;Item 1a&lt;/a&gt;
++ &lt;a href="/php-gtk2/&#35;"&gt;Item 2a&lt;/a&gt;
++ &lt;a href="/php-gtk2/&#35;"&gt;Item Folder 3a&lt;/a&gt;
+++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 3.1a&lt;/a&gt;
+++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 3.2a&lt;/a&gt;
+++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 3.3a&lt;/a&gt;
+++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 3.4a&lt;/a&gt;
++ &lt;a href="/php-gtk2/&#35;"&gt;Item 4a&lt;/a&gt;
++ &lt;a href="/php-gtk2/&#35;"&gt;Item Folder 5a&lt;/a&gt;
+++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 5.1a&lt;/a&gt;
+++ &lt;a href="/php-gtk2/&#35;"&gt;Item Folder 5.2a&lt;/a&gt;
++++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 5.2.1a&lt;/a&gt;
++++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 5.2.2a&lt;/a&gt;
++++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 5.2.3a&lt;/a&gt;
++++ &lt;a href="/php-gtk2/&#35;"&gt;Sub Item 5.2.4a&lt;/a&gt;
++ &lt;a href="/php-gtk2/&#35;"&gt;Item 6a&lt;/a&gt;
+&#123;/DropDown_Menu_Apple_style&#125;
+</pre>
+<p></p>
+
+<li>The menu supports multi-levels.</li><p></p>
+<ul type="disc">
+<li>For the first level menu item, just enter the link.</li><p></p>
+<li>For the second level menu item, precedes each link with <code><b>"+ "</b></code> (i.e. a plus sign followed by a space).</li><p></p>
+<li>For the third level menu item, precedes each link with <code><b>"++ "</b></code> (i.e. two plus signs followed by a space).</li><p></p>
+<li>For the fourthlevel menu item, precedes each link with <code><b>"+++ "</b></code> (i.e. threeplus signs followed by a space), etc.</li><p></p>
+</ul>
+
+
+
+<li><b>Open the link in a new tab/window</b>: You can open the link in a new tab/window with the standard HTML's <code>target=_blank</code>:</li>
+<pre>
+&#123;Accordion_Menu_Apple_style&#125;
+&lt;a href="http://www.site1.com/links" target=_blank&gt;Links&lt;/a&gt;
++ &lt;a href="http://www.google.com" target=_blank&gt;Google&lt;/a&gt;
++ &lt;a href="http://www.yahoo.com" target=_blank&gt;Yahoo&lt;/a&gt;
++ &lt;a href="http://www.joomla.org/" target=_blank&gt;Joomla&lt;/a&gt;
+&#123;/Accordion_Menu_Apple_style&#125;
+</pre>
+<p></p>
+
+
+
+
+
+<li>There are times when you want to have a &lt;br clear=all /&gt; immediately after the menu so that the text following the menu does not flow round the menu. The syntax is as follows:</li>
+<pre>
+&#123;DropDown_Menu_Apple_style <b style="background:#ffff00">clear_both:1</b>&#125;
+... menu items ... 
+&#123;/DropDown_Menu_Apple_style&#125;
+</pre>
+<p></p>
+
+<li>This plugin allows you to display two or more drop down menus in the same content item. However, to display two or more menus, you have to specify a <b>unique menu id</b> for each of the menu as shown below:</li>
+<p>Menu 1 definition:</p>
+
+
+
+<!-- 
+Powered by Joomla Gadgets from kksou.com
+http://www.kksou.com/php-gtk2/Joomla-Gadgets/
+-->
+
+<div class="DropDownMenuApplestyle">
+
+<div id="ddmenu_menu1" class="mattblackmenu">
+<ul>
+<li><a href="/php-gtk2/test1.html" rel="ddmenu_menu1_ddsubmenu1">Menu1.1</a></li>
+<li><a href="/php-gtk2/test2.html" rel="ddmenu_menu1_ddsubmenu2">Menu1.2</a></li>
+<li><a href="/php-gtk2/test3.html" rel="ddmenu_menu1_ddsubmenu3">Menu1.3</a></li>
+</ul>
+</div>
+<script type="text/javascript">
+<!--
+ddlevelsmenu.setup("ddmenu_menu1", "topbar") //ddlevelsmenu.setup("mainmenuid", "topbar|sidebar");
+-->
+</script>
+<ul id="ddmenu_menu1_ddsubmenu1" class="ddsubmenustyle">
+<li><a href="#">Item 1a</a></li>
+<li><a href="#">Item 2a</a>
+  <ul>
+  <li><a href="#">Sub Item 1.1a</a></li>
+  <li><a href="#">Sub Item 1.2a</a></li>
+  <li><a href="#">Sub Item 1.3a</a></li>
+  </ul>
+</li>
+<li><a href="#">Item 3a</a></li>
+</ul>
+<ul id="ddmenu_menu1_ddsubmenu2" class="ddsubmenustyle">
+<li><a href="#">Item 1a</a>
+  <ul>
+  <li><a href="#">Sub Item 1.1a</a></li>
+  <li><a href="#">Sub Item 1.2a</a></li>
+</ul>
+</li>
+</ul>
+<ul id="ddmenu_menu1_ddsubmenu3" class="ddsubmenustyle">
+<li><a href="#">Item 1a</a>
+  <ul>
+  <li><a href="#">Sub Item 1.1a</a></li>
+  </ul>
+</li>
+<li><a href="#">Item 2a</a>
+  <ul>
+  <li><a href="#">Sub Item 1.2a</a></li>
+  </ul>
+</li>
+<li><a href="#">Item 3a</a></li>
+</ul>
+</div><p>
+
+<pre>
+&#123;DropDown_Menu_Apple_style <b style="background:#ffff00">menu_id:menu1</b>&#125;
+... menu items ... 
+&#123;/DropDown_Menu_Apple_style&#125;
+</pre>
+
+<p>Menu 2 definition:</p>
+
+
+
+<!-- 
+Powered by Joomla Gadgets from kksou.com
+http://www.kksou.com/php-gtk2/Joomla-Gadgets/
+-->
+
+<div class="DropDownMenuApplestyle">
+
+<div id="ddmenu_menu2" class="mattblackmenu">
+<ul>
+<li><a href="/php-gtk2/test1.html" rel="ddmenu_menu2_ddsubmenu1">Menu2.1</a></li>
+<li><a href="/php-gtk2/test2.html" rel="ddmenu_menu2_ddsubmenu2">Menu2.2</a></li>
+<li><a href="/php-gtk2/test3.html" rel="ddmenu_menu2_ddsubmenu3">Menu2.3</a></li>
+<li><a href="/php-gtk2/test3.html" rel="ddmenu_menu2_ddsubmenu4">Menu2.4</a></li>
+</ul>
+</div>
+<script type="text/javascript">
+<!--
+ddlevelsmenu.setup("ddmenu_menu2", "topbar") //ddlevelsmenu.setup("mainmenuid", "topbar|sidebar");
+-->
+</script>
+<ul id="ddmenu_menu2_ddsubmenu1" class="ddsubmenustyle">
+<li><a href="#">Item 1a</a>
+  <ul>
+  <li><a href="#">Sub Item 1.1a</a></li>
+  <li><a href="#">Sub Item 1.2a</a></li>
+  <li><a href="#">Sub Item 1.3a</a></li>
+  </ul>
+</li>
+<li><a href="#">Item 2a</a></li>
+<li><a href="#">Item 3a</a></li>
+</ul>
+<ul id="ddmenu_menu2_ddsubmenu2" class="ddsubmenustyle">
+<li><a href="#">Item 1a</a>
+  <ul>
+  <li><a href="#">Sub Item 1.1a</a></li>
+  </ul>
+</li>
+<li><a href="#">Item 2a</a>
+  <ul>
+  <li><a href="#">Sub Item 1.2a</a></li>
+  </ul>
+</li>
+<li><a href="#">Item 3a</a></li>
+</ul>
+<ul id="ddmenu_menu2_ddsubmenu3" class="ddsubmenustyle">
+<li><a href="#">Item 1a</a>
+  <ul>
+  <li><a href="#">Sub Item 1.1a</a></li>
+  <li><a href="#">Sub Item 1.2a</a></li>
+</ul>
+</li>
+</ul>
+<ul id="ddmenu_menu2_ddsubmenu4" class="ddsubmenustyle">
+<li><a href="#">Item 1a</a></li>
+<li><a href="#">Item 2a</a></li>
+<li><a href="#">Item 3a</a></li>
+</ul>
+</div><p>
+
+<pre>
+&#123;DropDown_Menu_Apple_style <b style="background:#ffff00">menu_id:menu2</b>&#125;
+... menu items ... 
+&#123;/DropDown_Menu_Apple_style&#125;
+</pre>
+<p></p>
+
+
+</ol>
+
+<a id="css">
+<h3>Customizing the menu with CSS</h3></a>
+
+
+<ul>
+<li>You can now easily change the style of the menu (including font style, size, foreground color, background color, etc.) by editing the css file directly.</li><p></p>
+
+<li>For Joomla 1.0, the css file is located in the folder: <code>mambots/content/DropDownMenuApplestyle</code>. Name of the css file: <b>ddlevelsmenu.css</b></li><p></p>
+
+<li>For Joomla 1.5, 1.6, 1.7 and 2.5, the css files are located in the folder: <code>plugins/content/DropDownMenuApplestyle</code></li>
+<p>There are 3 css files:</p>
+<ul type="disc">
+<li>ddlevelsmenu-base.css</li>
+<li>ddlevelsmenu-sidebar.css</li>
+<li>ddlevelsmenu-topbar.css</li>
+</ul>
+<p></p>
+
+
+<p></p>
+</ul>
+
+<a id="history">
+<h3>Version History</h3></a>
+<ul>
+
+<li>v1.02 (for Joomla 1.0) and v1.52 (for Joomla 1.5)<br>
+Released October 12, 2008</li><p></p>
+<p>You can now display two or more menus in the same content item!.
+
+<li>v1.0.3 (for Joomla 1.0) and v1.5.3 (for Joomla 1.5)<br>
+Released December 9, 2008</li><p></p>
+<ul type="disc">
+<li>Fixed the warning message "Undefined variable: module on line 43"</li>
+<li>Fixed the warning message "Undefined offset: 0 on line 55"</li>
+</ul>
+
+<li>v1.0.4 (for Joomla 1.0) and v1.5.4 (for Joomla 1.5)<br>
+Released December 16, 2008</li><p></p>
+<p>Fixed the warning message "Undefined property: Plugin_DropDownMenuApplestyle::$menu_height in DropDownMenuApplestyle.lib.php on line 126"</p>
+
+
+<li>v1.0.5 (for Joomla 1.0) and v1.5.5 (for Joomla 1.5)<br>
+Released May 6, 2010<br></li><p></p>
+<p>Conforms to joomla.org guidelines.</p>
+
+</ul>
+
+<h3>Questions? Problems?</h3>
+
+<p>If you still have problems getting the plugin to work with your templates, feel free to post your questions in the <a href="http://www.kksou.com/php-gtk2/Drop-Down-Menu-Apple-style/">Forum</a>.</p>
+
+
+
+	</section>
+
+  <!-- footer -->
+    <!-- //footer -->
+
+					
+			<ul class="pager pagenav">
+	<li class="previous">
+		<a class="hasTooltip" title="Pausing up-down Scroller module" aria-label="Previous article: Pausing up-down Scroller module" href="Pausing-up-down-Scroller-module.php.html" rel="prev">
+			<span class="icon-chevron-left" aria-hidden="true"></span> <span aria-hidden="true">Prev</span>		</a>
+	</li>
+	<li class="next">
+		<a class="hasTooltip" title="Include Content Item plugin" aria-label="Next article: Include Content Item plugin" href="Include-Content-Item-plugin.php.html" rel="next">
+			<span aria-hidden="true">Next</span> <span class="icon-chevron-right" aria-hidden="true"></span>		</a>
+	</li>
+</ul>
+	
+	
+	
+</article>
+<!-- //Article -->
+
+<div class="clearfix"></div>
+
+<script type="text/javascript">
+<!--
+var jcomments=new JComments(1230, 'com_content','/php-gtk2/jcomments/');
+jcomments.setList('comments-list');
+//-->
+</script>
+<div id="jc">
+<div id="comments"><h4>Comments <a class="rss" href="../jcomments/rss/com_content/1230.php.xml" title="RSS feed for comments to this post" target="_blank">&nbsp;</a><a class="refresh" href="#" title="Refresh comments list" onclick="jcomments.showPage(1230,'com_content',0);return false;">&nbsp;</a></h4>
+<div class="comments-list" id="comments-list-0">
+		<div class="even" id="comment-item-72">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-72">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(72, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(72, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Drop-Down-Menu-Apple-style.php.html#comment-72" id="comment-72">#</a>
+<span class="comment-author">naru</span>
+<span class="comment-date">2012-02-22 02:57</span>
+<div class="comment-body" id="comment-body-72"> <img src="../components/com_jcomments/images/smilies/lol.gif" alt=":lol:"> </div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(72); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(72,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(72); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-122">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-122">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(122, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(122, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Drop-Down-Menu-Apple-style.php.html#comment-122" id="comment-122">#</a>
+<span class="comment-author">Suran</span>
+<span class="comment-date">2012-03-09 23:48</span>
+<div class="comment-body" id="comment-body-122">I m confused where do i insert the code:<br>{DropDown_Menu_Apple_style}<br>... menu items ... <br>{/DropDown_Menu_Apple_style}</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(122); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(122,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(122); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-122">
+		<div class="even" id="comment-item-125">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-125">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(125, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(125, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Drop-Down-Menu-Apple-style.php.html#comment-125" id="comment-125">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-03-10 20:28</span>
+<div class="comment-body" id="comment-body-125">Hi,<br><br>This is a plugin. As the name suggests, a plugin is for use within a Joomla article.<br><br>So go to the Article Manager, create a new article and insert the tags or code you've listed above into the article. You will see the menu appearing within the article.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(125); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(125,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(125); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-174">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-174">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(174, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(174, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Drop-Down-Menu-Apple-style.php.html#comment-174" id="comment-174">#</a>
+<span class="comment-author">Ola</span>
+<span class="comment-date">2012-03-22 16:20</span>
+<div class="comment-body" id="comment-body-174">Hello sir, pls i have a top menu navigation bar and i want to make those tabs at the top drop down using this module..pls how do i go about it??</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(174); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(174,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(174); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-174">
+		<div class="even" id="comment-item-175">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-175">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(175, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(175, -1);return false;"></a>
+<span class="vote-good">+1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Drop-Down-Menu-Apple-style.php.html#comment-175" id="comment-175">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-03-22 18:37</span>
+<div class="comment-body" id="comment-body-175">Hi,<br><br>This is a plugin. As the name suggests, a plugin is for use within a Joomla article.<br><br>This plugin is used for displaying a simple menu within an article - especially if the article is very long.<br><br>If you want to achieve something like the top of this page is doing - navigation bar with drop down menus, this is done in the Joomla template, and not by a plugin or module.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(175); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(175,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(175); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-632">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-632">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(632, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(632, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Drop-Down-Menu-Apple-style.php.html#comment-632" id="comment-632">#</a>
+<span class="comment-author">Walter Johnson</span>
+<span class="comment-date">2012-09-26 09:22</span>
+<div class="comment-body" id="comment-body-632">Ola, all you have to do is use the normal menu you have established in Joomla as your top menu - unpublish it. Get an "Article as Module" kind of module for Joomla and install it. Then make a menu article and put the dropdownmenuapplestyle coding into that. Then publish and save that article. Then in the Article as Module module, select your menu article as the artcle to be displayed, and set the position for the module to whatever the position is for your top module. Save it all and good luck. That should get you started.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(632); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(632,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(632); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-633">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-633">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(633, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(633, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Drop-Down-Menu-Apple-style.php.html#comment-633" id="comment-633">#</a>
+<span class="comment-author">Walter Johnson</span>
+<span class="comment-date">2012-09-26 09:23</span>
+<div class="comment-body" id="comment-body-633">Sorry top menu position, not top module for position of the module</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(633); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(633,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(633); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-915">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-915">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(915, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(915, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Drop-Down-Menu-Apple-style.php.html#comment-915" id="comment-915">#</a>
+<span class="comment-author">caroline leonard</span>
+<span class="comment-date">2013-03-18 03:51</span>
+<div class="comment-body" id="comment-body-915">Hi, the plugin doesn't appear to be working for me any suggestions?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(915); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(915,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(915); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-917">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-917">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(917, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(917, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Drop-Down-Menu-Apple-style.php.html#comment-917" id="comment-917">#</a>
+<span class="comment-author">Marcel Upfold</span>
+<span class="comment-date">2013-03-20 01:11</span>
+<div class="comment-body" id="comment-body-917">On Joomla 2.5 using JA-T3 Framework Blank Template the menu options are not displayed corredtly horizontally, however with the sidebar option it is displayed vertically. Horizontally it is displayed as steps. Menu1, line break, menu2 line break etc.<br>How do I assign a "module" to be displayed with an option in one of the menus instead of an external link.?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(917); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(917,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(917); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-919">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-919">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(919, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(919, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Drop-Down-Menu-Apple-style.php.html#comment-919" id="comment-919">#</a>
+<span class="comment-author">Marcel Upfold</span>
+<span class="comment-date">2013-03-22 05:05</span>
+<div class="comment-body" id="comment-body-919">I have tried the plugin. It seems to be sort of OK bar that it displays a yeloow background x-rows high.<br>Also the menu is not lined up with the background gray banner.<br>Any help on how and where in the CSS files one can play...</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(919); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(919,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(919); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+</div>
+<div id="comments-list-footer"><a class="refresh" href="#" title="Refresh comments list" onclick="jcomments.showPage(1230,'com_content',0);return false;">Refresh comments list</a><br><a class="rss" href="../jcomments/rss/com_content/1230.php.xml" title="RSS feed for comments to this post" target="_blank">RSS feed for comments to this post</a></div>
+</div>
+<h4>Add comment</h4>
+<a id="addcomments" href="#addcomments"></a>
+<form id="comments-form" name="comments-form" action="javascript:void(null);">
+<p>
+	<span>
+		<input id="comments-form-name" type="text" name="name" value="" maxlength="20" size="22" tabindex="1">
+		<label for="comments-form-name">Name (required)</label>
+	</span>
+</p>
+<p>
+	<span>
+		<input id="comments-form-email" type="text" name="email" value="" size="22" tabindex="2">
+		<label for="comments-form-email">E-mail (required, but will not display)</label>
+	</span>
+</p>
+<p>
+	<span>
+		<textarea id="comments-form-comment" name="comment" cols="65" rows="8" tabindex="5"></textarea>
+	</span>
+</p>
+<p>
+	<span>
+		<input class="checkbox" id="comments-form-subscribe" type="checkbox" name="subscribe" value="1" tabindex="5">
+		<label for="comments-form-subscribe">Notify me of follow-up comments</label><br>
+	</span>
+</p>
+<p>
+	<span>
+		<img class="captcha" onclick="jcomments.clear('captcha');" id="comments-form-captcha-image" src="../jcomments/captcha.php-46.jpeg?ac=51650" width="121" height="60" alt="Security code"><br>
+		<span class="captcha" onclick="jcomments.clear('captcha');">Refresh</span><br>
+		<input class="captcha" id="comments-form-captcha" type="text" name="captcha_refid" value="" size="5" tabindex="6"><br>
+	</span>
+</p>
+<div id="comments-form-buttons">
+	<div class="btn" id="comments-form-send"><div><a href="#" tabindex="7" onclick="jcomments.saveComment();return false;" title="Send (Ctrl+Enter)">Send</a></div></div>
+	<div class="btn" id="comments-form-cancel" style="display:none;"><div><a href="#" tabindex="8" onclick="return false;" title="Cancel">Cancel</a></div></div>
+	<div style="clear:both;"></div>
+</div>
+<div>
+	<input type="hidden" name="object_id" value="1230">
+	<input type="hidden" name="object_group" value="com_content">
+</div>
+</form>
+<script type="text/javascript">
+<!--
+function JCommentsInitializeForm()
+{
+	var jcEditor = new JCommentsEditor('comments-form-comment', true);
+	jcEditor.initSmiles('/php-gtk2/components/com_jcomments/images/smilies/');
+	jcEditor.addSmile(':D','laugh.gif');
+	jcEditor.addSmile(':lol:','lol.gif');
+	jcEditor.addSmile(':-)','smile.gif');
+	jcEditor.addSmile(';-)','wink.gif');
+	jcEditor.addSmile('8)','cool.gif');
+	jcEditor.addSmile(':-|','normal.gif');
+	jcEditor.addSmile(':-*','whistling.gif');
+	jcEditor.addSmile(':oops:','redface.gif');
+	jcEditor.addSmile(':sad:','sad.gif');
+	jcEditor.addSmile(':cry:','cry.gif');
+	jcEditor.addSmile(':o','surprised.gif');
+	jcEditor.addSmile(':-?','confused.gif');
+	jcEditor.addSmile(':-x','sick.gif');
+	jcEditor.addSmile(':eek:','shocked.gif');
+	jcEditor.addSmile(':zzz','sleeping.gif');
+	jcEditor.addSmile(':P','tongue.gif');
+	jcEditor.addSmile(':roll:','rolleyes.gif');
+	jcEditor.addSmile(':sigh:','unsure.gif');
+	jcEditor.addCounter(1000, '', ' symbols left', 'counter');
+	jcomments.setForm(new JCommentsForm('comments-form', jcEditor));
+}
+
+if (window.addEventListener) {window.addEventListener('load',JCommentsInitializeForm,false);}
+else if (document.addEventListener){document.addEventListener('load',JCommentsInitializeForm,false);}
+else if (window.attachEvent){window.attachEvent('onload',JCommentsInitializeForm);}
+else {if (typeof window.onload=='function'){var oldload=window.onload;window.onload=function(){oldload();JCommentsInitializeForm();}} else window.onload=JCommentsInitializeForm;} 
+//-->
+</script>
+<div id="comments-footer" align="center"><a href="http://www.joomlatune.com" title="JComments" target="_blank">JComments</a></div>
+<script type="text/javascript">
+<!--
+jcomments.setAntiCache(1,0,0);
+//-->
+</script> 
+</div></div>
+	</main>
+		
+	<!-- //MAIN CONTENT -->				</div>
+												<div id="sidebar-2" class="sidebar zg-col zg-col-3  " role="complementary">
+					
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+					<div class="zen-module-title">
+						<h3><span>Latest Comments</span><h3>
+					</h3></h3></div>
+							
+				<div class="zen-module-body">
+					<ul class="jcomments-latest">
+	
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">16.05.2019 15:18</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Patrick, I developed this plugin initially so that I can place a map on my website easily. I thought ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2184">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">Patrick</span>
+						<span class="date">13.05.2019 17:29</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi there, will it be possible to just show a link to the popup map? I don't want to show the map on my ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2180">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							DirectPHP plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">21.04.2019 16:05</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Mark, Sorry for the late reply. Recently there has been a huge influx of spam posts, and your post ...								<p class="jcomments-latest-readmore">
+					<a href="directphp-plugin.php.html#comment-2166">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							DirectPHP plugin					</h4>
+		
+		
+				<span class="author">Mark Hobbs</span>
+						<span class="date">08.04.2019 17:16</span>
+		
+		<div class="comment rounded ">
+					<div>
+				I've used DirectPHP for a few years... it's beautifully simple and convenient. I recently decided to ...								<p class="jcomments-latest-readmore">
+					<a href="directphp-plugin.php.html#comment-2160">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleDirections - To Here - plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">23.03.2019 09:35</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Greg, 1) First, make sure you have entered the Google Maps API key. You can apply it here ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleDirections-To-Here-plugin.php.html#comment-2146">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleDirections - To Here - plugin					</h4>
+		
+		
+				<span class="author">GREG</span>
+						<span class="date">22.03.2019 22:04</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi, I have installed all 3 plugins and when i enter my current location i get the error Google cannot ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleDirections-To-Here-plugin.php.html#comment-2145">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">15.01.2019 00:06</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Christian, Yes, you're right. For this plugin, you can show multiple KML files in a web page (using ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2094">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">Christian Teuber</span>
+						<span class="date">14.01.2019 16:30</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Can you point me to the sample map, I see only maps with one kml file on one map. I want to show 2 ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2093">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							New version of DirectPHP - support for PHP 7					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">14.01.2019 14:51</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Björn, Thanks for your support over so many years! I'm not running php 7.1, and I do not currently ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla-news/new-version-of-directphp-support-for-php-7.php.html#comment-2091">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">14.01.2019 14:44</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Christian, I have a sample page here with many KML files on it: googleMaps plugin Tutorial 05: KML ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2090">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+			</li>
+		</ul>
+
+				</div>
+			</div>
+		</div>
+	
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+					<div class="zen-module-title">
+						<h3><span>kksou Weather</span><h3>
+					</h3></h3></div>
+							
+				<div class="zen-module-body">
+					<script type="text/javascript">
+var headID = document.getElementsByTagName("head")[0];
+var cssNode = document.createElement('link');
+cssNode.type = 'text/css';
+cssNode.rel = 'stylesheet';
+cssNode.href = 'https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather.css';
+cssNode.media = 'screen';
+headID.appendChild(cssNode);
+</script><script type="text/javascript">
+//var mod_id = "301";
+var gw_lib_url301="https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather_lib.php";
+var gw_progress_gif301="https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather_progress.gif";
+var joomla_root301='|_%$var|_%$www|_%$kksou.com|_%$public_html|_%$php-gtk2';
+var label_city301="City";
+var popup_city301="Please enter zip code, state (in US) or city name, country (for other countries)";
+var popup_deg_F301="Click here to convert to degree F";
+var popup_deg_C301="Click here to convert to degree C";
+var size_city301="20";
+var hide_input301="0";
+var lang301="en";
+var googleweather_unit301="US";
+var default_location301="San Francisco, CA";
+var googleweather_use_curl301="1";
+var request_interval301="3";
+var hide_humidity301="0";
+var hide_wind301="0";
+var hide_forecast301="0";
+var focus_on_city301="0";
+var api_key301="90d34681236de382";
+var default_country301="";
+var label_humidity301="Humidity: ";
+var refresh_time301="60";
+var admin_mode301="0";
+var joomla_ver301="3.0";
+</script><script type="text/javascript" src="../modules/mod_kksouweather/mod_kksouWeather_ajax.js"></script><div id="googleWeather_container301"><form action="index.php" method="get" id="WeatherForm301"><div class="googleWeather"><span class="input_label">City: </span><input name="gw_a" id="str_gw_a301" class="inputbox" maxlength="255" size="20" value="" title="">&nbsp;<span id="gw_loading301"></span><br><input type="hidden" name="a_org" id="str_gw_a_org301" class="inputbox" value=""><div align="left" style="padding-top:2px;"><p align="left" style="padding:0 0 0 0;margin:0 0 0 0"><a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Weather-AJAX-version.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p></div><input type="hidden" name="process" value="1"><input type="hidden" name="temp_unit" id="temp_unit301" value="US"><input type="hidden" name="option" value="com_content"><input type="hidden" name="task" value=""><input type="hidden" name="id" value="1230"><input type="hidden" name="sectionid" value=""><input type="hidden" name="catid" value="24"><input type="hidden" name="Itemid" value="426"></div></form></div><script type="text/javascript">
+
+if (window.jQuery) {
+jQuery(document).ready(function() {
+	gw_prepareForm('301');
+	gw_submitform('301', 1);
+});
+} else {
+	gw_prepareForm('301');
+	gw_submitform('301', 1);
+}
+
+</script>
+				</div>
+			</div>
+		</div>
+	
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					<p>It's not that difficult to learn <a href="http://www.greengeeks.com/website-transfer/" title="how to transfer a website" target="_blank">how to transfer a website</a>.</p>				</div>
+			</div>
+		</div>
+	
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					Green Geeks offers high quality <a href="http://www.greengeeks.com/scripts/joomla-hosting.php" title="Joomla Hosting" target="_blank">Joomla hosting.</a>
+				</div>
+			</div>
+		</div>
+	
+				</div>
+							</div>
+		</div>
+	</div>
+	
+		
+</section>	    	
+	    		    	
+	    	
+	    	
+	    	
+			
+			
+			
+			
+<!-- FOOTER -->
+<footer id="footerwrap" class="wrap zen-footer stack-tablets stack-phones" role="contentinfo">
+  <section class="zen-copyright">
+    <div class="zen-container">
+      <div class="zen-row">
+        	<div class="zg-col zg-col-9">
+	          
+
+<ul id="zen-menu-119">
+<li class="item-382"><a href="../index.php.html?option=com_googlesearch_cse&amp;view=googlesearchs&amp;Itemid=382&amp;lang=en">
+				Google Search			</a>
+	</li><li class="item-447"><a href="http://logistics-innovations.org/">Logistics Innovations</a></li><li class="item-456"><a href="https://www.rpa-sg.org/">RPA</a></li><li class="item-455"><a href="../category/joomla-version-history/index.htm">
+				Joomla Version History			</a>
+	</li><li class="item-457"><a href="https://ask.rpa-sg.org/">RPA Community Forum</a></li></ul>
+
+<div class="custom">
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-700099-1', 'auto');
+  ga('send', 'pageview');
+
+</script></div>
+
+        	</div>
+        	<div class="zg-col zg-col-3">
+        		<div id="zen-copyright">
+        			
+        			        				Copyright © 2005-2015. kksou.com. All Rights Reserved         		</div>
+        	</div>
+      	</div>
+	</div>
+  </section>
+</footer>
+<!-- //FOOTER -->			
+			
+
+
+			
+		</div>	
+	
+		
+
+	<div class="social-wrap fixed">
+
+		
+		
+
+		
+		
+<a id="social-twitter123" href="https://twitter.com/kksou" target="_blank">
+			<span class="zen-animate fadeInRightBig animated-faster fa fa-twitter zen-icon zen-icon-twitter"></span>
+	</a>
+
+	<script>
+		jQuery(document).ready(function ($) {
+			// Twitter Link Constructor
+			var twitter_link = $('#social-twitter').attr('href');
+
+			// Get title on page
+			// Made it broad for anumber of use cases but will retrieve h1 or h2 if not available
+			var title = $('#midCol h1:first').text();
+
+				if(typeof title ==="undefined") {
+					description = $('h2:first').text();
+				}
+
+			twitter_link += title;
+
+			$('#social-twitter').attr('href', twitter_link);
+		});
+	</script>
+
+		 	</div>
+	<script>
+		jQuery(document).ready(function ($) {
+
+			$('.popup').live( 'click', function(){
+				newwindow=window.open($(this).attr('href'),'','height=200,width=450');
+			    if (window.focus) {newwindow.focus()}
+			    return false;
+			 });
+		});
+	</script>
+		
+		
+<div class="sb-slidebar off-canvas-right sb-width-wide">
+	<div class="off-canvas-inner">
+		<div class="off-canvas-heading">
+			<span class="sb-close"><span class="zen-icon-remove zen-icon fa fa-icon-remove"></span></span>
+		</div>
+		<div class="off-canvas-body">
+			<div id="off-canvas-menu"><ul></ul></div>
+			
+		</div>
+	</div>
+</div>
+  
+ 
+ 
+<script>
+	
+	jQuery(document).ready(function($) {
+			
+			
+			
+				// Append nav if required
+				$('body').append_nav('787');	
+						
+				$(window).resize(function() {
+					$('body').append_nav('787');			
+				});
+			
+			 						
+				 		$('#off-canvas-menu').zenaccordion({
+				 		
+				 							 				 openfirst: true,
+				 				 				 				 selector: '.off-canvas-body',
+				 				 openicon: 'plus',
+				 				 closeicon: 'minus',
+				 				 type:"panel"
+				 		});
+			 			
+			 				
+			 
+			
+			
+			
+			$.slidebars();
+		});
+
+</script>
+ 		
+				
+		
+	<script>
+		jQuery(document).ready(function($){
+			$("img").not(".none").lazyload({
+				effect : "fadeIn"
+		});
+	});
+	</script>
+
+
+
+
+
+<div id="toTop" class="hidden-phone"><a id="toTopLink"><span class="fa fa-icon-arrow-up zen-icon zen-icon-arrow-up"></span><span id="toTopText"> Back to top</span></a></div>
+<script>
+	jQuery(document).ready(function($){
+			
+			$(window).scroll(function () {
+			
+				if ($(this).scrollTop() >200) {
+				 	$("#toTop").fadeIn();
+				}
+				else {
+				 	$("#toTop").fadeOut();
+				}
+			});
+		
+			$("#toTop").click(function() {
+				$("html, body").animate({ scrollTop: 0 }, "slow");
+				 return false;
+			});
+	});
+</script>
+
+
+
+
+
+<script>
+jQuery(document).ready(function($){
+	
+	
+	$('.sidebar').zenaccordion({
+	
+		  		 openfirst: true,
+  		   		 type:"panel"
+ 	});
+ 	
+
+});
+</script>
+
+
+
+
+
+
+
+<script>
+jQuery(document).ready(function($){
+	
+	var win      = $(window),
+	    fxel     = $('#navwrap'),
+	    fill     = $('#sticky-fill'),
+	    navheight = $('#menu').height(),
+	    eloffset = fxel.offset().top;
+	 
+	    $(fill).height(navheight);
+
+	win.scroll(function() {
+	    if (eloffset < win.scrollTop()) {
+	        fxel.addClass("fixed");
+	        $('html').addClass("fixed");
+	        $(fill).addClass('visible').removeClass('hidden');
+	    } else {
+	        fxel.removeClass("fixed");
+	        $('html').removeClass("fixed");
+	        $(fill).removeClass('visible').addClass('hidden');
+	    }
+	});
+});
+</script>
+
+
+
+
+
+	<script>
+	 new WOW().init();
+	</script>
+
+
+
+
+<!-- Fonts -->
+
+		
+			
+	</body>
+<!-- Copied from https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php by Cyotek WebCopy 1.7.0.600, 14 Tháng Sáu 2019, 04:23:30 -->
+</html>

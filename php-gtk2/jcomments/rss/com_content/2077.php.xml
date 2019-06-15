@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>googleDirections - To Here - plugin Tutorial 05: Display Directions on the Left</title>
+		<description>Discuss googleDirections - To Here - plugin Tutorial 05: Display Directions on the Left</description>
+		<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-05-Display-Directions-on-the-Left.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:58:35 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2077.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-05-Display-Directions-on-the-Left.php#comment-2005</link>
+			<description><![CDATA[Hi Sri, Please try the sample tag above (please add in the curly brackets. I cannot add it here because the map will be displayed instead of the code) googleDir_tohere width=320 height=360 dir_width=275 home_addr="900 N Point St, San Francisco, CA 94109 Then try to use any of the following in the "Coming From" - 1600 Amphitheatre Parkway, Mountain View CA 94043 - 701 First Avenue, Sunnyvale, CA 94089 Let me know if you see anything in the directions. This will allow us to see if the plugins work on your website at all. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 11 Sep 2018 11:29:15 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-05-Display-Directions-on-the-Left.php#comment-2005</guid>
+		</item>
+		<item>
+			<title>Sri says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-05-Display-Directions-on-the-Left.php#comment-2003</link>
+			<description><![CDATA[Hai i'm using joomla-3.8.12 when i i'm using the google directions to here plugin the home location and all the options are working but the directions was not showing what can i do for it (i have no idea about it i have just installed and placed it in my article).Please help me with it.]]></description>
+			<dc:creator>Sri</dc:creator>
+			<pubDate>Sun, 02 Sep 2018 17:03:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-05-Display-Directions-on-the-Left.php#comment-2003</guid>
+		</item>
+	</channel>
+</rss>

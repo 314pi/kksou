@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Google Currency Converter - AJAX version</title>
+		<description>Discuss Google Currency Converter - AJAX version</description>
+		<link>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:50:28 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/1164.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-1172</link>
+			<description><![CDATA[Hi Shimla, People have been using this module since 2008, and you're the first one that reported such an issue. If you look at the source code, this is really a very light module. There's nothing in the code that writes to your disk space. May I know how do you know that it's this module using that 870 mb of disk space? What is the filename of this 50MB? And where does it write to? Also, it seems like you have been using this module and it works fine for earlier versions. Is the 2.5 version the only one giving the problem? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 13 Sep 2013 09:14:33 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-1172</guid>
+		</item>
+		<item>
+			<title>Shimla Vision says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-1171</link>
+			<description><![CDATA[first thanks for this great module i've been using it for my sites. In 2.5 version i have noticed that it uses a lot of disk space and suddenly my disk space usage went from 50 mb to 1000 mb and this module was using 870 mb space. please can you throw some light why this is happening.....]]></description>
+			<dc:creator>Shimla Vision</dc:creator>
+			<pubDate>Fri, 13 Sep 2013 02:39:00 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-1171</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-1077</link>
+			<description><![CDATA[Hi Kev, Thought you mentioned in your email that the free version works? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 07 Jun 2013 07:41:24 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-1077</guid>
+		</item>
+		<item>
+			<title>Kev says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-1076</link>
+			<description><![CDATA[that's perfect thanks. Now I just need to be able to see the results ;-S I removed the ALLOW_FURL_OPEN= OFF from my php.ini, but still don't see results]]></description>
+			<dc:creator>Kev</dc:creator>
+			<pubDate>Fri, 07 Jun 2013 07:38:30 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-1076</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-1075</link>
+			<description><![CDATA[Hi Kev, Have just emailed you one more copy of the installer for the registered version. Please give it a try one more time and let me know if it works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 07 Jun 2013 07:35:58 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-1075</guid>
+		</item>
+		<item>
+			<title>Kev says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-1074</link>
+			<description><![CDATA[hi, I bought the option to remove the backlink, but the new installer does not work. I opened the zip file and it contains several folders, but they don't install either. Please advise! I'm trying to install into a j2.5x site. The basic free installer works, but I would like to remove that backlink. thanks]]></description>
+			<dc:creator>Kev</dc:creator>
+			<pubDate>Fri, 07 Jun 2013 05:24:26 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-1074</guid>
+		</item>
+		<item>
+			<title>lrincomes says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-718</link>
+			<description><![CDATA[hi, nice extension, but i got a little hitch, i want to know how it works, because i have integrated the extension but its not calculating.]]></description>
+			<dc:creator>lrincomes</dc:creator>
+			<pubDate>Sun, 11 Nov 2012 23:46:59 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-718</guid>
+		</item>
+		<item>
+			<title>trenkov says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-605</link>
+			<description><![CDATA[Oops, seems that UTF-8 characters are not properly displayed here, I wanted to write a sample text in cyrillic so that it would be easier for you to diagnose the problem.]]></description>
+			<dc:creator>trenkov</dc:creator>
+			<pubDate>Tue, 18 Sep 2012 10:59:25 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-605</guid>
+		</item>
+		<item>
+			<title>trenkov says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-604</link>
+			<description><![CDATA[Hi there, Thank you for the great extention, I really like it a lot! I have a problem with the labels tough, as I use cyrillic symbols. On initial loading of the module everything is fine and the characters are displayed as they should be, but as I click the submit button and the calculation initiates, all labels become a huge mess of random symbols. I tried to convert all .php files in UTF-8 encoding but with no success. Do you have any idea why is this happening? You can try labelling for example the submit button to ??????? in order to see the result. Thank you in advance for your answer! Best regards, Georgi]]></description>
+			<dc:creator>trenkov</dc:creator>
+			<pubDate>Tue, 18 Sep 2012 10:56:58 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-604</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-271</link>
+			<description><![CDATA[Hi Ben, For (1), please refer to the following article: Google Currency Converter - changing the width of the pulldown currency menu http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/Google-Currency-Converter-changing-the-width-of-the-pulldown-currency-menu.php For (2): Edit the file: mod_googlecurrencyconverter_lib.php in the folder: /modules/mod_googlecurrencyconverter In line 60, you will see: if ($str_a=='') $str_a = '1'; Change '1' to whatever value you desired. Let me know if the above works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 01 May 2012 19:57:39 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-271</guid>
+		</item>
+		<item>
+			<title>Ben2323 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-265</link>
+			<description><![CDATA[hello, Thanks for a great extension. I was wondering twi things: * Is it possible to make the minimum width layout even smaller, as it is bigger than the column width on my template? * is it possible to have, instead of having "1" as the default value ("convert 1 USD into...."), another predefined value, like: "convert 85 USD into...") Thanks a lot in advance Ben]]></description>
+			<dc:creator>Ben2323</dc:creator>
+			<pubDate>Mon, 30 Apr 2012 10:51:32 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-265</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-104</link>
+			<description><![CDATA[Hi, The google currency conversion is obtained from the following website: http://www.google.com/finance/converter As you can see, your currency is currently not provided by Google. The Yahoo Currency Converter has a lot more currencies. But I just checked them: http://finance.yahoo.com/currency-converter Yahoo doesn't provide your currency too! So there's not much I can do because for both my modules, the conversion are done through Google or Yahoo. Please keep checking with these two websites. If you see your currency appearing there, let me know and I'll add that to the module. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 01 Mar 2012 17:50:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-104</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-103</link>
+			<description><![CDATA[Hi Raakesh, Sorry for the late reply. Not sure why your comment never reach me. (The system is supposed to send an alert to me everytime there's a new comment.) I can see your point as very valid. I've thought about this earlier too. But I have some "user interface" issue. 1) I can add a global switch in the parameter area that allows administrator to set the number of decimals. However, for some currencies, it makes sense to ignore the decimals. But for currencies like Euro or USD, I think you will need at least 2 decimals. So global switch doesn't seem to work. 2) For the same currencies, some users prefer to ignore the decimals, while others will want to have precise decimals. So how do you cater for individual preference? cookies? individual settings for each currencies? See, it becomes so complicated that I decide to use the KISS principle. Just like my other plugin, googleMaps, I decide to keep it simple. There are many other plugins and modules in joomla.org that provide users with very complicated settings. Will just let the users have the freedom of choice to pick the other they like. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 01 Mar 2012 17:45:24 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-103</guid>
+		</item>
+		<item>
+			<title>orlandom says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-102</link>
+			<description><![CDATA[Hi i need to more currency, how can i insert Angola - Kwanza in the currency list? Thanks in advance for your great work!]]></description>
+			<dc:creator>orlandom</dc:creator>
+			<pubDate>Wed, 29 Feb 2012 17:01:46 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-102</guid>
+		</item>
+		<item>
+			<title>Raakesh says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-61</link>
+			<description><![CDATA[Hello... just a small question: How can I round up the converted results or remove the decimals in the end? The currency converter works nicely but some of my clients told me that the conversion results can be confusing, especially for someone who doesn't understand decimals at first sight. For example: Euros 130.114 can be read as 130 114 by mistake.... Thanks to reply....]]></description>
+			<dc:creator>Raakesh</dc:creator>
+			<pubDate>Sat, 11 Feb 2012 21:09:33 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-61</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-24</link>
+			<description><![CDATA[Hi Jayne, Sorry for the late reply. For joomla 1.5, 1.6, 1.7 and 2.5, the easiest way to put the Google Currency Converter into the article is as follows: 1) Install the Modules Anywhere plugin http://extensions.joomla.org/extensions/core-enhancements/embed-a-include/6402 2) In your article, simply add the tag {module Google Currency Converter} and the module will appear in your article! 3) If you do not want the Google Currency Converter to appear anywhere in the module position a) You can make sure the module position is empty (i.e. don't select any module position) b) Or you can select Module Assignment to "No pages" Please give it a try and let me know if it works for you. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 27 Jan 2012 18:30:16 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-24</guid>
+		</item>
+		<item>
+			<title>jayne says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-19</link>
+			<description><![CDATA[Hi, I want to use this plug in within an article. Can you tell me what the code is for joomla 1.7. I can't seem to see it anywhere!! :eek:]]></description>
+			<dc:creator>jayne</dc:creator>
+			<pubDate>Wed, 25 Jan 2012 08:46:36 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php#comment-19</guid>
+		</item>
+	</channel>
+</rss>

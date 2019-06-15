@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>How to Run Joomla Content Plugins in Custom HTML Modules</title>
+		<description>Discuss How to Run Joomla Content Plugins in Custom HTML Modules</description>
+		<link>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:06:54 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2126.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1922</link>
+			<description><![CDATA[Hi Guilherme, It only blocks the one that you use inside DirectPHP. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 08 Aug 2017 06:58:42 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1922</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1921</link>
+			<description><![CDATA[Hi Guilherme, I wrote DirectPHP as a simple way for me to insert simple PHP codes into Joomla article. What you want is a lot more complicated than what DirectPHP is designed to do. It can be done if you are very familiar with both PHP and Joomla. But if you're not, I would suggest not to, because it involves accessing another website, and maybe the mysql of another website. If not done carefully, and you did not switch back to the mysql of your original Joomla website, you will see only one blank screen. Yes, only one blank screen with no warning or error messages at all. If you can code this using DirectPHP, it means you know PHP and Joomla very well. In that case, I would suggest you write your code directly as a Joomla module or plugin. It's so much cleaner and easier, especially for debugging purpose. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 08 Aug 2017 06:57:34 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1921</guid>
+		</item>
+		<item>
+			<title>Guilherme says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1920</link>
+			<description><![CDATA[Hi! I have another question regarding DirectPHP plugin block feature: if I block all PHP commands excep the ones I do use inside content or custom HTMLs modules (if this is possible), will the plugin block ALL PHP or just PHP existing in my content articles and/or HTML modules?Tks a lot! Guilherme]]></description>
+			<dc:creator>Guilherme</dc:creator>
+			<pubDate>Thu, 03 Aug 2017 18:07:08 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1920</guid>
+		</item>
+		<item>
+			<title>Guilherme says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1919</link>
+			<description><![CDATA[Hi! I just installed your DirectPHP plugin but I am not sure how can it help me to achieve the following objective: I need to create a custom HTML module on Joomla website mywebsite.com that will display another Joomla module from myotherwebsite.com. Both websites are on the same server, even though I don't think this makes it easier or not. So, I thought I could use DirectPHP plugin in order to write some PHP on a custom HTML module with an inclue or required command but I am not sure how to do this. Any suggestions? Tks a lot! Guilherme]]></description>
+			<dc:creator>Guilherme</dc:creator>
+			<pubDate>Thu, 03 Aug 2017 18:03:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1919</guid>
+		</item>
+		<item>
+			<title>Kaz says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1918</link>
+			<description><![CDATA[Apologies. My server just made a liar of me. It is now working. Thank you for your patience with me. :roll:]]></description>
+			<dc:creator>Kaz</dc:creator>
+			<pubDate>Thu, 20 Jul 2017 08:38:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1918</guid>
+		</item>
+		<item>
+			<title>Kaz says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1917</link>
+			<description><![CDATA[Hi kksou, I updated the plugin and now the map has vanished again. I tried removing the script in the head of the template but that did not fix the issue. Any suggestions? Thank you in advance. Kaz]]></description>
+			<dc:creator>Kaz</dc:creator>
+			<pubDate>Thu, 20 Jul 2017 08:36:31 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1917</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1916</link>
+			<description><![CDATA[Hi Kaz, 1. Logon to Joomla backend 2. Select Extensions - Manage (from top menu) 3. On the Left Menu, click "Manage" 4. Search for googleMaps. You will see the version number listed there. Please give the above a try and let me know if it works. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 20 Jul 2017 08:30:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1916</guid>
+		</item>
+		<item>
+			<title>Kaz says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1915</link>
+			<description><![CDATA[ How do I tell? Thanks in advance.]]></description>
+			<dc:creator>Kaz</dc:creator>
+			<pubDate>Thu, 20 Jul 2017 08:25:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1915</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1914</link>
+			<description><![CDATA[Hi Kaz, Glad you've got it to work! Think you may be using the older version. You may want to install the latest version of googleMaps (v3.0.30) which will give support for https/ssl site. The latest version also adds support for the Joomla Update System. What this means is that once you have installed this version, Joomla will inform you whenever there is a new version of googleMaps. You can simply update the plugin from within the Joomla backend at the click of a button. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 20 Jul 2017 08:07:08 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1914</guid>
+		</item>
+		<item>
+			<title>Kaz says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1913</link>
+			<description><![CDATA[Hi kksou, Thank you for your expedient reply. I did try searching for a solution before posting and eventually found that I needed to add additional code between the head tags of my template index file to address a https/ssl issue arising from the google maps javascript api calling a http rather than https request. As usual, this occurs a short time after I post for help on a forum :| Once again, thank you and best regards and success with your app :D]]></description>
+			<dc:creator>Kaz</dc:creator>
+			<pubDate>Thu, 20 Jul 2017 07:38:32 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1913</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1912</link>
+			<description><![CDATA[Hi Kaz, Just tried your code on my test website. It's working fine. Please refer to the troubleshooting guide here: https://www.kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#troubleshooting Please give the above a try and let me know if it works. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 20 Jul 2017 01:31:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1912</guid>
+		</item>
+		<item>
+			<title>Kaz says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1911</link>
+			<description><![CDATA[Hi, I can't get the maps to display in my latest J! installation. I am using {googleMaps lat=-33.855672 long=151.172872 label="Nicolsons Electrolysis" label=”Nicolsons Electrolysis” width=180 height=200 addscale=1 addoverview=0 add_p=1} but the map does not display in the module. I;ve tried deleting my browser cache. Any suggestions? Thanks in advance.]]></description>
+			<dc:creator>Kaz</dc:creator>
+			<pubDate>Wed, 19 Jul 2017 13:52:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1911</guid>
+		</item>
+		<item>
+			<title>Francesco says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1814</link>
+			<description><![CDATA[Very useful plugin! I'm using it in a Custom HTML Module. Thank you very much!]]></description>
+			<dc:creator>Francesco</dc:creator>
+			<pubDate>Fri, 19 Aug 2016 10:32:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php#comment-1814</guid>
+		</item>
+	</channel>
+</rss>

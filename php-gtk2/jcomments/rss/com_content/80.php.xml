@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>023. How to set the background color of GtkButton?</title>
+		<description>Discuss 023. How to set the background color of GtkButton?</description>
+		<link>https://kksou.com/php-gtk2/sample-codes/set-the-background-color-of-GtkButton.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:30:07 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/80.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Alexander Niedernhoefer says:</title>
+			<link>https://kksou.com/php-gtk2/sample-codes/set-the-background-color-of-GtkButton.php#comment-1707</link>
+			<description><![CDATA[Tried this with Windows 7 64-bit, no colored Buttons ... took the code 1:1 from the above example.]]></description>
+			<dc:creator>Alexander Niedernhoefer</dc:creator>
+			<pubDate>Wed, 30 Jul 2014 03:42:15 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/sample-codes/set-the-background-color-of-GtkButton.php#comment-1707</guid>
+		</item>
+	</channel>
+</rss>

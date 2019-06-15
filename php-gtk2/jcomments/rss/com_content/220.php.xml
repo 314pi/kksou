@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>163. How to insert links in GtkTextView - Part 7 - Delete Link?</title>
+		<description>Discuss 163. How to insert links in GtkTextView - Part 7 - Delete Link?</description>
+		<link>https://kksou.com/php-gtk2/sample-codes/insert-links-in-GtkTextView-Part-7-Delete-Link.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 07:02:10 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/220.php" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>

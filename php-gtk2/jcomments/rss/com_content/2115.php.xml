@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>New version of googleSearch (CSE) component that support the latest Joomla 3.3.6</title>
+		<description>Discuss New version of googleSearch (CSE) component that support the latest Joomla 3.3.6</description>
+		<link>https://kksou.com/php-gtk2/Joomla-News/new-version-of-googlesearch-cse-component-that-support-the-latest-joomla-3-3-6.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:15:51 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2115.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-News/new-version-of-googlesearch-cse-component-that-support-the-latest-joomla-3-3-6.php#comment-1725</link>
+			<description><![CDATA[Hi Normand, I've just tested them. Both zip files are ok. Please give it a try one more time. For your convenience, have also emailed a copy of the component and module to you. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 19 Jul 2015 14:28:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-News/new-version-of-googlesearch-cse-component-that-support-the-latest-joomla-3-3-6.php#comment-1725</guid>
+		</item>
+		<item>
+			<title>Normand says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-News/new-version-of-googlesearch-cse-component-that-support-the-latest-joomla-3-3-6.php#comment-1724</link>
+			<description><![CDATA[Hi Zip files for CSE component and module are corrupted... Please can you provide another link please? Thank you]]></description>
+			<dc:creator>Normand</dc:creator>
+			<pubDate>Sun, 19 Jul 2015 14:10:06 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-News/new-version-of-googlesearch-cse-component-that-support-the-latest-joomla-3-3-6.php#comment-1724</guid>
+		</item>
+	</channel>
+</rss>

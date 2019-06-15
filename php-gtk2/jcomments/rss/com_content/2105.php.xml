@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>DirectPHP 3.0 has just been released!</title>
+		<description>Discuss DirectPHP 3.0 has just been released!</description>
+		<link>https://kksou.com/php-gtk2/Joomla-News/directphp-3-0-has-just-been-released.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:16:30 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2105.php" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Are there still anyone using my plugins and modules for Joomla 1.0?</title>
+		<description>Discuss Are there still anyone using my plugins and modules for Joomla 1.0?</description>
+		<link>https://kksou.com/php-gtk2/Joomla/are-there-still-anyone-using-my-plugins-and-modules-for-joomla-1-0.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:50:03 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2069.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>SFS says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/are-there-still-anyone-using-my-plugins-and-modules-for-joomla-1-0.php#comment-294</link>
+			<description><![CDATA[Yeah, we still use Joomla 1.0 for our websites. We haven't bothered to update because I don't feel the need to fix something that isn't broke. (And I do check occasionally for RFI/LFI/RCE/etc issues) ;-)]]></description>
+			<dc:creator>SFS</dc:creator>
+			<pubDate>Wed, 16 May 2012 12:41:34 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/are-there-still-anyone-using-my-plugins-and-modules-for-joomla-1-0.php#comment-294</guid>
+		</item>
+		<item>
+			<title>RobHelbig says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/are-there-still-anyone-using-my-plugins-and-modules-for-joomla-1-0.php#comment-261</link>
+			<description><![CDATA[There are not many people that have the talent that you do... In this economy a lot of companies & people can't afford to change every time Joomla has a new version and pay someone to upgrade their site. You are doing a great job. I work for Adobe and integrate & design new technology. Sometimes I feel that my work is not getting recognized but you find a few people that "thank you" for the work that you have provided them and that is inspiring. What you have done is excellent! Hope you keep up the good work!]]></description>
+			<dc:creator>RobHelbig</dc:creator>
+			<pubDate>Sat, 28 Apr 2012 21:11:50 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/are-there-still-anyone-using-my-plugins-and-modules-for-joomla-1-0.php#comment-261</guid>
+		</item>
+		<item>
+			<title>Sandy says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/are-there-still-anyone-using-my-plugins-and-modules-for-joomla-1-0.php#comment-203</link>
+			<description><![CDATA[I'm also a big fan. Thanks for all the work that you do. I use joomla 1.0.15 and hope you could find some time to build a Google plus one button for joomla 1.0. I know it's a alot of work but I have been following you for years and really like your work. You are very competent and you provide great projects. I can't thank you enough. Thank you... :-)]]></description>
+			<dc:creator>Sandy</dc:creator>
+			<pubDate>Sat, 31 Mar 2012 18:46:06 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/are-there-still-anyone-using-my-plugins-and-modules-for-joomla-1-0.php#comment-203</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/are-there-still-anyone-using-my-plugins-and-modules-for-joomla-1-0.php#comment-182</link>
+			<description><![CDATA[Hi Dave and Sandy, Thanks for the encouraging notes from both of you. Yes, you're right, Dave. Looking at the log, there are still a significant percentage of users downloading the Joomla 1.0 and 1.5 versions. Guess I'll continue with Joomla 1.0 for a while. It's just that every time I roll out a new release (e.g. the recent googleMaps v2.5.19 update), I have to test the plugin for all 5 platforms - Joomla 1.0, 1.5, 1.6, 1.7 and 2.5 - and maintaining the codes for all 5 platforms (each version has some subtle differences here and there) is becoming more difficult... Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 26 Mar 2012 17:54:17 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/are-there-still-anyone-using-my-plugins-and-modules-for-joomla-1-0.php#comment-182</guid>
+		</item>
+		<item>
+			<title>SandyLittle says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/are-there-still-anyone-using-my-plugins-and-modules-for-joomla-1-0.php#comment-181</link>
+			<description><![CDATA[I myself love what you create and look forward to what you have in the future for joomla 1.0. I made my website myself and really don't like Joomla 1.5x or version Joomla 2x. Thank you for all your hard work... Sandy]]></description>
+			<dc:creator>SandyLittle</dc:creator>
+			<pubDate>Mon, 26 Mar 2012 17:25:05 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/are-there-still-anyone-using-my-plugins-and-modules-for-joomla-1-0.php#comment-181</guid>
+		</item>
+		<item>
+			<title>DaveAgood456 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/are-there-still-anyone-using-my-plugins-and-modules-for-joomla-1-0.php#comment-178</link>
+			<description><![CDATA[I also think a lot of people have not seen this page. You have a good indicator of how many people have viewed your projects and downloaded them. Respectfully, Dave]]></description>
+			<dc:creator>DaveAgood456</dc:creator>
+			<pubDate>Mon, 26 Mar 2012 02:34:51 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/are-there-still-anyone-using-my-plugins-and-modules-for-joomla-1-0.php#comment-178</guid>
+		</item>
+		<item>
+			<title>DaveAgood456 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/are-there-still-anyone-using-my-plugins-and-modules-for-joomla-1-0.php#comment-177</link>
+			<description><![CDATA[Yes, and thank you so much. Alot of my clients are using Joomla 1.0.15 and they don't want any changes. Thanks again for all the work that you have put into all the projects and your excellent directions.]]></description>
+			<dc:creator>DaveAgood456</dc:creator>
+			<pubDate>Mon, 26 Mar 2012 02:23:07 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/are-there-still-anyone-using-my-plugins-and-modules-for-joomla-1-0.php#comment-177</guid>
+		</item>
+		<item>
+			<title>gwenwren says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/are-there-still-anyone-using-my-plugins-and-modules-for-joomla-1-0.php#comment-59</link>
+			<description><![CDATA[yes absolutely@! my client is still in joomla 1.5 and not ready to budge...]]></description>
+			<dc:creator>gwenwren</dc:creator>
+			<pubDate>Fri, 10 Feb 2012 15:27:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/are-there-still-anyone-using-my-plugins-and-modules-for-joomla-1-0.php#comment-59</guid>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Home</title>
+		<description><![CDATA[The Joy of Sharing and Learning Together]]></description>
+		<link>https://kksou.com/php-gtk2/category/About-Us/</link>
+		<lastBuildDate>Fri, 14 Jun 2019 08:36:04 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="https://kksou.com/php-gtk2/category/About-Us/feed/rss.php"/>
+		<language>en-gb</language>
+		<managingEditor>admin@kksou.com (kksou)</managingEditor>
+		<item>
+			<title>Services #3</title>
+			<link>https://kksou.com/php-gtk2/About-Us/services-3.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/About-Us/services-3.php</guid>
+			<description><![CDATA[<p><img src="https://kksou.com/php-gtk2/images/democontent/imfree/8731072852_34ffcf01e9_b.jpg" /></p><p>Cras nec lorem eget ligula varius aliquet at et mi. Fusce id quam in justo suscipit porta. Fusce non nisl nunc, id vestibulum augue. Donec interdum sapien vitae sem condimentum vel adipiscing leo consequat. In quis nisi sed velit lobortis congue in vulputate risus. Aliquam molestie, risus sed congue ullamcorper, mauris lacus volutpat mauris, nec luctus est risus in libero.</p>
+]]></description>
+			<author>admin@yuchenkuang.com (Super User)</author>
+			<category>About Us</category>
+			<pubDate>Thu, 20 Dec 2012 16:24:37 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

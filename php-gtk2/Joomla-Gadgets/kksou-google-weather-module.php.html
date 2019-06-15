@@ -1,0 +1,2643 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr" class="com_content view-article itemid-427 j39 responsive-enabled offcanvas-menu">
+<!-- Copied from https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php by Cyotek WebCopy 1.7.0.600, 14 Tháng Sáu 2019, 04:23:30 -->
+<head>
+<link href="kksou-google-weather-module.php.html" rel="canonical">
+
+		
+
+			<meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=yes">
+		<meta name="HandheldFriendly" content="true">
+	<meta name="apple-mobile-web-app-capable" content="YES">
+	<base href="https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Joomla weather module, wunderground weather API, joomla module, built-in cache, 500 calls per day, google weather API, google weather">
+	<meta name="author" content="kksou">
+	<meta name="description" content="This Joomla weather module makes use of the Wunderground Weather API (formerly Google Weather API) to display the current temperature, weather condition and a four-day weather forecast.">
+	<title>kksou Joomla Weather Module (formerly Google Weather Module) - AJAX and built-in cache version  | Joomla Gadgets</title>
+	<link href="../jcomments/rss/com_content/1751.php.xml" rel="alternate" type="application/rss+xml" title="kksou Joomla Weather Module (formerly Google Weather Module) - AJAX and built-in cache version">
+	<link href="../templates/xero/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="../components/com_jcomments/tpl/default/style.css?v=3002" rel="stylesheet" type="text/css">
+	<link href="/templates/xero/css-compiled/master-11597c3e8d7d7a43ddef0800b7379988.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300:latin|Open+Sans:600:latin|Droid+Serif" rel="stylesheet" type="text/css">
+	<link href="../templates/xero/css/theme.flat.php.css" rel="stylesheet" type="text/css">
+	<link href="../templates/xero/css/custom.css" rel="stylesheet" type="text/css">
+	<link href="../media/mod_jcomments_latest/css/style.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+
+.article {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.article_desc {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	margin-bottom: 4px;
+}
+
+.article_views {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.infographic {
+   border:2px solid #aaaaaa;
+}
+
+tr.article_tr > td {
+   //padding-top: 2px;
+   padding-bottom: 6px;
+}
+
+
+	</style>
+	<script src="../components/com_jcomments/js/jcomments-v2.3.js?v=12" type="text/javascript"></script>
+	<script src="../components/com_jcomments/libraries/joomlatune/ajax.js?v=4" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-noconflict.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-migrate.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/bootstrap.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../templates/xero/js/template-66.php" type="text/javascript"></script>
+	<script type="text/javascript">
+
+		var j2storeURL = 'https://kksou.com/php-gtk2/';
+		
+jQuery(document).ready(function(){
+
+	jQuery("a.linkstat").click(function(e) {
+		e.preventDefault(); // needed for safari 4.0.5
+
+		jQuery.post("/plugins/content/GetArticles/ajax-linkstat.php", {url: jQuery(this).attr('href'), id: jQuery(this).attr('id')}, function success(data) {
+			window.location = data; // needed for safari 4.0.5
+		});
+		return true;
+	});
+
+		jQuery("a.vote_up").click(function(){
+	//get the id
+	the_id = jQuery(this).attr('id');
+
+	// show the spinner
+	jQuery(this).parent().html("<img src='/plugins/content/GetArticles/images/spinner.gif' style='display:inline'/>");
+
+	//fadeout the vote-count
+	jQuery("span#votes_count"+the_id).fadeOut("fast");
+
+	//the main ajax request
+		jQuery.ajax({
+			type: "POST",
+			data: "action=vote_up&id="+jQuery(this).attr("id"),
+			url: "/plugins/content/GetArticles/votes.php",
+			success: function(msg){
+				jQuery("span#votes_count"+the_id).html(msg);
+				//fadein the vote count
+				jQuery("span#votes_count"+the_id).fadeIn();
+				//remove the spinner
+				jQuery("span#vote_buttons"+the_id).remove();
+			}
+		});
+	});
+
+});
+
+
+jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+	</script>
+
+			
+		
+<style type="text/css">
+			html > body {
+				font-family: 'Open Sans';
+				
+			}
+				h1, h2, h3, h4, h5, h6, blockquote {
+				font-family: 'Open Sans';
+			}
+		
+					#navwrap li a {
+					font-family: 'Open Sans';
+				}
+			
+					#logo h2 {
+					font-family: 'Droid Serif';
+				}
+		
+	</style>	</head>
+    <body>
+<!-- Facebook SDK -->
+<div id='fb-root'></div>
+<script type='text/javascript'>
+
+      // Load the SDK Asynchronously
+      (function(d){
+      var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+      js = d.createElement('script'); js.id = id; js.async = true;
+      js.src = '//connect.facebook.net/en_GB/all.js';
+      d.getElementsByTagName('head')[0].appendChild(js);
+    }(document));
+
+</script>
+<!-- End Facebook SDK -->
+
+		<!-- Required for Slidebar / Offcanvas implementation -->
+		<div id="zen-wrap">
+	
+	   			    	
+	    	<a id="home-link" name="home-link"></a>
+	  
+	    	
+	    	
+	    	
+	<section id="logowrap" class="clearfix stack-phones" role="banner">
+		<div class="zen-container">
+			<div class="zen-row">
+	<div class="zen-spotlight">
+	
+			
+						<div id="logo" class="zg-col zg-col-6">
+			
+							
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					
+
+<div class="custom">
+	<h2>kksou.com</h2>
+<p>Tutorials, Sample Codes and Tips & Techniques for developing<br>Joomla plugins, modules and components.</p>
+<p>Developer of <a href="http://www.kksou.com/php-gtk2/Joomla/DirectPHP-plugin.php">DirectPHP</a>, <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps</a> and <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php">googleSearch</a>.</p>
+<p>Yes, this is also <i>"The Place for PHP-GTK2 sample codes"</i>, since 2005.</p></div>
+				</div>
+			</div>
+		</div>
+	
+		
+						</div>
+		
+							
+						<div id="search" class="zg-col zg-col-6">
+			
+							
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					<!-- SiteSearch Google CSE --><form method="get" action="https://kksou.com/php-gtk2/index.php" id="mod_googleSearch_cse"><input type="hidden" name="option" value="com_googlesearch_cse"><input type="hidden" name="n" value="30"><input type="hidden" name="view" value="googlesearchs"><div class="search hidden-navcollapse"><input type="hidden" name="Itemid" value="382"><input type="hidden" name="cx" value="partner-pub-5032765168656743:ost4rr-en3s"><input type="hidden" name="cof" value="FORID:11"><input type="hidden" name="ie" value="ISO-8859-1"><input type="text" name="q" maxlength="255" value="" class="form-control hidden-navcollapse" size="20"><button class="button hidden-navcollapse btn btn-primary">Search</button></div></form><script type="text/javascript"><!--
+(function() {var f = document.getElementById('mod_googleSearch_cse');if (f && f.q) {var q = f.q;var b = function(){if (q.value == '') {q.style.color = '#AAAAAA';q.style.background = '#FFFFFF url(https://cse.google.com/coop/intl/en/images/google_custom_search_watermark.gif) left no-repeat';}};	var f = function() {q.style.color = '#000000';q.style.background = '#ffffff';};q.onfocus = f;q.onblur = b;b();}})();
+//-->
+</script>				</div>
+			</div>
+		</div>
+	
+		
+						</div>
+		
+						</div>
+</div>		</div>
+	</section>
+	    	
+	    	
+	<!-- NAVBAR HEADER -->
+	
+		<div id="sticky-fill" class="hidden"></div>
+		
+	<section id="navwrap" class="wrap ">
+		<div class="zen-container">
+			<div class="navbar-default zen-row">
+				<div class="zen-spotlight">
+						<div id="menu" class="zen-menu zen-menu-horizontal zen-menu-left zen-menu-fading">
+							<div class="navbar-header ">
+								<nav role="navigation">
+								<!-- NAVBAR MAIN -->
+																					
+													
+									
+
+<ul id="zen-menu-404">
+<li class="item-101"><a href="../index.htm">
+		<span class="fa fa-home zen-icon-home zen-icon"></span>		Home			</a>
+	</li><li class="item-425"><a href="../category/Sample-Codes/index.htm">
+				Sample Codes			</a>
+	</li><li class="item-426 active deeper parent"><a href="../category/Joomla/index.htm">
+				Joomla			</a>
+	<ul class="zen-menu-child cols-1"><li class="item-427 current active"><a href="../category/Joomla-Gadgets/index.htm">
+				Joomla Gadgets			</a>
+	</li><li class="item-429"><a href="../category/Joomla-Tips-Techniques/index.htm">
+				Joomla Tips &amp; Techniques			</a>
+	</li><li class="item-430"><a href="../category/Joomla-News/index.htm">
+				Joomla News 			</a>
+	</li><li class="item-431"><a href="../category/Joomla-FAQs/index.htm">
+				Joomla FAQs			</a>
+	</li><li class="item-432"><a href="../category/Joomla-Developer-FAQs/index.htm">
+				Joomla Developer FAQs			</a>
+	</li></ul></li><li class="item-433"><a href="../geocoder2.php.html">
+				Geocoder2			</a>
+	</li><li class="item-428"><a href="../Feedback.php.html">
+				Feedback			</a>
+	</li></ul> 			
+ 	
+																				
+									<!-- //NAVBAR MAIN -->
+																			<a class="btn off-canvas-trigger sb-toggle-right visible-desktop"><span class="zen-icon zen-icon-bars"></span></a>
+																	</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	    	
+	    	
+	    	
+	    	
+	    	
+	    		
+
+
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
+<!-- MAIN CONTENT -->
+<section id="mainWrap" class="clearfix mr ">
+	<a id="main-link" name="main-link"></a>
+		<section id="breadcrumbwrap" class="clearfix">
+		<div class="zen-container">
+			<div class="zen-row">
+				<div class="zen-spotlight">
+				
+					<!-- Banner-slogan -->
+					<div id="breadcrumb" class="zg-col zg-col-12">
+						  
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					
+<ul class="breadcrumb zen-reset-list ">
+
+	<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../index.htm" class="pathway" itemprop="url"><span itemprop="title">Home</span></a></li><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../category/Joomla/index.htm" class="pathway" itemprop="url"><span itemprop="title">Joomla</span></a></li><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../category/Joomla-Gadgets/index.htm" class="pathway" itemprop="url"><span itemprop="title">Joomla Gadgets</span></a></li><li><span>kksou Joomla Weather Module (formerly Google Weather Module) - AJAX and built-in cache version </span></li></ul>				</div>
+			</div>
+		</div>
+	
+					</div>
+					<!-- //breadcrumb -->
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	
+		
+	<div class="zen-container">
+		<div class="zen-row">
+			<div class="mainwrap zen-spotlight">
+				<div id="midCol" class="zg-col zg-col-9 ">
+					
+					 
+
+			
+
+		<main role="main">
+		
+
+<div class="item-page clearfix">
+
+
+<!-- Article -->
+<article itemscope="" itemtype="http://schema.org/Article">
+	<meta itemprop="inLanguage" content="en-GB">
+
+	<header class="article-header clearfix">
+		<h1 class="article-title" itemprop="name">
+			kksou Joomla Weather Module (formerly Google Weather Module) - AJAX and built-in cache version 				<meta itemprop="url" content="<br />
+<b>Notice</b>:  Undefined variable: url in <b>/var/www/kksou.com/public_html/php-gtk2/templates/xero/html/com_content/article/default.php</b> on line <b>51</b><br />
+<br />
+<b>Notice</b>:  Undefined variable: prefix in <b>/var/www/kksou.com/public_html/php-gtk2/templates/xero/html/com_content/article/default.php</b> on line <b>51</b><br />
+">
+		</h1>
+	
+							</header>
+	
+
+<!-- Aside -->
+<aside class="article-aside clearfix">
+    	<ul class="article-info  muted small flat-list">
+
+		
+			
+			
+						
+			
+					
+		
+										<li class="modified">
+			
+				<time datetime="2017-07-02T22:06:29+00:00" itemprop="dateModified">
+					Last Updated: 02 July 2017				</time>
+			</li>			
+										<li class="hits">
+				
+					<meta itemprop="interactionCount" content="UserPageVisits:596559">
+					Hits: 596559			</li>						</ul>
+    
+  </aside>  
+<!-- //Aside -->
+
+
+
+
+
+	
+
+	
+	
+	<section class="article-content" itemprop="articleBody">
+		
+
+
+
+
+<script type="text/javascript" src="../util/jq/scripts/jquery-1.3.2.js"></script><script type="text/javascript">
+<!--
+$(document).ready(function(){
+	$("#button_download").hover(
+	  function() {$(this).attr("src","/php-gtk2/util/jq/download2.jpg");},
+	  function() {$(this).attr("src","/php-gtk2/util/jq/download.jpg");}
+	);
+	$("#button_faq").hover(
+	  function() {$(this).attr("src","/php-gtk2/util/jq/faq2.jpg");},
+	  function() {$(this).attr("src","/php-gtk2/util/jq/faq.jpg");}
+	);
+});
+-->
+</script>
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr valign="top"><td>
+
+<table border="0" height="61" cellpadding="0" cellspacing="0">
+<tr valign="top">
+<td align="left" width="98"><a href="#download"><img src="../util/jq/download.jpg" alt="download button" id="button_download" align="top" border="0"></a> </td>
+</tr></table>
+</td>
+<td>
+
+<table border="0" height="61" cellpadding="0" cellspacing="0">
+<tr valign="top">
+<td align="left" width="98"><a href="../Joomla-FAQs/Google-Weather-module-FAQs-Troubleshoot-and-Tips-Techniques.php.html" target="_blank"><img src="../util/jq/faq.jpg" alt="faq button" id="button_faq" align="top" border="0"></a></td>
+</tr></table>
+
+</td></tr></table>
+
+<script type="text/javascript">var j10=100; var j15=101; var j16=111; var j17=112; var j25=133; var j30=160;</script>
+<script type="text/javascript" src="../util/ajax/ajax_v1.2_30.js"></script>
+
+
+
+
+
+<!-- 
+Powered by Joomla Gadgets from kksou.com
+http://www.kksou.com/php-gtk2/Joomla-Gadgets/
+-->
+
+<script type="text/javascript" src="../plugins/content/AccordionMenuApplestyle/ddaccordion/ddaccordion.js">
+
+/***********************************************
+* Accordion Content script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+
+</script>
+
+
+<script type="text/javascript">
+
+
+ddaccordion.init({
+	headerclass: "silverheader", //Shared CSS class name of headers group
+	contentclass: "submenu", //Shared CSS class name of contents group
+	revealtype: "mouseover", //Reveal content when user clicks or onmouseover the header? Valid value: "click" or "mouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false
+	defaultexpanded: [0], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+	onemustopen: true, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["", "selected"], //Two CSS classes to be applied to the header when it\s collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "normal", //speed of animation: "fast", "normal", or "slow"
+	oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+
+
+</script>
+<style type="text/css">
+
+.b1 {
+margin: 0 0 0 0;
+text-align: right;
+}
+
+/* css file for Accordion Menu Apple style 
+*  Author: kksou
+*  Website: http://www.kksou.com/php-gtk2/Joomla-Gadgets/
+*  v1.0 September 27, 2008
+*
+*  Note: There are 3 variables. You need to enclose them in curly brackets.
+*  1. $menu_width: this is the width of the menu. 
+      This is the width you have defined in the parameter of the plugin
+*  2. $menu_height: this is the height of the menu. 
+      This is the height you have defined in the parameter of the plugin
+*  3. $base: this is the url base to the background image for the menu. 
+      If you want to change the two background images, make sure you prepend this
+	  $base to the image so that the image can be found
+*/
+
+.applemenu{
+margin: 5px 0 0;
+padding: 0;
+width: 170px; /*width of menu*/
+border: 1px solid #9A9A9A;
+text-align: left;
+}
+
+.applemenu div.silverheader a,em {
+background: black url(../plugins/content/AccordionMenuApplestyle/ddaccordion/silvergradient.gif) repeat-x center left;
+font: normal 12px Tahoma, "Lucida Grande", "Trebuchet MS", Helvetica, sans-serif;
+color: white;
+display: block;
+position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+width: auto;
+padding: 5px 0;
+padding-left: 8px;
+text-decoration: none;
+}
+
+.applemenu div.silverheader a:visited, .applemenu div.silverheader a:active{
+color: white;
+}
+
+.applemenu div.selected a, .applemenu div.selected em, .applemenu div.silverheader a:hover{
+background-image: url(../plugins/content/AccordionMenuApplestyle/ddaccordion/silvergradientover.gif);
+color: white;
+}
+
+.applemenu div.submenu, div.submenu a { /*DIV that contains each sub menu*/
+background: white;
+padding-left: 5px;
+height: 100px; /*Height that applies to all sub menu DIVs. A good idea when headers are toggled via "mouseover" instead of "click"*/
+font: normal 12px Tahoma, "Lucida Grande", "Trebuchet MS", Helvetica, sans-serif;
+color: #aaa;
+text-decoration: none;
+}
+
+/* level 2 items
+.applemenu div.submenu .level2 a {
+	color: #0000ff;
+}
+*/
+
+</style>
+<div class="b1" style="float:right;padding-left:10px;"><div class="applemenu"><div class="silverheader"><em><span class="level1">General</span></em></div>    <div class="submenu"><span class="level2">    <a href="#intro">Introduction</a></span><br><span class="level2">    <a href="#demo">Demo</a></span><br><span class="level2">    <a href="#features">Unique Features</a></span><br><span class="level2">    <a href="#kmh">km/h version</a></span><br>    </div><div class="silverheader"><span class="level1"><a href="#download">Download</a></span></div>    <div class="submenu"><span class="level2">    <a href="#download">Download</a></span><br><span class="level2">    <a href="#latest">Latest Version</a></span><br><span class="level2">    <a href="#remove-powered-by-links">Remove Powered-by Links</a></span><br>    </div><div class="silverheader"><em><span class="level1">Documentation</span></em></div>    <div class="submenu"><span class="level2">    <a href="#install">How to install</a></span><br><span class="level2">    <a href="#config">Parameters</a></span><br><span class="level2">    <a href="#css">Styling the Module using CSS</a></span><br><span class="level2">    <a href="#history">Version History</a></span><br><span class="level2">    <a href="#include-in-content-item">Including this module in Content Item or Article</a></span><br>    </div><div class="silverheader"><em><span class="level1">User Reviews</span></em></div>    <div class="submenu"><span class="level2">    <a href="#article_comments">kksou.com</a></span><br>    </div></div><p align="right" style="padding:0 0 0 0;margin:0 0 0 0"><a href="http://www.kksou.com/php-gtk2/Joomla/Accordion-Menu-Apple-style.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p>
+
+<!-- 
+Powered by Joomla Gadgets from kksou.com
+http://www.kksou.com/php-gtk2/Joomla-Gadgets/
+-->
+
+</div>
+
+<a id="demo">
+<a id="intro"></a>
+<p>This is an easy-to-use and light-weight module for displaying 4-day weather forecast using the free wunderground API.</p>
+
+<p>This module makes use of the Wunderground Weather API (formerly Google Weather API) to display the current temperature, weather condition and a four-day weather forecast, as you can see on the left of the page.</p>
+
+<p>Note that the free version of the wunderground.com Weather API has a limit of 500 calls per day. The latest version of the Wunderground Weather Module has a <b>built-in cache system</b> to greatly reduce the number of requests to wunderground.com for similar weather requests made within a specified time period.</p>
+
+<h3>Live Demo</h3>
+<p>You can see a live demo on the sidebar of this page.</p>
+
+
+<br clear="all">
+
+<a id="features">
+<h3>Unique Features</h3></a>
+<p>This is the first, and currently the only weather module with the following features:</p>
+<ul>
+<li>Uses the Wunderground Weather API (formerly Google Weather API) that provides 4-day weather forecast with images.</li><p></p>
+<li>Allows user to interactively enter zip codes (for US, UK and Canada) and city names.</li><p></p>
+<li>Displays the weather information in many different languages, as provided by Wunderground.</li><p></p>
+<li>Allows you to display two or more weather modules in the same page.</li><p></p>
+<li>You can turn on or off the input field.</li><p></p>
+<li>You can specify the default unit for the temperature (in &deg;C or &deg;F)</li><p></p>
+<li>You can switch between &deg;C or &deg;F interactively with no reloading of pages.</li><p></p>
+<li>You can choose to display wind speed in mph or km/h</li><p></p>
+<li>Available for <b style="background:#ffff00">all Joomla versions</b>: Joomla 1.0.x, native 1.5.x, 1.6.x, 1.7.x, 2.5.x and 3.0.x!</li><p></p>
+</ul>
+
+
+
+
+<div class="alert alert-info" id="latest"><h4>Latest Version</h4>
+<p>v3.0.10 (for Joomla 3.0)<br>
+Released April 19, 2013<br></p>
+<p>Support for different $dbprefix</p>
+
+<p>v3.0.9 (for Joomla 3.0)<br>
+Released April 6, 2013<br></p>
+<p>Native version of Wunderground Weather Module for Joomla 3.0!</p>
+
+<p>v1.09 (for Joomla 1.0) and v1.59 (for Joomla 1.5), v1.69 (for Joomla 1.6), v1.79 (for Joomla 1.7), v2.5.9 (for Joomla 2.5)<br>
+Released October 27, 2012<br></p>
+<p>Google has stopped its Google Weather API service entirely. <a href="http://www.kksou.com/php-gtk2/Joomla-News/Google-has-stopped-its-Google-Weather-API.php">Details here.</a></p>
+<p>The latest version uses the API from <a href="http://www.wunderground.com/weather/api/?apiref=6eae7a10209d1cc0" "="">wunderground.com</a></p>
+<p>However, the free version of wunderground.com Weather API has a limit of 500 calls per day. If you go beyond 500 calls per day, the module will stop working!</p>
+<p>This latest version of Wunderground Weather Module has a <b>built-in cache system</b> to greatly reduce the number of requests to wunderground.com for similar weather requests made within a specified time period.</p>
+
+<ul>
+<li>The default time period is <b>60 minutes</b> - what this means is that if you request for the weather of "San Francisco, CA" for the first time, the weather info will be retrieved from wunderground.com. However, anyone who makes a subsequent weather request of "San Francisco, CA", as long as it still falls within 60 minutes, the weather will be retrieved from the cache without making any calls to wunderground.com.</li><p></p>
+<li>You can change the time period in the Module Manager's parameter page.</li><p></p>
+<li>In the parameter page, you can also set the <b style="background:#ffff00">Admin Mode</b> to Yes so that you can see the cache system in action. The default is Admin Mode = No.</li><p></p>
+</ul>
+
+<p>Another very important addition to this new version is that the module now <b style="background:#ffff00">remembers the previous city</b> entered by the user. For example, suppose the user has searched for the weather of "Paris, France". When she come back to the same page a couple of days later, the weather for "Paris, France" will be displayed instead of the default city as specified in your parameter page.</p>
+</div>
+
+<a id="vip">
+<h3>Very Important</h3></a>
+
+<ul>
+<li>I've implemented the Google Weather Mashup with the use of PHP's <a href="http://www.php.net/manual/en/curl.setup.php">cURL library</a>. So please <span style="background:#ffff00">make sure your PHP has the cURL library</span> installed in order to use this module.</li><p></p>
+
+<li>Note that this module works only with <span style="background:#ffff00">PHP5</span> and above because of the use of the PHP function <a href="http://www.php.net/manual/en/function.simplexml-load-string.php">simplexml_load_string</a> which is only available starting with PHP5.</li><p></p>
+</ul>
+
+ <a id="download">
+<h3>Download</h3></a>
+<div id="links">Joomla 1.0.x: <span id="link0"><a href="../products/mod_kksouGoogleWeather_v1.09.zip?i=100">mod_kksouGoogleWeather_v1.09.zip</a></span><br>Joomla 1.5.x: <span id="link1"><a href="../products/mod_kksouGoogleWeather_v1.59.zip?i=101">mod_kksouGoogleWeather_v1.59.zip</a></span><br>Joomla 1.6.x: <span id="link2"><a href="../products/mod_kksouGoogleWeather_v1.69.zip?i=111">mod_kksouGoogleWeather_v1.69.zip</a></span><br>Joomla 1.7.x: <span id="link3"><a href="../products/mod_kksouGoogleWeather_v1.79.zip?i=112">mod_kksouGoogleWeather_v1.79.zip</a></span><br>Joomla 2.5.x: <span id="link4"><a href="../products/mod_kksouWeather_v2.5.10.zip?i=133">mod_kksouWeather_v2.5.10.zip</a></span><br>Joomla 3.0.x: <span id="link5"><a href="../products/mod_kksouWeather_v3.0.12.zip?i=160">mod_kksouWeather_v3.0.12.zip</a></span><br></div>
+
+<script type="text/javascript">prepareLinks();</script> 
+
+
+
+
+
+<a id="install">
+<h3>How to install</h3></a>
+
+<ol>
+<li>First, make sure you're using <span style="background:#ffff00">PHP5</span> and above.</li><p></p>
+
+
+
+<li>Download and install the "kksou Weather Module".</li><p></p>
+<li>Make sure the module is published / enabled.</li><p></p>
+<li>Select a module position where you want to place the module.</li><p></p>
+</ol>
+
+<p>That's it! You should now see the kksou Google Weather module displayed in the module position you've specified.</p>
+
+<a id="config">
+<h3>Parameters</h3></a>
+<p>You can set the following in the Parameters page:
+<ol>
+<li><b>Default City:</b> This is the city that will be displayed when the module is first loaded. For USA, please specify City, State. For other countries, please specify City, Country</li><p></p>
+<p>For some countries (e.g. US, UK and Canada), you can just enter the zip code. E.g. '94305, CA', 'W1A 1AZ, UK'.</p>
+
+
+<li><b>Language:</b> Wunderground supports many different languages. The language code can be found here: <a href="http://www.wunderground.com/weather/api/d/docs?d=language-support">Wunderground Language Support</a>. Note that the language code is different from the standard ISO 639-1 format.<br>
+e.g. English is <code>en</code>, French is <code>fr</code>, Italian is <code>it</code>, Japanese is <code>jp</code>, Chinese simplified is <code>cn</code>, Chinese Traditional is <code>tw</code>.</li><p></p>
+<li><b>Unit for temperature: </b> Choose between displaying the temperature in &deg;F or &deg;C.</li><p></p>
+<li><b>Hide Input Field: </b> If all you want is to display the weather forecast of a particular city, and DO NOT want the user to change that, you can select 'Yes' to hide the input field.</li> <p></p>
+<li><b>Hide Humidity:</b> Select 'Yes' if you wish to hide the humidity information.</li><p></p>
+<li><b>Hide Wind:</b> Select 'Yes' if you wish to hide the wind information.</li><p></p>
+<li><b>Hide Forecast:</b> Select 'Yes' if you wish to hide the 4-day weather forecast.</li><p></p>
+<li><b>Label for 'City'</b>: This is the label that is displayed just before the input field. The default label is 'City'. You can change the label into your own language and label.</li><p></p>
+<li><b>Size of Input Field:</b> Size of the input field. Default size is 12.</li><p></p>
+<li><b>Request Interval: </b> If you do some research on google, you will see that there arer cases where Google will "ban" your site from accessing the Google Weather API if the request is made too often (e.g. some sites try to get the weather forecast of all cities in US through a robot). By default, I set a interval 3 seconds between each request to Google. This will prevent your users from making too frequent weather forecast requests via your website. If you are not concerned about this, you can reduce this to 1 second.</li><p></p>
+<li><b>Set Focus on Input Field:</b> Set the focus (i.e. put the prompt) on the input field for city. Default is Yes.</li><p></p>
+</ol>
+
+<a id="css">
+<h3>Styling the Module using CSS</h3></a>
+
+<p>The entire formatting of the stock quotes is done using CSS. If you do not like the default look and feel of the stock data, you can edit the following CSS file:</p>
+
+<p><code>&lt;your joomla root folder&gt;/modules/mod_kksouGoogleWeather/<span style="background:#ffff00">mod_googleWeather.css</span></code></p>
+
+<ol>
+
+<li>Input Field (for entering city name)</li><p></p>
+<pre>
+div.googleWeather input {
+	margin-bottom: 6px;
+}
+</pre>
+
+<li>Input Label (the label 'City')</li><p></p>
+<pre>
+div.googleWeather .input_label {
+	font-weight:bold;
+}
+</pre>
+
+<li>The current temepature</li><p></p>
+<pre>
+div.googleWeather .deg {
+    font-size: 100%;
+	color: #3366FF;
+	font-weight:bold;
+}
+</pre>
+
+<li>The image of the current weather condition</li><p></p>
+<pre>
+div.googleWeather .img2 {
+	float: right;
+}
+</pre>
+
+<li>The current weather condition</li><p></p>
+<pre>
+div.googleWeather .cond {
+	font-size: 100%;
+}
+</pre>
+
+<li>The current wind condition</li><p></p>
+<pre>
+div.googleWeather .wind {
+    font-size: 100%;
+}
+</pre>
+
+</ol>
+
+
+
+<a id="history">
+<h3>History</h3>
+<ol>
+<li>v1.0.1 (for Joomla 1.0) and v1.5.1 (for Joomla 1.5)<br>
+Released October 6, 2009</li><p></p>
+<p>Streamlined the javascript codes.</p>
+
+<li>v1.0.2 (for Joomla 1.0) and v1.5.2 (for Joomla 1.5)<br>
+Released January 20, 2010</li><p></p>
+<ul type="disc">
+<li>Allow user to define the popup prompt in their own language. This is in response to the request by <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Weather-Module-AJAX-version.php#article_comments_1117">Doug</a>.</li><p></p>
+<li>Added support for IE8. Thanks to <a href="http://www.kksou.com/php-gtk2/index.php?option=com_fireboard&func=view&catid=43&id=3129&limit=20&limitstart=0#3129">Mike</a> for contributing this.</li><p></p>
+<li>No longer shows San Francisco in the input field when you have defined other city as default.</li><p></p>
+</ul>
+
+<li>v1.0.3 (for Joomla 1.0) and v1.5.3 (for Joomla 1.5)<br>
+Released February 14, 2010</li><p></p>
+<p>This is in response to the request by <a href="http://www.kksou.com/php-gtk2/index.php?option=com_fireboard&func=view&catid=43&id=3228&limit=20&limitstart=0#3228">Mazgonar</a>.</p>
+<p>Added one more parameter in the config page to allow user to choose whether to set focus on the input field for the city.</p>
+
+<li>v1.0.4 (for Joomla 1.0) and v1.5.4 (for Joomla 1.5)<br>
+Released May 06, 2010</li><p></p>
+<p>Conform to joomla.org guidelines.</p>
+
+<li>v1.0.5 (for Joomla 1.0) and v1.5.5 (for Joomla 1.5)<br>
+Released May 16, 2010</li><p></p>
+<p>The module is now W3C XHTML 1.0 Transitional compliant.</p>
+
+<li>v1.6.6 (for Joomla 1.6) and v1.7.7 (for Joomla 1.7)<br>
+Released October 10, 2011</li><p></p>
+<p>Native version of the Google Weather Module for Joomla 1.6 and 1.7!</p>
+
+<li>v1.6.7 (for Joomla 1.6) and v1.7.7 (for Joomla 1.7)<br>
+Released October 16, 2011</li><p></p>
+<p>Support for <b style="background:#ffff00">km/h</b> for wind speed. If you display the temperature in degree Celsius, the wind speed will be displayed in km/h. If you display the temperature in degree Fahrenheit, the wind speed will be displayed in mph.</p>
+
+<p><b>Note:</b> By default, Google only returns the wind speed information in mph. I used the PHP function <code>preg_match()</code> to search for the string "mph". If you have displayed the weather information in other languages (e.g. Russian) which does not display miles per hour as "mph", the module will just display whatever wind information that is returned by Google.</p>
+
+<li>v1.07 (for Joomla 1.0) and v1.57 (for Joomla 1.5), v1.67 (for Joomla 1.6), v1.77 (for Joomla 1.7), v2.5.7 (for Joomla 2.5)<br>
+Released January 26, 2012<br></li><p></p>
+<p>Native version of the Google Weather Module for Joomla 2.5!</p>
+
+<li>v1.08 (for Joomla 1.0) and v1.58 (for Joomla 1.5), v1.68 (for Joomla 1.6), v1.78 (for Joomla 1.7), v2.5.8 (for Joomla 2.5)<br>
+Released August 31, 2012<br></li><p></p>
+<p>Google has stopped its Google Weather API service entirely. <a href="http://www.kksou.com/php-gtk2/Joomla-News/Google-has-stopped-its-Google-Weather-API.php">Details here.</a></p>
+<p>The latest version uses the API from <a href="http://www.wunderground.com/weather/api/?apiref=6eae7a10209d1cc0" "="">wunderground.com</a></p>
+
+</ol>
+
+	</a></section>
+
+  <!-- footer -->
+    <!-- //footer -->
+
+					
+			<ul class="pager pagenav">
+	<li class="previous">
+		<a class="hasTooltip" title="googleDirections plugin" aria-label="Previous article: googleDirections plugin" href="googleDirections-plugin.php.html" rel="prev">
+			<span class="icon-chevron-left" aria-hidden="true"></span> <span aria-hidden="true">Prev</span>		</a>
+	</li>
+	<li class="next">
+		<a class="hasTooltip" title="Google Currency Converter - AJAX version" aria-label="Next article: Google Currency Converter - AJAX version" href="Google-Currency-Converter-AJAX-version.php.html" rel="next">
+			<span aria-hidden="true">Next</span> <span class="icon-chevron-right" aria-hidden="true"></span>		</a>
+	</li>
+</ul>
+	
+	
+	
+</article>
+<!-- //Article -->
+
+<div class="clearfix"></div>
+
+<script type="text/javascript">
+<!--
+var jcomments=new JComments(1751, 'com_content','/php-gtk2/jcomments/');
+jcomments.setList('comments-list');
+//-->
+</script>
+<div id="jc">
+<div id="comments"><h4>Comments <a class="rss" href="../jcomments/rss/com_content/1751.php.xml" title="RSS feed for comments to this post" target="_blank">&nbsp;</a><a class="refresh" href="#" title="Refresh comments list" onclick="jcomments.showPage(1751,'com_content',0);return false;">&nbsp;</a></h4>
+<div class="comments-list" id="comments-list-0">
+		<div class="even" id="comment-item-13">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-13">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(13, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(13, -1);return false;"></a>
+<span class="vote-good">+1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-13" id="comment-13">#</a>
+<span class="comment-author">Sean Lee</span>
+<span class="comment-date">2012-01-23 10:05</span>
+<div class="comment-body" id="comment-body-13">Thanks</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(13); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(13,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(13); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-27">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-27">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(27, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(27, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-27" id="comment-27">#</a>
+<span class="comment-author">Scott Alexander</span>
+<span class="comment-date">2012-01-28 20:02</span>
+<div class="comment-body" id="comment-body-27">This is what I am searching for. I would really like to know if Google has a weather module. I'm glad that it has.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(27); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(27,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(27); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-120">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-120">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(120, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(120, -1);return false;"></a>
+<span class="vote-poor">-2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-120" id="comment-120">#</a>
+<span class="comment-author">Czech Cricket</span>
+<span class="comment-date">2012-03-08 04:38</span>
+<div class="comment-body" id="comment-body-120">Thank you, the module was very easy to set up on our website and provides a very useful service. No problems at all so far!<br><br>I wanted to leave a nice review for you on the JED but your link there is down, it says the link to downloading this module is broken. Hope you get that fixed soon - you deserve the product to be used more.<br><br>Thank you again</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(120); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(120,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(120); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-120">
+		<div class="odd" id="comment-item-121">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-121">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(121, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(121, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-121" id="comment-121">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-03-09 07:14</span>
+<div class="comment-body" id="comment-body-121">Hi,<br><br>Thanks a lot for informing me about this. Appreciate this greatly.<br><br>Have updated the demo link and informed Joomla.org. Guess it will take them a couple of days for review and reactive the page.<br><br>Thanks once again!<br><br>Warm Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(121); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(121,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(121); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-139">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-139">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(139, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(139, -1);return false;"></a>
+<span class="vote-good">+1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-139" id="comment-139">#</a>
+<span class="comment-author">dora</span>
+<span class="comment-date">2012-03-15 15:22</span>
+<div class="comment-body" id="comment-body-139">I've downloaded the module(2.5, all is good on that end. Where do I fine the CSS info to make changes in the font?<br>thanks</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(139); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(139,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(139); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-139">
+		<div class="odd" id="comment-item-143">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-143">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(143, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(143, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-143" id="comment-143">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-03-15 17:49</span>
+<div class="comment-body" id="comment-body-143">Hi,<br><br>The css file is in the folder: [Joomla_root_folder]/modules/mod_kksouGoogleWeather<br><br>css file: mod_kksouGoogleWeather.css<br><br>Please note that most browsers cache the css style sheets. So after editing and saving the css file, remember to clear the browser cache.<br><br>The best way I find is to point your browser to your css file and load the css file in the browser. You can see very clearly if the browser is still using the old cached version or your latest edited version. (Just keep hitting refresh until the browser reloads the fresh copy.)<br><br>Let me know if it works, ok?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(143); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(143,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(143); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-280">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-280">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(280, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(280, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-280" id="comment-280">#</a>
+<span class="comment-author">Gerardo Bredfeldt</span>
+<span class="comment-date">2012-05-09 16:43</span>
+<div class="comment-body" id="comment-body-280">Hi, I migrate my page from Fatcow to Arvixe and your module stop working. It searches endless for the city. Arvixe has support for Php4 and 5. CURl is enabled. My Joomla is 1.5.25 and I'd install "mod_kksouGoogleWeather_v1.57.zip". Tryed twice, no success. Installed a few other free weather modules ---> ok, but I would prefer yours. Thanks for possible help.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(280); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(280,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(280); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-284">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-284">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(284, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(284, -1);return false;"></a>
+<span class="vote-good">+1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-284" id="comment-284">#</a>
+<span class="comment-author">Toni Rauma</span>
+<span class="comment-date">2012-05-11 05:35</span>
+<div class="comment-body" id="comment-body-284">Hi,<br>I have a problem with scandic letters (åäö) with finnish language. The module displays them wrong and it becomes messy :/</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(284); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(284,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(284); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-284">
+		<div class="even" id="comment-item-286">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-286">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(286, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(286, -1);return false;"></a>
+<span class="vote-poor">-4</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-286" id="comment-286">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-05-11 07:19</span>
+<div class="comment-body" id="comment-body-286">Hi Toni,<br><br>Are you referring to<br>1) the city input field, or<br>2) the weather result returned by Google?<br><br>You have an URL to show the actual output?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(286); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(286,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(286); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-286">
+		<div class="odd" id="comment-item-290">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-290">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(290, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(290, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-290" id="comment-290">#</a>
+<span class="comment-author">Toni Rauma</span>
+<span class="comment-date">2012-05-13 23:23</span>
+<div class="comment-body" id="comment-body-290">I think it's a server related problem cause it seems to work on this demo site. Any suggestions how to get rid of it?  <img src="../components/com_jcomments/images/smilies/confused.gif" alt=":-?">  <br><br>Here's an URL: http://www.sivutuote.com/sivut/metsa/</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(290); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(290,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(290); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-290">
+		<div class="even" id="comment-item-291">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-291">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(291, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(291, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-291" id="comment-291">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-05-13 23:52</span>
+<div class="comment-body" id="comment-body-291">Hi Toni,<br><br>Just went to your site. Did a view source. Think the only difference between your page and my page (kksou.com) is in your header, in which yours is lang="fi-fi".<br><br>Can you try setting the lang to other settings, such as utf-8? This will allow you to see if it's the problem with the language setting.<br><br>Interesting, I did a view source for some Finnish language websites e.g. <br>http://www.gps-waypoints.net/gps/?language=fi<br>http://www.infopankki.fi/en-gb/finnish_language/<br><br>Both did not have the setting lang="fi-fi".<br><br>Instead, one has: <br>content="text/html;charset=ISO-8859-1"<br>The other has: content="text/html;charset=UTF-8"<br><br>So would suggest you do some testing with the content and lang settings and see if your web pages display correctly, and the weather information returned by google also displayed correctly.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(291); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(291,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(291); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-292">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-292">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(292, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(292, -1);return false;"></a>
+<span class="vote-good">+4</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-292" id="comment-292">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-05-13 23:57</span>
+<div class="comment-body" id="comment-body-292">Hi Toni ,<br><br>By the way, just for your info, while the google weather information can be in many different languages, Google only allows you to enter the city name in English. Yes, English only.<br><br>It's Google. They set the rule. So there's nothing much we can do about this...<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(292); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(292,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(292); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+	</div>
+	</div>
+		<div class="even" id="comment-item-288">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-288">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(288, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(288, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-288" id="comment-288">#</a>
+<span class="comment-author">broken link</span>
+<span class="comment-date">2012-05-13 13:57</span>
+<div class="comment-body" id="comment-body-288">Joomla 1.5.x: mod_kksouGoogleWeather_v1.57.zip<br>broken link. doesnt end.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(288); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(288,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(288); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-288">
+		<div class="odd" id="comment-item-289">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-289">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(289, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(289, -1);return false;"></a>
+<span class="vote-good">+1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-289" id="comment-289">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-05-13 17:48</span>
+<div class="comment-body" id="comment-body-289">Hi,<br><br>Just tested the download link. It works fine.<br><br>For your convenience, have emailed a copy of the module to you.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(289); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(289,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(289); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-538">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-538">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(538, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(538, -1);return false;"></a>
+<span class="vote-poor">-2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-538" id="comment-538">#</a>
+<span class="comment-author">guest2012</span>
+<span class="comment-date">2012-08-16 11:29</span>
+<div class="comment-body" id="comment-body-538">In your demo: Warning: simplexml_load_string() [function.simplexml-load-string]: in /home/fann/kksou.com/t1510/modules/mod_googleWeath<span style="font-size:0;padding:0;margin:0;"> </span>er/mod_kksouGoogleWeather_libclass.php on line 26 any advise on how to fix?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(538); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(538,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(538); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-538">
+		<div class="odd" id="comment-item-539">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-539">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(539, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(539, -1);return false;"></a>
+<span class="vote-poor">-2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-539" id="comment-539">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-08-17 01:31</span>
+<div class="comment-body" id="comment-body-539">Hi,<br><br>This usually means there's no result returned from the Google Weather server.<br><br>Which city are you trying to search? Does this happen to every city?<br><br>Sometimes it could be just that the Google Weather server is not running.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(539); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(539,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(539); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-547">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-547">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(547, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(547, -1);return false;"></a>
+<span class="vote-good">+2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-547" id="comment-547">#</a>
+<span class="comment-author">Jeroen</span>
+<span class="comment-date">2012-08-28 08:08</span>
+<div class="comment-body" id="comment-body-547">Hello Kksou,<br><br>At the moment, it's down completly.<br>The errors you are having atm, are the same as mine.<br><br>Can you fix it if possible?<br><br>Jeroen</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(547); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(547,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(547); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-547">
+		<div class="odd" id="comment-item-548">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-548">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(548, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(548, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-548" id="comment-548">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-08-28 08:22</span>
+<div class="comment-body" id="comment-body-548">Hi Jeroen,<br><br>Google has stopped its Google Weather API service entirely since August 7th!<br><br>For more information, please refer to the following article:<br>http://www.kksou.com/php-gtk2/Joomla-News/Google-has-stopped-its-Google-Weather-API.php<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(548); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(548,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(548); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-554">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-554">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(554, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(554, -1);return false;"></a>
+<span class="vote-poor">-2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-554" id="comment-554">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-08-29 10:38</span>
+<div class="comment-body" id="comment-body-554">Hi Jeroen,<br><br>Please refer to the article: The new Google Weather module<br>http://www.kksou.com/php-gtk2/Joomla-News/The-new-Google-Weather-module.php<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(554); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(554,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(554); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-563">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-563">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(563, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(563, -1);return false;"></a>
+<span class="vote-poor">-4</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-563" id="comment-563">#</a>
+<span class="comment-author">Branko</span>
+<span class="comment-date">2012-09-02 09:32</span>
+<div class="comment-body" id="comment-body-563">Hi Kksou,<br><br>I am using Croatian language.<br>Sunday and Monday are using english abbreviation (sun, mon) while tuesday and wednesday are using proper croatian abbreviation (uto, sri).<br><br>Regards,<br>Branko</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(563); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(563,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(563); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-563">
+		<div class="even" id="comment-item-565">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-565">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(565, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(565, -1);return false;"></a>
+<span class="vote-poor">-4</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-565" id="comment-565">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-09-02 21:50</span>
+<div class="comment-body" id="comment-body-565">Hi Branko,<br><br>Thanks for the feedback.<br><br>All weather info, including the translations, are direct from wunderground.com, not from within the Jooomla module.<br><br>You might want to feedback this direct to wunderground.com so that they can make the improvement.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(565); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(565,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(565); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-567">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-567">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(567, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(567, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-567" id="comment-567">#</a>
+<span class="comment-author">Olasunkanmi</span>
+<span class="comment-date">2012-09-04 05:10</span>
+<div class="comment-body" id="comment-body-567">Please, on the website, we have 2 cities for lagos and i want to use it in the module.please we need to developer to fix this issue about multiple cities(Lagos, Nigeria).</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(567); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(567,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(567); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-568">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-568">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(568, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(568, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-568" id="comment-568">#</a>
+<span class="comment-author">Jordi Caralt</span>
+<span class="comment-date">2012-09-04 08:00</span>
+<div class="comment-body" id="comment-body-568">Could I get the URLs from where this modules retrieves all data? My hosting provider seems to be a bit lost configuring FW rules</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(568); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(568,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(568); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-569">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-569">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(569, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(569, -1);return false;"></a>
+<span class="vote-poor">-3</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-569" id="comment-569">#</a>
+<span class="comment-author">Olasunkanmi</span>
+<span class="comment-date">2012-09-04 09:56</span>
+<div class="comment-body" id="comment-body-569">here's the Link http://http://eventsinnigeria.com/<br>scroll down and you'll see multiple city(Lagos, Nigeria) whereas city like Ibadan, Nigeria and Ilorin, Nigeria are being updated..what can be done??</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(569); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(569,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(569); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-570">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-570">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(570, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(570, -1);return false;"></a>
+<span class="vote-good">+3</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-570" id="comment-570">#</a>
+<span class="comment-author">Olasunkanmi</span>
+<span class="comment-date">2012-09-04 09:58</span>
+<div class="comment-body" id="comment-body-570">The same problem applies on wunderground's website !<br>when the search form is active and you type lagos, nigeria, it brings out 2 results..that's where the problem comes from !</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(570); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(570,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(570); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-573">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-573">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(573, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(573, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-573" id="comment-573">#</a>
+<span class="comment-author">Lasco</span>
+<span class="comment-date">2012-09-04 23:17</span>
+<div class="comment-body" id="comment-body-573">I had the weather extention on alot of websites, but ofcourse this no longer work. I saw in some of the discussions the reason was that Google Weather Api is no longer operational, but that the extention now works with Wunderground.com.<br>However, how do I now my my extentions workable again? I did try to download the extention again, thinking it was updated to now work with wunderground but it's <br>clearly still the 'old' extention? HOw do I go about making it work again?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(573); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(573,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(573); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-573">
+		<div class="even" id="comment-item-594">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-594">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(594, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(594, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-594" id="comment-594">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-09-17 08:49</span>
+<div class="comment-body" id="comment-body-594">Hi,<br><br>On surface, the googleWeather module looks the same. At the backend, it now retrieves the weather info from wunderground.com instead of google.com.<br><br>All you need to do is to uninstall the previous version of googleWeather and then install the latest version.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(594); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(594,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(594); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-586">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-586">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(586, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(586, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-586" id="comment-586">#</a>
+<span class="comment-author">Rodolphe</span>
+<span class="comment-date">2012-09-13 06:29</span>
+<div class="comment-body" id="comment-body-586">hi,<br>There is a mistake with the japanese language : sunday is ??? and not ??.<br>Can you fix it? How can i do it by myself?<br>thanks!</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(586); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(586,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(586); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-586">
+		<div class="even" id="comment-item-591">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-591">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(591, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(591, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-591" id="comment-591">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-09-17 08:41</span>
+<div class="comment-body" id="comment-body-591">Hi,<br><br>The entire weather info is returned by wunderground.com. You may want to contact wunderground.com directly to tell them that the translation is wrong.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(591); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(591,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(591); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-590">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-590">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(590, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(590, -1);return false;"></a>
+<span class="vote-poor">-3</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-590" id="comment-590">#</a>
+<span class="comment-author">Eranda</span>
+<span class="comment-date">2012-09-16 22:41</span>
+<div class="comment-body" id="comment-body-590"> <img src="../components/com_jcomments/images/smilies/smile.gif" alt=":-)"> <br>Thanks Man!</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(590); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(590,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(590); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-612">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-612">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(612, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(612, -1);return false;"></a>
+<span class="vote-good">+2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-612" id="comment-612">#</a>
+<span class="comment-author">straka</span>
+<span class="comment-date">2012-09-21 01:36</span>
+<div class="comment-body" id="comment-body-612">Hi, <br>kksou weather module is the best Joomla weather module. Unfortunately important difference between previous Google version and this wunderground version is that this version is free only if the module on the site calls to wunderground.com less then 500 times per day or 10 calls per min. Otherwise API is disabled and module is out of order to the rest of the day.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(612); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(612,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(612); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-612">
+		<div class="odd" id="comment-item-613">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-613">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(613, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(613, -1);return false;"></a>
+<span class="vote-good">+1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-613" id="comment-613">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-09-21 01:56</span>
+<div class="comment-body" id="comment-body-613">Hi,<br><br>Glad to know that you find it useful.<br><br>Yes, I'm fully aware of the 500 calls limit per day. I'm currently improving on the module to cache the weather result so that it will only make a call, say once every 15 minutes to stay within the limit.<br><br>It's almost done and I'm in the midst of testing to make sure that everything's working fine. Should be able to roll out the new version by this weekend.<br><br>Will let you know once it's released, ok?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(613); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(613,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(613); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-623">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-623">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(623, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(623, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-623" id="comment-623">#</a>
+<span class="comment-author">SeanMS</span>
+<span class="comment-date">2012-09-25 04:36</span>
+<div class="comment-body" id="comment-body-623">Hello!<br><br>I followed the instructions, but when I endabled the module, the site does not load at all - just a blank screen. When I diabled the module, the site works again. Any idea? thank you</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(623); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(623,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(623); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-623">
+		<div class="odd" id="comment-item-624">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-624">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(624, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(624, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-624" id="comment-624">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-09-25 05:46</span>
+<div class="comment-body" id="comment-body-624">Hi,<br><br>Any other clues you can give?<br><br>Looks like conflict with your other modules, plugins or even the Joomla template. Without any other info, it's really difficult to infer anything.<br><br>The only surest way to try if it's a conflict is to install a fresh copy of Joomla somewhere on your server, then install only the module (using the standard Joomla template). This will allow you to see if the module works at all on your machine.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(624); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(624,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(624); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-625">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-625">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(625, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(625, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-625" id="comment-625">#</a>
+<span class="comment-author">SeanMS</span>
+<span class="comment-date">2012-09-25 06:01</span>
+<div class="comment-body" id="comment-body-625">thanks for the quick reply - <br>here is system info, and I downloaded 1.58 of your weather:<br><br>PHP Built on: 	Linux js1.joomlaservices.ca 2.6.18-194.el5 #1 SMP Fri Apr 2 14:58:14 EDT 2010 x86_64<br>Database Version: 	5.1.63-cll<br>Database Collation: 	utf8_general_ci<br>PHP Version: 	5.2.17<br>Web Server: 	Apache<br>Web Server to PHP interface: 	cgi<br>Joomla! Version: 	Joomla! 1.5.15 Stable [ Wojmamni Ama Mamni ] 05-November-2009 04:00 GMT<br>User Agent: 	Mozilla/5.0 (Windows NT 6.1; rv:15.0) Gecko/20100101 Firefox/15.0.1</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(625); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(625,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(625); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-708">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-708">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(708, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(708, -1);return false;"></a>
+<span class="vote-poor">-4</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-708" id="comment-708">#</a>
+<span class="comment-author">Branko</span>
+<span class="comment-date">2012-11-02 02:11</span>
+<div class="comment-body" id="comment-body-708">After upgrade to 2.59 (from 2.58) I am getting the following error:<br><br>Warning: require_once(/includes/defines.php) [function.require-once]: failed to open stream: No such file or directory in /home/udica/public_html/modules/mod_kksouGoogleWea<span style="font-size:0;padding:0;margin:0;"> </span>ther/mod_kksouGoogleWeather_setup.php on line 17<br><br>Fatal error: require_once() [function.require]: Failed opening required '/includes/defines.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/udica/public_html/modules/mod_kksouGoogleWea<span style="font-size:0;padding:0;margin:0;"> </span>ther/mod_kksouGoogleWeather_setup.php on line 17<br><br>Regards,<br>Branko</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(708); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(708,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(708); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-708">
+		<div class="even" id="comment-item-710">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-710">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(710, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(710, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-710" id="comment-710">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-11-02 08:16</span>
+<div class="comment-body" id="comment-body-710">Hi Branko,<br><br>Do not have enough clues based on the information you've provided to know what's the cause of the problem.<br><br>In the meantime, this is what you can do:<br>1) Edit the file: /home/udica/public_html/modules/mod_kksouGoogle Weather/mod_kksouGoogle Weather_setup.php<br><br>2) In Line 15, you will see:<br>$includes = $joomla_root.DS.'includes';<br><br>3) Just before this line, add this:<br>$joomla_root = '/home/udica/public_html';<br><br>Save the file and see if it works now.<br><br>By right, $joomla_root should be automatically set in the program. But seems like it's not working properly. So what (3) does above is to set the path to the joomla_root manually.<br><br>Let me know if it works, ok?<br><br>Regards,<br>/kkosu</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(710); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(710,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(710); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-716">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-716">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(716, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(716, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-716" id="comment-716">#</a>
+<span class="comment-author">Camaleon</span>
+<span class="comment-date">2012-11-08 04:59</span>
+<div class="comment-body" id="comment-body-716">Hi,<br>If I specify the city "Ayamonte, Spain" in your web it does display the weather forecast, however in my website it just displays "There was no response from the weather server."<br>Admin mode displays:<br>> city NOT FOUND in cache<br>> number of calls = 460<br>> retrieve fresh data from server<br><br>using Joomla! 1.5.26, therefore mod_kksouGoogleWeather_v1.59 version.<br><br>Any idea? Thanks!</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(716); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(716,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(716); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-733">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-733">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(733, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(733, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-733" id="comment-733">#</a>
+<span class="comment-author">Branko</span>
+<span class="comment-date">2012-11-20 00:39</span>
+<div class="comment-body" id="comment-body-733"><span class="quote">Quote:</span><blockquote><div><br>$includes = $joomla_root.DS.'includes';<br><br>3) Just before this line, add this:<br>$joomla_root = '/home/udica/public_html';<br><br>Save the file and see if it works now.<br><br>By right, $joomla_root should be automatically set in the program. But seems like it's not working properly. So what (3) does above is to set the path to the joomla_root manually.<br><br>Let me know if it works, ok?<br><br>Regards,<br>/kkosu</div></blockquote>Hi,<br>I haven't replied before because I am not sure why it is working now.<br>I changed it as you said but it did not help so I reverted file to original one and it works since then :)<br><br>Regards,<br>Branko</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(733); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(733,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(733); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-794">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-794">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(794, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(794, -1);return false;"></a>
+<span class="vote-good">+3</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-794" id="comment-794">#</a>
+<span class="comment-author">Mikerr3</span>
+<span class="comment-date">2012-12-22 08:21</span>
+<div class="comment-body" id="comment-body-794">I want to call different cities. The old google plugin was {weather 07465} {weather 12500} How do I call multiple cities with new module?<br><br>Thanks.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(794); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(794,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(794); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-829">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-829">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(829, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(829, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-829" id="comment-829">#</a>
+<span class="comment-author">Aaron Toth</span>
+<span class="comment-date">2013-01-14 06:38</span>
+<div class="comment-body" id="comment-body-829">Where can we contact the team for support questions? I do not want to leave an error message here.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(829); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(829,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(829); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-829">
+		<div class="odd" id="comment-item-830">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-830">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(830, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(830, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-830" id="comment-830">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-01-14 07:01</span>
+<div class="comment-body" id="comment-body-830">Hi,<br><br>You can send via the feedback form.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(830); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(830,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(830); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-941">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-941">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(941, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(941, -1);return false;"></a>
+<span class="vote-poor">-2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-941" id="comment-941">#</a>
+<span class="comment-author">Apesz</span>
+<span class="comment-date">2013-04-09 00:46</span>
+<div class="comment-body" id="comment-body-941">Hello,<br><br>I need help. <br>I downloaded and installed mod_kksouGoogleWeather 1.5.9 modul (on Joomla 1.5.26), but it does not work correctly for me.<br>it just displays "There was no response from the weather server."<br><br>If admin mode is set on, it displays:<br>> city NOT FOUND in cache<br>> number of calls = 260<br>> retrieve fresh data from server<br>"There was no response from the weather server."<br><br>- cURL enabled (cURL Information: libcurl/7.21.0 GnuTLS/2.8.6 zlib/1.2.3.4 libidn/1.15)<br>- I have registered in wunderground.com for API Key and set in the modul configuration (www.annabar.hu).<br>- I tried more than one city and zip code, but the same result<br><br>Please give me some advise, why modul not working? What is the problem?<br><br>Thanks<br>Apesz</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(941); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(941,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(941); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-941">
+		<div class="odd" id="comment-item-942">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-942">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(942, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(942, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-942" id="comment-942">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-04-09 01:12</span>
+<div class="comment-body" id="comment-body-942">Hi Apesz,<br><br>What is the city and zip code that you've tried?<br><br>Can you try "San Francisco, CA" and let me know if it works?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(942); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(942,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(942); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-943">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-943">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(943, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(943, -1);return false;"></a>
+<span class="vote-poor">-2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-943" id="comment-943">#</a>
+<span class="comment-author">Apesz</span>
+<span class="comment-date">2013-04-09 06:24</span>
+<div class="comment-body" id="comment-body-943">Hi kksou,<br><br>I tried the following locations, don't work none of them<br>San Francisco, CA<br>Budapest, HU<br>Rome, IT<br>Amsterdam, NL<br><br>I enabled the input field of modul, so you can test it (www.annabar.hu - left colum: Weather report modul)</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(943); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(943,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(943); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-943">
+		<div class="odd" id="comment-item-946">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-946">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(946, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(946, -1);return false;"></a>
+<span class="vote-good">+1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-946" id="comment-946">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-04-09 09:15</span>
+<div class="comment-body" id="comment-body-946">Hi Apesz,<br><br>Have just emailed you.<br><br>Let me know if it works, ok?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(946); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(946,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(946); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-944">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-944">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(944, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(944, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-944" id="comment-944">#</a>
+<span class="comment-author">Guillaume Trempe</span>
+<span class="comment-date">2013-04-09 09:07</span>
+<div class="comment-body" id="comment-body-944">module not working<br><br>I have create a module and put it on the left and it never stop searching<br><br>I have php5 and curl on my server<br><br>I am using NANO template from yootheme<br>nonumber component like advance module management and module anywhere etc ...<br><br>but for that test I am only put my module on the left (side-b) of the template<br><br>I am testing with San Francisco, CA<br><br>help me please and I will buy the 10$ remove created by license<br><br>thx</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(944); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(944,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(944); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-945">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-945">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(945, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(945, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-945" id="comment-945">#</a>
+<span class="comment-author">Guillaume Trempe</span>
+<span class="comment-date">2013-04-09 09:08</span>
+<div class="comment-body" id="comment-body-945"><span class="quote">Quoting Guillaume Trempe:</span><blockquote><div>module not working<br><br>I have create a module and put it on the left and it never stop searching<br><br>I have php5 and curl on my server<br><br>I am using NANO template from yootheme<br>nonumber component like advance module management and module anywhere etc ...<br><br>but for that test I am only put my module on the left (side-b) of the template<br><br>I am testing with San Francisco, CA<br><br>help me please and I will buy the 10$ remove created by license<br><br>thx</div></blockquote><br><br>here is the url of my test website<br><br>http://www.domainederouville.com/dev/</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(945); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(945,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(945); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-945">
+		<div class="even" id="comment-item-947">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-947">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(947, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(947, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-947" id="comment-947">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-04-09 09:15</span>
+<div class="comment-body" id="comment-body-947">Hi Guillaume,<br><br>Have just emailed you.<br><br>Let me know if it works, ok?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(947); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(947,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(947); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-948">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-948">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(948, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(948, -1);return false;"></a>
+<span class="vote-good">+2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-948" id="comment-948">#</a>
+<span class="comment-author">Guillaume Trempe</span>
+<span class="comment-date">2013-04-09 09:39</span>
+<div class="comment-body" id="comment-body-948"><span class="quote">Quoting kksou:</span><blockquote><div>Hi Guillaume,<br><br>Have just emailed you.<br><br>Let me know if it works, ok?<br><br>Regards,<br>/kksou</div></blockquote><br><br>non not working ... module still searching</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(948); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(948,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(948); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-948">
+		<div class="even" id="comment-item-949">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-949">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(949, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(949, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-949" id="comment-949">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-04-09 09:41</span>
+<div class="comment-body" id="comment-body-949">Which Joomla version are you using?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(949); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(949,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(949); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-950">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-950">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(950, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(950, -1);return false;"></a>
+<span class="vote-poor">-2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-950" id="comment-950">#</a>
+<span class="comment-author">Guillaume Trempe</span>
+<span class="comment-date">2013-04-09 09:42</span>
+<div class="comment-body" id="comment-body-950"><span class="quote">Quoting kksou:</span><blockquote><div>Which Joomla version are you using?<br><br>Regards,<br>/kksou</div></blockquote><br><br>Joomla! 2.5.9</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(950); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(950,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(950); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-954">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-954">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(954, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(954, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-954" id="comment-954">#</a>
+<span class="comment-author">Okram</span>
+<span class="comment-date">2013-04-10 12:31</span>
+<div class="comment-body" id="comment-body-954">Hi, <br><br>just installed latest Version to Joomla 3.0.3. Get a missing file failure:<br><br>Warning: require_once(xxxx/xxxx/modules/mod_kksouGoogleWeat<span style="font-size:0;padding:0;margin:0;"> </span>herDShelper.php) [function.require-once]: failed to open stream: No such file or directory in /xxxx/xxxx/modules/mod_kksouGoogleWeather/mod_kkso<span style="font-size:0;padding:0;margin:0;"> </span>uGoogleWeather.php on line 16<br><br>Fatal error: require_once() [function.require]: Failed opening required '/xxxx/xxxx/modules/mod_kksouGoogleWeatherDShelper<span style="font-size:0;padding:0;margin:0;"> </span>.php' (include_path='.:/usr/local/lib/php') in /xxxx/xxxx/webseiten/maasholm_303/modules/mod_kkso<span style="font-size:0;padding:0;margin:0;"> </span>uGoogleWeather/mod_kksouGoogleWeather.php on line 16<br><br>File's not in the modules directory! What to do?<br><br>Regards,<br>Marko</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(954); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(954,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(954); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-954">
+		<div class="odd" id="comment-item-956">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-956">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(956, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(956, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-956" id="comment-956">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-04-10 18:28</span>
+<div class="comment-body" id="comment-body-956">Hi Marko,<br><br>That's really strange. Joomla defines DS by dfault to '/' or '\' depending on which OS you are running.<br><br>I'm running this module on one of my other sites running Joomla 3.0.3 and it's ok.<br><br>In any case, here's what you can do:<br><br>1) Go to your [Joomla_root_folder]/modules/mod_kksouGoogleWeather<br><br>2) Edit the file: mod_kksouGoogleWeather.php<br><br>3) Go to line 14. You should see<br>defined('_JEXEC') or die('Restricted access');<br>require_once (dirname(__FILE__).DS.'helper.php');<br><br>4) Please add one more line to define DS just before the require_once so that it becomes:<br><br>defined('_JEXEC') or die('Restricted access');<br>if (!defined('DS')) define( 'DS', '/' );<br><br>require_once (dirname(__FILE__).DS.'helper.php');<br><br>4) Save and close the file.<br><br>Now reload the page.<br><br>Please let me know if it's working now.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(956); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(956,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(956); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-957">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-957">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(957, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(957, -1);return false;"></a>
+<span class="vote-good">+1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-957" id="comment-957">#</a>
+<span class="comment-author">Okram</span>
+<span class="comment-date">2013-04-11 12:11</span>
+<div class="comment-body" id="comment-body-957">Hi,<br><br>thanks for the support. That little snipped did the trick! Now things are working on my server.<br><br>Another thing that seems strange to me, is that no language code works. Tried de, fr and zh-cn, what should change?<br><br>Greetz, <br>Marko</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(957); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(957,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(957); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-957">
+		<div class="odd" id="comment-item-959">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-959">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(959, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(959, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-959" id="comment-959">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-04-12 00:46</span>
+<div class="comment-body" id="comment-body-959">Hi Marko,<br><br>The language "seems" to be not working because of the cache.<br><br>I added a built-in cache because wunderground.com allows only 500 requests per day, which is about 10 requests per hour (note: each weather search requires 2 requests - one to get the current weather info, and the other to get the weather forecast for the following 4 days.)<br><br>The default time for cache is 60 min - i.e. if any users search for the same city within 60 min, it will retrieve the value from the cache.<br><br>To see whether the language works, you can change the cache time to 1 min temporarily. Change the language setting and reload the page after 1 min. You should be able to see the new weather info in the new language.<br><br>By the way, wunderground.com uses a different language code than the standard ISO. <a href="http://www.wunderground.com/weather/api/d/docs?d=language-support" rel="external nofollow" target="_blank">The language code setting is here</a>.<br><br>Please give it a try and let me know if it works. Don't forget to change the cache time back to 60 min after you see that the language works. Otherwise you will use up the 500 requests very fast.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(959); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(959,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(959); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-1183">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1183">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1183, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1183, -1);return false;"></a>
+<span class="vote-poor">-3</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-1183" id="comment-1183">#</a>
+<span class="comment-author">Shabnam</span>
+<span class="comment-date">2013-10-01 04:47</span>
+<div class="comment-body" id="comment-body-1183">I have joined your rss feed and look forward to seeking more of your fantastic post. Clippinh factory india</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1183); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1183,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1183); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-1184">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1184">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1184, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1184, -1);return false;"></a>
+<span class="vote-poor">-4</span>
+	</span>
+</span>
+<a class="comment-anchor" href="kksou-google-weather-module.php.html#comment-1184" id="comment-1184">#</a>
+<span class="comment-author">Shabnam</span>
+<span class="comment-date">2013-10-01 04:48</span>
+<div class="comment-body" id="comment-body-1184">I am so grateful for your blog article.Really looking forward to read more. Really Cool.http://www.clippingfactoryindia.com/</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1184); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1184,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1184); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+</div>
+<div id="comments-list-footer"><a class="refresh" href="#" title="Refresh comments list" onclick="jcomments.showPage(1751,'com_content',0);return false;">Refresh comments list</a><br><a class="rss" href="../jcomments/rss/com_content/1751.php.xml" title="RSS feed for comments to this post" target="_blank">RSS feed for comments to this post</a></div>
+</div>
+<h4>Add comment</h4>
+<a id="addcomments" href="#addcomments"></a>
+<form id="comments-form" name="comments-form" action="javascript:void(null);">
+<p>
+	<span>
+		<input id="comments-form-name" type="text" name="name" value="" maxlength="20" size="22" tabindex="1">
+		<label for="comments-form-name">Name (required)</label>
+	</span>
+</p>
+<p>
+	<span>
+		<input id="comments-form-email" type="text" name="email" value="" size="22" tabindex="2">
+		<label for="comments-form-email">E-mail (required, but will not display)</label>
+	</span>
+</p>
+<p>
+	<span>
+		<textarea id="comments-form-comment" name="comment" cols="65" rows="8" tabindex="5"></textarea>
+	</span>
+</p>
+<p>
+	<span>
+		<input class="checkbox" id="comments-form-subscribe" type="checkbox" name="subscribe" value="1" tabindex="5">
+		<label for="comments-form-subscribe">Notify me of follow-up comments</label><br>
+	</span>
+</p>
+<p>
+	<span>
+		<img class="captcha" onclick="jcomments.clear('captcha');" id="comments-form-captcha-image" src="../jcomments/captcha.php-58.jpeg?ac=68605" width="121" height="60" alt="Security code"><br>
+		<span class="captcha" onclick="jcomments.clear('captcha');">Refresh</span><br>
+		<input class="captcha" id="comments-form-captcha" type="text" name="captcha_refid" value="" size="5" tabindex="6"><br>
+	</span>
+</p>
+<div id="comments-form-buttons">
+	<div class="btn" id="comments-form-send"><div><a href="#" tabindex="7" onclick="jcomments.saveComment();return false;" title="Send (Ctrl+Enter)">Send</a></div></div>
+	<div class="btn" id="comments-form-cancel" style="display:none;"><div><a href="#" tabindex="8" onclick="return false;" title="Cancel">Cancel</a></div></div>
+	<div style="clear:both;"></div>
+</div>
+<div>
+	<input type="hidden" name="object_id" value="1751">
+	<input type="hidden" name="object_group" value="com_content">
+</div>
+</form>
+<script type="text/javascript">
+<!--
+function JCommentsInitializeForm()
+{
+	var jcEditor = new JCommentsEditor('comments-form-comment', true);
+	jcEditor.initSmiles('/php-gtk2/components/com_jcomments/images/smilies/');
+	jcEditor.addSmile(':D','laugh.gif');
+	jcEditor.addSmile(':lol:','lol.gif');
+	jcEditor.addSmile(':-)','smile.gif');
+	jcEditor.addSmile(';-)','wink.gif');
+	jcEditor.addSmile('8)','cool.gif');
+	jcEditor.addSmile(':-|','normal.gif');
+	jcEditor.addSmile(':-*','whistling.gif');
+	jcEditor.addSmile(':oops:','redface.gif');
+	jcEditor.addSmile(':sad:','sad.gif');
+	jcEditor.addSmile(':cry:','cry.gif');
+	jcEditor.addSmile(':o','surprised.gif');
+	jcEditor.addSmile(':-?','confused.gif');
+	jcEditor.addSmile(':-x','sick.gif');
+	jcEditor.addSmile(':eek:','shocked.gif');
+	jcEditor.addSmile(':zzz','sleeping.gif');
+	jcEditor.addSmile(':P','tongue.gif');
+	jcEditor.addSmile(':roll:','rolleyes.gif');
+	jcEditor.addSmile(':sigh:','unsure.gif');
+	jcEditor.addCounter(1000, '', ' symbols left', 'counter');
+	jcomments.setForm(new JCommentsForm('comments-form', jcEditor));
+}
+
+if (window.addEventListener) {window.addEventListener('load',JCommentsInitializeForm,false);}
+else if (document.addEventListener){document.addEventListener('load',JCommentsInitializeForm,false);}
+else if (window.attachEvent){window.attachEvent('onload',JCommentsInitializeForm);}
+else {if (typeof window.onload=='function'){var oldload=window.onload;window.onload=function(){oldload();JCommentsInitializeForm();}} else window.onload=JCommentsInitializeForm;} 
+//-->
+</script>
+<div id="comments-footer" align="center"><a href="http://www.joomlatune.com" title="JComments" target="_blank">JComments</a></div>
+<script type="text/javascript">
+<!--
+jcomments.setAntiCache(1,0,0);
+//-->
+</script> 
+</div></div>
+	</main>
+		
+	<!-- //MAIN CONTENT -->				</div>
+												<div id="sidebar-2" class="sidebar zg-col zg-col-3  " role="complementary">
+					
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+					<div class="zen-module-title">
+						<h3><span>Latest Comments</span><h3>
+					</h3></h3></div>
+							
+				<div class="zen-module-body">
+					<ul class="jcomments-latest">
+	
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">16.05.2019 15:18</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Patrick, I developed this plugin initially so that I can place a map on my website easily. I thought ...								<p class="jcomments-latest-readmore">
+					<a href="googleMaps-plugin.php.html#comment-2184">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">Patrick</span>
+						<span class="date">13.05.2019 17:29</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi there, will it be possible to just show a link to the popup map? I don't want to show the map on my ...								<p class="jcomments-latest-readmore">
+					<a href="googleMaps-plugin.php.html#comment-2180">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							DirectPHP plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">21.04.2019 16:05</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Mark, Sorry for the late reply. Recently there has been a huge influx of spam posts, and your post ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla/directphp-plugin.php.html#comment-2166">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							DirectPHP plugin					</h4>
+		
+		
+				<span class="author">Mark Hobbs</span>
+						<span class="date">08.04.2019 17:16</span>
+		
+		<div class="comment rounded ">
+					<div>
+				I've used DirectPHP for a few years... it's beautifully simple and convenient. I recently decided to ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla/directphp-plugin.php.html#comment-2160">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleDirections - To Here - plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">23.03.2019 09:35</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Greg, 1) First, make sure you have entered the Google Maps API key. You can apply it here ...								<p class="jcomments-latest-readmore">
+					<a href="googleDirections-To-Here-plugin.php.html#comment-2146">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleDirections - To Here - plugin					</h4>
+		
+		
+				<span class="author">GREG</span>
+						<span class="date">22.03.2019 22:04</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi, I have installed all 3 plugins and when i enter my current location i get the error Google cannot ...								<p class="jcomments-latest-readmore">
+					<a href="googleDirections-To-Here-plugin.php.html#comment-2145">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">15.01.2019 00:06</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Christian, Yes, you're right. For this plugin, you can show multiple KML files in a web page (using ...								<p class="jcomments-latest-readmore">
+					<a href="googleMaps-plugin.php.html#comment-2094">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">Christian Teuber</span>
+						<span class="date">14.01.2019 16:30</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Can you point me to the sample map, I see only maps with one kml file on one map. I want to show 2 ...								<p class="jcomments-latest-readmore">
+					<a href="googleMaps-plugin.php.html#comment-2093">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							New version of DirectPHP - support for PHP 7					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">14.01.2019 14:51</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Björn, Thanks for your support over so many years! I'm not running php 7.1, and I do not currently ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla-news/new-version-of-directphp-support-for-php-7.php.html#comment-2091">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">14.01.2019 14:44</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Christian, I have a sample page here with many KML files on it: googleMaps plugin Tutorial 05: KML ...								<p class="jcomments-latest-readmore">
+					<a href="googleMaps-plugin.php.html#comment-2090">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+			</li>
+		</ul>
+
+				</div>
+			</div>
+		</div>
+	
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+					<div class="zen-module-title">
+						<h3><span>kksou Weather</span><h3>
+					</h3></h3></div>
+							
+				<div class="zen-module-body">
+					<script type="text/javascript">
+var headID = document.getElementsByTagName("head")[0];
+var cssNode = document.createElement('link');
+cssNode.type = 'text/css';
+cssNode.rel = 'stylesheet';
+cssNode.href = 'https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather.css';
+cssNode.media = 'screen';
+headID.appendChild(cssNode);
+</script><script type="text/javascript">
+//var mod_id = "301";
+var gw_lib_url301="https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather_lib.php";
+var gw_progress_gif301="https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather_progress.gif";
+var joomla_root301='|_%$var|_%$www|_%$kksou.com|_%$public_html|_%$php-gtk2';
+var label_city301="City";
+var popup_city301="Please enter zip code, state (in US) or city name, country (for other countries)";
+var popup_deg_F301="Click here to convert to degree F";
+var popup_deg_C301="Click here to convert to degree C";
+var size_city301="20";
+var hide_input301="0";
+var lang301="en";
+var googleweather_unit301="US";
+var default_location301="San Francisco, CA";
+var googleweather_use_curl301="1";
+var request_interval301="3";
+var hide_humidity301="0";
+var hide_wind301="0";
+var hide_forecast301="0";
+var focus_on_city301="0";
+var api_key301="90d34681236de382";
+var default_country301="";
+var label_humidity301="Humidity: ";
+var refresh_time301="60";
+var admin_mode301="0";
+var joomla_ver301="3.0";
+</script><script type="text/javascript" src="../modules/mod_kksouweather/mod_kksouWeather_ajax.js"></script><div id="googleWeather_container301"><form action="index.php" method="get" id="WeatherForm301"><div class="googleWeather"><span class="input_label">City: </span><input name="gw_a" id="str_gw_a301" class="inputbox" maxlength="255" size="20" value="" title="">&nbsp;<span id="gw_loading301"></span><br><input type="hidden" name="a_org" id="str_gw_a_org301" class="inputbox" value=""><div align="left" style="padding-top:2px;"><p align="left" style="padding:0 0 0 0;margin:0 0 0 0"><a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Weather-AJAX-version.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p></div><input type="hidden" name="process" value="1"><input type="hidden" name="temp_unit" id="temp_unit301" value="US"><input type="hidden" name="option" value="com_content"><input type="hidden" name="task" value=""><input type="hidden" name="id" value="1751"><input type="hidden" name="sectionid" value=""><input type="hidden" name="catid" value="30"><input type="hidden" name="Itemid" value="427"></div></form></div><script type="text/javascript">
+
+if (window.jQuery) {
+jQuery(document).ready(function() {
+	gw_prepareForm('301');
+	gw_submitform('301', 1);
+});
+} else {
+	gw_prepareForm('301');
+	gw_submitform('301', 1);
+}
+
+</script>
+				</div>
+			</div>
+		</div>
+	
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					<p>It's not that difficult to learn <a href="http://www.greengeeks.com/website-transfer/" title="how to transfer a website" target="_blank">how to transfer a website</a>.</p>				</div>
+			</div>
+		</div>
+	
+				</div>
+							</div>
+		</div>
+	</div>
+	
+		
+</section>	    	
+	    		    	
+	    	
+	    	
+	    	
+			
+			
+			
+			
+<!-- FOOTER -->
+<footer id="footerwrap" class="wrap zen-footer stack-tablets stack-phones" role="contentinfo">
+  <section class="zen-copyright">
+    <div class="zen-container">
+      <div class="zen-row">
+        	<div class="zg-col zg-col-9">
+	          
+
+<ul id="zen-menu-119">
+<li class="item-382"><a href="../index.php.html?option=com_googlesearch_cse&amp;view=googlesearchs&amp;Itemid=382&amp;lang=en">
+				Google Search			</a>
+	</li><li class="item-447"><a href="http://logistics-innovations.org/">Logistics Innovations</a></li><li class="item-456"><a href="https://www.rpa-sg.org/">RPA</a></li><li class="item-455"><a href="../category/joomla-version-history/index.htm">
+				Joomla Version History			</a>
+	</li><li class="item-457"><a href="https://ask.rpa-sg.org/">RPA Community Forum</a></li></ul>
+
+<div class="custom">
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-700099-1', 'auto');
+  ga('send', 'pageview');
+
+</script></div>
+
+        	</div>
+        	<div class="zg-col zg-col-3">
+        		<div id="zen-copyright">
+        			
+        			        				Copyright © 2005-2015. kksou.com. All Rights Reserved         		</div>
+        	</div>
+      	</div>
+	</div>
+  </section>
+</footer>
+<!-- //FOOTER -->			
+			
+
+
+			
+		</div>	
+	
+		
+
+	<div class="social-wrap fixed">
+
+		
+		
+
+		
+		
+<a id="social-twitter123" href="https://twitter.com/kksou" target="_blank">
+			<span class="zen-animate fadeInRightBig animated-faster fa fa-twitter zen-icon zen-icon-twitter"></span>
+	</a>
+
+	<script>
+		jQuery(document).ready(function ($) {
+			// Twitter Link Constructor
+			var twitter_link = $('#social-twitter').attr('href');
+
+			// Get title on page
+			// Made it broad for anumber of use cases but will retrieve h1 or h2 if not available
+			var title = $('#midCol h1:first').text();
+
+				if(typeof title ==="undefined") {
+					description = $('h2:first').text();
+				}
+
+			twitter_link += title;
+
+			$('#social-twitter').attr('href', twitter_link);
+		});
+	</script>
+
+		 	</div>
+	<script>
+		jQuery(document).ready(function ($) {
+
+			$('.popup').live( 'click', function(){
+				newwindow=window.open($(this).attr('href'),'','height=200,width=450');
+			    if (window.focus) {newwindow.focus()}
+			    return false;
+			 });
+		});
+	</script>
+		
+		
+<div class="sb-slidebar off-canvas-right sb-width-wide">
+	<div class="off-canvas-inner">
+		<div class="off-canvas-heading">
+			<span class="sb-close"><span class="zen-icon-remove zen-icon fa fa-icon-remove"></span></span>
+		</div>
+		<div class="off-canvas-body">
+			<div id="off-canvas-menu"><ul></ul></div>
+			
+		</div>
+	</div>
+</div>
+  
+ 
+ 
+<script>
+	
+	jQuery(document).ready(function($) {
+			
+			
+			
+				// Append nav if required
+				$('body').append_nav('787');	
+						
+				$(window).resize(function() {
+					$('body').append_nav('787');			
+				});
+			
+			 						
+				 		$('#off-canvas-menu').zenaccordion({
+				 		
+				 							 				 openfirst: true,
+				 				 				 				 selector: '.off-canvas-body',
+				 				 openicon: 'plus',
+				 				 closeicon: 'minus',
+				 				 type:"panel"
+				 		});
+			 			
+			 				
+			 
+			
+			
+			
+			$.slidebars();
+		});
+
+</script>
+ 		
+				
+		
+	<script>
+		jQuery(document).ready(function($){
+			$("img").not(".none").lazyload({
+				effect : "fadeIn"
+		});
+	});
+	</script>
+
+
+
+
+
+<div id="toTop" class="hidden-phone"><a id="toTopLink"><span class="fa fa-icon-arrow-up zen-icon zen-icon-arrow-up"></span><span id="toTopText"> Back to top</span></a></div>
+<script>
+	jQuery(document).ready(function($){
+			
+			$(window).scroll(function () {
+			
+				if ($(this).scrollTop() >200) {
+				 	$("#toTop").fadeIn();
+				}
+				else {
+				 	$("#toTop").fadeOut();
+				}
+			});
+		
+			$("#toTop").click(function() {
+				$("html, body").animate({ scrollTop: 0 }, "slow");
+				 return false;
+			});
+	});
+</script>
+
+
+
+
+
+<script>
+jQuery(document).ready(function($){
+	
+	
+	$('.sidebar').zenaccordion({
+	
+		  		 openfirst: true,
+  		   		 type:"panel"
+ 	});
+ 	
+
+});
+</script>
+
+
+
+
+
+
+
+<script>
+jQuery(document).ready(function($){
+	
+	var win      = $(window),
+	    fxel     = $('#navwrap'),
+	    fill     = $('#sticky-fill'),
+	    navheight = $('#menu').height(),
+	    eloffset = fxel.offset().top;
+	 
+	    $(fill).height(navheight);
+
+	win.scroll(function() {
+	    if (eloffset < win.scrollTop()) {
+	        fxel.addClass("fixed");
+	        $('html').addClass("fixed");
+	        $(fill).addClass('visible').removeClass('hidden');
+	    } else {
+	        fxel.removeClass("fixed");
+	        $('html').removeClass("fixed");
+	        $(fill).removeClass('visible').addClass('hidden');
+	    }
+	});
+});
+</script>
+
+
+
+
+
+	<script>
+	 new WOW().init();
+	</script>
+
+
+
+
+<!-- Fonts -->
+
+		
+			
+	</body>
+<!-- Copied from https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php by Cyotek WebCopy 1.7.0.600, 14 Tháng Sáu 2019, 04:23:30 -->
+</html>

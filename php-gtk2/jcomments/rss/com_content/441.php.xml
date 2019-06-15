@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>384. How to setup and process toggle buttons - Part 1?</title>
+		<description>Discuss 384. How to setup and process toggle buttons - Part 1?</description>
+		<link>https://kksou.com/php-gtk2/sample-codes/setup-and-process-toggle-buttons-Part-1.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 08:05:41 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/441.php" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>

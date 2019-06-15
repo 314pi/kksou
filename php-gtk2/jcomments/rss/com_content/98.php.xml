@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>043. How to set a button as default action when user press Enter?</title>
+		<description>Discuss 043. How to set a button as default action when user press Enter?</description>
+		<link>https://kksou.com/php-gtk2/Sample-Codes/0043.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:36:34 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/98.php" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>

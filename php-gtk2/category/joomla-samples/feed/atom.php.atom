@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="en-gb">
+	<title type="text">Home</title>
+	<subtitle type="text">The Joy of Sharing and Learning Together</subtitle>
+	<link rel="alternate" type="text/html" href="https://kksou.com"/>
+	<id>https://kksou.com/php-gtk2/category/joomla-samples/feed/atom.php</id>
+	<updated>2019-06-14T08:51:05+00:00</updated>
+	<author>
+		<name>kksou</name>
+		<email>admin@kksou.com</email>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="https://kksou.com/php-gtk2/category/joomla-samples/feed/atom.php"/>
+	<entry>
+		<title>Yahoo Stock Quote module sample</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla-samples/Yahoo-Stock-Quote-module-sample.php"/>
+		<published>2010-04-10T15:24:07+00:00</published>
+		<updated>2010-04-10T15:24:07+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla-samples/Yahoo-Stock-Quote-module-sample.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;p&gt;This article shows the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Stock-Quote-AJAX-version.php&quot; target=&quot;_blank&quot;&gt;Yahoo Stock Quote module&lt;/a&gt; in action.&lt;/p&gt;
+&lt;p&gt;Please enter some symbols on the left delimited by comma e.g.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GOOG, MSFT, YHOO&lt;/li&gt;
+&lt;li&gt;^NYA,^IXIC,^N225&lt;/li&gt;
+&lt;/ul&gt;
+</summary>
+		<content type="html">&lt;p&gt;This article shows the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Stock-Quote-AJAX-version.php&quot; target=&quot;_blank&quot;&gt;Yahoo Stock Quote module&lt;/a&gt; in action.&lt;/p&gt;
+&lt;p&gt;Please enter some symbols on the left delimited by comma e.g.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GOOG, MSFT, YHOO&lt;/li&gt;
+&lt;li&gt;^NYA,^IXIC,^N225&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<category term="Joomla samples" />
+	</entry>
+	<entry>
+		<title>Side Bar Menu Apple style - sample</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla-samples/Side-Bar-Menu-Apple-style-sample.php"/>
+		<published>2008-10-13T15:48:40+00:00</published>
+		<updated>2008-10-13T15:48:40+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla-samples/Side-Bar-Menu-Apple-style-sample.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;p&gt;This page shows the &quot;Side Bar Menu Apple style module&quot; live in action.&lt;/p&gt;
+</summary>
+		<content type="html">&lt;p&gt;This page shows the &quot;Side Bar Menu Apple style module&quot; live in action.&lt;/p&gt;
+</content>
+		<category term="Joomla samples" />
+	</entry>
+	<entry>
+		<title>Accordion Menu Apple style module - sample</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla-samples/Accordion-Menu-Apple-style-module-sample.php"/>
+		<published>2008-10-07T16:29:20+00:00</published>
+		<updated>2008-10-07T16:29:20+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla-samples/Accordion-Menu-Apple-style-module-sample.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;p&gt;This page shows the &amp;quot;Accordion Menu Apple style module&amp;quot; live in action.&lt;/p&gt;  &lt;p&gt;The menu is exactly the same as that in &lt;a href=&quot;https://kksou.com/php-gtk2/Joomla/Accordion-Menu-Apple-style.php&quot;&gt;this page&lt;/a&gt;, except now the menu appears in a module position on the left.&lt;/p&gt;  &lt;p&gt;Download the &lt;a href=&quot;https://kksou.com/php-gtk2/Joomla/Accordion-Menu-Apple-style-module.php#download&quot;&gt;Accordion Menu Apple style module here&lt;/a&gt;.&lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt;This page shows the &amp;quot;Accordion Menu Apple style module&amp;quot; live in action.&lt;/p&gt;  &lt;p&gt;The menu is exactly the same as that in &lt;a href=&quot;https://kksou.com/php-gtk2/Joomla/Accordion-Menu-Apple-style.php&quot;&gt;this page&lt;/a&gt;, except now the menu appears in a module position on the left.&lt;/p&gt;  &lt;p&gt;Download the &lt;a href=&quot;https://kksou.com/php-gtk2/Joomla/Accordion-Menu-Apple-style-module.php#download&quot;&gt;Accordion Menu Apple style module here&lt;/a&gt;.&lt;/p&gt;</content>
+		<category term="Joomla samples" />
+	</entry>
+	<entry>
+		<title>Accordion Menu Apple style - variation 2</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla-samples/Accordion-Menu-Apple-style-variation-2.php"/>
+		<published>2008-10-07T01:20:59+00:00</published>
+		<updated>2008-10-07T01:20:59+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla-samples/Accordion-Menu-Apple-style-variation-2.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;p&gt;This is variation 2 of the Accordion Menu Apple style by changing the css file.&lt;/p&gt;
+
+{Accordion_Menu_Apple_style 100 float:right16 revealtype:mouseover css:AccordionMenuApplestyle_v2.css}
+Test1
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test11 1&quot;&gt;test1.1&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test12&quot;&gt;test1.2&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test13 1&quot;&gt;test1.3&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test14 1&quot;&gt;test1.4&lt;/a&gt;
+
+Test2
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test21&quot;&gt;test2.1&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test22&quot;&gt;test2.2&lt;/a&gt;
+
+&lt;a href=&quot;http://www.kksou.com&quot;&gt;Test3&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test31&quot;&gt;test3.1&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test32&quot;&gt;test3.2&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test33&quot;&gt;test3.3&lt;/a&gt;
+
+{/Accordion_Menu_Apple_style} 
+
+&lt;a id=&quot;highlights&quot;&gt;
+&lt;h3&gt;Highlights&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Level 2 menus are now preceded by a star.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;Level 2 menus are now in Times New Roman italics.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/ul&gt;</summary>
+		<content type="html">&lt;p&gt;This is variation 2 of the Accordion Menu Apple style by changing the css file.&lt;/p&gt;
+
+{Accordion_Menu_Apple_style 100 float:right16 revealtype:mouseover css:AccordionMenuApplestyle_v2.css}
+Test1
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test11 1&quot;&gt;test1.1&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test12&quot;&gt;test1.2&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test13 1&quot;&gt;test1.3&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test14 1&quot;&gt;test1.4&lt;/a&gt;
+
+Test2
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test21&quot;&gt;test2.1&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test22&quot;&gt;test2.2&lt;/a&gt;
+
+&lt;a href=&quot;http://www.kksou.com&quot;&gt;Test3&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test31&quot;&gt;test3.1&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test32&quot;&gt;test3.2&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test33&quot;&gt;test3.3&lt;/a&gt;
+
+{/Accordion_Menu_Apple_style} 
+
+&lt;a id=&quot;highlights&quot;&gt;
+&lt;h3&gt;Highlights&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Level 2 menus are now preceded by a star.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;Level 2 menus are now in Times New Roman italics.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/ul&gt;</content>
+		<category term="Joomla samples" />
+	</entry>
+	<entry>
+		<title>Accordion Menu Apple style - module variation 2</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla-samples/Accordion-Menu-Apple-style-module-variation-2.php"/>
+		<published>2008-10-07T01:20:59+00:00</published>
+		<updated>2008-10-07T01:20:59+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla-samples/Accordion-Menu-Apple-style-module-variation-2.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;p&gt;This page shows the &quot;Accordion Menu Apple style module&quot; live in action.&lt;/p&gt;
+
+&lt;p&gt;The menu is exactly the same as that of &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-samples/Accordion-Menu-Apple-style-variation-2.php&quot;&gt;Accordion Menu Apple style - variation 2&lt;/a&gt;, except now the menu appears in a module position on the left.&lt;/p&gt;
+
+&lt;p&gt;Download the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/Accordion-Menu-Apple-style-module.php#download&quot;&gt;Accordion Menu Apple style module here&lt;/a&gt;.&lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt;This page shows the &quot;Accordion Menu Apple style module&quot; live in action.&lt;/p&gt;
+
+&lt;p&gt;The menu is exactly the same as that of &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-samples/Accordion-Menu-Apple-style-variation-2.php&quot;&gt;Accordion Menu Apple style - variation 2&lt;/a&gt;, except now the menu appears in a module position on the left.&lt;/p&gt;
+
+&lt;p&gt;Download the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/Accordion-Menu-Apple-style-module.php#download&quot;&gt;Accordion Menu Apple style module here&lt;/a&gt;.&lt;/p&gt;</content>
+		<category term="Joomla samples" />
+	</entry>
+	<entry>
+		<title>Accordion Menu Apple style - variation 1</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla-samples/Accordion-Menu-Apple-style-variation-1.php"/>
+		<published>2008-10-07T00:41:14+00:00</published>
+		<updated>2008-10-07T00:41:14+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla-samples/Accordion-Menu-Apple-style-variation-1.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;p&gt;This is variation 1 of the Accordion Menu Apple style by changing the css file.&lt;/p&gt;
+
+{Accordion_Menu_Apple_style 100 float:right16 revealtype:mouseover css:AccordionMenuApplestyle_v1.css}
+Test1
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test11 1&quot;&gt;test1.1&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test12&quot;&gt;test1.2&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test13 1&quot;&gt;test1.3&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test14 1&quot;&gt;test1.4&lt;/a&gt;
+
+Test2
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test21&quot;&gt;test2.1&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test22&quot;&gt;test2.2&lt;/a&gt;
+
+&lt;a href=&quot;http://www.kksou.com&quot;&gt;Test3&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test31&quot;&gt;test3.1&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test32&quot;&gt;test3.2&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test33&quot;&gt;test3.3&lt;/a&gt;
+
+{/Accordion_Menu_Apple_style} 
+
+&lt;a id=&quot;highlights&quot;&gt;
+&lt;h3&gt;Highlights&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;No colored background bar for level 1 menus.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;Level 1 menus are now preceded by a triangle.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/ul&gt;</summary>
+		<content type="html">&lt;p&gt;This is variation 1 of the Accordion Menu Apple style by changing the css file.&lt;/p&gt;
+
+{Accordion_Menu_Apple_style 100 float:right16 revealtype:mouseover css:AccordionMenuApplestyle_v1.css}
+Test1
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test11 1&quot;&gt;test1.1&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test12&quot;&gt;test1.2&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test13 1&quot;&gt;test1.3&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test14 1&quot;&gt;test1.4&lt;/a&gt;
+
+Test2
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test21&quot;&gt;test2.1&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test22&quot;&gt;test2.2&lt;/a&gt;
+
+&lt;a href=&quot;http://www.kksou.com&quot;&gt;Test3&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test31&quot;&gt;test3.1&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test32&quot;&gt;test3.2&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#test33&quot;&gt;test3.3&lt;/a&gt;
+
+{/Accordion_Menu_Apple_style} 
+
+&lt;a id=&quot;highlights&quot;&gt;
+&lt;h3&gt;Highlights&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;No colored background bar for level 1 menus.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;Level 1 menus are now preceded by a triangle.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/ul&gt;</content>
+		<category term="Joomla samples" />
+	</entry>
+	<entry>
+		<title>Accordion Menu Apple style - module variation 1</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla-samples/Accordion-Menu-Apple-style-module-variation-1.php"/>
+		<published>2008-10-07T00:41:14+00:00</published>
+		<updated>2008-10-07T00:41:14+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla-samples/Accordion-Menu-Apple-style-module-variation-1.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;p&gt;This page shows the &quot;Accordion Menu Apple style module&quot; live in action.&lt;/p&gt;
+
+&lt;p&gt;The menu is exactly the same as that of &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-samples/Accordion-Menu-Apple-style-variation-1.php&quot;&gt;Accordion Menu Apple style - variation 1&lt;/a&gt;, except now the menu appears in a module position on the left.&lt;/p&gt;
+
+&lt;p&gt;Note that the only modification I've made in the css file is to comment the following line so that it doesn't draw a border around the menu:&lt;/p&gt;
+
+&lt;pre&gt;
+/*border: 1px solid #9A9A9A;*/
+&lt;/pre&gt;
+
+&lt;p&gt;Download the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/Accordion-Menu-Apple-style-module.php#download&quot;&gt;Accordion Menu Apple style module here&lt;/a&gt;.&lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt;This page shows the &quot;Accordion Menu Apple style module&quot; live in action.&lt;/p&gt;
+
+&lt;p&gt;The menu is exactly the same as that of &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-samples/Accordion-Menu-Apple-style-variation-1.php&quot;&gt;Accordion Menu Apple style - variation 1&lt;/a&gt;, except now the menu appears in a module position on the left.&lt;/p&gt;
+
+&lt;p&gt;Note that the only modification I've made in the css file is to comment the following line so that it doesn't draw a border around the menu:&lt;/p&gt;
+
+&lt;pre&gt;
+/*border: 1px solid #9A9A9A;*/
+&lt;/pre&gt;
+
+&lt;p&gt;Download the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/Accordion-Menu-Apple-style-module.php#download&quot;&gt;Accordion Menu Apple style module here&lt;/a&gt;.&lt;/p&gt;</content>
+		<category term="Joomla samples" />
+	</entry>
+	<entry>
+		<title>Yahoo Stock Quote in content item - sample 2</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla-samples/Yahoo-Stock-Quote-in-content-item-sample-2.php"/>
+		<published>2008-09-06T17:40:01+00:00</published>
+		<updated>2008-09-06T17:40:01+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla-samples/Yahoo-Stock-Quote-in-content-item-sample-2.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">You can include the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Stock-Quote-AJAX-version.php&quot;&gt;Yahoo Stock Quote module&lt;/a&gt; in an article or content item as shown below.
+
+&lt;h3&gt;Yahoo Stock Quote&lt;/h3&gt;
+&lt;p&gt;The following uses Layout style 2 which lists each symbol data by row.&lt;/p&gt;
+&lt;p&gt;Note: The auto refresh in this example has not been turned on. This is to prevent overloading the yahoo server when there are too many users running this example all at the same time.&lt;/p&gt;
+&lt;br clear=all&gt;
+&lt;div&gt;
+{mosloadposition joomla03_2}
+&lt;/div&gt;</summary>
+		<content type="html">You can include the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Stock-Quote-AJAX-version.php&quot;&gt;Yahoo Stock Quote module&lt;/a&gt; in an article or content item as shown below.
+
+&lt;h3&gt;Yahoo Stock Quote&lt;/h3&gt;
+&lt;p&gt;The following uses Layout style 2 which lists each symbol data by row.&lt;/p&gt;
+&lt;p&gt;Note: The auto refresh in this example has not been turned on. This is to prevent overloading the yahoo server when there are too many users running this example all at the same time.&lt;/p&gt;
+&lt;br clear=all&gt;
+&lt;div&gt;
+{mosloadposition joomla03_2}
+&lt;/div&gt;</content>
+		<category term="Joomla samples" />
+	</entry>
+	<entry>
+		<title>Yahoo Stock Quote in content item - sample 1</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla-samples/Yahoo-Stock-Quote-in-content-item-sample-1.php"/>
+		<published>2008-09-06T17:25:49+00:00</published>
+		<updated>2008-09-06T17:25:49+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla-samples/Yahoo-Stock-Quote-in-content-item-sample-1.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">You can include the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Stock-Quote-AJAX-version.php&quot;&gt;Yahoo Stock Quote module&lt;/a&gt; in an article or content item as shown below.
+
+&lt;h3&gt;Yahoo Stock Quote&lt;/h3&gt;
+&lt;p&gt;The following uses Layout style 1 which lists each symbol data by column.&lt;/p&gt;
+&lt;p&gt;Note: The auto refresh in this example has not been turned on. This is to prevent overloading the yahoo server when there are too many users running this example all at the same time.&lt;/p&gt;
+&lt;div&gt;
+{mosloadposition joomla03_1}
+&lt;/div&gt;</summary>
+		<content type="html">You can include the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Stock-Quote-AJAX-version.php&quot;&gt;Yahoo Stock Quote module&lt;/a&gt; in an article or content item as shown below.
+
+&lt;h3&gt;Yahoo Stock Quote&lt;/h3&gt;
+&lt;p&gt;The following uses Layout style 1 which lists each symbol data by column.&lt;/p&gt;
+&lt;p&gt;Note: The auto refresh in this example has not been turned on. This is to prevent overloading the yahoo server when there are too many users running this example all at the same time.&lt;/p&gt;
+&lt;div&gt;
+{mosloadposition joomla03_1}
+&lt;/div&gt;</content>
+		<category term="Joomla samples" />
+	</entry>
+	<entry>
+		<title>Yahoo Currency Converter in content item - sample 3</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla-samples/Yahoo-Currency-Converter-in-content-item-sample-3.php"/>
+		<published>2008-08-28T23:40:29+00:00</published>
+		<updated>2008-08-28T23:40:29+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla-samples/Yahoo-Currency-Converter-in-content-item-sample-3.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">You can include the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Currency-Converter-AJAX-version.php&quot;&gt;Yahoo Currency Converter module&lt;/a&gt; in an article or content item as shown below.
+
+&lt;br clear=all&gt;
+
+&lt;h3&gt;Yahoo Currency Converter&lt;/h3&gt;
+&lt;p&gt;The following uses Layout style 3 - everything shows in one line.&lt;/p&gt;
+&lt;div&gt;
+{mosloadposition joomla02_3}
+&lt;/div&gt;</summary>
+		<content type="html">You can include the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Currency-Converter-AJAX-version.php&quot;&gt;Yahoo Currency Converter module&lt;/a&gt; in an article or content item as shown below.
+
+&lt;br clear=all&gt;
+
+&lt;h3&gt;Yahoo Currency Converter&lt;/h3&gt;
+&lt;p&gt;The following uses Layout style 3 - everything shows in one line.&lt;/p&gt;
+&lt;div&gt;
+{mosloadposition joomla02_3}
+&lt;/div&gt;</content>
+		<category term="Joomla samples" />
+	</entry>
+	<entry>
+		<title>Yahoo Currency Converter in content item - sample 2</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla-samples/Yahoo-Currency-Converter-in-content-item-sample-2.php"/>
+		<published>2008-08-28T23:40:06+00:00</published>
+		<updated>2008-08-28T23:40:06+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla-samples/Yahoo-Currency-Converter-in-content-item-sample-2.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">You can include the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Currency-Converter-AJAX-version.php&quot;&gt;Yahoo Currency Converter module&lt;/a&gt; in an article or content item as shown below:
+
+&lt;h3&gt;Yahoo Currency Converter&lt;/h3&gt;
+&lt;p&gt;The following uses Layout style 2 - which is the same as that used in &lt;a href=&quot;http://finance.google.com/finance?q=CURRENCY%3AUSD&quot;&gt;Google Finance&lt;/a&gt;.&lt;/p&gt;
+&lt;div&gt;
+{mosloadposition joomla02_2}
+&lt;/div&gt;</summary>
+		<content type="html">You can include the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Currency-Converter-AJAX-version.php&quot;&gt;Yahoo Currency Converter module&lt;/a&gt; in an article or content item as shown below:
+
+&lt;h3&gt;Yahoo Currency Converter&lt;/h3&gt;
+&lt;p&gt;The following uses Layout style 2 - which is the same as that used in &lt;a href=&quot;http://finance.google.com/finance?q=CURRENCY%3AUSD&quot;&gt;Google Finance&lt;/a&gt;.&lt;/p&gt;
+&lt;div&gt;
+{mosloadposition joomla02_2}
+&lt;/div&gt;</content>
+		<category term="Joomla samples" />
+	</entry>
+	<entry>
+		<title>Yahoo Currency Converter in content item - sample 1</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla-samples/Yahoo-Currency-Converter-in-content-item-sample-1.php"/>
+		<published>2008-08-28T23:39:43+00:00</published>
+		<updated>2008-08-28T23:39:43+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla-samples/Yahoo-Currency-Converter-in-content-item-sample-1.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">You can include the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Currency-Converter-AJAX-version.php&quot;&gt;Yahoo Currency Converter module&lt;/a&gt; in an article or content item as shown below.
+
+&lt;h3&gt;Yahoo Currency Converter&lt;/h3&gt;
+&lt;p&gt;The following uses Layout style 1.&lt;/p&gt;
+&lt;div&gt;
+{mosloadposition joomla02_1}
+&lt;/div&gt;</summary>
+		<content type="html">You can include the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Currency-Converter-AJAX-version.php&quot;&gt;Yahoo Currency Converter module&lt;/a&gt; in an article or content item as shown below.
+
+&lt;h3&gt;Yahoo Currency Converter&lt;/h3&gt;
+&lt;p&gt;The following uses Layout style 1.&lt;/p&gt;
+&lt;div&gt;
+{mosloadposition joomla02_1}
+&lt;/div&gt;</content>
+		<category term="Joomla samples" />
+	</entry>
+	<entry>
+		<title>Google Currency Converter in content item - sample 3</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla-samples/Google-Currency-Converter-in-content-item-sample-3.php"/>
+		<published>2008-08-28T04:05:30+00:00</published>
+		<updated>2008-08-28T04:05:30+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla-samples/Google-Currency-Converter-in-content-item-sample-3.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">You can include the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php&quot;&gt;Google Currency Converter module&lt;/a&gt; in an article or content item as shown below.
+
+&lt;br clear=all&gt;
+
+&lt;h3&gt;Google Currency Converter&lt;/h3&gt;
+&lt;p&gt;The following uses Layout style 3 - everything shows in one line.&lt;/p&gt;
+&lt;div&gt;
+{mosloadposition joomla01_3}
+&lt;/div&gt;</summary>
+		<content type="html">You can include the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php&quot;&gt;Google Currency Converter module&lt;/a&gt; in an article or content item as shown below.
+
+&lt;br clear=all&gt;
+
+&lt;h3&gt;Google Currency Converter&lt;/h3&gt;
+&lt;p&gt;The following uses Layout style 3 - everything shows in one line.&lt;/p&gt;
+&lt;div&gt;
+{mosloadposition joomla01_3}
+&lt;/div&gt;</content>
+		<category term="Joomla samples" />
+	</entry>
+	<entry>
+		<title>Google Currency Converter in content item - sample 2</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla-samples/Google-Currency-Converter-in-content-item-sample-2.php"/>
+		<published>2008-08-28T03:50:43+00:00</published>
+		<updated>2008-08-28T03:50:43+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla-samples/Google-Currency-Converter-in-content-item-sample-2.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">You can include the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php&quot;&gt;Google Currency Converter module&lt;/a&gt; in an article or content item as shown below:
+
+&lt;h3&gt;Google Currency Converter&lt;/h3&gt;
+&lt;p&gt;The following uses Layout style 2 - which is the same as that used in &lt;a href=&quot;http://finance.google.com/finance?q=CURRENCY%3AUSD&quot;&gt;Google Finance&lt;/a&gt;.&lt;/p&gt;
+&lt;div&gt;
+{mosloadposition joomla01_2}
+&lt;/div&gt;</summary>
+		<content type="html">You can include the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php&quot;&gt;Google Currency Converter module&lt;/a&gt; in an article or content item as shown below:
+
+&lt;h3&gt;Google Currency Converter&lt;/h3&gt;
+&lt;p&gt;The following uses Layout style 2 - which is the same as that used in &lt;a href=&quot;http://finance.google.com/finance?q=CURRENCY%3AUSD&quot;&gt;Google Finance&lt;/a&gt;.&lt;/p&gt;
+&lt;div&gt;
+{mosloadposition joomla01_2}
+&lt;/div&gt;</content>
+		<category term="Joomla samples" />
+	</entry>
+	<entry>
+		<title>Google Currency Converter in content item - sample 1</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla-samples/Google-Currency-Converter-in-content-item-sample-1.php"/>
+		<published>2008-08-22T17:20:09+00:00</published>
+		<updated>2008-08-22T17:20:09+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla-samples/Google-Currency-Converter-in-content-item-sample-1.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">You can include the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php&quot;&gt;Google Currency Converter module&lt;/a&gt; in an article or content item as shown below.
+
+&lt;h3&gt;Google Currency Converter&lt;/h3&gt;
+&lt;p&gt;The following uses Layout style 1.&lt;/p&gt;
+&lt;div&gt;
+{mosloadposition joomla01_1}
+&lt;/div&gt;</summary>
+		<content type="html">You can include the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php&quot;&gt;Google Currency Converter module&lt;/a&gt; in an article or content item as shown below.
+
+&lt;h3&gt;Google Currency Converter&lt;/h3&gt;
+&lt;p&gt;The following uses Layout style 1.&lt;/p&gt;
+&lt;div&gt;
+{mosloadposition joomla01_1}
+&lt;/div&gt;</content>
+		<category term="Joomla samples" />
+	</entry>
+</feed>

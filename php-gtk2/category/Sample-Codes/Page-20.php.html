@@ -1,0 +1,1088 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr" class="com_content view-category itemid-425 j39 responsive-enabled offcanvas-menu">
+<!-- Copied from https://kksou.com/php-gtk2/category/sample-codes/Page-20.php by Cyotek WebCopy 1.7.0.600, 14 Tháng Sáu 2019, 04:23:30 -->
+<head>
+  <link rel="prev" href="Page-19.php.html">
+  <link rel="next" href="Page-21.php.html">
+		
+
+			<meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=yes">
+		<meta name="HandheldFriendly" content="true">
+	<meta name="apple-mobile-web-app-capable" content="YES">
+	<base href="https://kksou.com/php-gtk2/category/sample-codes/Page-20.php">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="description" content="The Joy of Sharing and Learning Together">
+	<title>Sample Codes | category | Page 20</title>
+	<link href="feed/rss.php.rss" rel="alternate" type="application/rss+xml" title="RSS 2.0">
+	<link href="feed/atom.php.atom" rel="alternate" type="application/atom+xml" title="Atom 1.0">
+	<link href="../../templates/xero/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="../../components/com_jcomments/tpl/default/style.css?v=3002" rel="stylesheet" type="text/css">
+	<link href="/templates/xero/css-compiled/master-11597c3e8d7d7a43ddef0800b7379988.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300:latin|Open+Sans:600:latin|Droid+Serif" rel="stylesheet" type="text/css">
+	<link href="../../templates/xero/css/theme.flat.php.css" rel="stylesheet" type="text/css">
+	<link href="../../templates/xero/css/custom.css" rel="stylesheet" type="text/css">
+	<link href="../../media/mod_jcomments_latest/css/style.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+
+.article {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.article_desc {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	margin-bottom: 4px;
+}
+
+.article_views {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.infographic {
+   border:2px solid #aaaaaa;
+}
+
+tr.article_tr > td {
+   //padding-top: 2px;
+   padding-bottom: 6px;
+}
+
+
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"a69f99c67803647fdfcfef2f609cf22e","system.paths":{"root":"\/php-gtk2","base":"\/php-gtk2"}}</script>
+	<script src="../../media/jui/js/jquery.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../../media/jui/js/jquery-noconflict.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../../media/jui/js/jquery-migrate.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../../media/system/js/mootools-core.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../../media/system/js/core.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../../media/jui/js/bootstrap.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../../templates/xero/js/template-66.php" type="text/javascript"></script>
+	<script type="text/javascript">
+
+		var j2storeURL = 'https://kksou.com/php-gtk2/';
+		
+jQuery(document).ready(function(){
+
+	jQuery("a.linkstat").click(function(e) {
+		e.preventDefault(); // needed for safari 4.0.5
+
+		jQuery.post("/plugins/content/GetArticles/ajax-linkstat.php", {url: jQuery(this).attr('href'), id: jQuery(this).attr('id')}, function success(data) {
+			window.location = data; // needed for safari 4.0.5
+		});
+		return true;
+	});
+
+		jQuery("a.vote_up").click(function(){
+	//get the id
+	the_id = jQuery(this).attr('id');
+
+	// show the spinner
+	jQuery(this).parent().html("<img src='/plugins/content/GetArticles/images/spinner.gif' style='display:inline'/>");
+
+	//fadeout the vote-count
+	jQuery("span#votes_count"+the_id).fadeOut("fast");
+
+	//the main ajax request
+		jQuery.ajax({
+			type: "POST",
+			data: "action=vote_up&id="+jQuery(this).attr("id"),
+			url: "/plugins/content/GetArticles/votes.php",
+			success: function(msg){
+				jQuery("span#votes_count"+the_id).html(msg);
+				//fadein the vote count
+				jQuery("span#votes_count"+the_id).fadeIn();
+				//remove the spinner
+				jQuery("span#vote_buttons"+the_id).remove();
+			}
+		});
+	});
+
+});
+
+
+jQuery(function($){ initPopovers(); $("body").on("subform-row-add", initPopovers); function initPopovers (event, container) { $(container || document).find(".hasPopover").popover({"html": true,"trigger": "hover focus","container": "body"});} });
+	</script>
+
+			
+		
+<style type="text/css">
+			html > body {
+				font-family: 'Open Sans';
+				
+			}
+				h1, h2, h3, h4, h5, h6, blockquote {
+				font-family: 'Open Sans';
+			}
+		
+					#navwrap li a {
+					font-family: 'Open Sans';
+				}
+			
+					#logo h2 {
+					font-family: 'Droid Serif';
+				}
+		
+	</style>	</head>
+    <body>
+<!-- Facebook SDK -->
+<div id='fb-root'></div>
+<script type='text/javascript'>
+
+      // Load the SDK Asynchronously
+      (function(d){
+      var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+      js = d.createElement('script'); js.id = id; js.async = true;
+      js.src = '//connect.facebook.net/en_GB/all.js';
+      d.getElementsByTagName('head')[0].appendChild(js);
+    }(document));
+
+</script>
+<!-- End Facebook SDK -->
+
+		<!-- Required for Slidebar / Offcanvas implementation -->
+		<div id="zen-wrap">
+	
+	   			    	
+	    	<a id="home-link" name="home-link"></a>
+	  
+	    	
+	    	
+	    	
+	<section id="logowrap" class="clearfix stack-phones" role="banner">
+		<div class="zen-container">
+			<div class="zen-row">
+	<div class="zen-spotlight">
+	
+			
+						<div id="logo" class="zg-col zg-col-6">
+			
+							
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					
+
+<div class="custom">
+	<h2>kksou.com</h2>
+<p>Tutorials, Sample Codes and Tips & Techniques for developing<br>Joomla plugins, modules and components.</p>
+<p>Developer of <a href="http://www.kksou.com/php-gtk2/Joomla/DirectPHP-plugin.php">DirectPHP</a>, <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps</a> and <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php">googleSearch</a>.</p>
+<p>Yes, this is also <i>"The Place for PHP-GTK2 sample codes"</i>, since 2005.</p></div>
+				</div>
+			</div>
+		</div>
+	
+		
+						</div>
+		
+							
+						<div id="search" class="zg-col zg-col-6">
+			
+							
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					<!-- SiteSearch Google CSE --><form method="get" action="https://kksou.com/php-gtk2/index.php" id="mod_googleSearch_cse"><input type="hidden" name="option" value="com_googlesearch_cse"><input type="hidden" name="n" value="30"><input type="hidden" name="view" value="googlesearchs"><div class="search hidden-navcollapse"><input type="hidden" name="Itemid" value="382"><input type="hidden" name="cx" value="partner-pub-5032765168656743:ost4rr-en3s"><input type="hidden" name="cof" value="FORID:11"><input type="hidden" name="ie" value="ISO-8859-1"><input type="text" name="q" maxlength="255" value="" class="form-control hidden-navcollapse" size="20"><button class="button hidden-navcollapse btn btn-primary">Search</button></div></form><script type="text/javascript"><!--
+(function() {var f = document.getElementById('mod_googleSearch_cse');if (f && f.q) {var q = f.q;var b = function(){if (q.value == '') {q.style.color = '#AAAAAA';q.style.background = '#FFFFFF url(https://cse.google.com/coop/intl/en/images/google_custom_search_watermark.gif) left no-repeat';}};	var f = function() {q.style.color = '#000000';q.style.background = '#ffffff';};q.onfocus = f;q.onblur = b;b();}})();
+//-->
+</script>				</div>
+			</div>
+		</div>
+	
+		
+						</div>
+		
+						</div>
+</div>		</div>
+	</section>
+	    	
+	    	
+	<!-- NAVBAR HEADER -->
+	
+		<div id="sticky-fill" class="hidden"></div>
+		
+	<section id="navwrap" class="wrap ">
+		<div class="zen-container">
+			<div class="navbar-default zen-row">
+				<div class="zen-spotlight">
+						<div id="menu" class="zen-menu zen-menu-horizontal zen-menu-left zen-menu-fading">
+							<div class="navbar-header ">
+								<nav role="navigation">
+								<!-- NAVBAR MAIN -->
+																					
+													
+									
+
+<ul id="zen-menu-404">
+<li class="item-101"><a href="../../index.htm">
+		<span class="fa fa-home zen-icon-home zen-icon"></span>		Home			</a>
+	</li><li class="item-425 current active"><a href="index.htm">
+				Sample Codes			</a>
+	</li><li class="item-426 deeper parent"><a href="../Joomla/index.htm">
+				Joomla			</a>
+	<ul class="zen-menu-child cols-1"><li class="item-427"><a href="../Joomla-Gadgets/index.htm">
+				Joomla Gadgets			</a>
+	</li><li class="item-429"><a href="../Joomla-Tips-Techniques/index.htm">
+				Joomla Tips &amp; Techniques			</a>
+	</li><li class="item-430"><a href="../Joomla-News/index.htm">
+				Joomla News 			</a>
+	</li><li class="item-431"><a href="../Joomla-FAQs/index.htm">
+				Joomla FAQs			</a>
+	</li><li class="item-432"><a href="../Joomla-Developer-FAQs/index.htm">
+				Joomla Developer FAQs			</a>
+	</li></ul></li><li class="item-433"><a href="../../geocoder2.php.html">
+				Geocoder2			</a>
+	</li><li class="item-428"><a href="../../Feedback.php.html">
+				Feedback			</a>
+	</li></ul> 			
+ 	
+																				
+									<!-- //NAVBAR MAIN -->
+																			<a class="btn off-canvas-trigger sb-toggle-right visible-desktop"><span class="zen-icon zen-icon-bars"></span></a>
+																	</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	    	
+	    	
+	    	
+	    	
+	    	
+	    		
+
+
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
+<!-- MAIN CONTENT -->
+<section id="mainWrap" class="clearfix mr ">
+	<a id="main-link" name="main-link"></a>
+		<section id="breadcrumbwrap" class="clearfix">
+		<div class="zen-container">
+			<div class="zen-row">
+				<div class="zen-spotlight">
+				
+					<!-- Banner-slogan -->
+					<div id="breadcrumb" class="zg-col zg-col-12">
+						  
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					
+<ul class="breadcrumb zen-reset-list ">
+
+	<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../../index.htm" class="pathway" itemprop="url"><span itemprop="title">Home</span></a></li><li><span>Sample Codes</span></li></ul>				</div>
+			</div>
+		</div>
+	
+					</div>
+					<!-- //breadcrumb -->
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	
+		
+	<div class="zen-container">
+		<div class="zen-row">
+			<div class="mainwrap zen-spotlight">
+				<div id="midCol" class="zg-col zg-col-9 ">
+					
+					 
+
+			
+
+		<main role="main">
+		<div class="category-list">
+
+	<div class="content-category">
+													    
+    <div class="cat-items clearfix">
+      
+
+<form action="https://kksou.com/php-gtk2/category/sample-codes/Page-20.php" method="post" name="adminForm" id="adminForm" class="form-inline">
+		<fieldset class="filters btn-toolbar clearfix">
+							<div class="btn-group pull-right">
+				<label for="limit" class="element-invisible">
+					Display #				</label>
+				<select id="limit" name="limit" class="inputbox input-mini" size="1" onchange="this.form.submit()">
+	<option value="5">5</option>
+	<option value="10">10</option>
+	<option value="15">15</option>
+	<option value="20" selected="selected">20</option>
+	<option value="25">25</option>
+	<option value="30">30</option>
+	<option value="50">50</option>
+	<option value="100">100</option>
+	<option value="0">All</option>
+</select>
+			</div>
+		
+		<input type="hidden" name="filter_order" value="">
+		<input type="hidden" name="filter_order_Dir" value="">
+		<input type="hidden" name="limitstart" value="">
+		<input type="hidden" name="task" value="">
+	</fieldset>
+	
+	<table class="category table table-striped table-bordered table-hover">
+				<thead>
+			<tr>
+				<th id="categorylist_header_title">
+					<a href="#" onclick="Joomla.tableOrdering('a.title','asc','');return false;" class="hasPopover" title="Title" data-content="Select to sort by this column" data-placement="top">Title</a>				</th>
+																	<th id="categorylist_header_hits">
+						<a href="#" onclick="Joomla.tableOrdering('a.hits','asc','');return false;" class="hasPopover" title="Hits" data-content="Select to sort by this column" data-placement="top">Hits</a>					</th>
+											</tr>
+		</thead>
+				<tbody>
+											<tr class="cat-list-row0">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/create-a-round-button-Part-3.php.html">
+								381. How to create a round button - Part 3?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 12033							</span>
+						</td>
+														</tr>
+											<tr class="cat-list-row1">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/create-rollover-effect-for-buttons-Part-1.php.html">
+								382. How to create rollover effect for buttons - Part 1?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 6715							</span>
+						</td>
+														</tr>
+											<tr class="cat-list-row0">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/create-rollover-effect-for-buttons-Part-2.php.html">
+								383. How to create rollover effect for buttons - Part 2?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 5992							</span>
+						</td>
+														</tr>
+											<tr class="cat-list-row1">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/setup-and-process-toggle-buttons-Part-1.php.html">
+								384. How to setup and process toggle buttons - Part 1?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 6645							</span>
+						</td>
+														</tr>
+											<tr class="cat-list-row0">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/setup-and-process-toggle-buttons-Part-2.php.html">
+								385. How to setup and process toggle buttons - Part 2?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 5112							</span>
+						</td>
+														</tr>
+											<tr class="cat-list-row1">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/create-rollover-effect-for-checkboxes.php.html">
+								386. How to create rollover effect for checkboxes?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 6484							</span>
+						</td>
+														</tr>
+											<tr class="cat-list-row0">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/setup-radio-buttons-with-images-as-options-Part-1.php.html">
+								387. How to setup radio buttons with images as options - Part 1?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 9548							</span>
+						</td>
+														</tr>
+											<tr class="cat-list-row1">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/setup-radio-buttons-with-images-as-options-Part-2.php.html">
+								388. How to setup radio buttons with images as options - Part 2?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 7403							</span>
+						</td>
+														</tr>
+											<tr class="cat-list-row0">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/setup-checkboxes-with-images-as-options-Part-1.php.html">
+								389. How to setup checkboxes with images as options - Part 1?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 5774							</span>
+						</td>
+														</tr>
+											<tr class="cat-list-row1">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/setup-checkboxes-with-images-as-options-Part-2.php.html">
+								390. How to setup checkboxes with images as options - Part 2?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 5735							</span>
+						</td>
+														</tr>
+											<tr class="cat-list-row0">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/create-a-flashing-button-Part-1.php.html">
+								391. How to create a flashing button - Part 1?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 8104							</span>
+						</td>
+														</tr>
+											<tr class="cat-list-row1">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/create-a-flashing-button-Part-2.php.html">
+								392. How to create a flashing button - Part 2?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 6578							</span>
+						</td>
+														</tr>
+											<tr class="cat-list-row0">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/change-the-stock-image-of-a-button-on-the-fly-Part-1-stock-image-and-label.php.html">
+								393. How to change the stock image of a button on the fly - Part 1 - stock image and label?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 5279							</span>
+						</td>
+														</tr>
+											<tr class="cat-list-row1">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/change-the-stock-image-of-a-button-on-the-fly-Part-2-stock-image-only.php.html">
+								394. How to change the stock image of a button on the fly - Part 2 - stock image only?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 6236							</span>
+						</td>
+														</tr>
+											<tr class="cat-list-row0">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/change-the-font-of-menus-and-menuitems-Part-1.php.html">
+								395. How to change the font of menus and menuitems - Part 1?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 6161							</span>
+						</td>
+														</tr>
+											<tr class="cat-list-row1">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/change-the-font-of-menus-and-menuitems-Part-2.php.html">
+								396. How to change the font of menus and menuitems - Part 2?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 5919							</span>
+						</td>
+														</tr>
+											<tr class="cat-list-row0">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/interface-to-receipt-printer-in-a-point-of-sale-system.php.html">
+								397. How to interface to receipt printer in a point of sale system?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 42033							</span>
+						</td>
+														</tr>
+											<tr class="cat-list-row1">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/kick-open-the-cash-drawer-of-a-point-of-sale-system.php.html">
+								398. How to kick open the cash drawer of a point of sale system?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 41393							</span>
+						</td>
+														</tr>
+											<tr class="cat-list-row0">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/get-color-values-from-gtkcolorbutton-Method-2.php.html">
+								399. How to get color values from gtkcolorbutton - Method 2?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 9729							</span>
+						</td>
+														</tr>
+											<tr class="cat-list-row1">
+									<td headers="categorylist_header_title" class="list-title">
+													<a href="../../sample-codes/set-up-menu-items-with-background-colors.php.html">
+								400. How to set up menu items with background colors?							</a>
+																													</td>
+																					<td headers="categorylist_header_hits" class="list-hits">
+							<span class="badge badge-info">
+								Hits: 1726							</span>
+						</td>
+														</tr>
+					</tbody>
+	</table>
+
+
+		<div class="pagination">
+
+					<p class="counter pull-right">
+				Page 20 of 26			</p>
+		
+		<ul class="pagination"><li><a title="Start" href="index.htm">Start</a></li><li><a title="Prev" href="Page-19.php.html">Prev</a></li><li><a title="15" href="Page-15.php.html">15</a></li><li><a title="16" href="Page-16.php.html">16</a></li><li><a title="17" href="/php-gtk2/category/sample-codes/Page-17.php">17</a></li><li><a title="18" href="Page-18.php.html">18</a></li><li><a title="19" href="Page-19.php.html">19</a></li><li class="active"><a>20</a></li><li><a title="21" href="Page-21.php.html">21</a></li><li><a title="22" href="Page-22.php.html">22</a></li><li><a title="23" href="Page-23.php.html">23</a></li><li><a title="24" href="Page-24.php.html">24</a></li><li><a title="Next" href="Page-21.php.html">Next</a></li><li><a title="End" href="Page-26.php.html">End</a></li></ul>	</div>
+	</form>
+    </div>
+
+			</div>
+
+</div>
+
+	</main>
+		
+	<!-- //MAIN CONTENT -->				</div>
+												<div id="sidebar-2" class="sidebar zg-col zg-col-3  " role="complementary">
+					
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+					<div class="zen-module-title">
+						<h3><span>Latest Comments</span><h3>
+					</h3></h3></div>
+							
+				<div class="zen-module-body">
+					<ul class="jcomments-latest">
+	
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">16.05.2019 15:18</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Patrick, I developed this plugin initially so that I can place a map on my website easily. I thought ...								<p class="jcomments-latest-readmore">
+					<a href="../../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2184">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">Patrick</span>
+						<span class="date">13.05.2019 17:29</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi there, will it be possible to just show a link to the popup map? I don't want to show the map on my ...								<p class="jcomments-latest-readmore">
+					<a href="../../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2180">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							DirectPHP plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">21.04.2019 16:05</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Mark, Sorry for the late reply. Recently there has been a huge influx of spam posts, and your post ...								<p class="jcomments-latest-readmore">
+					<a href="../../joomla/directphp-plugin.php.html#comment-2166">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							DirectPHP plugin					</h4>
+		
+		
+				<span class="author">Mark Hobbs</span>
+						<span class="date">08.04.2019 17:16</span>
+		
+		<div class="comment rounded ">
+					<div>
+				I've used DirectPHP for a few years... it's beautifully simple and convenient. I recently decided to ...								<p class="jcomments-latest-readmore">
+					<a href="../../joomla/directphp-plugin.php.html#comment-2160">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleDirections - To Here - plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">23.03.2019 09:35</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Greg, 1) First, make sure you have entered the Google Maps API key. You can apply it here ...								<p class="jcomments-latest-readmore">
+					<a href="../../Joomla-Gadgets/googleDirections-To-Here-plugin.php.html#comment-2146">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleDirections - To Here - plugin					</h4>
+		
+		
+				<span class="author">GREG</span>
+						<span class="date">22.03.2019 22:04</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi, I have installed all 3 plugins and when i enter my current location i get the error Google cannot ...								<p class="jcomments-latest-readmore">
+					<a href="../../Joomla-Gadgets/googleDirections-To-Here-plugin.php.html#comment-2145">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">15.01.2019 00:06</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Christian, Yes, you're right. For this plugin, you can show multiple KML files in a web page (using ...								<p class="jcomments-latest-readmore">
+					<a href="../../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2094">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">Christian Teuber</span>
+						<span class="date">14.01.2019 16:30</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Can you point me to the sample map, I see only maps with one kml file on one map. I want to show 2 ...								<p class="jcomments-latest-readmore">
+					<a href="../../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2093">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							New version of DirectPHP - support for PHP 7					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">14.01.2019 14:51</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Björn, Thanks for your support over so many years! I'm not running php 7.1, and I do not currently ...								<p class="jcomments-latest-readmore">
+					<a href="../../joomla-news/new-version-of-directphp-support-for-php-7.php.html#comment-2091">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">14.01.2019 14:44</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Christian, I have a sample page here with many KML files on it: googleMaps plugin Tutorial 05: KML ...								<p class="jcomments-latest-readmore">
+					<a href="../../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2090">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+			</li>
+		</ul>
+
+				</div>
+			</div>
+		</div>
+	
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+					<div class="zen-module-title">
+						<h3><span>kksou Weather</span><h3>
+					</h3></h3></div>
+							
+				<div class="zen-module-body">
+					<script type="text/javascript">
+var headID = document.getElementsByTagName("head")[0];
+var cssNode = document.createElement('link');
+cssNode.type = 'text/css';
+cssNode.rel = 'stylesheet';
+cssNode.href = 'https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather.css';
+cssNode.media = 'screen';
+headID.appendChild(cssNode);
+</script><script type="text/javascript">
+//var mod_id = "301";
+var gw_lib_url301="https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather_lib.php";
+var gw_progress_gif301="https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather_progress.gif";
+var joomla_root301='|_%$var|_%$www|_%$kksou.com|_%$public_html|_%$php-gtk2';
+var label_city301="City";
+var popup_city301="Please enter zip code, state (in US) or city name, country (for other countries)";
+var popup_deg_F301="Click here to convert to degree F";
+var popup_deg_C301="Click here to convert to degree C";
+var size_city301="20";
+var hide_input301="0";
+var lang301="en";
+var googleweather_unit301="US";
+var default_location301="San Francisco, CA";
+var googleweather_use_curl301="1";
+var request_interval301="3";
+var hide_humidity301="0";
+var hide_wind301="0";
+var hide_forecast301="0";
+var focus_on_city301="0";
+var api_key301="90d34681236de382";
+var default_country301="";
+var label_humidity301="Humidity: ";
+var refresh_time301="60";
+var admin_mode301="0";
+var joomla_ver301="3.0";
+</script><script type="text/javascript" src="../../modules/mod_kksouweather/mod_kksouWeather_ajax.js"></script><div id="googleWeather_container301"><form action="index.php" method="get" id="WeatherForm301"><div class="googleWeather"><span class="input_label">City: </span><input name="gw_a" id="str_gw_a301" class="inputbox" maxlength="255" size="20" value="" title="">&nbsp;<span id="gw_loading301"></span><br><input type="hidden" name="a_org" id="str_gw_a_org301" class="inputbox" value=""><div align="left" style="padding-top:2px;"><p align="left" style="padding:0 0 0 0;margin:0 0 0 0"><a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Weather-AJAX-version.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p></div><input type="hidden" name="process" value="1"><input type="hidden" name="temp_unit" id="temp_unit301" value="US"><input type="hidden" name="option" value="com_content"><input type="hidden" name="task" value=""><input type="hidden" name="id" value="18"><input type="hidden" name="sectionid" value=""><input type="hidden" name="catid" value=""><input type="hidden" name="Itemid" value="425"></div></form></div><script type="text/javascript">
+
+if (window.jQuery) {
+jQuery(document).ready(function() {
+	gw_prepareForm('301');
+	gw_submitform('301', 1);
+});
+} else {
+	gw_prepareForm('301');
+	gw_submitform('301', 1);
+}
+
+</script>
+				</div>
+			</div>
+		</div>
+	
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					<p>It's not that difficult to learn <a href="http://www.greengeeks.com/website-transfer/" title="how to transfer a website" target="_blank">how to transfer a website</a>.</p>				</div>
+			</div>
+		</div>
+	
+				</div>
+							</div>
+		</div>
+	</div>
+	
+		
+</section>	    	
+	    		    	
+	    	
+	    	
+	    	
+			
+			
+			
+			
+<!-- FOOTER -->
+<footer id="footerwrap" class="wrap zen-footer stack-tablets stack-phones" role="contentinfo">
+  <section class="zen-copyright">
+    <div class="zen-container">
+      <div class="zen-row">
+        	<div class="zg-col zg-col-9">
+	          
+
+<ul id="zen-menu-119">
+<li class="item-382"><a href="../../index.php.html?option=com_googlesearch_cse&amp;view=googlesearchs&amp;Itemid=382&amp;lang=en">
+				Google Search			</a>
+	</li><li class="item-447"><a href="http://logistics-innovations.org/">Logistics Innovations</a></li><li class="item-456"><a href="https://www.rpa-sg.org/">RPA</a></li><li class="item-455"><a href="../joomla-version-history/index.htm">
+				Joomla Version History			</a>
+	</li><li class="item-457"><a href="https://ask.rpa-sg.org/">RPA Community Forum</a></li></ul>
+
+<div class="custom">
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-700099-1', 'auto');
+  ga('send', 'pageview');
+
+</script></div>
+
+        	</div>
+        	<div class="zg-col zg-col-3">
+        		<div id="zen-copyright">
+        			
+        			        				Copyright © 2005-2015. kksou.com. All Rights Reserved         		</div>
+        	</div>
+      	</div>
+	</div>
+  </section>
+</footer>
+<!-- //FOOTER -->			
+			
+
+
+			
+		</div>	
+	
+		
+
+	<div class="social-wrap fixed">
+
+		
+		
+
+		
+		
+<a id="social-twitter123" href="https://twitter.com/kksou" target="_blank">
+			<span class="zen-animate fadeInRightBig animated-faster fa fa-twitter zen-icon zen-icon-twitter"></span>
+	</a>
+
+	<script>
+		jQuery(document).ready(function ($) {
+			// Twitter Link Constructor
+			var twitter_link = $('#social-twitter').attr('href');
+
+			// Get title on page
+			// Made it broad for anumber of use cases but will retrieve h1 or h2 if not available
+			var title = $('#midCol h1:first').text();
+
+				if(typeof title ==="undefined") {
+					description = $('h2:first').text();
+				}
+
+			twitter_link += title;
+
+			$('#social-twitter').attr('href', twitter_link);
+		});
+	</script>
+
+		 	</div>
+	<script>
+		jQuery(document).ready(function ($) {
+
+			$('.popup').live( 'click', function(){
+				newwindow=window.open($(this).attr('href'),'','height=200,width=450');
+			    if (window.focus) {newwindow.focus()}
+			    return false;
+			 });
+		});
+	</script>
+		
+		
+<div class="sb-slidebar off-canvas-right sb-width-wide">
+	<div class="off-canvas-inner">
+		<div class="off-canvas-heading">
+			<span class="sb-close"><span class="zen-icon-remove zen-icon fa fa-icon-remove"></span></span>
+		</div>
+		<div class="off-canvas-body">
+			<div id="off-canvas-menu"><ul></ul></div>
+			
+		</div>
+	</div>
+</div>
+  
+ 
+ 
+<script>
+	
+	jQuery(document).ready(function($) {
+			
+			
+			
+				// Append nav if required
+				$('body').append_nav('787');	
+						
+				$(window).resize(function() {
+					$('body').append_nav('787');			
+				});
+			
+			 						
+				 		$('#off-canvas-menu').zenaccordion({
+				 		
+				 							 				 openfirst: true,
+				 				 				 				 selector: '.off-canvas-body',
+				 				 openicon: 'plus',
+				 				 closeicon: 'minus',
+				 				 type:"panel"
+				 		});
+			 			
+			 				
+			 
+			
+			
+			
+			$.slidebars();
+		});
+
+</script>
+ 		
+				
+		
+	<script>
+		jQuery(document).ready(function($){
+			$("img").not(".none").lazyload({
+				effect : "fadeIn"
+		});
+	});
+	</script>
+
+
+
+
+
+<div id="toTop" class="hidden-phone"><a id="toTopLink"><span class="fa fa-icon-arrow-up zen-icon zen-icon-arrow-up"></span><span id="toTopText"> Back to top</span></a></div>
+<script>
+	jQuery(document).ready(function($){
+			
+			$(window).scroll(function () {
+			
+				if ($(this).scrollTop() >200) {
+				 	$("#toTop").fadeIn();
+				}
+				else {
+				 	$("#toTop").fadeOut();
+				}
+			});
+		
+			$("#toTop").click(function() {
+				$("html, body").animate({ scrollTop: 0 }, "slow");
+				 return false;
+			});
+	});
+</script>
+
+
+
+
+
+<script>
+jQuery(document).ready(function($){
+	
+	
+	$('.sidebar').zenaccordion({
+	
+		  		 openfirst: true,
+  		   		 type:"panel"
+ 	});
+ 	
+
+});
+</script>
+
+
+
+
+
+
+
+<script>
+jQuery(document).ready(function($){
+	
+	var win      = $(window),
+	    fxel     = $('#navwrap'),
+	    fill     = $('#sticky-fill'),
+	    navheight = $('#menu').height(),
+	    eloffset = fxel.offset().top;
+	 
+	    $(fill).height(navheight);
+
+	win.scroll(function() {
+	    if (eloffset < win.scrollTop()) {
+	        fxel.addClass("fixed");
+	        $('html').addClass("fixed");
+	        $(fill).addClass('visible').removeClass('hidden');
+	    } else {
+	        fxel.removeClass("fixed");
+	        $('html').removeClass("fixed");
+	        $(fill).removeClass('visible').addClass('hidden');
+	    }
+	});
+});
+</script>
+
+
+
+
+
+	<script>
+	 new WOW().init();
+	</script>
+
+
+
+
+<!-- Fonts -->
+
+		
+			
+	</body>
+<!-- Copied from https://kksou.com/php-gtk2/category/sample-codes/Page-20.php by Cyotek WebCopy 1.7.0.600, 14 Tháng Sáu 2019, 04:23:30 -->
+</html>

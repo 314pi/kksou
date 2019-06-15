@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>220. How to display a 2D array in GtkTreeView - Part 7 - alternate column colors?</title>
+		<description>Discuss 220. How to display a 2D array in GtkTreeView - Part 7 - alternate column colors?</description>
+		<link>https://kksou.com/php-gtk2/sample-codes/display-a-2D-array-in-GtkTreeView-Part-7-alternate-column-colors.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 09:04:39 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/276.php" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>

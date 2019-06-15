@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>085. How to create a round button - Part 1?</title>
+		<description>Discuss 085. How to create a round button - Part 1?</description>
+		<link>https://kksou.com/php-gtk2/sample-codes/create-a-round-button-Part-1.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:48:52 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/140.php" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>

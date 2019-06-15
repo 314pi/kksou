@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>338. How to set up an application to run in the system tray using GtkStatusIcon - Part 7 - ensure only one popup menu?</title>
+		<description>Discuss 338. How to set up an application to run in the system tray using GtkStatusIcon - Part 7 - ensure only one popup menu?</description>
+		<link>https://kksou.com/php-gtk2/sample-codes/set-up-an-application-to-run-in-the-system-tray-using-GtkStatusIcon-Part-7-ensure-only-one-popup-menu.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 09:14:55 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/395.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Darrell says:</title>
+			<link>https://kksou.com/php-gtk2/sample-codes/set-up-an-application-to-run-in-the-system-tray-using-GtkStatusIcon-Part-7-ensure-only-one-popup-menu.php#comment-1132</link>
+			<description><![CDATA[Thanks for the reply though. :) (I love all your examples on PHP-GTK2, they're excellent and have helped immensely) (Had to do another reply for this - the comment limit says 1000, it kept saying it was too long)]]></description>
+			<dc:creator>Darrell</dc:creator>
+			<pubDate>Wed, 24 Jul 2013 10:16:43 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/sample-codes/set-up-an-application-to-run-in-the-system-tray-using-GtkStatusIcon-Part-7-ensure-only-one-popup-menu.php#comment-1132</guid>
+		</item>
+		<item>
+			<title>Darrell says:</title>
+			<link>https://kksou.com/php-gtk2/sample-codes/set-up-an-application-to-run-in-the-system-tray-using-GtkStatusIcon-Part-7-ensure-only-one-popup-menu.php#comment-1131</link>
+			<description><![CDATA[Yeah, I've spent the last 4 days searching everywhere and trying dozens of different ways to do it and nada. I don't know if I just missed it the other day when I posted that or not, but the flow is now like this: 1) Right-click status icon -> menu pops up. 2) Click anywhere outside of it -> menu pops down (and the 'hide' and 'selection-done' signals are emitted). 3) Right-click status icon again -> menu pops up. 4) Click anywhere outside of it (desktop, another window, etc.. (except for actual PHP-GTK2 application window) -> nothing happens with the popup menu, just sits there (and NO signals are emitted at all). (Clicking the associated PHP-GTK2 application window closes the menu and emits signals). Just a few mins ago, I finally gave up and decided to live with it the way it is, lol.]]></description>
+			<dc:creator>Darrell</dc:creator>
+			<pubDate>Wed, 24 Jul 2013 10:15:33 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/sample-codes/set-up-an-application-to-run-in-the-system-tray-using-GtkStatusIcon-Part-7-ensure-only-one-popup-menu.php#comment-1131</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/sample-codes/set-up-an-application-to-run-in-the-system-tray-using-GtkStatusIcon-Part-7-ensure-only-one-popup-menu.php#comment-1126</link>
+			<description><![CDATA[Hi Darrell, In PHP-GTK2, the popup menu is a modal window. In a modal window, it takes control over all other windows. Don't think it's possible to change what you have in mind in the current PHP-GTK version. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 24 Jul 2013 01:40:41 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/sample-codes/set-up-an-application-to-run-in-the-system-tray-using-GtkStatusIcon-Part-7-ensure-only-one-popup-menu.php#comment-1126</guid>
+		</item>
+		<item>
+			<title>Darrell says:</title>
+			<link>https://kksou.com/php-gtk2/sample-codes/set-up-an-application-to-run-in-the-system-tray-using-GtkStatusIcon-Part-7-ensure-only-one-popup-menu.php#comment-1120</link>
+			<description><![CDATA[I know this is fairly old and I probably won't get an answer, but thought I'd ask anyway. ;) This works great until you decide not to choose anything in the popup menu and click on the desktop or another window. The menu just stays there. The only way to close it is to choose a menu item or click on the main application window (which then takes two clicks to re-focus the window). Any idea of how to make the popup go away if you click somewhere else outside of it without making a choice (like Show, Hide or Exit?]]></description>
+			<dc:creator>Darrell</dc:creator>
+			<pubDate>Sat, 20 Jul 2013 15:50:33 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/sample-codes/set-up-an-application-to-run-in-the-system-tray-using-GtkStatusIcon-Part-7-ensure-only-one-popup-menu.php#comment-1120</guid>
+		</item>
+	</channel>
+</rss>

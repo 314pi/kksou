@@ -1,0 +1,2978 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr" class="com_content view-article itemid-426 j39 responsive-enabled offcanvas-menu">
+<!-- Copied from https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-plugin.php by Cyotek WebCopy 1.7.0.600, 14 Tháng Sáu 2019, 04:23:30 -->
+<head>
+<link href="Pausing-up-down-Scroller-plugin.php.html" rel="canonical">
+
+		
+
+			<meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=yes">
+		<meta name="HandheldFriendly" content="true">
+	<meta name="apple-mobile-web-app-capable" content="YES">
+	<base href="https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-plugin.php">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Joomla, plugin, Pausing up-down Scroller, mambot">
+	<meta name="author" content="kksou">
+	<meta name="description" content="This is a plugin which allows you to display a up-down scroller that pauses between each message! The scroller is displayed right inside your article or content item. The look of the scroller is completely styled using external CSS, including the dimensio">
+	<title>Pausing up-down Scroller plugin</title>
+	<link href="../jcomments/rss/com_content/1270.php.xml" rel="alternate" type="application/rss+xml" title="Pausing up-down Scroller plugin">
+	<link href="../templates/xero/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="../components/com_jcomments/tpl/default/style.css?v=3002" rel="stylesheet" type="text/css">
+	<link href="/templates/xero/css-compiled/master-11597c3e8d7d7a43ddef0800b7379988.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300:latin|Open+Sans:600:latin|Droid+Serif" rel="stylesheet" type="text/css">
+	<link href="../templates/xero/css/theme.flat.php.css" rel="stylesheet" type="text/css">
+	<link href="../templates/xero/css/custom.css" rel="stylesheet" type="text/css">
+	<link href="../media/mod_jcomments_latest/css/style.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+
+.article {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.article_desc {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	margin-bottom: 4px;
+}
+
+.article_views {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.infographic {
+   border:2px solid #aaaaaa;
+}
+
+tr.article_tr > td {
+   //padding-top: 2px;
+   padding-bottom: 6px;
+}
+
+
+	</style>
+	<script src="../components/com_jcomments/js/jcomments-v2.3.js?v=12" type="text/javascript"></script>
+	<script src="../components/com_jcomments/libraries/joomlatune/ajax.js?v=4" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-noconflict.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-migrate.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/bootstrap.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../templates/xero/js/template-66.php" type="text/javascript"></script>
+	<script type="text/javascript">
+
+		var j2storeURL = 'https://kksou.com/php-gtk2/';
+		
+jQuery(document).ready(function(){
+
+	jQuery("a.linkstat").click(function(e) {
+		e.preventDefault(); // needed for safari 4.0.5
+
+		jQuery.post("/plugins/content/GetArticles/ajax-linkstat.php", {url: jQuery(this).attr('href'), id: jQuery(this).attr('id')}, function success(data) {
+			window.location = data; // needed for safari 4.0.5
+		});
+		return true;
+	});
+
+		jQuery("a.vote_up").click(function(){
+	//get the id
+	the_id = jQuery(this).attr('id');
+
+	// show the spinner
+	jQuery(this).parent().html("<img src='/plugins/content/GetArticles/images/spinner.gif' style='display:inline'/>");
+
+	//fadeout the vote-count
+	jQuery("span#votes_count"+the_id).fadeOut("fast");
+
+	//the main ajax request
+		jQuery.ajax({
+			type: "POST",
+			data: "action=vote_up&id="+jQuery(this).attr("id"),
+			url: "/plugins/content/GetArticles/votes.php",
+			success: function(msg){
+				jQuery("span#votes_count"+the_id).html(msg);
+				//fadein the vote count
+				jQuery("span#votes_count"+the_id).fadeIn();
+				//remove the spinner
+				jQuery("span#vote_buttons"+the_id).remove();
+			}
+		});
+	});
+
+});
+
+
+jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+	</script>
+
+			
+		
+<style type="text/css">
+			html > body {
+				font-family: 'Open Sans';
+				
+			}
+				h1, h2, h3, h4, h5, h6, blockquote {
+				font-family: 'Open Sans';
+			}
+		
+					#navwrap li a {
+					font-family: 'Open Sans';
+				}
+			
+					#logo h2 {
+					font-family: 'Droid Serif';
+				}
+		
+	</style>	</head>
+    <body>
+		<!-- Required for Slidebar / Offcanvas implementation -->
+		<div id="zen-wrap">
+	
+	   			    	
+	    	<a id="home-link" name="home-link"></a>
+	  
+	    	
+	    	
+	    	
+	<section id="logowrap" class="clearfix stack-phones" role="banner">
+		<div class="zen-container">
+			<div class="zen-row">
+	<div class="zen-spotlight">
+	
+			
+						<div id="logo" class="zg-col zg-col-6">
+			
+							
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					
+
+<div class="custom">
+	<h2>kksou.com</h2>
+<p>Tutorials, Sample Codes and Tips & Techniques for developing<br>Joomla plugins, modules and components.</p>
+<p>Developer of <a href="http://www.kksou.com/php-gtk2/Joomla/DirectPHP-plugin.php">DirectPHP</a>, <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps</a> and <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php">googleSearch</a>.</p>
+<p>Yes, this is also <i>"The Place for PHP-GTK2 sample codes"</i>, since 2005.</p></div>
+				</div>
+			</div>
+		</div>
+	
+		
+						</div>
+		
+							
+						<div id="search" class="zg-col zg-col-6">
+			
+							
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					<!-- SiteSearch Google CSE --><form method="get" action="https://kksou.com/php-gtk2/index.php" id="mod_googleSearch_cse"><input type="hidden" name="option" value="com_googlesearch_cse"><input type="hidden" name="n" value="30"><input type="hidden" name="view" value="googlesearchs"><div class="search hidden-navcollapse"><input type="hidden" name="Itemid" value="382"><input type="hidden" name="cx" value="partner-pub-5032765168656743:ost4rr-en3s"><input type="hidden" name="cof" value="FORID:11"><input type="hidden" name="ie" value="ISO-8859-1"><input type="text" name="q" maxlength="255" value="" class="form-control hidden-navcollapse" size="20"><button class="button hidden-navcollapse btn btn-primary">Search</button></div></form><script type="text/javascript"><!--
+(function() {var f = document.getElementById('mod_googleSearch_cse');if (f && f.q) {var q = f.q;var b = function(){if (q.value == '') {q.style.color = '#AAAAAA';q.style.background = '#FFFFFF url(https://cse.google.com/coop/intl/en/images/google_custom_search_watermark.gif) left no-repeat';}};	var f = function() {q.style.color = '#000000';q.style.background = '#ffffff';};q.onfocus = f;q.onblur = b;b();}})();
+//-->
+</script>				</div>
+			</div>
+		</div>
+	
+		
+						</div>
+		
+						</div>
+</div>		</div>
+	</section>
+	    	
+	    	
+	<!-- NAVBAR HEADER -->
+	
+		<div id="sticky-fill" class="hidden"></div>
+		
+	<section id="navwrap" class="wrap ">
+		<div class="zen-container">
+			<div class="navbar-default zen-row">
+				<div class="zen-spotlight">
+						<div id="menu" class="zen-menu zen-menu-horizontal zen-menu-left zen-menu-fading">
+							<div class="navbar-header ">
+								<nav role="navigation">
+								<!-- NAVBAR MAIN -->
+																					
+													
+									
+
+<ul id="zen-menu-404">
+<li class="item-101"><a href="../index.htm">
+		<span class="fa fa-home zen-icon-home zen-icon"></span>		Home			</a>
+	</li><li class="item-425"><a href="../category/Sample-Codes/index.htm">
+				Sample Codes			</a>
+	</li><li class="item-426 current active deeper parent"><a href="../category/Joomla/index.htm">
+				Joomla			</a>
+	<ul class="zen-menu-child cols-1"><li class="item-427"><a href="../category/Joomla-Gadgets/index.htm">
+				Joomla Gadgets			</a>
+	</li><li class="item-429"><a href="../category/Joomla-Tips-Techniques/index.htm">
+				Joomla Tips &amp; Techniques			</a>
+	</li><li class="item-430"><a href="../category/Joomla-News/index.htm">
+				Joomla News 			</a>
+	</li><li class="item-431"><a href="../category/Joomla-FAQs/index.htm">
+				Joomla FAQs			</a>
+	</li><li class="item-432"><a href="../category/Joomla-Developer-FAQs/index.htm">
+				Joomla Developer FAQs			</a>
+	</li></ul></li><li class="item-433"><a href="../geocoder2.php.html">
+				Geocoder2			</a>
+	</li><li class="item-428"><a href="../Feedback.php.html">
+				Feedback			</a>
+	</li></ul> 			
+ 	
+																				
+									<!-- //NAVBAR MAIN -->
+																			<a class="btn off-canvas-trigger sb-toggle-right visible-desktop"><span class="zen-icon zen-icon-bars"></span></a>
+																	</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	    	
+	    	
+	    	
+	    	
+	    	
+	    		
+
+
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
+<!-- MAIN CONTENT -->
+<section id="mainWrap" class="clearfix mr ">
+	<a id="main-link" name="main-link"></a>
+		<section id="breadcrumbwrap" class="clearfix">
+		<div class="zen-container">
+			<div class="zen-row">
+				<div class="zen-spotlight">
+				
+					<!-- Banner-slogan -->
+					<div id="breadcrumb" class="zg-col zg-col-12">
+						  
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					
+<ul class="breadcrumb zen-reset-list ">
+
+	<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../index.htm" class="pathway" itemprop="url"><span itemprop="title">Home</span></a></li><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../category/Joomla/index.htm" class="pathway" itemprop="url"><span itemprop="title">Joomla</span></a></li><li><span>Pausing up-down Scroller plugin</span></li></ul>				</div>
+			</div>
+		</div>
+	
+					</div>
+					<!-- //breadcrumb -->
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	
+		
+	<div class="zen-container">
+		<div class="zen-row">
+			<div class="mainwrap zen-spotlight">
+				<div id="midCol" class="zg-col zg-col-9 ">
+					
+					 
+
+			
+
+		<main role="main">
+		
+
+<div class="item-page clearfix">
+
+
+<!-- Article -->
+<article itemscope="" itemtype="http://schema.org/Article">
+	<meta itemprop="inLanguage" content="en-GB">
+
+	<header class="article-header clearfix">
+		<h1 class="article-title" itemprop="name">
+			Pausing up-down Scroller plugin				<meta itemprop="url" content="<br />
+<b>Notice</b>:  Undefined variable: url in <b>/var/www/kksou.com/public_html/php-gtk2/templates/xero/html/com_content/article/default.php</b> on line <b>51</b><br />
+<br />
+<b>Notice</b>:  Undefined variable: prefix in <b>/var/www/kksou.com/public_html/php-gtk2/templates/xero/html/com_content/article/default.php</b> on line <b>51</b><br />
+">
+		</h1>
+	
+							</header>
+	
+
+<!-- Aside -->
+<aside class="article-aside clearfix">
+    	<ul class="article-info  muted small flat-list">
+
+		
+			
+			
+						
+			
+					
+		
+										<li class="modified">
+			
+				<time datetime="2017-07-02T17:41:07+00:00" itemprop="dateModified">
+					Last Updated: 02 July 2017				</time>
+			</li>			
+										<li class="hits">
+				
+					<meta itemprop="interactionCount" content="UserPageVisits:401884">
+					Hits: 401884			</li>						</ul>
+    
+  </aside>  
+<!-- //Aside -->
+
+
+
+
+
+	
+
+	
+	
+	<section class="article-content" itemprop="articleBody">
+		
+
+
+
+<script type="text/javascript">var j10=80; var j15=81; var j16=120; var j17=121; var j25=136;</script>
+<script type="text/javascript" src="../util/ajax/ajax_v1.2_25.js"></script>
+
+
+
+
+<!-- 
+Powered by Joomla Gadgets from kksou.com
+http://www.kksou.com/php-gtk2/Joomla-Gadgets/
+-->
+
+<script type="text/javascript" src="../plugins/content/AccordionMenuApplestyle/ddaccordion/ddaccordion.js">
+
+/***********************************************
+* Accordion Content script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+
+</script>
+
+
+<script type="text/javascript">
+
+
+ddaccordion.init({
+	headerclass: "silverheader", //Shared CSS class name of headers group
+	contentclass: "submenu", //Shared CSS class name of contents group
+	revealtype: "mouseover", //Reveal content when user clicks or onmouseover the header? Valid value: "click" or "mouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false
+	defaultexpanded: [0], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+	onemustopen: true, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["", "selected"], //Two CSS classes to be applied to the header when it\s collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "normal", //speed of animation: "fast", "normal", or "slow"
+	oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+
+
+</script>
+<style type="text/css">
+
+.b1 {
+margin: 0 0 0 0;
+text-align: right;
+}
+
+/* css file for Accordion Menu Apple style 
+*  Author: kksou
+*  Website: http://www.kksou.com/php-gtk2/Joomla-Gadgets/
+*  v1.0 September 27, 2008
+*
+*  Note: There are 3 variables. You need to enclose them in curly brackets.
+*  1. $menu_width: this is the width of the menu. 
+      This is the width you have defined in the parameter of the plugin
+*  2. $menu_height: this is the height of the menu. 
+      This is the height you have defined in the parameter of the plugin
+*  3. $base: this is the url base to the background image for the menu. 
+      If you want to change the two background images, make sure you prepend this
+	  $base to the image so that the image can be found
+*/
+
+.applemenu{
+margin: 5px 0 0;
+padding: 0;
+width: 170px; /*width of menu*/
+border: 1px solid #9A9A9A;
+text-align: left;
+}
+
+.applemenu div.silverheader a,em {
+background: black url(../plugins/content/AccordionMenuApplestyle/ddaccordion/silvergradient.gif) repeat-x center left;
+font: normal 12px Tahoma, "Lucida Grande", "Trebuchet MS", Helvetica, sans-serif;
+color: white;
+display: block;
+position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+width: auto;
+padding: 5px 0;
+padding-left: 8px;
+text-decoration: none;
+}
+
+.applemenu div.silverheader a:visited, .applemenu div.silverheader a:active{
+color: white;
+}
+
+.applemenu div.selected a, .applemenu div.selected em, .applemenu div.silverheader a:hover{
+background-image: url(../plugins/content/AccordionMenuApplestyle/ddaccordion/silvergradientover.gif);
+color: white;
+}
+
+.applemenu div.submenu, div.submenu a { /*DIV that contains each sub menu*/
+background: white;
+padding-left: 5px;
+height: 100px; /*Height that applies to all sub menu DIVs. A good idea when headers are toggled via "mouseover" instead of "click"*/
+font: normal 12px Tahoma, "Lucida Grande", "Trebuchet MS", Helvetica, sans-serif;
+color: #aaa;
+text-decoration: none;
+}
+
+/* level 2 items
+.applemenu div.submenu .level2 a {
+	color: #0000ff;
+}
+*/
+
+</style>
+<div class="b1" style="float:right;padding-left:10px;"><div class="applemenu"><div class="silverheader"><span class="level1"><a href="#intro">General</a></span></div>    <div class="submenu"><span class="level2">    <a href="#intro">Introduction</a></span><br><span class="level2">    <a href="#latest">Latest Version</a></span><br><span class="level2">    <a href="#demo">Demo</a></span><br>    </div><div class="silverheader"><span class="level1"><a href="#download">Download</a></span></div>    <div class="submenu"><span class="level2">    <a href="#download">Download</a></span><br><span class="level2">    <a href="#remove-powered-by-links">Remove the "Powered by" links</a></span><br><span class="level2">    <a href="#install_10">How to install</a></span><br><span class="level2">    <a href="#how_to_use">How to use</a></span><br>    </div><div class="silverheader"><em><span class="level1">User Reviews</span></em></div>    <div class="submenu"><span class="level2">    <a href="#article_comments">kksou.com</a></span><br><span class="level2">    <a href="http://extensions.joomla.org/component/option,com_mtree/task,viewlink/link_id,6223/Itemid,35/#action" target="_blank">extensions.joomla.org</a></span><br>    </div></div><p align="right" style="padding:0 0 0 0;margin:0 0 0 0"><a href="http://www.kksou.com/php-gtk2/Joomla/Accordion-Menu-Apple-style.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p>
+
+<!-- 
+Powered by Joomla Gadgets from kksou.com
+http://www.kksou.com/php-gtk2/Joomla-Gadgets/
+-->
+
+</div>
+
+<a id="intro"></a>
+<p>This is a plugin which allows you to display an up-down scroller that pauses between each message! The scroller is displayed right inside your article or content item.</p>  
+
+<p>The original code was written by <a href="http://www.dynamicdrive.com/dynamicindex2/crosstick.htm">dynamicdrive.com</a>. What I've done is to wrap the code into a Joomla plugin so that you can use it within your Joomla articles.</p>
+
+<a id="demo">
+<h3>Demo</h3></a> 
+
+
+<!-- 
+Powered by Joomla Gadgets from kksou.com
+http://www.kksou.com/php-gtk2/Joomla-Gadgets/
+-->
+
+<script type="text/javascript">
+
+/***********************************************
+* Pausing up-down scroller- � Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+function pausescroller(content, divId, divClass, delay){
+this.content=content //message array content
+this.tickerid=divId //ID of ticker div to display information
+this.delay=delay //Delay between msg change, in miliseconds.
+this.mouseoverBol=0 //Boolean to indicate whether mouse is currently over scroller (and pause it if it is)
+this.hiddendivpointer=1 //index of message array for hidden div
+document.write('<div id="'+divId+'" class="'+divClass+'" style="position: relative; overflow: hidden"><div class="innerDiv" style="position: absolute; width: 100%" id="'+divId+'1">'+content[0]+'</div><div class="innerDiv" style="position: absolute; width: 100%; visibility: hidden" id="'+divId+'2">'+content[1]+'</div></div>')
+var scrollerinstance=this
+if (window.addEventListener) //run onload in DOM2 browsers
+window.addEventListener("load", function(){scrollerinstance.initialize()}, false)
+else if (window.attachEvent) //run onload in IE5.5+
+window.attachEvent("onload", function(){scrollerinstance.initialize()})
+else if (document.getElementById) //if legacy DOM browsers, just start scroller after 0.5 sec
+setTimeout(function(){scrollerinstance.initialize()}, 500)
+}
+
+// -------------------------------------------------------------------
+// initialize()- Initialize scroller method.
+// -Get div objects, set initial positions, start up down animation
+// -------------------------------------------------------------------
+
+pausescroller.prototype.initialize=function(){
+this.tickerdiv=document.getElementById(this.tickerid)
+this.visiblediv=document.getElementById(this.tickerid+"1")
+this.hiddendiv=document.getElementById(this.tickerid+"2")
+this.visibledivtop=parseInt(pausescroller.getCSSpadding(this.tickerdiv))
+//set width of inner DIVs to outer DIV's width minus padding (padding assumed to be top padding x 2)
+this.visiblediv.style.width=this.hiddendiv.style.width=this.tickerdiv.offsetWidth-(this.visibledivtop*2)+"px"
+this.getinline(this.visiblediv, this.hiddendiv)
+this.hiddendiv.style.visibility="visible"
+var scrollerinstance=this
+document.getElementById(this.tickerid).onmouseover=function(){scrollerinstance.mouseoverBol=1}
+document.getElementById(this.tickerid).onmouseout=function(){scrollerinstance.mouseoverBol=0}
+if (window.attachEvent) //Clean up loose references in IE
+window.attachEvent("onunload", function(){scrollerinstance.tickerdiv.onmouseover=scrollerinstance.tickerdiv.onmouseout=null})
+setTimeout(function(){scrollerinstance.animateup()}, this.delay)
+}
+
+
+// -------------------------------------------------------------------
+// animateup()- Move the two inner divs of the scroller up and in sync
+// -------------------------------------------------------------------
+
+pausescroller.prototype.animateup=function(){
+var scrollerinstance=this
+if (parseInt(this.hiddendiv.style.top)>(this.visibledivtop+5)){
+this.visiblediv.style.top=parseInt(this.visiblediv.style.top)-5+"px"
+this.hiddendiv.style.top=parseInt(this.hiddendiv.style.top)-5+"px"
+setTimeout(function(){scrollerinstance.animateup()}, 50)
+}
+else{
+this.getinline(this.hiddendiv, this.visiblediv)
+this.swapdivs()
+setTimeout(function(){scrollerinstance.setmessage()}, this.delay)
+}
+}
+
+// -------------------------------------------------------------------
+// swapdivs()- Swap between which is the visible and which is the hidden div
+// -------------------------------------------------------------------
+
+pausescroller.prototype.swapdivs=function(){
+var tempcontainer=this.visiblediv
+this.visiblediv=this.hiddendiv
+this.hiddendiv=tempcontainer
+}
+
+pausescroller.prototype.getinline=function(div1, div2){
+div1.style.top=this.visibledivtop+"px"
+div2.style.top=Math.max(div1.parentNode.offsetHeight, div1.offsetHeight)+"px"
+}
+
+// -------------------------------------------------------------------
+// setmessage()- Populate the hidden div with the next message before it's visible
+// -------------------------------------------------------------------
+
+pausescroller.prototype.setmessage=function(){
+var scrollerinstance=this
+if (this.mouseoverBol==1) //if mouse is currently over scoller, do nothing (pause it)
+setTimeout(function(){scrollerinstance.setmessage()}, 100)
+else{
+var i=this.hiddendivpointer
+var ceiling=this.content.length
+this.hiddendivpointer=(i+1>ceiling-1)? 0 : i+1
+this.hiddendiv.innerHTML=this.content[this.hiddendivpointer]
+this.animateup()
+}
+}
+
+pausescroller.getCSSpadding=function(tickerobj){ //get CSS padding value, if any
+if (tickerobj.currentStyle)
+return tickerobj.currentStyle["paddingTop"]
+else if (window.getComputedStyle) //if DOM2
+return window.getComputedStyle(tickerobj, "").getPropertyValue("padding-top")
+else
+return 0
+}
+
+</script>
+<style type="text/css">
+
+.b1 {
+margin: 0 0 0 0;
+text-align: right;
+}
+
+/*Example CSS for the two demo scrollers*/
+
+#pscroller1{
+width: 178px;
+height: 100px;
+border: 1px solid #9A9A9A;
+padding: 5px;
+background-color: lightyellow;
+}
+
+#pscroller2{
+width: 240px;
+height: 60px;
+border: 1px solid #9A9A9A;
+padding: 5px;
+background-color: #DDFEE9;
+}
+
+#pscroller3{
+width: 350px;
+height: 24px;
+border: 1px solid #dddddd;
+padding: 3px;
+}
+
+#mod_pscroller{
+width: 120px;
+height: 120px;
+/*border: 1px solid #9A9A9A;*/
+padding: 5px;
+/*background-color: #DDFEE9;*/
+}
+
+#pscroller3 a{
+text-decoration: none;
+}
+
+.someclass{ //class to apply to your scroller(s) if desired
+}
+
+.pscroller{
+margin: 5px 0 0;
+padding: 0;
+border: 0;
+text-align: left;
+}
+</style>
+<script type="text/javascript">
+var t121 = new Array()
+t121[0] = '<a href="http://www.kksou.com/php-gtk2/Joomla/DirectPHP-plugin.php" target="_new">DirectPHP plugin</a><br />This plugin allows direct embedding of PHP commands right inside Joomla content page for dynamic contents.'
+t121[1] = '<a href="http://www.kksou.com/php-gtk2/Joomla/googleSearch-component.php" target="_new">googleSearch component/module</a><br />This component/module allows you to add Google Adsense Search to your Joomla site. '
+t121[2] = '<a href="http://www.kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php" target="_new">Include Content Item plugin </a><br />This plugin allows you to insert or include one content item into another content item. '
+</script><div class="b1" style="float:right;padding-left:10px;"><div class="pscroller"><script type="text/javascript">
+new pausescroller(t121, "pscroller1", "someclass", 3000);
+</script></div><p align="right" style="padding:0 0 0 0;margin:0 0 0 0"><a href="http://www.kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-plugin.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p>
+
+<!-- 
+Powered by Joomla Gadgets from kksou.com
+http://www.kksou.com/php-gtk2/Joomla-Gadgets/
+-->
+
+</div>  
+
+<p>You can see a sample scroller on the right of this paragraph.</p>  <p>The look of the scroller is completely styled using external CSS, including the width, height, foreground and background color.</p>  
+
+<br clear="all">
+
+
+<!-- 
+Powered by Joomla Gadgets from kksou.com
+http://www.kksou.com/php-gtk2/Joomla-Gadgets/
+-->
+
+<script type="text/javascript">
+
+/***********************************************
+* Pausing up-down scroller- � Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+function pausescroller(content, divId, divClass, delay){
+this.content=content //message array content
+this.tickerid=divId //ID of ticker div to display information
+this.delay=delay //Delay between msg change, in miliseconds.
+this.mouseoverBol=0 //Boolean to indicate whether mouse is currently over scroller (and pause it if it is)
+this.hiddendivpointer=1 //index of message array for hidden div
+document.write('<div id="'+divId+'" class="'+divClass+'" style="position: relative; overflow: hidden"><div class="innerDiv" style="position: absolute; width: 100%" id="'+divId+'1">'+content[0]+'</div><div class="innerDiv" style="position: absolute; width: 100%; visibility: hidden" id="'+divId+'2">'+content[1]+'</div></div>')
+var scrollerinstance=this
+if (window.addEventListener) //run onload in DOM2 browsers
+window.addEventListener("load", function(){scrollerinstance.initialize()}, false)
+else if (window.attachEvent) //run onload in IE5.5+
+window.attachEvent("onload", function(){scrollerinstance.initialize()})
+else if (document.getElementById) //if legacy DOM browsers, just start scroller after 0.5 sec
+setTimeout(function(){scrollerinstance.initialize()}, 500)
+}
+
+// -------------------------------------------------------------------
+// initialize()- Initialize scroller method.
+// -Get div objects, set initial positions, start up down animation
+// -------------------------------------------------------------------
+
+pausescroller.prototype.initialize=function(){
+this.tickerdiv=document.getElementById(this.tickerid)
+this.visiblediv=document.getElementById(this.tickerid+"1")
+this.hiddendiv=document.getElementById(this.tickerid+"2")
+this.visibledivtop=parseInt(pausescroller.getCSSpadding(this.tickerdiv))
+//set width of inner DIVs to outer DIV's width minus padding (padding assumed to be top padding x 2)
+this.visiblediv.style.width=this.hiddendiv.style.width=this.tickerdiv.offsetWidth-(this.visibledivtop*2)+"px"
+this.getinline(this.visiblediv, this.hiddendiv)
+this.hiddendiv.style.visibility="visible"
+var scrollerinstance=this
+document.getElementById(this.tickerid).onmouseover=function(){scrollerinstance.mouseoverBol=1}
+document.getElementById(this.tickerid).onmouseout=function(){scrollerinstance.mouseoverBol=0}
+if (window.attachEvent) //Clean up loose references in IE
+window.attachEvent("onunload", function(){scrollerinstance.tickerdiv.onmouseover=scrollerinstance.tickerdiv.onmouseout=null})
+setTimeout(function(){scrollerinstance.animateup()}, this.delay)
+}
+
+
+// -------------------------------------------------------------------
+// animateup()- Move the two inner divs of the scroller up and in sync
+// -------------------------------------------------------------------
+
+pausescroller.prototype.animateup=function(){
+var scrollerinstance=this
+if (parseInt(this.hiddendiv.style.top)>(this.visibledivtop+5)){
+this.visiblediv.style.top=parseInt(this.visiblediv.style.top)-5+"px"
+this.hiddendiv.style.top=parseInt(this.hiddendiv.style.top)-5+"px"
+setTimeout(function(){scrollerinstance.animateup()}, 50)
+}
+else{
+this.getinline(this.hiddendiv, this.visiblediv)
+this.swapdivs()
+setTimeout(function(){scrollerinstance.setmessage()}, this.delay)
+}
+}
+
+// -------------------------------------------------------------------
+// swapdivs()- Swap between which is the visible and which is the hidden div
+// -------------------------------------------------------------------
+
+pausescroller.prototype.swapdivs=function(){
+var tempcontainer=this.visiblediv
+this.visiblediv=this.hiddendiv
+this.hiddendiv=tempcontainer
+}
+
+pausescroller.prototype.getinline=function(div1, div2){
+div1.style.top=this.visibledivtop+"px"
+div2.style.top=Math.max(div1.parentNode.offsetHeight, div1.offsetHeight)+"px"
+}
+
+// -------------------------------------------------------------------
+// setmessage()- Populate the hidden div with the next message before it's visible
+// -------------------------------------------------------------------
+
+pausescroller.prototype.setmessage=function(){
+var scrollerinstance=this
+if (this.mouseoverBol==1) //if mouse is currently over scoller, do nothing (pause it)
+setTimeout(function(){scrollerinstance.setmessage()}, 100)
+else{
+var i=this.hiddendivpointer
+var ceiling=this.content.length
+this.hiddendivpointer=(i+1>ceiling-1)? 0 : i+1
+this.hiddendiv.innerHTML=this.content[this.hiddendivpointer]
+this.animateup()
+}
+}
+
+pausescroller.getCSSpadding=function(tickerobj){ //get CSS padding value, if any
+if (tickerobj.currentStyle)
+return tickerobj.currentStyle["paddingTop"]
+else if (window.getComputedStyle) //if DOM2
+return window.getComputedStyle(tickerobj, "").getPropertyValue("padding-top")
+else
+return 0
+}
+
+</script><script type="text/javascript">
+var t122 = new Array()
+t122[0] = '<a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php" target="_new">Google Currency Converter</a><br />This module allows you to add the Google Currency Converter in a module position. '
+t122[1] = '<a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Currency-Converter-AJAX-version.php" target="_new">Yahoo Currency Converter</a><br />This module allows you to add the Yahoo Currency Converter in a module position. '
+t122[2] = '<a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Stock-Quote-AJAX-version.php" target="_new">Yahoo Stock Quote</a><br />This module allows you to display stock quotes from Yahoo Finance in a module position. '
+</script><div class="b1" style="float:left;padding-right:10px;"><div class="pscroller"><script type="text/javascript">
+new pausescroller(t122, "pscroller2", "someclass", 4000);
+</script></div><p align="right" style="padding:0 0 0 0;margin:0 0 0 0"><a href="http://www.kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-plugin.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p>
+
+<!-- 
+Powered by Joomla Gadgets from kksou.com
+http://www.kksou.com/php-gtk2/Joomla-Gadgets/
+-->
+
+</div> 
+
+<p>You can have multiple scrollers, each with different width, height and alignment (float to left or right).</p>  <p>Note that you can have different pause intervals for each scroller. The first one above scrolls once every 3 seconds. The second one on the left scrolls once every 4 seconds.</p>
+
+<p>You can also easily create a single line scroller just by adjusting the scroller's height appropriately!</p> 
+
+
+
+<!-- 
+Powered by Joomla Gadgets from kksou.com
+http://www.kksou.com/php-gtk2/Joomla-Gadgets/
+-->
+
+<script type="text/javascript">
+
+/***********************************************
+* Pausing up-down scroller- � Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+function pausescroller(content, divId, divClass, delay){
+this.content=content //message array content
+this.tickerid=divId //ID of ticker div to display information
+this.delay=delay //Delay between msg change, in miliseconds.
+this.mouseoverBol=0 //Boolean to indicate whether mouse is currently over scroller (and pause it if it is)
+this.hiddendivpointer=1 //index of message array for hidden div
+document.write('<div id="'+divId+'" class="'+divClass+'" style="position: relative; overflow: hidden"><div class="innerDiv" style="position: absolute; width: 100%" id="'+divId+'1">'+content[0]+'</div><div class="innerDiv" style="position: absolute; width: 100%; visibility: hidden" id="'+divId+'2">'+content[1]+'</div></div>')
+var scrollerinstance=this
+if (window.addEventListener) //run onload in DOM2 browsers
+window.addEventListener("load", function(){scrollerinstance.initialize()}, false)
+else if (window.attachEvent) //run onload in IE5.5+
+window.attachEvent("onload", function(){scrollerinstance.initialize()})
+else if (document.getElementById) //if legacy DOM browsers, just start scroller after 0.5 sec
+setTimeout(function(){scrollerinstance.initialize()}, 500)
+}
+
+// -------------------------------------------------------------------
+// initialize()- Initialize scroller method.
+// -Get div objects, set initial positions, start up down animation
+// -------------------------------------------------------------------
+
+pausescroller.prototype.initialize=function(){
+this.tickerdiv=document.getElementById(this.tickerid)
+this.visiblediv=document.getElementById(this.tickerid+"1")
+this.hiddendiv=document.getElementById(this.tickerid+"2")
+this.visibledivtop=parseInt(pausescroller.getCSSpadding(this.tickerdiv))
+//set width of inner DIVs to outer DIV's width minus padding (padding assumed to be top padding x 2)
+this.visiblediv.style.width=this.hiddendiv.style.width=this.tickerdiv.offsetWidth-(this.visibledivtop*2)+"px"
+this.getinline(this.visiblediv, this.hiddendiv)
+this.hiddendiv.style.visibility="visible"
+var scrollerinstance=this
+document.getElementById(this.tickerid).onmouseover=function(){scrollerinstance.mouseoverBol=1}
+document.getElementById(this.tickerid).onmouseout=function(){scrollerinstance.mouseoverBol=0}
+if (window.attachEvent) //Clean up loose references in IE
+window.attachEvent("onunload", function(){scrollerinstance.tickerdiv.onmouseover=scrollerinstance.tickerdiv.onmouseout=null})
+setTimeout(function(){scrollerinstance.animateup()}, this.delay)
+}
+
+
+// -------------------------------------------------------------------
+// animateup()- Move the two inner divs of the scroller up and in sync
+// -------------------------------------------------------------------
+
+pausescroller.prototype.animateup=function(){
+var scrollerinstance=this
+if (parseInt(this.hiddendiv.style.top)>(this.visibledivtop+5)){
+this.visiblediv.style.top=parseInt(this.visiblediv.style.top)-5+"px"
+this.hiddendiv.style.top=parseInt(this.hiddendiv.style.top)-5+"px"
+setTimeout(function(){scrollerinstance.animateup()}, 50)
+}
+else{
+this.getinline(this.hiddendiv, this.visiblediv)
+this.swapdivs()
+setTimeout(function(){scrollerinstance.setmessage()}, this.delay)
+}
+}
+
+// -------------------------------------------------------------------
+// swapdivs()- Swap between which is the visible and which is the hidden div
+// -------------------------------------------------------------------
+
+pausescroller.prototype.swapdivs=function(){
+var tempcontainer=this.visiblediv
+this.visiblediv=this.hiddendiv
+this.hiddendiv=tempcontainer
+}
+
+pausescroller.prototype.getinline=function(div1, div2){
+div1.style.top=this.visibledivtop+"px"
+div2.style.top=Math.max(div1.parentNode.offsetHeight, div1.offsetHeight)+"px"
+}
+
+// -------------------------------------------------------------------
+// setmessage()- Populate the hidden div with the next message before it's visible
+// -------------------------------------------------------------------
+
+pausescroller.prototype.setmessage=function(){
+var scrollerinstance=this
+if (this.mouseoverBol==1) //if mouse is currently over scoller, do nothing (pause it)
+setTimeout(function(){scrollerinstance.setmessage()}, 100)
+else{
+var i=this.hiddendivpointer
+var ceiling=this.content.length
+this.hiddendivpointer=(i+1>ceiling-1)? 0 : i+1
+this.hiddendiv.innerHTML=this.content[this.hiddendivpointer]
+this.animateup()
+}
+}
+
+pausescroller.getCSSpadding=function(tickerobj){ //get CSS padding value, if any
+if (tickerobj.currentStyle)
+return tickerobj.currentStyle["paddingTop"]
+else if (window.getComputedStyle) //if DOM2
+return window.getComputedStyle(tickerobj, "").getPropertyValue("padding-top")
+else
+return 0
+}
+
+</script><script type="text/javascript">
+var t123 = new Array()
+t123[0] = '<a href="http://www.news.com" target="_new">News.com: Technology and business reports</a> '
+t123[1] = '<a href="http://www.cnn.com" target="_new">CNN: Headline and breaking news 24/7</a> '
+t123[2] = '<a href="http://news.bbc.co.uk" target="_new">BBC News: UK and international news</a>'
+</script><table cellpadding="0" cellspacing="0" border="0"><tr><td><div class="pscroller"><script type="text/javascript">
+new pausescroller(t123, "pscroller3", "someclass", 2000);
+</script></div></td></tr><tr><td><p align="right" style="padding:0 0 0 0;margin:0 0 0 0"><a href="http://www.kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-plugin.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p>
+
+<!-- 
+Powered by Joomla Gadgets from kksou.com
+http://www.kksou.com/php-gtk2/Joomla-Gadgets/
+-->
+
+</td></tr></table> <br>  
+
+<div class="alert alert-info" id="latest"><h4>Latest Version</h4>
+<p>v1.03 (for Joomla 1.0), v1.53 (for Joomla 1.5), v1.63 (for Joomla 1.6), v1.73 (for Joomla 1.7), v2.53 (for Joomla 2.5)<br>
+Released January 31, 2012<br></p>
+<p>Support for Pausing up-down Scroller module for Joomla 2.5!</p>
+</div>
+
+<a id="how_to_use">
+<h3>How to use the "Pausing up-down Scroller" plugin</h3></a>
+
+<span class="download">
+<b>Important:</b> If you're using Joomla 1.5.8, please refer to the article: <br>
+<a href="http://www.kksou.com/php-gtk2/Joomla/How-to-enter-HTML-tags-javascript-and-PHP-codes-in-Joomla-1.5.8.php">How to enter HTML tags, javascript and PHP codes in Joomla 1.5.8?</a><br>
+Otherwise you might find that all your HTML tags, Javascript and PHP scripts will be removed the moment you click the Save or Apply button.
+</span>
+
+<ol>
+
+<li>To insert the Pausing up-down Scroller, use the syntax:</li>
+<pre>
+&#123;UpDownScroller&#125;
+... scroller messages ... 
+&#123;/UpDownScroller&#125;
+</pre>
+<p></p>
+
+
+
+<li>Each scrolling message is delimited by a line containing three dashes '---'</li>
+<pre>
+&#123;UpDownScroller&#125;
+message #1
+---
+message #2
+---
+message #3
+&#123;/UpDownScroller&#125;
+</pre>
+<p></p>
+
+<li>The scrolling message can contain any valid HTML text such as links:</li>
+<pre>
+&#123;UpDownScroller&#125;
+&lt;a href="http://www.news.com"&gt;News.com: Technology and business reports&lt;/a&gt;
+---
+&lt;a href="http://www.cnn.com"&gt;CNN: Headline and breaking news 24/7&lt;/a&gt;
+---
+&lt;a href="http://news.bbc.co.uk" target="_new"&gt;BBC News: UK and international news&lt;/a&gt;
+&#123;/UpDownScroller&#125;
+</pre>
+<p></p>
+
+<li>Each scrolling message can also contain multiple lines:</li>
+<pre>
+&#123;UpDownScroller&#125;
+&lt;a href="http://www.news.com"&gt;News.com&lt;/a&gt;
+Technology and business reports
+---
+&lt;a href="http://www.cnn.com"&gt;CNN&lt;/a&gt;
+Headline and breaking news 24/7
+---
+&lt;a href="http://news.bbc.co.uk" target="_new"&gt;BBC News&lt;/a&gt;
+UK and international news
+&#123;/UpDownScroller&#125;
+</pre>
+<p></p>
+
+<a id="scroller_width"></a>
+<li><b>Width of the scroller</b>: The default width of the scroller is defined in the Parameters in Plugin Manager. If you want to change the scroller width locally to say, 360px, use the following syntax:</li>
+<pre>
+&#123;UpDownScroller <b style="background:#ffff00">width:360</b>&#125;
+message #1
+---
+message #2
+---
+message #3
+&#123;/UpDownScroller&#125;
+</pre>
+
+<a id="scroller_height"></a>
+<li><b>Height of the scroller</b>: The default height of the scroller is defined in the Parameters in Plugin Manager. If you want to change the scroller height locally to say, 120px, use the following syntax:</li>
+<pre>
+&#123;UpDownScroller width:360 <b style="background:#ffff00">height:120</b>&#125;
+message #1
+---
+message #2
+---
+message #3
+&#123;/UpDownScroller&#125;
+</pre>
+
+<a id="scroller_id"></a>
+<li><b>Unique ID of the scroller</b>: If you are using only one scroller in an article, you do not need to specify any ID for the scroller.</li>
+<p>However, if you're using more than one scrollers in an article, you will need to specify a unique ID for each scroller. The ID used is similar to a standard variable name, i.e. the first character should be a-z or _, followed by a-z, 0-9 or _.</p>
+<pre>
+&#123;UpDownScroller <b style="background:#ffff00">id:t121</b> width:360 height:120&#125;
+message #1
+---
+message #2
+---
+message #3
+&#123;/UpDownScroller&#125;
+</pre>
+
+<a id="scroller_css"></a>
+<li><b>CSS style of the scroller</b>: The default css style for the scroller is <b style="background:#ffff00">pscroller1</b> as specified in the css file <b style="background:#ffff00">pausing_up_down_scroller.css</b> in the folder <code>mambots/content/pausing_up_down_scroller</code> (for Joomla 1.0), and <code>plugins/content/pausing_up_down_scroller</code> (for Joomla 1.5).</li>
+<p>If you take a look at the css file <b>pausing_up_down_scroller.css</b>, you will see three pre-defined styles: <code>pscroller1</code>, <code>pscroller2</code> and <code>pscroller3</code>. These are the three css styles used by the three <a href="#demo">demos</a> you see above. To specify which css style to use for the scroller, use the following syntax:</p>
+<pre>
+&#123;UpDownScroller id:t121 <b style="background:#ffff00">style:pscroller3</b> width:360 height:120&#125;
+message #1
+---
+message #2
+---
+message #3
+&#123;/UpDownScroller&#125;
+</pre>
+
+<p></p>
+
+<li><b>Make the scroller float left</b>: To make the scroller float left, use the following syntax. The 10 following the keyword <code>left</code> will set a margin of 10px between the scroller and the text flowing around it.</li>
+<pre>
+&#123;UpDownScroller id:t121 style:pscroller3 width:360 height:120 <b style="background:#ffff00">float:left10</b>&#125;
+message #1
+---
+message #2
+---
+message #3
+&#123;/UpDownScroller&#125;
+</pre>
+<p></p>
+
+<li><b>Make the scroller float right</b>: To make the scroller float right, use the following syntax. The 16 following the keyword <code>left</code> will set a margin of 16px between the scroller and the text flowing around it.</li>
+<pre>
+&#123;UpDownScroller id:t121 style:pscroller3 width:360 height:120 <b style="background:#ffff00">float:right16</b>&#125;
+message #1
+---
+message #2
+---
+message #3
+&#123;/UpDownScroller&#125;
+</pre>
+<p></p>
+
+<li><b>The pause between each message</b>: The default pause between the display of each message is 3000 milli-seconds.</li>
+<p>To specify this pause value to, say 2.5 seconds, use the following syntax. The value is specified in milli-seconds.</p>
+<pre>
+&#123;UpDownScroller id:t121 style:pscroller3 width:360 height:120 float:left <b style="background:#ffff00">pause:2500</b>&#125;
+message #1
+---
+message #2
+---
+message #3
+&#123;/UpDownScroller&#125;
+</pre>
+<p></p>
+
+<li><b>CSS file</b>: The default css file is <b>pausing_up_down_scroller.css</b>. However, you can also specify a different css files for different scrollers with the following syntax:</li>
+<pre>
+&#123;UpDownScroller id:t121 style:pscroller3 float:left pause:2500 <b style="background:#ffff00">css:your_css_file.css</b>&#125;
+message #1
+---
+message #2
+---
+message #3
+&#123;/UpDownScroller&#125;
+</pre>
+<p></p>
+
+</ol> <a id="download">
+<h3>Download</h3></a>
+<div id="links">bp204 = 20190613_21:36:25_14.177.232.127_751257<br>Joomla 1.0.x: <span id="link0"><a href="../products/pausing_up_down_scroller_v1.03.zip?i=80">pausing_up_down_scroller_v1.03.zip</a></span><br>Joomla 1.5.x: <span id="link1"><a href="../products/pausing_up_down_scroller_v1.53.zip?i=81">pausing_up_down_scroller_v1.53.zip</a></span><br>Joomla 1.6.x: <span id="link2"><a href="../products/pausing_up_down_scroller_v1.63.zip?i=120">pausing_up_down_scroller_v1.63.zip</a></span><br>Joomla 1.7.x: <span id="link3"><a href="../products/pausing_up_down_scroller_v1.73.zip?i=121">pausing_up_down_scroller_v1.73.zip</a></span><br>Joomla 2.5.x: <span id="link4"><a href="../products/pausing_up_down_scroller_v2.53.zip?i=136">pausing_up_down_scroller_v2.53.zip</a></span><br></div>
+
+<script type="text/javascript">prepareLinks();</script>
+
+
+
+<a id="install_10">
+<h3>How to install (Joomla 1.0.x)</h3></a>
+
+<ol>
+<li>Download the plugin and unzip it into a folder.</li>
+
+<li>From the Installers menu, select mambots. In the field "Install directory", enter the folder location (where you unzipped the file) and click Install.</li>
+
+<li>From the Mambots menu, select Site Mambots.</li>
+
+<li>Make sure the plugin "Pausing up-down Scroller" is published. If you see a cross in the Published column, just click on it. It will turn into a green tick.</li>
+</ol>
+
+<p>You are now ready to use this plugin!</p>
+
+<a id="install_15">
+<h3>How to install (Joomla 1.5.x)</h3></a>
+
+<ol>
+<li>Download the plugin and unzip it into a folder.</li>
+
+<li>From the Extensions menu, select Install/Uninstall. In the field "Install directory", enter the folder location (where you unzipped the file) and click Install.</li>
+
+<li>From the Extensions menu, select Plugin Manager.</li>
+
+<li>Enable the plugin "Pausing up-down Scroller" - make sure there is a green tick in the Enabled column.</li>
+
+<li><b>Very Important:</b> If you're using Joomla 1.5.8 and above, please refer to the article: <br>
+<a href="http://www.kksou.com/php-gtk2/Joomla/How-to-enter-HTML-tags-javascript-and-PHP-codes-in-Joomla-1.5.8.php">How to enter HTML tags, javascript and PHP codes in Joomla 1.5.8?</a>. Otherwise you might find that all your HTML tags, Javascript and PHP scripts will be removed the moment you click the Save or Apply button.</li>
+</ol>
+
+<p>You are now ready to use this plugin!</p>
+
+<a id="history"></a>
+<h3>History</h3>
+
+<ol>
+<li>v1.01 (for Joomla 1.0) and v1.51 (for Joomla 1.5)<br>
+Released December 19, 2008</li><p></p>
+<p>modified the codes slightly so that it can be used with mod_pausing_up_down_scroller</p>
+
+<p>v1.02 (for Joomla 1.0), v1.52 (for Joomla 1.5), v1.62 (for Joomla 1.6) and v1.72 (for Joomla 1.7)<br>
+Released November 25, 2011<br></p>
+<p>Native version of the Pausing up-down Scroller plugin for Joomla 1.6 and Joomla 1.7!</p>
+
+<li>v1.03 (for Joomla 1.0), v1.53 (for Joomla 1.5), v1.63 (for Joomla 1.6) and v1.73 (for Joomla 1.7)<br>
+Released November 25, 2011</li><p></p>
+<p>Support for Pausing up-down Scroller module for Joomla 1.6 and Joomla 1.7!<p></p>
+
+</ol>
+
+session<pre>Array
+(
+    [googleWeather_timestart] => 1560486985.133
+    [joomla] => TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjozOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjI6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjozOntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aToxNTU7czo1OiJ0aW1lciI7Tzo4OiJzdGRDbGFzcyI6Mzp7czo1OiJzdGFydCI7aToxNTYwNDg2MjQ4O3M6NDoibGFzdCI7aToxNTYwNDg2OTgzO3M6Mzoibm93IjtpOjE1NjA0ODY5ODQ7fXM6NToidG9rZW4iO3M6MzI6Im9DZ091UXZKclNZcjFod3pFTEVzOTVGV2d6RWxUZEpnIjt9czo4OiJyZWdpc3RyeSI7TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjozOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjM6e3M6NToidXNlcnMiO086ODoic3RkQ2xhc3MiOjE6e3M6NToibG9naW4iO086ODoic3RkQ2xhc3MiOjE6e3M6NDoiZm9ybSI7Tzo4OiJzdGRDbGFzcyI6MTp7czo0OiJkYXRhIjthOjA6e319fX1zOjExOiJjb21fY29udGFjdCI7Tzo4OiJzdGRDbGFzcyI6MTp7czo3OiJjb250YWN0IjtPOjg6InN0ZENsYXNzIjoxOntzOjQ6ImRhdGEiO2E6MTp7czo1OiJjYXRpZCI7czoxOiI0Ijt9fX1zOjExOiJjb21fY29udGVudCI7Tzo4OiJzdGRDbGFzcyI6MTp7czo4OiJjYXRlZ29yeSI7Tzo4OiJzdGRDbGFzcyI6MTp7czo0OiJsaXN0IjtPOjg6InN0ZENsYXNzIjoyOntzOjY6IjE4OjQyNSI7Tzo4OiJzdGRDbGFzcyI6MTp7czo1OiJsaW1pdCI7aToyMDt9czo2OiIyNDo0MjYiO086ODoic3RkQ2xhc3MiOjE6e3M6NToibGltaXQiO2k6MTA7fX19fX1zOjE0OiIAKgBpbml0aWFsaXplZCI7YjowO3M6OToic2VwYXJhdG9yIjtzOjE6Ii4iO31zOjQ6InVzZXIiO086MjA6Ikpvb21sYVxDTVNcVXNlclxVc2VyIjoxOntzOjI6ImlkIjtpOjA7fX1zOjk6Il9fajJzdG9yZSI7Tzo4OiJzdGRDbGFzcyI6MTp7czo4OiJjdXJyZW5jeSI7czozOiJVU0QiO319czoxNDoiACoAaW5pdGlhbGl6ZWQiO2I6MDtzOjk6InNlcGFyYXRvciI7czoxOiIuIjt9
+    [product_id] => 80,81
+    [userid] => 0
+    [j] => Array
+        (
+            [162] => Array
+                (
+                    [30] => 20190613_21:27:02_14.177.232.127_507545
+                )
+
+            [129] => Array
+                (
+                    [25] => 20190613_21:27:02_14.177.232.127_601621
+                )
+
+            [113] => Array
+                (
+                    [17] => 20190613_21:27:02_14.177.232.127_491560
+                )
+
+            [108] => Array
+                (
+                    [16] => 20190613_21:27:02_14.177.232.127_902851
+                )
+
+            [11] => Array
+                (
+                    [15] => 20190613_21:27:02_14.177.232.127_522980
+                )
+
+            [10] => Array
+                (
+                    [10] => 20190613_21:27:02_14.177.232.127_455159
+                )
+
+            [161] => Array
+                (
+                    [30] => 20190613_21:27:43_14.177.232.127_905176
+                )
+
+            [130] => Array
+                (
+                    [25] => 20190613_21:27:43_14.177.232.127_493515
+                )
+
+            [109] => Array
+                (
+                    [17] => 20190613_21:27:43_14.177.232.127_750990
+                )
+
+            [107] => Array
+                (
+                    [16] => 20190613_21:27:43_14.177.232.127_114520
+                )
+
+            [91] => Array
+                (
+                    [15] => 20190613_21:27:43_14.177.232.127_435953
+                )
+
+            [90] => Array
+                (
+                    [10] => 20190613_21:27:43_14.177.232.127_887281
+                )
+
+            [163] => Array
+                (
+                    [30] => 20190613_21:27:53_14.177.232.127_718142
+                )
+
+            [131] => Array
+                (
+                    [25] => 20190613_21:27:53_14.177.232.127_761648
+                )
+
+            [115] => Array
+                (
+                    [17] => 20190613_21:27:53_14.177.232.127_404312
+                )
+
+            [114] => Array
+                (
+                    [16] => 20190613_21:27:53_14.177.232.127_943271
+                )
+
+            [95] => Array
+                (
+                    [15] => 20190613_21:27:53_14.177.232.127_360566
+                )
+
+            [94] => Array
+                (
+                    [10] => 20190613_21:27:53_14.177.232.127_358426
+                )
+
+            [164] => Array
+                (
+                    [30] => 20190613_21:27:58_14.177.232.127_521935
+                )
+
+            [132] => Array
+                (
+                    [25] => 20190613_21:27:58_14.177.232.127_433748
+                )
+
+            [117] => Array
+                (
+                    [17] => 20190613_21:27:58_14.177.232.127_609783
+                )
+
+            [116] => Array
+                (
+                    [16] => 20190613_21:27:58_14.177.232.127_555765
+                )
+
+            [97] => Array
+                (
+                    [15] => 20190613_21:27:58_14.177.232.127_555826
+                )
+
+            [96] => Array
+                (
+                    [10] => 20190613_21:27:58_14.177.232.127_985738
+                )
+
+            [166] => Array
+                (
+                    [30] => 20190613_21:28:12_14.177.232.127_611092
+                )
+
+            [146] => Array
+                (
+                    [25] => 20190613_21:28:12_14.177.232.127_148764
+                )
+
+            [145] => Array
+                (
+                    [17] => 20190613_21:28:12_14.177.232.127_625158
+                )
+
+            [144] => Array
+                (
+                    [16] => 20190613_21:28:12_14.177.232.127_787939
+                )
+
+            [85] => Array
+                (
+                    [15] => 20190613_21:28:12_14.177.232.127_448569
+                )
+
+            [84] => Array
+                (
+                    [10] => 20190613_21:28:12_14.177.232.127_351061
+                )
+
+            [159] => Array
+                (
+                    [30] => 20190613_21:30:28_14.177.232.127_641770
+                )
+
+            [128] => Array
+                (
+                    [25] => 20190613_21:30:28_14.177.232.127_642858
+                )
+
+            [110] => Array
+                (
+                    [17] => 20190613_21:30:28_14.177.232.127_908129
+                )
+
+            [106] => Array
+                (
+                    [16] => 20190613_21:30:28_14.177.232.127_288591
+                )
+
+            [3] => Array
+                (
+                    [15] => 20190613_21:30:28_14.177.232.127_990335
+                )
+
+            [2] => Array
+                (
+                    [10] => 20190613_21:30:28_14.177.232.127_941792
+                )
+
+            [136] => Array
+                (
+                    [25] => 20190613_21:36:25_14.177.232.127_751257
+                )
+
+            [121] => Array
+                (
+                    [17] => 20190613_21:36:25_14.177.232.127_818584
+                )
+
+            [120] => Array
+                (
+                    [16] => 20190613_21:36:25_14.177.232.127_488573
+                )
+
+            [81] => Array
+                (
+                    [15] => 20190613_21:36:25_14.177.232.127_637283
+                )
+
+            [80] => Array
+                (
+                    [10] => 20190613_21:36:25_14.177.232.127_511052
+                )
+
+        )
+
+)
+</pre>
+	</section>
+
+  <!-- footer -->
+    <!-- //footer -->
+
+					
+			<ul class="pager pagenav">
+	<li class="previous">
+		<a class="hasTooltip" title="Include Content Item plugin" aria-label="Previous article: Include Content Item plugin" href="Include-Content-Item-plugin.php.html" rel="prev">
+			<span class="icon-chevron-left" aria-hidden="true"></span> <span aria-hidden="true">Prev</span>		</a>
+	</li>
+	<li class="next">
+		<a class="hasTooltip" title="DirectPHP plugin" aria-label="Next article: DirectPHP plugin" href="directphp-plugin.php.html" rel="next">
+			<span aria-hidden="true">Next</span> <span class="icon-chevron-right" aria-hidden="true"></span>		</a>
+	</li>
+</ul>
+	
+	
+	
+</article>
+<!-- //Article -->
+
+<div class="clearfix"></div>
+
+<script type="text/javascript">
+<!--
+var jcomments=new JComments(1270, 'com_content','/php-gtk2/jcomments/');
+jcomments.setList('comments-list');
+//-->
+</script>
+<div id="jc">
+<div id="comments"><h4>Comments <a class="rss" href="../jcomments/rss/com_content/1270.php.xml" title="RSS feed for comments to this post" target="_blank">&nbsp;</a><a class="refresh" href="#" title="Refresh comments list" onclick="jcomments.showPage(1270,'com_content',0);return false;">&nbsp;</a></h4>
+<div class="comments-list" id="comments-list-0">
+		<div class="even" id="comment-item-4">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-4">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(4, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(4, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-4" id="comment-4">#</a>
+<span class="comment-author">mike construct it</span>
+<span class="comment-date">2012-01-10 14:07</span>
+<div class="comment-body" id="comment-body-4">this product is way to confusing and doesnt seem to work right in 1.7</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(4); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(4,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(4); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-4">
+		<div class="odd" id="comment-item-7">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-7">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(7, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(7, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-7" id="comment-7">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-01-10 16:44</span>
+<div class="comment-body" id="comment-body-7">Hi,<br><br>It works on Joomla 1.7. There are already many users using it on Joomla 1.7.<br><br>Would you want to provide more details so that I can help? e.g.<br>- What have you tried?<br>- Could you please switch to the standard Joomla template and see if it works - this will allow you to see if it works on your machine at all. (because some other Joomla template uses other javascript animation library that causes conflict with jQuery.)<br>- Can you provide the URL so that I can do a view source of your page to gather more clues as to where might be the problem.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(7); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(7,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(7); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-9">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-9">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(9, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(9, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-9" id="comment-9">#</a>
+<span class="comment-author">Ben Fa</span>
+<span class="comment-date">2012-01-11 05:09</span>
+<div class="comment-body" id="comment-body-9">I tried the scroller, but it does not pause on eac message that has --- on the last line (separate line_ . i have the plug in in the right module, J1.7<br><br>thanks</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(9); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(9,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(9); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-9">
+		<div class="odd" id="comment-item-29">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-29">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(29, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(29, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-29" id="comment-29">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-01-29 17:15</span>
+<div class="comment-body" id="comment-body-29">Hi,<br><br>Can you please email me the tag that you have tried to use?<br><br>Will test it on my side to see what's the problem.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(29); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(29,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(29); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-37">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-37">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(37, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(37, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-37" id="comment-37">#</a>
+<span class="comment-author">Derek G</span>
+<span class="comment-date">2012-02-03 16:46</span>
+<div class="comment-body" id="comment-body-37">I want to use multiple scrollers on same page. I have assigned different ids to each one, but only the first one scrolls (and even that mixes in text that should be in the second occurrence). Is there any additional setting I need - I see that it works on your demo page, and from a brief look at the source code for my page it looks similar, ie the arrays seem corrctly defined. Any suggestions would be appreciated</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(37); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(37,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(37); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-37">
+		<div class="odd" id="comment-item-38">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-38">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(38, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(38, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-38" id="comment-38">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-02-03 19:22</span>
+<div class="comment-body" id="comment-body-38">Hi Derek,<br><br>Have just sent you an email. Please email me back those information so that I have more clues as to where might be the problem.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(38); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(38,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(38); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-43">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-43">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(43, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(43, -1);return false;"></a>
+<span class="vote-good">+1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-43" id="comment-43">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-02-06 18:24</span>
+<div class="comment-body" id="comment-body-43">Hi Derek,<br><br>Have received your email with the details. Thanks.<br><br>If you take a look at the css, it uses # for each scroller. This means that each scroller needs to point to a different style corresponding to each id.<br><br>For your case, you have used "mod_pscroller" as style for your first scroller, so you need to specify a different css for your second scroller.<br><br>Try changing your second scroller:<br>style:mod_pscroller<br>to<br>style:pscroller2<br><br>Please give it a try and let me know if it works this time.<br><br>Once it works, you can start modifying the style pscroller2 to suit your needs.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(43); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(43,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(43); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-50">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-50">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(50, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(50, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-50" id="comment-50">#</a>
+<span class="comment-author">Victor Wukovits</span>
+<span class="comment-date">2012-02-08 13:43</span>
+<div class="comment-body" id="comment-body-50">I purchased this plugin a while back (last year), and can't find my email receipt for the "powered by" removal license. How can I get that resent?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(50); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(50,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(50); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-50">
+		<div class="even" id="comment-item-51">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-51">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(51, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(51, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-51" id="comment-51">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-02-08 16:55</span>
+<div class="comment-body" id="comment-body-51">Hi Victor,<br><br>Have just emailed you the latest registered version of the plugin.<br><br>Please let me know if you didn't receive it.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(51); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(51,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(51); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-124">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-124">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(124, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(124, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-124" id="comment-124">#</a>
+<span class="comment-author">gwenwren</span>
+<span class="comment-date">2012-03-10 17:16</span>
+<div class="comment-body" id="comment-body-124">thanks to the clear instructions on this page i had the scroller working within minutes. fabulous product!@ fabulous support@!</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(124); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(124,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(124); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-130">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-130">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(130, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(130, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-130" id="comment-130">#</a>
+<span class="comment-author">Jade</span>
+<span class="comment-date">2012-03-11 17:00</span>
+<div class="comment-body" id="comment-body-130">I want to d/l the plugin and try it "first" before I buy it w/ the removed by line - but your site here doesn't seem to have that option (even though is says "if you find it useful" - - Each time I click d/l - I'm taken to the buy link. Where is the free version?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(130); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(130,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(130); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-130">
+		<div class="odd" id="comment-item-131">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-131">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(131, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(131, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-131" id="comment-131">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-03-11 18:12</span>
+<div class="comment-body" id="comment-body-131">Hi Jade,<br><br>May I know which link did you click?<br><br>If you try the download link at: http://www.kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-plugin.php#download<br><br>All the 5 links there should work fine (for the 5 different versions of Joomla).<br><br>Have also emailed a copy of the installers to you.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(131); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(131,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(131); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-132">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-132">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(132, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(132, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-132" id="comment-132">#</a>
+<span class="comment-author">dora</span>
+<span class="comment-date">2012-03-13 13:33</span>
+<div class="comment-body" id="comment-body-132"> <img src="../components/com_jcomments/images/smilies/wink.gif" alt=";-)">  Good job! Thanks so much.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(132); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(132,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(132); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-138">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-138">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(138, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(138, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-138" id="comment-138">#</a>
+<span class="comment-author">Lpizzle</span>
+<span class="comment-date">2012-03-15 13:07</span>
+<div class="comment-body" id="comment-body-138">With regards to number 4 listed above "Each scrolling message can also contain multiple lines:" Is there any limit as to how many lines the scroller can handle?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(138); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(138,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(138); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-138">
+		<div class="even" id="comment-item-142">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-142">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(142, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(142, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-142" id="comment-142">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-03-15 17:43</span>
+<div class="comment-body" id="comment-body-142">Hi,<br><br>As mentioned in the first paragraph of this page, the original code was written by dynamicdrive.com. What I've done is to wrap this into a Joomla plugin so that you can use this within the Joomla framework.<br><br>You might want to ask the author about your question. Alternatively, dynamicdrive.com has a very active forum. You can also ask the questions there.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(142); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(142,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(142); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-179">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-179">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(179, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(179, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-179" id="comment-179">#</a>
+<span class="comment-author">Andyk</span>
+<span class="comment-date">2012-03-26 05:22</span>
+<div class="comment-body" id="comment-body-179">Neat little plugin, works very well.<br>Is it possible though to show more than 1 message at a time but then only move up one on each scroll (hope this makes sense)?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(179); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(179,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(179); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-179">
+		<div class="even" id="comment-item-191">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-191">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(191, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(191, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-191" id="comment-191">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-03-29 17:22</span>
+<div class="comment-body" id="comment-body-191">Hi,<br><br>No. This is a simple plugin to display one message at a time.<br><br>You may want to try joomla.org to see if there are more elaborated plugins that can achieve what you have in mind.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(191); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(191,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(191); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-180">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-180">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(180, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(180, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-180" id="comment-180">#</a>
+<span class="comment-author">Aman Sahota</span>
+<span class="comment-date">2012-03-26 14:41</span>
+<div class="comment-body" id="comment-body-180">hi using the plugin:<br>http://www.pduexpertuk.com/new-2012/<br><br>It seems to be covering all of my graphics? The "powered by..." text seems to be a big block image. <br><br>WHy can it not be just simple html text sitting in the corner instead of a massive image? Anyway around this?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(180); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(180,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(180); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-180">
+		<div class="even" id="comment-item-190">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-190">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(190, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(190, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-190" id="comment-190">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-03-29 17:21</span>
+<div class="comment-body" id="comment-body-190">Hi,<br><br>Think it's due to the CSS stylesheets of your template. Try switching to the standard Joomla template and see if the problem is still there.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(190); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(190,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(190); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-257">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-257">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(257, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(257, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-257" id="comment-257">#</a>
+<span class="comment-author">lsee</span>
+<span class="comment-date">2012-04-26 23:53</span>
+<div class="comment-body" id="comment-body-257">Hi,<br>I install the both module and pluggin V1.7, But it displays the text in put in the module content plainly. May I know what could be the possible reason ?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(257); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(257,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(257); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-258">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-258">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(258, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(258, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-258" id="comment-258">#</a>
+<span class="comment-author">lsee</span>
+<span class="comment-date">2012-04-27 00:05</span>
+<div class="comment-body" id="comment-body-258">Hi,<br>Sorry for the confusion. It works for me now. I forgot to enable the plugin.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(258); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(258,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(258); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-363">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-363">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(363, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(363, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-363" id="comment-363">#</a>
+<span class="comment-author">ellieutt</span>
+<span class="comment-date">2012-06-13 08:20</span>
+<div class="comment-body" id="comment-body-363">is there a way to justify the text once you've input it?<br><br>For a total beginner you have made everything else real easy!  <img src="../components/com_jcomments/images/smilies/lol.gif" alt=":lol:"> </div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(363); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(363,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(363); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-363">
+		<div class="even" id="comment-item-364">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-364">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(364, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(364, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-364" id="comment-364">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-06-13 08:55</span>
+<div class="comment-body" id="comment-body-364">Hi,<br><br>Haven't tried it yet. But I think you can do it through the CSS style sheets.<br><br>Goto the folder: plugins/content/pausing_up_down_scroller/pausing_up_down_scroller<br><br>Edit the file: pausing_up_down_scroller.css<br><br>If you are using the default sample, you can try edit the style for "#pscroller1"<br><br>Let me know if it works, ok?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(364); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(364,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(364); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-370">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-370">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(370, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(370, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-370" id="comment-370">#</a>
+<span class="comment-author">Mark Garland</span>
+<span class="comment-date">2012-06-14 16:40</span>
+<div class="comment-body" id="comment-body-370">where is the plugin?<br><br>I can not for the life of me find the download for the PLUGIN - 20 mins searching your site after registering - there is only a module download - which do not work with out plugin??????<br><br>Where is the plugin download please?<br><br>Why would I buy if the needed plugin is not supplied with module as is - it don't work?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(370); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(370,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(370); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-370">
+		<div class="even" id="comment-item-371">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-371">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(371, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(371, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-371" id="comment-371">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-06-14 17:02</span>
+<div class="comment-body" id="comment-body-371">Hi Mark,<br><br>It's right on this page (where you leave this comment).<br><br>You can search for the word "Download".<br><br>Or you can click this link: http://www.kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-plugin.php#download<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(371); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(371,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(371); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-420">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-420">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(420, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(420, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-420" id="comment-420">#</a>
+<span class="comment-author">no9w</span>
+<span class="comment-date">2012-06-28 20:35</span>
+<div class="comment-body" id="comment-body-420">Hi, I'm not real techy, but with your directions, I have the scroller working on a site I'm building. Could you tell me how I can change the background color and possibly size and color of text? And also how to open links in a new window.<br>Thank you so much.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(420); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(420,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(420); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-421">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-421">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(421, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(421, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-421" id="comment-421">#</a>
+<span class="comment-author">no9w</span>
+<span class="comment-date">2012-06-28 20:41</span>
+<div class="comment-body" id="comment-body-421">Ok, I think it uses the default colors and size for text. Now, just don't know how to change background color to match my background and open a new window with link.<br>This scroller is what I've been looking for.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(421); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(421,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(421); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-421">
+		<div class="odd" id="comment-item-424">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-424">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(424, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(424, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-424" id="comment-424">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-06-29 08:16</span>
+<div class="comment-body" id="comment-body-424">Hi,<br><br>You can set the background color through the style sheets <br><br>Name of the css file: "pausing_up_down _scroller.css" <br><br>Located in the following folder: plugins/content/pausing_up_down _scroller/pausing_up_down _scroller<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(424); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(424,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(424); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-434">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-434">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(434, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(434, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-434" id="comment-434">#</a>
+<span class="comment-author">grace</span>
+<span class="comment-date">2012-07-03 01:07</span>
+<div class="comment-body" id="comment-body-434">Hi,<br><br>I want to attach an anchor tag to the heading of the module, so when i click on the header say (Pausing up-down) on my website, it will take the user to another article with the whole list of news items that is being scrolling down. Is there any option for this?? Thanks in advance.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(434); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(434,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(434); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-434">
+		<div class="odd" id="comment-item-436">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-436">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(436, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(436, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-436" id="comment-436">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-07-03 01:37</span>
+<div class="comment-body" id="comment-body-436">Hi,<br><br>There's no option to do this. You have the source code. You will need to modify the code to suit your needs.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(436); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(436,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(436); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-438">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-438">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(438, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(438, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-438" id="comment-438">#</a>
+<span class="comment-author">grace</span>
+<span class="comment-date">2012-07-03 02:13</span>
+<div class="comment-body" id="comment-body-438">Hi, <br>Thanks for the reply!! Since i m new to joomla and php .. could u please list the steps as how should i code in the xml and php files ? Would be wonderful if you help me in this. Thank you</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(438); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(438,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(438); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-578">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-578">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(578, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(578, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-578" id="comment-578">#</a>
+<span class="comment-author">Flotsman</span>
+<span class="comment-date">2012-09-05 14:54</span>
+<div class="comment-body" id="comment-body-578">This is really a lame app that doesn't work in 2.5.4<br>Documentation is very poor at best.<br>Doesnt work at all no matter how I add the {UpDownScroller}<br>THis is a test<br>----<br>This is a test<br><br>{/UpDownScroller}<br><br>Just shows exactly what is above in code or in module..</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(578); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(578,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(578); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-678">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-678">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(678, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(678, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-678" id="comment-678">#</a>
+<span class="comment-author">kent morrison</span>
+<span class="comment-date">2012-10-16 11:43</span>
+<div class="comment-body" id="comment-body-678">TESTED this plugin with the free version.<br>My client liked it, so bought it, just now, for $10.<br>Uninstalled the free version, installed the purchased version.<br>NOW IT DOES NOT WORK.<br>Basically the exact same code, but with sizing parameters in it.<br>HERE is the site, please tell me what is wrong?<br>http://lincolncountyed.org/<br><br>Thank you,<br>Kent</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(678); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(678,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(678); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-678">
+		<div class="odd" id="comment-item-679">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-679">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(679, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(679, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-679" id="comment-679">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-10-16 18:27</span>
+<div class="comment-body" id="comment-body-679">Hi Kent,<br><br>The zip file that you've downloaded contains the installers for all 5 Joomla version.<br><br>1) Please unzip the downloaded zip file to a file location.<br><br>2) You will see 5 subfolders. Each one is the installer for the respective Joomla version.<br><br>3) Use the installer that corresponds to your Joomla version.<br><br>Please give it a try one more time and let me know if it works.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(679); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(679,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(679); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-684">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-684">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(684, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(684, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-684" id="comment-684">#</a>
+<span class="comment-author">bpg</span>
+<span class="comment-date">2012-10-22 13:18</span>
+<div class="comment-body" id="comment-body-684">Hi kksou,<br><br>Joomla version 1.5.23<br>Free version of Pausing...<br>Basic test doesn't work.<br>The text appears with banners and without CR/LF.<br><br>It's what i see on the page<br>{UpDownScroller} message #1 --- message #2 --- message #3 {/UpDownScroller} <br><br>It's correct in the module window<br><br>Thank's in advance</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(684); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(684,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(684); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-684">
+		<div class="odd" id="comment-item-687">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-687">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(687, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(687, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-687" id="comment-687">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-10-24 19:28</span>
+<div class="comment-body" id="comment-body-687">Hi,<br><br>You see the tag too: {UpDownScroller} ?<br><br>If you see the tag, it means the tags are not processed at all. Did you enable the plugin?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(687); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(687,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(687); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-707">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-707">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(707, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(707, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-707" id="comment-707">#</a>
+<span class="comment-author">Gaylen</span>
+<span class="comment-date">2012-11-01 21:50</span>
+<div class="comment-body" id="comment-body-707">Hey I just want to say being a total beginner with Joomla, this is the only one I could get to work out of 4-5 other scrollers. So two thumbs up from me! Good job!:-) Also to others, all you do is copy and paste the codes above into the text box in the module, then edit it to fit your needs.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(707); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(707,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(707); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-802">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-802">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(802, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(802, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-802" id="comment-802">#</a>
+<span class="comment-author">AshH</span>
+<span class="comment-date">2013-01-01 01:39</span>
+<div class="comment-body" id="comment-body-802">Is this works on Joomla 2.5?? <br><br>cause I tried with the coding you have provided but it's not working. Please help me.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(802); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(802,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(802); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-1000">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1000">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1000, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1000, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-1000" id="comment-1000">#</a>
+<span class="comment-author">nova</span>
+<span class="comment-date">2013-05-10 00:59</span>
+<div class="comment-body" id="comment-body-1000">Unique ID of the scroller is for me not functioning?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1000); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1000,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1000); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-1001">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1001">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1001, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1001, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-1001" id="comment-1001">#</a>
+<span class="comment-author">nova</span>
+<span class="comment-date">2013-05-10 02:04</span>
+<div class="comment-body" id="comment-body-1001"><span class="quote">Quoting nova:</span><blockquote><div>Unique ID of the scroller is for me not functioning?</div></blockquote><br>done</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1001); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1001,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1001); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-1083">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1083">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1083, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1083, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-1083" id="comment-1083">#</a>
+<span class="comment-author">Wendy Rose</span>
+<span class="comment-date">2013-06-10 03:35</span>
+<div class="comment-body" id="comment-body-1083">The scroller is not pausing at the --- but rather it is displaying it as text. I have tried many different things to fix this and I am just wasting valuable time. Can you please help me?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1083); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1083,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1083); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-1083">
+		<div class="odd" id="comment-item-1087">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1087">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1087, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1087, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-1087" id="comment-1087">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-06-11 13:22</span>
+<div class="comment-body" id="comment-body-1087">Hi Wendy,<br><br>I am more than willing to help, but please you need to provide more clues and info.<br><br>Please let me know what you have tried? What are the tags that you have used? Also the url of the web page so that I can do a view source of the page.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1087); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1087,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1087); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-1229">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1229">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1229, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1229, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-1229" id="comment-1229">#</a>
+<span class="comment-author">Evden Eve Nakliyat</span>
+<span class="comment-date">2013-11-14 17:07</span>
+<div class="comment-body" id="comment-body-1229">Thank you so much this Joomla Module. We lowe it<br><br>evdeneve-nakliyat.eu Team</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1229); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1229,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1229); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-1230">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1230">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1230, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1230, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Pausing-up-down-Scroller-plugin.php.html#comment-1230" id="comment-1230">#</a>
+<span class="comment-author">Bayrakç?</span>
+<span class="comment-date">2013-11-14 17:55</span>
+<div class="comment-body" id="comment-body-1230">thanks for works. we using it but will you upgrade fot Joomla 2.5x?<br><br>Bayrakci.pw team</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1230); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1230,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1230); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+</div>
+<div id="comments-list-footer"><a class="refresh" href="#" title="Refresh comments list" onclick="jcomments.showPage(1270,'com_content',0);return false;">Refresh comments list</a><br><a class="rss" href="../jcomments/rss/com_content/1270.php.xml" title="RSS feed for comments to this post" target="_blank">RSS feed for comments to this post</a></div>
+</div>
+<h4>Add comment</h4>
+<a id="addcomments" href="#addcomments"></a>
+<form id="comments-form" name="comments-form" action="javascript:void(null);">
+<p>
+	<span>
+		<input id="comments-form-name" type="text" name="name" value="" maxlength="20" size="22" tabindex="1">
+		<label for="comments-form-name">Name (required)</label>
+	</span>
+</p>
+<p>
+	<span>
+		<input id="comments-form-email" type="text" name="email" value="" size="22" tabindex="2">
+		<label for="comments-form-email">E-mail (required, but will not display)</label>
+	</span>
+</p>
+<p>
+	<span>
+		<textarea id="comments-form-comment" name="comment" cols="65" rows="8" tabindex="5"></textarea>
+	</span>
+</p>
+<p>
+	<span>
+		<input class="checkbox" id="comments-form-subscribe" type="checkbox" name="subscribe" value="1" tabindex="5">
+		<label for="comments-form-subscribe">Notify me of follow-up comments</label><br>
+	</span>
+</p>
+<p>
+	<span>
+		<img class="captcha" onclick="jcomments.clear('captcha');" id="comments-form-captcha-image" src="../jcomments/captcha.php-45.jpeg?ac=41896" width="121" height="60" alt="Security code"><br>
+		<span class="captcha" onclick="jcomments.clear('captcha');">Refresh</span><br>
+		<input class="captcha" id="comments-form-captcha" type="text" name="captcha_refid" value="" size="5" tabindex="6"><br>
+	</span>
+</p>
+<div id="comments-form-buttons">
+	<div class="btn" id="comments-form-send"><div><a href="#" tabindex="7" onclick="jcomments.saveComment();return false;" title="Send (Ctrl+Enter)">Send</a></div></div>
+	<div class="btn" id="comments-form-cancel" style="display:none;"><div><a href="#" tabindex="8" onclick="return false;" title="Cancel">Cancel</a></div></div>
+	<div style="clear:both;"></div>
+</div>
+<div>
+	<input type="hidden" name="object_id" value="1270">
+	<input type="hidden" name="object_group" value="com_content">
+</div>
+</form>
+<script type="text/javascript">
+<!--
+function JCommentsInitializeForm()
+{
+	var jcEditor = new JCommentsEditor('comments-form-comment', true);
+	jcEditor.initSmiles('/php-gtk2/components/com_jcomments/images/smilies/');
+	jcEditor.addSmile(':D','laugh.gif');
+	jcEditor.addSmile(':lol:','lol.gif');
+	jcEditor.addSmile(':-)','smile.gif');
+	jcEditor.addSmile(';-)','wink.gif');
+	jcEditor.addSmile('8)','cool.gif');
+	jcEditor.addSmile(':-|','normal.gif');
+	jcEditor.addSmile(':-*','whistling.gif');
+	jcEditor.addSmile(':oops:','redface.gif');
+	jcEditor.addSmile(':sad:','sad.gif');
+	jcEditor.addSmile(':cry:','cry.gif');
+	jcEditor.addSmile(':o','surprised.gif');
+	jcEditor.addSmile(':-?','confused.gif');
+	jcEditor.addSmile(':-x','sick.gif');
+	jcEditor.addSmile(':eek:','shocked.gif');
+	jcEditor.addSmile(':zzz','sleeping.gif');
+	jcEditor.addSmile(':P','tongue.gif');
+	jcEditor.addSmile(':roll:','rolleyes.gif');
+	jcEditor.addSmile(':sigh:','unsure.gif');
+	jcEditor.addCounter(1000, '', ' symbols left', 'counter');
+	jcomments.setForm(new JCommentsForm('comments-form', jcEditor));
+}
+
+if (window.addEventListener) {window.addEventListener('load',JCommentsInitializeForm,false);}
+else if (document.addEventListener){document.addEventListener('load',JCommentsInitializeForm,false);}
+else if (window.attachEvent){window.attachEvent('onload',JCommentsInitializeForm);}
+else {if (typeof window.onload=='function'){var oldload=window.onload;window.onload=function(){oldload();JCommentsInitializeForm();}} else window.onload=JCommentsInitializeForm;} 
+//-->
+</script>
+<div id="comments-footer" align="center"><a href="http://www.joomlatune.com" title="JComments" target="_blank">JComments</a></div>
+<script type="text/javascript">
+<!--
+jcomments.setAntiCache(1,0,0);
+//-->
+</script> 
+</div></div>
+	</main>
+		
+	<!-- //MAIN CONTENT -->				</div>
+												<div id="sidebar-2" class="sidebar zg-col zg-col-3  " role="complementary">
+					
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+					<div class="zen-module-title">
+						<h3><span>Latest Comments</span><h3>
+					</h3></h3></div>
+							
+				<div class="zen-module-body">
+					<ul class="jcomments-latest">
+	
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">16.05.2019 15:18</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Patrick, I developed this plugin initially so that I can place a map on my website easily. I thought ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2184">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">Patrick</span>
+						<span class="date">13.05.2019 17:29</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi there, will it be possible to just show a link to the popup map? I don't want to show the map on my ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2180">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							DirectPHP plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">21.04.2019 16:05</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Mark, Sorry for the late reply. Recently there has been a huge influx of spam posts, and your post ...								<p class="jcomments-latest-readmore">
+					<a href="directphp-plugin.php.html#comment-2166">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							DirectPHP plugin					</h4>
+		
+		
+				<span class="author">Mark Hobbs</span>
+						<span class="date">08.04.2019 17:16</span>
+		
+		<div class="comment rounded ">
+					<div>
+				I've used DirectPHP for a few years... it's beautifully simple and convenient. I recently decided to ...								<p class="jcomments-latest-readmore">
+					<a href="directphp-plugin.php.html#comment-2160">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleDirections - To Here - plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">23.03.2019 09:35</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Greg, 1) First, make sure you have entered the Google Maps API key. You can apply it here ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleDirections-To-Here-plugin.php.html#comment-2146">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleDirections - To Here - plugin					</h4>
+		
+		
+				<span class="author">GREG</span>
+						<span class="date">22.03.2019 22:04</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi, I have installed all 3 plugins and when i enter my current location i get the error Google cannot ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleDirections-To-Here-plugin.php.html#comment-2145">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">15.01.2019 00:06</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Christian, Yes, you're right. For this plugin, you can show multiple KML files in a web page (using ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2094">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">Christian Teuber</span>
+						<span class="date">14.01.2019 16:30</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Can you point me to the sample map, I see only maps with one kml file on one map. I want to show 2 ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2093">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							New version of DirectPHP - support for PHP 7					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">14.01.2019 14:51</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Björn, Thanks for your support over so many years! I'm not running php 7.1, and I do not currently ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla-news/new-version-of-directphp-support-for-php-7.php.html#comment-2091">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">14.01.2019 14:44</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Christian, I have a sample page here with many KML files on it: googleMaps plugin Tutorial 05: KML ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2090">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+			</li>
+		</ul>
+
+				</div>
+			</div>
+		</div>
+	
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+					<div class="zen-module-title">
+						<h3><span>kksou Weather</span><h3>
+					</h3></h3></div>
+							
+				<div class="zen-module-body">
+					<script type="text/javascript">
+var headID = document.getElementsByTagName("head")[0];
+var cssNode = document.createElement('link');
+cssNode.type = 'text/css';
+cssNode.rel = 'stylesheet';
+cssNode.href = 'https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather.css';
+cssNode.media = 'screen';
+headID.appendChild(cssNode);
+</script><script type="text/javascript">
+//var mod_id = "301";
+var gw_lib_url301="https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather_lib.php";
+var gw_progress_gif301="https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather_progress.gif";
+var joomla_root301='|_%$var|_%$www|_%$kksou.com|_%$public_html|_%$php-gtk2';
+var label_city301="City";
+var popup_city301="Please enter zip code, state (in US) or city name, country (for other countries)";
+var popup_deg_F301="Click here to convert to degree F";
+var popup_deg_C301="Click here to convert to degree C";
+var size_city301="20";
+var hide_input301="0";
+var lang301="en";
+var googleweather_unit301="US";
+var default_location301="San Francisco, CA";
+var googleweather_use_curl301="1";
+var request_interval301="3";
+var hide_humidity301="0";
+var hide_wind301="0";
+var hide_forecast301="0";
+var focus_on_city301="0";
+var api_key301="90d34681236de382";
+var default_country301="";
+var label_humidity301="Humidity: ";
+var refresh_time301="60";
+var admin_mode301="0";
+var joomla_ver301="3.0";
+</script><script type="text/javascript" src="../modules/mod_kksouweather/mod_kksouWeather_ajax.js"></script><div id="googleWeather_container301"><form action="index.php" method="get" id="WeatherForm301"><div class="googleWeather"><span class="input_label">City: </span><input name="gw_a" id="str_gw_a301" class="inputbox" maxlength="255" size="20" value="" title="">&nbsp;<span id="gw_loading301"></span><br><input type="hidden" name="a_org" id="str_gw_a_org301" class="inputbox" value=""><div align="left" style="padding-top:2px;"><p align="left" style="padding:0 0 0 0;margin:0 0 0 0"><a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Weather-AJAX-version.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p></div><input type="hidden" name="process" value="1"><input type="hidden" name="temp_unit" id="temp_unit301" value="US"><input type="hidden" name="option" value="com_content"><input type="hidden" name="task" value=""><input type="hidden" name="id" value="1270"><input type="hidden" name="sectionid" value=""><input type="hidden" name="catid" value="24"><input type="hidden" name="Itemid" value="426"></div></form></div><script type="text/javascript">
+
+if (window.jQuery) {
+jQuery(document).ready(function() {
+	gw_prepareForm('301');
+	gw_submitform('301', 1);
+});
+} else {
+	gw_prepareForm('301');
+	gw_submitform('301', 1);
+}
+
+</script>
+				</div>
+			</div>
+		</div>
+	
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					<p>It's not that difficult to learn <a href="http://www.greengeeks.com/website-transfer/" title="how to transfer a website" target="_blank">how to transfer a website</a>.</p>				</div>
+			</div>
+		</div>
+	
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					Green Geeks offers high quality <a href="http://www.greengeeks.com/scripts/joomla-hosting.php" title="Joomla Hosting" target="_blank">Joomla hosting.</a>
+				</div>
+			</div>
+		</div>
+	
+				</div>
+							</div>
+		</div>
+	</div>
+	
+		
+</section>	    	
+	    		    	
+	    	
+	    	
+	    	
+			
+			
+			
+			
+<!-- FOOTER -->
+<footer id="footerwrap" class="wrap zen-footer stack-tablets stack-phones" role="contentinfo">
+  <section class="zen-copyright">
+    <div class="zen-container">
+      <div class="zen-row">
+        	<div class="zg-col zg-col-9">
+	          
+
+<ul id="zen-menu-119">
+<li class="item-382"><a href="../index.php.html?option=com_googlesearch_cse&amp;view=googlesearchs&amp;Itemid=382&amp;lang=en">
+				Google Search			</a>
+	</li><li class="item-447"><a href="http://logistics-innovations.org/">Logistics Innovations</a></li><li class="item-456"><a href="https://www.rpa-sg.org/">RPA</a></li><li class="item-455"><a href="../category/joomla-version-history/index.htm">
+				Joomla Version History			</a>
+	</li><li class="item-457"><a href="https://ask.rpa-sg.org/">RPA Community Forum</a></li></ul>
+
+<div class="custom">
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-700099-1', 'auto');
+  ga('send', 'pageview');
+
+</script></div>
+
+        	</div>
+        	<div class="zg-col zg-col-3">
+        		<div id="zen-copyright">
+        			
+        			        				Copyright © 2005-2015. kksou.com. All Rights Reserved         		</div>
+        	</div>
+      	</div>
+	</div>
+  </section>
+</footer>
+<!-- //FOOTER -->			
+			
+
+
+			
+		</div>	
+	
+		
+
+	<div class="social-wrap fixed">
+
+		
+		
+
+		
+		
+<a id="social-twitter123" href="https://twitter.com/kksou" target="_blank">
+			<span class="zen-animate fadeInRightBig animated-faster fa fa-twitter zen-icon zen-icon-twitter"></span>
+	</a>
+
+	<script>
+		jQuery(document).ready(function ($) {
+			// Twitter Link Constructor
+			var twitter_link = $('#social-twitter').attr('href');
+
+			// Get title on page
+			// Made it broad for anumber of use cases but will retrieve h1 or h2 if not available
+			var title = $('#midCol h1:first').text();
+
+				if(typeof title ==="undefined") {
+					description = $('h2:first').text();
+				}
+
+			twitter_link += title;
+
+			$('#social-twitter').attr('href', twitter_link);
+		});
+	</script>
+
+		 	</div>
+	<script>
+		jQuery(document).ready(function ($) {
+
+			$('.popup').live( 'click', function(){
+				newwindow=window.open($(this).attr('href'),'','height=200,width=450');
+			    if (window.focus) {newwindow.focus()}
+			    return false;
+			 });
+		});
+	</script>
+		
+		
+<div class="sb-slidebar off-canvas-right sb-width-wide">
+	<div class="off-canvas-inner">
+		<div class="off-canvas-heading">
+			<span class="sb-close"><span class="zen-icon-remove zen-icon fa fa-icon-remove"></span></span>
+		</div>
+		<div class="off-canvas-body">
+			<div id="off-canvas-menu"><ul></ul></div>
+			
+		</div>
+	</div>
+</div>
+  
+ 
+ 
+<script>
+	
+	jQuery(document).ready(function($) {
+			
+			
+			
+				// Append nav if required
+				$('body').append_nav('787');	
+						
+				$(window).resize(function() {
+					$('body').append_nav('787');			
+				});
+			
+			 						
+				 		$('#off-canvas-menu').zenaccordion({
+				 		
+				 							 				 openfirst: true,
+				 				 				 				 selector: '.off-canvas-body',
+				 				 openicon: 'plus',
+				 				 closeicon: 'minus',
+				 				 type:"panel"
+				 		});
+			 			
+			 				
+			 
+			
+			
+			
+			$.slidebars();
+		});
+
+</script>
+ 		
+				
+		
+	<script>
+		jQuery(document).ready(function($){
+			$("img").not(".none").lazyload({
+				effect : "fadeIn"
+		});
+	});
+	</script>
+
+
+
+
+
+<div id="toTop" class="hidden-phone"><a id="toTopLink"><span class="fa fa-icon-arrow-up zen-icon zen-icon-arrow-up"></span><span id="toTopText"> Back to top</span></a></div>
+<script>
+	jQuery(document).ready(function($){
+			
+			$(window).scroll(function () {
+			
+				if ($(this).scrollTop() >200) {
+				 	$("#toTop").fadeIn();
+				}
+				else {
+				 	$("#toTop").fadeOut();
+				}
+			});
+		
+			$("#toTop").click(function() {
+				$("html, body").animate({ scrollTop: 0 }, "slow");
+				 return false;
+			});
+	});
+</script>
+
+
+
+
+
+<script>
+jQuery(document).ready(function($){
+	
+	
+	$('.sidebar').zenaccordion({
+	
+		  		 openfirst: true,
+  		   		 type:"panel"
+ 	});
+ 	
+
+});
+</script>
+
+
+
+
+
+
+
+<script>
+jQuery(document).ready(function($){
+	
+	var win      = $(window),
+	    fxel     = $('#navwrap'),
+	    fill     = $('#sticky-fill'),
+	    navheight = $('#menu').height(),
+	    eloffset = fxel.offset().top;
+	 
+	    $(fill).height(navheight);
+
+	win.scroll(function() {
+	    if (eloffset < win.scrollTop()) {
+	        fxel.addClass("fixed");
+	        $('html').addClass("fixed");
+	        $(fill).addClass('visible').removeClass('hidden');
+	    } else {
+	        fxel.removeClass("fixed");
+	        $('html').removeClass("fixed");
+	        $(fill).removeClass('visible').addClass('hidden');
+	    }
+	});
+});
+</script>
+
+
+
+
+
+	<script>
+	 new WOW().init();
+	</script>
+
+
+
+
+<!-- Fonts -->
+
+		
+			
+	</body>
+<!-- Copied from https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-plugin.php by Cyotek WebCopy 1.7.0.600, 14 Tháng Sáu 2019, 04:23:30 -->
+</html>

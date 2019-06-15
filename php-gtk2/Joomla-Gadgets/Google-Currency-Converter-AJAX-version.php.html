@@ -1,0 +1,1876 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr" class="com_content view-article itemid-427 j39 responsive-enabled offcanvas-menu">
+<!-- Copied from https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php by Cyotek WebCopy 1.7.0.600, 14 Tháng Sáu 2019, 04:23:30 -->
+<head>
+<link href="Google-Currency-Converter-AJAX-version.php.html" rel="canonical">
+
+		
+
+			<meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=yes">
+		<meta name="HandheldFriendly" content="true">
+	<meta name="apple-mobile-web-app-capable" content="YES">
+	<base href="https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="google currency converter, joomla module">
+	<meta name="author" content="kksou">
+	<meta name="description" content="This module allows you to add the Google Currency Converter in a module position.">
+	<title>Google Currency Converter - AJAX version | Joomla Gadgets</title>
+	<link href="../jcomments/rss/com_content/1164.php.xml" rel="alternate" type="application/rss+xml" title="Google Currency Converter - AJAX version">
+	<link href="../templates/xero/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="../components/com_jcomments/tpl/default/style.css?v=3002" rel="stylesheet" type="text/css">
+	<link href="/templates/xero/css-compiled/master-11597c3e8d7d7a43ddef0800b7379988.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300:latin|Open+Sans:600:latin|Droid+Serif" rel="stylesheet" type="text/css">
+	<link href="../templates/xero/css/theme.flat.php.css" rel="stylesheet" type="text/css">
+	<link href="../templates/xero/css/custom.css" rel="stylesheet" type="text/css">
+	<link href="../media/mod_jcomments_latest/css/style.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+
+.article {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.article_desc {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	margin-bottom: 4px;
+}
+
+.article_views {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.infographic {
+   border:2px solid #aaaaaa;
+}
+
+tr.article_tr > td {
+   //padding-top: 2px;
+   padding-bottom: 6px;
+}
+
+
+	</style>
+	<script src="../components/com_jcomments/js/jcomments-v2.3.js?v=12" type="text/javascript"></script>
+	<script src="../components/com_jcomments/libraries/joomlatune/ajax.js?v=4" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-noconflict.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-migrate.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/bootstrap.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../templates/xero/js/template-66.php" type="text/javascript"></script>
+	<script type="text/javascript">
+
+		var j2storeURL = 'https://kksou.com/php-gtk2/';
+		
+jQuery(document).ready(function(){
+
+	jQuery("a.linkstat").click(function(e) {
+		e.preventDefault(); // needed for safari 4.0.5
+
+		jQuery.post("/plugins/content/GetArticles/ajax-linkstat.php", {url: jQuery(this).attr('href'), id: jQuery(this).attr('id')}, function success(data) {
+			window.location = data; // needed for safari 4.0.5
+		});
+		return true;
+	});
+
+		jQuery("a.vote_up").click(function(){
+	//get the id
+	the_id = jQuery(this).attr('id');
+
+	// show the spinner
+	jQuery(this).parent().html("<img src='/plugins/content/GetArticles/images/spinner.gif' style='display:inline'/>");
+
+	//fadeout the vote-count
+	jQuery("span#votes_count"+the_id).fadeOut("fast");
+
+	//the main ajax request
+		jQuery.ajax({
+			type: "POST",
+			data: "action=vote_up&id="+jQuery(this).attr("id"),
+			url: "/plugins/content/GetArticles/votes.php",
+			success: function(msg){
+				jQuery("span#votes_count"+the_id).html(msg);
+				//fadein the vote count
+				jQuery("span#votes_count"+the_id).fadeIn();
+				//remove the spinner
+				jQuery("span#vote_buttons"+the_id).remove();
+			}
+		});
+	});
+
+});
+
+
+jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+	</script>
+
+			
+		
+<style type="text/css">
+			html > body {
+				font-family: 'Open Sans';
+				
+			}
+				h1, h2, h3, h4, h5, h6, blockquote {
+				font-family: 'Open Sans';
+			}
+		
+					#navwrap li a {
+					font-family: 'Open Sans';
+				}
+			
+					#logo h2 {
+					font-family: 'Droid Serif';
+				}
+		
+	</style>	</head>
+    <body>
+<!-- Facebook SDK -->
+<div id='fb-root'></div>
+<script type='text/javascript'>
+
+      // Load the SDK Asynchronously
+      (function(d){
+      var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+      js = d.createElement('script'); js.id = id; js.async = true;
+      js.src = '//connect.facebook.net/en_GB/all.js';
+      d.getElementsByTagName('head')[0].appendChild(js);
+    }(document));
+
+</script>
+<!-- End Facebook SDK -->
+
+		<!-- Required for Slidebar / Offcanvas implementation -->
+		<div id="zen-wrap">
+	
+	   			    	
+	    	<a id="home-link" name="home-link"></a>
+	  
+	    	
+	    	
+	    	
+	<section id="logowrap" class="clearfix stack-phones" role="banner">
+		<div class="zen-container">
+			<div class="zen-row">
+	<div class="zen-spotlight">
+	
+			
+						<div id="logo" class="zg-col zg-col-6">
+			
+							
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					
+
+<div class="custom">
+	<h2>kksou.com</h2>
+<p>Tutorials, Sample Codes and Tips & Techniques for developing<br>Joomla plugins, modules and components.</p>
+<p>Developer of <a href="http://www.kksou.com/php-gtk2/Joomla/DirectPHP-plugin.php">DirectPHP</a>, <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps</a> and <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php">googleSearch</a>.</p>
+<p>Yes, this is also <i>"The Place for PHP-GTK2 sample codes"</i>, since 2005.</p></div>
+				</div>
+			</div>
+		</div>
+	
+		
+						</div>
+		
+							
+						<div id="search" class="zg-col zg-col-6">
+			
+							
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					<!-- SiteSearch Google CSE --><form method="get" action="https://kksou.com/php-gtk2/index.php" id="mod_googleSearch_cse"><input type="hidden" name="option" value="com_googlesearch_cse"><input type="hidden" name="n" value="30"><input type="hidden" name="view" value="googlesearchs"><div class="search hidden-navcollapse"><input type="hidden" name="Itemid" value="382"><input type="hidden" name="cx" value="partner-pub-5032765168656743:ost4rr-en3s"><input type="hidden" name="cof" value="FORID:11"><input type="hidden" name="ie" value="ISO-8859-1"><input type="text" name="q" maxlength="255" value="" class="form-control hidden-navcollapse" size="20"><button class="button hidden-navcollapse btn btn-primary">Search</button></div></form><script type="text/javascript"><!--
+(function() {var f = document.getElementById('mod_googleSearch_cse');if (f && f.q) {var q = f.q;var b = function(){if (q.value == '') {q.style.color = '#AAAAAA';q.style.background = '#FFFFFF url(https://cse.google.com/coop/intl/en/images/google_custom_search_watermark.gif) left no-repeat';}};	var f = function() {q.style.color = '#000000';q.style.background = '#ffffff';};q.onfocus = f;q.onblur = b;b();}})();
+//-->
+</script>				</div>
+			</div>
+		</div>
+	
+		
+						</div>
+		
+						</div>
+</div>		</div>
+	</section>
+	    	
+	    	
+	<!-- NAVBAR HEADER -->
+	
+		<div id="sticky-fill" class="hidden"></div>
+		
+	<section id="navwrap" class="wrap ">
+		<div class="zen-container">
+			<div class="navbar-default zen-row">
+				<div class="zen-spotlight">
+						<div id="menu" class="zen-menu zen-menu-horizontal zen-menu-left zen-menu-fading">
+							<div class="navbar-header ">
+								<nav role="navigation">
+								<!-- NAVBAR MAIN -->
+																					
+													
+									
+
+<ul id="zen-menu-404">
+<li class="item-101"><a href="../index.htm">
+		<span class="fa fa-home zen-icon-home zen-icon"></span>		Home			</a>
+	</li><li class="item-425"><a href="../category/Sample-Codes/index.htm">
+				Sample Codes			</a>
+	</li><li class="item-426 active deeper parent"><a href="../category/Joomla/index.htm">
+				Joomla			</a>
+	<ul class="zen-menu-child cols-1"><li class="item-427 current active"><a href="../category/Joomla-Gadgets/index.htm">
+				Joomla Gadgets			</a>
+	</li><li class="item-429"><a href="../category/Joomla-Tips-Techniques/index.htm">
+				Joomla Tips &amp; Techniques			</a>
+	</li><li class="item-430"><a href="../category/Joomla-News/index.htm">
+				Joomla News 			</a>
+	</li><li class="item-431"><a href="../category/Joomla-FAQs/index.htm">
+				Joomla FAQs			</a>
+	</li><li class="item-432"><a href="../category/Joomla-Developer-FAQs/index.htm">
+				Joomla Developer FAQs			</a>
+	</li></ul></li><li class="item-433"><a href="../geocoder2.php.html">
+				Geocoder2			</a>
+	</li><li class="item-428"><a href="../Feedback.php.html">
+				Feedback			</a>
+	</li></ul> 			
+ 	
+																				
+									<!-- //NAVBAR MAIN -->
+																			<a class="btn off-canvas-trigger sb-toggle-right visible-desktop"><span class="zen-icon zen-icon-bars"></span></a>
+																	</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	    	
+	    	
+	    	
+	    	
+	    	
+	    		
+
+
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
+<!-- MAIN CONTENT -->
+<section id="mainWrap" class="clearfix mr ">
+	<a id="main-link" name="main-link"></a>
+		<section id="breadcrumbwrap" class="clearfix">
+		<div class="zen-container">
+			<div class="zen-row">
+				<div class="zen-spotlight">
+				
+					<!-- Banner-slogan -->
+					<div id="breadcrumb" class="zg-col zg-col-12">
+						  
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					
+<ul class="breadcrumb zen-reset-list ">
+
+	<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../index.htm" class="pathway" itemprop="url"><span itemprop="title">Home</span></a></li><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../category/Joomla/index.htm" class="pathway" itemprop="url"><span itemprop="title">Joomla</span></a></li><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../category/Joomla-Gadgets/index.htm" class="pathway" itemprop="url"><span itemprop="title">Joomla Gadgets</span></a></li><li><span>Google Currency Converter - AJAX version</span></li></ul>				</div>
+			</div>
+		</div>
+	
+					</div>
+					<!-- //breadcrumb -->
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	
+		
+	<div class="zen-container">
+		<div class="zen-row">
+			<div class="mainwrap zen-spotlight">
+				<div id="midCol" class="zg-col zg-col-9 ">
+					
+					 
+
+			
+
+		<main role="main">
+		
+
+<div class="item-page clearfix">
+
+
+<!-- Article -->
+<article itemscope="" itemtype="http://schema.org/Article">
+	<meta itemprop="inLanguage" content="en-GB">
+
+	<header class="article-header clearfix">
+		<h1 class="article-title" itemprop="name">
+			Google Currency Converter - AJAX version				<meta itemprop="url" content="<br />
+<b>Notice</b>:  Undefined variable: url in <b>/var/www/kksou.com/public_html/php-gtk2/templates/xero/html/com_content/article/default.php</b> on line <b>51</b><br />
+<br />
+<b>Notice</b>:  Undefined variable: prefix in <b>/var/www/kksou.com/public_html/php-gtk2/templates/xero/html/com_content/article/default.php</b> on line <b>51</b><br />
+">
+		</h1>
+	
+							</header>
+	
+
+<!-- Aside -->
+<aside class="article-aside clearfix">
+    	<ul class="article-info  muted small flat-list">
+
+		
+			
+			
+						
+			
+					
+		
+										<li class="modified">
+			
+				<time datetime="2017-07-02T21:53:33+00:00" itemprop="dateModified">
+					Last Updated: 02 July 2017				</time>
+			</li>			
+										<li class="hits">
+				
+					<meta itemprop="interactionCount" content="UserPageVisits:669441">
+					Hits: 669441			</li>						</ul>
+    
+  </aside>  
+<!-- //Aside -->
+
+
+
+
+
+	
+
+	
+	
+	<section class="article-content" itemprop="articleBody">
+		
+
+
+
+<script type="text/javascript">var j10=54; var j15=55; var j16=124; var j17=125; var j25=134;</script>
+<script type="text/javascript" src="../util/ajax/ajax_v1.2_25.js"></script>
+
+<a id="intro"></a>
+<p>This module allows you to add the Google Currency Converter in a module position.</p>
+
+
+
+<!-- 
+Powered by Joomla Gadgets from kksou.com
+http://www.kksou.com/php-gtk2/Joomla-Gadgets/
+-->
+
+<script type="text/javascript" src="../plugins/content/AccordionMenuApplestyle/ddaccordion/ddaccordion.js">
+
+/***********************************************
+* Accordion Content script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+
+</script>
+
+
+<script type="text/javascript">
+
+
+ddaccordion.init({
+	headerclass: "silverheader", //Shared CSS class name of headers group
+	contentclass: "submenu", //Shared CSS class name of contents group
+	revealtype: "mouseover", //Reveal content when user clicks or onmouseover the header? Valid value: "click" or "mouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false
+	defaultexpanded: [0], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+	onemustopen: true, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["", "selected"], //Two CSS classes to be applied to the header when it\s collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "normal", //speed of animation: "fast", "normal", or "slow"
+	oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+
+
+</script>
+<style type="text/css">
+
+.b1 {
+margin: 0 0 0 0;
+text-align: right;
+}
+
+/* css file for Accordion Menu Apple style 
+*  Author: kksou
+*  Website: http://www.kksou.com/php-gtk2/Joomla-Gadgets/
+*  v1.0 September 27, 2008
+*
+*  Note: There are 3 variables. You need to enclose them in curly brackets.
+*  1. $menu_width: this is the width of the menu. 
+      This is the width you have defined in the parameter of the plugin
+*  2. $menu_height: this is the height of the menu. 
+      This is the height you have defined in the parameter of the plugin
+*  3. $base: this is the url base to the background image for the menu. 
+      If you want to change the two background images, make sure you prepend this
+	  $base to the image so that the image can be found
+*/
+
+.applemenu{
+margin: 5px 0 0;
+padding: 0;
+width: 170px; /*width of menu*/
+border: 1px solid #9A9A9A;
+text-align: left;
+}
+
+.applemenu div.silverheader a,em {
+background: black url(../plugins/content/AccordionMenuApplestyle/ddaccordion/silvergradient.gif) repeat-x center left;
+font: normal 12px Tahoma, "Lucida Grande", "Trebuchet MS", Helvetica, sans-serif;
+color: white;
+display: block;
+position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+width: auto;
+padding: 5px 0;
+padding-left: 8px;
+text-decoration: none;
+}
+
+.applemenu div.silverheader a:visited, .applemenu div.silverheader a:active{
+color: white;
+}
+
+.applemenu div.selected a, .applemenu div.selected em, .applemenu div.silverheader a:hover{
+background-image: url(../plugins/content/AccordionMenuApplestyle/ddaccordion/silvergradientover.gif);
+color: white;
+}
+
+.applemenu div.submenu, div.submenu a { /*DIV that contains each sub menu*/
+background: white;
+padding-left: 5px;
+height: 100px; /*Height that applies to all sub menu DIVs. A good idea when headers are toggled via "mouseover" instead of "click"*/
+font: normal 12px Tahoma, "Lucida Grande", "Trebuchet MS", Helvetica, sans-serif;
+color: #aaa;
+text-decoration: none;
+}
+
+/* level 2 items
+.applemenu div.submenu .level2 a {
+	color: #0000ff;
+}
+*/
+
+</style>
+<div class="b1" style="float:right;padding-left:10px;"><div class="applemenu"><div class="silverheader"><em><span class="level1">General</span></em></div>    <div class="submenu"><span class="level2">    <a href="#intro">Introduction</a></span><br><span class="level2">    <a href="#demo">Demo</a></span><br><span class="level2">    <a href="#features">Unique Features</a></span><br>    </div><div class="silverheader"><span class="level1"><a href="#download">Download</a></span></div>    <div class="submenu"><span class="level2">    <a href="#download">Download</a></span><br><span class="level2">    <a href="#latest">Latest Version</a></span><br>    </div><div class="silverheader"><em><span class="level1">Documentation</span></em></div>    <div class="submenu"><span class="level2">    <a href="#install">How to install</a></span><br><span class="level2">    <a href="#config">Parameters</a></span><br><span class="level2">    <a href="#css">Styling the Module using CSS</a></span><br><span class="level2">    <a href="#history">Version History</a></span><br><span class="level2">    <a href="#include-in-content-item">Including this module in Content Item or Article</a></span><br>    </div><div class="silverheader"><em><span class="level1">User Reviews</span></em></div>    <div class="submenu"><span class="level2">    <a href="#article_comments">kksou.com</a></span><br><span class="level2">    <a href="http://extensions.joomla.org/extensions/5795/details#action" target="_blank">extensions.joomla.org</a></span><br>    </div></div><p align="right" style="padding:0 0 0 0;margin:0 0 0 0"><a href="http://www.kksou.com/php-gtk2/Joomla/Accordion-Menu-Apple-style.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p>
+
+<!-- 
+Powered by Joomla Gadgets from kksou.com
+http://www.kksou.com/php-gtk2/Joomla-Gadgets/
+-->
+
+</div>
+
+<p>The module makes use of the <a href="http://finance.google.com/finance?q=CURRENCY%3AUSD">Currency Converter from Google Finance</a>. (Scroll to the bottom right and you'll see the Currency Converter.)</p>
+
+<br clear="all">
+
+
+
+<a id="features">
+<h3>Unique Features</h3></a>
+<ul>
+<li>Performs currency conversion by connecting in <b>real-time</b> at the backend to the <a href="http://finance.google.com/finance?q=CURRENCY%3AUSD">Currency Converter from Google Finance</a>. So you get the most up-to-date currency rate as provided by Google Finance.</li><p></p>
+<li>Uses <b>AJAX</b> to display the result - no reloading of pages required!</li><p></p>
+<li>Full <b>CSS</b> support! This means that you can set the font family, font size, foreground and background color of the input field, submit button, etc.</li><p></p>
+<li>The module can be included in a content item! (see below for details)</li><p></p>
+<li>Available for all Joomla versions: Joomla 1.0.x, native 1.5.x, 1.6.x, 1.7.x and 2.5.x!</li><p></p>
+</ul>
+
+<a id="all">
+<h3>Complete list of Currencies supported by Google</h3></a>
+
+<p><b>Note:</b> If your currency is not listed below, you may want to try the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Currency-Converter-AJAX-version.php">Yahoo Currency Converter</a> which provides <b style="background:#ffff00">62 more</b> currencies than Google. View the <a href="http://www.kksou.com/php-gtk2/Joomla-News/Yahoo-Currency-Converter-62-more-currencies-than-the-Google-Currency-Converter.php#yahoo">additional currencies provided by Yahoo</a>.</p>
+
+<ol>
+<li>AED - United Arab Emirates Dirham (AED)</li>
+<li>ANG - Netherlands Antillean Guilder (ANG)</li>
+<li>ARS - Argentine Peso (ARS)</li>
+<li>AUD - Australian Dollar (AUD)</li>
+<li>BDT - Bangladeshi Taka (BDT)</li>
+<li>BGN - Bulgarian Lev (BGN)</li>
+<li>BHD - Bahraini Dinar (BHD)</li>
+<li>BND - Brunei Dollar (BND)</li>
+<li>BOB - Bolivian Boliviano (BOB)</li>
+<li>BRL - Brazilian Real (BRL)</li>
+<li>BWP - Botswanan Pula (BWP)</li>
+<li>CAD - Canadian Dollar (CAD)</li>
+<li>CHF - Swiss Franc (CHF)</li>
+<li>CLP - Chilean Peso (CLP)</li>
+<li>CNY - Chinese Yuan (CNY)</li>
+<li>COP - Colombian Peso (COP)</li>
+<li>CRC - Costa Rican Colon (CRC)</li>
+<li>CZK - Czech Republic Koruna (CZK)</li>
+<li>DKK - Danish Krone (DKK)</li>
+<li>DOP - Dominican Peso (DOP)</li>
+<li>DZD - Algerian Dinar (DZD)</li>
+<li>EEK - Estonian Kroon (EEK)</li>
+<li>EGP - Egyptian Pound (EGP)</li>
+<li>EUR - Euro (EUR)</li>
+<li>FJD - Fijian Dollar (FJD)</li>
+<li>GBP - British Pound Sterling (GBP)</li>
+<li>HKD - Hong Kong Dollar (HKD)</li>
+<li>HNL - Honduran Lempira (HNL)</li>
+<li>HRK - Croatian Kuna (HRK)</li>
+<li>HUF - Hungarian Forint (HUF)</li>
+
+<li>IDR - Indonesian Rupiah (IDR)</li>
+<li>ILS - Israeli New Sheqel (ILS)</li>
+<li>INR - Indian Rupee (INR)</li>
+<li>JMD - Jamaican Dollar (JMD)</li>
+<li>JOD - Jordanian Dinar (JOD)</li>
+<li>JPY - Japanese Yen (JPY)</li>
+<li>KES - Kenyan Shilling (KES)</li>
+<li>KRW - South Korean Won (KRW)</li>
+<li>KWD - Kuwaiti Dinar (KWD)</li>
+<li>KYD - Cayman Islands Dollar (KYD)</li>
+<li>KZT - Kazakhstani Tenge (KZT)</li>
+<li>LBP - Lebanese Pound (LBP)</li>
+<li>LKR - Sri Lankan Rupee (LKR)</li>
+<li>LTL - Lithuanian Litas (LTL)</li>
+<li>LVL - Latvian Lats (LVL)</li>
+<li>MAD - Moroccan Dirham (MAD)</li>
+<li>MDL - Moldovan Leu (MDL)</li>
+<li>MKD - Macedonian Denar (MKD)</li>
+<li>MUR - Mauritian Rupee (MUR)</li>
+<li>MVR - Maldivian Rufiyaa (MVR)</li>
+<li>MXN - Mexican Peso (MXN)</li>
+<li>MYR - Malaysian Ringgit (MYR)</li>
+<li>NAD - Namibian Dollar (NAD)</li>
+<li>NGN - Nigerian Naira (NGN)</li>
+<li>NIO - Nicaraguan Cordoba (NIO)</li>
+<li>NOK - Norwegian Krone (NOK)</li>
+<li>NPR - Nepalese Rupee (NPR)</li>
+<li>NZD - New Zealand Dollar (NZD)</li>
+<li>OMR - Omani Rial (OMR)</li>
+<li>PEN - Peruvian Nuevo Sol (PEN)</li>
+<li>PGK - Papua New Guinean Kina (PGK)</li>
+<li>PHP - Philippine Peso (PHP)</li>
+<li>PKR - Pakistani Rupee (PKR)</li>
+<li>PLN - Polish Zloty (PLN)</li>
+<li>PYG - Paraguayan Guarani (PYG)</li>
+<li>QAR - Qatari Rial (QAR)</li>
+<li>RON - Romanian Leu (RON)</li>
+<li>RSD - Serbian Dinar (RSD)</li>
+<li>RUB - Russian Ruble (RUB)</li>
+<li>SAR - Saudi Riyal (SAR)</li>
+<li>SCR - Seychellois Rupee (SCR)</li>
+<li>SEK - Swedish Krona (SEK)</li>
+<li>SGD - Singapore Dollar (SGD)</li>
+<li>SKK - Slovak Koruna (SKK)</li>
+<li>SLL - Sierra Leonean Leone (SLL)</li>
+<li>SVC - Salvadoran Colon (SVC)</li>
+<li>THB - Thai Baht (THB)</li>
+<li>TND - Tunisian Dinar (TND)</li>
+<li>TRY - Turkish Lira (TRY)</li>
+<li>TTD - Trinidad and Tobago Dollar (TTD)</li>
+<li>TWD - New Taiwan Dollar (TWD)</li>
+<li>TZS - Tanzanian Shilling (TZS)</li>
+<li>UAH - Ukrainian Hryvnia (UAH)</li>
+<li>UGX - Ugandan Shilling (UGX)</li>
+<li>USD - US Dollar (USD)</li>
+<li>UYU - Uruguayan Peso (UYU)</li>
+<li>UZS - Uzbekistan Som (UZS)</li>
+<li>VEF - Venezuelan Bolivar (VEF)</li>
+<li>VND - Vietnamese Dong (VND)</li>
+<li>XOF - CFA Franc BCEAO (XOF)</li>
+<li>YER - Yemeni Rial (YER)</li>
+<li>ZAR - South African Rand (ZAR)</li>
+<li>ZMK - Zambian Kwacha (ZMK)</li>
+</ol>
+
+<p>Note that Google did not release any API for the Google Currency Converter (There are some APIs for Google Finance, but not for the Google Currency Converter).</p>
+
+<div class="alert alert-info" id="latest"><h4>Latest Version</h4>
+<p>v1.0.9 (for Joomla 1.0), v1.5.9 (for Joomla 1.5), v1.6.9 (for Joomla 1.6), v1.7.9 (for Joomla 1.7), v2.5.9 (for Joomla 2.5)<br>
+Released Apr 6, 2012<br></p>
+<p>Thanks to <a href="http://www.kksou.com/php-gtk2/index.php?option=com_fireboard&func=view&catid=27&id=5209&limit=5&limitstart=0#5209">Pongdej</a>, the latest version can now handle the following 2 cases:</p>
+<ul>
+<li>25,000 will now be correctly handled as 25000</li>
+<li>Any empty spaces after a number will be automatically trimmed and handled correctly</li>
+</ul>
+</div>
+
+
+
+<a id="demo">
+<h3>Live Demo</h3></a>
+<p>There are four demos available:</p>
+<ul>
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Wikipedia-Search/">Google Currency Converter as module</a>. It's the first module on the left.</li><p></p>
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-samples/Google-Currency-Converter-in-content-item-sample-1.php">Google Currency Converter in content item - sample 1</a>: using the default style with minimum width.</li><p></p>
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-samples/Google-Currency-Converter-in-content-item-sample-2.php">Google Currency Converter in content item - sample 2</a>: using the same style as the <a href="http://finance.google.com/finance?q=CURRENCY%3AUSD">Google Finance</a>.</li><p></p>
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-samples/Google-Currency-Converter-in-content-item-sample-3.php">Google Currency Converter in content item - sample 3</a>: using the one-line version</li><p></p>
+</ul>
+
+<span class="download" id="yahoo-finance"><b>Prefer Yahoo Finance?</b><br>
+<p>If you prefer to use the Currency Converter from Yahoo Finance as oppose to Google Finance, here it is: <br>
+<a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Currency-Converter-AJAX-version.php">Yahoo Currency Converter - AJAX version</a></p>
+</span>
+
+<a id="include-in-content-item">
+<h3>Including this module in Content Item or Article</h3></a>
+<p>Since this is a standard Joomla module, you can easily include this module into a content item or article .</p>
+
+<p>You can take a look at the <a href="#demo">demo here</a>.</p>
+
+<ul>
+<li>For Joomla 1.0.x, please refer to:<br>
+<a href="http://www.kksou.com/php-gtk2/Joomla/How-to-include-modules-in-Content-item-for-Joomla-1.0.x.php">How to include modules in Content item (for Joomla 1.0.x)? </a></li><p></p>
+
+<li>For Joomla 1.5.x, 1.6.x, 1.7.x and 2.5.x, instructions as follows:</li><p></p>
+
+<ol>
+
+<li>Install the Modules Anywhere plugin: <a href="http://extensions.joomla.org/extensions/core-enhancements/embed-a-include/6402">http://extensions.joomla.org/extensions/core-enhancements/embed-a-include/6402</a></li><p></p>
+
+<li>In your article, simply add the tag</li>
+<pre>&#123;module Google Currency Converter&#125;</pre>
+<p>and the module will appear in your article!</p>
+
+<li>If you do not want the Google Currency Converter to appear anywhere in the module position</li>
+<ol type="a">
+<li>You can make sure the module position is empty (i.e. don't select any module position)</li>
+<li>Or you can select Module Assignment to "No pages"</li>
+</ol>
+
+</ol>
+
+
+<p></p>
+
+</ul>
+
+<a id="tips">
+<h3>Tips and Techniques</h3>
+
+<ul>
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/Google-Currency-Converter-changing-the-width-of-the-pulldown-currency-menu.php">Google Currency Converter - changing the width of the pulldown currency menu</a></li>
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/Google-Currency-Converter-How-to-change-number-of-decimal-places-for-the-converted-currency.php">Google Currency Converter - How to change number of decimal places for the converted currency?</a></li><p></p>
+</ul>
+ <a id="download">
+<h3>Download</h3></a>
+<div id="links">Joomla 1.0.x: <span id="link0"><a href="../products/mod_googlecurrencyconverter_v1.0.9.zip?i=54">mod_googlecurrencyconverter_v1.0.9.zip</a></span><br>Joomla 1.5.x: <span id="link1"><a href="../products/mod_googlecurrencyconverter_v1.5.9.zip?i=55">mod_googlecurrencyconverter_v1.5.9.zip</a></span><br>Joomla 1.6.x: <span id="link2"><a href="../products/mod_googlecurrencyconverter_v1.6.9.zip?i=124">mod_googlecurrencyconverter_v1.6.9.zip</a></span><br>Joomla 1.7.x: <span id="link3"><a href="../products/mod_googlecurrencyconverter_v1.7.9.zip?i=125">mod_googlecurrencyconverter_v1.7.9.zip</a></span><br>Joomla 2.5.x: <span id="link4"><a href="../products/mod_googlecurrencyconverter_v2.5.9.zip?i=134">mod_googlecurrencyconverter_v2.5.9.zip</a></span><br></div>
+
+<script type="text/javascript">prepareLinks();</script> 
+
+
+
+
+
+<a id="install">
+<h3>How to install</h3></a>
+
+<ol>
+
+
+<li>Download and install the "Google Currency Converter" module.</li><p></p>
+<li>Make sure the module is published / enabled.</li><p></p>
+<li>Select a module position where you want to place the module.</li><p></p>
+</ol>
+
+<p>That's it! You're now ready to use the Google Currency Converter right inside your Joomla website!</p>
+
+<a id="config">
+<h3>Parameters </h3></a>
+<p>You can set the following in the Parameters page:
+<ol>
+<li><a id="get_data"></a><b>Use which method to retrieve data:</b> There are now three methods to retrieve data from Google Finance.</li>
+<ul type="disc">
+<li>The default method uses fread().</li>
+<li>You can also use file_get_contents(). Note that file_get_contents() is only available in PHP5 and above.</li>
+<li>Use the cURL library. For this method, you need to make sure your PHP has the <a href="http://www.php.net/manual/en/curl.setup.php">cURL library</a> installed.</li>
+</ul>
+<p>Use the default method fread() first. If it doesn't work, then try file_get_contents(), and then the cURL library.</p><p></p>
+
+
+<li><b>Currency From:</b> This is the default "currency from" that will be displayed when the module is first loaded.</li><p></p>
+<li><b>Currency To:</b> This is the default "currency to" that will be displayed when the module is first loaded.</li><p></p>
+<li><b>Label for Submit Button:</b> Default is "Convert". You may change this to your language.</li><p></p>
+<li><b>Use CSS for highlight:</b> When this is set to "No", result will be highlighted in the default yellow background. If you do not not like the default yellow background color and wish to change this to some other color, change this to "Yes". However, when you set this to "Yes", you need to define the color in the .css file of your template. Please see <a href="#result_highlight">below</a> for details.</li><p></p>
+<li><b>Layout style:</b> There are three layout styles to choose from:</li>
+<table border="0">
+<tr valign="top"><td><b>Style&nbsp;1</b>:&nbsp;</td>
+<td>This one has the minimum width, and is ideal when you are positioning it in the left or right column.<br>
+<img src="../thoughts/gif/googlecurrency1.gif" alt="Goolge Currency Converter - Style 1">
+</td></tr>
+<tr valign="top"><td><b>Style&nbsp;2</b>:&nbsp;</td>
+<td>This is the same layout as used in <a href="http://finance.google.com/finance?q=CURRENCY%3AUSD">Google Finance</a>.<br>
+<img src="../thoughts/gif/googlecurrency2.gif" alt="Goolge Currency Converter - Style 2">
+</td></tr>
+<tr valign="top"><td><b>Style&nbsp;3</b>:&nbsp;</td>
+<td>This one shows everything in one line. Ideal for use in top or bottom banner-type module position, or in content item.<br>
+<img src="../thoughts/gif/googlecurrency3.gif" alt="Goolge Currency Converter - Style 3">
+</td></tr>
+</table>
+
+<p></p>
+
+</ol>
+
+<a id="css">
+<h3>Styling the Module using CSS</h3></a>
+<p>You can set the style of every item within the Google Currency Converter to the exact format you want through CSS. This means that you can set the font family, font size, foreground and background color of the input field, pulldown menu, submit button, etc.</p>
+
+<p>For example, if you're using the default Joomla 1.5 template, define the following style in <code>&lt;joomla root folder&gt;/templates/rhuk_milkyway/css/template.css</code>. If you're using the default Joomla 1.0 template, define the following style in <code>&lt;joomla root folder&gt;/templates/rhuk_solarflare_ii/css/template_css.css</code>.</p>
+
+<ol>
+
+<li>Input Box</li><p></p>
+<pre>
+div.googlecurrency input.inputbox {
+	font-family: Verdana;
+	font-size: 12pt;
+	font-style: italic;
+}
+</pre>
+
+
+
+
+
+
+
+<li>Submit Button</li><p></p>
+<pre>
+div.googlecurrency input.button {
+	font-family: Verdana;
+	font-size: 10pt;
+}
+</pre>
+
+<li>The options of the pulldown menu (i.e. the list of currencies)</li><p></p>
+<pre>
+div.googlecurrency option {
+	font-family: Verdana;
+	font-size: 10pt;
+}
+</pre>
+
+<li>The selected option of the pulldown menu (i.e. the selected currency)</li><p></p>
+<pre>
+div.googlecurrency select {
+	font-family: Verdana;
+	font-size: 10pt;
+}
+</pre>
+
+<li>Input Label (the text "Convert" and "Into")</li><p></p>
+<pre>
+div.googlecurrency .input_label {
+	font-family: Verdana;
+	font-size: 12pt;
+}
+</pre>
+
+<li>The result</li><p></p>
+<pre>
+div.googlecurrency .result {
+	font-family: Verdana;
+	font-size: 12pt;
+}
+</pre>
+
+<a id="result_highlight"></a>
+<li>The highlight for the result. <b>Note:</b> Don't forget to set the "Use CSS" to "Yes" in the Parameters page in order to change the background color of the highliglht.</li><p></p>
+<pre>
+div.googlecurrency .highlight {
+	color: #333366;
+	background-color: #0033ff;
+}
+</pre>
+
+
+<li>Use this if you wish to set the background color of the entire module block:</li><p></p>
+<pre>
+div.googlecurrency {
+	background: #33FF66;
+}
+</pre>
+
+</ol>
+
+<a id="history">
+<h3>Version History</h3></a>
+
+<ul>
+<li>v1.0.2 (for Joomla 1.0) and v1.5.2 (for Joomla 1.5)<br>
+Released August 28, 2008</li><p></p>
+<p>Bug Fix. When you set the default "currency from" and "currency to", in the parameters page, these options will now be correctly displayed in the frontend. Thanks to Pablo for pointing this out.</p>
+
+<li>v1.0.4 (for Joomla 1.0) and v1.5.4 (for Joomla 1.5)<br>
+Released May 6, 2009</li><p></p>
+<p>fixed the undefined variables in mod_googlecurrencyconverter_lib.php<br>
+Notice: Undefined index: process on line 12<br>
+Notice: Undefined index: a on line 21<br>
+Notice: Undefined index: process on line 22<br>
+Notice: Undefined index: use_css on line 44</p>
+
+<li>v1.0.5 (for Joomla 1.0) and v1.5.5 (for Joomla 1.5)<br>
+Released May 7, 2009</li><p></p>
+<p>Enable support for css styles for result.</p>
+
+<li>v1.0.6 (for Joomla 1.0) and v1.5.6 (for Joomla 1.5)<br>
+Released August 31, 2009</li><p></p>
+<p>Added support for retrieving google currency data using file_get_contents() or fread(). So for those people with no cURL library, you can now use the module using file_get_contents() or fread().</p>
+
+<li>v1.0.7 (for Joomla 1.0) and v1.5.7 (for Joomla 1.5)<br>
+Released May 16, 2010</li><p></p>
+<p>This is in response to the <a href="http://www.kksou.com/php-gtk2/index.php?option=com_fireboard&Itemid=67&func=view&id=3469&catid=27">Morton's post</a> titled "more than one google converters".</p>
+<p>This new version allows you to display two or more google currency converters all on the same page, each with different currency_from and currency_to.</p>
+
+<li>v1.0.8 (for Joomla 1.0), v1.5.8 (for Joomla 1.5), v1.6.8 (for Joomla 1.6) and v1.7.8 (for Joomla 1.7)<br>
+Released Dec 5, 2011</li><p></p>
+<ul type="disc">
+<li>Native version of the Google Currency Converter for Joomla 1.6 and 1.7!</li>
+<li>Addition of more than 30 new currencies by Google! <a href="http://www.kksou.com/php-gtk2/Joomla-News/Google-Currency-Converter-30-new-currencies.php">View the list of new currencies here.</a></li>
+</ul><p></p>
+
+<li>v1.0.8 (for Joomla 1.0), v1.5.8 (for Joomla 1.5), v1.6.8 (for Joomla 1.6), v1.7.8 (for Joomla 1.7), v2.5.8 (for Joomla 2.5)<br>
+Released Jan 26, 2012</li><p></p>
+<p>Native version of the Google Currency Converter for Joomla 2.5!</p>
+
+</ul>
+
+
+	</section>
+
+  <!-- footer -->
+    <!-- //footer -->
+
+					
+			<ul class="pager pagenav">
+	<li class="previous">
+		<a class="hasTooltip" title="kksou Joomla Weather Module (formerly Google Weather Module) - AJAX and built-in cache version " aria-label="Previous article: kksou Joomla Weather Module (formerly Google Weather Module) - AJAX and built-in cache version " href="kksou-google-weather-module.php.html" rel="prev">
+			<span class="icon-chevron-left" aria-hidden="true"></span> <span aria-hidden="true">Prev</span>		</a>
+	</li>
+	<li class="next">
+		<a class="hasTooltip" title="googleMaps plugin" aria-label="Next article: googleMaps plugin" href="googleMaps-plugin.php.html" rel="next">
+			<span aria-hidden="true">Next</span> <span class="icon-chevron-right" aria-hidden="true"></span>		</a>
+	</li>
+</ul>
+	
+	
+	
+</article>
+<!-- //Article -->
+
+<div class="clearfix"></div>
+
+<script type="text/javascript">
+<!--
+var jcomments=new JComments(1164, 'com_content','/php-gtk2/jcomments/');
+jcomments.setList('comments-list');
+//-->
+</script>
+<div id="jc">
+<div id="comments"><h4>Comments <a class="rss" href="../jcomments/rss/com_content/1164.php.xml" title="RSS feed for comments to this post" target="_blank">&nbsp;</a><a class="refresh" href="#" title="Refresh comments list" onclick="jcomments.showPage(1164,'com_content',0);return false;">&nbsp;</a></h4>
+<div class="comments-list" id="comments-list-0">
+		<div class="even" id="comment-item-19">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-19">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(19, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(19, -1);return false;"></a>
+<span class="vote-good">+5</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Google-Currency-Converter-AJAX-version.php.html#comment-19" id="comment-19">#</a>
+<span class="comment-author">jayne</span>
+<span class="comment-date">2012-01-25 08:46</span>
+<div class="comment-body" id="comment-body-19">Hi,<br>I want to use this plug in within an article. Can you tell me what the code is for joomla 1.7. I can't seem to see it anywhere!!  <img src="../components/com_jcomments/images/smilies/shocked.gif" alt=":eek:"> </div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(19); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(19,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(19); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-19">
+		<div class="odd" id="comment-item-24">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-24">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(24, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(24, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Google-Currency-Converter-AJAX-version.php.html#comment-24" id="comment-24">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-01-27 18:30</span>
+<div class="comment-body" id="comment-body-24">Hi Jayne,<br><br>Sorry for the late reply.<br><br>For joomla 1.5, 1.6, 1.7 and 2.5, the easiest way to put the Google Currency Converter into the article is as follows:<br><br>1) Install the Modules Anywhere plugin<br>http://extensions.joomla.org/extensions/core-enhancements/embed-a-include/6402<br><br>2) In your article, simply add the tag<br>{module Google Currency Converter}<br>and the module will appear in your article!<br><br>3) If you do not want the Google Currency Converter to appear anywhere in the module position<br>a) You can make sure the module position is empty (i.e. don't select any module position)<br>b) Or you can select Module Assignment to "No pages"<br><br>Please give it a try and let me know if it works for you.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(24); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(24,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(24); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-61">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-61">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(61, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(61, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Google-Currency-Converter-AJAX-version.php.html#comment-61" id="comment-61">#</a>
+<span class="comment-author">Raakesh</span>
+<span class="comment-date">2012-02-11 21:09</span>
+<div class="comment-body" id="comment-body-61">Hello... just a small question: How can I round up the converted results or remove the decimals in the end? The currency converter works nicely but some of my clients told me that the conversion results can be confusing, especially for someone who doesn't understand decimals at first sight. For example: Euros 130.114 can be read as 130 114 by mistake.... Thanks to reply....</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(61); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(61,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(61); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-61">
+		<div class="odd" id="comment-item-103">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-103">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(103, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(103, -1);return false;"></a>
+<span class="vote-poor">-2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Google-Currency-Converter-AJAX-version.php.html#comment-103" id="comment-103">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-03-01 17:45</span>
+<div class="comment-body" id="comment-body-103">Hi Raakesh,<br><br>Sorry for the late reply. Not sure why your comment never reach me. (The system is supposed to send an alert to me everytime there's a new comment.)<br><br>I can see your point as very valid. I've thought about this earlier too. But I have some "user interface" issue.<br><br>1) I can add a global switch in the parameter area that allows administrator to set the number of decimals. However, for some currencies, it makes sense to ignore the decimals. But for currencies like Euro or USD, I think you will need at least 2 decimals. So global switch doesn't seem to work.<br><br>2) For the same currencies, some users prefer to ignore the decimals, while others will want to have precise decimals. So how do you cater for individual preference? cookies? individual settings for each currencies?<br><br>See, it becomes so complicated that I decide to use the KISS principle. Just like my other plugin, googleMaps, I decide to keep it simple. There are many other plugins and modules in joomla.org that provide users with very complicated settings. Will just let the users have the freedom of choice to pick the other they like.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(103); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(103,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(103); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-102">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-102">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(102, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(102, -1);return false;"></a>
+<span class="vote-good">+2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Google-Currency-Converter-AJAX-version.php.html#comment-102" id="comment-102">#</a>
+<span class="comment-author">orlandom</span>
+<span class="comment-date">2012-02-29 17:01</span>
+<div class="comment-body" id="comment-body-102">Hi i need to more currency, how can i insert Angola - Kwanza in the currency list?<br>Thanks in advance for your great work!</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(102); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(102,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(102); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-102">
+		<div class="odd" id="comment-item-104">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-104">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(104, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(104, -1);return false;"></a>
+<span class="vote-poor">-3</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Google-Currency-Converter-AJAX-version.php.html#comment-104" id="comment-104">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-03-01 17:50</span>
+<div class="comment-body" id="comment-body-104">Hi,<br><br>The google currency conversion is obtained from the following website:<br>http://www.google.com/finance/converter<br><br>As you can see, your currency is currently not provided by Google.<br><br>The Yahoo Currency Converter has a lot more currencies. But I just checked them:<br>http://finance.yahoo.com/currency-converter<br><br>Yahoo doesn't provide your currency too! So there's not much I can do because for both my modules, the conversion are done through Google or Yahoo.<br><br>Please keep checking with these two websites. If you see your currency appearing there, let me know and I'll add that to the module.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(104); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(104,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(104); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-265">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-265">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(265, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(265, -1);return false;"></a>
+<span class="vote-poor">-3</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Google-Currency-Converter-AJAX-version.php.html#comment-265" id="comment-265">#</a>
+<span class="comment-author">Ben2323</span>
+<span class="comment-date">2012-04-30 10:51</span>
+<div class="comment-body" id="comment-body-265">hello,<br>Thanks for a great extension. I was wondering twi things:<br><br>* Is it possible to make the minimum width layout even smaller, as it is bigger than the column width on my template?<br>* is it possible to have, instead of having "1" as the default value ("convert 1 USD into...."), another predefined value, like: "convert 85 USD into...")<br><br>Thanks a lot in advance <br><br>Ben</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(265); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(265,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(265); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-265">
+		<div class="odd" id="comment-item-271">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-271">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(271, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(271, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Google-Currency-Converter-AJAX-version.php.html#comment-271" id="comment-271">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-05-01 19:57</span>
+<div class="comment-body" id="comment-body-271">Hi Ben,<br><br>For (1), please refer to the following article: Google Currency Converter - changing the width of the pulldown currency menu<br>http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/Google-Currency-Converter-changing-the-width-of-the-pulldown-currency-menu.php<br><br>For (2): Edit the file: mod_googlecurrencyconverter_lib.php<br> in the folder: /modules/mod_googlecurrencyconverter<br><br>In line 60, you will see: if ($str_a=='') $str_a = '1';<br><br>Change '1' to whatever value you desired.<br><br>Let me know if the above works, ok?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(271); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(271,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(271); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-604">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-604">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(604, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(604, -1);return false;"></a>
+<span class="vote-good">+4</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Google-Currency-Converter-AJAX-version.php.html#comment-604" id="comment-604">#</a>
+<span class="comment-author">trenkov</span>
+<span class="comment-date">2012-09-18 10:56</span>
+<div class="comment-body" id="comment-body-604">Hi there,<br>Thank you for the great extention, I really like it a lot! I have a problem with the labels tough, as I use cyrillic symbols. On initial loading of the module everything is fine and the characters are displayed as they should be, but as I click the submit button and the calculation initiates, all labels become a huge mess of random symbols. I tried to convert all .php files in UTF-8 encoding but with no success. Do you have any idea why is this happening? You can try labelling for example the submit button to ??????? in order to see the result.<br>Thank you in advance for your answer!<br>Best regards,<br>Georgi</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(604); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(604,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(604); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-605">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-605">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(605, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(605, -1);return false;"></a>
+<span class="vote-poor">-2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Google-Currency-Converter-AJAX-version.php.html#comment-605" id="comment-605">#</a>
+<span class="comment-author">trenkov</span>
+<span class="comment-date">2012-09-18 10:59</span>
+<div class="comment-body" id="comment-body-605">Oops, seems that UTF-8 characters are not properly displayed here, I wanted to write a sample text in cyrillic so that it would be easier for you to diagnose the problem.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(605); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(605,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(605); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-718">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-718">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(718, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(718, -1);return false;"></a>
+<span class="vote-good">+2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Google-Currency-Converter-AJAX-version.php.html#comment-718" id="comment-718">#</a>
+<span class="comment-author">lrincomes</span>
+<span class="comment-date">2012-11-11 23:46</span>
+<div class="comment-body" id="comment-body-718">hi, nice extension, but i got a little hitch, i want to know how it works, because i have integrated the extension but its not calculating.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(718); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(718,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(718); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-1074">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1074">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1074, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1074, -1);return false;"></a>
+<span class="vote-poor">-2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Google-Currency-Converter-AJAX-version.php.html#comment-1074" id="comment-1074">#</a>
+<span class="comment-author">Kev</span>
+<span class="comment-date">2013-06-07 05:24</span>
+<div class="comment-body" id="comment-body-1074">hi, I bought the option to remove the backlink, but the new installer does not work. I opened the zip file and it contains several folders, but they don't install either. Please advise!<br><br>I'm trying to install into a j2.5x site. The basic free installer works, but I would like to remove that backlink.<br><br>thanks</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1074); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1074,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1074); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-1074">
+		<div class="even" id="comment-item-1075">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1075">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1075, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1075, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Google-Currency-Converter-AJAX-version.php.html#comment-1075" id="comment-1075">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-06-07 07:35</span>
+<div class="comment-body" id="comment-body-1075">Hi Kev,<br><br>Have just emailed you one more copy of the installer for the registered version.<br><br>Please give it a try one more time and let me know if it works, ok?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1075); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1075,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1075); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-1076">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1076">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1076, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1076, -1);return false;"></a>
+<span class="vote-poor">-3</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Google-Currency-Converter-AJAX-version.php.html#comment-1076" id="comment-1076">#</a>
+<span class="comment-author">Kev</span>
+<span class="comment-date">2013-06-07 07:38</span>
+<div class="comment-body" id="comment-body-1076">that's perfect thanks. Now I just need to be able to see the results ;-S<br><br>I removed the ALLOW_FURL_OPEN= OFF from my php.ini, but still don't see results</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1076); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1076,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1076); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-1076">
+		<div class="even" id="comment-item-1077">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1077">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1077, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1077, -1);return false;"></a>
+<span class="vote-good">+3</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Google-Currency-Converter-AJAX-version.php.html#comment-1077" id="comment-1077">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-06-07 07:41</span>
+<div class="comment-body" id="comment-body-1077">Hi Kev,<br><br>Thought you mentioned in your email that the free version works?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1077); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1077,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1077); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-1171">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1171">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1171, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1171, -1);return false;"></a>
+<span class="vote-poor">-5</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Google-Currency-Converter-AJAX-version.php.html#comment-1171" id="comment-1171">#</a>
+<span class="comment-author">Shimla Vision</span>
+<span class="comment-date">2013-09-13 02:39</span>
+<div class="comment-body" id="comment-body-1171">first thanks for this great module i've been using it for my sites. In 2.5 version i have noticed that it uses a lot of disk space and suddenly my disk space usage went from 50 mb to 1000 mb and this module was using 870 mb space. please can you throw some light why this is happening.....</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1171); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1171,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1171); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-1171">
+		<div class="even" id="comment-item-1172">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1172">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1172, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1172, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="Google-Currency-Converter-AJAX-version.php.html#comment-1172" id="comment-1172">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-09-13 09:14</span>
+<div class="comment-body" id="comment-body-1172">Hi Shimla,<br><br><br>People have been using this module since 2008, and you're the first one that reported such an issue.<br><br>If you look at the source code, this is really a very light module. There's nothing in the code that writes to your disk space.<br><br>May I know how do you know that it's this module using that 870 mb of disk space? What is the filename of this 50MB? And where does it write to?<br><br>Also, it seems like you have been using this module and it works fine for earlier versions. Is the 2.5 version the only one giving the problem?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1172); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1172,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1172); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+</div>
+<div id="comments-list-footer"><a class="refresh" href="#" title="Refresh comments list" onclick="jcomments.showPage(1164,'com_content',0);return false;">Refresh comments list</a><br><a class="rss" href="../jcomments/rss/com_content/1164.php.xml" title="RSS feed for comments to this post" target="_blank">RSS feed for comments to this post</a></div>
+</div>
+<h4>Add comment</h4>
+<a id="addcomments" href="#addcomments"></a>
+<form id="comments-form" name="comments-form" action="javascript:void(null);">
+<p>
+	<span>
+		<input id="comments-form-name" type="text" name="name" value="" maxlength="20" size="22" tabindex="1">
+		<label for="comments-form-name">Name (required)</label>
+	</span>
+</p>
+<p>
+	<span>
+		<input id="comments-form-email" type="text" name="email" value="" size="22" tabindex="2">
+		<label for="comments-form-email">E-mail (required, but will not display)</label>
+	</span>
+</p>
+<p>
+	<span>
+		<textarea id="comments-form-comment" name="comment" cols="65" rows="8" tabindex="5"></textarea>
+	</span>
+</p>
+<p>
+	<span>
+		<input class="checkbox" id="comments-form-subscribe" type="checkbox" name="subscribe" value="1" tabindex="5">
+		<label for="comments-form-subscribe">Notify me of follow-up comments</label><br>
+	</span>
+</p>
+<p>
+	<span>
+		<img class="captcha" onclick="jcomments.clear('captcha');" id="comments-form-captcha-image" src="../jcomments/captcha.php-57.jpeg?ac=73280" width="121" height="60" alt="Security code"><br>
+		<span class="captcha" onclick="jcomments.clear('captcha');">Refresh</span><br>
+		<input class="captcha" id="comments-form-captcha" type="text" name="captcha_refid" value="" size="5" tabindex="6"><br>
+	</span>
+</p>
+<div id="comments-form-buttons">
+	<div class="btn" id="comments-form-send"><div><a href="#" tabindex="7" onclick="jcomments.saveComment();return false;" title="Send (Ctrl+Enter)">Send</a></div></div>
+	<div class="btn" id="comments-form-cancel" style="display:none;"><div><a href="#" tabindex="8" onclick="return false;" title="Cancel">Cancel</a></div></div>
+	<div style="clear:both;"></div>
+</div>
+<div>
+	<input type="hidden" name="object_id" value="1164">
+	<input type="hidden" name="object_group" value="com_content">
+</div>
+</form>
+<script type="text/javascript">
+<!--
+function JCommentsInitializeForm()
+{
+	var jcEditor = new JCommentsEditor('comments-form-comment', true);
+	jcEditor.initSmiles('/php-gtk2/components/com_jcomments/images/smilies/');
+	jcEditor.addSmile(':D','laugh.gif');
+	jcEditor.addSmile(':lol:','lol.gif');
+	jcEditor.addSmile(':-)','smile.gif');
+	jcEditor.addSmile(';-)','wink.gif');
+	jcEditor.addSmile('8)','cool.gif');
+	jcEditor.addSmile(':-|','normal.gif');
+	jcEditor.addSmile(':-*','whistling.gif');
+	jcEditor.addSmile(':oops:','redface.gif');
+	jcEditor.addSmile(':sad:','sad.gif');
+	jcEditor.addSmile(':cry:','cry.gif');
+	jcEditor.addSmile(':o','surprised.gif');
+	jcEditor.addSmile(':-?','confused.gif');
+	jcEditor.addSmile(':-x','sick.gif');
+	jcEditor.addSmile(':eek:','shocked.gif');
+	jcEditor.addSmile(':zzz','sleeping.gif');
+	jcEditor.addSmile(':P','tongue.gif');
+	jcEditor.addSmile(':roll:','rolleyes.gif');
+	jcEditor.addSmile(':sigh:','unsure.gif');
+	jcEditor.addCounter(1000, '', ' symbols left', 'counter');
+	jcomments.setForm(new JCommentsForm('comments-form', jcEditor));
+}
+
+if (window.addEventListener) {window.addEventListener('load',JCommentsInitializeForm,false);}
+else if (document.addEventListener){document.addEventListener('load',JCommentsInitializeForm,false);}
+else if (window.attachEvent){window.attachEvent('onload',JCommentsInitializeForm);}
+else {if (typeof window.onload=='function'){var oldload=window.onload;window.onload=function(){oldload();JCommentsInitializeForm();}} else window.onload=JCommentsInitializeForm;} 
+//-->
+</script>
+<div id="comments-footer" align="center"><a href="http://www.joomlatune.com" title="JComments" target="_blank">JComments</a></div>
+<script type="text/javascript">
+<!--
+jcomments.setAntiCache(1,0,0);
+//-->
+</script> 
+</div></div>
+	</main>
+		
+	<!-- //MAIN CONTENT -->				</div>
+												<div id="sidebar-2" class="sidebar zg-col zg-col-3  " role="complementary">
+					
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+					<div class="zen-module-title">
+						<h3><span>Latest Comments</span><h3>
+					</h3></h3></div>
+							
+				<div class="zen-module-body">
+					<ul class="jcomments-latest">
+	
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">16.05.2019 15:18</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Patrick, I developed this plugin initially so that I can place a map on my website easily. I thought ...								<p class="jcomments-latest-readmore">
+					<a href="googleMaps-plugin.php.html#comment-2184">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">Patrick</span>
+						<span class="date">13.05.2019 17:29</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi there, will it be possible to just show a link to the popup map? I don't want to show the map on my ...								<p class="jcomments-latest-readmore">
+					<a href="googleMaps-plugin.php.html#comment-2180">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							DirectPHP plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">21.04.2019 16:05</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Mark, Sorry for the late reply. Recently there has been a huge influx of spam posts, and your post ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla/directphp-plugin.php.html#comment-2166">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							DirectPHP plugin					</h4>
+		
+		
+				<span class="author">Mark Hobbs</span>
+						<span class="date">08.04.2019 17:16</span>
+		
+		<div class="comment rounded ">
+					<div>
+				I've used DirectPHP for a few years... it's beautifully simple and convenient. I recently decided to ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla/directphp-plugin.php.html#comment-2160">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleDirections - To Here - plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">23.03.2019 09:35</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Greg, 1) First, make sure you have entered the Google Maps API key. You can apply it here ...								<p class="jcomments-latest-readmore">
+					<a href="googleDirections-To-Here-plugin.php.html#comment-2146">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleDirections - To Here - plugin					</h4>
+		
+		
+				<span class="author">GREG</span>
+						<span class="date">22.03.2019 22:04</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi, I have installed all 3 plugins and when i enter my current location i get the error Google cannot ...								<p class="jcomments-latest-readmore">
+					<a href="googleDirections-To-Here-plugin.php.html#comment-2145">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">15.01.2019 00:06</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Christian, Yes, you're right. For this plugin, you can show multiple KML files in a web page (using ...								<p class="jcomments-latest-readmore">
+					<a href="googleMaps-plugin.php.html#comment-2094">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">Christian Teuber</span>
+						<span class="date">14.01.2019 16:30</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Can you point me to the sample map, I see only maps with one kml file on one map. I want to show 2 ...								<p class="jcomments-latest-readmore">
+					<a href="googleMaps-plugin.php.html#comment-2093">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							New version of DirectPHP - support for PHP 7					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">14.01.2019 14:51</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Björn, Thanks for your support over so many years! I'm not running php 7.1, and I do not currently ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla-news/new-version-of-directphp-support-for-php-7.php.html#comment-2091">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">14.01.2019 14:44</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Christian, I have a sample page here with many KML files on it: googleMaps plugin Tutorial 05: KML ...								<p class="jcomments-latest-readmore">
+					<a href="googleMaps-plugin.php.html#comment-2090">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+			</li>
+		</ul>
+
+				</div>
+			</div>
+		</div>
+	
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+					<div class="zen-module-title">
+						<h3><span>kksou Weather</span><h3>
+					</h3></h3></div>
+							
+				<div class="zen-module-body">
+					<script type="text/javascript">
+var headID = document.getElementsByTagName("head")[0];
+var cssNode = document.createElement('link');
+cssNode.type = 'text/css';
+cssNode.rel = 'stylesheet';
+cssNode.href = 'https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather.css';
+cssNode.media = 'screen';
+headID.appendChild(cssNode);
+</script><script type="text/javascript">
+//var mod_id = "301";
+var gw_lib_url301="https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather_lib.php";
+var gw_progress_gif301="https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather_progress.gif";
+var joomla_root301='|_%$var|_%$www|_%$kksou.com|_%$public_html|_%$php-gtk2';
+var label_city301="City";
+var popup_city301="Please enter zip code, state (in US) or city name, country (for other countries)";
+var popup_deg_F301="Click here to convert to degree F";
+var popup_deg_C301="Click here to convert to degree C";
+var size_city301="20";
+var hide_input301="0";
+var lang301="en";
+var googleweather_unit301="US";
+var default_location301="San Francisco, CA";
+var googleweather_use_curl301="1";
+var request_interval301="3";
+var hide_humidity301="0";
+var hide_wind301="0";
+var hide_forecast301="0";
+var focus_on_city301="0";
+var api_key301="90d34681236de382";
+var default_country301="";
+var label_humidity301="Humidity: ";
+var refresh_time301="60";
+var admin_mode301="0";
+var joomla_ver301="3.0";
+</script><script type="text/javascript" src="../modules/mod_kksouweather/mod_kksouWeather_ajax.js"></script><div id="googleWeather_container301"><form action="index.php" method="get" id="WeatherForm301"><div class="googleWeather"><span class="input_label">City: </span><input name="gw_a" id="str_gw_a301" class="inputbox" maxlength="255" size="20" value="" title="">&nbsp;<span id="gw_loading301"></span><br><input type="hidden" name="a_org" id="str_gw_a_org301" class="inputbox" value=""><div align="left" style="padding-top:2px;"><p align="left" style="padding:0 0 0 0;margin:0 0 0 0"><a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Weather-AJAX-version.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p></div><input type="hidden" name="process" value="1"><input type="hidden" name="temp_unit" id="temp_unit301" value="US"><input type="hidden" name="option" value="com_content"><input type="hidden" name="task" value=""><input type="hidden" name="id" value="1164"><input type="hidden" name="sectionid" value=""><input type="hidden" name="catid" value="30"><input type="hidden" name="Itemid" value="427"></div></form></div><script type="text/javascript">
+
+if (window.jQuery) {
+jQuery(document).ready(function() {
+	gw_prepareForm('301');
+	gw_submitform('301', 1);
+});
+} else {
+	gw_prepareForm('301');
+	gw_submitform('301', 1);
+}
+
+</script>
+				</div>
+			</div>
+		</div>
+	
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					<p>It's not that difficult to learn <a href="http://www.greengeeks.com/website-transfer/" title="how to transfer a website" target="_blank">how to transfer a website</a>.</p>				</div>
+			</div>
+		</div>
+	
+				</div>
+							</div>
+		</div>
+	</div>
+	
+		
+</section>	    	
+	    		    	
+	    	
+	    	
+	    	
+			
+			
+			
+			
+<!-- FOOTER -->
+<footer id="footerwrap" class="wrap zen-footer stack-tablets stack-phones" role="contentinfo">
+  <section class="zen-copyright">
+    <div class="zen-container">
+      <div class="zen-row">
+        	<div class="zg-col zg-col-9">
+	          
+
+<ul id="zen-menu-119">
+<li class="item-382"><a href="../index.php.html?option=com_googlesearch_cse&amp;view=googlesearchs&amp;Itemid=382&amp;lang=en">
+				Google Search			</a>
+	</li><li class="item-447"><a href="http://logistics-innovations.org/">Logistics Innovations</a></li><li class="item-456"><a href="https://www.rpa-sg.org/">RPA</a></li><li class="item-455"><a href="../category/joomla-version-history/index.htm">
+				Joomla Version History			</a>
+	</li><li class="item-457"><a href="https://ask.rpa-sg.org/">RPA Community Forum</a></li></ul>
+
+<div class="custom">
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-700099-1', 'auto');
+  ga('send', 'pageview');
+
+</script></div>
+
+        	</div>
+        	<div class="zg-col zg-col-3">
+        		<div id="zen-copyright">
+        			
+        			        				Copyright © 2005-2015. kksou.com. All Rights Reserved         		</div>
+        	</div>
+      	</div>
+	</div>
+  </section>
+</footer>
+<!-- //FOOTER -->			
+			
+
+
+			
+		</div>	
+	
+		
+
+	<div class="social-wrap fixed">
+
+		
+		
+
+		
+		
+<a id="social-twitter123" href="https://twitter.com/kksou" target="_blank">
+			<span class="zen-animate fadeInRightBig animated-faster fa fa-twitter zen-icon zen-icon-twitter"></span>
+	</a>
+
+	<script>
+		jQuery(document).ready(function ($) {
+			// Twitter Link Constructor
+			var twitter_link = $('#social-twitter').attr('href');
+
+			// Get title on page
+			// Made it broad for anumber of use cases but will retrieve h1 or h2 if not available
+			var title = $('#midCol h1:first').text();
+
+				if(typeof title ==="undefined") {
+					description = $('h2:first').text();
+				}
+
+			twitter_link += title;
+
+			$('#social-twitter').attr('href', twitter_link);
+		});
+	</script>
+
+		 	</div>
+	<script>
+		jQuery(document).ready(function ($) {
+
+			$('.popup').live( 'click', function(){
+				newwindow=window.open($(this).attr('href'),'','height=200,width=450');
+			    if (window.focus) {newwindow.focus()}
+			    return false;
+			 });
+		});
+	</script>
+		
+		
+<div class="sb-slidebar off-canvas-right sb-width-wide">
+	<div class="off-canvas-inner">
+		<div class="off-canvas-heading">
+			<span class="sb-close"><span class="zen-icon-remove zen-icon fa fa-icon-remove"></span></span>
+		</div>
+		<div class="off-canvas-body">
+			<div id="off-canvas-menu"><ul></ul></div>
+			
+		</div>
+	</div>
+</div>
+  
+ 
+ 
+<script>
+	
+	jQuery(document).ready(function($) {
+			
+			
+			
+				// Append nav if required
+				$('body').append_nav('787');	
+						
+				$(window).resize(function() {
+					$('body').append_nav('787');			
+				});
+			
+			 						
+				 		$('#off-canvas-menu').zenaccordion({
+				 		
+				 							 				 openfirst: true,
+				 				 				 				 selector: '.off-canvas-body',
+				 				 openicon: 'plus',
+				 				 closeicon: 'minus',
+				 				 type:"panel"
+				 		});
+			 			
+			 				
+			 
+			
+			
+			
+			$.slidebars();
+		});
+
+</script>
+ 		
+				
+		
+	<script>
+		jQuery(document).ready(function($){
+			$("img").not(".none").lazyload({
+				effect : "fadeIn"
+		});
+	});
+	</script>
+
+
+
+
+
+<div id="toTop" class="hidden-phone"><a id="toTopLink"><span class="fa fa-icon-arrow-up zen-icon zen-icon-arrow-up"></span><span id="toTopText"> Back to top</span></a></div>
+<script>
+	jQuery(document).ready(function($){
+			
+			$(window).scroll(function () {
+			
+				if ($(this).scrollTop() >200) {
+				 	$("#toTop").fadeIn();
+				}
+				else {
+				 	$("#toTop").fadeOut();
+				}
+			});
+		
+			$("#toTop").click(function() {
+				$("html, body").animate({ scrollTop: 0 }, "slow");
+				 return false;
+			});
+	});
+</script>
+
+
+
+
+
+<script>
+jQuery(document).ready(function($){
+	
+	
+	$('.sidebar').zenaccordion({
+	
+		  		 openfirst: true,
+  		   		 type:"panel"
+ 	});
+ 	
+
+});
+</script>
+
+
+
+
+
+
+
+<script>
+jQuery(document).ready(function($){
+	
+	var win      = $(window),
+	    fxel     = $('#navwrap'),
+	    fill     = $('#sticky-fill'),
+	    navheight = $('#menu').height(),
+	    eloffset = fxel.offset().top;
+	 
+	    $(fill).height(navheight);
+
+	win.scroll(function() {
+	    if (eloffset < win.scrollTop()) {
+	        fxel.addClass("fixed");
+	        $('html').addClass("fixed");
+	        $(fill).addClass('visible').removeClass('hidden');
+	    } else {
+	        fxel.removeClass("fixed");
+	        $('html').removeClass("fixed");
+	        $(fill).removeClass('visible').addClass('hidden');
+	    }
+	});
+});
+</script>
+
+
+
+
+
+	<script>
+	 new WOW().init();
+	</script>
+
+
+
+
+<!-- Fonts -->
+
+		
+			
+	</body>
+<!-- Copied from https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php by Cyotek WebCopy 1.7.0.600, 14 Tháng Sáu 2019, 04:23:30 -->
+</html>

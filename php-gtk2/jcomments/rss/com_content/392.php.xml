@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>334. How to finetune interactive search in GtkTreeView - Part 3 - set custom search entry?</title>
+		<description>Discuss 334. How to finetune interactive search in GtkTreeView - Part 3 - set custom search entry?</description>
+		<link>https://kksou.com/php-gtk2/sample-codes/finetune-interactive-search-in-GtkTreeView-Part-3-set-custom-search-entry.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 08:47:03 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/392.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Robin White says:</title>
+			<link>https://kksou.com/php-gtk2/sample-codes/finetune-interactive-search-in-GtkTreeView-Part-3-set-custom-search-entry.php#comment-514</link>
+			<description><![CDATA[:P :roll: :sigh: :D :lol: :-) ;-) 8) :-| :-* :oops: :sad: :cry: :o :-? :-x :eek:]]></description>
+			<dc:creator>Robin White</dc:creator>
+			<pubDate>Tue, 24 Jul 2012 15:48:14 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/sample-codes/finetune-interactive-search-in-GtkTreeView-Part-3-set-custom-search-entry.php#comment-514</guid>
+		</item>
+	</channel>
+</rss>

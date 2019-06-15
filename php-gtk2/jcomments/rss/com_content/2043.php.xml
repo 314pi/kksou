@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>googleMaps plugin Tutorial 02: Zoom Level</title>
+		<description>Discuss googleMaps plugin Tutorial 02: Zoom Level</description>
+		<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-02-Zoom-Level.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:01:32 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2043.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Leanne says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-02-Zoom-Level.php#comment-1175</link>
+			<description><![CDATA[I've downloaded the latest googleMaps plug-in, but I'm having the same problem as gerardo.garcia in that zoom=?? isn't affecting the zoom level of the map when used with KML files. When you say this was updated in googleMaps v2.5.19 is that the version that is compatible with Joomla 2.5+? I am using 1.7, would upgrading Joomla fix this problem? Thanks, Leanne]]></description>
+			<dc:creator>Leanne</dc:creator>
+			<pubDate>Tue, 17 Sep 2013 06:22:52 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-02-Zoom-Level.php#comment-1175</guid>
+		</item>
+		<item>
+			<title>Urs says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-02-Zoom-Level.php#comment-648</link>
+			<description><![CDATA[addoverview=0 found it in the version info, thx]]></description>
+			<dc:creator>Urs</dc:creator>
+			<pubDate>Wed, 03 Oct 2012 02:47:05 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-02-Zoom-Level.php#comment-648</guid>
+		</item>
+		<item>
+			<title>Urs says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-02-Zoom-Level.php#comment-647</link>
+			<description><![CDATA[Hey kksou, nice work of yours! One questioin: How do i switch off the overview map in the lower right hand corner? like u got it in the example above. thanks in advance for your reply. regards Urs]]></description>
+			<dc:creator>Urs</dc:creator>
+			<pubDate>Wed, 03 Oct 2012 02:35:59 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-02-Zoom-Level.php#comment-647</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-02-Zoom-Level.php#comment-176</link>
+			<description><![CDATA[Hi Gerardo, Sorry for the late reply. Have just released googleMaps v2.5.19. Please try this latest version and let me know if zoom works with your KML files now. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 25 Mar 2012 09:06:38 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-02-Zoom-Level.php#comment-176</guid>
+		</item>
+		<item>
+			<title>gerardo.garcia says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-02-Zoom-Level.php#comment-156</link>
+			<description><![CDATA[:sad: zoom does't seem work fine with kml files. I even tried with the example!]]></description>
+			<dc:creator>gerardo.garcia</dc:creator>
+			<pubDate>Sun, 18 Mar 2012 13:39:22 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-02-Zoom-Level.php#comment-156</guid>
+		</item>
+	</channel>
+</rss>

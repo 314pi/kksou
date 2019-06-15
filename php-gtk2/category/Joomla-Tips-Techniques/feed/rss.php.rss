@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Joomla Tips &amp; Techniques</title>
+		<description><![CDATA[The Joy of Sharing and Learning Together]]></description>
+		<link>https://kksou.com/php-gtk2/category/Joomla-Tips-Techniques/</link>
+		<lastBuildDate>Fri, 14 Jun 2019 04:38:31 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="https://kksou.com/php-gtk2/category/Joomla-Tips-Techniques/feed/rss.php"/>
+		<language>en-gb</language>
+		<managingEditor>admin@kksou.com (kksou)</managingEditor>
+		<item>
+			<title>Google Currency Converter  - How to change number of decimal places for the converted currency?</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/Google-Currency-Converter-How-to-change-number-of-decimal-places-for-the-converted-currency.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Tips-Techniques/Google-Currency-Converter-How-to-change-number-of-decimal-places-for-the-converted-currency.php</guid>
+			<description><![CDATA[<p>This is in response to <a href="https://kksou.com/php-gtk2/">asscore's question</a> - How to change number of places after the decimal for the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php">Google Currency Converter module</a>.
+
+<p>By default, Google returns the converted currency in 4 decimal places. To change to 2 decimal places, all we need to do is to grab the value of the converted currency and use the standard PHP <a href="http://php.net/manual/en/function.number-format.php"><code>number_format()</code></a> function to format it to 2 decimal places.</p>
+
+]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Tips &amp; Techniques</category>
+			<pubDate>Fri, 04 May 2012 16:58:27 +0000</pubDate>
+		</item>
+		<item>
+			<title>Google Currency Converter - changing the width of the pulldown currency menu</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/Google-Currency-Converter-changing-the-width-of-the-pulldown-currency-menu.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Tips-Techniques/Google-Currency-Converter-changing-the-width-of-the-pulldown-currency-menu.php</guid>
+			<description><![CDATA[<p>Now that Google supports a total of <a href="http://www.kksou.com/php-gtk2/Joomla-News/Google-Currency-Converter-30-new-currencies.php#all">93 currencies</a>, the pulldown menu of the currencies might be too long to fit your module width.</p>
+
+<p>So how do you change the width of the pulldown menu so that it can fit nicely within your module position?</p>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Tips &amp; Techniques</category>
+			<pubDate>Tue, 06 Dec 2011 16:19:16 +0000</pubDate>
+		</item>
+		<item>
+			<title>Google Directions with Multiple Stopovers</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/Google-Directions-with-Multiple-Stopovers.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Tips-Techniques/Google-Directions-with-Multiple-Stopovers.php</guid>
+			<description><![CDATA[<p>The following sample shows how to display Google Maps directions for multiple destinations or stopovers using the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php">googleDirections plugin</a> that uses the latest Google Maps API v3.</p>
+
+<span class="info">
+<b>Important:</b> This plugin makes use of the googleMaps plugin and googleDirections plugin to display the map. So please make sure you have installed <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps plugin v1.0.17/1.5.17/1.6.17/1.7.17</a> (or above) and <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php">googleDirections plugin v1.0.11/1.5.11/1.6.11/1.7.11</a> (or above) for this plugin to work.<br><br>
+
+If you have downloaded and installed the above plugins before the Christmas of 2011 (i.e. Dec 25, 2011), you are using the old version. Please update the two plugins to the latest version.
+</span>
+]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Tips &amp; Techniques</category>
+			<pubDate>Sun, 25 Dec 2011 15:55:26 +0000</pubDate>
+		</item>
+		<item>
+			<title>Google Maps - display multiple markers</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/Google-Maps-display-multiple-markers.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Tips-Techniques/Google-Maps-display-multiple-markers.php</guid>
+			<description><![CDATA[<p>By default, the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps plugin</a> displays only one marker.</p>
+
+<p>If you wish to display multiple markers, please refer to the following tutorial: <a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Samples/Use-KML-file-to-place-multiple-markers-on-Google-Maps.php">How to display multiple markers in Google Maps using KML file?</a></p>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Tips &amp; Techniques</category>
+			<pubDate>Fri, 16 Mar 2012 16:37:27 +0000</pubDate>
+		</item>
+		<item>
+			<title>googleDirections - To Here - plugin Tutorial 01: Getting Started</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php</guid>
+			<description><![CDATA[<p>This is part 1 of a series of tutorial for the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php">googleDirections - To Here - plugin</a>.</p>
+
+<p>Using the googleDirections plugin is as easy as 1-2-3:</p>
+<ol>
+<li>Specify your <b>Home Address</b> - i.e. the end point, or where you want your customer to go to. This can be real address or in latitude/longitude.</li><p></p>
+<li>Specify the <code>width</code>, <code>height</code> and <code>dir_width</code>.</b> This sets the size of your map (<code>width</code> and <code>height</code>), and also the width of the directions (<code>dir_width</code>).</li><p></p>
+</ol>
+
+]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Tips &amp; Techniques</category>
+			<pubDate>Wed, 08 Feb 2012 14:09:34 +0000</pubDate>
+		</item>
+		<item>
+			<title>googleDirections - To Here - plugin Tutorial 02: Adding Label to Home Address</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-02-Adding-Label-to-Home-Address.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-02-Adding-Label-to-Home-Address.php</guid>
+			<description><![CDATA[<p>This is part 2 of a series of tutorial for the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php">googleDirections - To Here - plugin</a>.</p>
+
+<p>You can add a label to the Home Address with the keyword <code style="background:#ffff00">home_label</code>. The label will be displayed when you hover the mouse over the red marker, or when you click on the red marker.</p>
+
+<p><b>Note:</b></p>
+<ul>
+<li>The label with the red marker will only be shown when the map is displayed initially with nothing entered in the "Coming From" field.</li><p></p>
+<li>The moment the directions are displayed, the red marker will be replaced by the end point (usually Point B which corresponds to the directions given in the Directions Panel)</li><p></p>
+<li>You can re-display the original map with the red marker by entering an empty field (i.e. clearing the "Coming From" field) and click the submit button.</li><p></p>
+
+</ul>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Tips &amp; Techniques</category>
+			<pubDate>Wed, 08 Feb 2012 15:17:48 +0000</pubDate>
+		</item>
+		<item>
+			<title>googleDirections - To Here - plugin Tutorial 03: Travel Modes</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-03-Travel-Modes.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-03-Travel-Modes.php</guid>
+			<description><![CDATA[<p>This is part 3 of a series of tutorial for the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php">googleDirections - To Here - plugin</a>.</p>
+
+<p>When displaying Google directions, you need to specify which transportation mode to use. The following travel modes are currently supported by Google:</p>
+<ul>
+<li><code>DRIVING</code> indicates standard driving directions using the road network.</li>
+<li><code>WALKING</code> requests walking directions via pedestrian paths & sidewalks (where available).</li>
+<li>BICYCLING</li> requests bicycling directions via bicycle paths & preferred streets (currently only available in the US).</li>
+</ul>
+
+<p>If you do not specify any travel mode, the default used is <code>DRIVING</code>.</p>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Tips &amp; Techniques</category>
+			<pubDate>Wed, 08 Feb 2012 15:44:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>googleDirections - To Here - plugin Tutorial 04: Unit Systems - miles or km</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-04-Unit-Systems-miles-or-km.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-04-Unit-Systems-miles-or-km.php</guid>
+			<description><![CDATA[<p>This is part 4 of a series of tutorial for the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php">googleDirections - To Here - plugin</a>.</p>
+
+<ol>
+
+<li>By default, directions are calculated and displayed using the unit system of the origin's country or region.</li><p></p>
+<li>For example, a route from "Chicago, IL" to "Toronto, ONT" will display results in miles, while the reverse route will display results in kilometers.</li><p></p>
+<li>Origins expressed using latitude/longitude coordinates rather than addresses always default to metric units.</li><p></p>
+<li>You can specify the unit system to be used in the driving instructions:</li>
+<ul type=disc>
+<li><code>METRIC</code> specifies usage of the metric system. Distances are shown using kilometers.</li>
+<li><code>IMPERIAL</code> specifies usage of the Imperial (English) system. Distances are shown using miles.</li>
+</ul>
+</ol>
+]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Tips &amp; Techniques</category>
+			<pubDate>Fri, 10 Feb 2012 14:56:30 +0000</pubDate>
+		</item>
+		<item>
+			<title>googleDirections - To Here - plugin Tutorial 05: Display Directions on the Left</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-05-Display-Directions-on-the-Left.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-05-Display-Directions-on-the-Left.php</guid>
+			<description><![CDATA[<p>This is part 5 of a series of tutorial for the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php">googleDirections - To Here - plugin</a>.</p>
+
+<ol>
+
+<li>By default, the Google Map is displayed on the left and the routing directions on the right.</li><p></p>
+<li>If you prefer to display the map on the right and the directions on the left, you can use the keyword <b style="background:#ffff00"<code>map_on_right=1</code></b></li><p></p>
+</ul>
+</ol>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Tips &amp; Techniques</category>
+			<pubDate>Fri, 10 Feb 2012 15:02:39 +0000</pubDate>
+		</item>
+		<item>
+			<title>googleDirections - To Here - plugin Tutorial 06: Display Directions below the Map</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php</guid>
+			<description><![CDATA[<p>This is part 6 of a series of tutorial for the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php">googleDirections - To Here - plugin</a>.</p>
+
+<ol>
+
+<li>By default, the Google Map is displayed on the left and the routing directions on the right.</li><p></p>
+<li>If you prefer to display the directions below the map, you can use the keyword <b style="background:#ffff00"<code>vertical=1</code></b></li><p></p>
+</ul>
+</ol>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Tips &amp; Techniques</category>
+			<pubDate>Fri, 10 Feb 2012 15:07:54 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

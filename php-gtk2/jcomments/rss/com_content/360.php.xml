@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>302. How to set up radio buttons in GtkTreeView using GtkCellRendererToggle - Part 3 - process selections?</title>
+		<description>Discuss 302. How to set up radio buttons in GtkTreeView using GtkCellRendererToggle - Part 3 - process selections?</description>
+		<link>https://kksou.com/php-gtk2/sample-codes/set-up-radio-buttons-in-GtkTreeView-using-GtkCellRendererToggle-Part-3-process-selections.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 09:28:43 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/360.php" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>

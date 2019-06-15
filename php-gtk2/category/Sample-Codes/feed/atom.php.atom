@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="en-gb">
+	<title type="text">Sample Codes</title>
+	<subtitle type="text">The Joy of Sharing and Learning Together</subtitle>
+	<link rel="alternate" type="text/html" href="https://kksou.com"/>
+	<id>https://kksou.com/php-gtk2/category/sample-codes/feed/atom.php</id>
+	<updated>2019-06-14T05:16:20+00:00</updated>
+	<author>
+		<name>kksou</name>
+		<email>admin@kksou.com</email>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="https://kksou.com/php-gtk2/category/sample-codes/feed/atom.php"/>
+	<entry>
+		<title>001. How to get started?</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/sample-codes/get-started.php"/>
+		<published>2006-09-12T16:46:40+00:00</published>
+		<updated>2006-09-12T16:46:40+00:00</updated>
+		<id>https://kksou.com/php-gtk2/sample-codes/get-started.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;GtkWindow&quot;;
+$index = &quot;0001&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;How to get started in PHP-GTK2?&lt;/p&gt;
+&lt;p&gt;As with many other programming languages, let start with this simple yet complete &quot;hello world!&quot; PHP-GTK2 example as shown below:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</summary>
+		<content type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;GtkWindow&quot;;
+$index = &quot;0001&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;How to get started in PHP-GTK2?&lt;/p&gt;
+&lt;p&gt;As with many other programming languages, let start with this simple yet complete &quot;hello world!&quot; PHP-GTK2 example as shown below:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</content>
+		<category term="Sample Codes" />
+	</entry>
+	<entry>
+		<title>002. How to change the size of GtkWindow?</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/sample-codes/change-the-size-of-GtkWindow.php"/>
+		<published>2006-09-12T17:08:26+00:00</published>
+		<updated>2006-09-12T17:08:26+00:00</updated>
+		<id>https://kksou.com/php-gtk2/sample-codes/change-the-size-of-GtkWindow.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;GtkWindow, change size, set_size_request&quot;;
+$index = &quot;0002&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;You want to change the size of GtkWindow as shown below:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</summary>
+		<content type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;GtkWindow, change size, set_size_request&quot;;
+$index = &quot;0002&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;You want to change the size of GtkWindow as shown below:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</content>
+		<category term="Sample Codes" />
+	</entry>
+	<entry>
+		<title>003. How to set the background color of GtkWindow?</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/sample-codes/set-the-background-color-of-GtkWindow.php"/>
+		<published>2006-09-12T18:08:24+00:00</published>
+		<updated>2006-09-12T18:08:24+00:00</updated>
+		<id>https://kksou.com/php-gtk2/sample-codes/set-the-background-color-of-GtkWindow.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;GtkWindow, background color, modify_bg&quot;;
+$index = &quot;0003&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;You want to set the background color of GtkWindow as follows:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</summary>
+		<content type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;GtkWindow, background color, modify_bg&quot;;
+$index = &quot;0003&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;You want to set the background color of GtkWindow as follows:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</content>
+		<category term="Sample Codes" />
+	</entry>
+	<entry>
+		<title>004. How to change the font and font size of GtkLabel?</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/sample-codes/change-the-font-and-font-size-of-GtkLabel.php"/>
+		<published>2006-09-12T19:43:30+00:00</published>
+		<updated>2006-09-12T19:43:30+00:00</updated>
+		<id>https://kksou.com/php-gtk2/sample-codes/change-the-font-and-font-size-of-GtkLabel.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;GtkLabel, font, fontsize, modify_font&quot;;
+$index = &quot;0004&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;You want to change the font and font size of GtkLabel as shown below:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</summary>
+		<content type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;GtkLabel, font, fontsize, modify_font&quot;;
+$index = &quot;0004&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;You want to change the font and font size of GtkLabel as shown below:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</content>
+		<category term="Sample Codes" />
+	</entry>
+	<entry>
+		<title>005. How to right justify the text in GtkLabel?</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/sample-codes/right-justify-the-text-in-GtkLabel.php"/>
+		<published>2006-09-12T20:55:52+00:00</published>
+		<updated>2006-09-12T20:55:52+00:00</updated>
+		<id>https://kksou.com/php-gtk2/sample-codes/right-justify-the-text-in-GtkLabel.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;GtkLabel, justify, justification, set_justify&quot;;
+$index = &quot;0005&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;You want to right justify the text in GtkLabel as shown below:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</summary>
+		<content type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;GtkLabel, justify, justification, set_justify&quot;;
+$index = &quot;0005&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;You want to right justify the text in GtkLabel as shown below:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</content>
+		<category term="Sample Codes" />
+	</entry>
+	<entry>
+		<title>006. How to place a background image in GtkWindow?</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/sample-codes/place-a-background-image-in-GtkWindow.php"/>
+		<published>2006-09-12T21:43:54+00:00</published>
+		<updated>2006-09-12T21:43:54+00:00</updated>
+		<id>https://kksou.com/php-gtk2/sample-codes/place-a-background-image-in-GtkWindow.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;background image, set_style, GtkStyle, GtkWindow&quot;;
+$index = &quot;0006&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;You want to place a background image in a GtkWindow as shown below:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</summary>
+		<content type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;background image, set_style, GtkStyle, GtkWindow&quot;;
+$index = &quot;0006&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;You want to place a background image in a GtkWindow as shown below:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</content>
+		<category term="Sample Codes" />
+	</entry>
+	<entry>
+		<title>007. How to left or right align GtkLabel in GtkWindow?</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/sample-codes/left-or-right-align-GtkLabel-in-GtkWindow.php"/>
+		<published>2006-09-13T13:32:06+00:00</published>
+		<updated>2006-09-13T13:32:06+00:00</updated>
+		<id>https://kksou.com/php-gtk2/sample-codes/left-or-right-align-GtkLabel-in-GtkWindow.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;GtkWindow, GtkLabel, justify, justification, GtkVBox, align&quot;;
+$index = &quot;0007&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;You want to left or right align GtkLabel in GtkWindow as shown below:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</summary>
+		<content type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;GtkWindow, GtkLabel, justify, justification, GtkVBox, align&quot;;
+$index = &quot;0007&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;You want to left or right align GtkLabel in GtkWindow as shown below:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</content>
+		<category term="Sample Codes" />
+	</entry>
+	<entry>
+		<title>008. How to set the background color of GtkLabel?</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/sample-codes/set-the-background-color-of-GtkLabel.php"/>
+		<published>2006-09-13T14:56:06+00:00</published>
+		<updated>2006-09-13T14:56:06+00:00</updated>
+		<id>https://kksou.com/php-gtk2/sample-codes/set-the-background-color-of-GtkLabel.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;GtkLabel, background color, GtkEventBox, modify_bg, GtkVBox&quot;;
+$index = &quot;0008&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;You want to achieve the following:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</summary>
+		<content type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;GtkLabel, background color, GtkEventBox, modify_bg, GtkVBox&quot;;
+$index = &quot;0008&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;You want to achieve the following:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</content>
+		<category term="Sample Codes" />
+	</entry>
+	<entry>
+		<title>009. How to put a border around GtkLabel?</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/sample-codes/put-a-border-around-GtkLabel.php"/>
+		<published>2006-09-13T15:15:14+00:00</published>
+		<updated>2006-09-13T15:15:14+00:00</updated>
+		<id>https://kksou.com/php-gtk2/sample-codes/put-a-border-around-GtkLabel.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;GtkLabel, GtkFrame, border, frame, modify_bg, GtkVBox&quot;;
+$index = &quot;0009&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;You want to achieve the following:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</summary>
+		<content type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;GtkLabel, GtkFrame, border, frame, modify_bg, GtkVBox&quot;;
+$index = &quot;0009&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;You want to achieve the following:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</content>
+		<category term="Sample Codes" />
+	</entry>
+	<entry>
+		<title>010. How to have a GtkLabel with background color and border?</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/sample-codes/have-a-GtkLabel-with-background-color-and-border.php"/>
+		<published>2006-09-13T16:17:08+00:00</published>
+		<updated>2006-09-13T16:17:08+00:00</updated>
+		<id>https://kksou.com/php-gtk2/sample-codes/have-a-GtkLabel-with-background-color-and-border.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;GtkEventBox, GtkFrame, GtkLabel, background color, frame, border, GtkVBox&quot;;
+$index = &quot;0010&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;You want to have a GtkLabel with background color and border as shown below:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</summary>
+		<content type="html">&lt;?php
+require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);
+setup_jquery_lib_for_sample_codes();
+$additional_keywords = &quot;GtkEventBox, GtkFrame, GtkLabel, background color, frame, border, GtkVBox&quot;;
+$index = &quot;0010&quot;;
+?&gt;
+
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;?php display_google_ads_problem();?&gt;
+&lt;!-- InstanceBeginEditable name=&quot;problem&quot; --&gt;
+&lt;p&gt;You want to have a GtkLabel with background color and border as shown below:&lt;/p&gt;
+&lt;?php show_gif($index);?&gt;
+
+&lt;!-- InstanceEndEditable --&gt;
+&lt;br clear=&quot;all&quot; /&gt;
+
+&lt;?php display_google_300_250_left();?&gt;
+</content>
+		<category term="Sample Codes" />
+	</entry>
+</feed>

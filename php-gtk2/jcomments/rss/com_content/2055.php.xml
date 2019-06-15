@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Where to find CSE's unique ID?</title>
+		<description>Discuss Where to find CSE's unique ID?</description>
+		<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/Where-to-find-CSE-s-unique-ID.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:10:19 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2055.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>John Wood says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/Where-to-find-CSE-s-unique-ID.php#comment-432</link>
+			<description><![CDATA[Hi everyone, I have fixed this box issue, it was just the formatting in adsense. Take care all, remember life's too short! so live it!]]></description>
+			<dc:creator>John Wood</dc:creator>
+			<pubDate>Mon, 02 Jul 2012 08:07:00 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/Where-to-find-CSE-s-unique-ID.php#comment-432</guid>
+		</item>
+		<item>
+			<title>John Wood says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/Where-to-find-CSE-s-unique-ID.php#comment-429</link>
+			<description><![CDATA[When I added the CSE's unique ID without the "partner-pub-" the results don't appear, I just get an error page. My ID is all numbers anyway, there are no letters in it...]]></description>
+			<dc:creator>John Wood</dc:creator>
+			<pubDate>Sun, 01 Jul 2012 09:42:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/Where-to-find-CSE-s-unique-ID.php#comment-429</guid>
+		</item>
+		<item>
+			<title>Romulo Ruiz says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/Where-to-find-CSE-s-unique-ID.php#comment-214</link>
+			<description><![CDATA[Hi i installed this component, and never worked but today i was reading again and realized i never add to the component the uni ID as this document say, now is working perfet, the only thing is that i don't know how to show the google search box text in color, because appear in black and white.]]></description>
+			<dc:creator>Romulo Ruiz</dc:creator>
+			<pubDate>Tue, 03 Apr 2012 21:38:00 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/Where-to-find-CSE-s-unique-ID.php#comment-214</guid>
+		</item>
+	</channel>
+</rss>

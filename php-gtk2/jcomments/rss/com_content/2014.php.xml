@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>How to display and process forms in a Joomla article using DirectPHP?</title>
+		<description>Discuss How to display and process forms in a Joomla article using DirectPHP?</description>
+		<link>https://kksou.com/php-gtk2/Joomla/how-to-display-and-process-forms-in-a-joomla-article-using-directphp.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:45:50 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2014.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-display-and-process-forms-in-a-joomla-article-using-directphp.php#comment-1845</link>
+			<description><![CDATA[Hi Brown, The id is the article id. If you go to your joomla backend - Content - Articles. The ID you see in the rightmost column is the article id. In Joomla, to go to a particular Joomla article, you will need to specify these 4 parameters - option, itemid, id (which is the article id) and view. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 09 Nov 2016 04:21:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-display-and-process-forms-in-a-joomla-article-using-directphp.php#comment-1845</guid>
+		</item>
+		<item>
+			<title>Brown Nwankwo says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-display-and-process-forms-in-a-joomla-article-using-directphp.php#comment-1836</link>
+			<description><![CDATA[Hello. Cannot find item id. Where can I find it please]]></description>
+			<dc:creator>Brown Nwankwo</dc:creator>
+			<pubDate>Tue, 08 Nov 2016 14:59:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-display-and-process-forms-in-a-joomla-article-using-directphp.php#comment-1836</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-display-and-process-forms-in-a-joomla-article-using-directphp.php#comment-1757</link>
+			<description><![CDATA[Hi Stathes, Sorry for the late reply. DirectPHP uses the standard PHP eval() function. Please change "/~trailpro" to fullpath. If you have coded using raw PHP, PHP does not know ~. So you have to use the fullpath e.g. /var/www/... or /home/domain/... Please give it a try and see if it works. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 18 Dec 2015 10:44:03 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-display-and-process-forms-in-a-joomla-article-using-directphp.php#comment-1757</guid>
+		</item>
+		<item>
+			<title>Stathes says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-display-and-process-forms-in-a-joomla-article-using-directphp.php#comment-1754</link>
+			<description><![CDATA[Hello, I am trying to pass post variables, but when i save the article i got this error Not Implemented GET to /~trailpro/administrator/index.php not supported. Additionally, a 501 Not Implemented error was encountered while trying to use an ErrorDocument to handle the request. and cannot procced Thanx]]></description>
+			<dc:creator>Stathes</dc:creator>
+			<pubDate>Thu, 10 Dec 2015 12:09:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-display-and-process-forms-in-a-joomla-article-using-directphp.php#comment-1754</guid>
+		</item>
+	</channel>
+</rss>

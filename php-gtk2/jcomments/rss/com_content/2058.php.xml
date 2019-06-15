@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>How to enter HTML tags, javascript and PHP codes in Joomla 2.5?</title>
+		<description>Discuss How to enter HTML tags, javascript and PHP codes in Joomla 2.5?</description>
+		<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:06:17 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2058.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Smithk293 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1813</link>
+			<description><![CDATA[Valuable information. Lucky me I found your site by accident, and I am shocked why this accident did not happened earlier! I bookmarked it. fgfccfekeaceccff]]></description>
+			<dc:creator>Smithk293</dc:creator>
+			<pubDate>Sat, 13 Aug 2016 15:40:45 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1813</guid>
+		</item>
+		<item>
+			<title>Rdel says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1260</link>
+			<description><![CDATA[Inside the TinyMCE, I'm trying to display "More Info" text that links to the article's title. Is it possible using this plugin or is it something beyond the scope of this plugin? I'm using Joomla 3.x. Thanks]]></description>
+			<dc:creator>Rdel</dc:creator>
+			<pubDate>Wed, 01 Jan 2014 06:09:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1260</guid>
+		</item>
+		<item>
+			<title>Rhys Crawford says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1256</link>
+			<description><![CDATA[I cannot get this to work in Joomla 3.2. I am using the codemirror editor, and I have checked that the code is being inserted into the database correclty. However on displaying the page Joomla (or a template) is commenting out my PHP. Although it might be the template, I have tried multiple templates, so I think it's the Joomla core. Any ideas?]]></description>
+			<dc:creator>Rhys Crawford</dc:creator>
+			<pubDate>Thu, 12 Dec 2013 12:16:02 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1256</guid>
+		</item>
+		<item>
+			<title>John Fidge says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1217</link>
+			<description><![CDATA[Hi, Found it. You don't go into the Editor, but do it on the WYSIWYG page. No need to reply now, thanks. I found the answer in one of your other posts above.]]></description>
+			<dc:creator>John Fidge</dc:creator>
+			<pubDate>Sun, 10 Nov 2013 15:04:58 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1217</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1216</link>
+			<description><![CDATA[Hi John, Try to enter the code from the backend Article Manager and see if it works. Also, when you enter the PHP code in the Article Manager, please use the default WYSIWYG mode (as oppose to the HTML mode). Please enter something simple first for testing e.g. echo 'test123'; If it works, then you can start entering more lines. It's difficult to debug in this mode (the PHP codes are run using PHP's standard eval() function). So try entering a couple of lines at a time. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 10 Nov 2013 14:47:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1216</guid>
+		</item>
+		<item>
+			<title>John Fidge says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1215</link>
+			<description><![CDATA[Hi, What have I done wrong? I am using Joomla 3.1.5. I downloaded your zip file, used Extension Manager to install it,enabled DirectPHP in the Plugin Manager and checked that the Super User Filter Type was set to No Filtering. I then opened one of my articles and hit the Toggle Editor button and added a separate line with on it. On saving the article, TinyMCE had put comment braces around my PHP code.]]></description>
+			<dc:creator>John Fidge</dc:creator>
+			<pubDate>Sun, 10 Nov 2013 13:56:04 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1215</guid>
+		</item>
+		<item>
+			<title>jrrabi says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1208</link>
+			<description><![CDATA[ :-* hehe, so often to me 8)]]></description>
+			<dc:creator>jrrabi</dc:creator>
+			<pubDate>Sat, 26 Oct 2013 14:48:21 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1208</guid>
+		</item>
+		<item>
+			<title>Ole M says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1179</link>
+			<description><![CDATA[Hi, I will use directPHP on my joomla 3.1.5 installation. If I use the following php () in an article - it works. But if I take it in an own module it doesn´t work. I use directPHP in my joomla 2.5.x in an own module too and there it works. Any help? thx]]></description>
+			<dc:creator>Ole M</dc:creator>
+			<pubDate>Mon, 23 Sep 2013 02:03:18 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1179</guid>
+		</item>
+		<item>
+			<title>lisaedward says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1177</link>
+			<description><![CDATA[This is really nice. Thanks for sharing this article PHP training in Chennai]]></description>
+			<dc:creator>lisaedward</dc:creator>
+			<pubDate>Thu, 19 Sep 2013 01:53:36 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1177</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1125</link>
+			<description><![CDATA[Hi, If you see the entire code displayed, it means the code has not been processed at all (i.e. DirectPHP is not running). If your plugin is enabled, it could mean that it's conflicts with some other plugins. To only way to ascertain this is to install a fresh install of Joomla somewhere on your site and then install just the DirectPHP plugin. This will allow you to see if DirectPHP run on your server at all. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 24 Jul 2013 01:37:22 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1125</guid>
+		</item>
+		<item>
+			<title>fredas says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1123</link>
+			<description><![CDATA[It's not working with Joomla 3.1.1. I installed the plugin and set settings: to "no filter", plugin is activated and i put simple code in to wysiswyg (tinymce) and get the hole code as a plain text: Now is: and I get this code displayed on the frontpage. :-|]]></description>
+			<dc:creator>fredas</dc:creator>
+			<pubDate>Mon, 22 Jul 2013 15:15:15 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1123</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1121</link>
+			<description><![CDATA[Hi Bob, That's strange. It should work. I couldn't know the problem without further info. Are you ok with mysql? If yes, can you go to the backend mysql of your joomla, and locate the record of this article in the table jos_content. Please email me the entire content of the 2 fields: introtext and fulltext - this should give me enough clue to know where the problem is. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 20 Jul 2013 17:27:02 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1121</guid>
+		</item>
+		<item>
+			<title>Bob Scott says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1119</link>
+			<description><![CDATA[Sorry, previoius comment meaningless - it stripped my code so I'll try again. I'm having trouble with multiline line like others - Shift-Enter didn't solve it using TinyMCE. I get a Parsing error. Single line works OK with TinyMCE and multiline works if I use CodeMirror editor. Joomla 2.5.11, MySQL 5.0 [?php echo date('l, F jS Y.'); ?] Any advice (any more info needed)?]]></description>
+			<dc:creator>Bob Scott</dc:creator>
+			<pubDate>Fri, 19 Jul 2013 17:46:01 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1119</guid>
+		</item>
+		<item>
+			<title>Bob Scott says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1118</link>
+			<description><![CDATA[I am also having problems with the multiline php code: Today's date (according to this web server) is It produces the following parsing error: Parse error: syntax error, unexpected ']]></description>
+			<dc:creator>Bob Scott</dc:creator>
+			<pubDate>Fri, 19 Jul 2013 17:28:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1118</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1106</link>
+			<description><![CDATA[Hi, DirectPHP is not used for such a purpose. For your case, you might need to develop your own plugins and incorporate those PHP codes right inside your plugin, instead of through another layer of content plugins such as DirectPHP or any others. For user sessions, you can google for "PHP sessions tutorial" and there will be many resources and sample codes for your use. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 11 Jul 2013 23:59:16 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1106</guid>
+		</item>
+		<item>
+			<title>bogi says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1105</link>
+			<description><![CDATA[how can I use the user's session? for example, I want to create a php script that if it is user A that access the script it will echo "apple", and if it is user B it will echo "orange" thanks in advance bogi.imtelkom.ac.id]]></description>
+			<dc:creator>bogi</dc:creator>
+			<pubDate>Thu, 11 Jul 2013 08:42:49 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1105</guid>
+		</item>
+		<item>
+			<title>alex0098 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1102</link>
+			<description><![CDATA[verry nice share i like it cam a cam. cam a cam.]]></description>
+			<dc:creator>alex0098</dc:creator>
+			<pubDate>Fri, 05 Jul 2013 09:21:20 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1102</guid>
+		</item>
+		<item>
+			<title>peterson10011 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1091</link>
+			<description><![CDATA[This is a very useful information. Thanks for sharing. PHP training in Chennai]]></description>
+			<dc:creator>peterson10011</dc:creator>
+			<pubDate>Mon, 17 Jun 2013 23:19:02 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-1091</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-986</link>
+			<description><![CDATA[Hi, I'm using DirectPHP on my Joomla3 site without any problem. Have you tried other editors and see if it works? If possible, try setup a fresh install of Joomla3 somewhere on your site and then DirectPHP. This will allow you to see if it works on your machine at all, or if it's conflicts with your other plugins. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 01 May 2013 21:25:04 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-986</guid>
+		</item>
+		<item>
+			<title>Zadra Design says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-982</link>
+			<description><![CDATA[I have used this plugin for years and love it; however, I cannot get it to work in Joomla! 3.1. Any idea on when it will be updated? I have set it to no filtering and tried both with and without the text editor, but on the front end the triangle brackets are replaced with HTML comments, for example:]]></description>
+			<dc:creator>Zadra Design</dc:creator>
+			<pubDate>Wed, 01 May 2013 17:01:26 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-982</guid>
+		</item>
+		<item>
+			<title>Se says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-962</link>
+			<description><![CDATA[Very neat plugin. A lot of the problems mentioned in this board can be solved by simply going to Joomla "Global configuration", change the default Joomla editor to "Code Mirror" and everything works a treat. Thanks.]]></description>
+			<dc:creator>Se</dc:creator>
+			<pubDate>Fri, 12 Apr 2013 03:04:20 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-962</guid>
+		</item>
+		<item>
+			<title>AlexMitvix says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-940</link>
+			<description><![CDATA[Great plugin!!! I love it!]]></description>
+			<dc:creator>AlexMitvix</dc:creator>
+			<pubDate>Sun, 07 Apr 2013 14:56:46 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-940</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-905</link>
+			<description><![CDATA[Hi, You cannot do this with DirectPHP. DirectPHP is a content plugin. It's supposed to be used within a Joomla article. You need to change the source code of the k2 components. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 07 Mar 2013 07:09:46 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-905</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-904</link>
+			<description><![CDATA[Hi, If you look at the source code, this plugin simply grabs all your PHP codes and pump them into the standard PHP eval() function. The PHP eval() function is not that smart to differentiate between simple or advanced plugin. Any valid PHP code that can be processed by eval() can also be processed by DirectPHP. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 07 Mar 2013 07:08:24 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-904</guid>
+		</item>
+		<item>
+			<title>sawan gupta says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-901</link>
+			<description><![CDATA[hi frnd how can i edit normal html or php form to joomla 2.5]]></description>
+			<dc:creator>sawan gupta</dc:creator>
+			<pubDate>Mon, 04 Mar 2013 02:45:05 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-901</guid>
+		</item>
+		<item>
+			<title>sawan gupta says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-900</link>
+			<description><![CDATA[hi frnd how i can override k2 components which convert to the list from to menu tab.]]></description>
+			<dc:creator>sawan gupta</dc:creator>
+			<pubDate>Mon, 04 Mar 2013 02:43:59 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-900</guid>
+		</item>
+		<item>
+			<title>Harris Marfel says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-899</link>
+			<description><![CDATA[This plugin only work if you use basic PHP code. not the advance php code.]]></description>
+			<dc:creator>Harris Marfel</dc:creator>
+			<pubDate>Sun, 03 Mar 2013 02:40:05 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-899</guid>
+		</item>
+		<item>
+			<title>ganesh2k says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-866</link>
+			<description><![CDATA[plz help i am running a joonla Virtue-Mart site a local store in India i need to change Rs symbol to rupee symbol they i have java-script http://cdn.webrupee.com/js which convert all Rs or RS to that symbol plz help me how to add the script to site r any other method. my site is www.nalam.in(under development)mail me so i can send username-password for site plzzz reply back... :sigh: :sigh:]]></description>
+			<dc:creator>ganesh2k</dc:creator>
+			<pubDate>Fri, 01 Feb 2013 02:53:44 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-866</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-861</link>
+			<description><![CDATA[Hi, Can you please try: [?php $x="blah"; echo $x;?] and see if it works? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 31 Jan 2013 05:10:47 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-861</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-860</link>
+			<description><![CDATA[Hi, Sorry. Have only learned English. Would you mind to write your question in English? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 31 Jan 2013 05:09:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-860</guid>
+		</item>
+		<item>
+			<title>Jaderson says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-859</link>
+			<description><![CDATA[Olá, eu estou precisando colocar código PHP em uma widgetkit mas alguns códigos desaparecem e os que ficam não aparecem o resultado. somente o código.]]></description>
+			<dc:creator>Jaderson</dc:creator>
+			<pubDate>Thu, 31 Jan 2013 03:36:51 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-859</guid>
+		</item>
+		<item>
+			<title>Rob Genspoon says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-857</link>
+			<description><![CDATA[If I use something like [?php echo "blah"; ?] all is well. If I get "fancy" like [?php $x="blah"; echo $x; ?] Nothing happens. Please advise?]]></description>
+			<dc:creator>Rob Genspoon</dc:creator>
+			<pubDate>Wed, 30 Jan 2013 10:31:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-857</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-850</link>
+			<description><![CDATA[Hi Karen, Sorry, my typo. It should be: [?php echo "test123"; ?] note: please replace square bracket above with angle brackets. Please give it a try one more time and let me know if it works. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 26 Jan 2013 17:25:43 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-850</guid>
+		</item>
+		<item>
+			<title>KarenL says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-849</link>
+			<description><![CDATA[ I had missed out the < > but when I put replaced the square brackets with angle brackets I received the following error: Parse error: syntax error, unexpected $end, expecting ',' or ';' in /home/XXXXXX/public_html/plugins/content/DirectPHP /DirectPHP.php(58) : eval()'d code on line 1 Any other suggestions? Cheers, Karen]]></description>
+			<dc:creator>KarenL</dc:creator>
+			<pubDate>Sat, 26 Jan 2013 12:30:54 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-849</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-848</link>
+			<description><![CDATA[Hi, You need to give people more clues in order to know where might be the problem e.g. 1) What's not working? 2) Are there error messages that you see? If yes, what are the error messages? 3) Any other things that you see on the screen? (e.g. your PHP codes) 4) Are the code still there when you edit the article? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 25 Jan 2013 19:34:20 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-848</guid>
+		</item>
+		<item>
+			<title>hadsub says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-844</link>
+			<description><![CDATA['m have developed a web site using joomla1.5 and it has MYSQL DB php code of my own. it works well in joomla1.5. but the same code of php, the form that i have used in joomla1.5 is not working in joomla2.5? any one have any idea about this Help .....]]></description>
+			<dc:creator>hadsub</dc:creator>
+			<pubDate>Wed, 23 Jan 2013 07:43:09 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-844</guid>
+		</item>
+		<item>
+			<title>sohal says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-832</link>
+			<description><![CDATA[another issue found.... it didnt work for me when i used capital letters in (]]></description>
+			<dc:creator>sohal</dc:creator>
+			<pubDate>Tue, 15 Jan 2013 09:05:52 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-832</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-807</link>
+			<description><![CDATA[Hi Karen, Did you put the php tag: [?php echo "test123;" ?] note: please replace square bracket above with angle brackets. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 03 Jan 2013 17:45:49 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-807</guid>
+		</item>
+		<item>
+			<title>KarenL says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-806</link>
+			<description><![CDATA[Hi kksou, Not sure whether it's the plugin or some php set up issue. I'm on Joomla 2.5.8. Plugin is enabled, no filtering for superuser. All I want to do is to put a copyright date using php date function but it doesn't work. When I try in WYSISYG echo "test123"; What appears on the screen is echo "test123"; Any ideas what could be wrong? Thanks, Karen]]></description>
+			<dc:creator>KarenL</dc:creator>
+			<pubDate>Thu, 03 Jan 2013 17:39:24 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-806</guid>
+		</item>
+		<item>
+			<title>syed rizvi says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-792</link>
+			<description><![CDATA[Hi kksou, Thanks for your reply. I appreciate it. You don't have to know anything about .Net. Just that I have a session variable "username" in joomla 2.5 that I need to pass as parameter to www.hapw.com/PLW/Default.aspx?username=value. I want this to be done with a menu item in joomla 2.5 that will contain hyperlink to the .Net website. The thing I don't understand is that even if I create a new menu item, where should I insert the underlying php code to get my session variable value and add append to the above query string. Thanks. Regards, Syed]]></description>
+			<dc:creator>syed rizvi</dc:creator>
+			<pubDate>Thu, 20 Dec 2012 10:07:45 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-792</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-789</link>
+			<description><![CDATA[Hi, 1) For your first question, DirectPHP is a plugin. As the name suggests, a plugin is for use within a Joomla article. So to use DirectPHP, you go to the Article Manager, create a new article, and plugin in your PHP codes within the article. 2) I'm not familar with .net. So it's difficult for me to help you here. Would suggest you post your question in the official joomla.org forum. Someone might be able to help you there. By the way, if you're thinking of using DirectPHP to resolve your second question, then this might not be the right tool. As mentioned in (1), DirectPHP is for use within a Joomla article. For your situation, you should be looking at creating your own module or plugin. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 19 Dec 2012 22:34:16 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-789</guid>
+		</item>
+		<item>
+			<title>syed rizvi says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-786</link>
+			<description><![CDATA[Hi, I have 2 questions. First of all, I have downloaded the DirectPhP for Joomla 2.5 and set it up mentioned in this article. I'm new to Joomla. I don't know where should I put DirectPhp.php file to see the effects. In other words, I want complete instructions on printing "hello world" on my website using DirectPhp. Secondly, I have a new website built on Asp.net which requires Single sign on from my Joomla 2.5 website. So, when a person has logged into my Joomla website, a menu item should appear which will direct him to my asp.net website along with passing username in encrypted form. I'm really struggling with how to do this and need solution for this ASAP. Please, I would highly appreciate your suggestions. Thanks]]></description>
+			<dc:creator>syed rizvi</dc:creator>
+			<pubDate>Wed, 19 Dec 2012 17:46:24 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-786</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-755</link>
+			<description><![CDATA[Hi Basil, Since the one-line version works, this is what you can try. 1) When you enter multiple lines, if you are using the default Joomla editor, try to use shift-enter instead of enter between lines. Enter will generate [p] and [/p]. Shift-enter will generate [br] 2) Try 2 lines first: echo 'this is line 1'; echo 'this is line 2'; 3) If (2) works, you can slowly add more lines and replace with your codes. Do it bit by bit, so that it's easier to debug if there's anything wrong. Of course, if you're ok with the one-line version to include your other .php files, that's fine too! Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 28 Nov 2012 01:14:42 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-755</guid>
+		</item>
+		<item>
+			<title>Basil Clarke says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-754</link>
+			<description><![CDATA[Tried it out for the first time today. I could only get it to work by writing the php on a single line - and because I had code that queries a database and then writes out the contents of particular fields, I had to put the code in a separate php file, then insert an include in a Joomla module. But the end result is that it does work!]]></description>
+			<dc:creator>Basil Clarke</dc:creator>
+			<pubDate>Tue, 27 Nov 2012 14:48:32 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-754</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-749</link>
+			<description><![CDATA[Yes, it works. Did you enable the plugin? Please don't try with long codes first. Try something simple like echo "test123"; and see if it works first. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 26 Nov 2012 00:51:03 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-749</guid>
+		</item>
+		<item>
+			<title>azza says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-736</link>
+			<description><![CDATA[this plugin does it work with joomla 2.5.8 ? i've installed but the code appears idem in frontend]]></description>
+			<dc:creator>azza</dc:creator>
+			<pubDate>Wed, 21 Nov 2012 03:32:39 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-736</guid>
+		</item>
+		<item>
+			<title>Smuj says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-698</link>
+			<description><![CDATA[ Turns out it's a theme problem. I think they theme is trying to stop SQL injections and it's messing with your plug-in. You're plug-in is quite perfect for many of my uses. I use custom PHP and SQL through modules instead of components every time I have an idea. Probably should still learn. Awesome plug-in still! ^_^]]></description>
+			<dc:creator>Smuj</dc:creator>
+			<pubDate>Sun, 28 Oct 2012 21:02:45 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-698</guid>
+		</item>
+		<item>
+			<title>auto title loans says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-697</link>
+			<description><![CDATA[I just read your article on How to enter HTML tags, javascript and PHP codes in Joomla 2.5? | Joomla Tips   Techniques and want to thank you for it.]]></description>
+			<dc:creator>auto title loans</dc:creator>
+			<pubDate>Sun, 28 Oct 2012 20:38:25 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-697</guid>
+		</item>
+		<item>
+			<title>tibbus says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-588</link>
+			<description><![CDATA[nvm, now it works ok, so seems like it's no problem to connect to another database from joomla via php, i used sourcerer not directphp but anyway.]]></description>
+			<dc:creator>tibbus</dc:creator>
+			<pubDate>Thu, 13 Sep 2012 17:43:40 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-588</guid>
+		</item>
+		<item>
+			<title>tibbus says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-583</link>
+			<description><![CDATA[Hi, with my php code i connect to another DB and how you said my page it show now SERVER ERROR, how i connect back to joomla DB to work properly ? ]]></description>
+			<dc:creator>tibbus</dc:creator>
+			<pubDate>Mon, 10 Sep 2012 13:36:04 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-583</guid>
+		</item>
+		<item>
+			<title>millsy says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-566</link>
+			<description><![CDATA[Hi, I've just installed this in 2.5. activated and 'no filtered' the superuser but code only seems to work when logged into the frontend as superuser.It just displays the code when not logged it. put 'no filter' on public (temporarily) and it still just displays the code and doesn't run. I'm using JCE editor if there's some setting within this addon i need to alter Have i missed something]]></description>
+			<dc:creator>millsy</dc:creator>
+			<pubDate>Mon, 03 Sep 2012 03:19:35 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-566</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-542</link>
+			<description><![CDATA[Hi, That's strange. If you take a look at the source code, it doesn't detect the string "FROM". It might be due to your other plugins. Alternatively, you can do something like $a = 'FROM"; Then every time you need to use "FROM", you can use $a. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 17 Aug 2012 01:40:20 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-542</guid>
+		</item>
+		<item>
+			<title>Smuj says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-532</link>
+			<description><![CDATA[Great plug-in! I'm using Joomla 2.5 and I'm unable to use FROM in quotations while inside a php bracket. I've currently solved this by using FR"."OM but it's going to get messy if I'm going to continue to write sql commands like that. Any ideas?]]></description>
+			<dc:creator>Smuj</dc:creator>
+			<pubDate>Sat, 11 Aug 2012 14:48:22 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-532</guid>
+		</item>
+		<item>
+			<title>michael_e says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-527</link>
+			<description><![CDATA[I am trying to embed the phpfreechat chat engine in the page but i get this error: Parse error: syntax error, unexpected ']]></description>
+			<dc:creator>michael_e</dc:creator>
+			<pubDate>Wed, 08 Aug 2012 12:35:17 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-527</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-463</link>
+			<description><![CDATA[Hi, You might also want to take a look at this article: How to display and process forms in a Joomla article using DirectPHP? Link here: http://www.kksou.com/php-gtk2/Joomla/How-to-display-and-process-forms-in-a-Joomla-article-using-DirectPHP.php Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 08 Jul 2012 19:41:38 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-463</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-462</link>
+			<description><![CDATA[Hi, 1) Please try a simple PHP statement first e.g. echo "test 123"; Does it work? 2) If (1) works, then the problem is with your PHP statements producing the form. What's the error messages that you see on the screen? (You might need to turn on error_display in php.ini.) By the way, DirectPHP uses the standard PHP eval() function. If you have played with this function before, you will know that the error messages returned by eval() is not useful at all. It's almost impossible to debug based on the error messages returned by eval(). As such, if you really want to debug errors in your PHP statements, you might want to copy and paste your entire PHP scripts into a standalone .PHP file, and use DirectPHP to do a require_once() or include() to include that .PHP file. In this way, you will find that the error messages (if there's any) will be a lot more meaningful. Once your scripts runs ok in the standalone file, you can then copy and paste the entire script back into DirectPHP. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 08 Jul 2012 19:36:45 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-462</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-461</link>
+			<description><![CDATA[Hi Jens, It does not need to be all on the same line. 1) Please use the WYSIWYG mode (not the HTML mode). 2) Instead of , use shift-. will generate . shift- will generate Internally, DirectPHP will convert all and to \n. Please try the multiple lines one more time and let me know if it works. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 08 Jul 2012 19:31:28 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-461</guid>
+		</item>
+		<item>
+			<title>Anithagutta says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-447</link>
+			<description><![CDATA[dircetPHP is not working with joomla2.5.4 it's not showing form in articles]]></description>
+			<dc:creator>Anithagutta</dc:creator>
+			<pubDate>Wed, 04 Jul 2012 23:04:07 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-447</guid>
+		</item>
+		<item>
+			<title>Jens says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-426</link>
+			<description><![CDATA[ The problem is solved. Apparently the start and end tags is supposed to be on the same line as the commands.]]></description>
+			<dc:creator>Jens</dc:creator>
+			<pubDate>Sat, 30 Jun 2012 04:09:34 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-426</guid>
+		</item>
+		<item>
+			<title>Jens says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-425</link>
+			<description><![CDATA[It don't seem to work in Joomla 2.5.6. The plugin is installed and enabled, and Super Users has no fliter. I'm pasting my code in a standart article with the standart editor, and the output is just the code as text. :sad:]]></description>
+			<dc:creator>Jens</dc:creator>
+			<pubDate>Sat, 30 Jun 2012 02:14:46 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-425</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-378</link>
+			<description><![CDATA[Hi, If you know PHP well and know what you're doing, you should be able to do it. There's no magic in DirectPHP. The plugin simply grabs all the PHP statements that you've written within the PHP tag and pumped them through the standard PHP eval() function. Just remember that you are running DirectPHP within the Joomla article and Joomla framework. What this means is that if you connect the DB to another mysql database, you MUST make sure that you connect the DB back to the joomla database at the end of the DirectPHP statement. Otherwise, you will find that your entire Joomla DB connection is gone and your Joomla page will not render properly. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 15 Jun 2012 08:07:42 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-378</guid>
+		</item>
+		<item>
+			<title>Obaeissa says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-368</link>
+			<description><![CDATA[Hi I'm using Joomla 2.5, I'm using customise form result will be send to another php file to processed with DB connection and do the query is it possible to use DirectPHP in an article to connect to DB and do the query?]]></description>
+			<dc:creator>Obaeissa</dc:creator>
+			<pubDate>Wed, 13 Jun 2012 17:12:34 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-368</guid>
+		</item>
+		<item>
+			<title>Mortenjs says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-272</link>
+			<description><![CDATA[Hi I have tried to paste in this line. Portfirmaet.dk Anmeldelser Should it work with this module/plugin?]]></description>
+			<dc:creator>Mortenjs</dc:creator>
+			<pubDate>Wed, 02 May 2012 05:57:08 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-272</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-243</link>
+			<description><![CDATA[Hi, If you take a look at the source code, there's no lines that strip the \n. So guess it's by the Joomla editor. You might want to try some other Joomla editor that allows direct editing in raw HTML. By the way, why would you need the \n? They are "transparent" in an HTML page, isn't it? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 23 Apr 2012 07:11:09 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-243</guid>
+		</item>
+		<item>
+			<title>Shaun says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-237</link>
+			<description><![CDATA[Hi, Nice little tool but the \ of "\n" for newline is being stripped out of my code. I've turned filtering off. Anything else I can do? Thanks, Shaun]]></description>
+			<dc:creator>Shaun</dc:creator>
+			<pubDate>Thu, 19 Apr 2012 06:40:17 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-237</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-92</link>
+			<description><![CDATA[Hi, Are you saying that if you enter: echo 'test123'; It works ok. But if you enter: echo 'this is line1'; echo 'this is line2'; Can you show me the URL displaying the 2 lines above, i.e. echo 'this is line1'; echo 'this is line2'; It doesn't work? Also, what are the PHP commands that you are trying to run? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 27 Feb 2012 23:48:20 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-92</guid>
+		</item>
+		<item>
+			<title>double-dee says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-91</link>
+			<description><![CDATA[No error message. The php code is displayed. Is multi-lines a settings?]]></description>
+			<dc:creator>double-dee</dc:creator>
+			<pubDate>Mon, 27 Feb 2012 19:14:26 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-91</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-90</link>
+			<description><![CDATA[Hi, Have you tried using multi-lines? It should work. If not, what's the error messages that you see on the screen? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 27 Feb 2012 19:04:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-90</guid>
+		</item>
+		<item>
+			<title>double-dee says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-89</link>
+			<description><![CDATA[I have to enter in the php open tag on every line. Is this the intended design or am have not configured the plugin fully.]]></description>
+			<dc:creator>double-dee</dc:creator>
+			<pubDate>Mon, 27 Feb 2012 19:01:07 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-89</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-75</link>
+			<description><![CDATA[Hi, I suppose you are referring to using DirectPHP. This is a plugin. As name suggests, it's for use within a Joomla article. So try entering echo "test123"; in an article. You should be able to see "test123" somewhere in your article. Once you see that it works, you can slowly add more complicated PHP commands within your article. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 22 Feb 2012 22:22:18 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-75</guid>
+		</item>
+		<item>
+			<title>sunanda says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-74</link>
+			<description><![CDATA[after entering code into article where should we check the output of php file]]></description>
+			<dc:creator>sunanda</dc:creator>
+			<pubDate>Wed, 22 Feb 2012 22:16:02 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-74</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-45</link>
+			<description><![CDATA[Hi, Please refer to: How to display and process forms in a Joomla article using DirectPHP? http://www.kksou.com/php-gtk2/Joomla/How-to-display-and-process-forms-in-a-Joomla-article-using-DirectPHP.php Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 07 Feb 2012 01:26:14 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-45</guid>
+		</item>
+		<item>
+			<title>Wooshtek says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-44</link>
+			<description><![CDATA[Can a it do PHP forms like e.g. registration form? If yes, can provide a sample code.]]></description>
+			<dc:creator>Wooshtek</dc:creator>
+			<pubDate>Tue, 07 Feb 2012 00:35:17 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-44</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-36</link>
+			<description><![CDATA[Hi, Yes, you should enter the code in the WYSIWYG editor. DO NOT click the "HTML" button and enter the code in the html source editor. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 02 Feb 2012 17:11:33 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-36</guid>
+		</item>
+		<item>
+			<title>azerty989 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-34</link>
+			<description><![CDATA[Never mind it seems to work now. I figured out that you cannot type your code into the html source editor. copy and paste the php code straight into the editor and it works.]]></description>
+			<dc:creator>azerty989</dc:creator>
+			<pubDate>Thu, 02 Feb 2012 17:05:06 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-34</guid>
+		</item>
+		<item>
+			<title>azerty989 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-33</link>
+			<description><![CDATA[Sorry all, I forgot "NOT" in my previous comment. It does NOT work for me with joomla 2.5.1. Looking forward to hearing from you guys.]]></description>
+			<dc:creator>azerty989</dc:creator>
+			<pubDate>Thu, 02 Feb 2012 16:54:59 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-33</guid>
+		</item>
+		<item>
+			<title>azerty989 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-32</link>
+			<description><![CDATA[Hey, It does work for me, I have joomla 2.5.1, and did set up as above. - plug in is published; - text filters in global config sets up to "no filter"; after typing into the article: the editor uses html comments like : Is direct php working for 2.5.1 ? or I forgot to do something else? Thank you]]></description>
+			<dc:creator>azerty989</dc:creator>
+			<pubDate>Thu, 02 Feb 2012 16:53:21 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-32</guid>
+		</item>
+		<item>
+			<title>Phoebez says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-25</link>
+			<description><![CDATA[And don't forget to enable the plug in so you don't feel foolish for half an hour like I did. :oops:]]></description>
+			<dc:creator>Phoebez</dc:creator>
+			<pubDate>Fri, 27 Jan 2012 21:59:19 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php#comment-25</guid>
+		</item>
+	</channel>
+</rss>

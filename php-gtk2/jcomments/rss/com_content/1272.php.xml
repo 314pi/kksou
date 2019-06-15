@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Pausing up-down Scroller module</title>
+		<description>Discuss Pausing up-down Scroller module</description>
+		<link>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:41:36 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/1272.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-1791</link>
+			<description><![CDATA[Hi, Sincerely apologize for the late reply. If only the code shows on the page, it means the plugin has not been processed at all. Can you please double check that the plugin has been enabled? If the plugin has been enabled, then it could be conflicts with other plugins. Try shifting the order of the plugin to 0 or 1 so that it is the first few plugins to be processed. Please give the above a try and let me know if it works, ok? Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 31 Mar 2016 10:44:37 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-1791</guid>
+		</item>
+		<item>
+			<title>cba says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-1790</link>
+			<description><![CDATA[Hello I downloaded your Pausing up-down Scroller Worked perfectly Changed my application from a windows server to an ubuntu server. Now it does not pick up any style at all . Only the code shows on the page. Please advise at your earliest convenience.]]></description>
+			<dc:creator>cba</dc:creator>
+			<pubDate>Thu, 24 Mar 2016 09:58:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-1790</guid>
+		</item>
+		<item>
+			<title>Marc Tracy says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-805</link>
+			<description><![CDATA[Just wanted to say this is a fabulous module/plugin. Had a minor query wich was sorted in double quick time. Thank you. Highly recommended to all.]]></description>
+			<dc:creator>Marc Tracy</dc:creator>
+			<pubDate>Wed, 02 Jan 2013 08:00:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-805</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-804</link>
+			<description><![CDATA[Hi Marc, Have just emailed you. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 02 Jan 2013 07:18:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-804</guid>
+		</item>
+		<item>
+			<title>Marc Tracy says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-803</link>
+			<description><![CDATA[Hello I downloaded your Pausing up-down Scroller Worked perfectly. So I purchased the copyright removal. Downloaded the file - Deleted the previous version and Uploaded new versions of the Plugin and Module Now it does not pick up any style at all . Only the code shows on the page. Please advise at your earliest convenience. Thank you Marc]]></description>
+			<dc:creator>Marc Tracy</dc:creator>
+			<pubDate>Wed, 02 Jan 2013 06:23:07 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-803</guid>
+		</item>
+		<item>
+			<title>dey says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-715</link>
+			<description><![CDATA[Hi, Very Nice module. just one Q , how can I stop the scroll. I want one fixed message to be displayed. Regards Dey]]></description>
+			<dc:creator>dey</dc:creator>
+			<pubDate>Thu, 08 Nov 2012 03:42:56 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-715</guid>
+		</item>
+		<item>
+			<title>EricP says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-634</link>
+			<description><![CDATA[Can't seem to get this to work. Is it compatible with Joomla 2.5.6?]]></description>
+			<dc:creator>EricP</dc:creator>
+			<pubDate>Wed, 26 Sep 2012 12:57:19 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-634</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-541</link>
+			<description><![CDATA[Hi, It might be conflicts with your other plugins or modules. To ascertain this, install a fresh install of Joomla somewhere on your site, then install just this plugin and see if it works. This will allow you to see if the plugin work on your machine at all. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 17 Aug 2012 01:38:04 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-541</guid>
+		</item>
+		<item>
+			<title>hagiki says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-535</link>
+			<description><![CDATA[i have installed pausing up and down on joomla 2.5.6 but it is not scrolling?! I have tried to use the script suggested but still nothing thank you for your help]]></description>
+			<dc:creator>hagiki</dc:creator>
+			<pubDate>Thu, 16 Aug 2012 01:19:36 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-535</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-482</link>
+			<description><![CDATA[Hi, Can you please email me the complete tag that you've used? Think it's due to some characters within your tag. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 13 Jul 2012 08:49:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-482</guid>
+		</item>
+		<item>
+			<title>rootseire says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-480</link>
+			<description><![CDATA[Great module and plugin,works really well ;) One problem though, after I add over 5 testimonials on my webpage: www.karenryan.net, then the scroller seems to break, and shows the --- Any idea why this might happen? Thanks, Pat]]></description>
+			<dc:creator>rootseire</dc:creator>
+			<pubDate>Thu, 12 Jul 2012 13:41:20 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-480</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-458</link>
+			<description><![CDATA[Hi, I can help, but you have to help me help you. Can you please set up 3 test pages: 1) The first page containing only the toolbar. 2) The second page containing only the sidebar. 3) The third page containing both toolbar and sidebar (the one you said that's not working). Please give me the url of the 3 pages so that I can do a view source and see what's the problem. (most likely it's the css) Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 07 Jul 2012 06:16:24 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-458</guid>
+		</item>
+		<item>
+			<title>holiweb says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-450</link>
+			<description><![CDATA[Hi ... love your plugin/module ... My problem is that I am trying to get 2 instances of the module playing on my website, one in a wide single line scroller toolbar, and another in a narrow sidebar module. The display for each module is setup using different custom css code in the pscroller css file. Each module displays perfectly when only the one selected is published. However when I turn on the toolbar module, the sidebar module changes its format height and width to that of the toolbar module. How do I get the 2 modules playing simultaneously - without one affecting the display properties of the other ... I have setup different pscroller css code and id's for each module ... but this does not seem to work. Your help would be appreciated. Thanks.]]></description>
+			<dc:creator>holiweb</dc:creator>
+			<pubDate>Thu, 05 Jul 2012 23:55:31 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-450</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-408</link>
+			<description><![CDATA[Hi, Sorry for the late reply. Yes, you set the width and height using the tag "width" and "height". Details here: How to use the "Pausing up-down Scroller" plugin #5 and #6 http://www.kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-plugin.php#how_to_use You can also set it in the .css file "pausing_up_down_scroller.css" located in the folder: plugins/content/pausing_up_down_scroller/pausing_u p_down_scroller Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 26 Jun 2012 09:01:31 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-408</guid>
+		</item>
+		<item>
+			<title>grace says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-407</link>
+			<description><![CDATA[I played with the plugin css code only .. i guess in #pscroller {}.]]></description>
+			<dc:creator>grace</dc:creator>
+			<pubDate>Tue, 26 Jun 2012 07:50:13 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-407</guid>
+		</item>
+		<item>
+			<title>StephenH says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-405</link>
+			<description><![CDATA[Installed successfully, but cannot get the height and width settings to have any effect, whether you set them in the module itself, or in the plugin css. Any suggestions? Thanks]]></description>
+			<dc:creator>StephenH</dc:creator>
+			<pubDate>Mon, 25 Jun 2012 14:56:43 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-405</guid>
+		</item>
+		<item>
+			<title>grace says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-398</link>
+			<description><![CDATA[Yes i found out that one too :-)]]></description>
+			<dc:creator>grace</dc:creator>
+			<pubDate>Fri, 22 Jun 2012 04:10:06 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-398</guid>
+		</item>
+		<item>
+			<title>grace says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-397</link>
+			<description><![CDATA[Hi, This module is simply awesome !!! Just as i expected. I could control the scroll pause time but completely unaware as how to control the scrolling speed of the content. Thanks]]></description>
+			<dc:creator>grace</dc:creator>
+			<pubDate>Fri, 22 Jun 2012 00:43:30 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php#comment-397</guid>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Drop Down Menu Apple style</title>
+		<description>Discuss Drop Down Menu Apple style</description>
+		<link>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:39:40 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/1230.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Marcel Upfold says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-919</link>
+			<description><![CDATA[I have tried the plugin. It seems to be sort of OK bar that it displays a yeloow background x-rows high. Also the menu is not lined up with the background gray banner. Any help on how and where in the CSS files one can play...]]></description>
+			<dc:creator>Marcel Upfold</dc:creator>
+			<pubDate>Fri, 22 Mar 2013 05:05:37 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-919</guid>
+		</item>
+		<item>
+			<title>Marcel Upfold says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-917</link>
+			<description><![CDATA[On Joomla 2.5 using JA-T3 Framework Blank Template the menu options are not displayed corredtly horizontally, however with the sidebar option it is displayed vertically. Horizontally it is displayed as steps. Menu1, line break, menu2 line break etc. How do I assign a "module" to be displayed with an option in one of the menus instead of an external link.?]]></description>
+			<dc:creator>Marcel Upfold</dc:creator>
+			<pubDate>Wed, 20 Mar 2013 01:11:58 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-917</guid>
+		</item>
+		<item>
+			<title>caroline leonard says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-915</link>
+			<description><![CDATA[Hi, the plugin doesn't appear to be working for me any suggestions?]]></description>
+			<dc:creator>caroline leonard</dc:creator>
+			<pubDate>Mon, 18 Mar 2013 03:51:05 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-915</guid>
+		</item>
+		<item>
+			<title>Walter Johnson says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-633</link>
+			<description><![CDATA[Sorry top menu position, not top module for position of the module]]></description>
+			<dc:creator>Walter Johnson</dc:creator>
+			<pubDate>Wed, 26 Sep 2012 09:23:26 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-633</guid>
+		</item>
+		<item>
+			<title>Walter Johnson says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-632</link>
+			<description><![CDATA[Ola, all you have to do is use the normal menu you have established in Joomla as your top menu - unpublish it. Get an "Article as Module" kind of module for Joomla and install it. Then make a menu article and put the dropdownmenuapplestyle coding into that. Then publish and save that article. Then in the Article as Module module, select your menu article as the artcle to be displayed, and set the position for the module to whatever the position is for your top module. Save it all and good luck. That should get you started.]]></description>
+			<dc:creator>Walter Johnson</dc:creator>
+			<pubDate>Wed, 26 Sep 2012 09:22:00 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-632</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-175</link>
+			<description><![CDATA[Hi, This is a plugin. As the name suggests, a plugin is for use within a Joomla article. This plugin is used for displaying a simple menu within an article - especially if the article is very long. If you want to achieve something like the top of this page is doing - navigation bar with drop down menus, this is done in the Joomla template, and not by a plugin or module. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 22 Mar 2012 18:37:24 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-175</guid>
+		</item>
+		<item>
+			<title>Ola says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-174</link>
+			<description><![CDATA[Hello sir, pls i have a top menu navigation bar and i want to make those tabs at the top drop down using this module..pls how do i go about it??]]></description>
+			<dc:creator>Ola</dc:creator>
+			<pubDate>Thu, 22 Mar 2012 16:20:44 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-174</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-125</link>
+			<description><![CDATA[Hi, This is a plugin. As the name suggests, a plugin is for use within a Joomla article. So go to the Article Manager, create a new article and insert the tags or code you've listed above into the article. You will see the menu appearing within the article. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 10 Mar 2012 20:28:44 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-125</guid>
+		</item>
+		<item>
+			<title>Suran says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-122</link>
+			<description><![CDATA[I m confused where do i insert the code: {DropDown_Menu_Apple_style} ... menu items ... {/DropDown_Menu_Apple_style}]]></description>
+			<dc:creator>Suran</dc:creator>
+			<pubDate>Fri, 09 Mar 2012 23:48:16 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-122</guid>
+		</item>
+		<item>
+			<title>naru says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-72</link>
+			<description><![CDATA[:lol:]]></description>
+			<dc:creator>naru</dc:creator>
+			<pubDate>Wed, 22 Feb 2012 02:57:13 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php#comment-72</guid>
+		</item>
+	</channel>
+</rss>

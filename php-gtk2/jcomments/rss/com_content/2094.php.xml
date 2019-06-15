@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>The new Google Weather module </title>
+		<description>Discuss The new Google Weather module </description>
+		<link>https://kksou.com/php-gtk2/Joomla-News/The-new-Google-Weather-module.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 07:36:11 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2094.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-News/The-new-Google-Weather-module.php#comment-602</link>
+			<description><![CDATA[Thanks, Daniel! The testing phase has been completed and the module has been released on 31 August 2012. More info in this page: http://www.kksou.com/php-gtk2/Joomla-News/Google-Weather-Module-v2.58.php The download link is also in that page. Thanks and Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 17 Sep 2012 22:56:46 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-News/The-new-Google-Weather-module.php#comment-602</guid>
+		</item>
+		<item>
+			<title>daniel31 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-News/The-new-Google-Weather-module.php#comment-601</link>
+			<description><![CDATA[Hi kksou, I am interested to test the application in joomla 1.5. I am very glad to test your module Regards, Dnaiel]]></description>
+			<dc:creator>daniel31</dc:creator>
+			<pubDate>Mon, 17 Sep 2012 21:15:08 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-News/The-new-Google-Weather-module.php#comment-601</guid>
+		</item>
+		<item>
+			<title>Jordi Caralt says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-News/The-new-Google-Weather-module.php#comment-558</link>
+			<description><![CDATA[I'd like to help My site is clubbttmollet.org Joomla 1.5 language: catalan]]></description>
+			<dc:creator>Jordi Caralt</dc:creator>
+			<pubDate>Fri, 31 Aug 2012 05:51:14 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-News/The-new-Google-Weather-module.php#comment-558</guid>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Include Content Item plugin</title>
+		<description>Discuss Include Content Item plugin</description>
+		<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 04:47:00 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/998.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Atwazz says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1780</link>
+			<description><![CDATA[Hello, kksou. Thank you a lot for your plug-in! Saved my life! :D]]></description>
+			<dc:creator>Atwazz</dc:creator>
+			<pubDate>Wed, 27 Jan 2016 18:54:02 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1780</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1756</link>
+			<description><![CDATA[Hi Duncan, Sorry for the late reply. Not sure if you have the problem resolved? Joomla is a very loose framework, so conflicts between modules and plugins are very common. I'm not familiar with the News Show Pro GK5 - GavickPro module. So I'm not sure where's the conflict. May I know which Joomla version are you using? Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 18 Dec 2015 10:25:06 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1756</guid>
+		</item>
+		<item>
+			<title>Duncan says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1755</link>
+			<description><![CDATA[Love the weather gadget but have a slight problem in that when placed next to the News Show Pro GK5 - GavickPro module the News Show Pro Module won't show certain articles? Any suggestions?]]></description>
+			<dc:creator>Duncan</dc:creator>
+			<pubDate>Sat, 12 Dec 2015 00:45:29 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1755</guid>
+		</item>
+		<item>
+			<title>Evan Langlois says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1748</link>
+			<description><![CDATA[ Where did you get the download? The latest I see is 3.0, and the 'Details' link for 3.3 just gives me an SQL error. Would you happen to have the ZIP?]]></description>
+			<dc:creator>Evan Langlois</dc:creator>
+			<pubDate>Sun, 18 Oct 2015 23:24:03 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1748</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1747</link>
+			<description><![CDATA[Dear Agostino, Yes, that would be great! I'm sure many people will benefit from your sharing! You can email them to me. (Note: have just sent you an email to. So you can reply direct to that email.) Thanks in advance for your sharing! Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 08 Oct 2015 23:39:45 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1747</guid>
+		</item>
+		<item>
+			<title>Agostino Zanutto says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1746</link>
+			<description><![CDATA[I've make 2 fixes for use include_content_item on other components, and to fix on non joomfish multilingual sites, Can I send it to the author?]]></description>
+			<dc:creator>Agostino Zanutto</dc:creator>
+			<pubDate>Thu, 08 Oct 2015 18:03:36 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1746</guid>
+		</item>
+		<item>
+			<title>Pierre says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1738</link>
+			<description><![CDATA[Hello kksou, First congratulations for this great product. I installed the plugin on Joomla 3.4.4 and it performs well, BUT I have a problem. My PHP code is running normally and the article requested is displayed, but the plugin (Shortcode Ultimate) inserted in Article refuses to work. It should display a video on Vimeo. I tried with others (AllVideos, etc.) and the problem is the same. Do you have an idea of the problem? Warm regards Pierre]]></description>
+			<dc:creator>Pierre</dc:creator>
+			<pubDate>Fri, 11 Sep 2015 12:36:00 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1738</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1737</link>
+			<description><![CDATA[Hi Mark, Would like to help. But I don't use K2 and not familiar with the internal table structure of K2. May I know how you use Include Content Item with K2 when you're using Joomla 2.5? By the way, I used this plugin for my own website. I thought it's quite useful, so I decide to share it with others via joomla.org. Did you try other plugins in joomla.org that might work with K2? Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 09 Sep 2015 23:37:42 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1737</guid>
+		</item>
+		<item>
+			<title>Mark says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1735</link>
+			<description><![CDATA[We were using your plugin extensively in Joomla 2.5, but after upgrading to 3.4 we're finding that this plugin doesn't seem to work with K2 Items anymore...is there a way to get the plugin to pull form a K2 Item?]]></description>
+			<dc:creator>Mark</dc:creator>
+			<pubDate>Wed, 09 Sep 2015 20:05:30 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1735</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1701</link>
+			<description><![CDATA[Hi, This is a very simple plugin that simply grab everything in the "intro" field and display it. So if your intro includes the intro picture, it will display it. If you do not want the picture to be displayed, then you have to move the picture from the "intro" field to the "fulltext" field. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 22 Apr 2014 07:02:58 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1701</guid>
+		</item>
+		<item>
+			<title>Om Prakash says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1700</link>
+			<description><![CDATA[Dear sir i have installed the plugin but fadein=1 doesnt work, if i put {include_content_item 25 readmore=1 fadein=1} the full article shows and readmore link also shows (after intro).fadein=1 doesnt work.my website is www.leatherexportsindia.com , i am using in zoo component. but i have tested in normal joomla companent it doest work, also i want Include Content Item Module, the link above doesnt work,my email=impulseindia@yahoo.com]]></description>
+			<dc:creator>Om Prakash</dc:creator>
+			<pubDate>Mon, 21 Apr 2014 22:41:52 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1700</guid>
+		</item>
+		<item>
+			<title>Vocel says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1263</link>
+			<description><![CDATA[Great plugin. PROBLEM TO BE SOLVED, PLEASE: I need to display the name of the article and the intro in Joomla 1.7/2.5, I don't need the intro picture. It shows the picture, no mater whaat line I write. How can I get rid of the article intro picture?]]></description>
+			<dc:creator>Vocel</dc:creator>
+			<pubDate>Sun, 05 Jan 2014 10:40:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1263</guid>
+		</item>
+		<item>
+			<title>Piotr68 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1193</link>
+			<description><![CDATA[Hi kksou, I'm using this plugin in K2 articles Joomla 2.5 and I'm very sattysfied with it :-) Now I want to start new website on Joomla 3.1.5 and also use this plugin. Do you have any solution yet? In April you mentioned about Joomla 3.0... Best regards]]></description>
+			<dc:creator>Piotr68</dc:creator>
+			<pubDate>Wed, 09 Oct 2013 08:23:21 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1193</guid>
+		</item>
+		<item>
+			<title>hollister says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1176</link>
+			<description><![CDATA[Love the plugin, I'm using joomla 2.5. Is there a way to make the plugin show the intro image when it pulls through the intro text?]]></description>
+			<dc:creator>hollister</dc:creator>
+			<pubDate>Wed, 18 Sep 2013 07:57:17 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1176</guid>
+		</item>
+		<item>
+			<title>GenSpoon says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1088</link>
+			<description><![CDATA[I need a functionality that allows me to embed an article (with borders, author, date/time etc.) into another article page. I need it to appear as a forum ONLY accessed by admin to be able to post periodic updates on each page pushing down the previous. As a forum. Can this assist? Please advise. Many many thanks in advance. Rob]]></description>
+			<dc:creator>GenSpoon</dc:creator>
+			<pubDate>Thu, 13 Jun 2013 13:41:38 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-1088</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-984</link>
+			<description><![CDATA[Hi, Can you please double check what's in article ID 74 and 76? Is there anything in there that prevents the article from appearing? For testing purpose, try change article 74 to something simple, like 'test 74' and see if the string appears. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 01 May 2013 21:20:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-984</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-983</link>
+			<description><![CDATA[Hi, For the case that you've described, I think there are many other plugins in joomla.org that can achieve what you have in mind. What I need at that time is just a simple, super light-weight plugin that allows me to include a footer message to be displayed in every page of my article. I couldn't find one in joomla.org - all those are too complicated. That's why I wrote this plugin. I thought this would be useful to others too, that's why I decide to share this in joomla.org. I want a super light-weight one - that's why this does not check anything - it just displays the article indicated by you. There are many other complicated ones in joomla.org. I'm sure you can find one that suits your need. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 01 May 2013 21:18:58 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-983</guid>
+		</item>
+		<item>
+			<title>Duncan74 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-981</link>
+			<description><![CDATA[ precisions : Joomla 2.5.9]]></description>
+			<dc:creator>Duncan74</dc:creator>
+			<pubDate>Wed, 01 May 2013 00:25:19 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-981</guid>
+		</item>
+		<item>
+			<title>Duncan74 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-980</link>
+			<description><![CDATA[Quite a very usefull plug-in ! but it seems that it's does not manage access permission. example : A -> public article B -> restricted article (to registered member only) A include B I want all people to access article A, but only raegistered can see the B content inside. But B article is always shown. (when I show the list of article as visitor, B is not displayeed, but thru the inclusion, yes).]]></description>
+			<dc:creator>Duncan74</dc:creator>
+			<pubDate>Wed, 01 May 2013 00:06:14 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-980</guid>
+		</item>
+		<item>
+			<title>Paulo Cersosimo says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-979</link>
+			<description><![CDATA[Hi, thanks for your job with this great tool. I'm having problems to include in an article the following: {include_content_item 77} {include_content_item 74} {include_content_item 76} Only the first appears.]]></description>
+			<dc:creator>Paulo Cersosimo</dc:creator>
+			<pubDate>Tue, 30 Apr 2013 08:06:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-979</guid>
+		</item>
+		<item>
+			<title>petrjoomlak says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-938</link>
+			<description><![CDATA[ AWESOME!]]></description>
+			<dc:creator>petrjoomlak</dc:creator>
+			<pubDate>Thu, 04 Apr 2013 07:06:09 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-938</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-937</link>
+			<description><![CDATA[Hi, I re-read your post again and realize where's the problem: you're using Joomla 3.0 which no longer uses section_id. I have not release include_content_item plugin for Joomla 3.0. I will try to do it this month. Currently it supports only up to Joomla 2.5. Will let you know when the version for Joomla 3.0 is ready, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 04 Apr 2013 06:20:15 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-937</guid>
+		</item>
+		<item>
+			<title>petrjoomlak says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-936</link>
+			<description><![CDATA[ yes, the article is defnetly there, I read on some forum, maybe here but i can not find it that this is due to "section" listing or something, I dont have table in my DB called section, i guess it has been removed. I dont know why it can not find article though i have it there... I have article assigned to category that is not assigned to menu item (is hidden) but article is visible... is it OK?]]></description>
+			<dc:creator>petrjoomlak</dc:creator>
+			<pubDate>Thu, 04 Apr 2013 05:28:26 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-936</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-933</link>
+			<description><![CDATA[Hi, The 5 is the item ID as indicated in the Article Manager. Please double check in the Article Manager if there is an article with ID=5. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 04 Apr 2013 04:44:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-933</guid>
+		</item>
+		<item>
+			<title>petrjoomlak says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-932</link>
+			<description><![CDATA[if I use just simple {include_content_item 5} I get error - 0 0 - SQL=SELECT sectionid, catid, title, introtext,`fulltext`, state FROM jm_content WHERE id=5 how to solve? Joomla 3.0]]></description>
+			<dc:creator>petrjoomlak</dc:creator>
+			<pubDate>Thu, 04 Apr 2013 02:57:00 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-932</guid>
+		</item>
+		<item>
+			<title>Robert Polgar says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-910</link>
+			<description><![CDATA[Hi , I have a problem with this plug in I use hotjoomlatemplates and read more and hide function is not working correctly. include_content _item shows all article with read more button but function itself not working didn't hide what is efter the redmore button :)..do you have any idea ? Prob]]></description>
+			<dc:creator>Robert Polgar</dc:creator>
+			<pubDate>Sat, 09 Mar 2013 08:50:05 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-910</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-909</link>
+			<description><![CDATA[Hi, You said "Joomla says the calendar has the ID 677". So, from where did Joomla tell you the ID? If you take a look, I believe it's not from the Article Manager or jos_content (if you're looking at the mysql database directly). If it's not from Article Manager or jos_content, then it won't work with this plugin. This plugin will only include content articles. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 08 Mar 2013 18:22:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-909</guid>
+		</item>
+		<item>
+			<title>Knut Kumpe says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-908</link>
+			<description><![CDATA[ I only want to display the calendar at the start page with the text at the start page. Joomla says the calendar has the ID 677.]]></description>
+			<dc:creator>Knut Kumpe</dc:creator>
+			<pubDate>Fri, 08 Mar 2013 07:05:21 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-908</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-907</link>
+			<description><![CDATA[Hi, From the error message, "Warning >>> there is no article with id = 677" It means there's no article with ID=677. When you say "The link has ID 677", what do you mean by "the link". Note that this is a "Include Content Item" plugin - it's purpose is to include one content article into another. It can only include a content article. And the ID refers to the ID of that content article. To be sure, you can go into your backend mysql "jos_content" table to check if there's an article with ID=677. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 07 Mar 2013 17:31:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-907</guid>
+		</item>
+		<item>
+			<title>Knut Kumpe says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-906</link>
+			<description><![CDATA[Hi, I have the web site www.sgsuderwich.de and I would like to have the page http://sgsuderwich.de/index.php/was-passiert-diese-woche-in-der-sg/eventsnachwoche/2013/03/08/-.html at the start page. How do I have to make this? The link has ID 677.]]></description>
+			<dc:creator>Knut Kumpe</dc:creator>
+			<pubDate>Thu, 07 Mar 2013 17:23:34 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-906</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-903</link>
+			<description><![CDATA[Hi, This is a content plugin. As the name suggests, it's supposed to work within a Joomla article. That's why it does not work with contacts. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 07 Mar 2013 07:06:09 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-903</guid>
+		</item>
+		<item>
+			<title>Chrismstamm says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-902</link>
+			<description><![CDATA[It does not work within the additional information field of contacts. Do you know why, have a solution?]]></description>
+			<dc:creator>Chrismstamm</dc:creator>
+			<pubDate>Wed, 06 Mar 2013 10:45:30 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-902</guid>
+		</item>
+		<item>
+			<title>kbo says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-887</link>
+			<description><![CDATA[Hi kksou, I am using your plugin for while on web page based on Joomla 1.5. One of the instance is to show the artickl with Terms of Service in the Virtuemart Component. Now I try to develop new site based on Joomla 2.5 and realized that your plugin does't work in the way described above. In Virtuemart I can see the raw code only instead of artickle. Have you got any idea how to force the plugin to work with Joomla 2.5 and Virtuemart? Regards, kbo]]></description>
+			<dc:creator>kbo</dc:creator>
+			<pubDate>Tue, 19 Feb 2013 05:33:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-887</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-873</link>
+			<description><![CDATA[Hi, Thanks for the update. Glad it works now. Yes, when you see the tag appearing on screen, it means that the tags have not been processed at all. In this case, the first thing I'll look is to go to the Plugin Manager to make sure that it's enabled. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 05 Feb 2013 07:06:09 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-873</guid>
+		</item>
+		<item>
+			<title>andres22 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-872</link>
+			<description><![CDATA[ sorry forgot.. Thanks for having a look, this really puzzles me.. OOPS... somehow the include_content_item plugin got disabled (sorry about this), so go to plugin manager and enable. problems solved. Thanks.]]></description>
+			<dc:creator>andres22</dc:creator>
+			<pubDate>Tue, 05 Feb 2013 06:54:30 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-872</guid>
+		</item>
+		<item>
+			<title>andres22 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-871</link>
+			<description><![CDATA[ sorry forgot.. Thanks for having a look, this really puzzles me..]]></description>
+			<dc:creator>andres22</dc:creator>
+			<pubDate>Tue, 05 Feb 2013 06:49:22 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-871</guid>
+		</item>
+		<item>
+			<title>andres22 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-870</link>
+			<description><![CDATA[hi, i've upgraded my site from 2.5.8 to 2.5.9 and now it doesnt seem to work any longer.. instead of actually including the item it just puts the text "{include_content item }". More detail: I have an article with multiple include_content_item lines. Previously all I had to do was to add another line and then save the article. But now any line I add is ignored and instead it just puts the text "{include_content_item ".]]></description>
+			<dc:creator>andres22</dc:creator>
+			<pubDate>Tue, 05 Feb 2013 06:48:31 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-870</guid>
+		</item>
+		<item>
+			<title>lima-Ukraine says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-865</link>
+			<description><![CDATA[Sorry to bother you. Your plugin works fine. It was in the settings of the module, and it is - in its binding to the item language menu.]]></description>
+			<dc:creator>lima-Ukraine</dc:creator>
+			<pubDate>Fri, 01 Feb 2013 01:49:16 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-865</guid>
+		</item>
+		<item>
+			<title>lima-Ukraine says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-864</link>
+			<description><![CDATA[Hi, KKsou. Again need your help. This is in Joomla 1.7. We have used another plugin {loadposition ...} (it substitutes module) in Article 123. The site is in three languages. In two languages plugin works fine. But in the third - the bad. After processing plug {include_fulltext 123} - he cuts {loadposition ...}. Article is identical in all three languages. Help please.]]></description>
+			<dc:creator>lima-Ukraine</dc:creator>
+			<pubDate>Fri, 01 Feb 2013 00:17:42 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-864</guid>
+		</item>
+		<item>
+			<title>lima-Ukraine says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-853</link>
+			<description><![CDATA[Many thanks for your quick help! The plugin now works correctly, the module in the article substitutes.]]></description>
+			<dc:creator>lima-Ukraine</dc:creator>
+			<pubDate>Mon, 28 Jan 2013 05:56:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-853</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-852</link>
+			<description><![CDATA[Hi, Please refer to the article "Ordering of Joomla plugins": http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/Ordering-of-Joomla-plugins.php What you need to do is to switch the order of the 2 plugins in the Plugin Manager and it should work. Please give it a try one more time and let me know if it works. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 28 Jan 2013 05:20:48 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-852</guid>
+		</item>
+		<item>
+			<title>lima-Ukraine says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-851</link>
+			<description><![CDATA[Hi, KKsou. Very useful plugin and works fine. But there was a problem. This is in Joomla 1.7. We have used another plugin {loadposition ...} (it substitutes module) in Article 123. After processing plug {include_fulltext 123} line "{loadposition ...}" remains in the text of article. How to make a full integration (and the module as well)? Or how to make a plugin to {include_fulltext 123} did not leave the line "{loadposition ...}" in the article?]]></description>
+			<dc:creator>lima-Ukraine</dc:creator>
+			<pubDate>Mon, 28 Jan 2013 03:13:18 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-851</guid>
+		</item>
+		<item>
+			<title>NL8 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-828</link>
+			<description><![CDATA[SORRY the second one just the other way around!.. * change line 190 $query = "SELECT sectionid, catid, title, introtext,`fulltext`, state" ==> $query = "SELECT catid, title, introtext,`fulltext`, state" ]]></description>
+			<dc:creator>NL8</dc:creator>
+			<pubDate>Sun, 13 Jan 2013 08:05:21 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-828</guid>
+		</item>
+		<item>
+			<title>NL8 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-827</link>
+			<description><![CDATA[Hi, I tried this nice plugin in Joomla 3.0 with the following multilangual setup: http://multilingual-joomla-demo.cloudaccess.net/multi-lingual-steps-by-steps.html This did not work because of wrong database queries. The solution for me was as follows: modify /plugins/content/include_content_item/include_cont ent_item/include_content_item.lib.php * remove lines 159 if($lang!='') { till line 189 if ($use_default) { * change line 190 $query = "SELECT catid, title, introtext,`fulltext`, state" ==> $query = "SELECT sectionid, catid, title, introtext,`fulltext`, state" * change line 219 $link = JRoute::_(ContentHelperRoute::getArticleRoute($con tent_id, $r->catid, $r->sectionid)); ==> $link = JRoute::_(ContentHelperRoute::getArticleRoute($con tent_id, $r->catid)); Now the plugin works just fine! :roll: Kind Regards from the Netherlands, NL8]]></description>
+			<dc:creator>NL8</dc:creator>
+			<pubDate>Sun, 13 Jan 2013 08:02:38 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-827</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-825</link>
+			<description><![CDATA[Hi, Sorry for the late reply. Didn't answer anything because you did not provide enough info. There are so many possibilities and I do not have a good answer for you. There's one thing you might want to take a look. You might have entered everything into the Intro text area and nothing into the Readmore text area. For details, please refer to here: Joomla 1.5 Intro text and Readmore text: http://www.joomlajumpstart.com/beginning-joomla/1-joomla-usage/5-joomla-15-intro-text-and-readmore-text Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 13 Jan 2013 06:30:06 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-825</guid>
+		</item>
+		<item>
+			<title>Samir says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-823</link>
+			<description><![CDATA[Hello there, I have trouble getting your plugin to work. I really hope you can help me, this plugin is exactly what I need. Someone else on this page commented about it, but I'm using a different version of Joomla and it is not clear to me how he did get it to work. The plugin installed succesfull, but when I insert a code (I've tried several different ones) it will not show a 'read more' button, but the whole text/article directly. Any ideas? I'm using Joomla 1.5.25; trying it on a fresh install is not an option (too many customizations, would take weeks to rebuild). Thanks in advance! -S]]></description>
+			<dc:creator>Samir</dc:creator>
+			<pubDate>Fri, 11 Jan 2013 02:38:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-823</guid>
+		</item>
+		<item>
+			<title>vladimir22 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-784</link>
+			<description><![CDATA[ Thanks a lot! That was the reason - include_content_item was set to 0! After I had changed it to 1 everything clicked in to place!]]></description>
+			<dc:creator>vladimir22</dc:creator>
+			<pubDate>Wed, 12 Dec 2012 14:53:35 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-784</guid>
+		</item>
+		<item>
+			<title>Fabio Vitale says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-782</link>
+			<description><![CDATA[ Ok, thank a lot for the tip. When I try it let you know Regards It works. Thanks]]></description>
+			<dc:creator>Fabio Vitale</dc:creator>
+			<pubDate>Tue, 11 Dec 2012 04:48:40 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-782</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-779</link>
+			<description><![CDATA[Hi, 1) First find a plugin from joomla.org that allows you to enter HTML. 2) Then use the standard HTML table to create 2 or 3 columns (depending on what you want), and put each include_content_item tag within each column. Please give it a try and let me know if it works. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 10 Dec 2012 01:24:42 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-779</guid>
+		</item>
+		<item>
+			<title>Fabio Vitale says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-778</link>
+			<description><![CDATA[ Ok, thank a lot for the tip. When I try it let you know Regards]]></description>
+			<dc:creator>Fabio Vitale</dc:creator>
+			<pubDate>Mon, 10 Dec 2012 01:20:43 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-778</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-777</link>
+			<description><![CDATA[By the way, if you're using some cache system, please make sure you clear the cache. Otherwise, it might appear that it's not working because you're using the cached version. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 10 Dec 2012 01:16:58 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-777</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-776</link>
+			<description><![CDATA[Hi, Please try Fabio's tips below. Also, by default, if you put the order of Include Content Item plugin as 1 (DO NOT put 0), and then your youtube plugin as 2, 3 or higher, it should work. Please give it a try one more time and let me know if it works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 10 Dec 2012 01:15:58 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-776</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-775</link>
+			<description><![CDATA[Hi Fabio, Thanks much for sharing the tips. By default, all plugins are processed sequentially according to the orders as listed in the Plugin Manager. So if you order the Include Content Item plugin before that of other plugins (e.g. put this as 1. DO NOT put as 0. And make sure the other plugins that you want to process is 2, 3 or bigger.) In this way, the article will be included first, then followed by processing by your other plugins. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 10 Dec 2012 01:14:05 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-775</guid>
+		</item>
+		<item>
+			<title>Fabio Vitale says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-771</link>
+			<description><![CDATA[ Sorry if I enter in your discussion, but I have manually modify a plugin to work with others plugin, belowe the solution: I use Joomla 1.5.13 At the end of the method Plugin_IncludeC ontentItem just before the line "return $output;" include the line "$output = JHTML::_('content.prepare', $output);" like: $output = JHTML::_('content.prepare', $output); return $output; This allow to use other plugins inside the included article like jumi, pocha plugin slideshow, ... Visit for example: http://www.oshotao.it/index.php/en/photo-gallery-new/category/9-singing-into-silence-2012.html Best regards! Fabio Vitale]]></description>
+			<dc:creator>Fabio Vitale</dc:creator>
+			<pubDate>Sun, 09 Dec 2012 09:06:16 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-771</guid>
+		</item>
+		<item>
+			<title>vladimir22 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-770</link>
+			<description><![CDATA[I use {youtube} includes a lot and unfortunately it doesn't work within {include_content_item} reordering plugins doesn't help either]]></description>
+			<dc:creator>vladimir22</dc:creator>
+			<pubDate>Sun, 09 Dec 2012 04:02:53 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-770</guid>
+		</item>
+		<item>
+			<title>vladimir22 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-769</link>
+			<description><![CDATA[ It is a very good point. Any changes in this ability for joomla 1.5?]]></description>
+			<dc:creator>vladimir22</dc:creator>
+			<pubDate>Sun, 09 Dec 2012 03:52:59 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-769</guid>
+		</item>
+		<item>
+			<title>jorys says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-765</link>
+			<description><![CDATA[Hello, your plugin works perfectly! I would include several items side by side in my article, but they move one below the other! How? Thank you for your help!]]></description>
+			<dc:creator>jorys</dc:creator>
+			<pubDate>Fri, 07 Dec 2012 15:52:07 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-765</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-756</link>
+			<description><![CDATA[What do you mean by "pagebreak"? Could you please elaborate? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 28 Nov 2012 01:16:33 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-756</guid>
+		</item>
+		<item>
+			<title>Vit says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-753</link>
+			<description><![CDATA[Hi! Plugin works fine just "out of the box" (J! 2.5.6). Just one question - can I display _result_ article with pagebreak?]]></description>
+			<dc:creator>Vit</dc:creator>
+			<pubDate>Tue, 27 Nov 2012 10:36:45 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-753</guid>
+		</item>
+		<item>
+			<title>Fabio Vitale says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-693</link>
+			<description><![CDATA[ Sorry I forget that this works for Joomla 1.5.23]]></description>
+			<dc:creator>Fabio Vitale</dc:creator>
+			<pubDate>Thu, 25 Oct 2012 22:21:49 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-693</guid>
+		</item>
+		<item>
+			<title>Fabio Vitale says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-692</link>
+			<description><![CDATA[At the end of the method Plugin_IncludeContentItem just before the line "return $output;" include the line "$output = JHTML::_('content.prepare', $output);" like:	$output = JHTML::_('content.prepare', $output);	return $output; This allow to use other plugins inside the included article like jumi, pocha plugin slideshow, ... Visit for example: http://www.oshotao.it/index.php/en/photo-gallery-new/category/9-singing-into-silence-2012.html Best regards! Fabio Vitale]]></description>
+			<dc:creator>Fabio Vitale</dc:creator>
+			<pubDate>Thu, 25 Oct 2012 22:19:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-692</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-676</link>
+			<description><![CDATA[Hi Fabio, Thanks much for sharing! Will incorporate your codes in the new version. Thanks and Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 14 Oct 2012 22:29:31 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-676</guid>
+		</item>
+		<item>
+			<title>Fabio Vitale says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-671</link>
+			<description><![CDATA[When retrieving article for joomfish language you must set also state = 1	if ($num_rows>0) {	$rows = $database->loadObjectList();	$r = new stdClass();	foreach($rows as $item) {	$field = $item->reference_field;	$r->$field = $item->value;	}	$r->state=1;	$use_default = 0;	} Because there is this control after: if ($state==0) return '';]]></description>
+			<dc:creator>Fabio Vitale</dc:creator>
+			<pubDate>Sat, 13 Oct 2012 02:40:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-671</guid>
+		</item>
+		<item>
+			<title>Bob Green says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-646</link>
+			<description><![CDATA[I tried your solution but unfortunately it did not work. I also tried it using another template. There is another module that I tried that is not working so it must be some thing to do with my settings or the install itself. Thanks for your help I will keep looking for a solution.]]></description>
+			<dc:creator>Bob Green</dc:creator>
+			<pubDate>Tue, 02 Oct 2012 09:59:02 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-646</guid>
+		</item>
+		<item>
+			<title>amitpatekar says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-644</link>
+			<description><![CDATA[Hi KKsou: I got the solution, the problem was content plugin called "Tabs & Sliders" from Joomla Works was not working after using your plugin. But just reordering the plugins priority in Plugin manager solved the problem. Both the plugins are great. Thank you very much]]></description>
+			<dc:creator>amitpatekar</dc:creator>
+			<pubDate>Mon, 01 Oct 2012 05:14:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-644</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-617</link>
+			<description><![CDATA[Hi, As for your other questions, not familiar with other plugins. You may need to check them out in joomla.org. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 22 Sep 2012 00:25:22 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-617</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-616</link>
+			<description><![CDATA[Hi, 1) Go to the folder: [Joomla Root Folder]/plugins/content/include_content_item/inclu de_content_item 2) Edit the file include_content_item.lib.php 3) Goto line: 316. You should see something like this: if ($has_readmore && preg_match('/fadein=1/', $matches[2])) $output .= $this->add_jquery_lib(); 4) Comment this line by adding a # in front: #if ($has_readmore && preg_match('/fadein=1/', $matches[2])) $output .= $this->add_jquery_lib(); 5) Save and close the file. Reload the page to see if the plugin works ok now. The problem for your case is that jQuery is being loaded twice. The above comment is to make sure that jQuery is loaded only once by your template. The Include Content Item plugin will just use the jQuery from your template. Let me know if it works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 22 Sep 2012 00:21:35 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-616</guid>
+		</item>
+		<item>
+			<title>Bob Green says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-614</link>
+			<description><![CDATA[ Hi, Yes they do use the Jquery library. If I an unable to get your extension to work with their template to you know of any alternative ways to accomplish the fadein?]]></description>
+			<dc:creator>Bob Green</dc:creator>
+			<pubDate>Fri, 21 Sep 2012 11:07:30 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-614</guid>
+		</item>
+		<item>
+			<title>amitpatekar says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-611</link>
+			<description><![CDATA[Hi KKsou Excellent plugin :lol: , I need one help please :sad: . The plugin is working perfectly in 2.5 we have included below code and it works perfectly. {include_content_item 16} {include_content_item 113} But in our articles we have used another content plugin called "Tabs & Sliders" from Joomla Works. The tabs plugin code {tab}some content{tab}some content{/tabs} is not working after your plugin is enabled. Can you please help. Is it a bug or is there any way we can solve this. Please help. Thanks in advance your plugin is great. Regards Amit Patekar]]></description>
+			<dc:creator>amitpatekar</dc:creator>
+			<pubDate>Wed, 19 Sep 2012 11:37:48 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-611</guid>
+		</item>
+		<item>
+			<title>Bob Green says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-610</link>
+			<description><![CDATA[Thanks for your quick reply. I will check into what you suggested. Do you know of any other extensions that will allow me to fade the article in in case it is a conflict with Artisteer?]]></description>
+			<dc:creator>Bob Green</dc:creator>
+			<pubDate>Wed, 19 Sep 2012 09:59:26 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-610</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-609</link>
+			<description><![CDATA[Hi, I suspect it's due to conflicts with your Artisteer template. 1) The only way to ascertain this is to install a fresh install of Joomla somewhere on your site and then install only the Include Content Item plugin. This will allow you to test if the plugin works on your machine at all. 2) If (1) works, then try change the default template to your Artisteer template. If it now doesn't work, you know it's a conflict. 3) Check (or ask the author) if Artisteer template uses the jQuery library. If (3) is yes, let me know. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 18 Sep 2012 21:58:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-609</guid>
+		</item>
+		<item>
+			<title>Bob Green says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-608</link>
+			<description><![CDATA[Hi I have tried your extension and for some reason have had no luck. I would like to use the fadein=1 feature but I have not been able to make it work. Here are a few details: Using latest version of Joomla, Artisteer template. I insert the syntax {include_content_item 61 readmore=1 fadein=1} What I see when I view the article is the intro text, a read more button (which is not my default), and all the text after the read more button. I have tried to use readmore='read more' and I still get the button. I have uninstalled and re-installed. I would appreciate any advice you can offer. Thanks]]></description>
+			<dc:creator>Bob Green</dc:creator>
+			<pubDate>Tue, 18 Sep 2012 21:41:21 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-608</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-596</link>
+			<description><![CDATA[Hi, No. As the name suggests, it's for including a content article by specifying the content id. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 17 Sep 2012 08:52:13 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-596</guid>
+		</item>
+		<item>
+			<title>Petergpoint says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-584</link>
+			<description><![CDATA[:D Hello, I've just tested your plugin can also use a menu-id? wants to view a blog post perhaps {include_menu id xyz} ? Greetings from Berlin]]></description>
+			<dc:creator>Petergpoint</dc:creator>
+			<pubDate>Wed, 12 Sep 2012 01:55:46 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-584</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-540</link>
+			<description><![CDATA[Hi, Enclose the paragraphs to be included with some CSS tags, then add or modify corresponding css in your joomla template to adjust the padding. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 17 Aug 2012 01:36:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-540</guid>
+		</item>
+		<item>
+			<title>SC-123 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-537</link>
+			<description><![CDATA[Loving the plugin, but need help with one thing. I have Joomla 2.5 and have installed the include content plugin. Everything works, but I need to reduce the padding (appx 2 spaces) between the title and the content when I use the {include...123 1} code. It shows up correctly, the title is just too far above the content. Any solutions or tips?]]></description>
+			<dc:creator>SC-123</dc:creator>
+			<pubDate>Thu, 16 Aug 2012 08:07:36 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-537</guid>
+		</item>
+		<item>
+			<title>EO_Dev says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-523</link>
+			<description><![CDATA[Hi, I am using this plugin in Joomla 1.5 and it installed and worked just fine for the first page I tried it on. But I noticed that any article that uses a plugin breaks and just displays that plugin call in plain text. Any ideas on what is needed to render other plugins?]]></description>
+			<dc:creator>EO_Dev</dc:creator>
+			<pubDate>Thu, 02 Aug 2012 08:47:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-523</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-464</link>
+			<description><![CDATA[Hi, Sorry for the late reply, as I don't have a direct solution for you. But I think it can be done using CSS positioning. Put some CSS styles in your included article so that the z-position is the first in the layer. Try to ask one of your friends who are good at CSS, and they should be able to help you with this in less than 5 minutes. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 08 Jul 2012 20:17:56 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-464</guid>
+		</item>
+		<item>
+			<title>DonnaM says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-443</link>
+			<description><![CDATA[I have added a article displaying text to another article displaying a background image. Both are showing on the front end, however the text cannot be seen because it is located behind the article with the background image and I would like it to be on top of the image. Any suggestions on how I can accomplish this?]]></description>
+			<dc:creator>DonnaM</dc:creator>
+			<pubDate>Tue, 03 Jul 2012 12:55:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-443</guid>
+		</item>
+		<item>
+			<title>Mekon says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-416</link>
+			<description><![CDATA[Thank you! This is a great simple plugin.]]></description>
+			<dc:creator>Mekon</dc:creator>
+			<pubDate>Thu, 28 Jun 2012 03:18:38 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-416</guid>
+		</item>
+		<item>
+			<title>Giom says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-396</link>
+			<description><![CDATA[Actually I understood it before, but it did not work but I gave another try today, and it is working! I guess I did confuse itemid ID with content ID. Thanks for your patience and your work! Ciao]]></description>
+			<dc:creator>Giom</dc:creator>
+			<pubDate>Thu, 21 Jun 2012 09:14:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-396</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-395</link>
+			<description><![CDATA[Hi, You do not need to create an article of ID=123. If you create a new article with ID=56, to include this article, you use: include_content_item 56 It's not necessary change the ID to 123. To make things clearer, you can try the following: 1) Create a new article. Suppose the ID of this article is 56. Put in this article a string such as "This is from article 56". 2) Create another new article. Suppose the ID of this article is 57. Put in this article the following: This is article 57. {include_content_item 56} Now load article 57. You should see the following: This is article 57. This is from article 56 Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 21 Jun 2012 07:45:05 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-395</guid>
+		</item>
+		<item>
+			<title>Giom says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-394</link>
+			<description><![CDATA[Thanks for your reply. i have ID article from 1 to 55, so when I created a new article it's ID won't be 123 but 56. My question : - how can I create an article with his ID= 123 (should I do that from the database?, joomla give an auto. ID I can't modify it). (I understood 105% that when I m using the code I have to change 123 with the ID of the article I want to load.)]]></description>
+			<dc:creator>Giom</dc:creator>
+			<pubDate>Thu, 21 Jun 2012 02:49:15 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-394</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-393</link>
+			<description><![CDATA[Hi, Yes, you need to create a new article. Then in the Article Manager, you should be able to find the article ID associated with your new article (usually it's on the rightmost column). Just replace 123 with the article ID of your new article and the plugin should work. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 20 Jun 2012 17:00:47 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-393</guid>
+		</item>
+		<item>
+			<title>Giom says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-392</link>
+			<description><![CDATA[Hi KKsou! Thanks for your quick reply, I like you! I do not have any article with the ID "123" should I create one? And how?I fund a temporary solution with Iframe code, but I'd like to try your. Thanks!]]></description>
+			<dc:creator>Giom</dc:creator>
+			<pubDate>Wed, 20 Jun 2012 10:09:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-392</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-391</link>
+			<description><![CDATA[Hi, You can use 123 if there's an article ID of 123 in your joomla database. To test the plugin, create a new article and take note of the article ID from the Article Manager. Suppose the new article ID is 567, then you use include_content_item 567 to include that article. Please give it a try and let me know if it works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 20 Jun 2012 08:01:08 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-391</guid>
+		</item>
+		<item>
+			<title>Giom says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-389</link>
+			<description><![CDATA[Hi KKsou! Thanks for your work but it doesn't work on joomla 1.5.22 I tried the simple 123 it did't work. Ciao!]]></description>
+			<dc:creator>Giom</dc:creator>
+			<pubDate>Tue, 19 Jun 2012 09:39:01 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-389</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-309</link>
+			<description><![CDATA[Hi, Please refer to the section "How to use the "Include Content Item" plugin" above: http://www.kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#how_to_use To include only the fulltext (or maintext) of a content item, use the syntax {include_fulltext 123} Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 28 May 2012 07:28:42 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-309</guid>
+		</item>
+		<item>
+			<title>rwitodm says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-308</link>
+			<description><![CDATA[hi,love your plugin but one question. what if i just want to display the title without the intro text how do i go about it.]]></description>
+			<dc:creator>rwitodm</dc:creator>
+			<pubDate>Mon, 28 May 2012 03:57:15 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-308</guid>
+		</item>
+		<item>
+			<title>bonzomedia says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-279</link>
+			<description><![CDATA[Hi! Thanks for the plugin. Is there a way that I can modify the plug-in so that other content plugins in the linked article are called?]]></description>
+			<dc:creator>bonzomedia</dc:creator>
+			<pubDate>Wed, 09 May 2012 09:02:25 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-279</guid>
+		</item>
+		<item>
+			<title>soscar says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-264</link>
+			<description><![CDATA[Of course, tell me your email address and I will be happy to send it. I take this opportunity to say that this plugin is very useful for me. Thank you very much ]]></description>
+			<dc:creator>soscar</dc:creator>
+			<pubDate>Mon, 30 Apr 2012 03:11:18 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-264</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-263</link>
+			<description><![CDATA[Hi, That's great! If you're willing to share with others, please email me your modified codes. I will incorporate your codes into the new version - and make any modification so that it will work with all versions of Joomla (Joomla 1.0, 1.5, 2.5, etc.) Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 30 Apr 2012 02:37:54 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-263</guid>
+		</item>
+		<item>
+			<title>soscar says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-262</link>
+			<description><![CDATA[Hello, I made ??the modifications to check dates and control articles expired or pending. If you want, I put it them here. Not pose much overload code. Regards]]></description>
+			<dc:creator>soscar</dc:creator>
+			<pubDate>Sun, 29 Apr 2012 23:51:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-262</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-260</link>
+			<description><![CDATA[Hi, Yes, the current version of the include content item tests for only the status of published and unpublished. It tested no other fields. I thought by right when your article is in the EXPIRED or PENDING mode, the Joomla system should automatically set it to be in the unpublished mode (it makes sense, right), but apparently this is not the case. This plugin has been released for almost 4 years. And you are the first one with this request! If you have used some of my other plugins, you would know that most of my plugins are light-weight plugins. I prefer simplicity and less codes (e.g. the googleMaps plugin). There are many other competing plugins out there with a lot more features - but heavier codes and usually more difficult to use. Do you know a bit of PHP? If yes, you can modify the code to test the articles for EXPIRED or PENDING. Let me know if you need any help in this and I'll see what I can do. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 27 Apr 2012 01:51:05 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-260</guid>
+		</item>
+		<item>
+			<title>soscar says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-259</link>
+			<description><![CDATA[Hi kksou, thanks for your clear answer. I know that the plugin works well when an article is published. The problem is that Joomla has MORE STATES than published or unpublished. Are EXPIRED or PENDING and not displaying them, Joomla works fine but the plugin does display and that's not right. You can do a test by changing the dates on an article to expire. Regards]]></description>
+			<dc:creator>soscar</dc:creator>
+			<pubDate>Fri, 27 Apr 2012 01:00:54 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-259</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-252</link>
+			<description><![CDATA[Hi, For those questions that I have the answers, I will always reply immediately. For your case, I didn't reply because I really don't know how to help you. If you take a look at the history, starting from v1.5.10 (for Joomla 1.5), the article will only be included if it is published. If you unpublish the included article, the article will NOT be displayed. I've just tested the plugin again. It does indeed test for whether an article is published or not. If it's not published, the article will not be included. I do not have access to your backend. There's no way I can do any debugging. That's why I didn't reply anything... Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 26 Apr 2012 08:21:33 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-252</guid>
+		</item>
+		<item>
+			<title>soscar says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-251</link>
+			<description><![CDATA[Yuju :eek: ..... Is there anybody there?... :-* ]]></description>
+			<dc:creator>soscar</dc:creator>
+			<pubDate>Thu, 26 Apr 2012 05:34:35 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-251</guid>
+		</item>
+		<item>
+			<title>soscar says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-246</link>
+			<description><![CDATA[Hi kksou, Is it possible that the plugin show only articles published and not display the articles expired or pending? Thank you for your answer.]]></description>
+			<dc:creator>soscar</dc:creator>
+			<pubDate>Tue, 24 Apr 2012 01:01:18 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-246</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-241</link>
+			<description><![CDATA[Do you want to elaborate a bit more so that I know how to help. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 23 Apr 2012 06:44:48 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-241</guid>
+		</item>
+		<item>
+			<title>proum sinaeth says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-240</link>
+			<description><![CDATA[I want create content in joomla became dynamic how do i can?]]></description>
+			<dc:creator>proum sinaeth</dc:creator>
+			<pubDate>Sun, 22 Apr 2012 18:42:49 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php#comment-240</guid>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>New version of DirectPHP - support for PHP 7</title>
+		<description>Discuss New version of DirectPHP - support for PHP 7</description>
+		<link>https://kksou.com/php-gtk2/joomla-news/new-version-of-directphp-support-for-php-7.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:06:52 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2132.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla-news/new-version-of-directphp-support-for-php-7.php#comment-2091</link>
+			<description><![CDATA[Hi Björn, Thanks for your support over so many years! I'm not running php 7.1, and I do not currently have a server running php 7.1. So no way for me to test this now. Will need to find some time to set up a server to test it. > I get no error message, it just does show nothing. Can you try turn on php error_display to see what's the error message? Warm Regards, /CK]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 14 Jan 2019 14:51:31 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla-news/new-version-of-directphp-support-for-php-7.php#comment-2091</guid>
+		</item>
+		<item>
+			<title>Björn says:</title>
+			<link>https://kksou.com/php-gtk2/joomla-news/new-version-of-directphp-support-for-php-7.php#comment-2089</link>
+			<description><![CDATA[Hi, thanks for this very good and usefull plugin. It always worked well for me but when I go to version 7.1 it seems it's not able any more to connect to the Joomla database. With php 7.0 it still works ... do you have an idea? I get no error message, it just does show nothing. Thanks and regards, Björn]]></description>
+			<dc:creator>Björn</dc:creator>
+			<pubDate>Mon, 14 Jan 2019 08:15:30 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla-news/new-version-of-directphp-support-for-php-7.php#comment-2089</guid>
+		</item>
+		<item>
+			<title>Jim Holloman says:</title>
+			<link>https://kksou.com/php-gtk2/joomla-news/new-version-of-directphp-support-for-php-7.php#comment-1910</link>
+			<description><![CDATA[The download link for DirectPHP is not correct. I.E. Download here: ==> DirectPHP v3.01]]></description>
+			<dc:creator>Jim Holloman</dc:creator>
+			<pubDate>Tue, 18 Jul 2017 17:53:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla-news/new-version-of-directphp-support-for-php-7.php#comment-1910</guid>
+		</item>
+		<item>
+			<title>Diego says:</title>
+			<link>https://kksou.com/php-gtk2/joomla-news/new-version-of-directphp-support-for-php-7.php#comment-1905</link>
+			<description><![CDATA[bad download. new link?]]></description>
+			<dc:creator>Diego</dc:creator>
+			<pubDate>Mon, 10 Jul 2017 00:41:45 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla-news/new-version-of-directphp-support-for-php-7.php#comment-1905</guid>
+		</item>
+		<item>
+			<title>yves says:</title>
+			<link>https://kksou.com/php-gtk2/joomla-news/new-version-of-directphp-support-for-php-7.php#comment-1903</link>
+			<description><![CDATA[Hello your link for download dont work. plaese i want download direct php 3 thanks yves]]></description>
+			<dc:creator>yves</dc:creator>
+			<pubDate>Wed, 05 Jul 2017 10:03:47 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla-news/new-version-of-directphp-support-for-php-7.php#comment-1903</guid>
+		</item>
+	</channel>
+</rss>

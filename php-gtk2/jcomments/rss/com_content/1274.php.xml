@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>googleSearch (CSE) component</title>
+		<description>Discuss googleSearch (CSE) component</description>
+		<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:02:11 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/1274.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Flo says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1734</link>
+			<description><![CDATA[Hi kksou, First of all: Many thanks for this great component! One remark: Google CSE does open search result in a _blank window by default. Have you thought about adding an option to select the target? In the file googlesearch.lib.php in the line 435 you would have to add the linkTarget like so:]]></description>
+			<dc:creator>Flo</dc:creator>
+			<pubDate>Mon, 24 Aug 2015 22:15:35 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1734</guid>
+		</item>
+		<item>
+			<title>Thibault Petrement says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1733</link>
+			<description><![CDATA[Hi, I am wondering if this tool can search like google (excluding some word for instance). Beside, I would like to know if it can search within the Kunena forum of my website ?]]></description>
+			<dc:creator>Thibault Petrement</dc:creator>
+			<pubDate>Wed, 05 Aug 2015 18:14:37 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1733</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1729</link>
+			<description><![CDATA[Hi Uwe, 1) Can you please elaborate on the actions you desired? When the field is empty, the default text will appear. When you start typing, whatever you type will appear, right? Naturally, the default text will disappear. If not, what actions would you want? 2) I do not control all these. It's set in your google backend. Please log on to your Google Search or Google Adsense and you have full control over there. I think you have selected a pop-up window for search result, that's why you get a pop-up window. 3) The default clicking action is by Google. Google actually do not want or allow us to change any of their search result. All search results are directly returned by Google. Have also made some changes to the download link. Can you please try again if it works for you now? Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 21 Jul 2015 03:21:53 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1729</guid>
+		</item>
+		<item>
+			<title>Uwe says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1728</link>
+			<description><![CDATA[Hello Kksou, thank you for sending the zip files! Now - sorry for new inconvenience - I do not see the issues I have handled in your documentation... First: I have a text in the search box that vanishes if I type - not nice. Second: I see the search result at your page integrated into an "article" and I get only a pop over window. Third: clicking a search result opens a new window instead remaining in the same one. How did you configure it so nice? That would be the way I'd like to get it. Did you solve the issue with the download? I tried the 2.5 Version and it did not extract too. Thank you in advance! Best regards Uwe]]></description>
+			<dc:creator>Uwe</dc:creator>
+			<pubDate>Mon, 20 Jul 2015 21:45:25 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1728</guid>
+		</item>
+		<item>
+			<title>Saju says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1715</link>
+			<description><![CDATA[now its available...]]></description>
+			<dc:creator>Saju</dc:creator>
+			<pubDate>Thu, 02 Apr 2015 06:09:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1715</guid>
+		</item>
+		<item>
+			<title>Saju says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1714</link>
+			<description><![CDATA[Am using google-search cse 3.x with my Joomla 3.x site. Its working fine but the result is displayed in a pop up frame not in the regular page....]]></description>
+			<dc:creator>Saju</dc:creator>
+			<pubDate>Wed, 01 Apr 2015 05:44:21 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1714</guid>
+		</item>
+		<item>
+			<title>RoyL says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1237</link>
+			<description><![CDATA[Am using googlesearch cse 1.5 with my Joomla 1.5 site. It was working great for a while and then sometime within the last month (I think), I just get a blank result for searches that should definitely get results. Any ideas??]]></description>
+			<dc:creator>RoyL</dc:creator>
+			<pubDate>Sat, 23 Nov 2013 21:25:09 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1237</guid>
+		</item>
+		<item>
+			<title>Wills says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1204</link>
+			<description><![CDATA[When we can expect the Joomla 3 version? pls kindly advise]]></description>
+			<dc:creator>Wills</dc:creator>
+			<pubDate>Wed, 16 Oct 2013 06:01:16 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1204</guid>
+		</item>
+		<item>
+			<title>Ross says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1180</link>
+			<description><![CDATA[I have a 400 errorhttp://www.visiting-ross-on-wye.co.uk/index.p hp?option=com_googlesearchcse&n=30&cx=pub-52691691 63566633%3A8372310552&cof=FORID%3A11&ie=ISO-8859-1 &q=loans&hl=en&safe=active&cr=countryGB can you please let me know what to do?]]></description>
+			<dc:creator>Ross</dc:creator>
+			<pubDate>Thu, 26 Sep 2013 04:12:34 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1180</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1140</link>
+			<description><![CDATA[Hi, The google search API does not allow the width to be dynamic. The entire search result is returned by google. We are not allowed to alter the returned result from google. Also, you can do a quick google. There is a minimum width of the search result imposed by google. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 10 Aug 2013 08:12:51 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1140</guid>
+		</item>
+		<item>
+			<title>Sat says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1138</link>
+			<description><![CDATA[This is definitely a nice utility. I am still having issues with adjusting the width. I want the width to be dynamic and that is not happening. Currently it is all for integer value. I want to enter % value. If i want to see the site on smart phone .. it is not getting aligned and search box sticks out .. let me know how this can be achieved.]]></description>
+			<dc:creator>Sat</dc:creator>
+			<pubDate>Sun, 04 Aug 2013 21:34:22 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1138</guid>
+		</item>
+		<item>
+			<title>Sat says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1073</link>
+			<description><![CDATA[This is definitely very good tool. I have two challenges tho. - How to us this as part of an article? (sorry am new to Joomla :-*) .. is there a document / command. I don't want to add this to a menu. - How to add more than one search (3 to be precise) to my site. I want users to go into appropriate search area to get relevant information. Currently it is seeding information from one CSE-ID only. Please let me know. Sat]]></description>
+			<dc:creator>Sat</dc:creator>
+			<pubDate>Tue, 04 Jun 2013 10:50:28 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1073</guid>
+		</item>
+		<item>
+			<title>Dean D says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1072</link>
+			<description><![CDATA[Hello, Yes, that worked. 8) I might have a clue why is not working when I set Serbia and Montenegro as country... Well, "Serbia and Montenegro" as one country doesn't exist for over few years now. Nowadays those are 2 independent countries so maybe Google CSE API is don't know which one to use and it generates this bug. Maybe you should split these into 2 separate countries to choose from in the list. Thank you for the quick response and solution. So this component should basically search what ever is available for Google to index right? Ty Dean]]></description>
+			<dc:creator>Dean D</dc:creator>
+			<pubDate>Tue, 04 Jun 2013 08:45:09 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1072</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1071</link>
+			<description><![CDATA[Hi Dean, Did you recently change the setting? Try don't set the country. I tried that and it seems to work. You can try this as testing: http://www.tvojservis.com/index.php?option=com_googlesearch_cse&n=30&Itemid=147&cx=010013177191668307214%3Al8agyyc1vve&cof=FORID%3A11&ie=UTF-8&q=Servis&sa=Pretra%C5%BEi&hl=sr&siteurl=: http://www.tvojservis.com/index.php?option=com_googlesearch_cse&n=30&Itemid=147&cx=010013177191668307214%3Al8agyyc1vve&cof=FORID%3A11&ie=UTF-8&q=Servis&sa=Pretra%C5%BEi&hl=sr&siteurl= Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 04 Jun 2013 06:35:56 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1071</guid>
+		</item>
+		<item>
+			<title>Dean D says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1070</link>
+			<description><![CDATA[Hi kksou, once again. I'm using this CSE module and component for over a year now but from some reason it stopped working few days ago. I re installed both module and component and imported the code again but it wont display the results. I tried by disabling all other components and modules one by one but it didn't help. It displays images but and ads but not actual results. Ty in advance Dean]]></description>
+			<dc:creator>Dean D</dc:creator>
+			<pubDate>Tue, 04 Jun 2013 06:28:33 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-1070</guid>
+		</item>
+		<item>
+			<title>Nicel Tan says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-996</link>
+			<description><![CDATA[Please GoogleSearch(CSE) update to joomla 3.x. ?s this possible? Thanks.]]></description>
+			<dc:creator>Nicel Tan</dc:creator>
+			<pubDate>Wed, 08 May 2013 08:01:45 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-996</guid>
+		</item>
+		<item>
+			<title>Saju PM says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-963</link>
+			<description><![CDATA[This component is working well but i have a request if possible please develop this for joomla 3 too thank you regards]]></description>
+			<dc:creator>Saju PM</dc:creator>
+			<pubDate>Sun, 14 Apr 2013 05:31:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-963</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-935</link>
+			<description><![CDATA[Hi, Not sure which part you're stuck. Would you please elaborate a bit more? Do you have a google adsense account? If yes, there are many tutorials in there once you're logged in that shows you how to create a search item. Once you have created the search item with all the desired parameters, you can follow this article: Where to find CSE's unique ID?: http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/Where-to-find-CSE-s-unique-ID.php What the googleSearch CSE component needs is this CSE unique ID. The rest of the parameters are all set in your google adsense account. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 04 Apr 2013 04:50:09 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-935</guid>
+		</item>
+		<item>
+			<title>Sachin123 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-930</link>
+			<description><![CDATA[Can you tell me which option i get these open in Google's new Custom Search Engine.]]></description>
+			<dc:creator>Sachin123</dc:creator>
+			<pubDate>Wed, 03 Apr 2013 03:45:08 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-930</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-929</link>
+			<description><![CDATA[Hi, With Google's new Custom Search Engine (CSE) API, all these are now set direct in your google adsense account. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 03 Apr 2013 00:32:32 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-929</guid>
+		</item>
+		<item>
+			<title>Sachin123 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-927</link>
+			<description><![CDATA[i am using joomla 2.5 this component don't show many options like "search Web/Your Domain" etc]]></description>
+			<dc:creator>Sachin123</dc:creator>
+			<pubDate>Tue, 02 Apr 2013 22:04:56 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-927</guid>
+		</item>
+		<item>
+			<title>ugamer says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-921</link>
+			<description><![CDATA[joomla 1.5]]></description>
+			<dc:creator>ugamer</dc:creator>
+			<pubDate>Sat, 23 Mar 2013 01:38:11 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-921</guid>
+		</item>
+		<item>
+			<title>ugamer says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-920</link>
+			<description><![CDATA[I have trouble too, i install component and module, but result frame won't load (Load denied by X-Frame-Options does not permit cross-origin framing) plz help!]]></description>
+			<dc:creator>ugamer</dc:creator>
+			<pubDate>Sat, 23 Mar 2013 01:37:41 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-920</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-913</link>
+			<description><![CDATA[Hi Yann, Did you install both the component as well as the module? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 12 Mar 2013 21:04:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-913</guid>
+		</item>
+		<item>
+			<title>Yann18 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-912</link>
+			<description><![CDATA[Hi there, I'm using the module on my site torontofunplaces.com, but the result frame won't load (load denied by X-Frame-Options: the url does not permit cross-origin framing. Any suggestion? Thanks! Yann]]></description>
+			<dc:creator>Yann18</dc:creator>
+			<pubDate>Tue, 12 Mar 2013 11:07:04 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-912</guid>
+		</item>
+		<item>
+			<title>DanL says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-894</link>
+			<description><![CDATA[How do you setup this component to search the internet and not your site? When I create a cx code and enter it it works, but I cannot search google, just my own site.]]></description>
+			<dc:creator>DanL</dc:creator>
+			<pubDate>Tue, 26 Feb 2013 09:17:35 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-894</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-855</link>
+			<description><![CDATA[Hi, You have only installed the component. If you want the module, you also need the install the module here: googleSearch (CSE) module: http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-module.php Try to make sure that the component runs ok first. Once it's running, then install the module. The module will not work without the component. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 28 Jan 2013 18:25:46 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-855</guid>
+		</item>
+		<item>
+			<title>sabexel says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-854</link>
+			<description><![CDATA[I have installed the CSE component but there is no module for CSE installed, what to do if i want to display this search box on the left position on all pages.]]></description>
+			<dc:creator>sabexel</dc:creator>
+			<pubDate>Mon, 28 Jan 2013 09:06:09 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-854</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-800</link>
+			<description><![CDATA[It's here: googleSearch (CSE) module: http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-module.php#download Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 31 Dec 2012 04:43:45 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-800</guid>
+		</item>
+		<item>
+			<title>lalita says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-799</link>
+			<description><![CDATA[for joomla 2.5 where is the version of googlesearch cse module???]]></description>
+			<dc:creator>lalita</dc:creator>
+			<pubDate>Sun, 30 Dec 2012 12:02:07 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-799</guid>
+		</item>
+		<item>
+			<title>Brahim says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-795</link>
+			<description><![CDATA[It's solved thanks]]></description>
+			<dc:creator>Brahim</dc:creator>
+			<pubDate>Sun, 23 Dec 2012 12:31:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-795</guid>
+		</item>
+		<item>
+			<title>Brahim says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-793</link>
+			<description><![CDATA[Hello, Thank you very for the Google CSE tools. I must say that I tested since two years others modules of GG CSE but no one works very well for Joomla 1.5. I had to only integrated directly from the GG code when I meet your component and on a few clics it appears on my site. Just a little question.... as I use TA-BLANK template it is as the purity 2, the GG search results appear under the user(x) positions, is there a way to hide them so the search results page will appear completely ? Thank you]]></description>
+			<dc:creator>Brahim</dc:creator>
+			<pubDate>Sat, 22 Dec 2012 04:59:44 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-793</guid>
+		</item>
+		<item>
+			<title>rapaearch says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-705</link>
+			<description><![CDATA[Hey, Great job creating this. while testing i have 2 questions. 1 - do all the options in the component, like removing the google watermark, are approved on by the google adsense policy? or is that end user responsibility? 2 - can the module be used twice with different options? i mean for example i need 2 modules where one will look differently then the other. while both show results in the component. Thanks in advance!]]></description>
+			<dc:creator>rapaearch</dc:creator>
+			<pubDate>Wed, 31 Oct 2012 13:44:06 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-705</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-667</link>
+			<description><![CDATA[Hi, 1) This is a Joomla component. So it can only be used in the Joomla framework, not in Facebook. 2) This component make use of the Google API. The Google API only searches pages that are indexed by google. Google API does not search those pages within Facebook. I'm not too familiar with Facebook. Facebook might have its own API to search within its Facebook pages. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 10 Oct 2012 08:30:15 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-667</guid>
+		</item>
+		<item>
+			<title>Ciesuko says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-666</link>
+			<description><![CDATA[Janice, very good sentence i'll place in mi my facebook wall, I'd like to make this great component to search in google and in the site as facebook, is that possible?]]></description>
+			<dc:creator>Ciesuko</dc:creator>
+			<pubDate>Wed, 10 Oct 2012 06:30:16 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-666</guid>
+		</item>
+		<item>
+			<title>Janice Matalo says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-665</link>
+			<description><![CDATA[In ordinary life we hardly realize that we receive a great deal more than we give, and that it is only with gratitude that life becomes rich.]]></description>
+			<dc:creator>Janice Matalo</dc:creator>
+			<pubDate>Wed, 10 Oct 2012 01:25:16 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-665</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-592</link>
+			<description><![CDATA[Hi, 1) Goto the folder: [Joomla_Root_Folder]/administrator/components/com_ googlesearchcse 2) Edit the file: admin.googlesearch.lib.php 3) Goto Line: 301. You should see function input_site_language($row) { 4) Add your language to the array $languages = array() Save the file. You should now see your language. Let me know if it works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 17 Sep 2012 08:45:28 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-592</guid>
+		</item>
+		<item>
+			<title>aner says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-589</link>
+			<description><![CDATA[How to add a new language to Site Language dropdown in the component configuration? I need to have Ukrainian there. On Google custom search it is available but how to add it to the component in joomla 1.5?]]></description>
+			<dc:creator>aner</dc:creator>
+			<pubDate>Sat, 15 Sep 2012 23:56:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-589</guid>
+		</item>
+		<item>
+			<title>Rómulo Ruiz says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-555</link>
+			<description><![CDATA[Hi, i just install this great component in joomla 2.5 but the module is hiden in the admin, any help?]]></description>
+			<dc:creator>Rómulo Ruiz</dc:creator>
+			<pubDate>Thu, 30 Aug 2012 11:56:41 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-555</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-510</link>
+			<description><![CDATA[Hi, You can use Google Translate to do the translation to English, or you can tell me the URL so that I can take a look at the website to see what's the problem. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 23 Jul 2012 08:20:39 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-510</guid>
+		</item>
+		<item>
+			<title>hong the quang says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-484</link>
+			<description><![CDATA["water mark color blur..." message box when I install cse component. Why? I'm from VietNam. My English is not good. :sad:]]></description>
+			<dc:creator>hong the quang</dc:creator>
+			<pubDate>Sun, 15 Jul 2012 00:33:28 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-484</guid>
+		</item>
+		<item>
+			<title>Dean D. says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-478</link>
+			<description><![CDATA[ Hi. You cant use module without the component. You should install both and then try.]]></description>
+			<dc:creator>Dean D.</dc:creator>
+			<pubDate>Thu, 12 Jul 2012 06:09:17 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-478</guid>
+		</item>
+		<item>
+			<title>Dean D. says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-477</link>
+			<description><![CDATA[Hi. I installed both CSE component and module and also make CSE on my Google account. When I try CSE for my website on the Google account it works and displays results. I added ID but I still cant get any search result on my page. My URL is > www.tvojservis.com Any suggestion is welcome. Ty]]></description>
+			<dc:creator>Dean D.</dc:creator>
+			<pubDate>Thu, 12 Jul 2012 06:08:13 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-477</guid>
+		</item>
+		<item>
+			<title>Retro Alfa says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-428</link>
+			<description><![CDATA[Hi, I have a problem. My site is joomla 1.5.26 and I have downloaded "Joomla 1.5.x: com_googleSearch_cse_v1.5.zip" and the module. The module has a error "ERROR >>> You need to install the latest version of googleSearch component to run this module! " Any help would be appreciated]]></description>
+			<dc:creator>Retro Alfa</dc:creator>
+			<pubDate>Sun, 01 Jul 2012 09:33:41 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-428</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-423</link>
+			<description><![CDATA[Hi, This is a simple component to display googleSearch result within a component - in only one language. You might want to check joomla.org to see if there are any advanced component that can achieve what your site needs. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 29 Jun 2012 08:13:03 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-423</guid>
+		</item>
+		<item>
+			<title>Smel says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-415</link>
+			<description><![CDATA[As known Joomla 2.5.x has a built-in multi-language solution. I have a site containing articles in 5 languages. How can we implement this component in such a case that I will have 5 different modules and each will list the results based on the language?]]></description>
+			<dc:creator>Smel</dc:creator>
+			<pubDate>Wed, 27 Jun 2012 09:54:16 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-415</guid>
+		</item>
+		<item>
+			<title>correns says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-388</link>
+			<description><![CDATA[I found the error, it was not related to sh404 but to Akeeba Backup. For some reasons, the table of the googlecse component settings was excluded from the backup, so in new installations those were missing. Of course it can be corrected manually, but still this is a big problem for me as I need many copies of my site. Do you have an idea what can cause this? Thanks..]]></description>
+			<dc:creator>correns</dc:creator>
+			<pubDate>Tue, 19 Jun 2012 01:58:14 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-388</guid>
+		</item>
+		<item>
+			<title>correns says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-381</link>
+			<description><![CDATA[FYI, I tested it on another hoster just to check that it is not related to our servers settings. It doesn't work. :sad: Hope you can help, thx and best Regards.]]></description>
+			<dc:creator>correns</dc:creator>
+			<pubDate>Mon, 18 Jun 2012 01:28:05 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-381</guid>
+		</item>
+		<item>
+			<title>Correns says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-380</link>
+			<description><![CDATA[Thanks for you very fast reply! Well so I have the latest Joomla and also sh404 component, and your tutorial is not actual any more. In sh404 you can not set it to skip, it says "treat as non sef" and there are other options, I tried them all but nothing works. Then if you go to the sh404sef.class.php and search for the method of your tutorial, it's still there, but the code below is totally different from your tutorial, so I don't know how to adjust.. That's what I meant. However, the strange thing is that it works on localhost.]]></description>
+			<dc:creator>Correns</dc:creator>
+			<pubDate>Sat, 16 Jun 2012 23:43:37 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-380</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-377</link>
+			<description><![CDATA[Hi, What do you mean by ?since the content of the sh404sef.class.php has changed?? Did you set the googleSearch component to skip in the sh404 admin backend? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 15 Jun 2012 08:00:30 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-377</guid>
+		</item>
+		<item>
+			<title>correns says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-375</link>
+			<description><![CDATA[On the server it looks like: http://supplier2.correns.co.jp/correns/index.php? option=com_googlesearchcse&n=30&Itemid=338&cx=&cof =FORID%3A11&ie=&q=test&hl= So it seems like again the language tag gets cut out. I tried your solution for Sh404, but since the content of the sh404sef.class.php has changed I coulnd't get it to work. Really hope you can help, pls let me know if you need further information.]]></description>
+			<dc:creator>correns</dc:creator>
+			<pubDate>Fri, 15 Jun 2012 04:02:05 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-375</guid>
+		</item>
+		<item>
+			<title>correns says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-374</link>
+			<description><![CDATA[Thank you for this nice component! I have a strange error though and am pretty lost.. hope you can help. I have sh404 and htaccess on.. and your component works on the localhost. But when I uploaded it on the intranet to test, somehow the search string gets cut and it does not display any result. For example: In localhost the url of the search string looks like this: http://localhost/correns/index.php? option=com_googlesearchcse&n=30&Itemid=338&cx=0023 19795645609495628%3Akgewgbvqfxy &cof=FORID%3A11&ie=UTF-8&q=test6&hl=ja&cr=countryJ P]]></description>
+			<dc:creator>correns</dc:creator>
+			<pubDate>Fri, 15 Jun 2012 04:01:34 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-374</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-350</link>
+			<description><![CDATA[Hi Scott, Just went to your website. You can see that the url has now changed, and the googleSearch(CSE) component is displaying now. However, if you compare your googleSearch url with the one on my website (just do any search there), you will see that the url does not seem to be too right. That's why the search result is not displaying. You might want to play around with the setting in ace sef to see if you can make it skip the googleSearch(CSE) component entirely. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 09 Jun 2012 06:31:17 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-350</guid>
+		</item>
+		<item>
+			<title>Scottr says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-349</link>
+			<description><![CDATA[Hi kksou Yes, i am using ace sef I think i did it but it still seems not to work. i went into extensions in ace sef and com_googlesearchcse - set it to Skip prefix / menu yes Thanks Scott]]></description>
+			<dc:creator>Scottr</dc:creator>
+			<pubDate>Sat, 09 Jun 2012 06:11:50 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-349</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-348</link>
+			<description><![CDATA[Hi, Please refer to reply to Scott below. It might be due to the SEF plugin that you're using (e.g. sh404SEF) If you're using sh404SEF, please make sure you sure you turn off SEF for the component "googleSearch(CSE)". For details, please refer to: sh404SEF users: http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#sh404SEF If you're using other SEF plugins, then do something similar. Please give it a try one more time and let me know if it works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 09 Jun 2012 06:07:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-348</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-347</link>
+			<description><![CDATA[Hi Scott, Went to your website. Think you're using some SEF such as sh404SEF. Please refer to the following: sh404SEF users: http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#sh404SEF If you're using sh404SEF, please make sure you sure you turn off SEF for the component "googleSearch(CSE)". If you're using other SEF plugins, then do something similar. Please give it a try one more time and let me know if it works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 09 Jun 2012 06:02:08 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-347</guid>
+		</item>
+		<item>
+			<title>Zigmoid says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-343</link>
+			<description><![CDATA[I just nee to enter the Unique CSE Id..thats it right? Don't need to care about the code provided by Google..or like where to paste it etc? Also, would like to say that working fine for me on 2.5]]></description>
+			<dc:creator>Zigmoid</dc:creator>
+			<pubDate>Sat, 09 Jun 2012 04:05:20 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-343</guid>
+		</item>
+		<item>
+			<title>Scottr says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-338</link>
+			<description><![CDATA[Hi I am seeing the same problem as Vino... No results are being shown http://www.stridedge.com/demo/bps/ Your help appreciated Thanks Scott]]></description>
+			<dc:creator>Scottr</dc:creator>
+			<pubDate>Fri, 08 Jun 2012 02:31:53 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-338</guid>
+		</item>
+		<item>
+			<title>Vinothkannan says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-330</link>
+			<description><![CDATA[Now I am able to see the search box on top menu, But search results are not displaying on the website. Do we need to change any settings?]]></description>
+			<dc:creator>Vinothkannan</dc:creator>
+			<pubDate>Mon, 04 Jun 2012 22:11:32 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-330</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-329</link>
+			<description><![CDATA[Hi, Do not leave any usename or password here. It's too risky. Your component does not seem to work right. As mentioned above, please uninstall both component and module again. Then install just the component. Make sure that the component is working before you install the module. The module runs on top of the component. So you have to make sure that the component is working first. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 04 Jun 2012 22:07:59 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-329</guid>
+		</item>
+		<item>
+			<title>Vinothkannan says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-328</link>
+			<description><![CDATA[Hi, Now the search box is displaying, but results are not displaying inside the page. Do we need to do any changes from admin panel?]]></description>
+			<dc:creator>Vinothkannan</dc:creator>
+			<pubDate>Mon, 04 Jun 2012 21:50:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-328</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-326</link>
+			<description><![CDATA[Hi, Please make sure you install the right version. 1) component: from this page. http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#download 2) module: http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-module.php Please make sure you have the latest version of (1) and (2). Would suggest you uninstall both and reinstall again. Also, please please test (1) the component first. Make sure it's working first before you install (2) the module. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 04 Jun 2012 21:38:38 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-326</guid>
+		</item>
+		<item>
+			<title>Vinothkannan says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-324</link>
+			<description><![CDATA[Hi all, I am working with Joomla 2.5. I have the search box on header section. I installed the google search module and google CSE component, After enable the google module, its shows an error - "You need to install the latest version of googleSearch component to run this module! ".]]></description>
+			<dc:creator>Vinothkannan</dc:creator>
+			<pubDate>Mon, 04 Jun 2012 21:28:47 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-324</guid>
+		</item>
+		<item>
+			<title>netinsco says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-273</link>
+			<description><![CDATA[Worked like a charm. Thanks for the insight. Mike]]></description>
+			<dc:creator>netinsco</dc:creator>
+			<pubDate>Wed, 02 May 2012 16:05:44 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-273</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-254</link>
+			<description><![CDATA[Hi, Sorry for the late reply. 1) Enter any search term in the search field of your joomla googleSearch (CSE) component page. 2) Click the search button. 3) In the search result page, copy the entire URL and paste them into the notepad. 4) Take a close look at the entire URL string. The search string is in the parameter q=keyword. 5) So from your basic html page, as long as you pass in the same URL string and replace q=keyword with your own keyword, it will redirect to your joomla page. Please give it a try and let me know if it works. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 26 Apr 2012 08:36:39 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-254</guid>
+		</item>
+		<item>
+			<title>netinsco says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-245</link>
+			<description><![CDATA[PS. I have successfully set up your component and it works great within the Joomla framework. I just want to pass the search values into the googleSearch (CSE) component page to display the results from a basic HTML page not part of the Joomla framework. Thanks Again]]></description>
+			<dc:creator>netinsco</dc:creator>
+			<pubDate>Mon, 23 Apr 2012 20:23:40 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-245</guid>
+		</item>
+		<item>
+			<title>netinsco says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-244</link>
+			<description><![CDATA[Can I pass Google search input values from a page not part of my Joomla template into my joomla googleSearch (CSE) component page? I want to pass search values from a basic html home page to my joomla googleSearch (CSE) component page? is it possible and how would you suggest I go about it? Mike test page: http://www.KillerSurfLinks.com]]></description>
+			<dc:creator>netinsco</dc:creator>
+			<pubDate>Mon, 23 Apr 2012 20:18:02 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-244</guid>
+		</item>
+		<item>
+			<title>Sam56187 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-234</link>
+			<description><![CDATA[Hi kksou, I just purchased component and received the link to download version 'com_googleSearch_cse_v1.5a'. This version is for joomla 1.5 right? I need version for 2.5.4. Please let me know. Thank you. Regards Sam]]></description>
+			<dc:creator>Sam56187</dc:creator>
+			<pubDate>Tue, 17 Apr 2012 12:45:32 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-234</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-232</link>
+			<description><![CDATA[Hi, Think have seen it on the internet that you need to be Google's premium account user. You might want to check with Google. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 16 Apr 2012 19:17:25 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-232</guid>
+		</item>
+		<item>
+			<title>mlvnjm says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-229</link>
+			<description><![CDATA[Is there a way to use googlesearch through https? Meaning, how do i get the component to do a https google search request?]]></description>
+			<dc:creator>mlvnjm</dc:creator>
+			<pubDate>Mon, 16 Apr 2012 08:11:49 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-229</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-197</link>
+			<description><![CDATA[Hi, The googleSearch (CSE) module is here: http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-module.php#download Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 30 Mar 2012 21:07:25 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-197</guid>
+		</item>
+		<item>
+			<title>Steveb says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-193</link>
+			<description><![CDATA[I installed this and I see the setup in components but i dont have a module to install. I cant see ho to actualy make it show and work on a page. Sorry im new to this, can you help]]></description>
+			<dc:creator>Steveb</dc:creator>
+			<pubDate>Fri, 30 Mar 2012 05:22:45 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-193</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-155</link>
+			<description><![CDATA[Hi Speciman, Thanks for highlighting this. Didn't realize the typo for the Joomla 2.5 installer. (Tested the installer on windows which runs ok because it's case-insensitive.) Hi Ryan, have just reuploaded the installer for Joomla 2.5. Please try it again and let me know if it works this time. (Note: the installer for Joomla 1.6 and 1.7 are ok) Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 18 Mar 2012 06:10:48 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-155</guid>
+		</item>
+		<item>
+			<title>Speciman says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-153</link>
+			<description><![CDATA[Hi I had the same error. My solution is to unzip the component and change two folder names to small types: components/com_google_SearchCSE to componets/com_googlesearchcse and administrator/components/com_google_SearchCSE to administrator/components/com_googlesearchcse Then zip the whole Files again and upload as normal. Hope this helps. Regards]]></description>
+			<dc:creator>Speciman</dc:creator>
+			<pubDate>Sun, 18 Mar 2012 01:49:51 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-153</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-152</link>
+			<description><![CDATA[Hi, Can you please email me the installer that you're using? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 17 Mar 2012 19:43:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-152</guid>
+		</item>
+		<item>
+			<title>Ryan Rik says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-150</link>
+			<description><![CDATA[Dear sir, I got this error when trying to install it on my Joomla 2.5 JInstaller: :Install: File does not exist /home/admin/www/site/tmp/install_4f64f2b979ab0/com _googleSearch_cse_v2.5/googlesearchcse.php]]></description>
+			<dc:creator>Ryan Rik</dc:creator>
+			<pubDate>Sat, 17 Mar 2012 13:25:11 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#comment-150</guid>
+		</item>
+	</channel>
+</rss>

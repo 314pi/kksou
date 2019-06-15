@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>DirectPHP plugin</title>
+		<description>Discuss DirectPHP plugin</description>
+		<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:11:13 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/932.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-2166</link>
+			<description><![CDATA[Hi Mark, Sorry for the late reply. Recently there has been a huge influx of spam posts, and your post was buried among them. First, please bear in mind that not all PHP libraries can run within the Joomla framework. For each article, it actually run through many layers of complicated plugins, modules and components before it gets displayed in your browser. Sometimes there are conflicts between the underlying Joomla PHP core and your other PHP libraries. Second, in order to get more clues, you might want to turn on display_error and error_reporting in PHP.ini so that you can see the error messages displayed on the screen. error_reporting(E_ALL); ini_set('display_errors', 1); When you change the PHP.ini, you might need to restart your web server so that the modified PHP.ini is loaded. The error message on the screen should tell you what exactly might be the problem. Hope this helps. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 21 Apr 2019 16:05:24 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-2166</guid>
+		</item>
+		<item>
+			<title>Mark Hobbs says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-2160</link>
+			<description><![CDATA[I've used DirectPHP for a few years... it's beautifully simple and convenient. I recently decided to use DirectPHP to make PDFs with TCPDF. If I put the following code in a file and run it directly on the server, it works fine, but within an article, it just echos the data. Any advice? require_once(JPATH_ROOT.'/libraries/tcpdf/tcpdf.ph p'); $pdf = new TCPDF('P','mm', 'A4'); $pdf->SetPrintHeader(false); $pdf->SetPrintFooter(false); $pdf->AddPage(); $pdf->Output('htmlout.pdf', 'I');]]></description>
+			<dc:creator>Mark Hobbs</dc:creator>
+			<pubDate>Mon, 08 Apr 2019 17:16:15 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-2160</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1978</link>
+			<description><![CDATA[Hi Hieu, Think it's not possible to do echoing in real-time. Not sure if you understand the Joomla framework and how content plugins work. Joomla retrieves the article content from jos_content, then runs the content plugin. The content plugin gets the raw content and change the content depending on the tags in the article. Then we return the modified content to Joomla. Joomla may do some further processing (e.g. there might also be some other system plugins) and finally display the final content to the web page. As such, using commands like ob_start() won't work because in the plugin, the output are not going direct to the screen. Instead the outputs are stored in a variable to be passed back to Joomla. You might be able to achieve such thing by writing your own system plugin. But not with DirectPHP. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 28 Mar 2018 08:21:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1978</guid>
+		</item>
+		<item>
+			<title>Hieu says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1976</link>
+			<description><![CDATA[dmhieu91@gmail.com How can i use ob_start() to echo real time value? Thanks you for support]]></description>
+			<dc:creator>Hieu</dc:creator>
+			<pubDate>Wed, 21 Mar 2018 08:11:01 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1976</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1975</link>
+			<description><![CDATA[Hi John, It's in Global Configurations - Text Filters tab If you're using JCE Editor, then please refer to the following article: Scripts removed on saving: https://www.joomlacontenteditor.net/support/faq/editor/scripts-removed-on-saving Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 21 Mar 2018 08:06:01 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1975</guid>
+		</item>
+		<item>
+			<title>John says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1974</link>
+			<description><![CDATA[Got the plugin installed and enabled. Now I need to set to No Filtering. Where do I do this in Joomla 3.8.6? Thanks.]]></description>
+			<dc:creator>John</dc:creator>
+			<pubDate>Tue, 20 Mar 2018 00:42:37 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1974</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1951</link>
+			<description><![CDATA[Hi Mark, Thanks much for sharing about creating additional profiles in JCE Editor. I'm sure many other users will find this useful! Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 05 Feb 2018 00:33:47 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1951</guid>
+		</item>
+		<item>
+			<title>Mark Hobbs says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1950</link>
+			<description><![CDATA[/kksou I figured it out. I was already using JCE Editor (it was installed with my joomla installation and the default editor. The solution: go to components -> JCD Editor -> Editor Profiles open the default profile go to editor parameters -> advanced set "allow php" to "yes". when editin and article, code now saves and displays in the code window. Side note: I created a separate profile in JCE for super users (I didn't want to give php ability to all users). I duplicated the default profile, set it for super users only (this is done on the setup tab after clicking on the profile). Cheers, Mark]]></description>
+			<dc:creator>Mark Hobbs</dc:creator>
+			<pubDate>Sun, 04 Feb 2018 22:44:31 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1950</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1949</link>
+			<description><![CDATA[Hi Lukasz, 1) You said echo "test 123"; works in plugin. 2) Does echo "test 123"; works in module too? Please refer to the article How to debug PHP codes in DirectPHP: https://www.kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php Turn on Error Display to find out the real error messages for your PHP codes. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 03 Feb 2018 10:18:37 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1949</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1945</link>
+			<description><![CDATA[Hi Mark, Please refer to the following article: 1) How to Stop Joomla From Stripping Out Code : https://www.ostraining.com/blog/joomla/stop-joomla-from-stripping-out-code/ 2) Try JCE Editor (It's free and good): Scripts removed on saving: https://www.joomlacontenteditor.net/support/faq/editor/scripts-removed-on-saving 3) How to use javascript in articles?: https://forum.joomla.org/viewtopic.php?t=302645 Please give the above a try and let me know if it works. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 02 Feb 2018 04:30:15 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1945</guid>
+		</item>
+		<item>
+			<title>Mark Hobbs says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1944</link>
+			<description><![CDATA[This plugin works. I have a weird bug... When I paste the php code into the code box in joomla, it disappears after the article is saved. The code executed when the article is loaded on the front end, but if the article is loaded on the back end, it is empty (if I save the empty article, the code disappears). Is this normal? Mark]]></description>
+			<dc:creator>Mark Hobbs</dc:creator>
+			<pubDate>Fri, 02 Feb 2018 03:28:37 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1944</guid>
+		</item>
+		<item>
+			<title>Lukasz says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1941</link>
+			<description><![CDATA[HI I want to input my php code to Joomla 3.8.3 but I have some Error. Plugion is working for sure simply code echo 123 is showing, but when I put into Module manager my php code I've that error: Fatal error: Call to a member function array() on null in /kolumb/plugins/content/DirectPHP/DirectPHP.php(60 ) : eval()'d code on line 3 And my PHP code is: Tell me please what shell I do ??]]></description>
+			<dc:creator>Lukasz</dc:creator>
+			<pubDate>Sun, 14 Jan 2018 20:42:20 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1941</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1939</link>
+			<description><![CDATA[Hi Doan, Happy New Year! No, if you understand how content plugin works, it simply grab any tags that correspond to all the content plugins, process these tags, and then display the final output of the article. These plugins are processed only once before the display of your article. As such, you cannot use DirectPHP (or any other plugins that allow you include PHP) to use ob_start() to echo real time value. If you want to achieve this, you have to write your own component and you will be able to achieve this. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 03 Jan 2018 03:17:04 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1939</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1938</link>
+			<description><![CDATA[Hi Steve, Happy New Year! 1) Download the installation file from: DirectPHP v3.0: https://www.kksou.com/php-gtk2/joomla/directphp-plugin.php#download Make sure you download the one for Joomla 3.0. 2) Save the file to your local machine. The filename should be DirectPHP_v3.01.zip 3) Go to Extensions Manager - Install. 4) Click the first tab "Upload Package File". You can drag and drop the file "DirectPHP_v3.01.zip", or you can click the button "browse for file". 5) Go to Extensions - Plugins and Enable the plugin. Please give the above a try and let me know if it works. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 03 Jan 2018 03:10:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1938</guid>
+		</item>
+		<item>
+			<title>Steve says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1936</link>
+			<description><![CDATA[Hi kksou, I'm trying to install DirectPHP 3.01 to Joomla 3.7 but keep getting a "Please enter a package folder. Unable to find install package" error message when I try to install from the unzipped folder. I fear I'm doing something obvious wrong. Thanks for help.]]></description>
+			<dc:creator>Steve</dc:creator>
+			<pubDate>Mon, 01 Jan 2018 12:17:14 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1936</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1932</link>
+			<description><![CDATA[Hi Fabrizio, Glad you found the solution! And thanks for sharing this solution with me. I'm sure this will benefit many others too! Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 28 Sep 2017 13:16:42 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1932</guid>
+		</item>
+		<item>
+			<title>Fabrizio says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1931</link>
+			<description><![CDATA[Hi kksou, I wrote you a couple of days regarding "DirectPHP problem with Joomla 3.8.0" I'm happy to say that the problem I described is not caused by DirectPHP, it's a bug introduced with Joomla 3.8.0; it was already acknowledged and fixed from the team, see https://github.com/joomla/joomla-cms/pull/18066/files/e8e03290a90b46213e0f4ad890ef8bea1e8e0e5b, and it's due to double event firing. Following the directions in the given url it's easily fixed. Sorry for the misunderstanding :( Keep up the good work! Ciao Fabrizio]]></description>
+			<dc:creator>Fabrizio</dc:creator>
+			<pubDate>Tue, 26 Sep 2017 18:52:01 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1931</guid>
+		</item>
+		<item>
+			<title>Fabrizio says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1930</link>
+			<description><![CDATA[Hi kksou, DirectPHP worked fine before upgrading to Joomla 3.8.0. With this version, I found that it's "sending" php code twice - I verified this by printing $phpcode variable in your code, it displays (and executes) the code twice, so function declarations return error ("function already declared"), DB insert calls insert the same record twice, etc. Thank you for any hint Ciao Fabrizio]]></description>
+			<dc:creator>Fabrizio</dc:creator>
+			<pubDate>Mon, 25 Sep 2017 10:08:47 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1930</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1891</link>
+			<description><![CDATA[Hi Marv, DirectPHP uses standard PHP eval() function. DirectPHP itself does not have any mysql_query() statement. That's from the PHP code you are trying to run using DirectPHP. Please refer to the article How to debug PHP codes in DirectPHP: http://www.kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php Turn on Error Display to find out the real error messages for your PHP codes. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 27 Apr 2017 09:54:54 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1891</guid>
+		</item>
+		<item>
+			<title>Marv V says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1890</link>
+			<description><![CDATA[on Joomla 3.7 i got error 0 - Call to undefined function mysql_query() Call stack #	Function	Location 1	eval()	JROOT/plugins/content/DirectPHP/DirectPHP .php:60]]></description>
+			<dc:creator>Marv V</dc:creator>
+			<pubDate>Tue, 25 Apr 2017 18:21:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1890</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1866</link>
+			<description><![CDATA[Hi Nick, I've tested DirectPHP with the latest Joomla 3.6.5 and it's working fine. First of all, make sure that the DirectPHP plugin is enabled. If it's enabled, then please turn on display_errors in your php.ini and let me know what errors and warning messages you see on the screen. You can do this in your php.ini, or you can include them right in your PHP script by adding: ini_set('display_errors', 1);
+error_reporting(E_ALL); You can find more details here: How to debug PHP codes in DirectPHP: http://www.kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php When you see the error/warning messages on the screen, please let me know so that I have more clues to where might be the problm. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 23 Dec 2016 01:32:54 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1866</guid>
+		</item>
+		<item>
+			<title>nick says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1865</link>
+			<description><![CDATA[Hi, i have a problem with joomla 3.6. I try this test code in an new Current date and time is: No Time is not appearing in an content article. pls give me a hint]]></description>
+			<dc:creator>nick</dc:creator>
+			<pubDate>Fri, 23 Dec 2016 00:46:01 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1865</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1854</link>
+			<description><![CDATA[Hi Michel, DirectPHP uses PHP's standard eval() function. If your script works with eval(), it should work with DirectPHP. How are you using and declare the global variables? I've used global variables with DirectPHP and they work fine. May be if you email me your code, I can try to debug for you. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 28 Nov 2016 09:17:53 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1854</guid>
+		</item>
+		<item>
+			<title>michel jollit says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1848</link>
+			<description><![CDATA[I can't use a global variable in a function. it'is not initialized. Do you think it is due todirectphp? if i give it to my function as a parameter it'is ok. thanks for your reply.]]></description>
+			<dc:creator>michel jollit</dc:creator>
+			<pubDate>Mon, 14 Nov 2016 22:24:31 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1848</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1844</link>
+			<description><![CDATA[Hi Brown, As mentioned to Maya in the comments earlier, not ALL php scripts can run directly inside Joomla. Please refer to the following article: How to debug PHP codes in DirectPHP: /php-gtk2/Joomla/how-to-debug-php-codes-in-directp hp.php for more details. Follow the instructions there, turn on error display, run your program, and see what error messages you see on the screen. If you still have problem, please let me know the error messages you see on the screen so that I've more clues as to what might be the problem. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 09 Nov 2016 04:17:01 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1844</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1843</link>
+			<description><![CDATA[Hi Maya, Please note that not ALL php scripts can run directly inside Joomla. Please refer to the following article: How to debug PHP codes in DirectPHP: /php-gtk2/Joomla/how-to-debug-php-codes-in-directp hp.php for more details. Follow the instructions there, turn on error display, run your program, and see what error messages you see on the screen. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 09 Nov 2016 04:12:51 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1843</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1842</link>
+			<description><![CDATA[Thanks for sharing, Marc! You can also find more details in the article How to Run Joomla Content Plugins in Custom HTML Modules: /php-gtk2/joomla/how-to-run-joomla-content-plugins -in-custom-html-modules.php Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 09 Nov 2016 04:08:11 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1842</guid>
+		</item>
+		<item>
+			<title>Marc Oliveras says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1832</link>
+			<description><![CDATA[Thanks for this great plugin. I've read many comments that it is not possible to use it in a Custom HTML module. This is partially true. If you go Custom HTML > Options > Prepare content > Yes this plugin will work on modules too.]]></description>
+			<dc:creator>Marc Oliveras</dc:creator>
+			<pubDate>Fri, 28 Oct 2016 13:11:04 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1832</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1818</link>
+			<description><![CDATA[Hi Iddy, May I know what do you mean by "shortcodes"? Can you please give a sample? Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 24 Aug 2016 08:21:32 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1818</guid>
+		</item>
+		<item>
+			<title>iddy says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1817</link>
+			<description><![CDATA[Hi, i'm using phpdirect to call a shortcodes from the database in joomla 3. The page displays correctly but the shortcodes are not converted - the shortcode itself displays. if i "view page source" and copy/paste the code directly into a joomla article, the shortcodes work again. Any ideas whats going wrong ? Thanks]]></description>
+			<dc:creator>iddy</dc:creator>
+			<pubDate>Mon, 22 Aug 2016 21:39:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1817</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1811</link>
+			<description><![CDATA[Hi Kris, Sincerely apologize for the late reply. Note sure if you have your problem solved. If not, please refer to the following article: How to debug PHP codes in DirectPHP: http://www.kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php As mentioned in the article above, please turn on error_display in php.ini. You should see some warning or error messages on the screen. Please let me know the error messages so that I have more clues as to what might be the problem. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 02 Aug 2016 03:09:46 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1811</guid>
+		</item>
+		<item>
+			<title>Kris says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1810</link>
+			<description><![CDATA[I've been using DirectPHP on my sites for years with no troubles -- as long as I remember to activate the plugin. :-D Today I upgraded to 2.5 (Joomla! v. 2.5.28), activated the plugin, set "no filtering" -- but I'm having problems. The page with the list of articles with PHP scripts won't load -- it's just a blank page. If I disable those articles, it loads just fine. I've checked everything I can think of. Having recently had some of my other sites hacked, I'm making sure this one is "up to date" -- but upgrading to DirectPHP 2.5 isn't working for me. I'm also using Jumi for less complicated scripts. Do these two play nice together? Thanks!]]></description>
+			<dc:creator>Kris</dc:creator>
+			<pubDate>Thu, 28 Jul 2016 13:00:46 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1810</guid>
+		</item>
+		<item>
+			<title>Pete says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1809</link>
+			<description><![CDATA[Installs easy, works fine. Why can't everything be so simple? Can't find a 'donate' link... do you have one?]]></description>
+			<dc:creator>Pete</dc:creator>
+			<pubDate>Fri, 08 Jul 2016 14:27:24 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1809</guid>
+		</item>
+		<item>
+			<title>Marc says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1774</link>
+			<description><![CDATA[Hi kksou, 1) I'm trying to use 2) is workking, when I used it in article.php - But it doesnt work after edding to an article in the joomla backend (content / articles)]]></description>
+			<dc:creator>Marc</dc:creator>
+			<pubDate>Mon, 18 Jan 2016 15:11:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1774</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1773</link>
+			<description><![CDATA[Hi Marc, 1) May I know what code do you use to "add a custom readmore code"? 2) You mentioned that "it works when run the command in the article.php"? But you also said "its not available when I use it in my articles". A bit confused here. So what works? And what does not work? Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 18 Jan 2016 14:41:17 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1773</guid>
+		</item>
+		<item>
+			<title>Marc says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1772</link>
+			<description><![CDATA[Hi kksou, first let me say thanks for your quick reply. I'm trying to add a custom readmore code to my articles, so i want to make the command available. it works when run the command in the article.php, but its not available when I use it in my articles with direct php. Regards!]]></description>
+			<dc:creator>Marc</dc:creator>
+			<pubDate>Sun, 17 Jan 2016 15:23:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1772</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1771</link>
+			<description><![CDATA[Hi Marc, May I know what codes you're trying to run? You might want to list some codes here so that people have more clues to see where might be the error. Any error messages that you see on the screen (note: you might need to turn on error_display in php.ini to show the error messages.) I've also written an article How to debug PHP codes in DirectPHP: http://www.kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php You might want to follow some of the recommendations there to debug your PHP code. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 16 Jan 2016 02:18:44 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1771</guid>
+		</item>
+		<item>
+			<title>Marc says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1770</link>
+			<description><![CDATA[Hey everybody and thx for this awesome plugin. I installed it on my site an the for current date/time works fine. Now I'm trying to insert a custom readmore-link in my articles. Anyone had success with this or can point me in the right directions? Ty in advance!]]></description>
+			<dc:creator>Marc</dc:creator>
+			<pubDate>Fri, 15 Jan 2016 15:11:43 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1770</guid>
+		</item>
+		<item>
+			<title>Alan says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1769</link>
+			<description><![CDATA[:-) I think it was a browser issue. I was able to download it in Chrome. Thanks for sending it to my email and for the follow up. I look forward to trying it. Thanks again, Alan]]></description>
+			<dc:creator>Alan</dc:creator>
+			<pubDate>Sat, 09 Jan 2016 01:02:06 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1769</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1767</link>
+			<description><![CDATA[Hi Alan, Have just checked the download links. They are all working fine. Please kindly give it a try again. For your convenience, have also emailed you a copy of the installer. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 29 Dec 2015 01:02:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1767</guid>
+		</item>
+		<item>
+			<title>Alan says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1766</link>
+			<description><![CDATA[The download links seem to be broken. They generate an "invalid link" modal dialog. I look forward to trying this plug in. Thank you.]]></description>
+			<dc:creator>Alan</dc:creator>
+			<pubDate>Mon, 28 Dec 2015 19:01:18 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1766</guid>
+		</item>
+		<item>
+			<title>Dragonrider says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1744</link>
+			<description><![CDATA[Just wanted to say a massive THANK YOU for writing and developing DirectPHP! With this I was able to write a simple script to access my Joomla DB to enable me to display the username of the latest person to register on my site. Also, thanks for keeping the 2.5 version up to date, my server was updated to PHP5.5 this week and I lost the use of DirectPHP, finding you have a newer version available was fantastic, it works! Thank you, and yes, I do know I should upgrade to Joomla 3 but it's a BIG complex site to migrate.]]></description>
+			<dc:creator>Dragonrider</dc:creator>
+			<pubDate>Tue, 06 Oct 2015 08:00:20 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1744</guid>
+		</item>
+		<item>
+			<title>Pieter W says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1278</link>
+			<description><![CDATA[Thanks for this great plugin. Works out of the box for me. I needed this because I need to migrate a php-fusion site to a Joomla platform. I created my own member- and instruments administration application, written in php. Now I can easily migrate it to Joomla. At the end there was a little problem with the tags. I saw that these are altered within the plugin. Please can you explain a little bit to me why this is done? For now I changed some coding in DirectPHP.php functions fix_str and fix_str2 and all seems to work okay.]]></description>
+			<dc:creator>Pieter W</dc:creator>
+			<pubDate>Sun, 26 Jan 2014 10:15:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1278</guid>
+		</item>
+		<item>
+			<title>manuvoolapati says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1276</link>
+			<description><![CDATA[Hey your plugin doesn't work on Joomla 3.1 WITHIN MODULES, could you please fix this? Under joomla 2.5 there is no problem.]]></description>
+			<dc:creator>manuvoolapati</dc:creator>
+			<pubDate>Fri, 24 Jan 2014 05:13:08 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1276</guid>
+		</item>
+		<item>
+			<title>Franko says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1269</link>
+			<description><![CDATA[ Hey your plugin doesn't work on Joomla 3.1 WITHIN MODULES, could you please fix this? Under joomla 2.5 there is no problem.]]></description>
+			<dc:creator>Franko</dc:creator>
+			<pubDate>Thu, 16 Jan 2014 15:22:51 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1269</guid>
+		</item>
+		<item>
+			<title>unknown_guest says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1266</link>
+			<description><![CDATA[How can i make directPHP run within modules?]]></description>
+			<dc:creator>unknown_guest</dc:creator>
+			<pubDate>Sat, 11 Jan 2014 00:16:08 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1266</guid>
+		</item>
+		<item>
+			<title>RITZELY says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1264</link>
+			<description><![CDATA[una maravilla :D :lol:]]></description>
+			<dc:creator>RITZELY</dc:creator>
+			<pubDate>Mon, 06 Jan 2014 10:26:51 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1264</guid>
+		</item>
+		<item>
+			<title>ArdiIIa says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1262</link>
+			<description><![CDATA[A great extension. Attention. This extension brings other problems. DISQUS Comments for Joomla! (by JoomlaWorks) Php code is displayed and the script will not run]]></description>
+			<dc:creator>ArdiIIa</dc:creator>
+			<pubDate>Fri, 03 Jan 2014 09:10:19 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1262</guid>
+		</item>
+		<item>
+			<title>leyla says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1234</link>
+			<description><![CDATA[hi, i've installed this module but it doesnt work. i've tested it on joomla 1.0x with the code but nothing is shown in the frontend :( can you help?]]></description>
+			<dc:creator>leyla</dc:creator>
+			<pubDate>Tue, 19 Nov 2013 13:19:26 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1234</guid>
+		</item>
+		<item>
+			<title>Ekwon says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1228</link>
+			<description><![CDATA[Happy to be useful. Thanks to you for this good plugin.]]></description>
+			<dc:creator>Ekwon</dc:creator>
+			<pubDate>Wed, 13 Nov 2013 14:34:43 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1228</guid>
+		</item>
+		<item>
+			<title>stormy says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1227</link>
+			<description><![CDATA[Thank you,this fixed my problem, I have been working for this hour many hours.]]></description>
+			<dc:creator>stormy</dc:creator>
+			<pubDate>Wed, 13 Nov 2013 13:12:18 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1227</guid>
+		</item>
+		<item>
+			<title>Ekwon says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1226</link>
+			<description><![CDATA[Trying to replace task=view with view=article, it works. Thanks]]></description>
+			<dc:creator>Ekwon</dc:creator>
+			<pubDate>Mon, 11 Nov 2013 12:23:04 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1226</guid>
+		</item>
+		<item>
+			<title>Ekwon says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1224</link>
+			<description><![CDATA[I don't why my previous post isn't complete. I said that's not working. I had a great hope about your answer, but :sad:]]></description>
+			<dc:creator>Ekwon</dc:creator>
+			<pubDate>Mon, 11 Nov 2013 01:31:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1224</guid>
+		</item>
+		<item>
+			<title>Ekwon says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1223</link>
+			<description><![CDATA[Hi I've tried what you said. Even with a direct link (]]></description>
+			<dc:creator>Ekwon</dc:creator>
+			<pubDate>Mon, 11 Nov 2013 01:27:59 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1223</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1219</link>
+			<description><![CDATA[Hi, Please refer to the article: How to display and process forms in a Joomla article using DirectPHP?: http://www.kksou.com/php-gtk2/Joomla/How-to-display-and-process-forms-in-a-Joomla-article-using-DirectPHP.php and How to pass variables or parameters from one Joomla article to another using DirectPHP?: http://www.kksou.com/php-gtk2/Joomla/How-to-pass-variables-or-parameters-from-one-Joomla-article-to-another-using-DirectPHP.php?var1=value1&var2=value2 Basically you need to pass in additional variables such as option, Itemid, etc. so that Joomla can go back to your designated Joomla page. Please give it a try and let me know if it works. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 10 Nov 2013 18:49:19 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1219</guid>
+		</item>
+		<item>
+			<title>Ekwon says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1214</link>
+			<description><![CDATA[Hello. Thanks for this fantastic component. Just a little problem. When I call another page from a form, the next php script open in full page and not in the module (which have called this last one) of Joomla. Is this a setting of Joomla to set, or is there a special adjustement to add in the marker of the form (echo ') or elsewhere ? Thanks.]]></description>
+			<dc:creator>Ekwon</dc:creator>
+			<pubDate>Sat, 09 Nov 2013 14:49:21 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1214</guid>
+		</item>
+		<item>
+			<title>Richard P says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1209</link>
+			<description><![CDATA[Thank you for this component. I am trying to do form validation, which in my current code involves a call back to the same php file to test the users inputs before it is submitted. Is this possible with your component or is there another form validation method you could suggest? Thanks.]]></description>
+			<dc:creator>Richard P</dc:creator>
+			<pubDate>Fri, 01 Nov 2013 13:16:18 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1209</guid>
+		</item>
+		<item>
+			<title>Karohuho says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1205</link>
+			<description><![CDATA[I Just answered myself, didn't close the table]]></description>
+			<dc:creator>Karohuho</dc:creator>
+			<pubDate>Wed, 16 Oct 2013 06:35:30 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1205</guid>
+		</item>
+		<item>
+			<title>Karohuho says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1203</link>
+			<description><![CDATA[Hi? Nice plugin, problem here though! I write the code on the article page(a code that pulls table data from database) but the table doesnt display on the article part, it displays on the footer part.... :sad:]]></description>
+			<dc:creator>Karohuho</dc:creator>
+			<pubDate>Wed, 16 Oct 2013 05:32:06 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1203</guid>
+		</item>
+		<item>
+			<title>wanda says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1178</link>
+			<description><![CDATA[can you embed a php file? I am using this, but it doesn't seem to work]]></description>
+			<dc:creator>wanda</dc:creator>
+			<pubDate>Mon, 23 Sep 2013 01:14:47 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1178</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1168</link>
+			<description><![CDATA[Hi, What system are you using? Windows? or linux? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 12 Sep 2013 03:25:19 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1168</guid>
+		</item>
+		<item>
+			<title>CSF-ali says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1167</link>
+			<description><![CDATA[How use include command and what is the meaning fullpath ,please describe it with an example. i use Wampserver and joomla 2.5,and my project folder name is New-p in www ,root directory,where i can uplode my php scripts. thanks.]]></description>
+			<dc:creator>CSF-ali</dc:creator>
+			<pubDate>Wed, 11 Sep 2013 00:05:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1167</guid>
+		</item>
+		<item>
+			<title>Marius135 says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1163</link>
+			<description><![CDATA[Can I use this plugin on a commercial website? I'm creating a site for a customer and I need something like this :)]]></description>
+			<dc:creator>Marius135</dc:creator>
+			<pubDate>Wed, 04 Sep 2013 16:05:43 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1163</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1152</link>
+			<description><![CDATA[Hi, Please do something like this (replace all square brackets with angle brackets):
+$now = date('d');
+$img = 'dailypic'.$now.'.png';
+echo "[img src='$img' alt='text']"; Please give it a try and let me know if it works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 19 Aug 2013 19:02:47 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1152</guid>
+		</item>
+		<item>
+			<title>JonGauntt says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1151</link>
+			<description><![CDATA[[from above] Basically I'm just trying to load a picture of the day so that the website looks like it is changing all the time, but keeping the load times down. Maybe there's a better way to do it? Especially so that I can keep it within the content system as it isn't part of the main framework and will not appear on all pages.]]></description>
+			<dc:creator>JonGauntt</dc:creator>
+			<pubDate>Mon, 19 Aug 2013 10:03:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1151</guid>
+		</item>
+		<item>
+			<title>JonGauntt says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1150</link>
+			<description><![CDATA[Well, that didn't work out so well... ok, to continue on (and retype it all out): I'm trying to work with images to that I can use the following type of string: [img src="dailypic[?php echo date('d');?].png" alt="text"] Using square brackets instead of regular ones so I don't lose my comment again... I am using Joomla 3.1 with JCE for my editor (instead of TinyMCE). I copied down your date test above and can usually get it to display correctly (often Joomla will put in &lt; and &gt; which seems to break things - usually you can type over this and it will then take it... usually). When I get it to work, I can see your date code just fine and I can see the text which translates to "dailypic19.png", but I cannot seem to get this to translate the html and the php at the same time. Is this possible with this plug-in or am I going to be hard coding my front pages so that I can get this to work? [continued]]]></description>
+			<dc:creator>JonGauntt</dc:creator>
+			<pubDate>Mon, 19 Aug 2013 10:02:30 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1150</guid>
+		</item>
+		<item>
+			<title>JonGauntt says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1149</link>
+			<description><![CDATA[I'm trying to work with images so that I can use the following type of string:]]></description>
+			<dc:creator>JonGauntt</dc:creator>
+			<pubDate>Mon, 19 Aug 2013 09:50:25 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1149</guid>
+		</item>
+		<item>
+			<title>LexFaure says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1136</link>
+			<description><![CDATA[I would love to use this plugin - and I need just to run the following code: Which loads and runs an integrated API But when I run the code - I get the following error: Parse error: syntax error, unexpected ':' in /home/www/lawyer365.co.za/plugins/content/DirectPH P/DirectPHP.php(58) : eval()'d code on line 1]]></description>
+			<dc:creator>LexFaure</dc:creator>
+			<pubDate>Sat, 27 Jul 2013 06:49:48 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1136</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1127</link>
+			<description><![CDATA[Hi Fabu, Sorry for the late reply, because I'm not sure if I can answer your question. If I understand correctly, you have some PHP site and you want to make this into a Joomla site. If this is correct, then I have to say that DirectPHP is not the right tool you are looking for. DirectPHP is a content plugin. As the suggests, it's for use within a Joomla article, when you need to add some PHP codes in a Joomla article. DirectPHP is NOT used for converting any PHP codes into a Joomla website. Hope this answers your question. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 24 Jul 2013 01:47:15 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1127</guid>
+		</item>
+		<item>
+			<title>Fabu says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1114</link>
+			<description><![CDATA[hi kksou, pls don't think I'm stupid, but I've got a problem to implement your plugin into our version of joomla. I don't know what kind of joomla we use, but it's terrible. I'm looking for answers to show my php sites correctly in joomla, but the only thing that remember me... Hey this is joomla... is the sentence in adminpanel. "You're using Joomla 2.5" My biggest problem is, that joomla as you know it has nothing in common with the version I've found here. Not even root structure (folders and files). I hope you can help me to solve this problem. Many Thanks Fabu P.S. I also hope, that you can understand my bad english. I haven't been written a long tim in english.]]></description>
+			<dc:creator>Fabu</dc:creator>
+			<pubDate>Wed, 17 Jul 2013 04:14:07 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1114</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1111</link>
+			<description><![CDATA[Hi, DirectPHP is a content plugin. As the name suggests, it's for use within a content article. You are using contact form, which is another component - not the com_content component used by the Joomla Articles. That's why it will not work. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 15 Jul 2013 08:38:08 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1111</guid>
+		</item>
+		<item>
+			<title>ttttest says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1110</link>
+			<description><![CDATA[Holy shit ! Your comment system is cuting all of my messages because I typed some tags ! GRRR ! (My english is really bad So re-re-re-re fail. LET'S DO THIS FOR THE FORTH TIME : Hello, I've just downloaded your plug-in on Joomla 3.0. It semmed really great. I activated it BUT the p h p code I typed in my contact form article shows me that your plug-in might not be working on my web site. Do you think you know why ?]]></description>
+			<dc:creator>ttttest</dc:creator>
+			<pubDate>Mon, 15 Jul 2013 03:00:49 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1110</guid>
+		</item>
+		<item>
+			<title>Amicus says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1081</link>
+			<description><![CDATA[I have used < instead [ But, I have found following solution: If I put some character (.) behind [?php. but choose its color is white (as my article background) DirectPHP doesnt recognize it as real PHP and everything is SHOWN as is shoud. Now I have problem (article reader) when select, copy and paste that code from article because I have . behind php tag and code snippet doesnt work :sad: Any ideas?]]></description>
+			<dc:creator>Amicus</dc:creator>
+			<pubDate>Sat, 08 Jun 2013 07:30:03 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1081</guid>
+		</item>
+		<item>
+			<title>Amicus says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1080</link>
+			<description><![CDATA[Thank you for your answer, but it doesn't work for me :sad: I have tried every combination. Problem is that if you echo PHP code, it gets executed. But, I have found following solution: If I put some character (.) behind]]></description>
+			<dc:creator>Amicus</dc:creator>
+			<pubDate>Sat, 08 Jun 2013 07:28:18 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1080</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1079</link>
+			<description><![CDATA[Hi Amicus, The plugin grep for [?php and ?] So try the following: [?php echo "["."?"."php"; ... your sample codes here ... [?php echo "?"."]"; ?] Note: change all square brackets above to angle brackets Let me know if it works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 08 Jun 2013 00:15:15 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1079</guid>
+		</item>
+		<item>
+			<title>Amicus says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1078</link>
+			<description><![CDATA[Great work. Plugin works without problems for me. But, I have question. How can I disable plugin for some Joomla Articles? I need to show some PHP code examples inside of the article, but my example PHP code gets executed by DirectPHP.]]></description>
+			<dc:creator>Amicus</dc:creator>
+			<pubDate>Fri, 07 Jun 2013 22:42:01 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1078</guid>
+		</item>
+		<item>
+			<title>Jose1974 says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1041</link>
+			<description><![CDATA[Fantastic job!!! And only 4Kb!!! Incredible, fantistic, no words, congratulations!!]]></description>
+			<dc:creator>Jose1974</dc:creator>
+			<pubDate>Sat, 18 May 2013 02:25:26 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1041</guid>
+		</item>
+		<item>
+			<title>Netsistence says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1038</link>
+			<description><![CDATA[As suggested by someone at the joomla forum I decided to reïnstall Joomla, using version 3.0.x. On that version DirectPHP is now succesfully installed.]]></description>
+			<dc:creator>Netsistence</dc:creator>
+			<pubDate>Thu, 16 May 2013 09:50:25 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1038</guid>
+		</item>
+		<item>
+			<title>Netsistence says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1037</link>
+			<description><![CDATA[Looking at joomla forum last night, found more issues on this error for Joomla 3.1. It likely is an error in this version. I do not have an other server to do the test on different PHP versions.Thnx for your comment. Regards, Bert]]></description>
+			<dc:creator>Netsistence</dc:creator>
+			<pubDate>Thu, 16 May 2013 01:02:32 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1037</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1036</link>
+			<description><![CDATA[Hi, You mentioned that you're using PHP version 5.3.3-7 + Squeeze3 Could it be because of this? Do you have any other system that you can try? Just to want eliminate the possible root cause one by one. Alternatively, there are other PHP plugins on joomla.org. Maybe one of them will work with your host. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 15 May 2013 21:04:35 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1036</guid>
+		</item>
+		<item>
+			<title>Netsistence says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1035</link>
+			<description><![CDATA[Hi, I tried new installation on the same server Get the same error. On the same server I do have a joomla 2.5.8 site running DirectPHP realy fine.]]></description>
+			<dc:creator>Netsistence</dc:creator>
+			<pubDate>Wed, 15 May 2013 11:56:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1035</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1034</link>
+			<description><![CDATA[Hi, That's really strange, because I just tried installing it on a fresh install of Joomla and it worked fine. If you have some time, would you mind do the same - i.e. try set up a fresh install of Joomla and then install DirectPHP. See if you get the same error. This will allow us to see if DirectPHP works on your server at all, or if it's conflicts with some plugins. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 15 May 2013 08:59:37 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1034</guid>
+		</item>
+		<item>
+			<title>Netsistence says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1032</link>
+			<description><![CDATA[Sorry, forgot to answer that part of your question. Yes, the error comes up while installing DirectPHP.]]></description>
+			<dc:creator>Netsistence</dc:creator>
+			<pubDate>Wed, 15 May 2013 08:08:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1032</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1031</link>
+			<description><![CDATA[Can you pleas confirm that the error is displayed during installation? Or is the error the result of running DirectPHP with some of your PHP codes? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 15 May 2013 06:17:52 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1031</guid>
+		</item>
+		<item>
+			<title>Netsistence says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1029</link>
+			<description><![CDATA[Thnx for responding so soon! PHP version 5.3.3-7 + Squeeze3 Joomla 3.1.1 with dutch language package installed. The site is hosted on Apache webserver using apache2handler The exact error is: DateTime::__construct(): Failed to parse time string (jerror) at position 0 (j): The timezone could not be found in the database. I've downloaded version v3.0 of PHPDirect, but inside the file DirectPHP.php comment stops at v2.5 Jan 25, 2012.]]></description>
+			<dc:creator>Netsistence</dc:creator>
+			<pubDate>Wed, 15 May 2013 03:00:09 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1029</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1028</link>
+			<description><![CDATA[Hi, The current version of DirectPHP works with the latest version of Joomla. I'm using it on my site. 1) Which PHP version are you using? 2) At which point does the error message occurs - during installation? I've never seen such an error before during installation. Please provide more details so that I have more clues as to where might be the problem. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 15 May 2013 01:59:56 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1028</guid>
+		</item>
+		<item>
+			<title>Netsistence says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1027</link>
+			<description><![CDATA[Hi, I tried installing DirectPHP on Joomla 3.1.1 but joomla shows up with error: Failed to parse time string (jerror) at position 0 (j): The timezone could not be found in the database. When will there be a 3.1.x version of DirectPHP?]]></description>
+			<dc:creator>Netsistence</dc:creator>
+			<pubDate>Wed, 15 May 2013 01:19:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1027</guid>
+		</item>
+		<item>
+			<title>Arnold33 says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1026</link>
+			<description><![CDATA[HI it's ok now thanks you good working]]></description>
+			<dc:creator>Arnold33</dc:creator>
+			<pubDate>Tue, 14 May 2013 13:20:14 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1026</guid>
+		</item>
+		<item>
+			<title>JugglingReferee says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1024</link>
+			<description><![CDATA[I can't seem to get to work. Inside an article, I open the PHP tag and can run PHP code no problem. But if I try to echo a br tag, the br doesn't show/advance a blank line.]]></description>
+			<dc:creator>JugglingReferee</dc:creator>
+			<pubDate>Tue, 14 May 2013 06:53:33 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1024</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1015</link>
+			<description><![CDATA[Hi, Please refer to the article: How to debug PHP codes in DirectPHP: http://www.kksou.com/php-gtk2/Joomla/How-to-debug-PHP-codes-in-DirectPHP.php Please try to copy your code to a standalone .php file. Also turn on the display_errors in your php.ini file You will then be able to see the actual error or warning messages. Right now based on the information you've given here, it's very difficult to tell where might be the problem. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 13 May 2013 21:23:05 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1015</guid>
+		</item>
+		<item>
+			<title>Arnold33 says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1011</link>
+			<description><![CDATA[hi it's me again here is the code that I put in a module get('myfg', null); $pg = $session-&gt;get('mypg', null); if ($fg == 'n') echo(' and in another module I put '); else echo (' last module is '); ?>; I have a session english and another Norwegian. do you think that there is an error in the code :sigh:]]></description>
+			<dc:creator>Arnold33</dc:creator>
+			<pubDate>Mon, 13 May 2013 10:43:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1011</guid>
+		</item>
+		<item>
+			<title>Arnold33 says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1009</link>
+			<description><![CDATA[hi I have always the same problem I have not installed module or plugin. I just look in the joomla administration and save to make a comeback. My code works well elsewhere. when I do echo "test123" I do not see that test123]]></description>
+			<dc:creator>Arnold33</dc:creator>
+			<pubDate>Mon, 13 May 2013 07:56:51 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1009</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1008</link>
+			<description><![CDATA[Hi, You said one week ago it worked well. Now please try echo 'test123' again. Do you still see the code, or just 'test123'? If you see the code, that means DirectPHP is not working. It might be conflicts with your other plugins or modules that you have just installed. If you see 'test123', it means there's some error in the code. You may want to refer to the article: How to debug PHP codes in DirectPHP: http://www.kksou.com/php-gtk2/Joomla/How-to-debug-PHP-codes-in-DirectPHP.php Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 12 May 2013 18:23:09 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1008</guid>
+		</item>
+		<item>
+			<title>Arnold33 says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1006</link>
+			<description><![CDATA[sorry my text was cut hi thank you for your quick response. the plugin is enabled, I have tested this code, and it works: [php? echo 'test1'; echo 'test2'; echo 'test3; ] but I put my code, it does not work. I do not understand because 1 week ago it worked well. I made ??no changes you have an idea. J'utilse joomla 1.5.14]]></description>
+			<dc:creator>Arnold33</dc:creator>
+			<pubDate>Sun, 12 May 2013 16:40:20 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1006</guid>
+		</item>
+		<item>
+			<title>Arnold33 says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1005</link>
+			<description><![CDATA[hi thank you for your quick response. the plugin is enabled, I have tested this code, and it works:]]></description>
+			<dc:creator>Arnold33</dc:creator>
+			<pubDate>Sun, 12 May 2013 16:36:46 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1005</guid>
+		</item>
+		<item>
+			<title>Arnold33 says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1004</link>
+			<description><![CDATA[hi thank you for your quick response. the plugin is enabled, I have tested this code, and it works: get ('mypg', null) if ($ fg == 'n') echo (' Kjære språk-entusiast! Det er å morsomt Laere and fremmed språk man heard nybegynner eller er litt OVET. Forutsetningen selvfølgelig følelsen av er noe å få igjen for innsatsen. ') Else echo (' Dear language enthusiast! Whether you are a beginner or know a bit Already, learning a foreign language is fun, as long, of course, as you feel you are reaping the rewards of your efforts. ')> Read more ...]]></description>
+			<dc:creator>Arnold33</dc:creator>
+			<pubDate>Sun, 12 May 2013 16:32:48 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1004</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1003</link>
+			<description><![CDATA[Hi, If the code displays, it usually means DirectPHP is not running. Please check in the Plugins Manager that it's enabled. Otherwise, please remove the code first and do the testing on some development machine or some remote article. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 12 May 2013 15:36:21 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1003</guid>
+		</item>
+		<item>
+			<title>Arnold33 says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1002</link>
+			<description><![CDATA[hello Your plugin is very good. I have a big problem on my site against. on my pages php code is displayed, I do not know why. how can I remove the PHP code so that it does not appear in the front-end. everyone sees the code Please help me it's urgent.]]></description>
+			<dc:creator>Arnold33</dc:creator>
+			<pubDate>Sun, 12 May 2013 13:51:14 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-1002</guid>
+		</item>
+		<item>
+			<title>Gary Zabriskie says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-999</link>
+			<description><![CDATA[ Never Mind it was me ... my bad code.]]></description>
+			<dc:creator>Gary Zabriskie</dc:creator>
+			<pubDate>Wed, 08 May 2013 08:56:15 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-999</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-998</link>
+			<description><![CDATA[Hi, If you try just a one-liner: echo [?php 'test123';?] Think you will not get the error message. This means that somewhere in your code produces this warning message. Please refer to the article How to debug PHP codes in DirectPHP: http://www.kksou.com/php-gtk2/Joomla/How-to-debug-PHP-codes-in-DirectPHP.php Save your codes in a standalone .php file and debug from there. Once you've debug the code, you can then transfer the code back to your article. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 08 May 2013 08:29:02 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla/directphp-plugin.php#comment-998</guid>
+		</item>
+	</channel>
+</rss>

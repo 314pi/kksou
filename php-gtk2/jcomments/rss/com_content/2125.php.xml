@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Joomla! 3.4.7 security update released</title>
+		<description>Discuss Joomla! 3.4.7 security update released</description>
+		<link>https://kksou.com/php-gtk2/joomla-news/joomla-3-4-7-security-update-released.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:07:00 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2125.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Lance Bowman says:</title>
+			<link>https://kksou.com/php-gtk2/joomla-news/joomla-3-4-7-security-update-released.php#comment-1798</link>
+			<description><![CDATA[/kksou, Yes, thank you! The extensions are running properly under Joomla 3.5.1 and PHP 7+. I am so appreciative of your support and quality tools for Joomla! Elbowman]]></description>
+			<dc:creator>Lance Bowman</dc:creator>
+			<pubDate>Wed, 20 Apr 2016 19:09:33 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla-news/joomla-3-4-7-security-update-released.php#comment-1798</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla-news/joomla-3-4-7-security-update-released.php#comment-1797</link>
+			<description><![CDATA[Dear Lance, This site (kksou.com) is now running Joomla 3.5.1 on PHP5. All the 3 googleMaps plugins work fine. I've also tested this plugin on Joomla 3.5.1 running on PHP7. All the 3 plugins tested fine too. If you find the plugin does not work on your site, can you please turn on error_display in your php.ini and let me know what is the error messages that you see on the screen? Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 20 Apr 2016 04:19:09 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla-news/joomla-3-4-7-security-update-released.php#comment-1797</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/joomla-news/joomla-3-4-7-security-update-released.php#comment-1796</link>
+			<description><![CDATA[Dear Lance, Glad you liked the googleMaps plugin! A couple of other people have also messaged me about this. I've been running this website (kksou.com) since 2005. It started as a hobby to share the PHP-GTK2 codes I've written with others. As my website runs on joomla, I've written some useful plugins and modules which I thought might be useful to others too e.g. DirectPHP, googleMaps, include_content_item plugins, etc. So I started sharing these Joomla plugins on my website too. However, I can only work on this website everyday after I finished my work and after my kids go to bed. Recently I have some big projects and do not have much time for the website. That's why I haven't had the time yet to test all the plugins with the recent Joomla 3.5 rollout and also PHP 7. This website is now currently running PHP 5, and I need to first set up a site for me to test PHP 7. In any case, would be great if you, or anyone reading this post, to help me speed up the process. You mentioned that "there is a library name change that impacts extensions". If you know which library is that, which part I need to change, or the URL of articles that describe about these changes, would be great if you could share with me. I could probably google these from the Internet. But it may take me a while to figure all these out... Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 08 Apr 2016 10:53:22 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla-news/joomla-3-4-7-security-update-released.php#comment-1796</guid>
+		</item>
+		<item>
+			<title>Lance Bowman says:</title>
+			<link>https://kksou.com/php-gtk2/joomla-news/joomla-3-4-7-security-update-released.php#comment-1795</link>
+			<description><![CDATA[Hi kksou! We've updated to Joomla 3.5.1 and are anxious to take advantage of the speed boost when paired with PHP 7+. Your googleMaps doesn't work under 3.5 or PHP 7+. Apparently, there is a library name change that impacts extensions. Do you have an update in the pipeline? If so, when will it be available. We love your googleMaps extensions!]]></description>
+			<dc:creator>Lance Bowman</dc:creator>
+			<pubDate>Thu, 07 Apr 2016 19:24:48 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/joomla-news/joomla-3-4-7-security-update-released.php#comment-1795</guid>
+		</item>
+	</channel>
+</rss>

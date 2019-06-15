@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>231. How to install php gtk2 on windows?</title>
+		<description>Discuss 231. How to install php gtk2 on windows?</description>
+		<link>https://kksou.com/php-gtk2/sample-codes/install-php-gtk2-on-windows.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 09:04:49 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/288.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Frankz says:</title>
+			<link>https://kksou.com/php-gtk2/sample-codes/install-php-gtk2-on-windows.php#comment-1165</link>
+			<description><![CDATA[Thank you very much!]]></description>
+			<dc:creator>Frankz</dc:creator>
+			<pubDate>Sat, 07 Sep 2013 18:42:21 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/sample-codes/install-php-gtk2-on-windows.php#comment-1165</guid>
+		</item>
+		<item>
+			<title>mazzoni bruno says:</title>
+			<link>https://kksou.com/php-gtk2/sample-codes/install-php-gtk2-on-windows.php#comment-562</link>
+			<description><![CDATA[very clear, very useful, very happy :-) :-) :-) :-) :-)]]></description>
+			<dc:creator>mazzoni bruno</dc:creator>
+			<pubDate>Sun, 02 Sep 2012 06:25:29 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/sample-codes/install-php-gtk2-on-windows.php#comment-562</guid>
+		</item>
+	</channel>
+</rss>

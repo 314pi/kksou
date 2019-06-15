@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>New Release - Google Weather Module for Joomla 2.5</title>
+		<description>Discuss New Release - Google Weather Module for Joomla 2.5</description>
+		<link>https://kksou.com/php-gtk2/Joomla-News/new-release-google-weather-module-for-joomla-2-5.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 07:38:32 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2064.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Jayme says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-News/new-release-google-weather-module-for-joomla-2-5.php#comment-964</link>
+			<description><![CDATA[Searched all over for the latest (2.5)version, this is NOT on joomla.org's extension list and it is the only weather module that allows my users to enter in the name or zip of their *destination* by city name/state or just zipcode. No fuss to set up, easy API access, and FREE!? Truly amazing goodness. Might want to put this back where people can find -- and love -- it!]]></description>
+			<dc:creator>Jayme</dc:creator>
+			<pubDate>Tue, 16 Apr 2013 00:47:59 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-News/new-release-google-weather-module-for-joomla-2-5.php#comment-964</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-News/new-release-google-weather-module-for-joomla-2-5.php#comment-553</link>
+			<description><![CDATA[Hi Yvonne, Please refer to the article: The new Google Weather module http://www.kksou.com/php-gtk2/Joomla-News/The-new-Google-Weather-module.php Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 29 Aug 2012 10:37:14 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-News/new-release-google-weather-module-for-joomla-2-5.php#comment-553</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-News/new-release-google-weather-module-for-joomla-2-5.php#comment-552</link>
+			<description><![CDATA[Hi Yvonne, Please refer to the article: http://www.kksou.com/php-gtk2/Joomla-News/Google-has-stopped-its-Google-Weather-API.php It's confirmed that Google has stopped its Google Weather API service entirely since August 7th! Will try to come with some alternative solutions ASAP so that your Google Weather module will continue to work. Will keep all of you posted of the progress, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 29 Aug 2012 06:54:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-News/new-release-google-weather-module-for-joomla-2-5.php#comment-552</guid>
+		</item>
+		<item>
+			<title>Yvonne Hoogers says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-News/new-release-google-weather-module-for-joomla-2-5.php#comment-551</link>
+			<description><![CDATA[I am working with joomla 1.7. The google weather API works fine before. Just on one day I receive a lot of error messages. Is google not supporting the API anymore? Do you have a replacement?]]></description>
+			<dc:creator>Yvonne Hoogers</dc:creator>
+			<pubDate>Wed, 29 Aug 2012 02:33:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-News/new-release-google-weather-module-for-joomla-2-5.php#comment-551</guid>
+		</item>
+		<item>
+			<title>BrentonK says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-News/new-release-google-weather-module-for-joomla-2-5.php#comment-550</link>
+			<description><![CDATA[Looks like this module has been pulled off extensions.joomla.org Can you please update.]]></description>
+			<dc:creator>BrentonK</dc:creator>
+			<pubDate>Wed, 29 Aug 2012 00:22:54 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-News/new-release-google-weather-module-for-joomla-2-5.php#comment-550</guid>
+		</item>
+	</channel>
+</rss>

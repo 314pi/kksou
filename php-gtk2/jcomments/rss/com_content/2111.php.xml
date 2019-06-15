@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>New version of googleMaps that supports the latest Joomla 3.2.2</title>
+		<description>Discuss New version of googleMaps that supports the latest Joomla 3.2.2</description>
+		<link>https://kksou.com/php-gtk2/Joomla-News/new-version-of-googlemaps-that-supports-the-latest-joomla-3-2-2.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:16:22 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2111.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>frankie says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-News/new-version-of-googlemaps-that-supports-the-latest-joomla-3-2-2.php#comment-1699</link>
+			<description><![CDATA[It works great!]]></description>
+			<dc:creator>frankie</dc:creator>
+			<pubDate>Fri, 11 Apr 2014 04:48:25 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-News/new-version-of-googlemaps-that-supports-the-latest-joomla-3-2-2.php#comment-1699</guid>
+		</item>
+		<item>
+			<title>S Morton says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-News/new-version-of-googlemaps-that-supports-the-latest-joomla-3-2-2.php#comment-1286</link>
+			<description><![CDATA[This works very well, but I would really like to use the Google-direction-to-here plugin, which doesn't work with Joomla 3.2. Any idea when (if?) an upgraded version of this will be available?]]></description>
+			<dc:creator>S Morton</dc:creator>
+			<pubDate>Mon, 17 Feb 2014 12:50:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-News/new-version-of-googlemaps-that-supports-the-latest-joomla-3-2-2.php#comment-1286</guid>
+		</item>
+	</channel>
+</rss>

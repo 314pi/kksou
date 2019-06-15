@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>googleMaps module</title>
+		<description>Discuss googleMaps module</description>
+		<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:55:30 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/1284.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>wred says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-1236</link>
+			<description><![CDATA[Are you planing to make plugin to display Google map in any content of site, for example Html-code module ?]]></description>
+			<dc:creator>wred</dc:creator>
+			<pubDate>Thu, 21 Nov 2013 15:28:00 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-1236</guid>
+		</item>
+		<item>
+			<title>Ant says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-690</link>
+			<description><![CDATA[Hi, I had noticed that rokinjectmodule was causing the issue, however it has only occured since I tried Google maps. I have disabled rokinjectmodule as it's not used. Now your extension works perfectly. Thank you for a quick response, and this extension is brilliant. Regards Ant]]></description>
+			<dc:creator>Ant</dc:creator>
+			<pubDate>Thu, 25 Oct 2012 07:46:18 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-690</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-689</link>
+			<description><![CDATA[Hi, As you can see from the error message, the error did not occur in the googleMaps module. The error is from your other module: rokinjectmodule. I'm not sure what rokinjectmodule plugin does. But try switching the order of the 2 plugins and you might make them work. 1) First try order googleMaps plugin before that of rokinjectmodule. e.g. if order of googleMaps plugin is 3. Make rokinjectmodule 4 or larger. Make sure both are not 0. Assign some numbers to them. 2) If (1) still doesn't work, then make rokinjectmodule come before that of googleMaps . Let me know if it works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 25 Oct 2012 07:31:45 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-689</guid>
+		</item>
+		<item>
+			<title>Ant says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-688</link>
+			<description><![CDATA[Hi, I have the plugin working fine inside an article, but the module won't work. I have it setup as described above, the same code in the plugin and module. This is the error I get: "Fatal error: Call to undefined method stdClass::toString() in /homepages/36/d424967738/htdocs/business_sites/han nans/plugins/content/rokinjectmodule/rokinjectmodu le.php on line 32" Any help resolving this? Regards]]></description>
+			<dc:creator>Ant</dc:creator>
+			<pubDate>Thu, 25 Oct 2012 07:26:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-688</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-315</link>
+			<description><![CDATA[Hi, There are too many possibilities. It could be due to the Joomla upgrade. It could be due to the PHP upgrade. It could be due to conflicts with your other plugins and modules. There are just too many variables involved here. Joomla is a very loose framework. So conflicts between plugins, modules and even Joomla templates, are very common. Even worse, it does not have any good debugging tools to help you find out what's the root cause of a problem. So it takes a little time and patience to resolve such issues. As a start, would suggest you try to isolate some variables - finding out what works and what don't works. e.g. If I were you, I will install a fresh joomla somewhere on the server and then install just the googleMaps module and plugins. This will allow me to see if Joomla 1.5.26 + PHP 5.3.3 works well with the plugin + module. If it works, I will keep installing other plugins and modules until I found the 2 plugins/modules/components that do not work together. In any case, you need to do a bit more test and provide more details so that we have more clues to guess where might be the problem. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 30 May 2012 23:45:31 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-315</guid>
+		</item>
+		<item>
+			<title>picturworker says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-314</link>
+			<description><![CDATA[Hi I made a Joomla Upgrade from 1.5.21 to 1.5.26 and a Joomfish from 2.04 to 2.23 and the PHP was upgraded to 5.3.3. Now the MapMod 1.5 do not work anymore. The googleMapPlugins works fine as you can see on http://www.montronix.com/de/kontakt.html The main map should be under the mainnav as modul in a Position. May you have some idea?]]></description>
+			<dc:creator>picturworker</dc:creator>
+			<pubDate>Wed, 30 May 2012 10:08:03 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-314</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-186</link>
+			<description><![CDATA[Hi Renee, I've tested this on my machine running PHP 5.3. It runs ok. Every PHP settings in php.ini is different. What's the error messages that you see on the screen? Also, you mentioned that it might be conflicts with your other plugins, in which case it will be difficult for me to help you here. Conflicts are very common in Joomla, as the Joomla framework is very loose. There are no hard and fast rules to find out where are the conflicts. You have to do a bit of testing on your site (turning on and off the various plugins) to see which are the two conflicting ones. Then you have to decide which one to use, or try other plugins from joomla.org to find two that can work together. The method I used most often whenever there's conflicts is to install the plugin on a fresh copy of Joomla somewhere on my server. This will allow me to see if the plugin works on my machine at all. It's the simplest and surest way to see if it's problem with the plugin or problem with conflicts. By the way, conflicts can also occur with the Joomla templates. So always try running a plugin using the standard Joomla template. If it runs ok, I will switch over to my other Joomla template to see if there's any conflicts. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 27 Mar 2012 17:24:59 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-186</guid>
+		</item>
+		<item>
+			<title>Renee says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-184</link>
+			<description><![CDATA[can you make this plugin compatible with PHP 5.3 functions? I this module with PHP 5.2 on another server, but on my new server it displays errors, problems with other plugins.]]></description>
+			<dc:creator>Renee</dc:creator>
+			<pubDate>Tue, 27 Mar 2012 09:51:37 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-184</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-129</link>
+			<description><![CDATA[The googleMaps module for Joomla 1.6, 1.7 and 2.5 is now available. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 11 Mar 2012 16:07:11 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-129</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-128</link>
+			<description><![CDATA[Hi, I did a view source. Did you see any codes there. 1) Did you install the googleMaps plugin? The module requires the plugin to work. 2) Did you see any messages or any tags on the screen? 3) Can you create a test article somewhere on your server and put the above tags in an article? Let's see if the googleMaps plugin works at all on your server. The article will also allow us to do a view source to gather more clues as to what might be the problem. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 11 Mar 2012 16:03:04 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-128</guid>
+		</item>
+		<item>
+			<title>emy says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-127</link>
+			<description><![CDATA[i have tried th tag {googleMaps lat=4.8284931 long=7.0151522 zoom=8 width=720 height=150} in module but seems not to work please i need you help thanks]]></description>
+			<dc:creator>emy</dc:creator>
+			<pubDate>Sun, 11 Mar 2012 04:33:43 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-127</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-114</link>
+			<description><![CDATA[Hi, Need more details. e.g. - what is the tag that you used? - What did you see on the screen? Did the map appear? Did the input field appear? - Did the plugin work within an article? (the module actually triggers the plugin. So please make sure you have installed the plugin.) - If you can, please email me your URL so that I can do a view source to gather more clues as to what might be the cause. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 05 Mar 2012 16:53:16 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-114</guid>
+		</item>
+		<item>
+			<title>Stephen Hulbert says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-111</link>
+			<description><![CDATA[can i use google map with directions inside this module - i have tried and can't see to get the right code - i want the user to be able to add there address in to get to the specified location...? thanks -steve]]></description>
+			<dc:creator>Stephen Hulbert</dc:creator>
+			<pubDate>Mon, 05 Mar 2012 08:51:13 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-111</guid>
+		</item>
+		<item>
+			<title>maeke says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-58</link>
+			<description><![CDATA[Hi, I have been able to install it. And it works fine. Many thanks.]]></description>
+			<dc:creator>maeke</dc:creator>
+			<pubDate>Fri, 10 Feb 2012 08:25:39 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-58</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-57</link>
+			<description><![CDATA[Hi, Have just emailed you the googleMaps module for Joomla 2.5. Please let me know if it works fine, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 10 Feb 2012 06:38:03 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-57</guid>
+		</item>
+		<item>
+			<title>maeke says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-56</link>
+			<description><![CDATA[Hi, That's great. Thx.]]></description>
+			<dc:creator>maeke</dc:creator>
+			<pubDate>Fri, 10 Feb 2012 03:50:54 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-56</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-55</link>
+			<description><![CDATA[Hi, Will work on it this weekend. Will let you know when it's done, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 09 Feb 2012 18:02:38 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-55</guid>
+		</item>
+		<item>
+			<title>maeke says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-54</link>
+			<description><![CDATA[Hello kksou, Are you planning to make a 2.5 Version of the googleMaps-module ?]]></description>
+			<dc:creator>maeke</dc:creator>
+			<pubDate>Thu, 09 Feb 2012 00:35:13 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php#comment-54</guid>
+		</item>
+	</channel>
+</rss>

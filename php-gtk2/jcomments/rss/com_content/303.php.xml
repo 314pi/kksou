@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>246. How to use GtkSheet - Part 1 - create the spreadsheet?</title>
+		<description>Discuss 246. How to use GtkSheet - Part 1 - create the spreadsheet?</description>
+		<link>https://kksou.com/php-gtk2/sample-codes/use-GtkSheet-Part-1-create-the-spreadsheet.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 08:59:52 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/303.php" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>

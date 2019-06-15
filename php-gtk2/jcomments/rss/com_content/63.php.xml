@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>006. How to place a background image in GtkWindow?</title>
+		<description>Discuss 006. How to place a background image in GtkWindow?</description>
+		<link>https://kksou.com/php-gtk2/sample-codes/place-a-background-image-in-GtkWindow.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:18:46 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/63.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>atmoner says:</title>
+			<link>https://kksou.com/php-gtk2/sample-codes/place-a-background-image-in-GtkWindow.php#comment-734</link>
+			<description><![CDATA[nice code! thx a lot :-*]]></description>
+			<dc:creator>atmoner</dc:creator>
+			<pubDate>Tue, 20 Nov 2012 15:29:03 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/sample-codes/place-a-background-image-in-GtkWindow.php#comment-734</guid>
+		</item>
+		<item>
+			<title>chachkalica says:</title>
+			<link>https://kksou.com/php-gtk2/sample-codes/place-a-background-image-in-GtkWindow.php#comment-105</link>
+			<description><![CDATA[great! tnx! loaded the image from a custom folder e.g. images/ finally I'm getting the hang of php gtk tnx to your tutorials! good job man! :]]]></description>
+			<dc:creator>chachkalica</dc:creator>
+			<pubDate>Fri, 02 Mar 2012 03:57:42 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/sample-codes/place-a-background-image-in-GtkWindow.php#comment-105</guid>
+		</item>
+		<item>
+			<title>Kamil says:</title>
+			<link>https://kksou.com/php-gtk2/sample-codes/place-a-background-image-in-GtkWindow.php#comment-12</link>
+			<description><![CDATA[It's very helpfull :) Thank you :)]]></description>
+			<dc:creator>Kamil</dc:creator>
+			<pubDate>Sat, 21 Jan 2012 15:15:53 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/sample-codes/place-a-background-image-in-GtkWindow.php#comment-12</guid>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Google Weather module - FAQs, Troubleshoot and Tips & Techniques</title>
+		<description>Discuss Google Weather module - FAQs, Troubleshoot and Tips & Techniques</description>
+		<link>https://kksou.com/php-gtk2/Joomla-FAQs/Google-Weather-module-FAQs-Troubleshoot-and-Tips-Techniques.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:20:47 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/1772.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Tomochevski says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/Google-Weather-module-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1261</link>
+			<description><![CDATA[Hi Sorry for the dumb question but where do I get the extensions that remove the linkback Thanks Great Work!]]></description>
+			<dc:creator>Tomochevski</dc:creator>
+			<pubDate>Thu, 02 Jan 2014 06:36:40 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/Google-Weather-module-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1261</guid>
+		</item>
+		<item>
+			<title>OlafD says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/Google-Weather-module-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-71</link>
+			<description><![CDATA[Hi, I have installed the kksou Google Weather Module. I have activated the cURL library. phpinfo output is: cURL support enabled cURL Information 7.21.7 I'm running joomla 2.5 an my own XAMPP (v 1.7.7) environment (php v5.3.8). kksou module is enabled and a possition has been assigned to the module. But unfortunately i'm getting the following error message when calling the corresponding web page: Fatal error: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\joomla25\modules\mod_kksouGoogleWe ather\mod_kksouGoogleWeather_libclass.php on line 144 Thanks in advance for your help!!!!]]></description>
+			<dc:creator>OlafD</dc:creator>
+			<pubDate>Tue, 21 Feb 2012 02:56:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/Google-Weather-module-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-71</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/Google-Weather-module-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-11</link>
+			<description><![CDATA[Hi Edward, If the city is Rome, it uses the following to retrieve the weather: http://www.google.com/ig/api?weather=rome The Google Weather server sometimes go off-service without any notice. So try it again in a couple of hours. You can use the above URL to check if the service is up and running. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 17 Jan 2012 07:33:22 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/Google-Weather-module-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-11</guid>
+		</item>
+		<item>
+			<title>edwsin says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/Google-Weather-module-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-10</link>
+			<description><![CDATA[Hi there, I have installed this component, and its a great component. But somehow i have a problem, the wheter is not showing the content. It seems it cannot connect to the server. Could you tell me where is this component pointing to..? Best regards, Edward]]></description>
+			<dc:creator>edwsin</dc:creator>
+			<pubDate>Tue, 17 Jan 2012 01:47:22 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/Google-Weather-module-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-10</guid>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,1671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Joomla Gadgets</title>
+		<description><![CDATA[The Joy of Sharing and Learning Together]]></description>
+		<link>https://kksou.com/php-gtk2/category/Joomla-Gadgets/</link>
+		<lastBuildDate>Fri, 14 Jun 2019 04:38:06 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="https://kksou.com/php-gtk2/category/Joomla-Gadgets/feed/rss.php"/>
+		<language>en-gb</language>
+		<managingEditor>admin@kksou.com (kksou)</managingEditor>
+		<item>
+			<title>googleMaps plugin</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php</guid>
+			<description><![CDATA[<?php require_once("/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php");?>
+<?php require_once("/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php");?>
+
+<?php download_button('googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php');?>
+<script type="text/javascript">var j10=90; var j15=91; var j16=107; var j17=109; var j25=130; var j30=161;</script>
+<script type="text/javascript" src="https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2_30.js"></script>
+
+<a id="intro"></a>
+<p>This plugin allows you to include one or more google maps right inside your content item or article.</p>
+
+{Accordion_Menu_Apple_style 100 float:right10}
+General
+- <a href="https://kksou.com/php-gtk2/#intro">Introduction</a>
+- <a href="https://kksou.com/php-gtk2/#geocoder">Geocoding your address</a>
+- <a href="https://kksou.com/php-gtk2/#demo">Demo</a>
+- <a href="https://kksou.com/php-gtk2/#download">Download</a>
+- <a href="https://kksou.com/php-gtk2/#latest">Latest Version</a>
+Documentation
+- <a href="https://kksou.com/php-gtk2/#how_to_use">How to use</a>
+- <a href="https://kksou.com/php-gtk2/#xhtml">XHTML 1.0</a>
+- <a href="https://kksou.com/php-gtk2/#kml">KML Files</a>
+- <a href="https://kksou.com/php-gtk2/#history">Version History</a>
+Related Plugins
+- <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-module.php" target=_blank>googleMaps module</a>
+- <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php" target=_blank>googleDir plugin</a>
+- <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php" target=_blank>googleDir To Here plugin</a>
+User Reviews
+- <a href="https://kksou.com/php-gtk2/#article_comments">kksou.com</a>
+- <a href="http://extensions.joomla.org/extensions/photos-&-images/maps/8213/details#action" target=_blank>extensions.joomla.org</a>
+{/Accordion_Menu_Apple_style}
+<p>This is a super light-weight plugin that uses the latest Google Maps API.</p>
+
+<p>If you need to display just a simple map showing the address of your company, this is the plugin.</p>
+
+<p><b>Note:</b> If you want to use this content plugin inside a Custom HTML Modules, please refer to this article: <a href="https://kksou.com/php-gtk2//php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php">How to Run Joomla Content Plugins in Custom HTML Modules</a>.</p>
+
+<a id="features">
+<h3>Unique Features</h3></a>
+<ul>
+<li>Uses the latest Google Maps API v3</li>
+<li>You can embed <b style="background:#ffff00">multiple Google Maps</b> within an article</li>
+<li>Each Google Map can be of different size, zoom level, map control and map type</li>
+<li>Support for kml files</li>
+<li>With built-in geocoder! i.e. you can specify using standard address instead of longitude and latitude</li>
+<li>Built-in <b style="background:#ffff00">street view</b>!</li>
+<li>Support for many native languages e.g. Italian, Russian, French</li>
+<li>Available for <b style="background:#ffff00">all Joomla versions</b>: Joomla 1.0.x, native 1.5.x, 1.6.x, 1.7.x, 2.5.x and 3.0.x!</li><p></p>
+</ul>
+
+
+<h3>User Review</h3>
+
+<p>This plugin is listed in the The Joomla! Extensions Directory: <a href="https://extensions.joomla.org/extensions/extension/maps-a-weather/maps-a-locations/googlemaps-by-kksou/">googleMaps by kksou</a></p>
+
+<p>If you like this plugin, please post a review at the <a href="https://extensions.joomla.org/extensions/extension/maps-a-weather/maps-a-locations/googlemaps-by-kksou/">Joomla! Extensions Directory</a></p>
+
+
+<?php
+/*
+<a id="api"></a>
+<h3>The Google API Key</h3>
+
+<p>The plugin makes use of the <a href="http://code.google.com/apis/maps/">Google Maps API</a> provided by Google. As such, please make sure you have the <a href="http://code.google.com/apis/maps/signup.html">Google Maps API</a>. If you don't have the key, you can <a href="http://code.google.com/apis/maps/signup.html">sign up for free here</a>.</p>
+*/
+?>
+
+<div class="alert alert-info" id="latest"><h4>Latest Version</h4>
+
+<p>v3.0.30 (for Joomla 3.0 and above)<br />
+Released Jul 20, 2017</p>
+<p></p>
+<ul type=disc>
+<li>Added support for responsive design for googleDirections and googleDirections_tohere</li>
+<li>Added support for PHP 7</li>
+</ul>
+<p></p>
+
+<p>v3.0.28 (for Joomla 3.0 and above)<br />
+Released Jul 8, 2017</p>
+<p></p>
+<ul type=disc>
+<li>Added support for Joomla Update System</li>
+<li>Tested to work with Joomla 3.7.3</li>
+</ul>
+</div>
+
+<a id="geocoder">
+<h3>Geocoding your address</h3></a>
+
+<?php /* <p>The Google Maps require you to input the geographic coordinates (i.e. the latitude and longitude) of your address.</p> 
+
+<p>If you do not know the latitude and longitude of your address, you can them find out here: <a href="http://www.kksou.com/php-gtk2/google-geocoder-v2/">Free Geocoder v2.0 by kksou</a>.</p> */ ?>
+
+<p>If you need to know the latitude and longitude of your address, you can find out here: <a href="http://www.kksou.com/php-gtk2/google-geocoder-v2/">Free Geocoder v2.0 by kksou</a>.</p>
+
+<a id="module">
+<h3>googleMaps module</h3></a>
+<p>This plugin is for including Google Maps inside your article.</p>
+
+<p>If you wish to place Google Maps in a module position, please use the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-module.php">googleMaps module</a>.</p>
+
+<a id="googleDir">
+<h3>googleDirections plugin</h3></a>
+<p>This plugin is for including Google Maps inside your article.</p>
+<p>If you want to display Google Maps + driving/walking directions, use the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php">googleDirections plugin</a>.</p>
+
+<a id="demo">
+<h3>Live Demo</h3></a>
+
+<p>Below you can see a live demo of the plugin. Note that:</p>
+
+<ul>
+<li>You can embed more than one Google Maps within an article.</li>
+<li>Each Google Map can be of different size and zoom level.</li>
+</ul>
+
+<table border=0>
+<tr valign=top><td>
+{googleMaps label="Google Inc.<br />1600 Amphitheatre Parkway.<br />Mountain View, CA 94043" zoom=15 lat=37.4219720 long=-122.0841430 width=480 height=360}</td>
+<td>
+Google Inc.<br />
+1600 Amphitheatre Parkway<br />
+Mountain View, CA 94043<br />
+Phone: +1 650-253-0000<br />
+Fax: +1 650-253-0001<br />
+(zoom level = 15)
+</td>
+</tr></table>
+<p></p><br />
+
+<table border=0>
+<tr valign=top><td>
+Yahoo! Inc.<br />
+701 First Avenue<br />
+Sunnyvale, CA 94089<br />
+Tel: (408) 349-3300<br />
+Fax: (408) 349-3301<br />
+(zoom level = 14)<br />
+control = GSmallZoomControl3D<br />
+maptype = G_NORMAL_MAP<br />
+<br />
+{googleMaps lat=37.4163228 long=-122.0250403 label="Yahoo! Inc.~701 First Avenue~Sunnyvale, CA 94089" width=300 height=300 zoom=14}
+</td><td>
+Yahoo! Inc.<br />
+701 First Avenue<br />
+Sunnyvale, CA 94089<br />
+Tel: (408) 349-3300<br />
+Fax: (408) 349-3301<br />
+(zoom level = 14)<br />
+control = GLargeMapControl3D<br />
+maptype = G_SATELLITE_MAP<br />
+<br />
+{googleMaps lat=37.4163228 long=-122.0250403 label="Yahoo! Inc.~701 First Avenue~Sunnyvale, CA 94089" width=300 height=300 zoom=14 control=GLargeMapControl3D maptype=G_SATELLITE_MAP}
+</td></tr></table>
+
+<table border=0>
+<tr valign=top><td>
+Amazon.com, Inc.<br />
+1200 12th Avenue South, Suite 1200<br />
+Seattle, Washington 98144-2734<br />
+Tel: (206) 266-1000<br />
+(zoom level = 12)<br />
+control = GSmallMapControl<br />
+maptype = G_NORMAL_MAP<br />
+<br />
+{googleMaps lat=47.5923005 long=-122.3172946 zoom=12 label="Amazon.com, Inc.~1200 12th Avenue South, Suite 1200~Seattle, Washington 98144-2734" width=300 height=300 control=GSmallMapControl maptype=G_NORMAL_MAP}
+</td><td>
+Amazon.com, Inc.<br />
+1200 12th Avenue South, Suite 1200<br />
+Seattle, Washington 98144-2734<br />
+Tel: (206) 266-1000<br />
+(zoom level = 12)<br />
+control = GMapTypeControl<br />
+maptype = G_HYBRID_MAP<br />
+<br />
+{googleMaps lat=47.5923005 long=-122.3172946 zoom=12 label="Amazon.com, Inc.~1200 12th Avenue South, Suite 1200~Seattle, Washington 98144-2734" width=300 height=300 control=GMapTypeControl maptype=G_HYBRID_MAP}
+</td></tr></table>
+
+<a id="kml-demo"></a>
+<h3>Demo - using KML Files</h3>
+<p>Yes, you can also use kml files directly with the plugin.</p>
+<p>The following sample shows the blue, red and green polygons superimposed on the Google Maps.</p>
+<?php #kml=http://econym.googlepages.com/lancashire.kml ?>
+{googleMaps lat=53.763325 long=-2.579041 zoom=8 width=100% height=480 kml=http://www.kksou.com/php-gtk2/gmap/test/KML_Samples12.kml}
+<p>The above sample code is produced by using the following syntax:</p>
+<pre>&#123;googleMaps lat=53.763325 long=-2.579041 zoom=8 width=100% height=480 <br />kml=http://www.kksou.com/php-gtk2/gmap/test/KML_Samples12.kml&#125;
+</pre>
+
+<a id="how_to_use">
+<h3>How to use</h3></a>
+
+<?php sponsor('googleMaps plugin', '91', 'plugin');?>
+
+<?php #include_content_item 1557 ?>
+
+<span class="info">
+<a id="tutorials"></a>
+<b>Tutorials</b><p></p>
+<?php
+require_once('/home/fann/kksou.com/php-gtk2/util/googleMaps_tutorials.php');
+display_googleMaps_tutorials('',0);
+?>
+</span>
+<p></p>
+
+<ol>
+
+<?php /*
+<li><b>Very Important!!!</b> Before you can make use of the plugin, please enter the Google Map API Key in the Parameters page in the Plugin Manager.</li><p></p> */ ?>
+
+<li>To insert a Google Map with geographical coordinates (i.e. latitude and longitude), use the following syntax:</li>
+<pre>
+&#123;googleMaps lat=37.4219720 long=-122.0841430&#125;
+</pre>
+<?php /* <a href="http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#addr">[Live Example]</a><p></p>*/ ?>
+<?php show_googleMaps_sample('googleMaps', 1, 1, 'addr');?>
+
+<?php 
+#display_google_ads32('joomla - middle1 468x60', 0, 20, 0, 20);
+#<br clear=all>
+#display_google_ads32('joomla - how to use 336x280', 0, 20, 0, 20, 1, 1);
+?>
+
+<a id="addr"></a>
+<li>To insert a Google Map using address, use the following syntax.</li>
+<ul type="disc">
+<li>Please enclose the address in double quotes, not single quote.</li>
+<li>Please specify the full address, including the country name if the address is not in US.</li>
+<li> Click here for <a href="http://gmaps-samples.googlecode.com/svn/trunk/mapcoverage_filtered.html">full list of supported countries</a></li>
+</ul>
+<pre>
+&#123;googleMaps addr="1600 Amphitheatre Parkway, Mountain View CA 94043"&#125;
+</pre>
+<?php show_googleMaps_sample('googleMaps', 1, 1, 'addr');?>
+
+<li>You can add a label to be displayed when the user clicks on the red marker. Please make sure you enclose the label in double quotes. For new lines, please use ~.</li>
+<pre>
+&#123;googleMaps lat=37.4219720 long=-122.0841430 label="Google Inc.~<br />1600 Amphitheatre Parkway.~Mountain View, CA 94043"&#125;
+</pre>
+<?php show_googleMaps_sample('googleMaps', 1, 1, 'label');?>
+
+<li>To specify the width and height of the map, use the following syntax:</li>
+<pre>
+&#123;googleMaps lat=37.4219720 long=-122.0841430 label="Google Inc.~<br />1600 Amphitheatre Parkway.&lt;br /&gt;Mountain View, CA 94043"
+width=480 height=360&#125;
+</pre>
+<?php show_googleMaps_sample('googleMaps', 1, 1, 'width');?>
+
+<li>To specify the zoom level of the map, use the following syntax:</li>
+<pre>
+&#123;googleMaps lat=37.4219720 long=-122.0841430 label="Google Inc.~<br />1600 Amphitheatre Parkway.~Mountain View, CA 94043"
+width=480 height=360 zoom=12&#125;
+</pre>
+<?php show_googleMaps_sample('googleMaps', 2, 1, 'demo');?>
+
+<li><a id="kml"><b>KML Files</b></a>: </a>To use kml files, use the following syntax:</li>
+<pre>&#123;googleMaps lat=53.763325 long=-2.579041 zoom=8 width=480 height=480 <br />kml=http://www.kksou.com/gmap/test/KML_Samples12.kml&#125;
+</pre>
+<p>Note that you still need to specify the latitude and longitude of the center of the map.</p>
+<?php show_googleMaps_sample('googleMaps', 5, 1, 'demo');?>
+
+<?php #display_google_ads32('joomla - middle2 468x60', 0, 20, 0, 20, 1, 1);?>
+
+<li><a id="marker"><b>Hiding the Red Marker</b></a>: By default, a red marker will appear at the point where you specify the center of the map. If you are displaying all markers within your KML files, you can hide the red marker by using the parameter <code style="background:#ffff00">marker=0</code>.</li><p></p>
+
+<?php show_googleMaps_sample('googleMaps', 5, 1, 'demo');?>
+
+<li><a id="control"><b>Map Control</b></a>: You can use the various map control as defined in <a href="http://code.google.com/apis/maps/documentation/controls.html#Controls_overview">Goolge Maps Controls Overview</a>. For example, to use the large pan/zoom control as now used on Google Maps, use the following syntax:</li><p></p>
+
+<pre>
+&#123;googleMaps lat=37.4219720 long=-122.0841430 <b style="background:#ffff00">control=GLargeMapControl3D</b>&#125;
+</pre>
+
+<p>You can add multiple controls by delimiting with '|' as follows:
+
+<pre>
+&#123;googleMaps lat=37.4219720 long=-122.0841430 
+control=<b style="background:#ffff00">GLargeMapControl3D|GMapTypeControl</b>&#125;
+</pre>
+
+<p>Other common map controls are as follows:</p>
+<ul type=disc>
+    <li><code>GLargeMapControl3D</code> - a large pan/zoom control as now used on Google Maps. Appears in the top left corner of the map by default.</li>
+    <li><code>GLargeMapControl</code> - a simpler large pan/zoom control. Appears in the top left corner of the map by default.</li>
+    <li><code>GSmallMapControl</code> - a smaller pan/zoom control. Appears in the top left corner of the map by default.</li>
+    <li><code>GSmallZoomControl3D</code> - a small zoom control (with no panning controls) as now used on Google Maps.</li>
+    <li><code>GSmallZoomControl</code> - a small zoom control (no panning controls) used in the small map blowup windows used to display driving directions steps on Google Maps.</li>
+    <li><code>GScaleControl</code> - a map scale</li>
+    <li><code>GMapTypeControl</code> - buttons that let the user toggle between map types (such as Map and Satellite)</li>
+    <li><code>GHierarchicalMapTypeControl</code> - a selection of nested buttons and menu items for placing many map type selectors.</li>
+    <li><code>GOverviewMapControl</code> - a collapsible overview map in the corner of the screen</li>
+</ul>
+<p>For complete list, please refer to <a href="http://code.google.com/apis/maps/documentation/controls.html#Controls_overview">Goolge Maps Controls Overview</a>.</p>
+
+
+
+<li><a id="maptype"><b>Map Type</b></a>: You can use the various map type as defined in <a href="http://code.google.com/apis/maps/documentation/javascript/maptypes.html#MapTypes">Common Map Types</a>.</li>
+
+<p>For example, to display a Google Earth satellite image, use the following syntax:</li><p></p>
+
+<pre>
+&#123;googleMaps lat=37.4219720 long=-122.0841430 <b style="background:#ffff00">maptype=SATELLITE</b>&#125; 
+</pre>
+<?php show_googleMaps_sample('googleMaps', 4, 1, 'demo');?>
+
+<p>Other common map types are as follows:</p>
+
+<ul type=disc>
+<li><code>ROADMAP</code> displays the default road map view</code>
+<li><code>SATELLITE</code> displays Google Earth satellite images</code>
+<li><code>HYBRID</code> displays a mixture of normal and satellite views</code>
+<li><code>TERRAIN</code> displays a physical map based on terrain information</code>
+</ul>
+
+<p>For complete list, please refer to <a href="http://code.google.com/apis/maps/documentation/javascript/maptypes.html#MapTypes">Common Map Types</a>.</p>
+
+<li><a id="lang"><b>Language option</b></a>. The Google Maps API uses the browser's preferred language setting when displaying textual information such as the names for controls, copyright notices, and driving directions. If you wish to change the Maps API to ignore the browser's language setting and force it to display information in a particular language, you can add an optional <code>lang</code> parameter.</li><p></p>
+
+<p>e.g. to display the Goolge Maps control in French, use:</p>
+
+<pre>
+&#123;googleMaps lat=37.4219720 long=-122.0841430 <b style="background:#ffff00">lang=fr</b>&#125;
+</pre>
+
+<p>To display the Goolge Maps control in Japanese, use:</p>
+
+<pre>
+&#123;googleMaps lat=37.4219720 long=-122.0841430 <b style="background:#ffff00">lang=ja</b>&#125;
+</pre>
+<?php show_googleMaps_sample('googleMaps', 3, 1, 'demo');?>
+
+<p>You can look up the entire list of <a href="http://spreadsheets.google.com/pub?key=p9pdwsai2hDMsLkXsoM05KQ&gid=1">supported languages here</a>.</p>
+
+<?php /*<li>Only the <b>lat</b> and <b>long</b> are compulsory. The rest of the parameters are optional.</li><p></p>*/ ?>
+
+<li><a id="overview_map"><b>Overview Map</b></a>. By default, an overview map will be added to the bottom right corner of the map. To turn it off use <code style="background:#ffff00">addoverview=0</code>.<p></p>
+
+<li><a id="google_bar"><b>Google Bar</b></a>. By default, a Google Bar will be displayed that provides local search capabilities within Maps API applications, allowing users to search locations for local listings. For example, the user can search for restaurants or the nearest bookstores around the place. To turn it off use <code style="background:#ffff00">addgoogle=0</code>.<p></p>
+
+<li><a id="map_scale"><b>Map Scale</b></a>. To add a a control that displays the map scale, use <code style="background:#ffff00">addscale=1</code>.<p></p>
+
+</ol>
+
+<?php #echo burstmedia('300x250A');?>
+<?php #echo burstmedia_medium_rectangle_300_250();?>
+
+<a id="xhtml">
+<h3>Making the plugin W3C XHTML 1.0 Transitional</h3></a>
+
+<p>To make the your page containing the googleMaps plugin W3C XHTML 1.0 Transitional, here are the steps:</p>
+<ol>
+<li>Install googleMaps plugin v1.5.11 and above.</li><p></p>
+<li>Run your page through the <a href="http://validator.w3.org/">HTML validator</a>. If it does not validate, please do step 3.</li><p></p>
+<li>In Joomla, the standard editor usually puts a pair of &lt;p&gt;...&lt;/p&gt; around each paragraph. This will cause a problem because the following is not valid in XHTML 1.0 Transitional (you cannot have a &lt;div&gt; inside a &lt;p&gt; tag):</li><p></p>
+<pre>&lt;p&gt;
+...
+&lt;div&gt;
+... HTML codes that inserts the google map
+&lt;/div&gt;
+...
+&lt;/p&gt;
+</pre>
+
+<p>To work around this, please add a <code style="background:#ffff00">add_p=1</code> in your googleMaps tags as shown below:
+<pre>
+&#123;googleMaps lat=37.4219720 long=-122.0841430 label="Google Inc.~
+1600 Amphitheatre Parkway.<br />Mountain View, CA 94043"
+width=480 height=360 <b style="background:#ffff00">add_p=1</b>&#125;
+</pre>
+
+<p>What this does is that it adds another pair of &lt;/p&gt;...&lt;p&gt; just outside the pair of &lt;div&gt;:
+
+<pre>&lt;p&gt;
+...
+<span style="background:#ffff00">&lt;/p&gt;</span>
+&lt;div&gt;
+... HTML codes that inserts the google map
+&lt;/div&gt;
+<span style="background:#ffff00">&lt;p&gt;</span>
+...
+&lt;/p&gt;
+</pre>
+
+</ol>
+
+<a id="kml2">
+<h3>Advanced use of googleMaps plugin</h3></a>
+
+<ol>
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Samples/Use-KML-file-to-place-multiple-markers-on-Google-Maps.php">How to display multiple markers in Google Maps using KLM file?</a><p></p>
+
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Samples/How-to-display-multiple-markers-in-different-colors-in-Google-Maps-using-KML-file.php">How to display multiple markers in different colors in Google Maps using KML file?</a><p></p>
+
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Samples/How-to-place-numbered-markers-in-Google-Maps-using-KML-file.php">How to place numbered markers in Google Maps using KML file?</a><p></p>
+
+</ol>
+]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Gadgets</category>
+			<pubDate>Tue, 21 Apr 2009 06:17:38 +0000</pubDate>
+		</item>
+		<item>
+			<title>Google Currency Converter - AJAX version</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php</guid>
+			<description><![CDATA[<?php require_once("/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php");?>
+<?php require_once("/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php");?>
+
+<script type="text/javascript">var j10=54; var j15=55; var j16=124; var j17=125; var j25=134;</script>
+<script type="text/javascript" src="https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2_25.js"></script>
+<?php 
+/* 
+<script type="text/javascript">prepareLinks();</script> 
+*/ 
+?>
+<a id="intro"></a>
+<p>This module allows you to add the Google Currency Converter in a module position.</p>
+
+{Accordion_Menu_Apple_style 100 float:right10}
+General
+- <a href="https://kksou.com/php-gtk2/#intro">Introduction</a>
+- <a href="https://kksou.com/php-gtk2/#demo">Demo</a>
+- <a href="https://kksou.com/php-gtk2/#features">Unique Features</a>
+<a href="https://kksou.com/php-gtk2/#download">Download</a>
+- <a href="https://kksou.com/php-gtk2/#download">Download</a>
+- <a href="https://kksou.com/php-gtk2/#latest">Latest Version</a>
+Documentation
+- <a href="https://kksou.com/php-gtk2/#install">How to install</a>
+- <a href="https://kksou.com/php-gtk2/#config">Parameters</a>
+- <a href="https://kksou.com/php-gtk2/#css">Styling the Module using CSS</a>
+- <a href="https://kksou.com/php-gtk2/#history">Version History</a>
+- <a href="https://kksou.com/php-gtk2/#include-in-content-item">Including this module in Content Item or Article</a>
+User Reviews
+- <a href="https://kksou.com/php-gtk2/#article_comments">kksou.com</a>
+- <a href="http://extensions.joomla.org/extensions/5795/details#action" target=_blank>extensions.joomla.org</a>
+{/Accordion_Menu_Apple_style}
+
+<p>The module makes use of the <a href="http://finance.google.com/finance?q=CURRENCY%3AUSD">Currency Converter from Google Finance</a>. (Scroll to the bottom right and you'll see the Currency Converter.)</p>
+
+<br clear=all>
+<?php #joomla_toc(array('yahoo-finance/Prefer Yahoo Finance over Google?', 'vip', 'latest', 'demo', 'features', 'include-in-content-item', 'download', 'config', 'css', 'user_reviews_5795', 'article_comments'));?>
+
+<?php sponsor('Google Currency Converter - AJAX version', '55', 'module');?>
+<a id="features">
+<h3>Unique Features</h3></a>
+<ul>
+<li>Performs currency conversion by connecting in <b>real-time</b> at the backend to the <a href="http://finance.google.com/finance?q=CURRENCY%3AUSD">Currency Converter from Google Finance</a>. So you get the most up-to-date currency rate as provided by Google Finance.</li><p></p>
+<li>Uses <b>AJAX</b> to display the result - no reloading of pages required!</li><p></p>
+<li>Full <b>CSS</b> support! This means that you can set the font family, font size, foreground and background color of the input field, submit button, etc.</li><p></p>
+<li>The module can be included in a content item! (see below for details)</li><p></p>
+<li>Available for all Joomla versions: Joomla 1.0.x, native 1.5.x, 1.6.x, 1.7.x and 2.5.x!</li><p></p>
+</ul>
+
+<a id="all">
+<h3>Complete list of Currencies supported by Google</h3></a>
+
+<p><b>Note:</b> If your currency is not listed below, you may want to try the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Currency-Converter-AJAX-version.php">Yahoo Currency Converter</a> which provides <b style="background:#ffff00">62 more</b> currencies than Google. View the <a href="http://www.kksou.com/php-gtk2/Joomla-News/Yahoo-Currency-Converter-62-more-currencies-than-the-Google-Currency-Converter.php#yahoo">additional currencies provided by Yahoo</a>.</p>
+
+<ol>
+<li>AED - United Arab Emirates Dirham (AED)</li>
+<li>ANG - Netherlands Antillean Guilder (ANG)</li>
+<li>ARS - Argentine Peso (ARS)</li>
+<li>AUD - Australian Dollar (AUD)</li>
+<li>BDT - Bangladeshi Taka (BDT)</li>
+<li>BGN - Bulgarian Lev (BGN)</li>
+<li>BHD - Bahraini Dinar (BHD)</li>
+<li>BND - Brunei Dollar (BND)</li>
+<li>BOB - Bolivian Boliviano (BOB)</li>
+<li>BRL - Brazilian Real (BRL)</li>
+<li>BWP - Botswanan Pula (BWP)</li>
+<li>CAD - Canadian Dollar (CAD)</li>
+<li>CHF - Swiss Franc (CHF)</li>
+<li>CLP - Chilean Peso (CLP)</li>
+<li>CNY - Chinese Yuan (CNY)</li>
+<li>COP - Colombian Peso (COP)</li>
+<li>CRC - Costa Rican Colon (CRC)</li>
+<li>CZK - Czech Republic Koruna (CZK)</li>
+<li>DKK - Danish Krone (DKK)</li>
+<li>DOP - Dominican Peso (DOP)</li>
+<li>DZD - Algerian Dinar (DZD)</li>
+<li>EEK - Estonian Kroon (EEK)</li>
+<li>EGP - Egyptian Pound (EGP)</li>
+<li>EUR - Euro (EUR)</li>
+<li>FJD - Fijian Dollar (FJD)</li>
+<li>GBP - British Pound Sterling (GBP)</li>
+<li>HKD - Hong Kong Dollar (HKD)</li>
+<li>HNL - Honduran Lempira (HNL)</li>
+<li>HRK - Croatian Kuna (HRK)</li>
+<li>HUF - Hungarian Forint (HUF)</li>
+<?php #echo burstmedia_medium_rectangle_300_250();?>
+<li>IDR - Indonesian Rupiah (IDR)</li>
+<li>ILS - Israeli New Sheqel (ILS)</li>
+<li>INR - Indian Rupee (INR)</li>
+<li>JMD - Jamaican Dollar (JMD)</li>
+<li>JOD - Jordanian Dinar (JOD)</li>
+<li>JPY - Japanese Yen (JPY)</li>
+<li>KES - Kenyan Shilling (KES)</li>
+<li>KRW - South Korean Won (KRW)</li>
+<li>KWD - Kuwaiti Dinar (KWD)</li>
+<li>KYD - Cayman Islands Dollar (KYD)</li>
+<li>KZT - Kazakhstani Tenge (KZT)</li>
+<li>LBP - Lebanese Pound (LBP)</li>
+<li>LKR - Sri Lankan Rupee (LKR)</li>
+<li>LTL - Lithuanian Litas (LTL)</li>
+<li>LVL - Latvian Lats (LVL)</li>
+<li>MAD - Moroccan Dirham (MAD)</li>
+<li>MDL - Moldovan Leu (MDL)</li>
+<li>MKD - Macedonian Denar (MKD)</li>
+<li>MUR - Mauritian Rupee (MUR)</li>
+<li>MVR - Maldivian Rufiyaa (MVR)</li>
+<li>MXN - Mexican Peso (MXN)</li>
+<li>MYR - Malaysian Ringgit (MYR)</li>
+<li>NAD - Namibian Dollar (NAD)</li>
+<li>NGN - Nigerian Naira (NGN)</li>
+<li>NIO - Nicaraguan Cordoba (NIO)</li>
+<li>NOK - Norwegian Krone (NOK)</li>
+<li>NPR - Nepalese Rupee (NPR)</li>
+<li>NZD - New Zealand Dollar (NZD)</li>
+<li>OMR - Omani Rial (OMR)</li>
+<li>PEN - Peruvian Nuevo Sol (PEN)</li>
+<li>PGK - Papua New Guinean Kina (PGK)</li>
+<li>PHP - Philippine Peso (PHP)</li>
+<li>PKR - Pakistani Rupee (PKR)</li>
+<li>PLN - Polish Zloty (PLN)</li>
+<li>PYG - Paraguayan Guarani (PYG)</li>
+<li>QAR - Qatari Rial (QAR)</li>
+<li>RON - Romanian Leu (RON)</li>
+<li>RSD - Serbian Dinar (RSD)</li>
+<li>RUB - Russian Ruble (RUB)</li>
+<li>SAR - Saudi Riyal (SAR)</li>
+<li>SCR - Seychellois Rupee (SCR)</li>
+<li>SEK - Swedish Krona (SEK)</li>
+<li>SGD - Singapore Dollar (SGD)</li>
+<li>SKK - Slovak Koruna (SKK)</li>
+<li>SLL - Sierra Leonean Leone (SLL)</li>
+<li>SVC - Salvadoran Colon (SVC)</li>
+<li>THB - Thai Baht (THB)</li>
+<li>TND - Tunisian Dinar (TND)</li>
+<li>TRY - Turkish Lira (TRY)</li>
+<li>TTD - Trinidad and Tobago Dollar (TTD)</li>
+<li>TWD - New Taiwan Dollar (TWD)</li>
+<li>TZS - Tanzanian Shilling (TZS)</li>
+<li>UAH - Ukrainian Hryvnia (UAH)</li>
+<li>UGX - Ugandan Shilling (UGX)</li>
+<li>USD - US Dollar (USD)</li>
+<li>UYU - Uruguayan Peso (UYU)</li>
+<li>UZS - Uzbekistan Som (UZS)</li>
+<li>VEF - Venezuelan Bolivar (VEF)</li>
+<li>VND - Vietnamese Dong (VND)</li>
+<li>XOF - CFA Franc BCEAO (XOF)</li>
+<li>YER - Yemeni Rial (YER)</li>
+<li>ZAR - South African Rand (ZAR)</li>
+<li>ZMK - Zambian Kwacha (ZMK)</li>
+</ol>
+
+<p>Note that Google did not release any API for the Google Currency Converter (There are some APIs for Google Finance, but not for the Google Currency Converter).</p>
+
+<div class="alert alert-info" id="latest"><h4>Latest Version</h4>
+<p>v1.0.9 (for Joomla 1.0), v1.5.9 (for Joomla 1.5), v1.6.9 (for Joomla 1.6), v1.7.9 (for Joomla 1.7), v2.5.9 (for Joomla 2.5)<br>
+Released Apr 6, 2012<br></p>
+<p>Thanks to <a href="http://www.kksou.com/php-gtk2/index.php?option=com_fireboard&func=view&catid=27&id=5209&limit=5&limitstart=0#5209">Pongdej</a>, the latest version can now handle the following 2 cases:</p>
+<ul>
+<li>25,000 will now be correctly handled as 25000</li>
+<li>Any empty spaces after a number will be automatically trimmed and handled correctly</li>
+</ul>
+</div>
+
+<?php /*
+<a id="vip">
+<h3>Important</h3></a>
+
+<p>I've implemented the Google Currency Converter Mashup with the use of PHP's <a href="http://www.php.net/manual/en/curl.setup.php">cURL library</a>. So please <span style="background:#ffff00">make sure your PHP has the cURL library</span> installed in order to use this module.</p>
+
+<p>For those interested, the module uses cURL at the backend to convert the currency using the Google Currency Converter. The result is then passed back to the client (i.e. the browser) using AJAX. Since AJAX is used, no reloading of pages is required when the result is displayed.</p>
+*/
+?>
+
+<a id="demo">
+<h3>Live Demo</h3></a>
+<p>There are four demos available:</p>
+<ul>
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Wikipedia-Search/">Google Currency Converter as module</a>. It's the first module on the left.</li><p></p>
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-samples/Google-Currency-Converter-in-content-item-sample-1.php">Google Currency Converter in content item - sample 1</a>: using the default style with minimum width.</li><p></p>
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-samples/Google-Currency-Converter-in-content-item-sample-2.php">Google Currency Converter in content item - sample 2</a>: using the same style as the <a href="http://finance.google.com/finance?q=CURRENCY%3AUSD">Google Finance</a>.</li><p></p>
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-samples/Google-Currency-Converter-in-content-item-sample-3.php">Google Currency Converter in content item - sample 3</a>: using the one-line version</li><p></p>
+</ul>
+
+<span class="download" id="yahoo-finance"><b>Prefer Yahoo Finance?</b><br>
+<p>If you prefer to use the Currency Converter from Yahoo Finance as oppose to Google Finance, here it is: <br>
+<a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Currency-Converter-AJAX-version.php">Yahoo Currency Converter - AJAX version</a></p>
+</span>
+
+<a id="include-in-content-item">
+<h3>Including this module in Content Item or Article</h3></a>
+<p>Since this is a standard Joomla module, you can easily include this module into a content item or article <?php /*with the use of &#123;mosloadposition&#125; (for Joomla 1.0.x) or &#123;loadposition&#125; (for Joomla 1.5.x) */?>.</p>
+
+<p>You can take a look at the <a href="https://kksou.com/php-gtk2/#demo">demo here</a>.</p>
+
+<ul>
+<li>For Joomla 1.0.x, please refer to:<br>
+<a href="http://www.kksou.com/php-gtk2/Joomla/How-to-include-modules-in-Content-item-for-Joomla-1.0.x.php">How to include modules in Content item (for Joomla 1.0.x)? </a></li><p></p>
+
+<li>For Joomla 1.5.x, 1.6.x, 1.7.x and 2.5.x, instructions as follows:</li><p></p>
+
+<ol>
+
+<li>Install the Modules Anywhere plugin: <a href="http://extensions.joomla.org/extensions/core-enhancements/embed-a-include/6402">http://extensions.joomla.org/extensions/core-enhancements/embed-a-include/6402</a></li><p></p>
+
+<li>In your article, simply add the tag</li>
+<pre>&#123;module Google Currency Converter&#125;</pre>
+<p>and the module will appear in your article!</p>
+
+<li>If you do not want the Google Currency Converter to appear anywhere in the module position</li>
+<ol type=a>
+<li>You can make sure the module position is empty (i.e. don't select any module position)</li>
+<li>Or you can select Module Assignment to "No pages"</li>
+</ol>
+
+</ol>
+
+<?php /*<a href="http://www.kksou.com/php-gtk2/Joomla/How-to-include-modules-in-Content-item-for-Joomla-1.5.x.php">How to include modules in Content item (for Joomla 1.5.x)? </a></li>*/?>
+<p></p>
+
+</ul>
+
+<a id="tips">
+<h3>Tips and Techniques</h3>
+
+<ul>
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/Google-Currency-Converter-changing-the-width-of-the-pulldown-currency-menu.php">Google Currency Converter - changing the width of the pulldown currency menu</a></li>
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/Google-Currency-Converter-How-to-change-number-of-decimal-places-for-the-converted-currency.php">Google Currency Converter - How to change number of decimal places for the converted currency?</a></li><p></p>
+</ul>
+]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Gadgets</category>
+			<pubDate>Tue, 26 Aug 2008 15:25:55 +0000</pubDate>
+		</item>
+		<item>
+			<title>kksou Joomla Weather Module (formerly Google Weather Module) - AJAX and built-in cache version </title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php</guid>
+			<description><![CDATA[<?php require_once("/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php");?>
+<?php require_once("/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php");?>
+
+<?php #display_google_ads32('joomla top1_left 336x280', 0, 20, 0, 20);?>
+<?php download_button('Google-Weather-module-FAQs-Troubleshoot-and-Tips-Techniques.php');?>
+<script type="text/javascript">var j10=100; var j15=101; var j16=111; var j17=112; var j25=133; var j30=160;</script>
+<script type="text/javascript" src="https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2_30.js"></script>
+
+<?php 
+/* 
+<script type="text/javascript">prepareLinks();</script> 
+*/ 
+?>
+
+{Accordion_Menu_Apple_style 100 float:right10}
+General
+- <a href="https://kksou.com/php-gtk2/#intro">Introduction</a>
+- <a href="https://kksou.com/php-gtk2/#demo">Demo</a>
+- <a href="https://kksou.com/php-gtk2/#features">Unique Features</a>
+- <a href="https://kksou.com/php-gtk2/#kmh">km/h version</a>
+<a href="https://kksou.com/php-gtk2/#download">Download</a>
+- <a href="https://kksou.com/php-gtk2/#download">Download</a>
+- <a href="https://kksou.com/php-gtk2/#latest">Latest Version</a>
+- <a href="https://kksou.com/php-gtk2/#remove-powered-by-links">Remove Powered-by Links</a>
+Documentation
+- <a href="https://kksou.com/php-gtk2/#install">How to install</a>
+- <a href="https://kksou.com/php-gtk2/#config">Parameters</a>
+- <a href="https://kksou.com/php-gtk2/#css">Styling the Module using CSS</a>
+- <a href="https://kksou.com/php-gtk2/#history">Version History</a>
+- <a href="https://kksou.com/php-gtk2/#include-in-content-item">Including this module in Content Item or Article</a>
+User Reviews
+- <a href="https://kksou.com/php-gtk2/#article_comments">kksou.com</a>
+{/Accordion_Menu_Apple_style}
+
+<a id="demo">
+<a id="intro"></a>
+<p>This is an easy-to-use and light-weight module for displaying 4-day weather forecast using the free wunderground API.</p>
+
+<p>This module makes use of the Wunderground Weather API (formerly Google Weather API) to display the current temperature, weather condition and a four-day weather forecast, as you can see on the left of the page.</p>
+
+<p>Note that the free version of the wunderground.com Weather API has a limit of 500 calls per day. The latest version of the Wunderground Weather Module has a <b>built-in cache system</b> to greatly reduce the number of requests to wunderground.com for similar weather requests made within a specified time period.</p>
+
+<h3>Live Demo</h3></a>
+<p>You can see a live demo on the sidebar of this page.</p>
+<?php /*
+<p>You can see some live demos below:</p>
+<ul>
+<li><a href="http://www.kksou.com/t1510/index.php?option=com_content&view=article&id=77&Itemid=58">kksou Google Weather module demo #1</a>: shows the weather forecast for 4 different cities in 4 different languages.</li><p></p>
+<li><a href="http://www.kksou.com/t1510/index.php?option=com_content&view=article&id=78&Itemid=59">kksou Google Weather module demo #2</a>: you can show or hide the input field for each of the module.</li><p></p>
+</ul>
+*/
+?>
+
+<br clear=all>
+<?php sponsor('kksou Google Weather Module - AJAX version', '101', 'module');?>
+<a id="features">
+<h3>Unique Features</h3></a>
+<p>This is the first, and currently the only weather module with the following features:</p>
+<ul>
+<li>Uses the Wunderground Weather API (formerly Google Weather API) that provides 4-day weather forecast with images.</li><p></p>
+<li>Allows user to interactively enter zip codes (for US, UK and Canada) and city names.</li><p></p>
+<li>Displays the weather information in many different languages, as provided by Wunderground.</li><p></p>
+<li>Allows you to display two or more weather modules in the same page.</li><p></p>
+<li>You can turn on or off the input field.</li><p></p>
+<li>You can specify the default unit for the temperature (in &deg;C or &deg;F)</li><p></p>
+<li>You can switch between &deg;C or &deg;F interactively with no reloading of pages.</li><p></p>
+<li>You can choose to display wind speed in mph or km/h</li><p></p>
+<li>Available for <b style="background:#ffff00">all Joomla versions</b>: Joomla 1.0.x, native 1.5.x, 1.6.x, 1.7.x, 2.5.x and 3.0.x!</li><p></p>
+</ul>
+
+
+<?php /*
+<ul>
+<li>Just enter the city name e.g. San Francisco, London, Tokyo, Moscow, and the latest weather condition is updated via AJAX, without any reloading of page. </li><p></p>
+<li>For some countries (e.g. US, UK and Canada), you can just enter the zip code. E.g. '94305', 'W1A 1AZ'</li><p></p>
+<li>Click on the temperature, and you can switch between &deg;C and &deg;F. The switch in temperature unit is done using AJAX, so there's no reloading of page.</li>
+<li>You can copy the module and display the weather forecast for multiple cities. </li><p></p>
+</ul>
+*/ ?>
+
+<div class="alert alert-info" id="latest"><h4>Latest Version</h4>
+<p>v3.0.10 (for Joomla 3.0)<br>
+Released April 19, 2013<br></p>
+<p>Support for different $dbprefix</p>
+
+<p>v3.0.9 (for Joomla 3.0)<br>
+Released April 6, 2013<br></p>
+<p>Native version of Wunderground Weather Module for Joomla 3.0!</p>
+
+<p>v1.09 (for Joomla 1.0) and v1.59 (for Joomla 1.5), v1.69 (for Joomla 1.6), v1.79 (for Joomla 1.7), v2.5.9 (for Joomla 2.5)<br>
+Released October 27, 2012<br></p>
+<p>Google has stopped its Google Weather API service entirely. <a href="http://www.kksou.com/php-gtk2/Joomla-News/Google-has-stopped-its-Google-Weather-API.php">Details here.</a></p>
+<p>The latest version uses the API from <a href="http://www.wunderground.com/weather/api/?apiref=6eae7a10209d1cc0"">wunderground.com</a></p>
+<p>However, the free version of wunderground.com Weather API has a limit of 500 calls per day. If you go beyond 500 calls per day, the module will stop working!</p>
+<p>This latest version of Wunderground Weather Module has a <b>built-in cache system</b> to greatly reduce the number of requests to wunderground.com for similar weather requests made within a specified time period.</p>
+
+<ul>
+<li>The default time period is <b>60 minutes</b> - what this means is that if you request for the weather of "San Francisco, CA" for the first time, the weather info will be retrieved from wunderground.com. However, anyone who makes a subsequent weather request of "San Francisco, CA", as long as it still falls within 60 minutes, the weather will be retrieved from the cache without making any calls to wunderground.com.</li><p></p>
+<li>You can change the time period in the Module Manager's parameter page.</li><p></p>
+<li>In the parameter page, you can also set the <b style="background:#ffff00">Admin Mode</b> to Yes so that you can see the cache system in action. The default is Admin Mode = No.</li><p></p>
+</ul>
+
+<p>Another very important addition to this new version is that the module now <b style="background:#ffff00">remembers the previous city</b> entered by the user. For example, suppose the user has searched for the weather of "Paris, France". When she come back to the same page a couple of days later, the weather for "Paris, France" will be displayed instead of the default city as specified in your parameter page.</p>
+</div>
+
+<a id="vip">
+<h3>Very Important</h3></a>
+
+<ul>
+<li>I've implemented the Google Weather Mashup with the use of PHP's <a href="http://www.php.net/manual/en/curl.setup.php">cURL library</a>. So please <span style="background:#ffff00">make sure your PHP has the cURL library</span> installed in order to use this module.</li><p></p>
+
+<li>Note that this module works only with <span style="background:#ffff00">PHP5</span> and above because of the use of the PHP function <a href="http://www.php.net/manual/en/function.simplexml-load-string.php">simplexml_load_string</a> which is only available starting with PHP5.</li><p></p>
+</ul>
+
+]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Gadgets</category>
+			<pubDate>Mon, 05 Oct 2009 06:52:56 +0000</pubDate>
+		</item>
+		<item>
+			<title>googleDirections plugin</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php</guid>
+			<description><![CDATA[<?php require_once("/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php");?>
+<?php require_once("/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php");?>
+
+<script type="text/javascript">var j10=94; var j15=95; var j16=114; var j17=115; var j25=131; var j30=163;</script>
+<script type="text/javascript" src="https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2_30.js"></script>
+
+<a id="intro"></a>
+<p>This plugin allows you to include one or more driving, walking or bicycle directions provided by Google Maps right inside your content item or article.</p>
+
+{Accordion_Menu_Apple_style 100 float:right10}
+General
+- <a href="https://kksou.com/php-gtk2/#intro">Introduction</a>
+- <a href="https://kksou.com/php-gtk2/#geocoder">Geocoding your address</a>
+- <a href="https://kksou.com/php-gtk2/#demo">Demo</a>
+- <a href="https://kksou.com/php-gtk2/#more_demo">More Demos</a>
+- <a href="https://kksou.com/php-gtk2/#download">Download</a>
+- <a href="https://kksou.com/php-gtk2/#latest">Latest Version</a>
+Documentation
+- <a href="https://kksou.com/php-gtk2/#how_to_use">How to use</a>
+- <a href="https://kksou.com/php-gtk2/#kml">KML Files</a>
+- <a href="https://kksou.com/php-gtk2/#multiple">Multiple Destinations</a>
+- <a href="https://kksou.com/php-gtk2/#history">Version History</a>
+Related Plugins
+- <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php" target=_blank>googleDir To Here plugin</a>
+- <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php" target=_blank>googleMaps plugin</a>
+- <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-module.php" target=_blank>googleMaps module</a>
+{/Accordion_Menu_Apple_style}
+
+<p>This is a light-weight plugin that uses the latest Google Maps API.</p>
+
+<p>If you need to display driving or walking directions to your company, or from one place to another, this is the plugin.</p>
+
+<p>If you want to allow users to find ways to your office or some designated place, use the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php">googleDirections - To Here - plugin</a></p>
+
+<p><b>Note:</b> If you want to use this content plugin inside a Custom HTML Modules, please refer to this article: <a href="https://kksou.com/php-gtk2//php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php">How to Run Joomla Content Plugins in Custom HTML Modules</a>.</p>
+
+<br clear=all>
+<?php sponsor('googleDirections plugin', '95', 'plugin');?>
+<a id="features">
+<h3>Unique Features</h3></a>
+<ul>
+<li>Uses the latest Google Maps API v3</li>
+<li>Support for mobile and <b style="background:#ffff00">responsive design</b>!</li>
+<li>Support for different transportation mode - <b>DRIVING / BICYCLING / TRANSIT / WALKING</b></li>
+<li>You can embed <b style="background:#ffff00">multiple Google Directions</b> within an article</li>
+<li>Each Google Direction can be of different size, map control and map type</li>
+<li>Support for kml files</li>
+<li>You can specify the starting, ending and stopover points using real address or longitude/latitude points</li>
+<li>Built-in <b style="background:#ffff00">street view</b>!</li>
+<li>Support for <b style="background:#ffff00">multiple waypoints or stopover points</b></li>
+<li>Support for many native languages e.g. Italian, Russian, French</li>
+<li>Available for <b style="background:#ffff00">all Joomla versions</b>: Joomla 1.0.x, native 1.5.x, 1.6.x, 1.7.x, 2.5.x and 3.0.x!</li><p></p>
+</ul>
+
+<?php #include_content_item 1557 ?>
+
+<h3>User Review</h3>
+
+<p>This plugin is listed in the The Joomla! Extensions Directory: <a href="https://extensions.joomla.org/extensions/extension/maps-a-weather/maps-a-locations/googledirections/">googleDirections plugin</a></p>
+
+<p>If you like this plugin, please post a review at the <a href="https://extensions.joomla.org/extensions/extension/maps-a-weather/maps-a-locations/googledirections/">Joomla! Extensions Directory</a></p>
+
+<?php
+/*
+<a id="api"></a>
+<h3>The Google API Key</h3>
+
+<p>The plugin makes use of the <a href="http://code.google.com/apis/maps/">Google Maps API</a> provided by Google. As such, please make sure you have the <a href="http://code.google.com/apis/maps/signup.html">Google Maps API</a>. If you don't have the key, you can <a href="http://code.google.com/apis/maps/signup.html">sign up for free here</a>.</p>
+*/
+?>
+
+<div class="alert alert-info" id="latest"><h4>Latest Version</h4>
+<p>v1.0.20 (for Joomla 1.0), v1.5.20 (for Joomla 1.5), v1.6.20 (for Joomla 1.6), v1.7.20 (for Joomla 1.7), v2.5.20 (for Joomla 2.5), v3.0.20 (for Joomla 3.0 and above)<br />
+Released Jul 23, 2017</p>
+<p>Display warning message when Google returned zero results for directions. This could happen when Google cannot decode the address, or Google cannot find a valid route from Point A to Point B.</p>
+
+<p>v1.0.19 (for Joomla 1.0), v1.5.19 (for Joomla 1.5), v1.6.19 (for Joomla 1.6), v1.7.19 (for Joomla 1.7), v2.5.19 (for Joomla 2.5), v3.0.19 (for Joomla 3.0 and above)<br />
+Released Jul 20, 2017</p>
+<ul type=disc>
+<li>Support for responsive design!</li>
+<li>For larger screen, the map and the direction will be placed side by side - map on the left, directions on the right</li>
+<li>For smaller screen (e.g. mobile), the map will be displayed on the top and the directions below the map</li>
+<li>For iPad and iPhone 6/7 Plus, the landscape mode will show the map and directions side by side, and the portrait mode will show the map on top and directions below.</li>
+</ul>
+<p></p>
+</div>
+
+<a id="geocoder"></a>
+<h3>Geocoding your address</h3>
+
+<?php /*<p>The Google Maps require you to input the geographic coordinates (i.e. the latitude and longitude) of the center of the map (if you're using the kml file).</p>
+<p>If you do not know the latitude and longitude of an address, you can them find out here: <a href="http://www.kksou.com/php-gtk2/google-geocoder-v2/">Free Geocoder v2.0 by kksou</a>.</p>*/ ?>
+
+<p>If you wish to know the latitude and longitude of your start point or end point, you can find out here: <a href="http://www.kksou.com/php-gtk2/google-geocoder-v2/">Free Geocoder v2.0 by kksou</a>.</p>
+
+<a id="googlemaps_plugin">
+<h3>googleMaps Plugin</h3></a>
+<p>This plugin is for showing directions using Google Maps API.</p>
+
+<p>If you just need a simple map (without any driving directions), you can use the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps plugin</a>.</p>
+
+<a id="googleDirections_To_Here_plugin">
+<h3>googleDirections - To Here - plugin</h3></a>
+<p>If you want to allow users to find ways to your office or some designated place, use the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php">googleDirections - To Here - plugin</a>.</p>
+
+<a id="demo">
+<h3>Live Demo</h3></a>
+
+<p>Below you can see a live demo of the plugin. Note that you can include more than one map directions within an article.</p>
+
+<p><b>Demo 1: Driving Directions from Google to Yahoo</b></p>
+
+<p>tag used:</p>
+<pre>&#123;googleDir width=400 height=360 from="1600 Amphitheatre Parkway, Mountain View CA 94043" to="701 First Avenue, Sunnyvale, CA 94089"&#125;</pre>
+
+{googleDir width=400 height=360 from="1600 Amphitheatre Parkway, Mountain View CA 94043" to="701 First Avenue, Sunnyvale, CA 94089"}
+
+<p><b>Demo 2: Walking Directions from Union Square to Ghirardelli Square, San Francisco</b></p>
+<p>tag used:</pre>
+<pre>&#123;googleDir width=360 height=360 mode=walking from="333 Post St, San Francisco, CA 94108" to="900 N Point St, San Francisco, CA  94109"&#125;</pre>
+{googleDir width=360 height=360 mode=walking from="333 Post St, San Francisco, CA 94108" to="900 N Point St, San Francisco, CA  94109"}
+
+<p><b>Demo 3: Driving Directions using map from KML file</b></p>
+<p>tag used: &#123;googleDir lat=21.279491 long=-157.744741 zoom=14 from="21.271685,-157.822852" to="21.26013471,-157.8183115" kml=http://www.kksou.com/gmap/test/kml_sample4.kml&#125;</p>
+{googleDir lat=21.279491 long=-157.744741 zoom=14 from="21.271685,-157.822852" to="21.26013471,-157.8183115" kml=http://www.kksou.com/gmap/test/kml_sample4.kml}
+
+<?php
+/*
+<p>tag used: &#123;googleDir lat=21.279491 long=-157.744741 zoom=14 control=GSmallZoomControl3D|GMapTypeControl maptype=G_HYBRID_MAP from="21.271685,-157.822852" to="21.26013471,-157.8183115 to:21.26945086,-157.778877 to:21.31299356,-157.6614052 to: 21.31299356,-157.6614052"
+kml=http://www.kksou.com/gmap/test/kml_sample4.kml&#125;</p>
+{googleDir lat=21.279491 long=-157.744741 zoom=14 control=GSmallZoomControl3D|GMapTypeControl maptype=G_HYBRID_MAP from="21.271685,-157.822852" to="21.26013471,-157.8183115 to:21.26945086,-157.778877 to:21.31299356,-157.6614052 to: 21.31299356,-157.6614052"
+kml=http://www.kksou.com/gmap/test/kml_sample4.kml}
+[googleDir lat=53.91081 long=-2.565308 width=400 height=360 zoom=9 dir_on_right=1 
+from="Glasgow, UK" to="Manchester, UK" 
+kml=http://www.kksou.com/gmap/test/KML_Samples12.kml]
+
+*/
+?>
+<?php #echo burstmedia_medium_rectangle_300_250();?>
+<a id="more_demo">
+<h3>More Demos</h3></a>
+<ul>
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Directions-Samples/Google-Maps-+-Directions-sample-1.php">Google Maps + Directions sample 1</a>. shows two maps - one with driving directions, and the other with walking directions.</li>
+
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Directions-Samples/Google-Maps-+-Directions-sample-2.php">Google Maps + Directions sample 2</a>. shows two maps - one with the driving directions on the left (the default), and the other with the driving directions on the right.</li>
+
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Directions-Samples/Google-Maps-+-Directions-sample-3.php">Google Maps + Directions sample 3</a>. shows how you can show your office location map - together with the driving and walking directions from one place to your office.</li>
+
+<?php /* <li><a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Directions-Samples/Google-Maps-directions-with-multiple-destinations.php">Google Maps directions with multiple destinations</a></li> */ ?>
+
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Directions-Samples/Google-Maps-directions-using-geographical-coordinates-i.e.-longitude-and-latitude.php">Google Maps directions using geographical coordinates (i.e. longitude and latitude)</li>
+
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Directions-Samples/Google-Maps-directions-for-multiple-destinations-using-geographical-coordinates.php">Google Maps directions for multiple destinations using geographical coordinates</li>
+
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/Google-Directions-with-Multiple-Stopovers.php">Google Directions with Multiple Stopovers</a></li>
+
+</ul>
+
+<a id="how_to_use">
+<h3>How to use</h3></a>
+<a id="tutorials"></a>
+<span class="info">
+<p><b>Tutorials</b></p></a>
+<?php
+require_once('/home/fann/kksou.com/php-gtk2/util/googleMaps_tutorials.php');
+display_googleDirections_tutorials('',0);
+?>
+</span>
+
+<ol>
+<?php /*<li><b>Very Important!!!</b> Before you can make use of the plugin, please enter the Google Map API Key in the Parameters page in the Plugin Manager.</li><p></p> */ ?>
+
+<li><a id="addr"><b>Specify the Start and End Points.</b></a> To insert a Google Map with directions, use the following syntax:</li>
+<pre>
+&#123;googleDir from="1600 Amphitheatre Parkway, Mountain View CA 94043" 
+to="701 First Avenue, Sunnyvale, CA 94089"&#125;
+</pre>
+<?php /*<a href="http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-plugin-Tutorial-01-Getting-Started.php">[Live Example]</a><p></p> */ ?>
+<?php show_googleMaps_sample('googleDirections', 1, 1, 'demo');?>
+
+<p>Note that:</p>
+<ul type=disc>
+<li>Enclose from and to in double quotes (")</li>
+<li>Enter the full address in one line. If you're not in US, specify your country too.</li>
+</ul>
+<p></p>
+
+<?php #display_google_ads32('joomla - how to use 336x280', 0, 20, 0, 20, 1, 1);?>
+<br clear=all>
+
+<li><a id="width"><b>Width and Height.</b></a> To specify the width and height of the map, use the following syntax. Note that for Google Map with directions, you cannot specify the width and height in percentages.</li>
+<pre>
+&#123;googleDir width=480 height=360 
+from="1600 Amphitheatre Parkway, Mountain View CA 94043" 
+to="701 First Avenue, Sunnyvale, CA 94089"&#125;
+</pre>
+<?php show_googleMaps_sample('googleDirections', 1, 1, 'demo');?>
+
+<li><a id="zoom"><b>Zoom level</b>.</a> Note that the default zoom level of the map is automatically set by Google such that the start point and end point are being displayed optimally on the map.</li><p></p>
+<?php show_googleMaps_sample('googleDirections', 1, 1, 'demo');?>
+
+<li><a id="kml"><b>KML Files</b></a>: </a>To use kml files, use the following syntax:</li>
+<pre>
+&#123;googleDir lat=53.91081 long=-2.565308 width=480 height=360 zoom=9 
+from="Glasgow, UK" to="Manchester, UK" 
+kml=http://econym.googlepages.com/lancashire.kml&#125;
+</pre>
+<p>Note that when you use kml files, you have to specify the <b>latitude</b> and <b>longitude</b> of the centre of the map.</p>
+
+<li><a id="control"><b>Map Control</b></a>: You can use the various map control as defined in <a href="http://code.google.com/apis/maps/documentation/controls.html#Controls_overview">Goolge Maps Controls Overview</a>. For example, to use the large pan/zoom control as now used on Google Maps, use the following syntax:</li><p></p>
+
+<pre>
+&#123;googleDir <span style="background:#ffff00">control=GLargeMapControl3D</span>
+from="1600 Amphitheatre Parkway, Mountain View CA 94043" 
+to="701 First Avenue, Sunnyvale, CA 94089"&#125;
+</pre>
+
+<p>You can add multiple controls by delimiting with '|' as follows:
+
+<pre>
+&#123;googleDir <span style="background:#ffff00">control=GLargeMapControl|GMapTypeControl</span>
+from="1600 Amphitheatre Parkway, Mountain View CA 94043" 
+to="701 First Avenue, Sunnyvale, CA 94089"&#125;
+</pre>
+
+<?php #display_google_ads32('joomla - middle2 468x60', 0, 20, 0, 20);?>
+<br clear=all>
+
+
+<p>Other common map controls are as follows:</p>
+<ul type=disc>
+    <li><code>GLargeMapControl3D</code> - a large pan/zoom control as now used on Google Maps. Appears in the top left corner of the map by default.</li>
+    <li><code>GLargeMapControl</code> - a simpler large pan/zoom control. Appears in the top left corner of the map by default.</li>
+    <li><code>GSmallMapControl</code> - a smaller pan/zoom control. Appears in the top left corner of the map by default.</li>
+    <li><code>GSmallZoomControl3D</code> - a small zoom control (with no panning controls) as now used on Google Maps.</li>
+    <li><code>GSmallZoomControl</code> - a small zoom control (no panning controls) used in the small map blowup windows used to display driving directions steps on Google Maps.</li>
+    <li><code>GScaleControl</code> - a map scale</li>
+    <li><code>GMapTypeControl</code> - buttons that let the user toggle between map types (such as Map and Satellite)</li>
+    <li><code>GHierarchicalMapTypeControl</code> - a selection of nested buttons and menu items for placing many map type selectors.</li>
+    <li><code>GOverviewMapControl</code> - a collapsible overview map in the corner of the screen</li>
+</ul>
+<p>For complete list, please refer to <a href="http://code.google.com/apis/maps/documentation/controls.html#Controls_overview">Goolge Maps Controls Overview</a>.</p>
+
+
+<li><a id="maptype"><b>Map Type</b></a>: You can use the various map type as defined in <a href="http://code.google.com/apis/maps/documentation/introduction.html#CommonMapTypes">Common Map Types</a>.</li>
+
+<p>For example, to display a Google Earth satellite image, use the following syntax:</li><p></p>
+
+<pre>
+&#123;googleDir control=GLargeMapControl3D maptype=G_SATELLITE_MAP
+from="1600 Amphitheatre Parkway, Mountain View CA 94043" 
+to="701 First Avenue, Sunnyvale, CA 94089"&#125;
+</pre>
+
+<p>Other common map types are as follows:</p>
+
+<ul type=disc>
+<li><code>G_NORMAL_MAP</code> displays the default road map view</li>
+<li><code>G_SATELLITE_MAP</code> displays Google Earth satellite images</li>
+<li><code>G_HYBRID_MAP</code> displays a mixture of normal and satellite views</li>
+<li><code>G_DEFAULT_MAP_TYPES</code> contains an array of the above three types, useful for iterative processing.</li>
+</ul>
+
+<p>For complete list, please refer to <a href="http://code.google.com/apis/maps/documentation/introduction.html#CommonMapTypes">Common Map Types</a>.</p>
+
+<li><a id="lang"><b>Language option</b></a>. The Google Maps API uses the browser's preferred language setting when displaying textual information such as the names for controls, copyright notices, and driving directions. If you wish to change the Maps API to ignore the browser's language setting and force it to display information in a particular language, you can add an optional <code>lang</code> parameter.</li><p></p>
+
+<p>e.g. to display the Goolge Maps control in Russian, use:</p>
+
+<pre>
+&#123;googleDir width=400 height=360 dir_width=275 <b style="background:#ffff00">lang=ru</b>
+from="1600 Amphitheatre Parkway, Mountain View CA 94043"
+to="701 First Avenue, Sunnyvale, CA 94089"&#125;
+</pre>
+<?php show_googleMaps_sample('googleDirections', 7, 1, 'demo');?>
+
+<p>To display the Goolge Maps control in Japanese, use:</p>
+
+<pre>
+&#123;googleDir width=400 height=360 dir_width=275 <b style="background:#ffff00">lang=ja</b>
+from="1600 Amphitheatre Parkway, Mountain View CA 94043"
+to="701 First Avenue, Sunnyvale, CA 94089"&#125;
+</pre>
+<?php show_googleMaps_sample('googleDirections', 7, 1, 'demo');?>
+
+<p>You can look up the entire list of <a href="http://spreadsheets.google.com/pub?key=p9pdwsai2hDMsLkXsoM05KQ&gid=1">supported languages here</a>.</p>
+
+<li><a id="travel_modes"><b>Travel Modes.</b></a> To insert a Google Map with walking directions (as oppose to driving), use the following syntax:</li>
+<pre>
+&#123;googleDir <span style="background:#ffff00">mode=walking</span>
+from="1600 Amphitheatre Parkway, Mountain View CA 94043" 
+to="701 First Avenue, Sunnyvale, CA 94089"&#125;
+</pre>
+<?php show_googleMaps_sample('googleDirections', 3, 1, 'walking');?>
+
+<p>To insert a Google Map with bicycling directions (Note: currently only available in the US, use the following syntax:</p>
+<pre>
+&#123;googleDir <span style="background:#ffff00">mode=bicycling</span>
+from="1600 Amphitheatre Parkway, Mountain View CA 94043" 
+to="701 First Avenue, Sunnyvale, CA 94089"&#125;
+</pre>
+<?php show_googleMaps_sample('googleDirections', 3, 1, 'bicycling');?>
+<p>The default mode (when you don't specify any mode) is driving.</p>
+
+<li><a id="directions_on_left"><b>Directions on Left.</b></a> By default, the map will be shown on the left and the directions on the right. If you want to swap this and have the directions displayed on the left, use the following syntax:</li>
+<pre>
+&#123;googleDir <span style="background:#ffff00">map_on_right=1</span>
+from="1600 Amphitheatre Parkway, Mountain View CA 94043" 
+to="701 First Avenue, Sunnyvale, CA 94089"&#125;
+</pre>
+<?php show_googleMaps_sample('googleDirections', 5, 1, 'directions_on_left');?>
+
+<li><a id="directions_below_map"><b>Directions below Map.</b></a> By default, the map will be shown on the left and the directions on the right. If you want to have the directions displayed below the map, use the following syntax:</li>
+<pre>
+&#123;googleDir <span style="background:#ffff00">vertical=1</span>
+from="1600 Amphitheatre Parkway, Mountain View CA 94043" 
+to="701 First Avenue, Sunnyvale, CA 94089"&#125;
+</pre>
+<?php show_googleMaps_sample('googleDirections', 6, 1, 'directions_below_map');?>
+
+<li><a id="hide_directions"><b>Hide Directions (Display Map Only).</b></a> If you wish to hide the text description on the right of the map, use the following syntax:</li>
+<pre>
+&#123;googleDir <span style="background:#ffff00">hide_direction_text=1</span>
+from="1600 Amphitheatre Parkway, Mountain View CA 94043" 
+to="701 First Avenue, Sunnyvale, CA 94089"&#125;
+</pre>
+<p>You can see a sample here: <a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Directions-Samples/Show-map-directions-with-maps-only-and-text-description-hidden.php">Show map directions with maps only (and text description hidden) </a>.</p>
+
+<li><a id="km"><b>Units for Distance.</b></a> To display the distance as <b>miles</b>, use the following syntax:</li>
+<pre>
+&#123;googleDir width=360 height=360 dir_width=275 <b style="background:#ffff00">unit=IMPERIAL</b>
+from="333 Post St, San Francisco, CA 94108" 
+to="900 N Point St, San Francisco, CA 94109"&#125;
+</pre>
+<?php show_googleMaps_sample('googleDirections', 4, 1, 'miles');?>
+
+<p>To display the distance as <b>kilometers</b>, use the following syntax:</p>
+<pre>
+&#123;googleDir width=360 height=360 dir_width=275 <b style="background:#ffff00">unit=METRIC</b> 
+from="333 Post St, San Francisco, CA 94108" 
+to="900 N Point St, San Francisco, CA 94109"&#125;
+</pre>
+<?php show_googleMaps_sample('googleDirections', 4, 1, 'km');?>
+
+</ol>
+
+<a id="multiple">
+<h3>Multiple Destinations</h3></a>
+<p>To have a Google Map Directions with multiple destinations or stopovers, please refer to the following article:</p>
+<p><a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Directions-Samples/Google-Maps-directions-with-multiple-destinations.php">Google Maps directions with multiple destinations</a></p>
+]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Gadgets</category>
+			<pubDate>Mon, 11 May 2009 16:57:38 +0000</pubDate>
+		</item>
+		<item>
+			<title>googleDirections - To Here - plugin</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php</guid>
+			<description><![CDATA[<?php require_once("/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php");?>
+<?php require_once("/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php");?>
+
+<script type="text/javascript">var j10=96; var j15=97; var j16=116; var j17=117; var j25=132; var j30=164;</script>
+<script type="text/javascript" src="https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2_30.js"></script>
+
+<a id="intro"></a>
+<p>This plugin is an extension of the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php">googleDirections plugin</a>. You specify a designated place to be the destination, and let the user enter the adddress he or she is coming from. Google will then provide the driving or walking directions from the user-specified address to your designated place.</p>
+
+<p><b>Note:</b> If you want to use this content plugin inside a Custom HTML Modules, please refer to this article: <a href="https://kksou.com/php-gtk2//php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php">How to Run Joomla Content Plugins in Custom HTML Modules</a>.</p>
+
+{Accordion_Menu_Apple_style 100 float:right10}
+General
+- <a href="https://kksou.com/php-gtk2/#intro">Introduction</a>
+- <a href="https://kksou.com/php-gtk2/#geocoder">Geocoding your address</a>
+- <a href="https://kksou.com/php-gtk2/#demo">Demo</a>
+<a href="https://kksou.com/php-gtk2/#download">Download</a>
+- <a href="https://kksou.com/php-gtk2/#download">Download</a>
+Documentation
+- <a href="https://kksou.com/php-gtk2/#how_to_use">How to use</a>
+- <a href="https://kksou.com/php-gtk2/#history">Version History</a>
+Related Plugins
+- <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php" target=_blank>googleDir plugin</a>
+- <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php" target=_blank>googleMaps plugin</a>
+- <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-module.php" target=_blank>googleMaps module</a>
+{/Accordion_Menu_Apple_style}
+
+<?php
+/*
+<a id="api"></a>
+<h3>The Google API Key</h3>
+
+<p>The plugin makes use of the <a href="http://code.google.com/apis/maps/">Google Maps API</a> provided by Google. As such, please make sure you have the <a href="http://code.google.com/apis/maps/signup.html">Google Maps API</a>. If you don't have the key, you can <a href="http://code.google.com/apis/maps/signup.html">sign up for free here</a>.</p>
+*/
+?>
+
+<a id="features">
+<h3>Unique Features</h3></a>
+<ul>
+<li>Uses the latest Google Maps API v3</li>
+<li>Support for mobile and <b style="background:#ffff00">responsive design</b>!</li>
+<li>Support for different transportation mode - <b>DRIVING / BICYCLING / TRANSIT / WALKING</b></li>
+<li>Support of laptop / <b style="background:#ffff00">mobile GPS</b> to access Current Location</li>
+<li>You can embed <b style="background:#ffff00">multiple Google Directions_to_here</b> within an article</li>
+<li>Each Google Direction can be of different size, map control and map type</li>
+<li>Support for kml files</li>
+<li>You can specify the "home position" using real address or longitude/latitude points</li>
+<li>Built-in <b style="background:#ffff00">street view</b>!</li>
+<li>Support for many native languages e.g. Italian, Russian, French</li>
+<li>Available for <b style="background:#ffff00">all Joomla versions</b>: Joomla 1.0.x, native 1.5.x, 1.6.x, 1.7.x, 2.5.x and 3.0.x!</li><p></p>
+</ul>
+
+<a id="gps">
+<h3>Mobile GPS</h3></a>
+<ul>
+<li>For mobile GPS to work for Current Location, your website must be using <b style="background:#ffff00">HTTPS</b> (secured server).</li>
+<li>The client must also allow access to its current location.</li>
+</ul><p></p>
+
+
+<h3>User Review</h3>
+
+<p>This plugin is listed in the The Joomla! Extensions Directory: <a href="https://extensions.joomla.org/extensions/extension/extension-specific/extensions-specific-non-sorted/to-here-for-googledirections/">To Here plugin for googleDirections</a></p>
+
+<p>If you like this plugin, please post a review at the <a href="https://extensions.joomla.org/extensions/extension/extension-specific/extensions-specific-non-sorted/to-here-for-googledirections/">Joomla! Extensions Directory</a></p>
+
+<div class="alert alert-info" id="latest"><h4>Latest Version</h4>
+<p>v1.0.15 (for Joomla 1.0), v1.5.15 (for Joomla 1.5), v1.6.15 (for Joomla 1.6), v1.7.15 (for Joomla 1.7), v2.5.15 (for Joomla 2.5), v3.0.15 (for Joomla 3.0 and above)<br />
+Released Jul 23, 2017</p>
+<ul type=disc>
+<li>Support of mobile / laptop GPS to access Current Location.</li>
+<li>To use this feature, your website must be using HTTPS (secured server).</li>
+<li>The client must also allow access to its current location (there will be a prompt which the user can click allow or deny).</li>
+</uL>
+<p></p>
+
+<p>v1.0.14 (for Joomla 1.0), v1.5.14 (for Joomla 1.5), v1.6.14 (for Joomla 1.6), v1.7.14 (for Joomla 1.7), v2.5.14 (for Joomla 2.5), v3.0.14 (for Joomla 3.0 and above)<br />
+Released Jul 20, 2017</p>
+<ul type=disc>
+<li>Support for responsive design!</li>
+<li>For larger screen, the map and the direction will be placed side by side - map on the left, directions on the right</li>
+<li>For smaller screen (e.g. mobile), the map will be displayed on the top and the directions below the map</li>
+<li>For iPad and iPhone 6/7 Plus, the landscape mode will show the map and directions side by side, and the portrait mode will show the map on top and directions below.</li>
+</ul>
+<p></p>
+</div>
+
+<a id="geocoder"></a>
+<h3>Geocoding your address</h3>
+
+<?php /*<p>This plugin requires that you input your designated place in geographic coordinates (i.e. the latitude and longitude).</p>
+<p>If you do not know the latitude and longitude of your designated place, you can them find out here: <a href="http://www.kksou.com/php-gtk2/google-geocoder-v2/">Free Geocoder v2.0 by kksou</a>.</p> */ ?>
+<p>If you wish to know the latitude and longitude of your start point or end point, you can find out here: <a href="http://www.kksou.com/php-gtk2/google-geocoder-v2/">Free Geocoder v2.0 by kksou</a>.</p>
+
+<a id="googlemaps_plugin">
+<h3>googleMaps Plugin</h3></a>
+<p>This plugin is for showing directions using Google Maps API.</p>
+
+<p>If you just need a simple map (without any driving directions), you can use the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps plugin</a>.</p>
+
+<a id="googleDirections_plugin">
+<h3>googleDirections Plugin</h3></a>
+<p>This plugin has the destination fixed at your designated place.</p>
+
+<p>If you want to be able to specify both the starting point and destination as variables, please use the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php">googleDirections plugin</a>.</p>
+
+<a id="demo">
+<h3>Demo</h3></a>
+
+<p>Below you can see a live demo of the plugin. The destination is Google Inc. in Mountain View, California. Enter some address in US, and let Google shows you how to get there.</p>
+
+<p>You may use any of the following address for testing:</p>
+<ul>
+<li>450 Serra Mall, Stanford, CA 94305, USA</li>
+<li>39210 Fremont Hub #211, Fremont, CA 94538</li>
+<li>333 Post St, San Francisco, CA 94108, USA</li>
+</ul>
+
+{googleDir_tohere width=400 height=360
+home_label="Google Inc.~1600 Amphitheatre Parkway~Mountain View, CA 94043",
+home_addr="1600 Amphitheatre Parkway~Mountain View, CA 94043"}
+
+{googleDir_tohere width=400 height=360
+home_label="Borders.~200 King Street, San Francisco, CA 94107",
+home_addr="37.777262, -122.393457"}
+
+{googleDir_tohere width=400 height=360
+home_label="Borders.~845 Market St., San Francisco, CA 94103",
+home_addr="845 Market St., San Francisco, CA 94103"}
+
+<?php #echo burstmedia_medium_rectangle_300_250();?>
+
+<a id="how_to_use">
+<h3>How to use</h3></a>
+
+<?php sponsor('googleDirections - To Here - plugin', '97', 'plugin');?>
+
+<?php #include_content_item 1557 ?>
+
+<?php
+$msg = '<b>Important:</b> This plugin makes use of the googleMaps plugin and googleDirections plugin to display the map. So please make sure you have installed <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps plugin v1.0.18/1.5.18/1.6.18/1.7.18/2.5.18</a> (or above) and <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php">googleDirections plugin v1.0.12/1.5.12/1.6.12/1.7.12/2.5.12</a> (or above) for this plugin to work.<br><br>
+
+If you have downloaded and installed the above plugins before the Christmas of 2011 (i.e. Dec 25, 2011), you are using the old version. Please update the two plugins to the latest version.';
+
+print '<span class="info">'."\n";
+print "$msg\n</span>\n";
+?>
+
+<a id="tutorials"></a>
+<span class="info">
+<p><b>Tutorials</b></p></a>
+<?php
+require_once('/home/fann/kksou.com/php-gtk2/util/googleMaps_tutorials.php');
+display_googleDirections__tohere_tutorials('',0);
+?>
+</span>
+
+<ol>
+<?php /*<li><b>Very Important!!!</b> Before you can make use of the plugin, please enter the Google Map API Key in the Parameters page in the Plugin Manager.</li><p></p> */ ?>
+
+<li>To insert a Google Map with directions, use the following syntax:</li>
+<pre>
+&#123;googleDir_tohere width=400 height=360
+<b style="background:#ffff00">home_addr</b>="1600 Amphitheatre Parkway, Mountain View, CA 94043"&#125;
+</pre>
+
+<?php /*
+<p><code>home_addr</code>: The address of your designated place<br />
+<code>home_label</code>: Heading that will be displayed by Google Destinations (for the point B which is your designated place).
+</p> */ ?>
+
+<p>Note that:</p>
+<ul type=disc>
+<li>Enclose from and to in double quotes (")</li>
+<li>Enter the full address in one line. If you're not in US, specify your country too.</li>
+</ul>
+<p></p>
+
+<?php #display_google_ads32('joomla - how to use 336x280', 0, 20, 0, 20, 1, 1);?>
+
+<li>You can also use the latitude and longitude for precise location:</li>
+<pre>
+&#123;googleDir_tohere width=400 height=360
+<b style="background:#ffff00">home_lat=37.4219720, home_long=-122.0841430</b>&#125;
+</pre>
+
+<?php /*
+<p><code>home_lat</code>: Latitude of your designated place<br />
+<code>home_long</code>: Longitude of your designated place
+</p> */ ?>
+
+<li>You can set the width of the address input in the Parameters page.</li><p></p>
+
+<li>You can change the text "Coming from:" to your own language in the Parameters page.</li><p></p>
+
+<li>You can change the button label "Get Directions" to your own language in the Parameters page.</li><p></p>
+
+<?php /*
+<a id="multiple_lines"></a>
+<li>For new lines, please use ~. For example,</li>
+<code>&#123;googleDir_tohere width=400 height=360<br />
+home_label="Google Inc.~1600 Amphitheatre Parkway~Mountain View, CA 94043",<br />
+home_lat=37.4219720, home_long=-122.0841430}&#125;</code>
+<p></p> */
+?>
+
+</ol>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Gadgets</category>
+			<pubDate>Mon, 01 Jun 2009 12:26:59 +0000</pubDate>
+		</item>
+		<item>
+			<title>googleSearch (CSE) component</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php</guid>
+			<description><![CDATA[<?php require_once("/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php");?>
+<?php require_once("/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php");?>
+
+<script type="text/javascript">var j10=84; var j15=85; var j16=144; var j17=145; var j25=146; var j30=166;</script>
+<script type="text/javascript" src="https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2_30.js"></script>
+<?php /*<script type="text/javascript">prepareLinks();</script>*/ ?>
+
+<a id="intro"></a>
+
+<p>This is the good old <a href="http://www.kksou.com/php-gtk2/Joomla/googleSearch-component.php">googleSearch component</a> with one key difference: it uses Google's new Custom Search Engine (CSE) at the backend.</p>
+
+<p>The latest component for Joomla 3.0 (v3.0.2) has been updated with Google's latest <a href="https://developers.google.com/custom-search/docs/js/cselement-devguide">Custom Search Element v2</a>. The new version offers:</p>
+
+<ul>
+<li>Custom Search components are rendered based on settings stored on the CSE servers (along with any client-side customization).</li>
+<li>All JavaScript is loaded asynchronously, so page load time is reduced.</li>
+</ul>
+
+{Accordion_Menu_Apple_style 100 float:right10}
+General
+- <a href="https://kksou.com/php-gtk2/#intro">Introduction</a>
+- <a href="https://kksou.com/php-gtk2/#vip">Very Important</a>
+- <a href="https://kksou.com/php-gtk2/#demo">Demo</a>
+- <a href="https://kksou.com/php-gtk2/#features">Unique Features</a>
+- <a href="https://kksou.com/php-gtk2/#differences">Differences</a>
+<a href="https://kksou.com/php-gtk2/#download">Download</a>
+- <a href="https://kksou.com/php-gtk2/#download">Download</a>
+- <a href="https://kksou.com/php-gtk2/#latest">Latest Version</a>
+Documentation
+- <a href="https://kksou.com/php-gtk2/#install">How to install</a>
+- <a href="https://kksou.com/php-gtk2/#sh404SEF">sh404SEF users</a>
+- <a href="https://kksou.com/php-gtk2/#config_component">Customizing the Component</a>
+- <a href="https://kksou.com/php-gtk2/#css">Styling using CSS</a>
+- <a href="https://kksou.com/php-gtk2/#faq">FAQ</a>
+- <a href="https://kksou.com/php-gtk2/#history">Version History</a>
+User Reviews
+- <a href="https://kksou.com/php-gtk2/#article_comments">kksou.com</a>
+- <a href="http://extensions.joomla.org/extensions/external-contents/web-search/7023#action" target=_blank>extensions.joomla.org</a>
+{/Accordion_Menu_Apple_style}
+
+<a id="googleSearch_module">
+<h3>The googleSearch (CSE) Module</h3></a>
+<p>There is an accompanying googleSearch (CSE) Module:
+<a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-module.php">googleSearch (CSE) module</a>
+
+<p>The module allows you to add an additional Google search box as a module. This means that you can place the search form in any module position you like. When the user clicks the search button, the search result will be displayed in your Joomla main body by the googleSearch component.</p>
+
+<a id="vip">
+<h3>Very Important - the Google CSE ID</h3></a>
+<?php
+$note1_base = "Please make sure you have set up a Custom Search Engine in your Google's account before you can use this component. Once you have created a Custom Search Engine, Google will assign a unique CSE ID to that engine. You need to enter the CSE ID into the config page to start using this component.";
+$note1 = "<p>$note1_base</p>";
+$note1a = "<p><b>Very Important:</b></a> $note1_base</p>";
+echo$note1;
+?>
+
+<p>For more details, please refer to the following article: <a href=\"http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/Where-to-find-the-Google-CSE-ID.php\">Where to find the Google CSE ID?</a></p>
+
+<br clear=all>
+
+<div class="alert alert-info" id="latest"><h4>Latest Version</h4>
+<p>v3.0.7 (for Joomla 3.0 and above)<br />
+Released Dec 23, 2016</p>
+<ul type=disc>
+<li>Support for <b>https</b> - resolved one more Mixed Content warning in the "Powered by Google" image</li>
+<li>Changed the installation method back to "Upgrade" so that you now do not need to uninstall before installing the new version. If the 2 new fields are not found, the program will automatically add the 2 new fields.</li>
+</ul>
+<p></p>
+
+<p>v3.0.6 (for Joomla 3.0 and above)<br />
+Released Dec 14, 2016</p>
+<ul type=disc>
+<li>Added new parameter: <code>use_https</code>. Set this to "Yes" if your site is using https. Default is "No". This resolves the mixed content warning if you are using SSL certificate for your site - <i>"Mixed Content: The page was loaded over HTTPS, but requested an insecure script 'http://maps.googleapis.com/maps/api/js?key=...'. This request has been blocked; the content must be served over HTTPS."</i></li>
+<li>Added new parameter: <code>open_link_in_same_window</code>. Set this to "Yes" if you want links to open in the same window. Default is "Yes". If set to "No", links will open in a new window.</li>
+</ul>
+
+<p><b>Note:</b></p>
+<ol>
+<li>For this new version, you have to <b style="background:#ffff00">uninstall the old version</b> first and re-install the new version - so that the 2 new parameters can be added.</li>
+<li>You may want to print or take note of the original settings first before you uninstall.</li>
+<li>I find it easier to open the page of the googleSearch Config in the browser, do the uninstall and re-install, open the Config page in a new browser window, and then you can copy and paste the settings from the old to the new page.</li>
+</ol>
+
+
+
+</div>
+
+<?php sponsor('googleSearch (CSE) component', '85', 'component');?>
+<a id="features">
+<h3>What's exciting about Google's new Custom Search Engine (CSE)</h3></a>
+<p>There are many exciting new features in Google's new Custom Search Engine (CSE). Here are just some of them:</p>
+<?php 
+#joomla_toc(array('googleSearch module', 'latest', 'sh404SEF', 'download', 'install', 'history', 'config_component', 'replace-default-search', 'faq', 'user_reviews_4903', 'article_comments'));
+#joomla_toc(array('googleSearch module', 'latest', 'sh404SEF', 'download', 'install', 'history', 'config_component', 'replace-default-search', 'faq', 'article_comments'));
+?>
+<ul>
+<li><b>Search multiple sites.</b> If you have set up three different sites, say site1.com, site2.com, and site3.com, the CSE now allows you search only within these three sites.</li><p></p>
+<li><b>Refinements</b>: Refinements are labels that you apply to websites. They appear as a list of links above search results, offering users a way to narrow their search. When a user clicks a refinement label, the sites that you have labeled are given priority in the results. In addition to labeling sites, you can also specify additional words that are added to users' queries when they click a label, providing even more targeted results.</li><p></p>
+<p>You can see a live demo of refinements on this site. Enter a keyword, say "menu" in the search box at the top-left navigation area. Did you see the 8 refinement labels there: "PHP-GTK2", "Joomla", "PHP-GTK2 sample codes", "Joomla forum articles", etc. Try clicking on any of these refinement labels. It's pretty cool!</p>
+</ul>
+
+<p>There are many other exciting and advanced features in Google's new Custom Search Engine.</p>
+
+<p>You can see the complete official Google document here: <a href="http://www.google.com/coop/docs/cse/">http://www.google.com/coop/docs/cse/</a></p>
+
+<a id="differences">
+<h3>Differences between googleSearch (CSE) and googleSearch components</h3></a>
+<ul>
+<li><a href="http://www.kksou.com/php-gtk2/Joomla/googleSearch-component.php"><b>googleSearch component</b></a>: uses the traditional Google Search API.</li><p></p>
+<p>For this component, you can just install and use right away. You do not even need a Google Adsense ID.</p>
+
+<li><b>googleSearch (CSE) component</b>: uses Google's new Custom Search Engine (CSE).</li><p></p>
+<p>For this component, you'll have to first set up a Custom Search Engine in your Google's account. Once you have created a Custom Search Engine, Google will assign a unique CSE ID to that engine. You need to enter the CSE ID into the config page to start using this component.</p>
+</ul>
+
+
+
+<a id="demo">
+<h3>Demo</h3></a>
+<p>The search on this site is using the googleSearch (CSE) component/module. You can test it at the top of this page.</p>
+
+<a id="install">
+<h3>How to install</h3></a>
+
+<p>Set up is as easy as 1-2-3:</p>
+<ol>
+<li>Install the component</li>
+<li>Enter your Custom Search Engine's unique identifier (cx) - <a href="http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/Where-to-find-the-Google-CSE-ID.php">Where to find this?</a></li>
+<li>Enter your desired width of the search result</li>
+</ol>
+
+<p>That's all you need to get started! You'll now have Google Search right inside your Joomla page!</p>
+
+<a id="tutorial"></a>
+<h3>Tutorial</h3>
+<p>There is a very detailed tutorial on how to setup the googleSearch (CSE) component here: <a href="http://www.ostraining.com/blog/joomla/how-to-create-a-google-custom-search-engine-in-a-joomla-site/">How to Create a Google Custom Search Engine in a Joomla Site</a></p>
+
+
+<?php #display_google_ads32('joomla - how to use 336x280', 0, 20, 0, 20, 1, 1);?>
+
+<?php echo $note1;?>
+
+<p>For advanced settings, please refer to <a href="https://kksou.com/php-gtk2/#config_component">Customizing the Component</a>.</p>
+
+<a id="sh404SEF">
+<h3><span style="background:#ffff00">sh404SEF users</span></h3> </a>
+<p>If you are using the googleSearch component together with sh404SEF:</p>
+<ol>
+<li>Go to sh404SEF Configuration.</li><p></p>
+<li>Click the "By Component" tab.</li><p></p>
+<li>Look for the component "googleSearch(CSE)", and set the first column as "skip".</li><p></p>
+<li>Don't forget to click "Save".</li>
+</ol>
+
+<p>Please also make sure you read the following article:</p>
+
+<p><a href="http://www.kksou.com/php-gtk2/Joomla/running-googleSearch-with-sh404SEF-fixing-the-error-JFolder-folder-Path-is-not-a-folder-language.php">Running googleSearch with sh404SEF: fixing the error 'JFolder::folder: Path is not a folder: /language' </a></p>
+
+<a id="JFolder">
+<h3>"JFolder::folder: Path is not a folder: /language"</h3></a>
+<p>For those of you who get this error message, please refer to the article below for the solution:</p>
+
+<p><a href="http://www.kksou.com/php-gtk2/Joomla/running-googleSearch-with-sh404SEF-fixing-the-error-JFolder-folder-Path-is-not-a-folder-language.php">Running googleSearch with sh404SEF: fixing the error 'JFolder::folder: Path is not a folder: /language'</a></p>
+]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Gadgets</category>
+			<pubDate>Wed, 07 Jan 2009 04:20:52 +0000</pubDate>
+		</item>
+		<item>
+			<title>googleMaps module</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Gadgets/googlemaps-module.php</guid>
+			<description><![CDATA[<?php require_once("/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php");?>
+<?php require_once("/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php");?>
+
+<script type="text/javascript">var j10=92; var j15=93; var j16=141; var j17=142; var j25=143; var j30=165;</script>
+<script type="text/javascript" src="https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2_30.js"></script>
+
+<p>This is the module version of the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps plugin</a>.</p>
+
+<p>This module allows you to include one or more google maps in a module position.</p>
+
+<p><b>Very Important:</b> This module makes use of the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps plugin</a>. So please make sure you have installed this plugin too for this module to work.</p>
+
+<br clear=all>
+
+<div class="alert alert-info" id="latest"><h4>Latest Version</h4>
+<p>v1.6 (for Joomla 1.6), v1.7 (for Joomla 1.7), v2.5 (for Joomla 2.5)<br>
+Released March 3, 2012</p>
+
+<p>Native version of the googleMaps module for Joomla 1.6, 1.7 and 2.5!</p>
+
+</div>
+
+<?php
+/*
+<a id="demo">
+<h3>Live Demo</h3></a>
+
+echo #display_google_ads32('joomla - 468x60', 0, 20, 0, 20, 0)."<br clear=all>";
+
+<p>You can see live demos of the module here:</p>
+<ul>
+<li><a href="http://www.kksou.com/t1015/index.php?option=com_content&task=view&id=12&Itemid=26">googleMaps module demo using Joomla 1.0.15 standard template</a></li>
+<li><a href="http://www.kksou.com/t1510/index.php?option=com_content&view=article&id=51:googlemaps-module-demo&catid=1:latest-news&Itemid=53">googleMaps module demo using Joomla 1.5.10 standard template</a></li>
+</ul>
+*/
+?>
+
+<a id="how_to_use">
+<h3>How to use the googleMaps module</h3></a>
+
+<span class="info"><b>Very Important:</b> This module makes use of the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps plugin</a>. So please make sure you have installed this plugin too for this module to work.</span>
+
+<ol>
+<li>Download and install the module.</li><p></p>
+<li>Publish the module.</li><p></p>
+<li>Go to Modules Manager and click on the module.</li><p></p>
+
+<?php #display_google_ads32('joomla - middle1 468x60', 0, 20, 0, 20);?>
+<br clear=all>
+
+<li>In the Modules Parameter, enter the Google Maps definition in the field <b style="background:#ffff00">Content</b>. e.g.</li>
+<pre>
+Amazon.com, Inc.~
+1200 12th Avenue South~
+Seattle, Washington 98144-2734~
+Tel: (206) 266-1000
+
+&#123;googleMaps lat=47.5923005 long=-122.3172946 zoom=12
+label="Amazon.com, Inc.~1200 12th Avenue South~Seattle, Washington 98144" 
+width=160 height=300&#125;
+</pre>
+<p><b>Note:</b> ~ will be replaced with &lt;br /&gt;. For Joomla 1.0, you do not need the &lt;br /&gt;. For Joomla 1.5, you will need to manually enter the line break.</p>
+
+<li>The syntax of the menu items definition is exactly the same as that of the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps plugin</a>. Please refer to the article.</li><p></p>
+
+</ol>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Gadgets</category>
+			<pubDate>Wed, 22 Apr 2009 16:16:21 +0000</pubDate>
+		</item>
+		<item>
+			<title>googleSearch (CSE) module</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-module.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-module.php</guid>
+			<description><![CDATA[<?php require_once("/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php");?>
+<?php require_once("/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php");?>
+
+<script type="text/javascript">var j10=86; var j15=87; var j16=147; var j17=148; var j25=149; var j30=167;</script>
+<script type="text/javascript" src="https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2_30.js"></script>
+<?php /*<script type="text/javascript">prepareLinks();</script>*/ ?>
+
+<a id="intro"></a>
+<p>This module complements the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php">googleSearch_cse component</a>.</p>
+
+{Accordion_Menu_Apple_style 100 float:right10}
+General
+- <a href="https://kksou.com/php-gtk2/#intro">Introduction</a>
+<a href="https://kksou.com/php-gtk2/#download">Download</a>
+- <a href="https://kksou.com/php-gtk2/#download">Download</a>
+- <a href="https://kksou.com/php-gtk2/#latest">Latest Version</a>
+Documentation
+- <a href="https://kksou.com/php-gtk2/#install">How to install</a>
+- <a href="https://kksou.com/php-gtk2/#sh404SEF">sh404SEF users</a>
+- <a href="https://kksou.com/php-gtk2/#config_module">Customizing the Module</a>
+User Reviews
+- <a href="https://kksou.com/php-gtk2/#article_comments">kksou.com</a>
+{/Accordion_Menu_Apple_style}
+
+<?php #joomla_toc(array('latest', 'download', 'install', 'config_module','user_reviews_4935', 'article_comments'));?>
+
+<?php #joomla_toc(array('latest', 'download', 'install', 'config_module', 'article_comments'));?>
+
+<p>It allows you to add a Google search form as a module. This means that you can place the search form in any module position you like.</p>
+
+<p>When the user clicks the search button, the search result will be displayed in your Joomla main body by the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php">googleSearch_cse component</a>.</p>
+
+<p>Let me emphasize again that you need to have the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php">googleSearch_cse component</a> installed for this to work.</p>
+
+<p>Available for all Joomla versions: Joomla 1.0, 1.5, 1.6, 1.7, 2.5 and 3.0!!</p>
+
+<br clear=all>
+<div class="alert alert-info" id="latest"><h4>Latest Version</h4>
+<p>v3.0.2 (for Joomla 3.0 and above)<br />
+Released Feb 14, 2015</p>
+<p>Support for the latest Joomla 3.3.6!</p>
+
+<p><b>Note:</b> Please make sure if you have also installed the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php">googleSearch_cse component</a>. The module requires the component to work.</p>
+</div>
+
+<a id="sh404SEF">
+<h3><span style="background:#ffff00">sh404SEF users</span></h3> </a>
+<p>If you are using the googleSearch_cse component together with sh404SEF:</p>
+<ol>
+<li>Go to sh404SEF Configuration.</li><p></p>
+<li>Click the "By Component" tab.</li><p></p>
+<li>Look for the component "googleSearch (CSE)", and set the first column as "skip".</li><p></p>
+<li>Don't forget to click "Save".</li>
+</ol>
+
+<p>Please also make sure you read the following article:</p>
+
+<p><a href="http://www.kksou.com/php-gtk2/Joomla/running-googleSearch-with-sh404SEF-fixing-the-error-JFolder-folder-Path-is-not-a-folder-language.php">Running googleSearch with sh404SEF: fixing the error 'JFolder::folder: Path is not a folder: /language' </a></p>
+
+<a id="JFolder">
+<h3>"JFolder::folder: Path is not a folder: /language"</h3></a>
+<p>For those of you who get this error message, please refer to the article below for the solution:</p>
+
+<p><a href="http://www.kksou.com/php-gtk2/Joomla/running-googleSearch-with-sh404SEF-fixing-the-error-JFolder-folder-Path-is-not-a-folder-language.php">Running googleSearch with sh404SEF: fixing the error 'JFolder::folder: Path is not a folder: /language'</a></p>
+]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Gadgets</category>
+			<pubDate>Wed, 07 Jan 2009 04:21:10 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

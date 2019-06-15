@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>googleMaps plugin - FAQs, Troubleshoot and Tips & Techniques</title>
+		<description>Discuss googleMaps plugin - FAQs, Troubleshoot and Tips & Techniques</description>
+		<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:21:32 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/1681.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-2000</link>
+			<description><![CDATA[Hi Christian Please refer to this post: https://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-1997 Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 29 Jun 2018 09:44:59 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-2000</guid>
+		</item>
+		<item>
+			<title>Christian says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1992</link>
+			<description><![CDATA[Can I add multiple KML files to the Plugin?]]></description>
+			<dc:creator>Christian</dc:creator>
+			<pubDate>Wed, 20 Jun 2018 15:58:34 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1992</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1860</link>
+			<description><![CDATA[Hi David, I've written a tutorial here: googleDirections - To Here - plugin Tutorial 01: Getting Started: http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php Hope this helps. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 13 Dec 2016 09:14:25 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1860</guid>
+		</item>
+		<item>
+			<title>David says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1859</link>
+			<description><![CDATA[Hi I just downloaded and installed the Google Maps, Directions and From Here plugins and published all three. The map and directions ONLY shows when I have BOTH the from and to addresses. What I need is for the user to be able to enter their OWN address and for the map to show them how to get the the event location from their house. Do these plugins allow for that or am I missing something? Best Regards, David Here's the page: http://www.perthbluesclub.com/index.php/musicians/get-to-pbc]]></description>
+			<dc:creator>David</dc:creator>
+			<pubDate>Tue, 13 Dec 2016 06:09:13 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1859</guid>
+		</item>
+		<item>
+			<title>Anton says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1857</link>
+			<description><![CDATA[Hi Please see the following link for the api documentation: https://developers.google.com/maps/documentation/distance-matrix/intro Thanks!]]></description>
+			<dc:creator>Anton</dc:creator>
+			<pubDate>Tue, 29 Nov 2016 03:36:52 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1857</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1853</link>
+			<description><![CDATA[Hi Anton, Don't think there's a Google Maps API for that. If there is, let me know and I can add them to the plugin. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 28 Nov 2016 09:11:48 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1853</guid>
+		</item>
+		<item>
+			<title>Anton says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1849</link>
+			<description><![CDATA[Hi Is there any way to display only the distance without the directions or map? Thanks]]></description>
+			<dc:creator>Anton</dc:creator>
+			<pubDate>Sat, 19 Nov 2016 07:55:38 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1849</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1841</link>
+			<description><![CDATA[Hi John, Have not tried this, but I can test it out for you. But can you please help by giving me the URL of the page you've found about scrollwheel=false. Also, is it possible to give me a reference site which gives the same type of control as what you want. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 09 Nov 2016 04:05:46 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1841</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1840</link>
+			<description><![CDATA[Hi John, May I know which version are you using? The latest version uses the latest Google Maps API and I think Google has fixed the problem of the huge empty space above and below the map. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 09 Nov 2016 04:00:01 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1840</guid>
+		</item>
+		<item>
+			<title>John Duffy says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1839</link>
+			<description><![CDATA[It seems that my first comment didn't go through (I thought it was waiting to be moderated or something). Here it is again. Having followed the link to the Google Maps Controls reference, I'm not able to get this working; scrollwheel=false . Is there anything I can do to get this going, as I need to avoid mobile users zooming in on the map, but instead continuing to scroll the page. And thoughts or advice much appreciated. Thanks, JD]]></description>
+			<dc:creator>John Duffy</dc:creator>
+			<pubDate>Wed, 09 Nov 2016 01:17:50 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1839</guid>
+		</item>
+		<item>
+			<title>John Duffy says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1838</link>
+			<description><![CDATA[Also, I'm trying to get rid of the white space above and below the map. It seems to be simply . Any thoughts on how to remove those would be really appreciated. Thanks, JD]]></description>
+			<dc:creator>John Duffy</dc:creator>
+			<pubDate>Wed, 09 Nov 2016 01:14:16 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1838</guid>
+		</item>
+		<item>
+			<title>Flex says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1785</link>
+			<description><![CDATA[Hi kksou! Yes, that's it. It works now! Many thanks, wonderful! Best Regards, Felix]]></description>
+			<dc:creator>Flex</dc:creator>
+			<pubDate>Wed, 02 Mar 2016 09:59:20 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1785</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1784</link>
+			<description><![CDATA[Hi Felix, 1) Go to your HTML module 2) In the Options Tab, you will see the first item "Prepare Content" 3) Set this to "Yes" 4) Don't forget to save! The googleMaps plugin should now work in your HTML module. Please give the above a try and let me know if it works. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 02 Mar 2016 01:06:38 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1784</guid>
+		</item>
+		<item>
+			<title>Flex says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1783</link>
+			<description><![CDATA[Hi kksou! If I use the code in an article, then it works. If I use the code in a HTML module, it doesn't work. It will only shown the code, but no map. Doesn't it work directly in a module? Best Regards, Felix]]></description>
+			<dc:creator>Flex</dc:creator>
+			<pubDate>Tue, 01 Mar 2016 16:58:42 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1783</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1763</link>
+			<description><![CDATA[Hi Michael, Have just updated my site (kksou.com) to Joomla 3.4.7. As you can see in here: http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php and here: http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php, the googleMaps plugin is running ok. Joomla 3.4.7 essentially affects those plugins using $_SESSION. googleMaps does not use any session variables. I suspect your problem might be due to some other plugins. The easiest to test is to set up another fresh Joomla somewhere on your server (takes about 5 min), and then install just the googleMaps plugin. It will allow you to see if googleMaps runs with Joomla 3.4.7 or not. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 23 Dec 2015 16:02:52 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1763</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1760</link>
+			<description><![CDATA[Hi Michael, I'm outside having meeting now. Will take a look at this when I get back and try to resolve this asap! Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 22 Dec 2015 16:31:29 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1760</guid>
+		</item>
+		<item>
+			<title>Michael says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1759</link>
+			<description><![CDATA[I am having an issue since Joomla update 3.4.7 (mandandory ba provider because of spam bot attack). There is only an empty space where the map should be - but the plugin is still active an replaced the code and takes the room for the map. help please :sad: Regards an thanks for your work ! Michael]]></description>
+			<dc:creator>Michael</dc:creator>
+			<pubDate>Tue, 22 Dec 2015 16:18:16 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1759</guid>
+		</item>
+		<item>
+			<title>Michael says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1758</link>
+			<description><![CDATA[Hi, everything went fine until the joomla update 3.4.7 today (mandantory by provider because of spam bot attack). Now I get only an empty "Space" (no frame, no colour) - so the plugin is activated, but doesn't show the google map. :sad: any hints ?]]></description>
+			<dc:creator>Michael</dc:creator>
+			<pubDate>Tue, 22 Dec 2015 16:11:14 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1758</guid>
+		</item>
+		<item>
+			<title>Phil Adler says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1741</link>
+			<description><![CDATA[I am having an issue where the maps display on one page fine but when put inside of a Jevents calendar event the map doesnt display and the button does not work. The jevents developer says to check with you. This has worked fine in the past. Can you help me I can give you links to the pages]]></description>
+			<dc:creator>Phil Adler</dc:creator>
+			<pubDate>Thu, 24 Sep 2015 13:50:33 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1741</guid>
+		</item>
+		<item>
+			<title>wezetel says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1273</link>
+			<description><![CDATA[thanks a lot. Searched a while and it seems the Google API requires the full qualified URL (for tracking usage)]]></description>
+			<dc:creator>wezetel</dc:creator>
+			<pubDate>Tue, 21 Jan 2014 05:27:54 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1273</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1272</link>
+			<description><![CDATA[Hi, What I did is to pass everything you specified to the Google Maps API. If you find that it doesn't work with relative path, then most likely it's due to Google Maps KPI not allowing relative path for KML file. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 20 Jan 2014 07:33:13 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1272</guid>
+		</item>
+		<item>
+			<title>wezetel says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1270</link>
+			<description><![CDATA[quick question: is it possible to use kml files with relative paths (important for moving from development site to production site) beside this: small and easy plugin..tried others and was not able to show kml files in a quick way.]]></description>
+			<dc:creator>wezetel</dc:creator>
+			<pubDate>Sun, 19 Jan 2014 02:06:30 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1270</guid>
+		</item>
+		<item>
+			<title>Buddy Quaid says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-863</link>
+			<description><![CDATA[2 Questions: 1) Is it possible to show street view right off the bat? Instead of them having to drag the little man? 2) I have my googleMap plugin code inside a tab using Content Tabs & Sliders plugin. It loads fine if you are on the map tab and load the page. However, if you are on another tab and the page reloads and click on the map tab, only a square portion of the map shows and does not follow the width and height directive. Here is my code: {tabs type=tabs} {tab title=Map It}{googleMaps addr="{address:value},{city:value}, {state:value}" addoverview=0 label="{map_label:value}" height=350 width=638}{/tab} Any help would be greatly appreciated!]]></description>
+			<dc:creator>Buddy Quaid</dc:creator>
+			<pubDate>Thu, 31 Jan 2013 12:10:59 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-863</guid>
+		</item>
+		<item>
+			<title>satriani says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-826</link>
+			<description><![CDATA[hello, can I disable map type buttons? For example I dont want to display sattelite, road map selection, only show by default roadmap. Can this be accomplished? thank you]]></description>
+			<dc:creator>satriani</dc:creator>
+			<pubDate>Sun, 13 Jan 2013 07:40:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-826</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-822</link>
+			<description><![CDATA[Hi Roger, You should receive an email with the download link. Please check your junk folder - email from support@kksou.com. It might have gone into the junk folder. I've also just emailed you a copy of the installer. Please let me know if you did not receive the email. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 09 Jan 2013 08:01:32 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-822</guid>
+		</item>
+		<item>
+			<title>Roger Tang says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-819</link>
+			<description><![CDATA[Hi, I purchased the googleMaps license and would like to remove the "powered by" text. How should I do so? Pls advise. --Roger]]></description>
+			<dc:creator>Roger Tang</dc:creator>
+			<pubDate>Wed, 09 Jan 2013 07:53:16 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-819</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-750</link>
+			<description><![CDATA[Have one user encountering the same situation. It's a conflict with the joomla template css. To verify this, you can try switching the template to the standard joomla template (that comes with the standard joomla install). If it works, then you know it's the css problem. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 26 Nov 2012 00:53:09 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-750</guid>
+		</item>
+		<item>
+			<title>BjarnevR says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-731</link>
+			<description><![CDATA[The red standard marker is like cut into 1/3 and 2/3's and put together/shows the wrong way. Any Idea how to get the marker right? Thanks a lot.]]></description>
+			<dc:creator>BjarnevR</dc:creator>
+			<pubDate>Sun, 18 Nov 2012 10:34:31 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-731</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-412</link>
+			<description><![CDATA[Hi, Yes, the latest googleMaps plugin (which uses the latest Google Maps API v3) features built-in street view! Have written a quick tutorial here: "googleMaps plugin - how to display street view" http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-how-to-display-street-view.php Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 26 Jun 2012 18:08:04 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-412</guid>
+		</item>
+		<item>
+			<title>Atrialis says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-411</link>
+			<description><![CDATA[Hi, IS the Streetview parameter implemented and working? I find this plugin awsome. Small, clean, simple, working. PERFECT! Thanks!]]></description>
+			<dc:creator>Atrialis</dc:creator>
+			<pubDate>Tue, 26 Jun 2012 17:31:21 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-411</guid>
+		</item>
+		<item>
+			<title>Ralf Longwitz says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-16</link>
+			<description><![CDATA[How can the marker style be changed? Thank you!]]></description>
+			<dc:creator>Ralf Longwitz</dc:creator>
+			<pubDate>Tue, 24 Jan 2012 01:08:29 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-16</guid>
+		</item>
+	</channel>
+</rss>

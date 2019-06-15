@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>googleMaps plugin Tutorial 04: Map Type</title>
+		<description>Discuss googleMaps plugin Tutorial 04: Map Type</description>
+		<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-04-Map-Type.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:02:20 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2045.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-04-Map-Type.php#comment-1953</link>
+			<description><![CDATA[Hi Barrie, That's really strange because I use exactly the same plugin that I published in the website. I simply pass the address into Google Maps API and the entire output is direct from Google. It should be site-independent. You might want to try this plugin on another site. You can also try using another Google Maps API and see if it works. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 07 Feb 2018 06:43:02 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-04-Map-Type.php#comment-1953</guid>
+		</item>
+		<item>
+			<title>Barrie Mckinnon says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-04-Map-Type.php#comment-1952</link>
+			<description><![CDATA[Hi Guys, A simple question. When I re-create your map using {googleMaps addr="37.4219720, -122.0841430"} the map displays fine but Street View does not operate as in your demo i.e. I can get static, stock photos but, unlike your demo, I cannot 'navigate' the view along roads etc. I do have the option to 'view in Google Maps' but I don't really want the additional step.]]></description>
+			<dc:creator>Barrie Mckinnon</dc:creator>
+			<pubDate>Tue, 06 Feb 2018 12:01:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-04-Map-Type.php#comment-1952</guid>
+		</item>
+	</channel>
+</rss>

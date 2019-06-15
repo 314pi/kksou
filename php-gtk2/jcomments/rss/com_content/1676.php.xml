@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>DirectPHP - FAQs, Troubleshoot and Tips & Techniques</title>
+		<description>Discuss DirectPHP - FAQs, Troubleshoot and Tips & Techniques</description>
+		<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:20:01 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/1676.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-2057</link>
+			<description><![CDATA[Hi Uwe, Please take a look at the article Ordering of Joomla plugins: https://www.kksou.com/php-gtk2/joomla-tips-techniques/ordering-of-joomla-plugins.php Try to change the order of plugin so that you process DirectPHP before the php-rgraph plugin. I think the current order is such that php-rgraph is processed first followed by DirectPHP. That's why the php-rgraph tag is not processed. Please give the above a try and let me know if it works. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 28 Nov 2018 07:16:13 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-2057</guid>
+		</item>
+		<item>
+			<title>Uwe Klaus says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-2056</link>
+			<description><![CDATA[Hello, i'm working with directphp in Joomla 3.9.1 now and it is working fine :-) . I use codemirror as editor, because tinymce is a pain with a lot of php code - if you want to paste or press the wrong button. :-) I use also php-rgraph which is a very nice tool to show my weather data graphically. :sad: I had to reinstall my server and got updates on joomla, and other plugins... Since that php commands do not work anymore within the {rgraph ....} tags ... E.g.: {rgraph ... ymin="" ... } is totally ignored. Any suggestions? Please help if you can. :-?]]></description>
+			<dc:creator>Uwe Klaus</dc:creator>
+			<pubDate>Wed, 28 Nov 2018 06:48:17 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-2056</guid>
+		</item>
+		<item>
+			<title>Serge says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1988</link>
+			<description><![CDATA[Hello ! Just confirm your plugin works perfectly under latest Joomla 3.8.8 and PHP 7.0. Thank you ! The only very desired feature is to enable this plugin for specific categories IDs or specific article IDs. It would decrease a general article loading weight and increase the general safety. With hope to a next update ! Best regards,]]></description>
+			<dc:creator>Serge</dc:creator>
+			<pubDate>Sat, 09 Jun 2018 22:26:40 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1988</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1973</link>
+			<description><![CDATA[Hi Sven, There's no way to fix anything if you don't know exactly what's the problem. So first thing first, you need to find out what is the error message. Joomla has no inherent debugging tool. So the only way is to enable error_display in PHP and see what exactly is the error message produced. Also DirectPHP uses standard eval() function. So you can also copy and paste the entire code into a standalone .PHP file and see if it runs from browser or command line. If it doesn't, you can see exactly what's the error message on the screen. You may also want to refer to the following article that I've written that contains more details: How to debug PHP codes in DirectPHP : https://www.kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php Hope this helps. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 11 Mar 2018 01:49:34 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1973</guid>
+		</item>
+		<item>
+			<title>Sven Kutz says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1972</link>
+			<description><![CDATA[Hi there, I am using your DirectPHP Plugin and it worked all fine so far. Thanks so much for providing this Plugin. However, I have no experienced a problem with PHP Mail function. Within an article I have implemented code to generate an email and send it out via Mail(). Once processing the script, nothing is happening. I am not receiving any error message, but an email has also not been sent. First I thought it could be a missing email address which I have taken out from an mysql table, but I checked this and the query worked fine and e-mail address ist correct. Do you have any idea what the problem could be? Just for your information: The DirectPHP Plugin is ordered before the Content - Email Cloaking. Many thanks in advance for your support.]]></description>
+			<dc:creator>Sven Kutz</dc:creator>
+			<pubDate>Fri, 09 Mar 2018 12:03:36 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1972</guid>
+		</item>
+		<item>
+			<title>Ruediger Schultz says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1829</link>
+			<description><![CDATA[Hello Iddy, I am a longterm (very happy) user of "DirectPHP". However for getting data out of your database and embed them into articles, you may want consider my own Joomla extension jDBexport. This is a data reporting tool, where you define SQL queries in the backend, and receive the results as Excel documents (or embed them in just about any way you want). contact me if you like to know more... regards Ruediger]]></description>
+			<dc:creator>Ruediger Schultz</dc:creator>
+			<pubDate>Mon, 17 Oct 2016 12:20:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1829</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1827</link>
+			<description><![CDATA[Hi Ruediger, Thanks to informing me about this way back in July. It's very nice of you! For your info, have released DirectPHP for php7: New version of DirectPHP - support for PHP 7 : http://www.kksou.com/php-gtk2/joomla-news/new-version-of-directphp-support-for-php-7.php You can download it here: http://www.kksou.com/php-gtk2/joomla/directphp-plugin.php#download: http://www.kksou.com/php-gtk2/joomla/directphp-plugin.php#download Thanks for your long-time support for the DirectPHP plugin! Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 14 Oct 2016 07:38:04 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1827</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1820</link>
+			<description><![CDATA[Hi Iddy, Please refer to the article: How to debug PHP codes in DirectPHP: http://www.kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php Not all codes that run in php file will run within the Joomla framework. Also, please take a look at the last item "Mysql database" as you are pulling data from another db. Hope this helps. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 24 Aug 2016 08:26:24 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1820</guid>
+		</item>
+		<item>
+			<title>Iddy says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1815</link>
+			<description><![CDATA[Hi, I'm using php direct in joomla 3 article to get data from database table. It pulls all the data correctly but there are joomla shortcodes that just display as shortcodes and don't convert. If I run the php outside of joomla and then copy/paste the page directly into joomla article the shortcodes work. Any ideas?]]></description>
+			<dc:creator>Iddy</dc:creator>
+			<pubDate>Mon, 22 Aug 2016 12:26:02 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1815</guid>
+		</item>
+		<item>
+			<title>Pete says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1808</link>
+			<description><![CDATA[Installed fine, works great. Why can't everything be this simple? Can't find a 'donate' link.]]></description>
+			<dc:creator>Pete</dc:creator>
+			<pubDate>Thu, 07 Jul 2016 19:50:40 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1808</guid>
+		</item>
+		<item>
+			<title>Ruediger says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1805</link>
+			<description><![CDATA[Hello, I am (still) using this wonderful little tool in various projects to add php into content - as said before, I really like it!!! However, for your info, just in case you did not yet notice the following DEPRECATION message (on PHP 7.0.7): Deprecated: Methods with the same name as their class will not be constructors in a future version of PHP; plgContentDirectPHP has a deprecated constructor in ....httpdocs/plugins/content/DirectPHP\DirectPHP.p hp on line 23]]></description>
+			<dc:creator>Ruediger</dc:creator>
+			<pubDate>Tue, 05 Jul 2016 10:52:17 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1805</guid>
+		</item>
+		<item>
+			<title>Bryan says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1801</link>
+			<description><![CDATA[Hello. Always used your useful plugin. But after aupdate to Joomla 3.5.1 it stop working. Get error: Parse error: syntax error, unexpected '}' in Z:\home\test\www\plugins\content\DirectPHP\DirectP HP.php(58) : eval()'d code on line 16 But I nothing changed in code, just update Joomla. My code is: Notice: Undefined variable: colorbgsoon in Z:\home\test\www\plugins\content\DirectPHP\DirectP HP.php(58) : eval()'d code on line 1 Check my code on http://sandbox.onlinephpfunctions.com/ and it still working without errors.]]></description>
+			<dc:creator>Bryan</dc:creator>
+			<pubDate>Sun, 08 May 2016 09:18:46 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1801</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1800</link>
+			<description><![CDATA[Hi Vikash, The DirectPHP plugin is a content plugin. As the name suggests, it's for use within the Article component only (which is com_content). I wrote this plugin to run simple PHP commands from within an article. It's not designed to run in other components. The SP Page Builder is a different component by itself. It does not know all the plugins out there, and naturally it will not run DirectPHP plugin which is a content plugin. You might want to check with the developer of SP Page Builder to see if there's anyway to trigger content plugin from within their component. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 28 Apr 2016 08:15:33 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1800</guid>
+		</item>
+		<item>
+			<title>Vikash says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1799</link>
+			<description><![CDATA[i am using DirectPHP plugin in zoomla version 3.0 but when i create page by sppage builder and write php code . its not working . when i check code on browser in inspect element php code show in comment .\ please can you solve this problem i have very tried . Thanks vikash sharma]]></description>
+			<dc:creator>Vikash</dc:creator>
+			<pubDate>Wed, 27 Apr 2016 11:33:44 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1799</guid>
+		</item>
+		<item>
+			<title>johnnybgoodwin says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1207</link>
+			<description><![CDATA[Hi there The plugin worked when I first installed it. Today it won't work. The .php script is shown in full in the content. Using TinyMCE in Joomla 2.5.14 and PHP 5.3. Like I said, it worked a couple of days ago. Nothing changed on the site.... John]]></description>
+			<dc:creator>johnnybgoodwin</dc:creator>
+			<pubDate>Tue, 22 Oct 2013 14:41:48 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1207</guid>
+		</item>
+		<item>
+			<title>strategystar says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1188</link>
+			<description><![CDATA[Hi, I am using your plugin for PHP code in a joomla article and it is working perfectly except one thing... the main navigation of the website is not showing on this page???? please see: http://www.net-direct-marketing.com/index.php/ad-form Any ideas as how to fix this or why it is happening?]]></description>
+			<dc:creator>strategystar</dc:creator>
+			<pubDate>Sun, 06 Oct 2013 12:40:43 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1188</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1170</link>
+			<description><![CDATA[Hi, Can you please email me the codes that you're trying to run? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 13 Sep 2013 01:33:22 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1170</guid>
+		</item>
+		<item>
+			<title>George123456 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1169</link>
+			<description><![CDATA[ Only your php example codes are working. My script, which generates dynamic html-content is not displayed.]]></description>
+			<dc:creator>George123456</dc:creator>
+			<pubDate>Thu, 12 Sep 2013 17:53:15 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1169</guid>
+		</item>
+		<item>
+			<title>chandler says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1100</link>
+			<description><![CDATA[I added comments to the quote ]]></description>
+			<dc:creator>chandler</dc:creator>
+			<pubDate>Tue, 02 Jul 2013 08:40:17 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1100</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1099</link>
+			<description><![CDATA[1) Try echo "test123" first. Does it work? 2) If yes, then trying echo some debugging messages to see at which point it doesn't work. 3) How do you know that you are able to connect to the database? 4) If you are able to connect to the database, then what is not working? 5) You might need to set error_display in php.ini to display error messages. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 02 Jul 2013 08:27:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1099</guid>
+		</item>
+		<item>
+			<title>chandler says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1098</link>
+			<description><![CDATA[I am trying to run sql commands and none of them seem to work. Something as simple as creating a table with one column in it. I am not getting any errors and I am able to connect to the database but I can't do anything else.]]></description>
+			<dc:creator>chandler</dc:creator>
+			<pubDate>Tue, 02 Jul 2013 08:19:31 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-1098</guid>
+		</item>
+		<item>
+			<title>Knowledge Explained says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-975</link>
+			<description><![CDATA[What made me think that, is that the crash didn't happen for all PHP code. Depending on what instructions I added to the article, it would crash or not. That's what made me suspect: For a content string, what difference would it make if my PHP is calling echo or JFactory? None. Unless the PHP insertions are getting treated as code instead. But I may be wrong, of course. Just letting you know my thoughts on the crash.]]></description>
+			<dc:creator>Knowledge Explained</dc:creator>
+			<pubDate>Sat, 20 Apr 2013 05:17:56 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-975</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-974</link>
+			<description><![CDATA[Hi, Thanks much for sharing this! It's strange, because no other users have encountered this before. You can try this on a standard Joomla template. Don't think by default the editor will run the plugins. DirectPHP is a content plugin. It should run only with content articles. In any case, this is still useful knowledge to know. It will benefit other users if they encounter similar situation. Thanks and Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 19 Apr 2013 01:28:07 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-974</guid>
+		</item>
+		<item>
+			<title>Knowledge Explained says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-973</link>
+			<description><![CDATA[Hi kksou, finally I wrote a fix myself that has solved the problem. At the beginning of onContentPrepare function I have added the following 2 lines: if( !JFactory::getApplication()->isSite() ) return true; This restricts PHP code evaluation to the site (and not the backend). So it seems that my intuition was right here: PHP was getting evaluated when saving the article! Hope you can fix it for next versions. And thanks for your help. www.knowledgeexplained.com]]></description>
+			<dc:creator>Knowledge Explained</dc:creator>
+			<pubDate>Thu, 18 Apr 2013 01:10:59 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-973</guid>
+		</item>
+		<item>
+			<title>Knowledge Explained says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-972</link>
+			<description><![CDATA[So, I tried deactivating DirectPHP. I re-saved some articles that normally made the backend go blank, and they saved without problems. When re-enabling DirectPHP, saving them again with the exact same content produces the problem again. It seems it only happens when DirectPHP is active.]]></description>
+			<dc:creator>Knowledge Explained</dc:creator>
+			<pubDate>Wed, 17 Apr 2013 15:14:04 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-972</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-968</link>
+			<description><![CDATA[Hi, Please do one more test: 1) Uninstall DirectPHP 2) Enter some PHP codes in editor 3) Click save Does it give any error? If yes, it means there's nothing to do with DirectPHP. It's the editor problem. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 17 Apr 2013 02:27:19 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-968</guid>
+		</item>
+		<item>
+			<title>Knowledge Explained says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-967</link>
+			<description><![CDATA[Hello kksou. I have tried changing editor, but the same happens. Even when I select "no editor", which reduces input to a text box. What happens is this: - I copy the text to the input box - I press save - The page becomes blank - I can still press "back" on the browser, and I get to continue working at the backend - If I go to the web and see the article, it displays and its embedded PHP worked as expected. If you need any more details, feel free to ask (maybe through email?)]]></description>
+			<dc:creator>Knowledge Explained</dc:creator>
+			<pubDate>Wed, 17 Apr 2013 02:12:05 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-967</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-966</link>
+			<description><![CDATA[Hi, As a test, can you switch back to the default editor that comes with standard Joomla installation and see if it's the same problem. This will allow you to see if it's just CodeMirror giving the problem. Does CodeMirror has a forum? If yes, maybe you can post the question there. Maybe there are already some solutions for that. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 17 Apr 2013 00:20:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-966</guid>
+		</item>
+		<item>
+			<title>Knowledge Explained says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-965</link>
+			<description><![CDATA[Hello kksou, thank you for your plugin! I am having a weird problem with DirectPHP 2.5 under Joomla 2.5.7. I edit my articles at the backend, and for most PHP code, if I embed it in an article and press save, it makes the backend crash. However, the article was saved correctly: it displays on the web and the and the embedded PHP works right. I get the feeling that the process of saving the article is attempting to execute the embedded PHP snippets at that very moment, instead of just saving them as HTML or text. Could this be happening? If it helps, I am using editor CodeMirror (code only, no WYSIWYG).]]></description>
+			<dc:creator>Knowledge Explained</dc:creator>
+			<pubDate>Tue, 16 Apr 2013 10:33:36 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-965</guid>
+		</item>
+		<item>
+			<title>Berry G says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-730</link>
+			<description><![CDATA[ I am also experiencing this problem. Is there a workaround? You can solve this by selecting "No Editor" in the Joomla General settings. Put the php-code in the article and save the article. Afterwards you can select TinyMCE again. But if you edit the page with php-code you must select "No Editor" again.]]></description>
+			<dc:creator>Berry G</dc:creator>
+			<pubDate>Sat, 17 Nov 2012 05:26:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-730</guid>
+		</item>
+		<item>
+			<title>haggisbasher says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-724</link>
+			<description><![CDATA[ I am also experiencing this problem. Is there a workaround?]]></description>
+			<dc:creator>haggisbasher</dc:creator>
+			<pubDate>Wed, 14 Nov 2012 08:02:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-724</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-713</link>
+			<description><![CDATA[Hi, Based on your description, looks like you've only installed the DirectPHP module. For the module to work, it needs the DirectPHP plugin available here: http://www.kksou.com/php-gtk2/Joomla/DirectPHP-plugin.php Please install the plugin and test the plugin by creating a new article and entering the PHP code in the article. (please follow the instructions as outlined in the article where you download the plugin). Once the plugin is working correctly, you can then test your code in the module. Please give it a try one more time and let me know if it works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 04 Nov 2012 20:39:05 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-713</guid>
+		</item>
+		<item>
+			<title>uzbaby says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-712</link>
+			<description><![CDATA[Hello please can anybody help me I want to add some php code to new module but after adding the php code I see only THE CODE itself. What am i doing wrong?]]></description>
+			<dc:creator>uzbaby</dc:creator>
+			<pubDate>Sun, 04 Nov 2012 20:16:19 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-712</guid>
+		</item>
+		<item>
+			<title>Berry G says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-576</link>
+			<description><![CDATA[Unfortunately my question is not clear because the php tags are removed when I post on this forum. I'm trying to say that the php tags are modified by addition of !-- The php tag then looks like this (without spaces) < !-- ? php Hope my question is clear.....]]></description>
+			<dc:creator>Berry G</dc:creator>
+			<pubDate>Wed, 05 Sep 2012 01:36:16 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-576</guid>
+		</item>
+		<item>
+			<title>Berry G says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-575</link>
+			<description><![CDATA[Hi there, I installed DirectPHP on my Joomla! 1.5.22 site and tried it. Unfortunately it doesn't work. When I save the article, the "" is converted to "?-->". I activated the plugin and checked the TinyMCE settings to match the advised settings but still it doesn't work. How can I resolve this? Hope anyone can help]]></description>
+			<dc:creator>Berry G</dc:creator>
+			<pubDate>Wed, 05 Sep 2012 01:31:51 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-575</guid>
+		</item>
+		<item>
+			<title>Berry G says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-574</link>
+			<description><![CDATA[Hi there, I installed DirectPHP on my Joomla! 1.5.22 site and tried it. Unfortunately it doesn't work. When I save the article, the is converted to ?-->. I activated the plugin and checked the TinyMCE settings to match the advised settings but still it doesn't work. How can I resolve this?]]></description>
+			<dc:creator>Berry G</dc:creator>
+			<pubDate>Wed, 05 Sep 2012 01:29:16 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-574</guid>
+		</item>
+		<item>
+			<title>Tom_P says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-515</link>
+			<description><![CDATA[Hi, i am trying to install a latest events php file in a cusstom module, using bot_jcalpro_latest_events.php All the events have been entered in the calendar and are visible on the website, but i can't get the php file to work in html. Am i using the right one, if so what am i doing wrong?]]></description>
+			<dc:creator>Tom_P</dc:creator>
+			<pubDate>Thu, 26 Jul 2012 05:48:37 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-515</guid>
+		</item>
+		<item>
+			<title>hans_eat says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-250</link>
+			<description><![CDATA[ Sorry, it dropped the php tags in the post. I meant: The function needs to be within and php start and end tags and 'echo " "', correct?]]></description>
+			<dc:creator>hans_eat</dc:creator>
+			<pubDate>Thu, 26 Apr 2012 01:09:39 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-250</guid>
+		</item>
+		<item>
+			<title>hans_eat says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-249</link>
+			<description><![CDATA[Hi kksou, this is a great tool, which works really good for me! I just have problems getting javascript working. The function need to be within and echo"", correct? Otherwise it displays the javasscript code, but doesn't run. How do I need to place the javascript code correctly in order to be recognized as such by phpdirect? And how can I call the functions? Thanks a lot! :roll:]]></description>
+			<dc:creator>hans_eat</dc:creator>
+			<pubDate>Thu, 26 Apr 2012 01:06:43 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-249</guid>
+		</item>
+		<item>
+			<title>frank the tank says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-231</link>
+			<description><![CDATA[hi, will it work with sessions/ submitting forms ?]]></description>
+			<dc:creator>frank the tank</dc:creator>
+			<pubDate>Mon, 16 Apr 2012 15:22:22 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-231</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-126</link>
+			<description><![CDATA[Hi, If it's standard PHP, it should work. What is the code that you are trying to run? What is the error messages that you see on the screen? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 10 Mar 2012 20:32:52 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-126</guid>
+		</item>
+		<item>
+			<title>murali ayyagari says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-119</link>
+			<description><![CDATA[I have worked it out. PHP, HTML, Javascript all are working. My only problem is that my form inserts the form data into mysql table.But that is not working. Any customization i have to do in Directphp.php file for the database related code to work.]]></description>
+			<dc:creator>murali ayyagari</dc:creator>
+			<pubDate>Wed, 07 Mar 2012 11:38:17 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-119</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-113</link>
+			<description><![CDATA[Hi, Are you saying that the PHP codes are working, but not the HTML and javascript? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 05 Mar 2012 16:45:25 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-113</guid>
+		</item>
+		<item>
+			<title>murali ayyagari says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-112</link>
+			<description><![CDATA[I have installed the plugin and is working with the examples you gave( simple php). I tried to insert code with php, html, and javascript and css. It is not showing any errors but on publishing it is just displaying the code only( except the php code ). How to correct it>]]></description>
+			<dc:creator>murali ayyagari</dc:creator>
+			<pubDate>Mon, 05 Mar 2012 10:05:01 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php#comment-112</guid>
+		</item>
+	</channel>
+</rss>

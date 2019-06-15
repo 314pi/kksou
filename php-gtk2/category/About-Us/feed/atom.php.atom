@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="en-gb">
+	<title type="text">Home</title>
+	<subtitle type="text">The Joy of Sharing and Learning Together</subtitle>
+	<link rel="alternate" type="text/html" href="https://kksou.com"/>
+	<id>https://kksou.com/php-gtk2/category/About-Us/feed/atom.php</id>
+	<updated>2019-06-14T08:36:05+00:00</updated>
+	<author>
+		<name>kksou</name>
+		<email>admin@kksou.com</email>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="https://kksou.com/php-gtk2/category/About-Us/feed/atom.php"/>
+	<entry>
+		<title>Services #3</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/About-Us/services-3.php"/>
+		<published>2012-12-20T16:24:37+00:00</published>
+		<updated>2012-12-20T16:24:37+00:00</updated>
+		<id>https://kksou.com/php-gtk2/About-Us/services-3.php</id>
+		<author>
+			<name>Super User</name>
+			<email>admin@yuchenkuang.com</email>
+		</author>
+		<summary type="html">&lt;p&gt;&lt;img src=&quot;https://kksou.com/php-gtk2/images/democontent/imfree/8731072852_34ffcf01e9_b.jpg&quot; /&gt;&lt;/p&gt;&lt;p&gt;Cras nec lorem eget ligula varius aliquet at et mi. Fusce id quam in justo suscipit porta. Fusce non nisl nunc, id vestibulum augue. Donec interdum sapien vitae sem condimentum vel adipiscing leo consequat. In quis nisi sed velit lobortis congue in vulputate risus. Aliquam molestie, risus sed congue ullamcorper, mauris lacus volutpat mauris, nec luctus est risus in libero.&lt;/p&gt;
+</summary>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;https://kksou.com/php-gtk2/images/democontent/imfree/8731072852_34ffcf01e9_b.jpg&quot; /&gt;&lt;/p&gt;&lt;p&gt;Cras nec lorem eget ligula varius aliquet at et mi. Fusce id quam in justo suscipit porta. Fusce non nisl nunc, id vestibulum augue. Donec interdum sapien vitae sem condimentum vel adipiscing leo consequat. In quis nisi sed velit lobortis congue in vulputate risus. Aliquam molestie, risus sed congue ullamcorper, mauris lacus volutpat mauris, nec luctus est risus in libero.&lt;/p&gt;
+</content>
+		<category term="About Us" />
+	</entry>
+</feed>

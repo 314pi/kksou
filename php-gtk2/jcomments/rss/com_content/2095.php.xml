@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Google Weather Module v2.58 is available now!</title>
+		<description>Discuss Google Weather Module v2.58 is available now!</description>
+		<link>https://kksou.com/php-gtk2/Joomla-News/google-weather-module-v2-58-is-available-now.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:18:54 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2095.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>xianting says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-News/google-weather-module-v2-58-is-available-now.php#comment-898</link>
+			<description><![CDATA[:D good ask]]></description>
+			<dc:creator>xianting</dc:creator>
+			<pubDate>Sat, 02 Mar 2013 16:36:46 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-News/google-weather-module-v2-58-is-available-now.php#comment-898</guid>
+		</item>
+		<item>
+			<title>Gerardo Bredfeldt says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-News/google-weather-module-v2-58-is-available-now.php#comment-571</link>
+			<description><![CDATA[Hi kksou, thanks a lot for your help. I installed your v.1.58 for my Joomla 1.5.25, got the API and put it in the corresponding module field, configured everything (C°, Temuco, Chile, sp, etc.) but cannot make it to work properly. It displays the city field and title (www.rodeoyrienda.cl) but it run endless trying to display the weather info. Changed API's twice, trying to use different ones, but the same. Anything I made wrong and/or didn't see? Thanks and regards, Gerardo Temuco, Chile]]></description>
+			<dc:creator>Gerardo Bredfeldt</dc:creator>
+			<pubDate>Tue, 04 Sep 2012 11:49:40 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-News/google-weather-module-v2-58-is-available-now.php#comment-571</guid>
+		</item>
+	</channel>
+</rss>

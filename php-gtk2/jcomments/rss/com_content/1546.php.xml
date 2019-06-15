@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>googleDirections - To Here - plugin</title>
+		<description>Discuss googleDirections - To Here - plugin</description>
+		<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 04:59:24 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/1546.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-2146</link>
+			<description><![CDATA[Hi Greg, 1) First, make sure you have entered the Google Maps API key. You can apply it here: https://developers.google.com/maps/documentation/javascript/get-api-key. Note that Google now requires that you enable billing. Details in that web page. 2) you are not in United States, then make sure you put in your country at the end of the address. Otherwise you will receive the error "Google cannot decode your address". E.g. googleMaps addr="Via Venti Settembre 25, 00187 Rome, Italy" Note: please put in the curly bracket above. I didn't put in here because it will turn into a google map. 3) Try to make sure the googlemaps work first before testing googleDir or googleDir_to_here. The other 2 plugins run on top of googleMaps plugin. If the googleMaps plugin does not work, the other 2 plugins will also not work. Please give the above a try and let me know if it works. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 23 Mar 2019 09:35:09 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-2146</guid>
+		</item>
+		<item>
+			<title>GREG says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-2145</link>
+			<description><![CDATA[Hi, I have installed all 3 plugins and when i enter my current location i get the error Google cannot decode your address: Any help please]]></description>
+			<dc:creator>GREG</dc:creator>
+			<pubDate>Fri, 22 Mar 2019 22:04:35 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-2145</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-2011</link>
+			<description><![CDATA[Hi Rene, this website is currently running on the latest Joomla 3.8.12. You can try the demo above. It's working fine... Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 04 Oct 2018 14:41:24 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-2011</guid>
+		</item>
+		<item>
+			<title>rene summers says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-2010</link>
+			<description><![CDATA[Is there a version to work on Joomla 3.8.x? the 3.0x version is not working.]]></description>
+			<dc:creator>rene summers</dc:creator>
+			<pubDate>Wed, 03 Oct 2018 18:00:54 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-2010</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1900</link>
+			<description><![CDATA[Hi Stuart, Yes, there have been quite a number of requests to add the print function over the years. Have tried it. But the Google Maps API does not provide a simple way to print the displayed map and directions. If anyone has managed to get it working and do not mind sharing, please send me the code and I will add the print functionality to the new version to share with the rest of the people using this plugin. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 12 Jun 2017 04:19:44 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1900</guid>
+		</item>
+		<item>
+			<title>Stuart Newton says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1898</link>
+			<description><![CDATA[Brilliant plugin, works a treat, the only thing missing, is a "Print" button, having this next to the "Get Directions" would complete this plugin to its fullest. 5 stars.... :lol:]]></description>
+			<dc:creator>Stuart Newton</dc:creator>
+			<pubDate>Sun, 11 Jun 2017 13:57:51 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1898</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1882</link>
+			<description><![CDATA[Hi Bob, Just tried it on your web site. Yes, it's working! Didn't know about the plugin "jqueryeasy". Learned something from you too! Glad it's working for you now! Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 22 Jan 2017 15:37:03 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1882</guid>
+		</item>
+		<item>
+			<title>Bob Martin says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1881</link>
+			<description><![CDATA[kksou: Your alerting me to the issue of conflict between mootools and jquery enabled me to find a solution. I installed the jqueryeasy plug-in and set it to disable mootools on my directions page. Your plug-in works on that page now. Thanks for your add-in and your help. Best regards, Bob Martin]]></description>
+			<dc:creator>Bob Martin</dc:creator>
+			<pubDate>Sun, 22 Jan 2017 12:26:36 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1881</guid>
+		</item>
+		<item>
+			<title>Barrett says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1879</link>
+			<description><![CDATA[Thanks for getting back to me and for updating me on the situation. One interesting thing is when I go to the same site on a different server it works fine on my mobile devices when holding the phone landscape. Check it out http://aroostookmedia.com/ace/index.php/our-locations I'll await notification when the update is available. Thanks.]]></description>
+			<dc:creator>Barrett</dc:creator>
+			<pubDate>Sat, 21 Jan 2017 16:27:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1879</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1878</link>
+			<description><![CDATA[Hi Barrett, Open your website in a browser on your desktop and then try to make the width of the browser window smaller (simulating the width of a smartphone). You will see the map is actually still there on the right. It's just that it's now hidden. See, the current version uses standard HTML table. When I wrote this code many years back, mobile is not popular. So I didn't design the whole thing to be responsive. Yes, I' now working on a responsive version for this so that it works with smartphone. Wanted to roll it out during Christmas holidays, but it turns out it's more complicated that I thought. Might need another 2 to 4 weeks to iron out all the issues. Will let you know as soon as I released the new version, ok? Wam Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 21 Jan 2017 16:13:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1878</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1877</link>
+			<description><![CDATA[Hi Bob, 1) If you do a view source of your web page and follow the link "/plugins/system/jch_optimize/cache/jscss.php?f=3b f7b1a915daa09456ccd6e528f2a0c4-cache-plg_jch_optim ize-699a61285b80a12077214eed9c0cb490 type=js gz=gz d=30" you will see the first line that says "this.MooTools={version:"1.4.5"" So your template is indeed using MooTools, as what I've suspected. Most of the other users encountering this error is also using MooTools. 2) I checked your "JoomlaShine Epic Pro" template website. I think they have an updated version for Joomla 3.0. May I know if you also upgraded your Joomla template, or you did not make any changes to the Joomla template (i.e. still using the same Joomla template for joomla 2.5.28) 3) I'm not too sure if your template uses jQuery. The default Joomla 3 template uses jQuery. You said your site is now running Joomla 3. But I do not see any line that loads the jQuery library. By the way, you said that "I have been using it since 2013 without problem." Are you using the same "JoomlaShine Epic Pro" template since 2013? Did you change your joomla template from 2013 until now? Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 21 Jan 2017 16:06:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1877</guid>
+		</item>
+		<item>
+			<title>Bob Martin says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1875</link>
+			<description><![CDATA[kksou: 1) I've googled to try and find out but still don't know how to tell whether a template or plug-in is using MooTools. My Joomla template is JoomlaShine Epic Pro. The Joomla plug-in manager lists over 30 plug-ins--for most I have no idea what they do (I can send you a PDF of the listing if that would help). 2) Same answer. 3) 2.5.28, updated yesterday from 2.5.14--same map problem on both. I haven't tried Joomla 3.x yet since (a) I only succeeded late yesterday in updating to 2.5.28 (after a week of failing to use the update feature, I finally just force copied the patch files using FileZilla), and (b) I don't know yet if the Go Daddy server I am on supports 3.x. I've tried running your plug-in with "Template uses JQuery" set to "Yes" and then to "No"--and get errors both ways. I just set it back to "Yes" so you can see the errors I get that way. Beats me how you have the time to be so responsive, but I do appreciate it. Best regards, Bob Martin]]></description>
+			<dc:creator>Bob Martin</dc:creator>
+			<pubDate>Fri, 20 Jan 2017 11:02:20 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1875</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1873</link>
+			<description><![CDATA[Hi Bob, I did some googling. The error "TypeError: window.addEvent is not a function" seems to be common with Joomla sites using MooTools. 1) Is your Joomla template, or any of your plugins, using MooTools? 2) Does your Joomla template also load JQuery? 3) Which Joomla version is your site running? Please let me know so that I can propose ways to resolve the errors. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 20 Jan 2017 08:28:36 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1873</guid>
+		</item>
+		<item>
+			<title>Bob Martin says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1872</link>
+			<description><![CDATA[I am tremendously impressed with the promptness of your response. I inspected the page in Chrome and did see some errors but don't know what I might do with them. You can see the page here: http://www.robertcmartinlawoffice.com (click on Get Directions link in the left column to go to the mapping page). Thanks a million.]]></description>
+			<dc:creator>Bob Martin</dc:creator>
+			<pubDate>Thu, 19 Jan 2017 22:10:02 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1872</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1871</link>
+			<description><![CDATA[Hi Bob, I need more info to know where might be the problem. Can you turn on the developer tools of your browser and take a look at the javascript console to see if you see any error message displayed there? Alternatively, you can also let me know the URL of your webpage and I can go there to take a look. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 19 Jan 2017 05:36:17 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1871</guid>
+		</item>
+		<item>
+			<title>Bob Martin says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1869</link>
+			<description><![CDATA[Nice plug-in. I have been using it since 2013 without problem. However, it now does not display the map or get directions--possibly due to change in Google Maps API Key requirement. I'm running Joomla! 2.5.14 on GoDaddy. I have downloaded the most recent tohere package, enabled all three plug-ins, added to all three plug-ins the API key I got from google, and left this in the article field of my Get Directions page (which used to work): {googleDir_tohere width=100% height=400 dir_width=275 vertical=1 home_addr="304 West Park Street, Franklin PA 16323" home_label="Robert C. Martin Law Office~304 West Park Street~Franklin PA 16323"}. I can see that the code is being executed by the visibility and layout of the "coming from" textbox and "get directions" button, but no map, and the button doesn't get directions. Any suggestions?]]></description>
+			<dc:creator>Bob Martin</dc:creator>
+			<pubDate>Wed, 18 Jan 2017 16:07:13 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1869</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1863</link>
+			<description><![CDATA[Hi David, Thanks for your feedback. Yes, there have been quite a number of user requests on this too. I'm currently working on a new version to include other new features such as transit mode (e.g. by bus, subway, bicycle, etc.). Will also incorporate what you've suggested into the new version. I have some time during this holiday season. Will try to get the new version out latest by Christmas. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 16 Dec 2016 23:19:20 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1863</guid>
+		</item>
+		<item>
+			<title>David says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1861</link>
+			<description><![CDATA[Hi Thanks for the tutorial. I now have the "From" field. Is there any way to have the directions panel BELOW the map? The reason I ask is that the plugin does not act responsively so is of little use on a smartphone. Regards, David]]></description>
+			<dc:creator>David</dc:creator>
+			<pubDate>Wed, 14 Dec 2016 05:18:54 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1861</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1852</link>
+			<description><![CDATA[Hi Pascal, Have just sent you an email. I used exactly the same code as yours. As you can see, the map seems to be displayed correctly. Please take a look at the javascript console and let me know what error message you see there. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 28 Nov 2016 09:09:18 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1852</guid>
+		</item>
+		<item>
+			<title>Pascal Bouman says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1850</link>
+			<description><![CDATA[Hi. I'm trying to use the googleDirections to here Plugin on my Joomla website with version 1.5.26. The installation was succesful. I have entered the following code into an article: [googleDir_tohere width=400 height=360 dir_width=275 home_addr="52.0176089, 5.435080299999981"] When I load the webpage, the map is very shortly shown, but then after the map is gone and the website (dutch) announces: Oeps! Er is iets misgegaan. (oeps, something went wrong) Google Maps is niet correct geladen op deze pagina. (Google Maps was not loaded correctly on this page)Zie de JavaScript-console voor technische details. (Check the JavaScript-console for technical details) Can you help me with this? Best regards, Pascal Bouman]]></description>
+			<dc:creator>Pascal Bouman</dc:creator>
+			<pubDate>Mon, 21 Nov 2016 09:34:33 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1850</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1793</link>
+			<description><![CDATA[Hi Alberto, You can change the text to Spanish in the Plugins Manager - "googleDirections - To Here" in the following field: 1) Label - Coming from 2) Label - Get Directions Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 07 Apr 2016 15:52:59 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1793</guid>
+		</item>
+		<item>
+			<title>Alberto says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1792</link>
+			<description><![CDATA[Hello Excuse my English. Is there any way that the texts "Coming from" and "Get Directions" can be translated to a site that is in Spanish and English Thank you]]></description>
+			<dc:creator>Alberto</dc:creator>
+			<pubDate>Mon, 04 Apr 2016 16:00:07 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1792</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1723</link>
+			<description><![CDATA[Hi Sean, Most of the plugins and modules you see here are those that I use on my own website. I thought it's quite useful and decide to share with the rest through joomla.org. I'm ok with PHP programming, but not good in responsive design. If anyone knows how to change this into a responsive design, please let me know, and I will be more than happy to add them into the code. Thanks and Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 18 Jul 2015 04:07:21 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1723</guid>
+		</item>
+		<item>
+			<title>Sean says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1722</link>
+			<description><![CDATA[Hi, We are using your googleDirections - To Here plugin in Joomla 2.5 (version 2.5.8) but need a responsive version. Is there one available?]]></description>
+			<dc:creator>Sean</dc:creator>
+			<pubDate>Fri, 17 Jul 2015 21:12:44 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1722</guid>
+		</item>
+		<item>
+			<title>Follewagen says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1265</link>
+			<description><![CDATA[ I have the same request? Would x2.5 work on a x3.2 site?]]></description>
+			<dc:creator>Follewagen</dc:creator>
+			<pubDate>Thu, 09 Jan 2014 21:58:09 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1265</guid>
+		</item>
+		<item>
+			<title>pam says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1257</link>
+			<description><![CDATA[are you going to post a link to your joomla 3.x version?]]></description>
+			<dc:creator>pam</dc:creator>
+			<pubDate>Fri, 20 Dec 2013 21:16:06 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1257</guid>
+		</item>
+		<item>
+			<title>SeanR says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1255</link>
+			<description><![CDATA[Hello, I was wondering if you had a responsive version of this plugin?]]></description>
+			<dc:creator>SeanR</dc:creator>
+			<pubDate>Wed, 11 Dec 2013 07:12:14 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1255</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1160</link>
+			<description><![CDATA[Hi, I know what you want. But problem is Google does not provide any API for this. If you want to achieve that, you need to write quite a bit of code. I can do that if it's my own site, because I can add codes to my own page. But to make it a generic Joomla plugin that runs on any site, it's a bit of a challenge, because I don't have write access to your page. I need to run some javascript when your page is loaded - this requires you to add some javascript to your page yourself. I don't think anyone knows how to do this, and everyone is comfortable doing this. Have you tried any other module or plugin that have this functionality? If you can find one, let me know and I can see how others do it. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 26 Aug 2013 17:05:56 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1160</guid>
+		</item>
+		<item>
+			<title>LenaTime says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1159</link>
+			<description><![CDATA[My last post wasn't very clearly written, but you get the jest of what I'm saying right? So not having a print feature may be a show-stopper for some of my clients. Not sure yet. I am hoping you'll be able to add a print feature! Thanks again for your great work!]]></description>
+			<dc:creator>LenaTime</dc:creator>
+			<pubDate>Sun, 25 Aug 2013 11:56:04 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1159</guid>
+		</item>
+		<item>
+			<title>LenaTime says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1158</link>
+			<description><![CDATA[Great app! It's is really light-weight and relatively easy to install. I emailed you about a print function, but I see it is, or has, already been addressed several times. I will also send you a payment for each site I use it on. Though I hope the none print function may be show-stopper, so to speak. I hope not because I like how light and easy your product is. Anyway, do you have any plans for adding a print function?]]></description>
+			<dc:creator>LenaTime</dc:creator>
+			<pubDate>Sun, 25 Aug 2013 11:52:54 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1158</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1156</link>
+			<description><![CDATA[Hi Christian, Have just emailed you. Please let me know if you didn't receive it. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 23 Aug 2013 20:42:03 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1156</guid>
+		</item>
+		<item>
+			<title>Christian Sosa says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1153</link>
+			<description><![CDATA[8) Just Chipped in 7bucks my friend, do an update soon!]]></description>
+			<dc:creator>Christian Sosa</dc:creator>
+			<pubDate>Fri, 23 Aug 2013 08:03:43 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1153</guid>
+		</item>
+		<item>
+			<title>FG says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1146</link>
+			<description><![CDATA[don't know if you'll have time for that, but a great step to fit a nned of mine would be to get the stopovers from registered users addresses or a social component... and th eplugin to become a component for which one I'm ready to subscribe !!! Regards and thanx for sharing for free at this time, great plugin]]></description>
+			<dc:creator>FG</dc:creator>
+			<pubDate>Thu, 15 Aug 2013 08:41:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1146</guid>
+		</item>
+		<item>
+			<title>ThomasF says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1145</link>
+			<description><![CDATA[Hi there, This plugin looks great. I was just wondering if I can use this map on a website with a shop (I couldn't find a 'buy commercial license' button). Regards, Thomas]]></description>
+			<dc:creator>ThomasF</dc:creator>
+			<pubDate>Wed, 14 Aug 2013 05:15:34 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1145</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1143</link>
+			<description><![CDATA[Hi, Sorry for the late reply. I'm currently on a business trip right now with little access to the internet. Have just emailed you the google_directions_tohere plugin for Joomla 3.0. Let me know if it works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 13 Aug 2013 07:42:44 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1143</guid>
+		</item>
+		<item>
+			<title>Afland says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1141</link>
+			<description><![CDATA[;-) Very great job. Thanks for the job. I'd want to try google directions to here on a site in production with joomla3. Is there a version for joomla3?]]></description>
+			<dc:creator>Afland</dc:creator>
+			<pubDate>Sun, 11 Aug 2013 11:23:39 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-1141</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-993</link>
+			<description><![CDATA[Hi, The entire googlemap is returned by google.com. It's not set in my plugin. Please refer to googleMaps documentation: http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/docs/reference.html Search for "class InfoBoxOptions" and then the "boxClass" properties. You will see that the CSS is defined by "infoBox". So try to set "infoBox" in your Joomla style sheet and see if you can change the font color or background color. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 06 May 2013 02:04:41 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-993</guid>
+		</item>
+		<item>
+			<title>prysmos says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-991</link>
+			<description><![CDATA[Hi This is a very nice and useful plugin,thank you for providing it for free. It works fine however I have a small glitch on my side. The direction talk bubble graphic is broken and the text is set to white which is not visible unless you highlight it. Here the sample image http://i43.tinypic.com/wmc5w.jpg Just in case you need to look at codes here is the link of my site http://guesthousehuahinbdl.com/index.php/en/locations/get-direction/transportation Thanks]]></description>
+			<dc:creator>prysmos</dc:creator>
+			<pubDate>Fri, 03 May 2013 01:37:17 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-991</guid>
+		</item>
+		<item>
+			<title>mattb says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-971</link>
+			<description><![CDATA[Hello again, Is there a seperate license required if this plug-in is used on our small company website? Also, our site is not online yet and still under development. Is there an email I can send it to you not in a public forum? Thanks again!]]></description>
+			<dc:creator>mattb</dc:creator>
+			<pubDate>Wed, 17 Apr 2013 09:58:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-971</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-970</link>
+			<description><![CDATA[Hi, 1) Can you show me a url that displays this? Will need to do a view source of the page to gather more clues as to what might be the problem. 2) Currently joomla/google does not provide an API to do so. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 17 Apr 2013 09:28:07 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-970</guid>
+		</item>
+		<item>
+			<title>mattb says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-969</link>
+			<description><![CDATA[Hello, I have recently started using the To Here plugin for googleDirections and I have 2 questions regarding its function: 1) When the directions appear sometimes it is duplicated? Is there anyone to stop this from happening? 2)After the directions have been generated, I click on the print button within my Joomla page and it opens a new window to print from, however it is just the map without the directions and it requires you to reinsert the address you are coming from. Is it possible to have the print screen keep the original "Coming from" address in that print window along with the directions and map? Thanks.]]></description>
+			<dc:creator>mattb</dc:creator>
+			<pubDate>Wed, 17 Apr 2013 09:07:30 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-969</guid>
+		</item>
+		<item>
+			<title>Shonn says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-925</link>
+			<description><![CDATA[Is it possible to not ask this to do more, but actually less? Could i get it to pull only the miles and travel time and nothing more? Ignore the directions and the map just produce the simple miles apart and projected travel time? I am comfortable with adjusting code if its even possible to do in this case.]]></description>
+			<dc:creator>Shonn</dc:creator>
+			<pubDate>Wed, 27 Mar 2013 08:18:22 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-925</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-876</link>
+			<description><![CDATA[Hi, Please refer to the tutorial: googleDirections - To Here - plugin Tutorial 01: Getting Started: http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php Please try the sample code there first and see if it works on your server. If it works, then replace with your address. Please also use the Google Geocoder v2.0: http://www.kksou.com/php-gtk2/google-geocoder-v2/, key in your address and double check that your longitude and latitude are correct. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 07 Feb 2013 06:54:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-876</guid>
+		</item>
+		<item>
+			<title>bvmandy says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-875</link>
+			<description><![CDATA[hey there it seems that I don't get the plugin to understand my end address. the label stays in the middle of the south atlantic ocean. i also don't get directions. I have tried it with an address and with lattitude and longtitude. this is my code {googleDir_tohere width=400 height=360 dir_width=275 mode=driving home_lat=51.2322343, home_long=5.432169 home_label="Google Inc." lang=nl}]]></description>
+			<dc:creator>bvmandy</dc:creator>
+			<pubDate>Thu, 07 Feb 2013 05:42:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-875</guid>
+		</item>
+		<item>
+			<title>thomasg says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-801</link>
+			<description><![CDATA[Hi nice plugin. I am adding this plugin to an older joomla 1.5 website and it works great only when I try to adjust the directions column width under this div - "gdir_tohere_gdir0" the google map directions ignores the set width and creates overlaping text and a bottom scroll bar I see it works fine on your site ( tested with firebug) DO you know what is causing this? Thanks]]></description>
+			<dc:creator>thomasg</dc:creator>
+			<pubDate>Tue, 01 Jan 2013 00:56:20 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-801</guid>
+		</item>
+		<item>
+			<title>Tomy says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-781</link>
+			<description><![CDATA[Hi, I don't know if you know FlexiContent but it's a default CCK that works directly with Joomla default com_content to create items with various different layout and it even accept Joomla content plugins. We purchase a subscription to have the powered by ...... to be removed on Google Directions To Here so that we can use this plugin with FlexiContent for all our categories but we can't get it to work, when we use the plugin, even in default Joomla article, we get the plugin code {google_Dir.... but the map is not showing, can you please assist us to make it working as we like this plugin very much!]]></description>
+			<dc:creator>Tomy</dc:creator>
+			<pubDate>Mon, 10 Dec 2012 12:27:37 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-781</guid>
+		</item>
+		<item>
+			<title>tm_1605 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-732</link>
+			<description><![CDATA[is there any possibility to integrate a print-button?]]></description>
+			<dc:creator>tm_1605</dc:creator>
+			<pubDate>Mon, 19 Nov 2012 05:13:50 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-732</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-726</link>
+			<description><![CDATA[Hi, Would you please elaborate what do you mean by "map description"? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 14 Nov 2012 18:53:29 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-726</guid>
+		</item>
+		<item>
+			<title>vanaraj says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-717</link>
+			<description><![CDATA[Hi thanks for the plug in i am using the googleDirection -tohere plug in. how to remove the map description]]></description>
+			<dc:creator>vanaraj</dc:creator>
+			<pubDate>Sun, 11 Nov 2012 22:24:34 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-717</guid>
+		</item>
+		<item>
+			<title>Adam P says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-630</link>
+			<description><![CDATA[I've downloaded the googleDirection - To Here plugin and would like to have the location bubble open automatically and have a logo in there...how would I go about doing that?]]></description>
+			<dc:creator>Adam P</dc:creator>
+			<pubDate>Wed, 26 Sep 2012 08:22:53 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-630</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-534</link>
+			<description><![CDATA[No. With the latest googleMaps API v3, you do not need to enter the API key. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 15 Aug 2012 15:12:02 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-534</guid>
+		</item>
+		<item>
+			<title>Joad says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-533</link>
+			<description><![CDATA[Please, at the backend, do I need to enter the API key? If yes, how do I get it. Sorry about this foolish question. I am a newbie here. Thanks]]></description>
+			<dc:creator>Joad</dc:creator>
+			<pubDate>Wed, 15 Aug 2012 14:31:29 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-533</guid>
+		</item>
+		<item>
+			<title>Dhanushka says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-512</link>
+			<description><![CDATA[:roll: thanks....]]></description>
+			<dc:creator>Dhanushka</dc:creator>
+			<pubDate>Mon, 23 Jul 2012 08:34:16 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-512</guid>
+		</item>
+		<item>
+			<title>mtjweb says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-339</link>
+			<description><![CDATA[I've installed the Google Directions Tohere plugin on an purple background. When I hover over it, the plugin changes the background to white. Any idea where I can change this. I don't want it to change the background.]]></description>
+			<dc:creator>mtjweb</dc:creator>
+			<pubDate>Fri, 08 Jun 2012 02:45:29 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-339</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-336</link>
+			<description><![CDATA[Hi Christoph, Sorry for not replying earlier. I actually tried to work on the feature, but it's not as easy as it seems. Google does not provide any API for this purpose, so you basically have to write the code yourself from scratch to achieve what you've mentioned. Will let you know if I managed to get it working. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 08 Jun 2012 00:08:45 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-336</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-335</link>
+			<description><![CDATA[Hi, This is a simple plugin with one purpose in mind: to give direction from Point A (one specified by user) to your designated place. It does not do other things, like the one your desired. There are many other heavy-weight plugins which do very complicated stuff. You might want to try those in joomla.org and see if there's one that suit your needs. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 08 Jun 2012 00:05:36 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-335</guid>
+		</item>
+		<item>
+			<title>Sigmund says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-333</link>
+			<description><![CDATA[Hi thanks for the plug in i am using the googleDirection-tohere plug in. I need to add a 3 mile radius from a postcode on the map and want to display a message to postcodes outside the 3 mile radius. Thanks]]></description>
+			<dc:creator>Sigmund</dc:creator>
+			<pubDate>Thu, 07 Jun 2012 04:31:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-333</guid>
+		</item>
+		<item>
+			<title>Christoph says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-236</link>
+			<description><![CDATA[Hello, Is it possible to add a Print-Route-button or an email-route-button after the route ist shown on the screen? because when i want to print it regular i have to print the complete page. Thanks for an short answer if anyone knows some thing. Greetings Christoph]]></description>
+			<dc:creator>Christoph</dc:creator>
+			<pubDate>Wed, 18 Apr 2012 10:47:38 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-236</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-117</link>
+			<description><![CDATA[Hi Charlene, Have just emailed you a modified version that should make the codes disappear. Do let me know if it works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 05 Mar 2012 17:37:11 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-117</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-115</link>
+			<description><![CDATA[Hi, Do you want to elaborate what are you trying to achieve? The plugin is for a simple purpose: You want to allow people to go from Point A to your place (Point B). There's only one Point B. So why should there be multiple markers? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 05 Mar 2012 17:17:32 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-115</guid>
+		</item>
+		<item>
+			<title>Nesa says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-110</link>
+			<description><![CDATA[Hi there, thanks for great plugin! I need to know is there a way to show multiple Direction To Here markers on same map. So to have one map, with two marks, is this posible?]]></description>
+			<dc:creator>Nesa</dc:creator>
+			<pubDate>Mon, 05 Mar 2012 07:49:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-110</guid>
+		</item>
+		<item>
+			<title>Charlene says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-108</link>
+			<description><![CDATA[Hey there, I'm using a Joomla version 1.5 and installed the correct version of this plugin corrosponding to my joomla but whenever I embed the code:{googleDir_tohere width=320 height=360 dir_width=275 home_addr="Handelstraat 9, 7817 RC Geesbrug, Nederland" lang=de} The top of my page shows: table.googleDirections_tohere td { font-family: Verdana, Arial, sans serif; font-size: 11px; margin: 2px; } table.googleDirections_tohere th { background-color:#EEEEEE; } table.googleDirections_tohere img { color: #000000; } table.googleDirections_tohere button { font-family: Verdana, Arial, sans serif; font-size: 11px; } table.googleDirections_tohere input { font-family: Verdana, Arial, sans serif; font-size: 11px; } Can't seem to get rid of this code not sure what I've done wrong here. Can ya help me pls?]]></description>
+			<dc:creator>Charlene</dc:creator>
+			<pubDate>Mon, 05 Mar 2012 06:17:36 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-108</guid>
+		</item>
+		<item>
+			<title>Patryk says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-63</link>
+			<description><![CDATA[Ok so got another 2 questions. 1/ How to make label visible at start? 2/ How to make it to specify road from closest street?? Cos for now when I will put a close one street, it will show me a way from street with same name but in other town, mostly like 500miles further? regards]]></description>
+			<dc:creator>Patryk</dc:creator>
+			<pubDate>Mon, 13 Feb 2012 13:40:18 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-63</guid>
+		</item>
+		<item>
+			<title>Patryk says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-62</link>
+			<description><![CDATA[hey I had the same problem, try to clean your vars from styles. F.e. copy paste to windows notepad and than back to your joomla.]]></description>
+			<dc:creator>Patryk</dc:creator>
+			<pubDate>Mon, 13 Feb 2012 03:26:50 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-62</guid>
+		</item>
+		<item>
+			<title>Ericv24 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-49</link>
+			<description><![CDATA[So, I put the latest version of the plugin on my site and it shows everything but the map. I only get a blue screen their. Am I missing something? http://dimondtuxedo.cloudaccess.net/contact-us.html]]></description>
+			<dc:creator>Ericv24</dc:creator>
+			<pubDate>Wed, 08 Feb 2012 13:18:44 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-49</guid>
+		</item>
+		<item>
+			<title>Patryk says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-48</link>
+			<description><![CDATA[Thank you for response, sorry I missed to find those tuts on my own. Forum is a blog so I would write here my idea. It would be grat if to here plugin would have option to choose which navigatin use. For example with checkbox or select from walk car bicycle.]]></description>
+			<dc:creator>Patryk</dc:creator>
+			<pubDate>Wed, 08 Feb 2012 12:43:04 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-48</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-47</link>
+			<description><![CDATA[Hi, For (1) How to turn on the bicycle mode? Please refer to: Tutorial 03: Travel Modes http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-03-Travel-Modes.php For (2) How to turn on street view? Did you see the yellow "Pegman" on the top left hand corner of the map? Click and drag that Pegman to the place you want to see the street view. Details here: http://maps.google.com/help/maps/streetview/learn/using-street-view.html For (3) Can't get the label to be seen on map Please refer to: Tutorial 02: Adding Label to Home Address http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-02-Adding-Label-to-Home-Address.phpa Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 08 Feb 2012 08:04:03 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-47</guid>
+		</item>
+		<item>
+			<title>Patryk says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-46</link>
+			<description><![CDATA[Hello this plugin is supperiour. But got three questions: 1/ How to turn on the bicycle mode? 2/ How to turn on street view? 3/ Can't get the label to be seen on map.]]></description>
+			<dc:creator>Patryk</dc:creator>
+			<pubDate>Tue, 07 Feb 2012 08:59:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#comment-46</guid>
+		</item>
+	</channel>
+</rss>

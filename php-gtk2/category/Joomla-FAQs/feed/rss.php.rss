@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Joomla FAQs</title>
+		<description><![CDATA[The Joy of Sharing and Learning Together]]></description>
+		<link>https://kksou.com/php-gtk2/category/Joomla-FAQs/</link>
+		<lastBuildDate>Fri, 14 Jun 2019 04:44:10 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="https://kksou.com/php-gtk2/category/Joomla-FAQs/feed/rss.php"/>
+		<language>en-gb</language>
+		<managingEditor>admin@kksou.com (kksou)</managingEditor>
+		<item>
+			<title>DirectPHP - FAQs, Troubleshoot and Tips &amp; Techniques</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php</guid>
+			<description><![CDATA[<?php require_once("/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php");?>
+<?php require_once("/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php");?>
+
+<p>This is the FAQ for the <a href="http://www.kksou.com/php-gtk2/Joomla/DirectPHP-plugin.php">DirectPHP plugin</a>.</p>
+
+<a id="troubleshoot">
+<h3>Troubleshooting</h3></a>
+
+<ol>
+
+<li><b>Q: My PHP codes are not processed.</b></li>
+<p>A: Did you enable the plugin? Go to Plugin Manager and make sure the plugin is enabled.</p>
+<p></p>
+
+<li><b>Q: My PHP codes disappeared after clicking Save or Apply.</b></li>
+<p>A: Have you applied the following tip: <a href="http://www.kksou.com/php-gtk2/Joomla/How-to-enter-HTML-tags-javascript-and-PHP-codes-in-Joomla-1.5.8.php">How to enter HTML tags, javascript and PHP codes in Joomla 1.5.8? </a></p>
+
+<li><b>Q: My PHP codes disappeared after clicking Save or Apply.</b></li>
+<p>A: Do not use the "source button" in TinyMCE.</p>
+
+<p>Just type the codes right inside TinyMCE in the default WYSIWIG (what-you-see-is-what-you-get) mode.</p>
+<p></p>
+
+</ol>
+
+]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla FAQs</category>
+			<pubDate>Thu, 03 Sep 2009 11:22:24 +0000</pubDate>
+		</item>
+		<item>
+			<title>Google Weather module - FAQs, Troubleshoot and Tips &amp; Techniques</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/Google-Weather-module-FAQs-Troubleshoot-and-Tips-Techniques.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-FAQs/Google-Weather-module-FAQs-Troubleshoot-and-Tips-Techniques.php</guid>
+			<description><![CDATA[<p>This is the FAQ for the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Weather-AJAX-version.php">Google Weather Module - AJAX version</a>.</p>
+
+<a id="troubleshoot">
+<h3>Troubleshooting</h3></a>
+
+<ol>
+
+<li><b>First of all, please make sure you have done the following:</b></li><p></p>
+<ul type="disc">
+<li>Make sure you're using <span style="background:#ffff00">PHP5</span> and above. The Google Weather module DOES NOT work with PHP4.</li><p></p>
+<li>Make sure <span style="background:#ffff00">your PHP has the <a href="http://www.php.net/manual/en/curl.setup.php">cURL library</a></span> installed. You can do a quick check by doing a simple</li>
+<pre>
+&lt;?php
+phpinfo&#40;&#41;;
+?&gt;
+</pre>
+<p>If your PHP has the cURL library installed, you should see something similar to the following:</p>
+<p><img src="https://kksou.com/php-gtk2//php-gtk2/thoughts/gif/phpinfo.gif" alt="phpinfo.gif"></p>
+<p>If you don't have the cURL library, there are numerous resources on the Internet that gives you very clear instructions on how to install cURL on various platform such as windows, linux, etc.</p>
+<li>Go to Module Manager and make sure the module is <b>enabled</b>.</li><p></p>
+</ul>
+<p></p>
+
+<li><b>Q: I modified the stylesheet. But the new styles do not seem to take effect.</b></li><p></p>
+
+<p>A: Note that after you have modified the stylesheet <code>mod_googleWeather.css</code>, you have to reload the page so that the stylesheet is reloaded.</p>
+
+<p>I've also found that for some browsers, they still use the "cached" version of stylesheet even when you click the "Reload" button. In such case, you need to clear the cache so the the modified stylesheet gets reloaded.</p></p>
+
+</ol>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla FAQs</category>
+			<pubDate>Tue, 06 Oct 2009 14:07:32 +0000</pubDate>
+		</item>
+		<item>
+			<title>googleMaps plugin - FAQs, Troubleshoot and Tips &amp; Techniques</title>
+			<link>https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-FAQs/googleMaps-plugin-FAQs-Troubleshoot-and-Tips-Techniques.php</guid>
+			<description><![CDATA[<?php require_once("/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php");?>
+<?php require_once("/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php");?>
+
+<p>This is the FAQ for <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps plugin</a>.</p>
+
+<a id="troubleshoot">
+<h3>Troubleshooting</h3></a>
+
+<ol>
+
+<li><b>First of all, please make sure you have done the following:</b></li><p></p>
+<ul type="disc">
+<li>Make sure you're using the latest version of googleMaps.</li><p></p>
+<li>Go to Plugin Manager and make sure the plugin is <b>enabled</b>.</li><p></p>
+<?php
+/* <li><b>The Google API Key:</b> Go to Plugin Manager and make sure you have keyed in your <a href="http://code.google.com/apis/maps/">Google Maps API key</a>.</li><p></p>
+<li>You are NOT using your local server with local address e.g. 192.168.1.100. Your server must be at an internet address that Google can reach.</li><p></p>
+<li>Your Google Map API key must correspond to the domain that you've keyed in when you applied for the key. If you have two websites with different domain names, your Google Map API will be different for each website.</p> */
+?>
+<li>You are NOT using PHP4. This plugin works only with <b>PHP5</b> and higher. It does not work with PHP4 because PHP4 does not support OOP multiple inheritance.</li>
+</ul>
+<p></p>
+
+<li><b>Q: How do I find out the geographical coordinates (i.e. latitude and longitude) of my address?</b></li>
+<p>A: You can use the <a href="http://www.kksou.com/php-gtk2/google-geocoder-v2/">Google Geocoder v2.0</a>. Simply key in your full address and you will see the latitude and longitude of that address.</p>
+
+<li><b>Q: My maps did not show.</b></p>
+
+<p>Please double check your longitude and latitude. Did you interchanged the two values?</p>
+<p></p>
+
+<?php #display_google_ads31(468, 60, 'recipes - 336x280', 20, 20, 0, 20, 1, 1);?>
+<?php display_google_ads32('joomla - how to use 336x280', 0, 20, 0, 20, 1, 1);?>
+
+<li><b>Q: Your googleMaps plugin only allows one marker to be displayed. What should I do if I want to show two or more markers?</b></p>
+
+<p>You can display two or more markers using KML files. Please refer to the following articles:</p>
+<ul type="disc">
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Samples/Use-KML-file-to-place-multiple-markers-on-Google-Maps.php">How to display multiple markers in Google Maps using KLM file?</a>
+
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Samples/How-to-display-multiple-markers-in-different-colors-in-Google-Maps-using-KML-file.php">How to display multiple markers in different colors in Google Maps using KML file?</a>
+
+<li><a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Samples/How-to-place-numbered-markers-in-Google-Maps-using-KML-file.php">How to place numbered markers in Google Maps using KML file?</a><p></p>
+
+</ul>
+<p></p>
+
+</ol>
+]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla FAQs</category>
+			<pubDate>Thu, 03 Sep 2009 11:58:41 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

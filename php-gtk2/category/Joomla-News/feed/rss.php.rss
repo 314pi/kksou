@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Joomla News </title>
+		<description><![CDATA[The Joy of Sharing and Learning Together]]></description>
+		<link>https://kksou.com/php-gtk2/category/Joomla-News/</link>
+		<lastBuildDate>Fri, 14 Jun 2019 04:42:34 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="https://kksou.com/php-gtk2/category/Joomla-News/feed/rss.php"/>
+		<language>en-gb</language>
+		<managingEditor>admin@kksou.com (kksou)</managingEditor>
+		<item>
+			<title>Include Content Item plugin v3.0.14 - support for PHP 7</title>
+			<link>https://kksou.com/php-gtk2/joomla-news/include-content-item-plugin-v3-0-14-support-for-php-7.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/joomla-news/include-content-item-plugin-v3-0-14-support-for-php-7.php</guid>
+			<description><![CDATA[<p>Have just released Include Content Item v3.0.14 that supports PHP 7.</p>
+
+<p>Special thanks to <a href="https://cms.kreativfotografi.se/index.php?lang=sv">Jörgen @ Kreativ Fotografi</a> for contributing and polishing the code.</p>
+
+<p>Download here: <a href="https://kksou.com/php-gtk2//php-gtk2/Joomla/Include-Content-Item-plugin.php#download">Include Content Item plugin v3.0.14</a></p>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla News</category>
+			<pubDate>Fri, 02 Feb 2018 14:06:07 +0000</pubDate>
+		</item>
+		<item>
+			<title>New version of googleDirections_tohere plugin - Support for Mobile GPS for Current Location</title>
+			<link>https://kksou.com/php-gtk2/joomla-news/new-version-of-googledirections-tohere-plugin-support-for-mobile-gps-for-current-location.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/joomla-news/new-version-of-googledirections-tohere-plugin-support-for-mobile-gps-for-current-location.php</guid>
+			<description><![CDATA[<p>The latest versions of googleDirections_tohere plugins now support laptop / <b style="background:#ffff00">mobile GPS</b> to access Current Location!</p>
+
+<p>Users can simply press the "Get Directions" button without entering any address. The plugin will read the current location of the mobile/laptop to display the directions to the destination.</p>
+
+<h3>Mobile GPS</h3>
+<ul>
+<li>For mobile GPS to work for Current Location, your website must be using <b style="background:#ffff00">HTTPS</b> (secured server).</li>
+<li>The client must also allow access to its current location.</li>
+</ul><p></p>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla News</category>
+			<pubDate>Tue, 25 Jul 2017 14:33:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>New version of googleDirections and googleDirections_tohere plugins - Support for Responsive Design</title>
+			<link>https://kksou.com/php-gtk2/joomla-news/new-version-of-googledirections-and-googledirections-tohere-plugins-support-for-responsive-design.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/joomla-news/new-version-of-googledirections-and-googledirections-tohere-plugins-support-for-responsive-design.php</guid>
+			<description><![CDATA[<p>The latest versions of googleDirections and googleDirections_tohere plugins now support Responsive Design!</p>
+
+<p>Have been wanting to do this for a long long time. Finally found some time to really sit down and figure out the CSS codes to enable the responsive design.</p>
+
+<ul type=disc>
+<li>For larger screen, the map and the direction will be placed side by side - map on the left, directions on the right</li>
+<li>For smaller screen (e.g. mobile), the map will be displayed on the top and the directions below the map</li>
+<li>For iPad and iPhone 6/7 Plus, the landscape mode will show the map and directions side by side, and the portrait mode will show the map on top and directions below.</li>
+</ul><p></p>
+
+<p>I have updated the codes across all Joomla versions all the way back to Joomla 1.0. (Not sure if there's still anyone using Joomla 1.0...)</p>
+
+<p><b>One more thing:</b> starting this version, I have added support for the the <b style="background:#ffff00"><a href="https://extensions.joomla.org/support/knowledgebase/item/joomla-update-system-requirement/">Joomla Update System</a></b> for all the 3 related plugins. What this means is that once you have installed this version, Joomla will inform you whenever there is a new version of googleMaps, googleDirections or googleDirections_tohere. You can simply update theese plugins from within the Joomla backend at the click of a button!</p>
+
+]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla News</category>
+			<pubDate>Thu, 20 Jul 2017 14:53:09 +0000</pubDate>
+		</item>
+		<item>
+			<title>New version of googleMaps plugin - support for Joomla Update System</title>
+			<link>https://kksou.com/php-gtk2/joomla-news/new-version-of-googlemaps-plugin-support-for-joomla-update-system.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/joomla-news/new-version-of-googlemaps-plugin-support-for-joomla-update-system.php</guid>
+			<description><![CDATA[<p>Have just released googleMaps plugin v3.0.30 that supports the <b style="background:#ffff00"><a href="https://extensions.joomla.org/support/knowledgebase/item/joomla-update-system-requirement/">Joomla Update System</a></b>.<p>
+
+<p>Once you have installed this version, Joomla will inform you whenever there is a new version of googleMaps. You can simply update the plugin from within the Joomla backend at the click of a button.</p>
+
+<p>Download here: <a href="https://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php#download">googleMaps_v3.0.30.zip</a></p>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla News</category>
+			<pubDate>Thu, 20 Jul 2017 14:41:36 +0000</pubDate>
+		</item>
+		<item>
+			<title>New version of googleMaps, googleDirections and googleDirections_tohere plugins - support for https</title>
+			<link>https://kksou.com/php-gtk2/joomla-news/new-version-of-googlemaps-googledirections-and-googledirections-tohere-plugins-support-for-https.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/joomla-news/new-version-of-googlemaps-googledirections-and-googledirections-tohere-plugins-support-for-https.php</guid>
+			<description><![CDATA[<p>The latest versions of googleMaps, googleDirections and googleDirections_tohere plugins now supports secured websites (https) and PHP7.</p>
+
+<p>I have updated the codes across all Joomla versions all the way back to Joomla 1.0. (Not sure if there's still anyone using Joomla 1.0...)</p>
+
+<p>You can download the latest versions in the links below:</p>
+
+<ul>
+<li><a href="https://kksou.com/php-gtk2//php-gtk2/Joomla-Gadgets/googleMaps-plugin.php#download">googleMaps v3.0.26</a></li><p></p>
+<li><a href="https://kksou.com/php-gtk2//php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#download">googleDirections v3.0.16</a></li><p></p>
+<li><a href="https://kksou.com/php-gtk2//php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#download">googleDirections_tohere v3.0.11</a></li><p></p>
+</ul>
+
+<p>Note: If you install the latest version, you may need to re-keyin your Google Maps API key in the Plugin Manager for all the 3 plugins above.</p>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla News</category>
+			<pubDate>Thu, 20 Apr 2017 16:57:12 +0000</pubDate>
+		</item>
+		<item>
+			<title>New version of  Include Content Item plugin - support for PHP 7</title>
+			<link>https://kksou.com/php-gtk2/joomla-news/new-version-of-include-content-item-plugin-support-for-php-7.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/joomla-news/new-version-of-include-content-item-plugin-support-for-php-7.php</guid>
+			<description><![CDATA[<p>Have just released Include Content Item plugin that supports PHP 7!</p>
+
+<p>Download here: <a href="https://kksou.com/php-gtk2//php-gtk2/Joomla/Include-Content-Item-plugin.php#download">Include Content Item plugin v3.0.13</a></p>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla News</category>
+			<pubDate>Thu, 30 Mar 2017 18:44:51 +0000</pubDate>
+		</item>
+		<item>
+			<title>New version of googleSearch (CSE) component v3.0.6 - open links in same window</title>
+			<link>https://kksou.com/php-gtk2/joomla-news/new-version-of-googlesearch-cse-component-v3-0-6-open-links-in-same-window.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/joomla-news/new-version-of-googlesearch-cse-component-v3-0-6-open-links-in-same-window.php</guid>
+			<description><![CDATA[<p>Have just released a new version of googleSearch (CSE) component v3.0.6 - for Joomla 3.0 and above.</p>
+
+<h3>New Features</h3>
+<ul type=disc>
+<li>Added new parameter: <code>use_https</code>. Set this to "Yes" if your site is using https. Default is "No". This resolves the mixed content warning if you are using SSL certificate for your site:</li>
+<pre>Mixed Content: The page was loaded over HTTPS, but requested an insecure script 'http://maps.googleapis.com/maps/api/js?key=...'. This request has been blocked; the content must be served over HTTPS."</pre>
+<li>Added new parameter: <code>open_link_in_same_window</code>. Set this to "Yes" if you want links to open in the same window. Default is "Yes". If set to "No", links will open in a new window.</li>
+</ul>
+
+<h3>Note</h3>
+<ol>
+<li>For this new version, you have to <b style="background:#ffff00">uninstall the old version</b> first and re-install the new version - so that the 2 new parameters can be added.</li>
+<li>You may want to print or take note of the original settings first before you uninstall.</li>
+<li>I find it easier to open the page of the googleSearch Config in the browser, do the uninstall and re-install, open the Config page in a new browser window, and then you can copy and paste the settings from the old to the new page.</li>
+</ol>
+
+<h3>Download</h3>
+<p>Download here: <a href="https://kksou.com/php-gtk2//php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php#download">com_googlesearch_cse_v3.0.6.zip</a></p>
+
+]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla News</category>
+			<pubDate>Thu, 15 Dec 2016 19:43:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>New version of googleDirections-ToHere plugin - support for Google Maps API Key</title>
+			<link>https://kksou.com/php-gtk2/joomla-news/new-version-of-googledirections-tohere-plugin-support-for-google-maps-api-key.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/joomla-news/new-version-of-googledirections-tohere-plugin-support-for-google-maps-api-key.php</guid>
+			<description><![CDATA[<p>As of June 22, 2016, Google now requires everyone to have an API key in order to display Google Maps on your website. Details <a href="https://googlegeodevelopers.blogspot.sg/2016/06/building-for-scale-updates-to-google.html">here</a>.</p>
+
+<p>If you do not have the Google Maps API key, you will receive the following error message: <a href="https://developers.google.com/maps/documentation/javascript/error-messages#no-api-keys">Google Maps API warning: NoApiKeys </a>.</p>
+
+<p>This latest version of googleDirections - To Here - plugin (v3.0.10) added support for Google Maps API key. Please <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">obtain an API key</a> from Google and then enter the API key in the Plugin Manager.</p>
+
+<p>Download here: <a href="https://kksou.com/php-gtk2//php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#download">googleDirections_tohere_v3.0.9_package.zip</a></p>
+
+<p><b>Note:</b></p>
+
+<ul>
+<li>I have updated the codes for all previous Joomla versions too - Joomla 1.0, 1.5, 1.6, 1.7 and 2.5. Please make sure you download the right version that correspond to your Joomla version.</li>
+
+<li>The installer package for Joomla 1.5, 1.6, 1.7, 2.5 and 3.0 will install all the 3 plugins - the <a href="https://kksou.com/php-gtk2//php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps</a>, <a href="https://kksou.com/php-gtk2//php-gtk2/Joomla-Gadgets/googleDirections-plugin.php">googleDirections</a> and 
+googleDirections - To Here plugins. The googleDirections - To Here plugin  uses the libraries in the googleMaps and googleDirections plugins. Joomla 1.0 does not support package. If you're still on Joomla 1.0, please download and install all the 3 plugins manually.</li>
+
+<li>If you're using all the 3 plugins - the <a href="https://kksou.com/php-gtk2//php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps</a>, <a href="https://kksou.com/php-gtk2//php-gtk2/Joomla-Gadgets/googleDirections-plugin.php">googleDirections</a> and googleDirections - To Here plugins, you have to enter the Google Maps API Key for all the 3 plugins (in the Plugin Manager).</li>
+
+</ul>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla News</category>
+			<pubDate>Fri, 18 Nov 2016 07:48:27 +0000</pubDate>
+		</item>
+		<item>
+			<title>New version of googleDirections plugin - support for Google Maps API Key</title>
+			<link>https://kksou.com/php-gtk2/joomla-news/new-version-of-googledirections-plugin-support-for-google-maps-api-key.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/joomla-news/new-version-of-googledirections-plugin-support-for-google-maps-api-key.php</guid>
+			<description><![CDATA[<p>As of June 22, 2016, Google now requires everyone to have an API key in order to display Google Maps on your website. Details <a href="https://googlegeodevelopers.blogspot.sg/2016/06/building-for-scale-updates-to-google.html">here</a>.</p>
+
+<p>If you do not have the Google Maps API key, you will receive the following error message: <a href="https://developers.google.com/maps/documentation/javascript/error-messages#no-api-keys">Google Maps API warning: NoApiKeys </a>.</p>
+
+<p>This latest version of googleDirections plugin (v3.0.15) added support for Google Maps API key. Please <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">obtain an API key</a> from Google and then enter the API key in the Plugin Manager.</p>
+
+<p>Download here: <a href="https://kksou.com/php-gtk2//php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#download">googleDirections_v3.0.15_package.zip</a></p>
+
+<p><b>Note:</b></p>
+
+<ul>
+<li>I have updated the codes for all previous Joomla versions too - Joomla 1.0, 1.5, 1.6, 1.7 and 2.5. Please make sure you download the right version that correspond to your Joomla version.</li>
+
+<li>The installer package for Joomla 1.5, 1.6, 1.7, 2.5 and 3.0 will install both the <a href="https://kksou.com/php-gtk2//php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps</a> and googleDirections plugins. The googleDirections plugin uses the libraries in the googleMaps plugin. Joomla 1.0 does not support package. If you're still on Joomla 1.0, please download and install both the googleMaps and googleDirections plugins manually.</li>
+
+<li>If you're using both the <a href="https://kksou.com/php-gtk2//php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps</a> and googleDirections plugins, you have to enter the Google Maps API Key for both the plugins (in the Plugin Manager).</li>
+
+</ul>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla News</category>
+			<pubDate>Fri, 18 Nov 2016 07:28:07 +0000</pubDate>
+		</item>
+		<item>
+			<title> New version of googleMaps plugin - support for Google Maps API Key</title>
+			<link>https://kksou.com/php-gtk2/joomla-news/new-version-of-googlemaps-support-for-google-maps-api-key.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/joomla-news/new-version-of-googlemaps-support-for-google-maps-api-key.php</guid>
+			<description><![CDATA[<p>As of June 22, 2016, Google now requires everyone to have an API key in order to display Google Maps on your website. Details <a href="https://googlegeodevelopers.blogspot.sg/2016/06/building-for-scale-updates-to-google.html">here</a>.</p>
+
+<p>If you do not have the Google Maps API key, you will receive the following error message: <a href="https://developers.google.com/maps/documentation/javascript/error-messages#no-api-keys">Google Maps API warning: NoApiKeys </a>.</p>
+
+<p>This latest version of googleMaps plugin (v3.0.25) added support for Google Maps API key. Please <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">obtain an API key</a> from Google and then enter the API key in the Plugin Manager.</p>
+
+<p>Download here: <a href="https://kksou.com/php-gtk2//php-gtk2/Joomla-Gadgets/googleMaps-plugin.php#download">googleMaps_v3.0.25.zip</a></p>
+
+<p>Note that I have updated the codes for all previous Joomla versions too - Joomla 1.0, 1.5, 1.6, 1.7 and 2.5. Please make sure you download the right version that correspond to your Joomla version.</p>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla News</category>
+			<pubDate>Fri, 18 Nov 2016 01:18:44 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

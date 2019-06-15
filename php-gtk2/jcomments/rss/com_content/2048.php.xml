@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>googleDirections plugin Tutorial 02: Specifying Stopover Points</title>
+		<description>Discuss googleDirections plugin Tutorial 02: Specifying Stopover Points</description>
+		<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-plugin-Tutorial-02-Specifying-Stopover-Points.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:00:13 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2048.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>François says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-plugin-Tutorial-02-Specifying-Stopover-Points.php#comment-1721</link>
+			<description><![CDATA[Hi KKSOU Thanx to take time to answer us. For information, the following code, to add to the command line as a parameter will fit this need : hide_direction_text=1 Perhaps you already gave it to me some time ago.... Kind regards François]]></description>
+			<dc:creator>François</dc:creator>
+			<pubDate>Fri, 17 Jul 2015 05:47:20 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-plugin-Tutorial-02-Specifying-Stopover-Points.php#comment-1721</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-plugin-Tutorial-02-Specifying-Stopover-Points.php#comment-1720</link>
+			<description><![CDATA[Hi François, The entire maps and direction is actually written directly by Google i.e. the plugin does not get to process the data at all. I'm not sure if the Google Map API provide such a function that displays the waypoints but suppress the direction. If you or anyone know the part of the GoogleMaps API that allows this, do let me know and I can add that in for you. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 16 Jul 2015 14:26:22 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-plugin-Tutorial-02-Specifying-Stopover-Points.php#comment-1720</guid>
+		</item>
+		<item>
+			<title>François says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-plugin-Tutorial-02-Specifying-Stopover-Points.php#comment-1719</link>
+			<description><![CDATA[I'd like to no display the directions, neither at left, nor at right or below... How to please ?? Regards and thanx]]></description>
+			<dc:creator>François</dc:creator>
+			<pubDate>Thu, 16 Jul 2015 11:47:39 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-plugin-Tutorial-02-Specifying-Stopover-Points.php#comment-1719</guid>
+		</item>
+	</channel>
+</rss>

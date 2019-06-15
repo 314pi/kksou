@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Home</title>
+		<description><![CDATA[The Joy of Sharing and Learning Together]]></description>
+		<link>https://kksou.com/php-gtk2/category/About-Us/Quotes/</link>
+		<lastBuildDate>Fri, 14 Jun 2019 08:54:49 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="https://kksou.com/php-gtk2/category/About-Us/Quotes/feed/rss.php"/>
+		<language>en-gb</language>
+		<managingEditor>admin@kksou.com (kksou)</managingEditor>
+		<item>
+			<title>Thoreau</title>
+			<link>https://kksou.com/php-gtk2/Quotes/thoreau.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Quotes/thoreau.php</guid>
+			<description><![CDATA[{zen-quote}
+
+Success usually comes to those who are too busy to be looking for it.
+
+{/zen-quote}
+
+{zen-author}Henry David Thoreau{/zen-author}]]></description>
+			<author>admin@yuchenkuang.com (Super User)</author>
+			<category>Quotes</category>
+			<pubDate>Thu, 20 Dec 2012 16:46:13 +0000</pubDate>
+		</item>
+		<item>
+			<title>Maxwell</title>
+			<link>https://kksou.com/php-gtk2/Quotes/maxwell.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Quotes/maxwell.php</guid>
+			<description><![CDATA[<p>{zen-quote} Successful and unsuccessful people do not vary greatly in their abilities. They vary in their desires to reach their potential. {/zen-quote} {zen-author}John Maxwell{/zen-author}</p>]]></description>
+			<author>admin@yuchenkuang.com (Super User)</author>
+			<category>Quotes</category>
+			<pubDate>Thu, 20 Dec 2012 16:45:53 +0000</pubDate>
+		</item>
+		<item>
+			<title>Edison</title>
+			<link>https://kksou.com/php-gtk2/Quotes/edison.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Quotes/edison.php</guid>
+			<description><![CDATA[<p>{zen-quote} Many of life's failures are people who did not realize how close they were to success when they gave up. {/zen-quote} {zen-author}Henry David Thoreau{/zen-author}</p>]]></description>
+			<author>admin@yuchenkuang.com (Super User)</author>
+			<category>Quotes</category>
+			<pubDate>Thu, 20 Dec 2012 16:45:35 +0000</pubDate>
+		</item>
+		<item>
+			<title>googleMaps plugin for Joomla 1.6</title>
+			<link>https://kksou.com/php-gtk2/Quotes/googlemaps-plugin-for-joomla-1-6.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Quotes/googlemaps-plugin-for-joomla-1-6.php</guid>
+			<description><![CDATA[For the googleMaps plugin users, the native version for Joomla 1.6 is now available!<p>Download: <a href="http://extensions.joomla.org/extensions/maps-a-weather/maps-a-locations/maps/8213">googleMaps v1.6</a>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Quotes</category>
+			<pubDate>Thu, 24 Feb 2011 01:03:46 +0000</pubDate>
+		</item>
+		<item>
+			<title>DirectPHP for Joomla 1.6</title>
+			<link>https://kksou.com/php-gtk2/Quotes/directphp-for-joomla-1-6.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Quotes/directphp-for-joomla-1-6.php</guid>
+			<description><![CDATA[For the DirectPHP users, the native version for Joomla 1.6 is now available!<p>Download : <a href="http://extensions.joomla.org/extensions/edition/custom-code-in-content/4470">DirectPHP v1.6</a>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Quotes</category>
+			<pubDate>Tue, 22 Feb 2011 03:33:40 +0000</pubDate>
+		</item>
+		<item>
+			<title>Joomla Extensions for Joomla 1.6</title>
+			<link>https://kksou.com/php-gtk2/Quotes/joomla-extensions-for-joomla-1-6.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Quotes/joomla-extensions-for-joomla-1-6.php</guid>
+			<description><![CDATA[I've published more than 40 <a href="http://extensions.joomla.org/extensions/owner/kksou">Joomla Extensions</a> in joomla.org.<p>Recently I've received a couple of requests to upgrade these plugins/modules to Joomla 1.6.<p>Some of these are written 3 years ago. I'm not sure if any of you are still using them at all.<p>So send me a tweet <a href="http://twitter.com/kksou">@kksou</a> if  you want any of them to be converted to Joomla 1.6. Drop me a note to  let me know that they are useful. I don't have the time to convert all  the extensions. There has to be some priorities somewhere. So I will  start with the plugin/module with more than a hundred requests for  conversion.]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Quotes</category>
+			<pubDate>Tue, 15 Feb 2011 03:27:17 +0000</pubDate>
+		</item>
+		<item>
+			<title>New Joomla Release: Google Weather Module - AJAX version </title>
+			<link>https://kksou.com/php-gtk2/Quotes/new-joomla-release-google-weather-module-ajax-version.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Quotes/new-joomla-release-google-weather-module-ajax-version.php</guid>
+			<description><![CDATA[This module makes use of the Google Weather API to display the current temperature, weather condition and a four-day weather forecast, as you can see on the left of the page.<p>This is the first, and currently the only weather module with the following features:<ul><br><li>Uses the Google Weather API that provides 4-day weather forecast with images.</li><br><li>Allows user to interactively enter zip codes (for US, UK and Canada) and city names.</li><br><li>Displays the weather information in many different languages, as provided by Google.</li><br><li>Allows you to display two or more weather modules in the same page.</li><br><li>Supports both Joomla 1.0 and Joomla 1.5!</li><br><li>You can turn on or off the input field.</li><br><li>You can specify the default unit for the temperature (in &deg;C or &deg;F)</li><br><li>You can switch between &deg;C or &deg;F interactively with no reloading of pages.</li><br></ul><p>Download: <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Weather-AJAX-version.php">Google Weather Module - AJAX version v1.5</a>.<br>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Quotes</category>
+			<pubDate>Mon, 05 Oct 2009 16:20:10 +0000</pubDate>
+		</item>
+		<item>
+			<title>New Joomla Update: googleDirections plugin v1.58</title>
+			<link>https://kksou.com/php-gtk2/Quotes/new-joomla-update-googledirections-plugin-v1-58.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Quotes/new-joomla-update-googledirections-plugin-v1-58.php</guid>
+			<description><![CDATA[Added new parameter "hide_direction_text=1" - allows you to hide the text description on the right of the map.<p>Download here: <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php">googleDirections plugin v1.58</a><p>Demo: <a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Directions-Samples/Show-map-directions-with-maps-only-and-text-description-hidden.php">Show map directions with maps only (and text description hidden) </a>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Quotes</category>
+			<pubDate>Fri, 02 Oct 2009 15:39:24 +0000</pubDate>
+		</item>
+		<item>
+			<title>Latest version of Glade3 (v3.6.7) windows binary</title>
+			<link>https://kksou.com/php-gtk2/Quotes/latest-version-of-glade3-v3-6-7-windows-binary.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Quotes/latest-version-of-glade3-v3-6-7-windows-binary.php</guid>
+			<description><![CDATA[You can now download the latest version of Glade 3 (v3.6.7) windows binary from <a href="http://glade.gnome.org">glade.gnome.org</a>.<p>Thanks to Roeland from Belgium who informed me about this. <p>Details here: <a href="http://www.kksou.com/php-gtk2/articles/install-glade3-for-PHP-GTK2-on-windows.php">How to install glade3 for PHP GTK2 on windows?</a><p>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Quotes</category>
+			<pubDate>Wed, 09 Sep 2009 07:16:38 +0000</pubDate>
+		</item>
+		<item>
+			<title>Hiding the google search bar and Overview Map Control in google Maps</title>
+			<link>https://kksou.com/php-gtk2/Quotes/hiding-the-google-search-bar-and-overview-map-control-in-google-maps.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Quotes/hiding-the-google-search-bar-and-overview-map-control-in-google-maps.php</guid>
+			<description><![CDATA[If you're using the googleMaps plugin, by default, the google search bar is displayed in the lower left hand corner.<p>To hide this google search bar, please refer to the following article: <a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Samples/googleMaps-with-search-bar-hidden.php">googleMaps with search bar hidden</a><p>By default, the Overview Map Control is also displayed in the lower right hand corner.<p>To hide this Overview Map Control, please refer to the following article: <a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Samples/googleMaps-with-Overview-Map-Control-hidden.php">googleMaps with Overview Map Control hidden</a><p>To hide both the google search bar and the Overview Map Control, please refer to the following article: <a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Samples/googleMaps-with-search-bar-and-Overview-Map-Control-hidden.php">googleMaps with search bar and Overview Map Control hidden </a><br>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Quotes</category>
+			<pubDate>Wed, 09 Sep 2009 00:44:46 +0000</pubDate>
+		</item>
+		<item>
+			<title>Joomla FAQs</title>
+			<link>https://kksou.com/php-gtk2/Quotes/joomla-faqs.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Quotes/joomla-faqs.php</guid>
+			<description><![CDATA[Have just added Joomla FAQs<br><a href="http://www.kksou.com/php-gtk2/Joomla-FAQs/">http://www.kksou.com/php-gtk2/Joomla-FAQs/</a><p>Here you will find a list of Frequently Asked Questions (FAQs), Troubleshooting guides, and Tips & Techniques for the Joomla plugins, modules and components written by me.<p>Many of thees are contributed by users. Thanks to you all!<p>I'm starting with the DirectPHP plugin:<br><a href="http://www.kksou.com/php-gtk2/Joomla-FAQs/DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php">DirectPHP - FAQs, Troubleshoot and Tips & Techniques</a><p>If you know some tips and tricks, share them with the rest too!<br>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Quotes</category>
+			<pubDate>Thu, 03 Sep 2009 13:39:38 +0000</pubDate>
+		</item>
+		<item>
+			<title>New Joomla Update: Google Currency Converter - AJAX version v1.5.6</title>
+			<link>https://kksou.com/php-gtk2/Quotes/new-joomla-update-google-currency-converter-ajax-version-v1-5-6.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Quotes/new-joomla-update-google-currency-converter-ajax-version-v1-5-6.php</guid>
+			<description><![CDATA[Added support for retrieving google currency data using file_get_contents() or fread(). So for those people with no cURL library, you can now use the module using file_get_contents() or fread().<p>Download here: <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php">http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php</a><br>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Quotes</category>
+			<pubDate>Tue, 01 Sep 2009 16:32:53 +0000</pubDate>
+		</item>
+		<item>
+			<title>New Joomla Update: Yahoo Currency Converter - AJAX version v1.5.4</title>
+			<link>https://kksou.com/php-gtk2/Quotes/new-joomla-update-yahoo-currency-converter-ajax-version-v1-5-4.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Quotes/new-joomla-update-yahoo-currency-converter-ajax-version-v1-5-4.php</guid>
+			<description><![CDATA[This is in response to <a href="http://www.kksou.com/php-gtk2/index.php?option=com_fireboard&func=view&catid=27&id=2555&limit=20&limitstart=0">Alamshahi's</a> post titled "uncorrect results : missed digits".<p>The error occurred when Yahoo returns a conversion rate greater than 1,000. The original program was "confused" because of the ',' in 1,000. Have fixed the bug in this version.<p>In this new release, I've also added support for retrieving yahoo currency data using file_get_contents() or fread(). So for those people with no cURL library, you can now use the module using file_get_contents() or fread().<p>Download: <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Currency-Converter-AJAX-version.php">http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Currency-Converter-AJAX-version.php</a>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Quotes</category>
+			<pubDate>Tue, 01 Sep 2009 14:23:46 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

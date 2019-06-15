@@ -1,0 +1,1691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="en-gb">
+	<title type="text">Joomla</title>
+	<subtitle type="text">The Joy of Sharing and Learning Together</subtitle>
+	<link rel="alternate" type="text/html" href="https://kksou.com"/>
+	<id>https://kksou.com/php-gtk2/category/Joomla/feed/atom.php</id>
+	<updated>2019-06-14T04:36:23+00:00</updated>
+	<author>
+		<name>kksou</name>
+		<email>admin@kksou.com</email>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="https://kksou.com/php-gtk2/category/Joomla/feed/atom.php"/>
+	<entry>
+		<title>DirectPHP plugin</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/joomla/directphp-plugin.php"/>
+		<published>2008-03-24T21:48:01+00:00</published>
+		<updated>2008-03-24T21:48:01+00:00</updated>
+		<id>https://kksou.com/php-gtk2/joomla/directphp-plugin.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);?&gt;
+&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php&quot;);?&gt;
+
+&lt;?php download_button('DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php');?&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;var j10=2; var j15=3; var j16=106; var j17=110; var j25=128; var j30=159;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2_30.js&quot;&gt;&lt;/script&gt;
+&lt;?php /*&lt;script type=&quot;text/javascript&quot;&gt;prepareLinks();&lt;/script&gt;*/ ?&gt;
+
+&lt;p&gt;This plugin allows direct embedding of PHP commands right inside Joomla content page for dynamic contents.&lt;/p&gt;
+
+&lt;p&gt;Available for all Joomla versions: Joomla 1.0.x, native 1.5.x, 1.6.x, 1.7.x,2.5.x and 3.0.x!&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; If you want to use this content plugin inside a Custom HTML Modules, please refer to this article: &lt;a href=&quot;https://kksou.com/php-gtk2//php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php&quot;&gt;How to Run Joomla Content Plugins in Custom HTML Modules&lt;/a&gt;.&lt;/p&gt;
+
+&lt;?php /*
+&lt;span class=&quot;download&quot;&gt;
+&lt;p&gt;&lt;b&gt;Very Important:&lt;/b&gt; If you're using Joomla 1.6 or Joomla 1.7, don't forget to set the &lt;i&gt;Filter Type&lt;/i&gt; to &lt;b style=&quot;background:#ffff00&quot;&gt;&quot;No Filtering&quot;&lt;/b&gt; so that you can enter PHP codes in a Joomla 1.6 / 1.7 articles. &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/How-to-enter-HTML-tags-javascript-and-PHP-codes-in-Joomla-1.6.php&quot;&gt;Details here (works for both Joomla 1.6 and 1.7)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you're using Joomla 1.5, please refer to the article: &lt;br /&gt;
+&lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/How-to-enter-HTML-tags-javascript-and-PHP-codes-in-Joomla-1.5.8.php&quot;&gt;How to enter HTML tags, javascript and PHP codes in Joomla 1.5.8?&lt;/a&gt;&lt;br /&gt;
+Otherwise you might find that all your HTML tags, Javascript and PHP scripts will be removed the moment you click the Save or Apply button.&lt;/p&gt;
+&lt;/span&gt;
+
+*/
+?&gt;
+
+&lt;br clear=all&gt;
+&lt;? /*php joomla_toc(array('latest', 'key_features/Key Features', 'background', 'install_10/How to install (Joomla 1.0.x)', 'customize10/To customize the block list (Joomla 1.0.x)', 'install_15/How to install (Joomla 1.5.x)', 'customize15/To customize the block list (Joomla 1.5.x)', 'examples', 'blocking/Important Note: Blocking of PHP commands', 'download', 'history', 'user_reviews_4470', 'article_comments')); */?&gt;
+
+{Accordion_Menu_Apple_style 100 float:right10}
+General
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#latest&quot;&gt;Latest Version&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#key_features&quot;&gt;Key Features&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#background&quot;&gt;Background&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#download&quot;&gt;Download&lt;/a&gt;
+Documentation
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#examples&quot;&gt;Examples&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#blocking&quot;&gt;Blocking of PHP commands&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#history&quot;&gt;Version History&lt;/a&gt;
+{/Accordion_Menu_Apple_style}
+
+&lt;a id=&quot;key_features&quot;&gt;
+&lt;h3&gt;Key Features&lt;/h3&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Include PHP commands right inside your Jommla content page using the standard php construct:&lt;/li&gt; &lt;pre&gt;&amp;lt;?php &lt;i&gt;php_commands...&lt;/i&gt; ?&amp;gt;&lt;/pre&gt;
+
+&lt;li&gt;Freely intermix static contents with php commands:&lt;/li&gt; &lt;pre&gt;Now is: &amp;lt;?php echo date('Y-m-d H:i:s');?&amp;gt;&lt;/pre&gt;
+
+&lt;li&gt;Leverage on all your PHP libraries right inside the content page:&lt;/li&gt;
+&lt;pre&gt;&amp;lt;?php 
+require_once('fullpath/your_lib.php');
+your_php_func();
+?&amp;gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;You can edit the php code right inside the default TinyMCE WYSIWYG Editor!&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;Ability to block potentially &quot;risky&quot; commands, e.g. system, fopen, unlink, rmdir, etc. You can add and edit this list of commands-to-block yourself.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;/ul&gt;
+
+&lt;br clear=all&gt;
+&lt;div class=&quot;alert alert-info&quot; id=&quot;latest&quot;&gt;&lt;h4&gt;Latest Version&lt;/h4&gt;
+&lt;p&gt;v3.01 (for Joomla 3 and above)&lt;br&gt;
+Released Sep 26, 2016&lt;/p&gt;
+&lt;p&gt;Added support for latest version of Joomla and PHP 7!&lt;/p&gt;
+
+&lt;p&gt;v3.0 (for Joomla 3.0)&lt;br&gt;
+Released March 21, 2013&lt;/p&gt;
+&lt;p&gt;Native version of DirectPHP for Joomla 3.0!&lt;/p&gt;
+&lt;p&gt;Don't forget to set the &lt;i&gt;Filter Type&lt;/i&gt; to &lt;b style=&quot;background:#ffff00&quot;&gt;&quot;No Filtering&quot;&lt;/b&gt; so that you can enter PHP codes in a Joomla 3.0 article using the default WYSIWYG editor. &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/How-to-enter-HTML-tags-javascript-and-PHP-codes-in-Joomla-2.5.php&quot;&gt;Details here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+</summary>
+		<content type="html">&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);?&gt;
+&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php&quot;);?&gt;
+
+&lt;?php download_button('DirectPHP-FAQs-Troubleshoot-and-Tips-Techniques.php');?&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;var j10=2; var j15=3; var j16=106; var j17=110; var j25=128; var j30=159;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2_30.js&quot;&gt;&lt;/script&gt;
+&lt;?php /*&lt;script type=&quot;text/javascript&quot;&gt;prepareLinks();&lt;/script&gt;*/ ?&gt;
+
+&lt;p&gt;This plugin allows direct embedding of PHP commands right inside Joomla content page for dynamic contents.&lt;/p&gt;
+
+&lt;p&gt;Available for all Joomla versions: Joomla 1.0.x, native 1.5.x, 1.6.x, 1.7.x,2.5.x and 3.0.x!&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; If you want to use this content plugin inside a Custom HTML Modules, please refer to this article: &lt;a href=&quot;https://kksou.com/php-gtk2//php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php&quot;&gt;How to Run Joomla Content Plugins in Custom HTML Modules&lt;/a&gt;.&lt;/p&gt;
+
+&lt;?php /*
+&lt;span class=&quot;download&quot;&gt;
+&lt;p&gt;&lt;b&gt;Very Important:&lt;/b&gt; If you're using Joomla 1.6 or Joomla 1.7, don't forget to set the &lt;i&gt;Filter Type&lt;/i&gt; to &lt;b style=&quot;background:#ffff00&quot;&gt;&quot;No Filtering&quot;&lt;/b&gt; so that you can enter PHP codes in a Joomla 1.6 / 1.7 articles. &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/How-to-enter-HTML-tags-javascript-and-PHP-codes-in-Joomla-1.6.php&quot;&gt;Details here (works for both Joomla 1.6 and 1.7)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you're using Joomla 1.5, please refer to the article: &lt;br /&gt;
+&lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/How-to-enter-HTML-tags-javascript-and-PHP-codes-in-Joomla-1.5.8.php&quot;&gt;How to enter HTML tags, javascript and PHP codes in Joomla 1.5.8?&lt;/a&gt;&lt;br /&gt;
+Otherwise you might find that all your HTML tags, Javascript and PHP scripts will be removed the moment you click the Save or Apply button.&lt;/p&gt;
+&lt;/span&gt;
+
+*/
+?&gt;
+
+&lt;br clear=all&gt;
+&lt;? /*php joomla_toc(array('latest', 'key_features/Key Features', 'background', 'install_10/How to install (Joomla 1.0.x)', 'customize10/To customize the block list (Joomla 1.0.x)', 'install_15/How to install (Joomla 1.5.x)', 'customize15/To customize the block list (Joomla 1.5.x)', 'examples', 'blocking/Important Note: Blocking of PHP commands', 'download', 'history', 'user_reviews_4470', 'article_comments')); */?&gt;
+
+{Accordion_Menu_Apple_style 100 float:right10}
+General
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#latest&quot;&gt;Latest Version&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#key_features&quot;&gt;Key Features&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#background&quot;&gt;Background&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#download&quot;&gt;Download&lt;/a&gt;
+Documentation
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#examples&quot;&gt;Examples&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#blocking&quot;&gt;Blocking of PHP commands&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#history&quot;&gt;Version History&lt;/a&gt;
+{/Accordion_Menu_Apple_style}
+
+&lt;a id=&quot;key_features&quot;&gt;
+&lt;h3&gt;Key Features&lt;/h3&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Include PHP commands right inside your Jommla content page using the standard php construct:&lt;/li&gt; &lt;pre&gt;&amp;lt;?php &lt;i&gt;php_commands...&lt;/i&gt; ?&amp;gt;&lt;/pre&gt;
+
+&lt;li&gt;Freely intermix static contents with php commands:&lt;/li&gt; &lt;pre&gt;Now is: &amp;lt;?php echo date('Y-m-d H:i:s');?&amp;gt;&lt;/pre&gt;
+
+&lt;li&gt;Leverage on all your PHP libraries right inside the content page:&lt;/li&gt;
+&lt;pre&gt;&amp;lt;?php 
+require_once('fullpath/your_lib.php');
+your_php_func();
+?&amp;gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;You can edit the php code right inside the default TinyMCE WYSIWYG Editor!&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;Ability to block potentially &quot;risky&quot; commands, e.g. system, fopen, unlink, rmdir, etc. You can add and edit this list of commands-to-block yourself.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;/ul&gt;
+
+&lt;br clear=all&gt;
+&lt;div class=&quot;alert alert-info&quot; id=&quot;latest&quot;&gt;&lt;h4&gt;Latest Version&lt;/h4&gt;
+&lt;p&gt;v3.01 (for Joomla 3 and above)&lt;br&gt;
+Released Sep 26, 2016&lt;/p&gt;
+&lt;p&gt;Added support for latest version of Joomla and PHP 7!&lt;/p&gt;
+
+&lt;p&gt;v3.0 (for Joomla 3.0)&lt;br&gt;
+Released March 21, 2013&lt;/p&gt;
+&lt;p&gt;Native version of DirectPHP for Joomla 3.0!&lt;/p&gt;
+&lt;p&gt;Don't forget to set the &lt;i&gt;Filter Type&lt;/i&gt; to &lt;b style=&quot;background:#ffff00&quot;&gt;&quot;No Filtering&quot;&lt;/b&gt; so that you can enter PHP codes in a Joomla 3.0 article using the default WYSIWYG editor. &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/How-to-enter-HTML-tags-javascript-and-PHP-codes-in-Joomla-2.5.php&quot;&gt;Details here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+</content>
+		<category term="Joomla" />
+	</entry>
+	<entry>
+		<title>Pausing up-down Scroller plugin</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-plugin.php"/>
+		<published>2008-12-05T07:45:52+00:00</published>
+		<updated>2008-12-05T07:45:52+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-plugin.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);?&gt;
+&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php&quot;);?&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;var j10=80; var j15=81; var j16=120; var j17=121; var j25=136;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2_25.js&quot;&gt;&lt;/script&gt;
+&lt;?php /*&lt;script type=&quot;text/javascript&quot;&gt;prepareLinks();&lt;/script&gt;*/ ?&gt;
+
+{Accordion_Menu_Apple_style 100 float:right10}
+&lt;a href=&quot;https://kksou.com/php-gtk2/#intro&quot;&gt;General&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#intro&quot;&gt;Introduction&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#latest&quot;&gt;Latest Version&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#demo&quot;&gt;Demo&lt;/a&gt;
+&lt;a href=&quot;https://kksou.com/php-gtk2/#download&quot;&gt;Download&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#download&quot;&gt;Download&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#remove-powered-by-links&quot;&gt;Remove the &quot;Powered by&quot; links&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#install_10&quot;&gt;How to install&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#how_to_use&quot;&gt;How to use&lt;/a&gt;
+User Reviews
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#article_comments&quot;&gt;kksou.com&lt;/a&gt;
+- &lt;a href=&quot;http://extensions.joomla.org/component/option,com_mtree/task,viewlink/link_id,6223/Itemid,35/#action&quot; target=_blank&gt;extensions.joomla.org&lt;/a&gt;
+{/Accordion_Menu_Apple_style}
+
+&lt;a id=&quot;intro&quot;&gt;&lt;/a&gt;
+&lt;p&gt;This is a plugin which allows you to display an up-down scroller that pauses between each message! The scroller is displayed right inside your article or content item.&lt;/p&gt;  
+
+&lt;p&gt;The original code was written by &lt;a href=&quot;http://www.dynamicdrive.com/dynamicindex2/crosstick.htm&quot;&gt;dynamicdrive.com&lt;/a&gt;. What I've done is to wrap the code into a Joomla plugin so that you can use it within your Joomla articles.&lt;/p&gt;
+
+&lt;a id=&quot;demo&quot;&gt;
+&lt;h3&gt;Demo&lt;/h3&gt;&lt;/a&gt; 
+{UpDownScroller id:t121 style:pscroller1 height:100 width:178 float:right10 pause:3000} 
+&lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/DirectPHP-plugin.php&quot; target=&quot;_new&quot;&gt;DirectPHP plugin&lt;/a&gt;&amp;lt;br /&amp;gt;This plugin allows direct embedding of PHP commands right inside Joomla content page for dynamic contents.
+---
+&lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/googleSearch-component.php&quot; target=&quot;_new&quot;&gt;googleSearch component/module&lt;/a&gt;&amp;lt;br /&amp;gt;This component/module allows you to add Google Adsense Search to your Joomla site. 
+---
+&lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php&quot; target=&quot;_new&quot;&gt;Include Content Item plugin &lt;/a&gt;&amp;lt;br /&amp;gt;This plugin allows you to insert or include one content item into another content item. 
+{/UpDownScroller}  
+
+&lt;p&gt;You can see a sample scroller on the right of this paragraph.&lt;/p&gt;  &lt;p&gt;The look of the scroller is completely styled using external CSS, including the width, height, foreground and background color.&lt;/p&gt;  
+
+&lt;br clear=all&gt;
+{UpDownScroller id:t122 style:pscroller2 float:left10 pause:4000} 
+&lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php&quot; target=&quot;_new&quot;&gt;Google Currency Converter&lt;/a&gt;&amp;lt;br /&amp;gt;This module allows you to add the Google Currency Converter in a module position. 
+---
+&lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Currency-Converter-AJAX-version.php&quot; target=&quot;_new&quot;&gt;Yahoo Currency Converter&lt;/a&gt;&amp;lt;br /&amp;gt;This module allows you to add the Yahoo Currency Converter in a module position. 
+---
+&lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Stock-Quote-AJAX-version.php&quot; target=&quot;_new&quot;&gt;Yahoo Stock Quote&lt;/a&gt;&amp;lt;br /&amp;gt;This module allows you to display stock quotes from Yahoo Finance in a module position. 
+{/UpDownScroller} 
+
+&lt;p&gt;You can have multiple scrollers, each with different width, height and alignment (float to left or right).&lt;/p&gt;  &lt;p&gt;Note that you can have different pause intervals for each scroller. The first one above scrolls once every 3 seconds. The second one on the left scrolls once every 4 seconds.&lt;/p&gt;
+
+&lt;p&gt;You can also easily create a single line scroller just by adjusting the scroller's height appropriately!&lt;/p&gt; 
+
+{UpDownScroller id:t123 style:pscroller3 height:16 width:350 pause:2000} 
+&lt;a href=&quot;http://www.news.com&quot; target=&quot;_new&quot;&gt;News.com: Technology and business reports&lt;/a&gt; 
+---
+&lt;a href=&quot;http://www.cnn.com&quot; target=&quot;_new&quot;&gt;CNN: Headline and breaking news 24/7&lt;/a&gt; 
+---
+&lt;a href=&quot;http://news.bbc.co.uk&quot; target=&quot;_new&quot;&gt;BBC News: UK and international news&lt;/a&gt;
+{/UpDownScroller} &lt;br /&gt;  
+
+&lt;div class=&quot;alert alert-info&quot; id=&quot;latest&quot;&gt;&lt;h4&gt;Latest Version&lt;/h4&gt;
+&lt;p&gt;v1.03 (for Joomla 1.0), v1.53 (for Joomla 1.5), v1.63 (for Joomla 1.6), v1.73 (for Joomla 1.7), v2.53 (for Joomla 2.5)&lt;br&gt;
+Released January 31, 2012&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Support for Pausing up-down Scroller module for Joomla 2.5!&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;a id=&quot;how_to_use&quot;&gt;
+&lt;h3&gt;How to use the &quot;Pausing up-down Scroller&quot; plugin&lt;/h3&gt;&lt;/a&gt;
+
+&lt;span class=&quot;download&quot;&gt;
+&lt;b&gt;Important:&lt;/b&gt; If you're using Joomla 1.5.8, please refer to the article: &lt;br /&gt;
+&lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/How-to-enter-HTML-tags-javascript-and-PHP-codes-in-Joomla-1.5.8.php&quot;&gt;How to enter HTML tags, javascript and PHP codes in Joomla 1.5.8?&lt;/a&gt;&lt;br /&gt;
+Otherwise you might find that all your HTML tags, Javascript and PHP scripts will be removed the moment you click the Save or Apply button.
+&lt;/span&gt;
+
+&lt;ol&gt;
+
+&lt;li&gt;To insert the Pausing up-down Scroller, use the syntax:&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller&amp;#125;
+... scroller messages ... 
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;?php #display_google_ads32('joomla - how to use 336x280', 0, 20, 0, 20, 1, 1);?&gt;
+
+&lt;li&gt;Each scrolling message is delimited by a line containing three dashes '---'&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller&amp;#125;
+message #1
+---
+message #2
+---
+message #3
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;The scrolling message can contain any valid HTML text such as links:&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller&amp;#125;
+&amp;lt;a href=&quot;http://www.news.com&quot;&amp;gt;News.com: Technology and business reports&amp;lt;/a&amp;gt;
+---
+&amp;lt;a href=&quot;http://www.cnn.com&quot;&amp;gt;CNN: Headline and breaking news 24/7&amp;lt;/a&amp;gt;
+---
+&amp;lt;a href=&quot;http://news.bbc.co.uk&quot; target=&quot;_new&quot;&amp;gt;BBC News: UK and international news&amp;lt;/a&amp;gt;
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;Each scrolling message can also contain multiple lines:&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller&amp;#125;
+&amp;lt;a href=&quot;http://www.news.com&quot;&amp;gt;News.com&amp;lt;/a&amp;gt;
+Technology and business reports
+---
+&amp;lt;a href=&quot;http://www.cnn.com&quot;&amp;gt;CNN&amp;lt;/a&amp;gt;
+Headline and breaking news 24/7
+---
+&amp;lt;a href=&quot;http://news.bbc.co.uk&quot; target=&quot;_new&quot;&amp;gt;BBC News&amp;lt;/a&amp;gt;
+UK and international news
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;a id=&quot;scroller_width&quot;&gt;&lt;/a&gt;
+&lt;li&gt;&lt;b&gt;Width of the scroller&lt;/b&gt;: The default width of the scroller is defined in the Parameters in Plugin Manager. If you want to change the scroller width locally to say, 360px, use the following syntax:&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller &lt;b style=&quot;background:#ffff00&quot;&gt;width:360&lt;/b&gt;&amp;#125;
+message #1
+---
+message #2
+---
+message #3
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+
+&lt;a id=&quot;scroller_height&quot;&gt;&lt;/a&gt;
+&lt;li&gt;&lt;b&gt;Height of the scroller&lt;/b&gt;: The default height of the scroller is defined in the Parameters in Plugin Manager. If you want to change the scroller height locally to say, 120px, use the following syntax:&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller width:360 &lt;b style=&quot;background:#ffff00&quot;&gt;height:120&lt;/b&gt;&amp;#125;
+message #1
+---
+message #2
+---
+message #3
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+
+&lt;a id=&quot;scroller_id&quot;&gt;&lt;/a&gt;
+&lt;li&gt;&lt;b&gt;Unique ID of the scroller&lt;/b&gt;: If you are using only one scroller in an article, you do not need to specify any ID for the scroller.&lt;/li&gt;
+&lt;p&gt;However, if you're using more than one scrollers in an article, you will need to specify a unique ID for each scroller. The ID used is similar to a standard variable name, i.e. the first character should be a-z or _, followed by a-z, 0-9 or _.&lt;/p&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller &lt;b style=&quot;background:#ffff00&quot;&gt;id:t121&lt;/b&gt; width:360 height:120&amp;#125;
+message #1
+---
+message #2
+---
+message #3
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+
+&lt;a id=&quot;scroller_css&quot;&gt;&lt;/a&gt;
+&lt;li&gt;&lt;b&gt;CSS style of the scroller&lt;/b&gt;: The default css style for the scroller is &lt;b style=&quot;background:#ffff00&quot;&gt;pscroller1&lt;/b&gt; as specified in the css file &lt;b style=&quot;background:#ffff00&quot;&gt;pausing_up_down_scroller.css&lt;/b&gt; in the folder &lt;code&gt;mambots/content/pausing_up_down_scroller&lt;/code&gt; (for Joomla 1.0), and &lt;code&gt;plugins/content/pausing_up_down_scroller&lt;/code&gt; (for Joomla 1.5).&lt;/li&gt;
+&lt;p&gt;If you take a look at the css file &lt;b&gt;pausing_up_down_scroller.css&lt;/b&gt;, you will see three pre-defined styles: &lt;code&gt;pscroller1&lt;/code&gt;, &lt;code&gt;pscroller2&lt;/code&gt; and &lt;code&gt;pscroller3&lt;/code&gt;. These are the three css styles used by the three &lt;a href=&quot;https://kksou.com/php-gtk2/#demo&quot;&gt;demos&lt;/a&gt; you see above. To specify which css style to use for the scroller, use the following syntax:&lt;/p&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller id:t121 &lt;b style=&quot;background:#ffff00&quot;&gt;style:pscroller3&lt;/b&gt; width:360 height:120&amp;#125;
+message #1
+---
+message #2
+---
+message #3
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+
+&lt;?php #echo burstmedia_medium_rectangle_300_250();?&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;&lt;b&gt;Make the scroller float left&lt;/b&gt;: To make the scroller float left, use the following syntax. The 10 following the keyword &lt;code&gt;left&lt;/code&gt; will set a margin of 10px between the scroller and the text flowing around it.&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller id:t121 style:pscroller3 width:360 height:120 &lt;b style=&quot;background:#ffff00&quot;&gt;float:left10&lt;/b&gt;&amp;#125;
+message #1
+---
+message #2
+---
+message #3
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;&lt;b&gt;Make the scroller float right&lt;/b&gt;: To make the scroller float right, use the following syntax. The 16 following the keyword &lt;code&gt;left&lt;/code&gt; will set a margin of 16px between the scroller and the text flowing around it.&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller id:t121 style:pscroller3 width:360 height:120 &lt;b style=&quot;background:#ffff00&quot;&gt;float:right16&lt;/b&gt;&amp;#125;
+message #1
+---
+message #2
+---
+message #3
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;&lt;b&gt;The pause between each message&lt;/b&gt;: The default pause between the display of each message is 3000 milli-seconds.&lt;/li&gt;
+&lt;p&gt;To specify this pause value to, say 2.5 seconds, use the following syntax. The value is specified in milli-seconds.&lt;/p&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller id:t121 style:pscroller3 width:360 height:120 float:left &lt;b style=&quot;background:#ffff00&quot;&gt;pause:2500&lt;/b&gt;&amp;#125;
+message #1
+---
+message #2
+---
+message #3
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;&lt;b&gt;CSS file&lt;/b&gt;: The default css file is &lt;b&gt;pausing_up_down_scroller.css&lt;/b&gt;. However, you can also specify a different css files for different scrollers with the following syntax:&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller id:t121 style:pscroller3 float:left pause:2500 &lt;b style=&quot;background:#ffff00&quot;&gt;css:your_css_file.css&lt;/b&gt;&amp;#125;
+message #1
+---
+message #2
+---
+message #3
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;/ol&gt;</summary>
+		<content type="html">&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);?&gt;
+&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php&quot;);?&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;var j10=80; var j15=81; var j16=120; var j17=121; var j25=136;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2_25.js&quot;&gt;&lt;/script&gt;
+&lt;?php /*&lt;script type=&quot;text/javascript&quot;&gt;prepareLinks();&lt;/script&gt;*/ ?&gt;
+
+{Accordion_Menu_Apple_style 100 float:right10}
+&lt;a href=&quot;https://kksou.com/php-gtk2/#intro&quot;&gt;General&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#intro&quot;&gt;Introduction&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#latest&quot;&gt;Latest Version&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#demo&quot;&gt;Demo&lt;/a&gt;
+&lt;a href=&quot;https://kksou.com/php-gtk2/#download&quot;&gt;Download&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#download&quot;&gt;Download&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#remove-powered-by-links&quot;&gt;Remove the &quot;Powered by&quot; links&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#install_10&quot;&gt;How to install&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#how_to_use&quot;&gt;How to use&lt;/a&gt;
+User Reviews
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#article_comments&quot;&gt;kksou.com&lt;/a&gt;
+- &lt;a href=&quot;http://extensions.joomla.org/component/option,com_mtree/task,viewlink/link_id,6223/Itemid,35/#action&quot; target=_blank&gt;extensions.joomla.org&lt;/a&gt;
+{/Accordion_Menu_Apple_style}
+
+&lt;a id=&quot;intro&quot;&gt;&lt;/a&gt;
+&lt;p&gt;This is a plugin which allows you to display an up-down scroller that pauses between each message! The scroller is displayed right inside your article or content item.&lt;/p&gt;  
+
+&lt;p&gt;The original code was written by &lt;a href=&quot;http://www.dynamicdrive.com/dynamicindex2/crosstick.htm&quot;&gt;dynamicdrive.com&lt;/a&gt;. What I've done is to wrap the code into a Joomla plugin so that you can use it within your Joomla articles.&lt;/p&gt;
+
+&lt;a id=&quot;demo&quot;&gt;
+&lt;h3&gt;Demo&lt;/h3&gt;&lt;/a&gt; 
+{UpDownScroller id:t121 style:pscroller1 height:100 width:178 float:right10 pause:3000} 
+&lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/DirectPHP-plugin.php&quot; target=&quot;_new&quot;&gt;DirectPHP plugin&lt;/a&gt;&amp;lt;br /&amp;gt;This plugin allows direct embedding of PHP commands right inside Joomla content page for dynamic contents.
+---
+&lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/googleSearch-component.php&quot; target=&quot;_new&quot;&gt;googleSearch component/module&lt;/a&gt;&amp;lt;br /&amp;gt;This component/module allows you to add Google Adsense Search to your Joomla site. 
+---
+&lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php&quot; target=&quot;_new&quot;&gt;Include Content Item plugin &lt;/a&gt;&amp;lt;br /&amp;gt;This plugin allows you to insert or include one content item into another content item. 
+{/UpDownScroller}  
+
+&lt;p&gt;You can see a sample scroller on the right of this paragraph.&lt;/p&gt;  &lt;p&gt;The look of the scroller is completely styled using external CSS, including the width, height, foreground and background color.&lt;/p&gt;  
+
+&lt;br clear=all&gt;
+{UpDownScroller id:t122 style:pscroller2 float:left10 pause:4000} 
+&lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Currency-Converter-AJAX-version.php&quot; target=&quot;_new&quot;&gt;Google Currency Converter&lt;/a&gt;&amp;lt;br /&amp;gt;This module allows you to add the Google Currency Converter in a module position. 
+---
+&lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Currency-Converter-AJAX-version.php&quot; target=&quot;_new&quot;&gt;Yahoo Currency Converter&lt;/a&gt;&amp;lt;br /&amp;gt;This module allows you to add the Yahoo Currency Converter in a module position. 
+---
+&lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla-Gadgets/Yahoo-Stock-Quote-AJAX-version.php&quot; target=&quot;_new&quot;&gt;Yahoo Stock Quote&lt;/a&gt;&amp;lt;br /&amp;gt;This module allows you to display stock quotes from Yahoo Finance in a module position. 
+{/UpDownScroller} 
+
+&lt;p&gt;You can have multiple scrollers, each with different width, height and alignment (float to left or right).&lt;/p&gt;  &lt;p&gt;Note that you can have different pause intervals for each scroller. The first one above scrolls once every 3 seconds. The second one on the left scrolls once every 4 seconds.&lt;/p&gt;
+
+&lt;p&gt;You can also easily create a single line scroller just by adjusting the scroller's height appropriately!&lt;/p&gt; 
+
+{UpDownScroller id:t123 style:pscroller3 height:16 width:350 pause:2000} 
+&lt;a href=&quot;http://www.news.com&quot; target=&quot;_new&quot;&gt;News.com: Technology and business reports&lt;/a&gt; 
+---
+&lt;a href=&quot;http://www.cnn.com&quot; target=&quot;_new&quot;&gt;CNN: Headline and breaking news 24/7&lt;/a&gt; 
+---
+&lt;a href=&quot;http://news.bbc.co.uk&quot; target=&quot;_new&quot;&gt;BBC News: UK and international news&lt;/a&gt;
+{/UpDownScroller} &lt;br /&gt;  
+
+&lt;div class=&quot;alert alert-info&quot; id=&quot;latest&quot;&gt;&lt;h4&gt;Latest Version&lt;/h4&gt;
+&lt;p&gt;v1.03 (for Joomla 1.0), v1.53 (for Joomla 1.5), v1.63 (for Joomla 1.6), v1.73 (for Joomla 1.7), v2.53 (for Joomla 2.5)&lt;br&gt;
+Released January 31, 2012&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Support for Pausing up-down Scroller module for Joomla 2.5!&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;a id=&quot;how_to_use&quot;&gt;
+&lt;h3&gt;How to use the &quot;Pausing up-down Scroller&quot; plugin&lt;/h3&gt;&lt;/a&gt;
+
+&lt;span class=&quot;download&quot;&gt;
+&lt;b&gt;Important:&lt;/b&gt; If you're using Joomla 1.5.8, please refer to the article: &lt;br /&gt;
+&lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/How-to-enter-HTML-tags-javascript-and-PHP-codes-in-Joomla-1.5.8.php&quot;&gt;How to enter HTML tags, javascript and PHP codes in Joomla 1.5.8?&lt;/a&gt;&lt;br /&gt;
+Otherwise you might find that all your HTML tags, Javascript and PHP scripts will be removed the moment you click the Save or Apply button.
+&lt;/span&gt;
+
+&lt;ol&gt;
+
+&lt;li&gt;To insert the Pausing up-down Scroller, use the syntax:&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller&amp;#125;
+... scroller messages ... 
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;?php #display_google_ads32('joomla - how to use 336x280', 0, 20, 0, 20, 1, 1);?&gt;
+
+&lt;li&gt;Each scrolling message is delimited by a line containing three dashes '---'&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller&amp;#125;
+message #1
+---
+message #2
+---
+message #3
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;The scrolling message can contain any valid HTML text such as links:&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller&amp;#125;
+&amp;lt;a href=&quot;http://www.news.com&quot;&amp;gt;News.com: Technology and business reports&amp;lt;/a&amp;gt;
+---
+&amp;lt;a href=&quot;http://www.cnn.com&quot;&amp;gt;CNN: Headline and breaking news 24/7&amp;lt;/a&amp;gt;
+---
+&amp;lt;a href=&quot;http://news.bbc.co.uk&quot; target=&quot;_new&quot;&amp;gt;BBC News: UK and international news&amp;lt;/a&amp;gt;
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;Each scrolling message can also contain multiple lines:&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller&amp;#125;
+&amp;lt;a href=&quot;http://www.news.com&quot;&amp;gt;News.com&amp;lt;/a&amp;gt;
+Technology and business reports
+---
+&amp;lt;a href=&quot;http://www.cnn.com&quot;&amp;gt;CNN&amp;lt;/a&amp;gt;
+Headline and breaking news 24/7
+---
+&amp;lt;a href=&quot;http://news.bbc.co.uk&quot; target=&quot;_new&quot;&amp;gt;BBC News&amp;lt;/a&amp;gt;
+UK and international news
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;a id=&quot;scroller_width&quot;&gt;&lt;/a&gt;
+&lt;li&gt;&lt;b&gt;Width of the scroller&lt;/b&gt;: The default width of the scroller is defined in the Parameters in Plugin Manager. If you want to change the scroller width locally to say, 360px, use the following syntax:&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller &lt;b style=&quot;background:#ffff00&quot;&gt;width:360&lt;/b&gt;&amp;#125;
+message #1
+---
+message #2
+---
+message #3
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+
+&lt;a id=&quot;scroller_height&quot;&gt;&lt;/a&gt;
+&lt;li&gt;&lt;b&gt;Height of the scroller&lt;/b&gt;: The default height of the scroller is defined in the Parameters in Plugin Manager. If you want to change the scroller height locally to say, 120px, use the following syntax:&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller width:360 &lt;b style=&quot;background:#ffff00&quot;&gt;height:120&lt;/b&gt;&amp;#125;
+message #1
+---
+message #2
+---
+message #3
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+
+&lt;a id=&quot;scroller_id&quot;&gt;&lt;/a&gt;
+&lt;li&gt;&lt;b&gt;Unique ID of the scroller&lt;/b&gt;: If you are using only one scroller in an article, you do not need to specify any ID for the scroller.&lt;/li&gt;
+&lt;p&gt;However, if you're using more than one scrollers in an article, you will need to specify a unique ID for each scroller. The ID used is similar to a standard variable name, i.e. the first character should be a-z or _, followed by a-z, 0-9 or _.&lt;/p&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller &lt;b style=&quot;background:#ffff00&quot;&gt;id:t121&lt;/b&gt; width:360 height:120&amp;#125;
+message #1
+---
+message #2
+---
+message #3
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+
+&lt;a id=&quot;scroller_css&quot;&gt;&lt;/a&gt;
+&lt;li&gt;&lt;b&gt;CSS style of the scroller&lt;/b&gt;: The default css style for the scroller is &lt;b style=&quot;background:#ffff00&quot;&gt;pscroller1&lt;/b&gt; as specified in the css file &lt;b style=&quot;background:#ffff00&quot;&gt;pausing_up_down_scroller.css&lt;/b&gt; in the folder &lt;code&gt;mambots/content/pausing_up_down_scroller&lt;/code&gt; (for Joomla 1.0), and &lt;code&gt;plugins/content/pausing_up_down_scroller&lt;/code&gt; (for Joomla 1.5).&lt;/li&gt;
+&lt;p&gt;If you take a look at the css file &lt;b&gt;pausing_up_down_scroller.css&lt;/b&gt;, you will see three pre-defined styles: &lt;code&gt;pscroller1&lt;/code&gt;, &lt;code&gt;pscroller2&lt;/code&gt; and &lt;code&gt;pscroller3&lt;/code&gt;. These are the three css styles used by the three &lt;a href=&quot;https://kksou.com/php-gtk2/#demo&quot;&gt;demos&lt;/a&gt; you see above. To specify which css style to use for the scroller, use the following syntax:&lt;/p&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller id:t121 &lt;b style=&quot;background:#ffff00&quot;&gt;style:pscroller3&lt;/b&gt; width:360 height:120&amp;#125;
+message #1
+---
+message #2
+---
+message #3
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+
+&lt;?php #echo burstmedia_medium_rectangle_300_250();?&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;&lt;b&gt;Make the scroller float left&lt;/b&gt;: To make the scroller float left, use the following syntax. The 10 following the keyword &lt;code&gt;left&lt;/code&gt; will set a margin of 10px between the scroller and the text flowing around it.&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller id:t121 style:pscroller3 width:360 height:120 &lt;b style=&quot;background:#ffff00&quot;&gt;float:left10&lt;/b&gt;&amp;#125;
+message #1
+---
+message #2
+---
+message #3
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;&lt;b&gt;Make the scroller float right&lt;/b&gt;: To make the scroller float right, use the following syntax. The 16 following the keyword &lt;code&gt;left&lt;/code&gt; will set a margin of 16px between the scroller and the text flowing around it.&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller id:t121 style:pscroller3 width:360 height:120 &lt;b style=&quot;background:#ffff00&quot;&gt;float:right16&lt;/b&gt;&amp;#125;
+message #1
+---
+message #2
+---
+message #3
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;&lt;b&gt;The pause between each message&lt;/b&gt;: The default pause between the display of each message is 3000 milli-seconds.&lt;/li&gt;
+&lt;p&gt;To specify this pause value to, say 2.5 seconds, use the following syntax. The value is specified in milli-seconds.&lt;/p&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller id:t121 style:pscroller3 width:360 height:120 float:left &lt;b style=&quot;background:#ffff00&quot;&gt;pause:2500&lt;/b&gt;&amp;#125;
+message #1
+---
+message #2
+---
+message #3
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;&lt;b&gt;CSS file&lt;/b&gt;: The default css file is &lt;b&gt;pausing_up_down_scroller.css&lt;/b&gt;. However, you can also specify a different css files for different scrollers with the following syntax:&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;UpDownScroller id:t121 style:pscroller3 float:left pause:2500 &lt;b style=&quot;background:#ffff00&quot;&gt;css:your_css_file.css&lt;/b&gt;&amp;#125;
+message #1
+---
+message #2
+---
+message #3
+&amp;#123;/UpDownScroller&amp;#125;
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;/ol&gt;</content>
+		<category term="Joomla" />
+	</entry>
+	<entry>
+		<title>Include Content Item plugin</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php"/>
+		<published>2008-05-05T09:26:23+00:00</published>
+		<updated>2008-05-05T09:26:23+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla/Include-Content-Item-plugin.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);?&gt;
+&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php&quot;);?&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;var j10=10; var j15=11; var j16=108; var j17=113; var j25=129; j30=162;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2_30.js&quot;&gt;&lt;/script&gt;
+
+&lt;a id=&quot;intro&quot;&gt;&lt;/a&gt;
+&lt;p&gt;This plugin allows you to insert or include one content item into another content item.&lt;/p&gt;
+
+&lt;p&gt;Inserting a content item is as simple as &lt;b&gt;&amp;#123;include_content_item 123&amp;#125;&lt;/b&gt;, &lt;br&gt;where &lt;i&gt;123&lt;/i&gt; is the ID of the content item to be included. &lt;br&gt;Note: The ID of the respective content item is listed in the Content Items Manager (or Article Manager in Joomla 1.5).&lt;/p&gt;
+
+{Accordion_Menu_Apple_style 100 float:right10}
+General
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#intro&quot;&gt;Introduction&lt;/a&gt;
+&lt;a href=&quot;https://kksou.com/php-gtk2/#download&quot;&gt;Download&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#download&quot;&gt;Download&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#latest&quot;&gt;Latest Version&lt;/a&gt;
+Documentation
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#install_15&quot;&gt;How to install&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#how_to_use&quot;&gt;How to use&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#readmore&quot;&gt;Read More link&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#nested&quot;&gt;Nested Include&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#fadein&quot;&gt;Fade-in of Fulltext&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#include-content-item-module&quot;&gt;The &quot;Include Content Item&quot; module&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#history&quot;&gt;Version History&lt;/a&gt;
+User Reviews
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#article_comments&quot;&gt;kksou.com&lt;/a&gt;
+- &lt;a href=&quot;http://extensions.joomla.org/extensions/4809/details#action&quot; target=_blank&gt;extensions.joomla.org&lt;/a&gt;
+{/Accordion_Menu_Apple_style}
+
+&lt;p&gt;This is useful, for example, when you have a block of text that you want to appear across a number of articles or content items e.g. download instructions, copyright notice, images, common links/resources, etc.&lt;/p&gt;
+
+&lt;p&gt;Available for all Joomla versions: Joomla 1.0.x, native 1.5.x, 1.6.x, 1.7.x, 2.5.x and 3.0.x!&lt;/p&gt;
+
+&lt;p&gt;The latest version now supports nested include! &lt;a href=&quot;https://kksou.com/php-gtk2/#nested&quot;&gt;Details here.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; If you want to use this content plugin inside a Custom HTML Modules, please refer to this article: &lt;a href=&quot;https://kksou.com/php-gtk2//php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php&quot;&gt;How to Run Joomla Content Plugins in Custom HTML Modules&lt;/a&gt;.&lt;/p&gt;
+
+&lt;br clear=all&gt;
+&lt;div class=&quot;alert alert-info&quot; id=&quot;latest&quot;&gt;&lt;h4&gt;Latest Version&lt;/h4&gt;
+&lt;p&gt;v3.0.13 (for Joomla 3.0)&lt;br&gt;
+Released Mar 30, 2017&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;a) Support for PHP 7! Special thanks to &lt;a href=&quot;https://cms.kreativfotografi.se/index.php?lang=sv&quot;&gt;J&amp;ouml;rgen @ Kreativ Fotografi&lt;/a&gt; for sharing the code.&lt;br /&gt;
+b) jQuery - now uses CDN: https://code.jquery.com/jquery-1.12.4.min.js
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;?php #joomla_toc(array('how_to_use/How to use the &quot;Include Content Item&quot; plugin', 'latest', 'include-content-item-module/The &quot;Include Content Item&quot; module', 'download', 'install_10', 'install_15', 'history', 'faq', 'user_reviews_4809', 'article_comments'));?&gt;
+
+&lt;a id=&quot;how_to_use&quot;&gt;
+&lt;h3&gt;How to use the &quot;Include Content Item&quot; plugin&lt;/h3&gt;&lt;/a&gt;
+
+&lt;ol&gt;
+
+&lt;li&gt;To include a content item, use the syntax &lt;b&gt;&amp;#123;include_content_item 123&amp;#125;&lt;/b&gt; &lt;br&gt;where &lt;i&gt;123&lt;/i&gt; is the ID of the content item to be included. Note that both the intro and the fulltext will be included.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;To include only the &lt;b&gt;intro&lt;/b&gt; a content item, use the syntax &lt;b&gt;&amp;#123;include_intro 123&amp;#125;&lt;/b&gt;.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;To include only the &lt;b&gt;fulltext&lt;/b&gt; (or maintext) of a content item, use the syntax &lt;b&gt;&amp;#123;include_fulltext 123&amp;#125;&lt;/b&gt;.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;To add the &lt;b&gt;title&lt;/b&gt; of the included article: &amp;#123;include_content_item 123 1&amp;#125;&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;To add the &lt;b&gt;title and link&lt;/b&gt; to the included article: &amp;#123;include_content_item 123 1 1&amp;#125;&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;The ID of the respective content item is listed in the Content Items Manager (or Article Manager in Joomla 1.5).&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;It is not necessary to publish the content item that will be included.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;If you have installed the &lt;a href=&quot;http://extensions.joomla.org/component/option,com_mtree/task,viewlink/link_id,4470/Itemid,35/&quot;&gt;DirectPHP plugin&lt;/a&gt;,  you can also store frequently used PHP code snippets in a content item. This can then be included into other content items. &lt;b&gt;Note:&lt;/b&gt; Please make sure that in the Mambot/Plugin Manager, this plugin comes &lt;span style=&quot;background:#ffff00&quot;&gt;before&lt;/span&gt; the DirectPHP plugin so that this plugin is being processed first, followed by DirectPHP.&lt;/li&gt;
+
+&lt;/ol&gt;
+
+&lt;a id=&quot;readmore&quot;&gt;
+&lt;h3&gt;Displaying the Read More link&lt;/h3&gt;&lt;/a&gt;
+
+&lt;p&gt;There are several options to display the Read More link:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;When you use the tag&lt;/li&gt;
+&lt;pre&gt;&amp;#123;include_content_item 123 &lt;span style=&quot;background:#ffff00&quot;&gt;readmore=1&lt;/span&gt;&amp;#125;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;the intro text will be displayed, followed by the default &quot;Read More&quot; as defined by your template. Note that if there is no text in the main text, there will be no &quot;Read More&quot; link displayed.&lt;/pre&gt;
+
+&lt;?php #display_google_ads32('joomla - download 336x280', 0, 20, 0, 20, 1, 1);?&gt;
+
+&lt;li&gt;If you do not like the default &quot;Read More&quot; link, you can specify your own text to be displayed for the &quot;Read More&quot; link with the tag&lt;/li&gt; 
+&lt;pre&gt;&amp;#123;include_content_item 123 &lt;span style=&quot;background:#ffff00&quot;&gt;readmore='[Read More]'&lt;/span&gt;&amp;#125;&lt;/pre&gt;
+&lt;p&gt;&lt;b&gt;Important:&lt;/b&gt; Please make sure you put &lt;span style=&quot;background:#00ff00&quot;&gt;single quotation marks&lt;/span&gt; surrounding the text.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;If you have specified you your own text to be displayed for the &quot;Read More&quot; link, you can set the css style to be used with the tag&lt;/li&gt; 
+&lt;pre&gt;&amp;#123;include_content_item 123 readmore='View Full Article...' &lt;span style=&quot;background:#ffff00&quot;&gt;class=style1&lt;/span&gt;&amp;#125;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;Instead of text, you can also specify an image to be displayed for the &quot;Read More&quot; link with the tag&lt;/li&gt;
+&lt;pre&gt;&amp;#123;include_content_item 123 readmore_gif='/url/of/your/image/file'&amp;#125;&lt;/pre&gt;
+&lt;p&gt;&lt;b&gt;Important:&lt;/b&gt; Please make sure you put &lt;span style=&quot;background:#00ff00&quot;&gt;single quotation marks&lt;/span&gt; surrounding the url of the image file.&lt;/p&gt;
+&lt;p&gt;Although it says &quot;readmore_gif&quot;, you can use any browser supported image format such as jpg or png.&lt;/p&gt;
+&lt;p&gt;You can also add the parameter align=top, align=middle or align=bottom to align the image:&lt;br&gt;
+&lt;pre&gt;&amp;#123;include_content_item 123 readmore_gif='/url/of/your/image/file' align=top&amp;#125;&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;For some template (e.g. the default Joomla 1.5 template rhuk_milkyway), it is necessary to have a &amp;lt;br clear=all&amp;gt; after the Read More link. For such cases, add the parameter &lt;b&gt;br=1&lt;/b&gt;:&lt;br&gt;
+&lt;pre&gt;
+&amp;#123;include_content_item 123 readmore=1 &lt;span style=&quot;background:#ffff00&quot;&gt;br=1&lt;/span&gt;&amp;#125;
+&amp;#123;include_content_item 123 readmore='[Read More]' &lt;span style=&quot;background:#ffff00&quot;&gt;br=1&lt;/span&gt;&amp;#125;
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;If you need a &amp;lt;br clear=all&amp;gt; before displaying a &quot;Read More&quot; image (for example, if you want to have the image aligned to the left), add the parameter &lt;b&gt;br_before=1&lt;/b&gt;:&lt;br&gt;&lt;/li&gt;
+&lt;pre&gt;&amp;#123;include_content_item 123 readmore_gif='/url/of/your/image/file' &lt;span style=&quot;background:#ffff00&quot;&gt;br_before=1&lt;/span&gt;&amp;#125;&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;/ol&gt;
+
+&lt;a id=&quot;nested&quot;&gt;
+&lt;h3&gt;Nested Include&lt;/h3&gt;&lt;/a&gt;
+&lt;p&gt;The Include_Content_Item plugin now supports nested include!&lt;/p&gt;
+&lt;p&gt;That is, if you have article A that includes article B, which has a include of article C, both B and C will now be included in A.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There is also a safety check for cyclic include, i.e. if article A includes article B, which has a include of article A. In this case, all duplicate entries will not be displayed.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;If you do not want any nested include, use the following:&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;include_content_item 123 readmore=1 &lt;span style=&quot;background:#ffff00&quot;&gt;nested=0&lt;/span&gt;&amp;#125;
+&lt;/pre&gt;
+
+&lt;li&gt;If you want the nested include to stop at level 2, use the following:&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;include_content_item 123 readmore=1 &lt;span style=&quot;background:#ffff00&quot;&gt;level=2&lt;/span&gt;&amp;#125;
+&lt;/pre&gt;
+
+&lt;/ul&gt;
+
+
+&lt;a id=&quot;allow_multiple&quot;&gt;
+&lt;h3&gt;Allow Multiple Includes of the Same Article&lt;/h3&gt;&lt;/a&gt;
+&lt;p&gt;The Include_Content_Item plugin now allows you to include the same article for more than once.&lt;/p&gt;
+&lt;p&gt;In the previous version, by default, an article will be allowed to include only ONCE per article.&lt;/p&gt;
+&lt;p&gt;With this version, to include, say article id 123, 3 times in the same article, use the following:&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;#123;include_content_item 123&amp;#125;
+&amp;#123;include_content_item 123 &lt;span style=&quot;background:#ffff00&quot;&gt;allow_multiple=1&lt;/span&gt;&amp;#125;
+&amp;#123;include_content_item 123 &lt;span style=&quot;background:#ffff00&quot;&gt;allow_multiple=1&lt;/span&gt;&amp;#125;
+&lt;/pre&gt;
+
+&lt;p&gt;Note the use of the flag &lt;b&gt;allow_multiple=1&lt;/b&gt; for the 2nd and 3rd time - otherwise these 2 tags will be ignored.&lt;/p&gt;
+
+&lt;a id=&quot;fadein&quot;&gt;
+&lt;h3&gt;Display of Fulltext using Fade-in&lt;/h3&gt;&lt;/a&gt;
+&lt;p&gt;If you use the default Joomla &quot;Read More&quot; link, when the user clicks on the link, Joomla will divert the user away from the current page and display the full article.&lt;/p&gt;
+&lt;p&gt;If you would like the user to stay on the same page, use the &lt;b&gt;fade-in&lt;/b&gt; option. When the user clicks on the &quot;Read More&quot; link, the fulltext (or maintext) will be displayed as fade-in right inside the same page (without any reloading of page).&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;#123;include_content_item 123 readmore=1 &lt;span style=&quot;background:#ffff00&quot;&gt;fadein=1&lt;/span&gt;&amp;#125;
+&lt;/pre&gt;
+
+&lt;?php #echo burstmedia_medium_rectangle_300_250();?&gt;
+
+&lt;p&gt;There are three ways to display the fadein:&lt;/p&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+.include1 {display: block}
+&lt;/style&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;As a text link:&lt;/b&gt;&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;div style=&quot;background:#CAE2DE;&quot;&gt;
+{include_content_item 1589 readmore='[Read more...]|[Hide details...]' fadein=1 class=include1}
+&lt;/div&gt;
+
+&lt;p&gt;You can set the text label for the ReadMore links, for example, you might want to set this to your own language. Note that you need to define the text labels for both the show and hide link. The text labels are delimited by '|' (the vertical bar). Please also enclose these in single quotes (NOT double qutoes).&lt;/p&gt;
+&lt;div style=&quot;background:#CAE2DE;&quot;&gt;
+{include_content_item 1590 readmore='Your ReadMore Link &gt;&gt;&gt;|Your Hidedetails Label &gt;&gt;&gt;' 
+fadein=1 class=include1}
+&lt;/div&gt;
+
+&lt;p&gt;To use your own style for the ReadMore link, use the following. Don't forget to define the style &lt;code&gt;your_style&lt;/code&gt; in your template.&lt;/p&gt;
+&lt;pre&gt;
+&amp;#123;include_content_item 123 readmore='Your ReadMore Link &gt;&gt;&gt;|Your HideDetails Link &gt;&gt;&gt;'&lt;br /&gt;fadein=1 class=your_style&amp;#125;
+&lt;/pre&gt;
+
+&lt;li&gt;&lt;b&gt;As an image link:&lt;/b&gt;&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;div style=&quot;background:#CAE2DE;&quot;&gt;
+{include_content_item 1591 readmore_gif='https://www.kksou.com/php-gtk2/gif/readmore.jpg|http://www.kksou.com/php-gtk2/gif/hide.jpg' fadein=1 class=style1 br=1}
+&lt;/div&gt;
+
+&lt;p&gt;To use your own style for the ReadMore image link, use the following. Don't forget to define the style &lt;code&gt;your_style&lt;/code&gt; in your template.&lt;/p&gt;
+&lt;pre&gt;
+&amp;#123;include_content_item 123 readmore_gif='url_of_showmore.jpg|url_of_hidetails.jpg'&lt;br /&gt;fadein=1 class=your_style&amp;#125;
+&lt;/pre&gt;
+
+&lt;li&gt;&lt;b&gt;As a button:&lt;/b&gt;&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;div style=&quot;background:#CAE2DE;&quot;&gt;
+{include_content_item 1592 readmore='Read more|Hide details' fadein=1 type=button}
+&lt;/div&gt;
+
+&lt;p&gt;As in text link, you can set the text label for the ReadMore/Hide buttons:
+&lt;div style=&quot;background:#CAE2DE;&quot;&gt;
+{include_content_item 1593 readmore='Your ReadMore Link &gt;&gt;&gt;|Your Hidedetails Label &gt;&gt;&gt;' 
+fadein=1 type=button class=include1}
+&lt;/div&gt;
+
+&lt;/ul&gt;
+
+&lt;a id=&quot;include-content-item-module&quot;&gt;
+&lt;h3&gt;Include Content Item module&lt;/h3&gt;&lt;/a&gt;
+&lt;p&gt;If you wish to include a content item into a &lt;b&gt;module&lt;/b&gt; (as oppose to another content item), use the following module which I've written: &lt;a href=&quot;http://extensions.joomla.org/component/option,com_mtree/task,viewlink/link_id,5534/Itemid,35/&quot; target=_blank&gt;Include Content Item Module&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Include a content item into another content item =&gt; use this plugin.&lt;/p&gt;
+
+&lt;p&gt;Include a content item into another module =&gt; use the &lt;a href=&quot;http://extensions.joomla.org/component/option,com_mtree/task,viewlink/link_id,5534/Itemid,35/&quot; target=_blank&gt;Include Content Item Module&lt;/a&gt;.&lt;/p&gt;</summary>
+		<content type="html">&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);?&gt;
+&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php&quot;);?&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;var j10=10; var j15=11; var j16=108; var j17=113; var j25=129; j30=162;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2_30.js&quot;&gt;&lt;/script&gt;
+
+&lt;a id=&quot;intro&quot;&gt;&lt;/a&gt;
+&lt;p&gt;This plugin allows you to insert or include one content item into another content item.&lt;/p&gt;
+
+&lt;p&gt;Inserting a content item is as simple as &lt;b&gt;&amp;#123;include_content_item 123&amp;#125;&lt;/b&gt;, &lt;br&gt;where &lt;i&gt;123&lt;/i&gt; is the ID of the content item to be included. &lt;br&gt;Note: The ID of the respective content item is listed in the Content Items Manager (or Article Manager in Joomla 1.5).&lt;/p&gt;
+
+{Accordion_Menu_Apple_style 100 float:right10}
+General
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#intro&quot;&gt;Introduction&lt;/a&gt;
+&lt;a href=&quot;https://kksou.com/php-gtk2/#download&quot;&gt;Download&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#download&quot;&gt;Download&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#latest&quot;&gt;Latest Version&lt;/a&gt;
+Documentation
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#install_15&quot;&gt;How to install&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#how_to_use&quot;&gt;How to use&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#readmore&quot;&gt;Read More link&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#nested&quot;&gt;Nested Include&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#fadein&quot;&gt;Fade-in of Fulltext&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#include-content-item-module&quot;&gt;The &quot;Include Content Item&quot; module&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#history&quot;&gt;Version History&lt;/a&gt;
+User Reviews
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#article_comments&quot;&gt;kksou.com&lt;/a&gt;
+- &lt;a href=&quot;http://extensions.joomla.org/extensions/4809/details#action&quot; target=_blank&gt;extensions.joomla.org&lt;/a&gt;
+{/Accordion_Menu_Apple_style}
+
+&lt;p&gt;This is useful, for example, when you have a block of text that you want to appear across a number of articles or content items e.g. download instructions, copyright notice, images, common links/resources, etc.&lt;/p&gt;
+
+&lt;p&gt;Available for all Joomla versions: Joomla 1.0.x, native 1.5.x, 1.6.x, 1.7.x, 2.5.x and 3.0.x!&lt;/p&gt;
+
+&lt;p&gt;The latest version now supports nested include! &lt;a href=&quot;https://kksou.com/php-gtk2/#nested&quot;&gt;Details here.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; If you want to use this content plugin inside a Custom HTML Modules, please refer to this article: &lt;a href=&quot;https://kksou.com/php-gtk2//php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php&quot;&gt;How to Run Joomla Content Plugins in Custom HTML Modules&lt;/a&gt;.&lt;/p&gt;
+
+&lt;br clear=all&gt;
+&lt;div class=&quot;alert alert-info&quot; id=&quot;latest&quot;&gt;&lt;h4&gt;Latest Version&lt;/h4&gt;
+&lt;p&gt;v3.0.13 (for Joomla 3.0)&lt;br&gt;
+Released Mar 30, 2017&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;a) Support for PHP 7! Special thanks to &lt;a href=&quot;https://cms.kreativfotografi.se/index.php?lang=sv&quot;&gt;J&amp;ouml;rgen @ Kreativ Fotografi&lt;/a&gt; for sharing the code.&lt;br /&gt;
+b) jQuery - now uses CDN: https://code.jquery.com/jquery-1.12.4.min.js
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;?php #joomla_toc(array('how_to_use/How to use the &quot;Include Content Item&quot; plugin', 'latest', 'include-content-item-module/The &quot;Include Content Item&quot; module', 'download', 'install_10', 'install_15', 'history', 'faq', 'user_reviews_4809', 'article_comments'));?&gt;
+
+&lt;a id=&quot;how_to_use&quot;&gt;
+&lt;h3&gt;How to use the &quot;Include Content Item&quot; plugin&lt;/h3&gt;&lt;/a&gt;
+
+&lt;ol&gt;
+
+&lt;li&gt;To include a content item, use the syntax &lt;b&gt;&amp;#123;include_content_item 123&amp;#125;&lt;/b&gt; &lt;br&gt;where &lt;i&gt;123&lt;/i&gt; is the ID of the content item to be included. Note that both the intro and the fulltext will be included.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;To include only the &lt;b&gt;intro&lt;/b&gt; a content item, use the syntax &lt;b&gt;&amp;#123;include_intro 123&amp;#125;&lt;/b&gt;.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;To include only the &lt;b&gt;fulltext&lt;/b&gt; (or maintext) of a content item, use the syntax &lt;b&gt;&amp;#123;include_fulltext 123&amp;#125;&lt;/b&gt;.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;To add the &lt;b&gt;title&lt;/b&gt; of the included article: &amp;#123;include_content_item 123 1&amp;#125;&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;To add the &lt;b&gt;title and link&lt;/b&gt; to the included article: &amp;#123;include_content_item 123 1 1&amp;#125;&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;The ID of the respective content item is listed in the Content Items Manager (or Article Manager in Joomla 1.5).&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;It is not necessary to publish the content item that will be included.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;If you have installed the &lt;a href=&quot;http://extensions.joomla.org/component/option,com_mtree/task,viewlink/link_id,4470/Itemid,35/&quot;&gt;DirectPHP plugin&lt;/a&gt;,  you can also store frequently used PHP code snippets in a content item. This can then be included into other content items. &lt;b&gt;Note:&lt;/b&gt; Please make sure that in the Mambot/Plugin Manager, this plugin comes &lt;span style=&quot;background:#ffff00&quot;&gt;before&lt;/span&gt; the DirectPHP plugin so that this plugin is being processed first, followed by DirectPHP.&lt;/li&gt;
+
+&lt;/ol&gt;
+
+&lt;a id=&quot;readmore&quot;&gt;
+&lt;h3&gt;Displaying the Read More link&lt;/h3&gt;&lt;/a&gt;
+
+&lt;p&gt;There are several options to display the Read More link:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;When you use the tag&lt;/li&gt;
+&lt;pre&gt;&amp;#123;include_content_item 123 &lt;span style=&quot;background:#ffff00&quot;&gt;readmore=1&lt;/span&gt;&amp;#125;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;the intro text will be displayed, followed by the default &quot;Read More&quot; as defined by your template. Note that if there is no text in the main text, there will be no &quot;Read More&quot; link displayed.&lt;/pre&gt;
+
+&lt;?php #display_google_ads32('joomla - download 336x280', 0, 20, 0, 20, 1, 1);?&gt;
+
+&lt;li&gt;If you do not like the default &quot;Read More&quot; link, you can specify your own text to be displayed for the &quot;Read More&quot; link with the tag&lt;/li&gt; 
+&lt;pre&gt;&amp;#123;include_content_item 123 &lt;span style=&quot;background:#ffff00&quot;&gt;readmore='[Read More]'&lt;/span&gt;&amp;#125;&lt;/pre&gt;
+&lt;p&gt;&lt;b&gt;Important:&lt;/b&gt; Please make sure you put &lt;span style=&quot;background:#00ff00&quot;&gt;single quotation marks&lt;/span&gt; surrounding the text.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;If you have specified you your own text to be displayed for the &quot;Read More&quot; link, you can set the css style to be used with the tag&lt;/li&gt; 
+&lt;pre&gt;&amp;#123;include_content_item 123 readmore='View Full Article...' &lt;span style=&quot;background:#ffff00&quot;&gt;class=style1&lt;/span&gt;&amp;#125;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;Instead of text, you can also specify an image to be displayed for the &quot;Read More&quot; link with the tag&lt;/li&gt;
+&lt;pre&gt;&amp;#123;include_content_item 123 readmore_gif='/url/of/your/image/file'&amp;#125;&lt;/pre&gt;
+&lt;p&gt;&lt;b&gt;Important:&lt;/b&gt; Please make sure you put &lt;span style=&quot;background:#00ff00&quot;&gt;single quotation marks&lt;/span&gt; surrounding the url of the image file.&lt;/p&gt;
+&lt;p&gt;Although it says &quot;readmore_gif&quot;, you can use any browser supported image format such as jpg or png.&lt;/p&gt;
+&lt;p&gt;You can also add the parameter align=top, align=middle or align=bottom to align the image:&lt;br&gt;
+&lt;pre&gt;&amp;#123;include_content_item 123 readmore_gif='/url/of/your/image/file' align=top&amp;#125;&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;For some template (e.g. the default Joomla 1.5 template rhuk_milkyway), it is necessary to have a &amp;lt;br clear=all&amp;gt; after the Read More link. For such cases, add the parameter &lt;b&gt;br=1&lt;/b&gt;:&lt;br&gt;
+&lt;pre&gt;
+&amp;#123;include_content_item 123 readmore=1 &lt;span style=&quot;background:#ffff00&quot;&gt;br=1&lt;/span&gt;&amp;#125;
+&amp;#123;include_content_item 123 readmore='[Read More]' &lt;span style=&quot;background:#ffff00&quot;&gt;br=1&lt;/span&gt;&amp;#125;
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;If you need a &amp;lt;br clear=all&amp;gt; before displaying a &quot;Read More&quot; image (for example, if you want to have the image aligned to the left), add the parameter &lt;b&gt;br_before=1&lt;/b&gt;:&lt;br&gt;&lt;/li&gt;
+&lt;pre&gt;&amp;#123;include_content_item 123 readmore_gif='/url/of/your/image/file' &lt;span style=&quot;background:#ffff00&quot;&gt;br_before=1&lt;/span&gt;&amp;#125;&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;/ol&gt;
+
+&lt;a id=&quot;nested&quot;&gt;
+&lt;h3&gt;Nested Include&lt;/h3&gt;&lt;/a&gt;
+&lt;p&gt;The Include_Content_Item plugin now supports nested include!&lt;/p&gt;
+&lt;p&gt;That is, if you have article A that includes article B, which has a include of article C, both B and C will now be included in A.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There is also a safety check for cyclic include, i.e. if article A includes article B, which has a include of article A. In this case, all duplicate entries will not be displayed.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;li&gt;If you do not want any nested include, use the following:&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;include_content_item 123 readmore=1 &lt;span style=&quot;background:#ffff00&quot;&gt;nested=0&lt;/span&gt;&amp;#125;
+&lt;/pre&gt;
+
+&lt;li&gt;If you want the nested include to stop at level 2, use the following:&lt;/li&gt;
+&lt;pre&gt;
+&amp;#123;include_content_item 123 readmore=1 &lt;span style=&quot;background:#ffff00&quot;&gt;level=2&lt;/span&gt;&amp;#125;
+&lt;/pre&gt;
+
+&lt;/ul&gt;
+
+
+&lt;a id=&quot;allow_multiple&quot;&gt;
+&lt;h3&gt;Allow Multiple Includes of the Same Article&lt;/h3&gt;&lt;/a&gt;
+&lt;p&gt;The Include_Content_Item plugin now allows you to include the same article for more than once.&lt;/p&gt;
+&lt;p&gt;In the previous version, by default, an article will be allowed to include only ONCE per article.&lt;/p&gt;
+&lt;p&gt;With this version, to include, say article id 123, 3 times in the same article, use the following:&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;#123;include_content_item 123&amp;#125;
+&amp;#123;include_content_item 123 &lt;span style=&quot;background:#ffff00&quot;&gt;allow_multiple=1&lt;/span&gt;&amp;#125;
+&amp;#123;include_content_item 123 &lt;span style=&quot;background:#ffff00&quot;&gt;allow_multiple=1&lt;/span&gt;&amp;#125;
+&lt;/pre&gt;
+
+&lt;p&gt;Note the use of the flag &lt;b&gt;allow_multiple=1&lt;/b&gt; for the 2nd and 3rd time - otherwise these 2 tags will be ignored.&lt;/p&gt;
+
+&lt;a id=&quot;fadein&quot;&gt;
+&lt;h3&gt;Display of Fulltext using Fade-in&lt;/h3&gt;&lt;/a&gt;
+&lt;p&gt;If you use the default Joomla &quot;Read More&quot; link, when the user clicks on the link, Joomla will divert the user away from the current page and display the full article.&lt;/p&gt;
+&lt;p&gt;If you would like the user to stay on the same page, use the &lt;b&gt;fade-in&lt;/b&gt; option. When the user clicks on the &quot;Read More&quot; link, the fulltext (or maintext) will be displayed as fade-in right inside the same page (without any reloading of page).&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;#123;include_content_item 123 readmore=1 &lt;span style=&quot;background:#ffff00&quot;&gt;fadein=1&lt;/span&gt;&amp;#125;
+&lt;/pre&gt;
+
+&lt;?php #echo burstmedia_medium_rectangle_300_250();?&gt;
+
+&lt;p&gt;There are three ways to display the fadein:&lt;/p&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+.include1 {display: block}
+&lt;/style&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;As a text link:&lt;/b&gt;&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;div style=&quot;background:#CAE2DE;&quot;&gt;
+{include_content_item 1589 readmore='[Read more...]|[Hide details...]' fadein=1 class=include1}
+&lt;/div&gt;
+
+&lt;p&gt;You can set the text label for the ReadMore links, for example, you might want to set this to your own language. Note that you need to define the text labels for both the show and hide link. The text labels are delimited by '|' (the vertical bar). Please also enclose these in single quotes (NOT double qutoes).&lt;/p&gt;
+&lt;div style=&quot;background:#CAE2DE;&quot;&gt;
+{include_content_item 1590 readmore='Your ReadMore Link &gt;&gt;&gt;|Your Hidedetails Label &gt;&gt;&gt;' 
+fadein=1 class=include1}
+&lt;/div&gt;
+
+&lt;p&gt;To use your own style for the ReadMore link, use the following. Don't forget to define the style &lt;code&gt;your_style&lt;/code&gt; in your template.&lt;/p&gt;
+&lt;pre&gt;
+&amp;#123;include_content_item 123 readmore='Your ReadMore Link &gt;&gt;&gt;|Your HideDetails Link &gt;&gt;&gt;'&lt;br /&gt;fadein=1 class=your_style&amp;#125;
+&lt;/pre&gt;
+
+&lt;li&gt;&lt;b&gt;As an image link:&lt;/b&gt;&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;div style=&quot;background:#CAE2DE;&quot;&gt;
+{include_content_item 1591 readmore_gif='https://www.kksou.com/php-gtk2/gif/readmore.jpg|http://www.kksou.com/php-gtk2/gif/hide.jpg' fadein=1 class=style1 br=1}
+&lt;/div&gt;
+
+&lt;p&gt;To use your own style for the ReadMore image link, use the following. Don't forget to define the style &lt;code&gt;your_style&lt;/code&gt; in your template.&lt;/p&gt;
+&lt;pre&gt;
+&amp;#123;include_content_item 123 readmore_gif='url_of_showmore.jpg|url_of_hidetails.jpg'&lt;br /&gt;fadein=1 class=your_style&amp;#125;
+&lt;/pre&gt;
+
+&lt;li&gt;&lt;b&gt;As a button:&lt;/b&gt;&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;div style=&quot;background:#CAE2DE;&quot;&gt;
+{include_content_item 1592 readmore='Read more|Hide details' fadein=1 type=button}
+&lt;/div&gt;
+
+&lt;p&gt;As in text link, you can set the text label for the ReadMore/Hide buttons:
+&lt;div style=&quot;background:#CAE2DE;&quot;&gt;
+{include_content_item 1593 readmore='Your ReadMore Link &gt;&gt;&gt;|Your Hidedetails Label &gt;&gt;&gt;' 
+fadein=1 type=button class=include1}
+&lt;/div&gt;
+
+&lt;/ul&gt;
+
+&lt;a id=&quot;include-content-item-module&quot;&gt;
+&lt;h3&gt;Include Content Item module&lt;/h3&gt;&lt;/a&gt;
+&lt;p&gt;If you wish to include a content item into a &lt;b&gt;module&lt;/b&gt; (as oppose to another content item), use the following module which I've written: &lt;a href=&quot;http://extensions.joomla.org/component/option,com_mtree/task,viewlink/link_id,5534/Itemid,35/&quot; target=_blank&gt;Include Content Item Module&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Include a content item into another content item =&gt; use this plugin.&lt;/p&gt;
+
+&lt;p&gt;Include a content item into another module =&gt; use the &lt;a href=&quot;http://extensions.joomla.org/component/option,com_mtree/task,viewlink/link_id,5534/Itemid,35/&quot; target=_blank&gt;Include Content Item Module&lt;/a&gt;.&lt;/p&gt;</content>
+		<category term="Joomla" />
+	</entry>
+	<entry>
+		<title>Drop Down Menu Apple style</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php"/>
+		<published>2008-10-10T05:52:14+00:00</published>
+		<updated>2008-10-10T05:52:14+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla/Drop-Down-Menu-Apple-style.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);?&gt;
+&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php&quot;);?&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;var j10=72; var j15=73; var j16=138; var j17=139; var j25=140;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2_25.js&quot;&gt;&lt;/script&gt;
+&lt;?php /*&lt;script type=&quot;text/javascript&quot;&gt;prepareLinks();&lt;/script&gt;*/ ?&gt;
+&lt;a id=&quot;intro&quot;&gt;&lt;/a&gt;
+&lt;p&gt;The &lt;b&gt;Drop Down Menu Apple style&lt;/b&gt; is a very neat and cool javascript-based drop down menu provided by &lt;a href=&quot;http://www.dynamicdrive.com/dynamicindex1/ddlevelsmenu/index.htm&quot;&gt;dynamicdrive.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;a id=&quot;features&quot;&gt;
+&lt;h3&gt;Unique Features&lt;/h3&gt;&lt;/a&gt;
+&lt;ol&gt;
+&lt;li&gt;Support &lt;b style=&quot;background:#ffff00&quot;&gt;infinite&lt;/b&gt; levels of sub menus!&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;Display of submenus is fast and responsive&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;Easily create a drop down menu within a content item or article.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;Defining the submenus is as easy as 123.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;Complete customization of the menu's look and feel through css (e.g. foreground/background color, color, padding, margin, fonts, etc.) &lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;You can have more than one menu, each with different submenus, within the same content item.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Note that you might find that the plugin does not work right out of the box. You might need to tweak the css file a bit.&lt;/p&gt;
+
+&lt;p&gt;However, after trying out numerous Drop Down Menus out there, I find that this is one of the better implementations that are &lt;b&gt;free&lt;/b&gt;. The code is relatively light-weight. The interface is clean and responsive. And it supports infinite levels of sub menus! (If you see something that is even better, let me know...)&lt;/p&gt;
+
+&lt;p&gt;That's why I still decide to go ahead and release this plugin. I would suggest you try this on a standard Joomla installation first (Joomla 1.0 ot Joomla 1.5). Once it works on your site, you can switch to your template and see if it works. If it doesn't, then follow some of the suggestions below to tweak the css file.&lt;/p&gt;
+
+&lt;div class=&quot;alert alert-info&quot; id=&quot;latest&quot;&gt;&lt;h4&gt;Latest Version&lt;/h4&gt;
+v1.5.6 (for Joomla 1.5), v1.6.6 (for Joomla 1.6), v1.7.6 (for Joomla 1.7) and v2.5.6 (for Joomla 2.5)&lt;br&gt;
+Released Feb 25, 2012&lt;br&gt;&lt;/p&gt;
+&lt;ul type=disc&gt;
+&lt;li&gt;Native support for Joomla 1.6, 1.7 and 2.5!&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;Updated the plugin with the latest code from &lt;a href=&quot;http://www.dynamicdrive.com/dynamicindex1/ddlevelsmenu/index.htm&quot;&gt;dynamicdrive.com&lt;/a&gt;&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;The default menu is &quot;Drop Down Menu&quot; or &quot;topbar&quot;. &lt;a href=&quot;http://www.kksou.com/t16/index.php/test1/84-test-of-drop-down-menu-apple-style&quot;&gt;Demo here&lt;/a&gt;.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;There is now an additional &quot;sidebar&quot; menu type. &lt;a href=&quot;http://www.kksou.com/t16/index.php/test1/85-test2-of-drop-down-menu-apple-style-sidebar&quot;&gt;Demo here&lt;/a&gt;. Use &lt;code style=&quot;background:#ffff00&quot;&gt;menutype:sidebar&lt;/code&gt; to switch to sidebar.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;Note: For some reason, the latest code from dynamicdrive.com does not work within Joomla 1.0. So the version for Joomla 1.0 stays at v1.05. Also, the Joomla 1.0 version does not support sidebar.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;a id=&quot;demo&quot;&gt;
+&lt;h3&gt;Demo&lt;/h3&gt;&lt;/a&gt;
+&lt;p&gt;The follow shows a live multi-level drop down menu. Play with it to have a feel of the menu in action.&lt;/p&gt;
+{DropDown_Menu_Apple_style 160 width:200 float:right10}
+&lt;a href=&quot;https://kksou.com/php-gtk2/#intro&quot;&gt;General&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#intro&quot;&gt;Introduction&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#latest&quot;&gt;Latest Version&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#features&quot;&gt;Unique Features&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#demo&quot;&gt;Demo&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#readme&quot;&gt;VIP: Read Me First!&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#history&quot;&gt;Version History&lt;/a&gt;
+&lt;a href=&quot;https://kksou.com/php-gtk2/#download&quot;&gt;Download&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#download&quot;&gt;Download&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#readme&quot;&gt;VIP: Read Me First!&lt;/a&gt;
+&lt;a href=&quot;https://kksou.com/php-gtk2/#readme&quot;&gt;Customizing&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#readme&quot;&gt;VIP: Read Me First!&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#tweaking_the_css&quot;&gt;Tweaking the CSS&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#how_to_use&quot;&gt;How to use&lt;/a&gt;
+&lt;a href=&quot;https://kksou.com/php-gtk2/test1.html&quot;&gt;Test1&lt;/a&gt;
++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item 1a&lt;/a&gt;
++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item 2a&lt;/a&gt;
++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item Folder 3a&lt;/a&gt;
+++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 3.1a&lt;/a&gt;
+++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 3.2a&lt;/a&gt;
+++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 3.3a&lt;/a&gt;
+++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 3.4a&lt;/a&gt;
++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item 4a&lt;/a&gt;
++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item Folder 5a&lt;/a&gt;
+++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 5.1a&lt;/a&gt;
+++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item Folder 5.2a&lt;/a&gt;
++++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 5.2.1a&lt;/a&gt;
++++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 5.2.2a&lt;/a&gt;
++++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 5.2.3a&lt;/a&gt;
++++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 5.2.4a&lt;/a&gt;
++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item 6a&lt;/a&gt;
+
+&lt;a href=&quot;https://kksou.com/php-gtk2/test2.html&quot;&gt;Test2&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item 1b&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item 2b&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item Folder 3b&lt;/a&gt;
+-- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 3.1b&lt;/a&gt;
+-- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 3.2b&lt;/a&gt;
+-- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 3.3b&lt;/a&gt;
+-- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 3.4b&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item 4b&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item Folder 5b&lt;/a&gt;
+-- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 5.1b&lt;/a&gt;
+-- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item Folder 5.2b&lt;/a&gt;
+--- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 5.2.1b&lt;/a&gt;
+--- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 5.2.2b&lt;/a&gt;
+--- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 5.2.3b&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item 6b&lt;/a&gt;
+
+
+&lt;a href=&quot;https://kksou.com/php-gtk2/test3.html&quot;&gt;Test3&lt;/a&gt;
+
+&lt;a href=&quot;http://www.kksou.com&quot;&gt;Test4&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/test31.html&quot;&gt;test4.1&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/test32.html&quot;&gt;test4.2&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/test33.html&quot;&gt;test4.3&lt;/a&gt;
+{/DropDown_Menu_Apple_style}
+
+&lt;a id=&quot;sample_code&quot;&gt;
+&lt;h3&gt;Sample Code&lt;/h3&gt;&lt;/a&gt;
+&lt;p&gt;You may use the sample code below to try out the menu. After installing the plugin, just copy and paste the following into your content item and you should see the menu:&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;#123;DropDown_Menu_Apple_style&amp;#125;
+&amp;lt;a href=&quot;https://kksou.com/php-gtk2/test1.html&quot;&amp;gt;Test1&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item 1a&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item 2a&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item Folder 3a&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 3.1a&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 3.2a&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 3.3a&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 3.4a&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item 4a&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item Folder 5a&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 5.1a&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item Folder 5.2a&amp;lt;/a&amp;gt;
++++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 5.2.1a&amp;lt;/a&amp;gt;
++++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 5.2.2a&amp;lt;/a&amp;gt;
++++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 5.2.3a&amp;lt;/a&amp;gt;
++++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 5.2.4a&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item 6a&amp;lt;/a&amp;gt;
+
+&amp;lt;a href=&quot;https://kksou.com/php-gtk2/test2.html&quot;&amp;gt;Test2&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item 1b&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item 2b&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item Folder 3b&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 3.1b&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 3.2b&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 3.3b&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 3.4b&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item 4b&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item Folder 5b&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 5.1b&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item Folder 5.2b&amp;lt;/a&amp;gt;
++++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 5.2.1b&amp;lt;/a&amp;gt;
++++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 5.2.2b&amp;lt;/a&amp;gt;
++++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 5.2.3b&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item 6b&amp;lt;/a&amp;gt;
+
+&amp;lt;a href=&quot;https://kksou.com/php-gtk2/test3.html&quot;&amp;gt;Test3&amp;lt;/a&amp;gt;
+
+&amp;lt;a href=&quot;http://www.kksou.com&quot;&amp;gt;Test4&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/test31.html&quot;&amp;gt;test4.1&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/test32.html&quot;&amp;gt;test4.2&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/test33.html&quot;&amp;gt;test4.3&amp;lt;/a&amp;gt;
+&amp;#123;/DropDown_Menu_Apple_style&amp;#125;
+&lt;/pre&gt;
+
+
+
+ </summary>
+		<content type="html">&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);?&gt;
+&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php&quot;);?&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;var j10=72; var j15=73; var j16=138; var j17=139; var j25=140;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2_25.js&quot;&gt;&lt;/script&gt;
+&lt;?php /*&lt;script type=&quot;text/javascript&quot;&gt;prepareLinks();&lt;/script&gt;*/ ?&gt;
+&lt;a id=&quot;intro&quot;&gt;&lt;/a&gt;
+&lt;p&gt;The &lt;b&gt;Drop Down Menu Apple style&lt;/b&gt; is a very neat and cool javascript-based drop down menu provided by &lt;a href=&quot;http://www.dynamicdrive.com/dynamicindex1/ddlevelsmenu/index.htm&quot;&gt;dynamicdrive.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;a id=&quot;features&quot;&gt;
+&lt;h3&gt;Unique Features&lt;/h3&gt;&lt;/a&gt;
+&lt;ol&gt;
+&lt;li&gt;Support &lt;b style=&quot;background:#ffff00&quot;&gt;infinite&lt;/b&gt; levels of sub menus!&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;Display of submenus is fast and responsive&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;Easily create a drop down menu within a content item or article.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;Defining the submenus is as easy as 123.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;Complete customization of the menu's look and feel through css (e.g. foreground/background color, color, padding, margin, fonts, etc.) &lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;You can have more than one menu, each with different submenus, within the same content item.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Note that you might find that the plugin does not work right out of the box. You might need to tweak the css file a bit.&lt;/p&gt;
+
+&lt;p&gt;However, after trying out numerous Drop Down Menus out there, I find that this is one of the better implementations that are &lt;b&gt;free&lt;/b&gt;. The code is relatively light-weight. The interface is clean and responsive. And it supports infinite levels of sub menus! (If you see something that is even better, let me know...)&lt;/p&gt;
+
+&lt;p&gt;That's why I still decide to go ahead and release this plugin. I would suggest you try this on a standard Joomla installation first (Joomla 1.0 ot Joomla 1.5). Once it works on your site, you can switch to your template and see if it works. If it doesn't, then follow some of the suggestions below to tweak the css file.&lt;/p&gt;
+
+&lt;div class=&quot;alert alert-info&quot; id=&quot;latest&quot;&gt;&lt;h4&gt;Latest Version&lt;/h4&gt;
+v1.5.6 (for Joomla 1.5), v1.6.6 (for Joomla 1.6), v1.7.6 (for Joomla 1.7) and v2.5.6 (for Joomla 2.5)&lt;br&gt;
+Released Feb 25, 2012&lt;br&gt;&lt;/p&gt;
+&lt;ul type=disc&gt;
+&lt;li&gt;Native support for Joomla 1.6, 1.7 and 2.5!&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;Updated the plugin with the latest code from &lt;a href=&quot;http://www.dynamicdrive.com/dynamicindex1/ddlevelsmenu/index.htm&quot;&gt;dynamicdrive.com&lt;/a&gt;&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;The default menu is &quot;Drop Down Menu&quot; or &quot;topbar&quot;. &lt;a href=&quot;http://www.kksou.com/t16/index.php/test1/84-test-of-drop-down-menu-apple-style&quot;&gt;Demo here&lt;/a&gt;.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;There is now an additional &quot;sidebar&quot; menu type. &lt;a href=&quot;http://www.kksou.com/t16/index.php/test1/85-test2-of-drop-down-menu-apple-style-sidebar&quot;&gt;Demo here&lt;/a&gt;. Use &lt;code style=&quot;background:#ffff00&quot;&gt;menutype:sidebar&lt;/code&gt; to switch to sidebar.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;Note: For some reason, the latest code from dynamicdrive.com does not work within Joomla 1.0. So the version for Joomla 1.0 stays at v1.05. Also, the Joomla 1.0 version does not support sidebar.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;a id=&quot;demo&quot;&gt;
+&lt;h3&gt;Demo&lt;/h3&gt;&lt;/a&gt;
+&lt;p&gt;The follow shows a live multi-level drop down menu. Play with it to have a feel of the menu in action.&lt;/p&gt;
+{DropDown_Menu_Apple_style 160 width:200 float:right10}
+&lt;a href=&quot;https://kksou.com/php-gtk2/#intro&quot;&gt;General&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#intro&quot;&gt;Introduction&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#latest&quot;&gt;Latest Version&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#features&quot;&gt;Unique Features&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#demo&quot;&gt;Demo&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#readme&quot;&gt;VIP: Read Me First!&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#history&quot;&gt;Version History&lt;/a&gt;
+&lt;a href=&quot;https://kksou.com/php-gtk2/#download&quot;&gt;Download&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#download&quot;&gt;Download&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#readme&quot;&gt;VIP: Read Me First!&lt;/a&gt;
+&lt;a href=&quot;https://kksou.com/php-gtk2/#readme&quot;&gt;Customizing&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#readme&quot;&gt;VIP: Read Me First!&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#tweaking_the_css&quot;&gt;Tweaking the CSS&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#how_to_use&quot;&gt;How to use&lt;/a&gt;
+&lt;a href=&quot;https://kksou.com/php-gtk2/test1.html&quot;&gt;Test1&lt;/a&gt;
++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item 1a&lt;/a&gt;
++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item 2a&lt;/a&gt;
++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item Folder 3a&lt;/a&gt;
+++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 3.1a&lt;/a&gt;
+++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 3.2a&lt;/a&gt;
+++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 3.3a&lt;/a&gt;
+++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 3.4a&lt;/a&gt;
++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item 4a&lt;/a&gt;
++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item Folder 5a&lt;/a&gt;
+++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 5.1a&lt;/a&gt;
+++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item Folder 5.2a&lt;/a&gt;
++++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 5.2.1a&lt;/a&gt;
++++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 5.2.2a&lt;/a&gt;
++++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 5.2.3a&lt;/a&gt;
++++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 5.2.4a&lt;/a&gt;
++ &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item 6a&lt;/a&gt;
+
+&lt;a href=&quot;https://kksou.com/php-gtk2/test2.html&quot;&gt;Test2&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item 1b&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item 2b&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item Folder 3b&lt;/a&gt;
+-- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 3.1b&lt;/a&gt;
+-- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 3.2b&lt;/a&gt;
+-- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 3.3b&lt;/a&gt;
+-- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 3.4b&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item 4b&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item Folder 5b&lt;/a&gt;
+-- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 5.1b&lt;/a&gt;
+-- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item Folder 5.2b&lt;/a&gt;
+--- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 5.2.1b&lt;/a&gt;
+--- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 5.2.2b&lt;/a&gt;
+--- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Sub Item 5.2.3b&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#&quot;&gt;Item 6b&lt;/a&gt;
+
+
+&lt;a href=&quot;https://kksou.com/php-gtk2/test3.html&quot;&gt;Test3&lt;/a&gt;
+
+&lt;a href=&quot;http://www.kksou.com&quot;&gt;Test4&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/test31.html&quot;&gt;test4.1&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/test32.html&quot;&gt;test4.2&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/test33.html&quot;&gt;test4.3&lt;/a&gt;
+{/DropDown_Menu_Apple_style}
+
+&lt;a id=&quot;sample_code&quot;&gt;
+&lt;h3&gt;Sample Code&lt;/h3&gt;&lt;/a&gt;
+&lt;p&gt;You may use the sample code below to try out the menu. After installing the plugin, just copy and paste the following into your content item and you should see the menu:&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;#123;DropDown_Menu_Apple_style&amp;#125;
+&amp;lt;a href=&quot;https://kksou.com/php-gtk2/test1.html&quot;&amp;gt;Test1&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item 1a&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item 2a&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item Folder 3a&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 3.1a&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 3.2a&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 3.3a&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 3.4a&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item 4a&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item Folder 5a&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 5.1a&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item Folder 5.2a&amp;lt;/a&amp;gt;
++++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 5.2.1a&amp;lt;/a&amp;gt;
++++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 5.2.2a&amp;lt;/a&amp;gt;
++++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 5.2.3a&amp;lt;/a&amp;gt;
++++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 5.2.4a&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item 6a&amp;lt;/a&amp;gt;
+
+&amp;lt;a href=&quot;https://kksou.com/php-gtk2/test2.html&quot;&amp;gt;Test2&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item 1b&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item 2b&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item Folder 3b&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 3.1b&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 3.2b&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 3.3b&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 3.4b&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item 4b&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item Folder 5b&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 5.1b&amp;lt;/a&amp;gt;
+++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item Folder 5.2b&amp;lt;/a&amp;gt;
++++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 5.2.1b&amp;lt;/a&amp;gt;
++++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 5.2.2b&amp;lt;/a&amp;gt;
++++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Sub Item 5.2.3b&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/&amp;#35;&quot;&amp;gt;Item 6b&amp;lt;/a&amp;gt;
+
+&amp;lt;a href=&quot;https://kksou.com/php-gtk2/test3.html&quot;&amp;gt;Test3&amp;lt;/a&amp;gt;
+
+&amp;lt;a href=&quot;http://www.kksou.com&quot;&amp;gt;Test4&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/test31.html&quot;&amp;gt;test4.1&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/test32.html&quot;&amp;gt;test4.2&amp;lt;/a&amp;gt;
++ &amp;lt;a href=&quot;https://kksou.com/php-gtk2/test33.html&quot;&amp;gt;test4.3&amp;lt;/a&amp;gt;
+&amp;#123;/DropDown_Menu_Apple_style&amp;#125;
+&lt;/pre&gt;
+
+
+
+ </content>
+		<category term="Joomla" />
+	</entry>
+	<entry>
+		<title>Pausing up-down Scroller module</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php"/>
+		<published>2008-12-20T08:34:41+00:00</published>
+		<updated>2008-12-20T08:34:41+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-module.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);?&gt;
+&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php&quot;);?&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;var j10=82; var j15=83; var j16=122; var j17=123; var j25=137;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2_25.js&quot;&gt;&lt;/script&gt;
+&lt;?php /*&lt;script type=&quot;text/javascript&quot;&gt;prepareLinks();&lt;/script&gt;*/ ?&gt;
+&lt;a id=&quot;intro&quot;&gt;&lt;/a&gt;
+
+&lt;p&gt;This is the module version of the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-plugin.php&quot;&gt;&lt;b&gt;Pausing up-down Scroller plugin&lt;/b&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This module allows you to display an up-down scroller that pauses between each message! The scroller is displayed in a module position. The look of the scroller is completely styled using external CSS, including the dimensions.&lt;/p&gt;
+
+{Accordion_Menu_Apple_style 100 float:right10}
+General
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#intro&quot;&gt;Introduction&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#demo&quot;&gt;Live Demo&lt;/a&gt;
+&lt;a href=&quot;https://kksou.com/php-gtk2/#download&quot;&gt;Download&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#download&quot;&gt;Download&lt;/a&gt;
+Documentation
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#how_to_use&quot;&gt;How to use&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#install&quot;&gt;How to install&lt;/a&gt;
+User Reviews
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#article_comments&quot;&gt;kksou.com&lt;/a&gt;
+{/Accordion_Menu_Apple_style}
+
+&lt;b&gt;Very Important:&lt;/b&gt; This module makes use of the &lt;span style=&quot;background:#ffff00&quot;&gt;&lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-plugin.php&quot;&gt;&lt;b&gt;Pausing up-down Scroller plugin&lt;/b&gt;&lt;/a&gt;&lt;/span&gt;. So please make sure you have installed this plugin too for this module to work.&lt;/a&gt;
+
+&lt;br clear=all&gt;
+
+&lt;span class=&quot;info&quot; id=&quot;latest&quot;&gt;&lt;b&gt;Latest Version&lt;/b&gt;&lt;br&gt;
+&lt;p&gt;v1.03 (for Joomla 1.0), v1.53 (for Joomla 1.5), v1.63 (for Joomla 1.6), v1.73 (for Joomla 1.7), v2.53 (for Joomla 2.5)&lt;br&gt;
+Released January 31, 2012&lt;br&gt;&lt;/p&gt;
+&lt;ul type=disc&gt;
+&lt;li&gt;Support for HTML tags in the scrolling messages for Joomla 1.6, 1.7 and 2.5. Thanks to &lt;a href=&quot;http://www.kksou.com/php-gtk2/index.php?option=com_fireboard&amp;func=view&amp;catid=23&amp;id=5099&amp;limit=5&amp;limitstart=0#5099&quot;&gt;Rusty&lt;/a&gt;&lt;/li&gt; for highlighting this.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;Native version of the Pausing up-down Scroller module for Joomla 2.5!&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/ul&gt;
+&lt;/span&gt;
+
+&lt;a id=&quot;demo&quot;&gt;
+&lt;h3&gt;Demo&lt;/h3&gt;&lt;/a&gt;
+&lt;p&gt;You can see a live demo in the module position on the left.&lt;/p&gt;
+
+&lt;?php echo burstmedia_medium_rectangle_300_250();?&gt;
+
+&lt;a id=&quot;how_to_use&quot;&gt;
+&lt;h3&gt;How to use the &quot;Pausing up-down Scroller&quot; module&lt;/h3&gt;&lt;/a&gt;
+
+&lt;p&gt;The syntax of the scrolling message definition is exactly the same as that of the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-plugin.php#how_to_use&quot;&gt;&lt;b&gt;Pausing up-down Scroller plugin&lt;/b&gt;&lt;/a&gt; plugin.&lt;/p&gt;
+</summary>
+		<content type="html">&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);?&gt;
+&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php&quot;);?&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;var j10=82; var j15=83; var j16=122; var j17=123; var j25=137;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2_25.js&quot;&gt;&lt;/script&gt;
+&lt;?php /*&lt;script type=&quot;text/javascript&quot;&gt;prepareLinks();&lt;/script&gt;*/ ?&gt;
+&lt;a id=&quot;intro&quot;&gt;&lt;/a&gt;
+
+&lt;p&gt;This is the module version of the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-plugin.php&quot;&gt;&lt;b&gt;Pausing up-down Scroller plugin&lt;/b&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This module allows you to display an up-down scroller that pauses between each message! The scroller is displayed in a module position. The look of the scroller is completely styled using external CSS, including the dimensions.&lt;/p&gt;
+
+{Accordion_Menu_Apple_style 100 float:right10}
+General
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#intro&quot;&gt;Introduction&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#demo&quot;&gt;Live Demo&lt;/a&gt;
+&lt;a href=&quot;https://kksou.com/php-gtk2/#download&quot;&gt;Download&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#download&quot;&gt;Download&lt;/a&gt;
+Documentation
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#how_to_use&quot;&gt;How to use&lt;/a&gt;
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#install&quot;&gt;How to install&lt;/a&gt;
+User Reviews
+- &lt;a href=&quot;https://kksou.com/php-gtk2/#article_comments&quot;&gt;kksou.com&lt;/a&gt;
+{/Accordion_Menu_Apple_style}
+
+&lt;b&gt;Very Important:&lt;/b&gt; This module makes use of the &lt;span style=&quot;background:#ffff00&quot;&gt;&lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-plugin.php&quot;&gt;&lt;b&gt;Pausing up-down Scroller plugin&lt;/b&gt;&lt;/a&gt;&lt;/span&gt;. So please make sure you have installed this plugin too for this module to work.&lt;/a&gt;
+
+&lt;br clear=all&gt;
+
+&lt;span class=&quot;info&quot; id=&quot;latest&quot;&gt;&lt;b&gt;Latest Version&lt;/b&gt;&lt;br&gt;
+&lt;p&gt;v1.03 (for Joomla 1.0), v1.53 (for Joomla 1.5), v1.63 (for Joomla 1.6), v1.73 (for Joomla 1.7), v2.53 (for Joomla 2.5)&lt;br&gt;
+Released January 31, 2012&lt;br&gt;&lt;/p&gt;
+&lt;ul type=disc&gt;
+&lt;li&gt;Support for HTML tags in the scrolling messages for Joomla 1.6, 1.7 and 2.5. Thanks to &lt;a href=&quot;http://www.kksou.com/php-gtk2/index.php?option=com_fireboard&amp;func=view&amp;catid=23&amp;id=5099&amp;limit=5&amp;limitstart=0#5099&quot;&gt;Rusty&lt;/a&gt;&lt;/li&gt; for highlighting this.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;li&gt;Native version of the Pausing up-down Scroller module for Joomla 2.5!&lt;/li&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/ul&gt;
+&lt;/span&gt;
+
+&lt;a id=&quot;demo&quot;&gt;
+&lt;h3&gt;Demo&lt;/h3&gt;&lt;/a&gt;
+&lt;p&gt;You can see a live demo in the module position on the left.&lt;/p&gt;
+
+&lt;?php echo burstmedia_medium_rectangle_300_250();?&gt;
+
+&lt;a id=&quot;how_to_use&quot;&gt;
+&lt;h3&gt;How to use the &quot;Pausing up-down Scroller&quot; module&lt;/h3&gt;&lt;/a&gt;
+
+&lt;p&gt;The syntax of the scrolling message definition is exactly the same as that of the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/Pausing-up-down-Scroller-plugin.php#how_to_use&quot;&gt;&lt;b&gt;Pausing up-down Scroller plugin&lt;/b&gt;&lt;/a&gt; plugin.&lt;/p&gt;
+</content>
+		<category term="Joomla" />
+	</entry>
+	<entry>
+		<title>How to pass variables or parameters from one Joomla article to another using DirectPHP?</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php"/>
+		<published>2011-06-30T08:04:52+00:00</published>
+		<updated>2011-06-30T08:04:52+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;p&gt;One of the most commonly asked questions for &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/DirectPHP-plugin.php&quot;&gt;DirectPHP&lt;/a&gt; is: &lt;b&gt;&lt;i&gt;how do you pass a variable or parameter from one Joomla page to another?&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;In a plain PHP page, you can easily do this with:&lt;/p&gt;
+&lt;pre&gt;page1.php?var1=value1&lt;/pre&gt;
+
+&lt;p&gt;But try this in a Joomla article using DirectPHP. Most likely you will be directed somewhere else and your article will not appear.&lt;p&gt;</summary>
+		<content type="html">&lt;p&gt;One of the most commonly asked questions for &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/DirectPHP-plugin.php&quot;&gt;DirectPHP&lt;/a&gt; is: &lt;b&gt;&lt;i&gt;how do you pass a variable or parameter from one Joomla page to another?&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;In a plain PHP page, you can easily do this with:&lt;/p&gt;
+&lt;pre&gt;page1.php?var1=value1&lt;/pre&gt;
+
+&lt;p&gt;But try this in a Joomla article using DirectPHP. Most likely you will be directed somewhere else and your article will not appear.&lt;p&gt;</content>
+		<category term="Joomla" />
+	</entry>
+	<entry>
+		<title>Glossy Accordion Menu module</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla/glossy-accordion-menu-module.php"/>
+		<published>2009-02-13T16:47:11+00:00</published>
+		<updated>2009-02-13T16:47:11+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla/glossy-accordion-menu-module.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);?&gt;
+&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php&quot;);?&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;var j10=88; var j15=89;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2.js&quot;&gt;&lt;/script&gt;
+&lt;?php /*&lt;script type=&quot;text/javascript&quot;&gt;prepareLinks();&lt;/script&gt;*/ ?&gt;
+&lt;p&gt;This is the module version of the &lt;a href=&quot;http://extensions.joomla.org/extensions/6154/details&quot;&gt;&lt;b&gt;Glossy Accordion Menu&lt;/b&gt;&lt;/a&gt; plugin.&lt;/p&gt;
+
+&lt;p&gt;The plugin version allows you to insert the menu in a content item or article. If you want the menu to appear in a module position, then use this module.&lt;/p&gt;
+
+&lt;b&gt;Very Important:&lt;/b&gt; This module makes use of the &lt;span style=&quot;background:#ffff00&quot;&gt;&lt;a href=&quot;http://extensions.joomla.org/extensions/6154/details&quot;&gt;&lt;b&gt;Glossy Accordion Menu Menu&lt;/b&gt;&lt;/a&gt; plugin&lt;/span&gt;. So please make sure you have installed this plugin too for this module to work.&lt;/a&gt;
+
+&lt;a id=&quot;demo&quot;&gt;
+&lt;h3&gt;Live Demo&lt;/h3&gt;&lt;/a&gt;
+&lt;?php
+#echo display_google_ads32('joomla - 468x60', 0, 20, 0, 20, 0).&quot;&lt;br clear=all&gt;&quot;;
+?&gt;
+&lt;p&gt;You can see a live demo of the Glossy Accordion Menu module at the top of the left menu.&lt;/p&gt;
+
+&lt;br clear=all&gt;
+&lt;div class=&quot;alert alert-info&quot; id=&quot;latest&quot;&gt;&lt;h4&gt;Latest Version&lt;/h4&gt;
+&lt;p&gt;v1.0.1 (for Joomla 1.0) and v1.5.1 (for Joomla 1.5)&lt;br&gt;
+Released January 25, 2010&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Fixed the error in PHP 5.3 &quot;Warning: Parameter 2 to
+plgContentinclude_content_item::onPrepareContent() expected to
+be a reference, value given in libraries/joomla/event/event.php on line 67&quot;. Thanks to &lt;a href=&quot;http://www.kksou.com/php-gtk2/index.php?option=com_fireboard&amp;Itemid=67&amp;func=view&amp;id=3089&amp;catid=21&quot;&gt;tekfix&lt;/a&gt; for highlighting this.&lt;/p&gt;
+&lt;/div&gt;
+
+</summary>
+		<content type="html">&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/phpgtk2_lib.php&quot;);?&gt;
+&lt;?php require_once(&quot;/home/fann/kksou.com/php-gtk2/util/phpgtk2_lib_t34.php&quot;);?&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;var j10=88; var j15=89;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://kksou.com/php-gtk2//php-gtk2/util/ajax/ajax_v1.2.js&quot;&gt;&lt;/script&gt;
+&lt;?php /*&lt;script type=&quot;text/javascript&quot;&gt;prepareLinks();&lt;/script&gt;*/ ?&gt;
+&lt;p&gt;This is the module version of the &lt;a href=&quot;http://extensions.joomla.org/extensions/6154/details&quot;&gt;&lt;b&gt;Glossy Accordion Menu&lt;/b&gt;&lt;/a&gt; plugin.&lt;/p&gt;
+
+&lt;p&gt;The plugin version allows you to insert the menu in a content item or article. If you want the menu to appear in a module position, then use this module.&lt;/p&gt;
+
+&lt;b&gt;Very Important:&lt;/b&gt; This module makes use of the &lt;span style=&quot;background:#ffff00&quot;&gt;&lt;a href=&quot;http://extensions.joomla.org/extensions/6154/details&quot;&gt;&lt;b&gt;Glossy Accordion Menu Menu&lt;/b&gt;&lt;/a&gt; plugin&lt;/span&gt;. So please make sure you have installed this plugin too for this module to work.&lt;/a&gt;
+
+&lt;a id=&quot;demo&quot;&gt;
+&lt;h3&gt;Live Demo&lt;/h3&gt;&lt;/a&gt;
+&lt;?php
+#echo display_google_ads32('joomla - 468x60', 0, 20, 0, 20, 0).&quot;&lt;br clear=all&gt;&quot;;
+?&gt;
+&lt;p&gt;You can see a live demo of the Glossy Accordion Menu module at the top of the left menu.&lt;/p&gt;
+
+&lt;br clear=all&gt;
+&lt;div class=&quot;alert alert-info&quot; id=&quot;latest&quot;&gt;&lt;h4&gt;Latest Version&lt;/h4&gt;
+&lt;p&gt;v1.0.1 (for Joomla 1.0) and v1.5.1 (for Joomla 1.5)&lt;br&gt;
+Released January 25, 2010&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Fixed the error in PHP 5.3 &quot;Warning: Parameter 2 to
+plgContentinclude_content_item::onPrepareContent() expected to
+be a reference, value given in libraries/joomla/event/event.php on line 67&quot;. Thanks to &lt;a href=&quot;http://www.kksou.com/php-gtk2/index.php?option=com_fireboard&amp;Itemid=67&amp;func=view&amp;id=3089&amp;catid=21&quot;&gt;tekfix&lt;/a&gt; for highlighting this.&lt;/p&gt;
+&lt;/div&gt;
+
+</content>
+		<category term="Joomla" />
+	</entry>
+	<entry>
+		<title>How to display and process forms in a Joomla article using DirectPHP?</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla/how-to-display-and-process-forms-in-a-joomla-article-using-directphp.php"/>
+		<published>2011-07-01T02:15:12+00:00</published>
+		<updated>2011-07-01T02:15:12+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla/how-to-display-and-process-forms-in-a-joomla-article-using-directphp.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;p&gt;With &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/DirectPHP-plugin.php&quot;&gt;DirectPHP&lt;/a&gt;, you can easily display forms in a Joomla article by using PHP's &lt;a href=&quot;http://php.net/manual/en/function.echo.php&quot;&gt;echo()&lt;/a&gt; function to display the HTML form.&lt;/p&gt;
+
+&lt;p&gt;However, many people have asked in the &lt;a href=&quot;http://www.kksou.com/php-gtk2/index.php?option=com_fireboard&amp;Itemid=67&quot;&gt;forum&lt;/a&gt; how to process this HTML form within the Joomla article?&lt;/p&gt;
+
+</summary>
+		<content type="html">&lt;p&gt;With &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/DirectPHP-plugin.php&quot;&gt;DirectPHP&lt;/a&gt;, you can easily display forms in a Joomla article by using PHP's &lt;a href=&quot;http://php.net/manual/en/function.echo.php&quot;&gt;echo()&lt;/a&gt; function to display the HTML form.&lt;/p&gt;
+
+&lt;p&gt;However, many people have asked in the &lt;a href=&quot;http://www.kksou.com/php-gtk2/index.php?option=com_fireboard&amp;Itemid=67&quot;&gt;forum&lt;/a&gt; how to process this HTML form within the Joomla article?&lt;/p&gt;
+
+</content>
+		<category term="Joomla" />
+	</entry>
+	<entry>
+		<title>Running googleSearch with sh404SEF: fixing the error 'JFolder::folder: Path is not a folder: /language'</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Joomla/running-googlesearch-with-sh404sef-fixing-the-error-jfolder-folder-path-is-not-a-folder-language.php"/>
+		<published>2009-01-02T09:31:12+00:00</published>
+		<updated>2009-01-02T09:31:12+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Joomla/running-googlesearch-with-sh404sef-fixing-the-error-jfolder-folder-path-is-not-a-folder-language.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;p&gt;If you are using the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/googleSearch-component.php&quot;&gt;googleSearch component / module&lt;/a&gt; with sh404SEF, and you encounter the following error:&lt;/a&gt;&lt;/p&gt;
+
+&lt;span class=&quot;alert&quot;&gt;JFolder::folder: Path is not a folder: /language&lt;/span&gt;
+
+&lt;p&gt;This article shows you how to fix this error.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Special thanks to &lt;a href=&quot;http://www.kksou.com/php-gtk2/googleSearch-component/module/1270-ReJFolderfolder-Path-is-not-a-folder-/language/Page-3.php#1270&quot;&gt;Fernando&lt;/a&gt; for his help and patience in sending me an entire Joomla setup that replicates the error, in getting the bug fixed, and in testing the final solution.&lt;/p&gt;
+
+&lt;p&gt;If you are interested, you can also see the entire thread of discussions started by lightningbit &lt;a href=&quot;http://www.kksou.com/php-gtk2/googleSearch-component/module/440-JFolderfolder-Path-is-not-a-folder-/language.php&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;br clear=all&gt;</summary>
+		<content type="html">&lt;p&gt;If you are using the &lt;a href=&quot;http://www.kksou.com/php-gtk2/Joomla/googleSearch-component.php&quot;&gt;googleSearch component / module&lt;/a&gt; with sh404SEF, and you encounter the following error:&lt;/a&gt;&lt;/p&gt;
+
+&lt;span class=&quot;alert&quot;&gt;JFolder::folder: Path is not a folder: /language&lt;/span&gt;
+
+&lt;p&gt;This article shows you how to fix this error.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Special thanks to &lt;a href=&quot;http://www.kksou.com/php-gtk2/googleSearch-component/module/1270-ReJFolderfolder-Path-is-not-a-folder-/language/Page-3.php#1270&quot;&gt;Fernando&lt;/a&gt; for his help and patience in sending me an entire Joomla setup that replicates the error, in getting the bug fixed, and in testing the final solution.&lt;/p&gt;
+
+&lt;p&gt;If you are interested, you can also see the entire thread of discussions started by lightningbit &lt;a href=&quot;http://www.kksou.com/php-gtk2/googleSearch-component/module/440-JFolderfolder-Path-is-not-a-folder-/language.php&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;br clear=all&gt;</content>
+		<category term="Joomla" />
+	</entry>
+	<entry>
+		<title>How to Run Joomla Content Plugins in Custom HTML Modules</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php"/>
+		<published>2016-05-23T15:16:43+00:00</published>
+		<updated>2016-05-23T15:16:43+00:00</updated>
+		<id>https://kksou.com/php-gtk2/joomla/how-to-run-joomla-content-plugins-in-custom-html-modules.php</id>
+		<author>
+			<name>kksou</name>
+			<email>kksou@kksou.com</email>
+		</author>
+		<summary type="html">&lt;p&gt;Plugins such as &lt;a href=&quot;https://kksou.com/php-gtk2//php-gtk2/joomla/directphp-plugin.php&quot;&gt;DirectPHP&lt;/a&gt;, &lt;a href=&quot;https://kksou.com/php-gtk2//php-gtk2/Joomla-Gadgets/googleMaps-plugin.php&quot;&gt;googleMaps&lt;/a&gt; and &lt;a href=&quot;https://kksou.com/php-gtk2//php-gtk2/Joomla-Gadgets/googleDirections-plugin.php&quot;&gt;googleDirections&lt;/a&gt; are called &lt;b&gt;&lt;span style=&quot;background:#ffff00&quot;&gt;content&lt;/span&gt; plugins&lt;/b&gt;.&lt;/p&gt;
+
+&lt;p&gt;As the name suggests, content plugins run inside Joomla articles, or the com_content component.&lt;/p&gt;
+
+&lt;p&gt;If you're using Joomla 3 and above, it's now very easy to run content plugins in Custom HTML Modules.&lt;/p&gt;
+
+
+
+
+</summary>
+		<content type="html">&lt;p&gt;Plugins such as &lt;a href=&quot;https://kksou.com/php-gtk2//php-gtk2/joomla/directphp-plugin.php&quot;&gt;DirectPHP&lt;/a&gt;, &lt;a href=&quot;https://kksou.com/php-gtk2//php-gtk2/Joomla-Gadgets/googleMaps-plugin.php&quot;&gt;googleMaps&lt;/a&gt; and &lt;a href=&quot;https://kksou.com/php-gtk2//php-gtk2/Joomla-Gadgets/googleDirections-plugin.php&quot;&gt;googleDirections&lt;/a&gt; are called &lt;b&gt;&lt;span style=&quot;background:#ffff00&quot;&gt;content&lt;/span&gt; plugins&lt;/b&gt;.&lt;/p&gt;
+
+&lt;p&gt;As the name suggests, content plugins run inside Joomla articles, or the com_content component.&lt;/p&gt;
+
+&lt;p&gt;If you're using Joomla 3 and above, it's now very easy to run content plugins in Custom HTML Modules.&lt;/p&gt;
+
+
+
+
+</content>
+		<category term="Joomla" />
+	</entry>
+</feed>

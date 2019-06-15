@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>googleMaps plugin Tutorial 05: KML Files</title>
+		<description>Discuss googleMaps plugin Tutorial 05: KML Files</description>
+		<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:02:23 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2084.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-2019</link>
+			<description><![CDATA[Hi, The googleMaps plugin does not cache anything. But usually your Joomla backend does. Also the browser does. If you uses some other cache-related plugin (e.g. for fast loading), those plugins will also cache the page. If you change the kml file, then you might need to clear the cache of all these to display the new kml file. Warm Regards, /CK]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 23 Oct 2018 02:47:40 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-2019</guid>
+		</item>
+		<item>
+			<title>dixet says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-2018</link>
+			<description><![CDATA[Does the plugin somehow cache kml files? I have changed my kml file but the changes are not reflected on the page link to page: http://www.mwanamaji.nl/index.php?option=com_joodb&view=catalog&Itemid=199 (click the divemap tab) link to kml: http://www.mwanamaji.nl/kml/sites.kml used plugin code: {googleMaps lat=10 long=0 zoom=2 width=100% height=480 kml=http://www.mwanamaji.nl/kml/sites.kml marker=0} Thank you!]]></description>
+			<dc:creator>dixet</dc:creator>
+			<pubDate>Sat, 20 Oct 2018 19:18:44 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-2018</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-1999</link>
+			<description><![CDATA[Hi Wolfgang, If you look at the article:googleMaps plugin Tutorial 05: KML Files: https://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php As you can see on this page, you can display multiple KML files, but it will be across multiple maps using multiple tags like this: [googleMaps lat=37.4319720 long=-122.0941430 zoom=12 width=100% height=480 kml=http://www.kksou.com/php-gtk2/gmap/samples/kml _sample1.kml] [googleMaps lat=53.763325 long=-2.579041 zoom=8 width=100% height=480 kml=http://www.kksou.com/php-gtk2/gmap/test/KML_Sa mples12.kml] I believe what you want is multiple KML files into one map. For this, my plugin does not support this. When I designed the plugin, I only wanted a very light-weight plugin for me to display maps on my website. I thought it might be useful, so I decided to share with others in Joomla! Extensions Directory. It's never intended as a replacement for the very powerful reumer's google plugin that I know support many advanced features. KML files are just plain text file. One thing I can think of is to combine your multiple KML files into just one KML file. You can google for: combining multiple KML files into one I see many resources on how to do this. Saw this KML Merger: https://kmlmerger.com/ Not sure if it will work for you. Once you have combined your multiple KML files into one, you can then display the KML file using googleMaps plugiin. Hope this helps. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 29 Jun 2018 09:42:00 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-1999</guid>
+		</item>
+		<item>
+			<title>Wolfgang says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-1997</link>
+			<description><![CDATA[Thanks for the Plugin. I think I will use this instead of the mapsplugin from reumer what i used for the last years but now itl isn't under development. I'm missing one feature at the moment: How to display more than one kml-file in single map? Reumer solved this by using kml[0]=.... kml[1]=.... kml[2]=..... and so on. I tried different synthax but can't find out if or how it works. Thanks for Help Wolfgang]]></description>
+			<dc:creator>Wolfgang</dc:creator>
+			<pubDate>Thu, 28 Jun 2018 15:01:39 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-1997</guid>
+		</item>
+		<item>
+			<title>Nik says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-1812</link>
+			<description><![CDATA[After chaning a category that had a map and a kml file, no map is displayed. Even if I paste code that works elsewhere on the site, nothing is displayed in this category. Now I am afraid of changing other places if something brakes. Or can it be that Google needs to chache the kml-file?]]></description>
+			<dc:creator>Nik</dc:creator>
+			<pubDate>Thu, 11 Aug 2016 10:27:38 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-1812</guid>
+		</item>
+		<item>
+			<title>Paquyphoenix says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-1743</link>
+			<description><![CDATA[Hi Kksou, Great plugins. We use it to display the location of our members. But since few weeks, the kml informations are not displayed anymore. Is there a problem with latest google maps kml files ? Regards, Paquy]]></description>
+			<dc:creator>Paquyphoenix</dc:creator>
+			<pubDate>Sun, 27 Sep 2015 12:56:11 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-1743</guid>
+		</item>
+		<item>
+			<title>NickC says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-893</link>
+			<description><![CDATA[Great plugin, I've used it a few times. Can't get markers from KML files to display, though. This is my code: {googleMaps lat=52.766077 long=-1.214676 zoom=12 marker=0 kml=http://lfrs.nanagram.co.uk/maps/lfrs.kml}]]></description>
+			<dc:creator>NickC</dc:creator>
+			<pubDate>Fri, 22 Feb 2013 00:36:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-893</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-847</link>
+			<description><![CDATA[Hi Karol, No, this plugin does not generate the KML file. But it can be used to display a KML file that you have generated somewhere else. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 24 Jan 2013 17:33:15 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-847</guid>
+		</item>
+		<item>
+			<title>Karol says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-845</link>
+			<description><![CDATA[How does the "kml" part work? After diplaying the map it generates the KML file in specified address, right? I cannot find any KML file at the location of my site. I'm trying this at localhost.]]></description>
+			<dc:creator>Karol</dc:creator>
+			<pubDate>Thu, 24 Jan 2013 10:32:05 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-845</guid>
+		</item>
+		<item>
+			<title>ruelluis says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-783</link>
+			<description><![CDATA[I tried the following code, my map displays but the 10 markers in the kml does not. {googleMaps lat=10.273983 long=124.005428 width=870 height=700 maptype=SATELLITE zoom=13 kml=http://ruelluis.podserver.info/Evacenter.kml}]]></description>
+			<dc:creator>ruelluis</dc:creator>
+			<pubDate>Wed, 12 Dec 2012 10:17:32 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-783</guid>
+		</item>
+		<item>
+			<title>geronimous says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-683</link>
+			<description><![CDATA[yes i've already seen that example but I would like to display my own markers (I'm getting crazy but nothing....). Thanks a lot in advance]]></description>
+			<dc:creator>geronimous</dc:creator>
+			<pubDate>Thu, 18 Oct 2012 08:25:36 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-683</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-682</link>
+			<description><![CDATA[Hi, For display different markers, you need to use KML files as outlined in this tutorial. You may want to refer to some of the references above: "References for KML files" for more details about KML. You can also refer to the following article for a sample code: How to display multiple markers in different colors in Google Maps using KML file? http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Samples/How-to-display-multiple-markers-in-different-colors-in-Google-Maps-using-KML-file.php Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 18 Oct 2012 07:43:37 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-682</guid>
+		</item>
+		<item>
+			<title>geronimous says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-681</link>
+			<description><![CDATA[Hi, I've tried your plugin and I say "excellent" :lol: I'd like to know if is possible change the icon markers with others (personal labels). I've tried to do that but I'can't. Sorry for my english I hope that you understand. Bye]]></description>
+			<dc:creator>geronimous</dc:creator>
+			<pubDate>Thu, 18 Oct 2012 05:05:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-681</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-636</link>
+			<description><![CDATA[Hi, Please refer to: googleMaps plugin Tutorial 01: Getting Started http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php Item #2: Specifying Label for the Marker I suppose you have specified the address using latitude and longitude. That's why you see lat and long being displayed. All you need to do is to add the tag "label". Please give it a try and let me know if it works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 27 Sep 2012 05:25:04 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-636</guid>
+		</item>
+		<item>
+			<title>Diego MF. says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-635</link>
+			<description><![CDATA[Hi guys, your plug in is plain amazing, congratulations. I just want to know if I can add a detailed adress in the message that pops up when you mouse over the red marker. I mean it just show the Lat and Log numbers. Thanks for any help on this one. Greetings.]]></description>
+			<dc:creator>Diego MF.</dc:creator>
+			<pubDate>Wed, 26 Sep 2012 22:55:29 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-635</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-597</link>
+			<description><![CDATA[Hi, I used the same tag as you've written: http://www.kksou.com/t1510/index.php?option=com_content&view=article&id=107:test-of-googlemaps-120916&catid=34:googlemaps&Itemid=54 Not sure why it didn't work on your site... Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 17 Sep 2012 08:56:39 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-597</guid>
+		</item>
+		<item>
+			<title>Ricardo Quartier says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-581</link>
+			<description><![CDATA[Dear friend, how are you? Well i am following your lessons, everything works except lesson 5 with KML Everything loads markers, etc, except the maps. Where the maps should be just a white background appears. Even if I try: {googleMaps lat=37.4319720 long=-122.0941430 zoom=12 width=100% height=480 kml=http://www.kksou.com/gmap/samples/kml_sample1. kml} It does not work. If i take the kml out.. works normally. Do you have any clue, anything i can be missing?]]></description>
+			<dc:creator>Ricardo Quartier</dc:creator>
+			<pubDate>Sun, 09 Sep 2012 01:42:09 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-581</guid>
+		</item>
+		<item>
+			<title>Rcrdop says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-546</link>
+			<description><![CDATA[Thank you for great Plugin. Is there a way to not show thew bubble when you click on the marker, or change the text color. Mine comes in a very light color hard to read, so I need to either not show or make text readable]]></description>
+			<dc:creator>Rcrdop</dc:creator>
+			<pubDate>Mon, 27 Aug 2012 08:17:00 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-546</guid>
+		</item>
+		<item>
+			<title>StefanoP says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-270</link>
+			<description><![CDATA[I search nothing into http://www.kksou.com/php-gtk2/#ag .....pls help me :S]]></description>
+			<dc:creator>StefanoP</dc:creator>
+			<pubDate>Tue, 01 May 2012 09:25:42 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-270</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-269</link>
+			<description><![CDATA[Hi, You are using a different plugin! Please check the starting thttp://www.kksou.com/php-gtk2/#ag. Yours different from the one listed on this page, isn't it? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 01 May 2012 08:29:24 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-269</guid>
+		</item>
+		<item>
+			<title>StefanoP. says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-266</link>
+			<description><![CDATA[Gentle Staff, i have put the html code this {mosmap kml='http://..........kml'|overview='1'} but the kml file with zoom is to 2 size..why? Where's the mistake? Thank you Stefano]]></description>
+			<dc:creator>StefanoP.</dc:creator>
+			<pubDate>Mon, 30 Apr 2012 23:52:35 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php#comment-266</guid>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>467. How to set up a stopwatch accurate to hundredth of a second?</title>
+		<description>Discuss 467. How to set up a stopwatch accurate to hundredth of a second?</description>
+		<link>https://kksou.com/php-gtk2/sample-codes/set-up-a-stopwatch-accurate-to-hundredth-of-a-second.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 08:21:35 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/949.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>emilce says:</title>
+			<link>https://kksou.com/php-gtk2/sample-codes/set-up-a-stopwatch-accurate-to-hundredth-of-a-second.php#comment-1716</link>
+			<description><![CDATA[hello! I'm from Argentinian. A question: can I add var hours? in the example only is seconds and minutes. I want hours!.. Thanks,]]></description>
+			<dc:creator>emilce</dc:creator>
+			<pubDate>Tue, 12 May 2015 09:56:47 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/sample-codes/set-up-a-stopwatch-accurate-to-hundredth-of-a-second.php#comment-1716</guid>
+		</item>
+	</channel>
+</rss>

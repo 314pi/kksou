@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="en-gb">
+	<title type="text">kksou</title>
+	<subtitle type="text">The Joy of Sharing and Learning Together</subtitle>
+	<link rel="alternate" type="text/html" href="https://kksou.com"/>
+	<id>https://kksou.com/php-gtk2/tag/3-tumblr.php</id>
+	<updated>2019-06-14T06:36:00+00:00</updated>
+	<author>
+		<name>kksou</name>
+		<email>admin@kksou.com</email>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="https://kksou.com/php-gtk2/tag/3-tumblr.php?format=feed&amp;lang=en&amp;type=atom"/>
+	<entry>
+		<title>Aenean pulvinar, nisi</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Services/aenean-pulvinar-nisi-vitae.php"/>
+		<published>2012-12-20T16:24:56+00:00</published>
+		<updated>2012-12-20T16:24:56+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Services/aenean-pulvinar-nisi-vitae.php</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<summary type="html">&lt;p&gt;Cras nec lorem eget ligula varius aliquet at et mi. Fusce id quam in justo suscipit porta. Fusce non nisl nunc, id vestibulum augue. Donec interdum sapien vitae sem condimentum vel adipiscing leo consequat. In quis nisi sed velit lobortis congue in vulputate risus. Aliquam molestie, risus sed congue ullamcorper, mauris lacus volutpat mauris, nec luctus est risus in libero.&lt;/p&gt;
+</summary>
+		<content type="html">&lt;p&gt;Cras nec lorem eget ligula varius aliquet at et mi. Fusce id quam in justo suscipit porta. Fusce non nisl nunc, id vestibulum augue. Donec interdum sapien vitae sem condimentum vel adipiscing leo consequat. In quis nisi sed velit lobortis congue in vulputate risus. Aliquam molestie, risus sed congue ullamcorper, mauris lacus volutpat mauris, nec luctus est risus in libero.&lt;/p&gt;
+</content>
+		<category term="Aenean pulvinar, nisi" />
+	</entry>
+	<entry>
+		<title>Carol Smith</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Meet-the-team/carol-smith.php"/>
+		<published>2012-12-20T16:38:59+00:00</published>
+		<updated>2012-12-20T16:38:59+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Meet-the-team/carol-smith.php</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<summary type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia sem sed sem lobortis viverra.&lt;/p&gt;
+</summary>
+		<content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia sem sed sem lobortis viverra.&lt;/p&gt;
+</content>
+		<category term="Carol Smith" />
+	</entry>
+	<entry>
+		<title>Cras nec lorem eget</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Services/services-1.php"/>
+		<published>2012-12-20T16:23:54+00:00</published>
+		<updated>2012-12-20T16:23:54+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Services/services-1.php</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<summary type="html">&lt;p&gt;Cras nec lorem eget ligula varius aliquet at et mi. Fusce id quam in justo suscipit porta. Fusce non nisl nunc, id vestibulum augue. Donec interdum sapien vitae sem condimentum vel adipiscing leo consequat. In quis nisi sed velit lobortis congue in vulputate risus. Aliquam molestie, risus sed congue ullamcorper, mauris lacus volutpat mauris, nec luctus est risus in libero.&lt;/p&gt;
+</summary>
+		<content type="html">&lt;p&gt;Cras nec lorem eget ligula varius aliquet at et mi. Fusce id quam in justo suscipit porta. Fusce non nisl nunc, id vestibulum augue. Donec interdum sapien vitae sem condimentum vel adipiscing leo consequat. In quis nisi sed velit lobortis congue in vulputate risus. Aliquam molestie, risus sed congue ullamcorper, mauris lacus volutpat mauris, nec luctus est risus in libero.&lt;/p&gt;
+</content>
+		<category term="Cras nec lorem eget" />
+	</entry>
+	<entry>
+		<title>Module Chrome</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/sample-codes/left-or-right-align-GtkLabel-in-GtkWindow.php"/>
+		<published>2012-12-31T14:36:26+00:00</published>
+		<updated>2012-12-31T14:36:26+00:00</updated>
+		<id>https://kksou.com/php-gtk2/sample-codes/left-or-right-align-GtkLabel-in-GtkWindow.php</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<summary type="html">&lt;p&gt;This template comes with built in module style / chrome that can be used to implement core Bootstrap component functionality like tabbed layouts, sliders, modal windows and even the pop over display.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h2 class=&quot;headline&quot;&gt;Granular control over module style&lt;/h2&gt;
+
+&lt;p class=&quot;subheading&quot;&gt;One of the key features of Joomla 3.0 is the ability to assign modules a specific module chrome.&lt;/p&gt;
+
+&lt;p&gt;Prior to Joomal 3.0 each module position was required to have the module style hard coded into the template. There were certain workarounds available for doing this in versions prior to Joomla 3.0 but workarounds to Joomla always come at a cost.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h3&gt;Assigning a new module chrome to a module.&lt;/h3&gt;
+
+&lt;p&gt;Assigning a new module style to a module is as simple as selecting a style from the drop down list in the module manager.&lt;/p&gt;
+
+&lt;p&gt;1. In your module manager edit the moduel you want to assign the new chrome to.&lt;/p&gt;
+
+&lt;p&gt;2. Click on the Advanced options tab&lt;/p&gt;
+
+&lt;p&gt;3. Scroll down the page and select the module style from the select list.&lt;/p&gt;
+
+&lt;p&gt;4. Click apply.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;border&quot; src=&quot;https://kksou.com/php-gtk2/images/democontent/documentation/chrome.png&quot; alt=&quot;chrome&quot; width=&quot;400&quot; height=&quot;567&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 class=&quot;headline&quot;&gt;Module style examples&lt;/h2&gt;
+
+&lt;p class=&quot;subheading&quot;&gt;The following module styles are available in this template.&lt;/p&gt;
+
+&lt;ul&gt;
+
+&lt;li&gt;zendefault - A default module chrome&lt;/li&gt;
+
+&lt;li&gt;zentabs - a tabbed interface&lt;/li&gt;
+
+&lt;li&gt;zenslider - use the module title to slide open or closed a module&lt;/li&gt;
+
+&lt;/ul&gt;</summary>
+		<content type="html">&lt;p&gt;This template comes with built in module style / chrome that can be used to implement core Bootstrap component functionality like tabbed layouts, sliders, modal windows and even the pop over display.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h2 class=&quot;headline&quot;&gt;Granular control over module style&lt;/h2&gt;
+
+&lt;p class=&quot;subheading&quot;&gt;One of the key features of Joomla 3.0 is the ability to assign modules a specific module chrome.&lt;/p&gt;
+
+&lt;p&gt;Prior to Joomal 3.0 each module position was required to have the module style hard coded into the template. There were certain workarounds available for doing this in versions prior to Joomla 3.0 but workarounds to Joomla always come at a cost.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h3&gt;Assigning a new module chrome to a module.&lt;/h3&gt;
+
+&lt;p&gt;Assigning a new module style to a module is as simple as selecting a style from the drop down list in the module manager.&lt;/p&gt;
+
+&lt;p&gt;1. In your module manager edit the moduel you want to assign the new chrome to.&lt;/p&gt;
+
+&lt;p&gt;2. Click on the Advanced options tab&lt;/p&gt;
+
+&lt;p&gt;3. Scroll down the page and select the module style from the select list.&lt;/p&gt;
+
+&lt;p&gt;4. Click apply.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;border&quot; src=&quot;https://kksou.com/php-gtk2/images/democontent/documentation/chrome.png&quot; alt=&quot;chrome&quot; width=&quot;400&quot; height=&quot;567&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 class=&quot;headline&quot;&gt;Module style examples&lt;/h2&gt;
+
+&lt;p class=&quot;subheading&quot;&gt;The following module styles are available in this template.&lt;/p&gt;
+
+&lt;ul&gt;
+
+&lt;li&gt;zendefault - A default module chrome&lt;/li&gt;
+
+&lt;li&gt;zentabs - a tabbed interface&lt;/li&gt;
+
+&lt;li&gt;zenslider - use the module title to slide open or closed a module&lt;/li&gt;
+
+&lt;/ul&gt;</content>
+		<category term="Module Chrome" />
+	</entry>
+	<entry>
+		<title>Tonal development</title>
+		<link rel="alternate" type="text/html" href="https://kksou.com/php-gtk2/Work/project-3.php"/>
+		<published>2012-12-20T16:26:12+00:00</published>
+		<updated>2012-12-20T16:26:12+00:00</updated>
+		<id>https://kksou.com/php-gtk2/Work/project-3.php</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<summary type="html">&lt;p&gt;Cras nec lorem eget ligula varius aliquet at et mi. Fusce id quam in justo suscipit porta. Fusce non nisl nunc, id vestibulum augue. Donec interdum sapien vitae sem condimentum vel adipiscing leo consequat. In quis nisi sed velit lobortis congue in vulputate risus. Aliquam molestie, risus sed congue ullamcorper, mauris lacus volutpat mauris, nec luctus est risus in libero.&lt;/p&gt;
+</summary>
+		<content type="html">&lt;p&gt;Cras nec lorem eget ligula varius aliquet at et mi. Fusce id quam in justo suscipit porta. Fusce non nisl nunc, id vestibulum augue. Donec interdum sapien vitae sem condimentum vel adipiscing leo consequat. In quis nisi sed velit lobortis congue in vulputate risus. Aliquam molestie, risus sed congue ullamcorper, mauris lacus volutpat mauris, nec luctus est risus in libero.&lt;/p&gt;
+</content>
+		<category term="Tonal development" />
+	</entry>
+</feed>

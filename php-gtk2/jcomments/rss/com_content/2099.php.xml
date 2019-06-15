@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>How to debug PHP codes in DirectPHP</title>
+		<description>Discuss How to debug PHP codes in DirectPHP</description>
+		<link>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:47:43 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2099.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>NetVicious says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1778</link>
+			<description><![CDATA[IT's there any way to use something linke require(getcwd() . "/phpscripts/test.php"); I'm getting eval error :-( I tried to using a simple echo getcwd() but I got the same eval error.]]></description>
+			<dc:creator>NetVicious</dc:creator>
+			<pubDate>Fri, 22 Jan 2016 13:41:43 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1778</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1713</link>
+			<description><![CDATA[Hi Filip, One of the key thing in debugging PHP code is to be able replicate the error consistently. So I'm not sure if you can reproduce the error you described consistently. If you can, then you can try the following: 1) As described above in this article, try to copy the entire PHP code that you've put inside DirectPHP and save them in a standalone .php file. 2) I suspect he error is due to your script running beyond the max_execution_time as specified in your php.ini file. 3) Try to run the standalone .php file you have created in (1). Did you get a blank page? 4) Now go to your php.ini file. Check what is the value of max_execution_time in your php.ini e.g. if max_execution_time = 30 Try changing it to max_execution_time = 300 5) Rerun the standalone .php file again. Did you still get a blnak page? 6) If (5) is ok now, you can transfer the code back to DirectPHP. Now reload the page. Does it run ok now? 7) If (6) is ok now, it shows that the problem statementn is indeed the max_execution_time in php.ini 8) Now you can slowly adjust the max_execution_time, say to 250 then 200 - until you find one that is just long enough to run your script. Please give the above a try and let me know if it works. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 09 Mar 2015 07:38:19 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1713</guid>
+		</item>
+		<item>
+			<title>Filip Serbruyns says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1712</link>
+			<description><![CDATA[Hello Kksou, I have a very strange behaviour on a 1.5.26 website. In a certain article, I use directphp to load in an external page (trough a curl function). Everything works fine, but ... when the page that is called exceeds about 100k, I get a complete blank page in Joomla. No errors, not even in the error.log on the server. No clue whatever, just a blank empty page. Do you know of any limitations on the size of content that can be displayed trough the echo command and directphp ? After hours of testing and debugging, my hope to solve the problem lies in your hands :-) Regards, Filip]]></description>
+			<dc:creator>Filip Serbruyns</dc:creator>
+			<pubDate>Mon, 09 Mar 2015 02:34:36 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1712</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1711</link>
+			<description><![CDATA[Hi Roy, >>> im having so much trouble to connect my tables iny mysql to joomla article You may want to let people know what have you tried? And what are the error messages you see on the screen? It will be much easier for other people to help you... Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 08 Feb 2015 07:13:01 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1711</guid>
+		</item>
+		<item>
+			<title>Roy Lester Santos says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1710</link>
+			<description><![CDATA[Hello Kksou i have problem how to connect my database in mysql to my article using this plug in? can you put the source code in it? im having so much trouble to connect my tables iny mysql to joomla article :(( thankss]]></description>
+			<dc:creator>Roy Lester Santos</dc:creator>
+			<pubDate>Sat, 07 Feb 2015 05:10:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1710</guid>
+		</item>
+		<item>
+			<title>Chris says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1709</link>
+			<description><![CDATA[Two things 1. Directphp is great, could not do without it 2. I have added a Try Catch statements in a class called from the PHP in the article and Joomla ignores it. When there is an eroor the code jumps into some Joomla classes. Anyone any ideas why this should be? Or how to get it to work?]]></description>
+			<dc:creator>Chris</dc:creator>
+			<pubDate>Sun, 23 Nov 2014 06:16:00 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1709</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1705</link>
+			<description><![CDATA[Hi Gilles, Yes, fullpath refers to (c). It usually starts with /home or /usr. I should have been clearer earlier. Glad it's working now! Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 23 Apr 2014 16:45:42 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1705</guid>
+		</item>
+		<item>
+			<title>Gilles says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1704</link>
+			<description><![CDATA[Thnx. I must admit, I'm not entirely sure what you mean by "full path" a) the full path from the start of the website "/myphpscripts/ b) the full path from my shared hosting account "/html/domainA/myphpscripts/" (this is also the root of my ftp to the server) or c) the full hardcoded path from the server (which is normally transparent for me as a shared hosting user): "/home/www/hosting7564/html/domainA/myphpscripts/" => I tested a) and b), and both do not work. Now, after you insisting, I had the idea to test also c). => the path c) works!!! Sorry for bothering and thank you very much for your support!!! I will buy you a pizza. nounours]]></description>
+			<dc:creator>Gilles</dc:creator>
+			<pubDate>Wed, 23 Apr 2014 08:48:06 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1704</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1703</link>
+			<description><![CDATA[Hi, Try fullpath for your require files i.e. require("/full/path/to/your/php/folder/phpscripts/ test.php"); If you know how to set error_reporting in php.ini, you can also display all warning messages and see what is the error message given by php. Let me know if the fullpath works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 23 Apr 2014 07:32:47 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1703</guid>
+		</item>
+		<item>
+			<title>Gilles says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1702</link>
+			<description><![CDATA[Thank you very much for this great plugin and all the good tipps on your website!!! PHPDirect works on my joomla 3.2.x site for normal commands. I want to use a blocked command (e.g."fopen"). Since there is a security issue with my provider, I could not modify the block list to allow fopen. Since you recommend anyway the "require" method to include this kind of functions from a library file, I tried this one. But: it's not working: my code is: ** php echo 'hello world'; require("/phpscripts/test.php"); echo 'gugus'; ** If I open the page, I get just a blank page "hello world". If I comment out the "require" statement, "hello worldgugus" is displayed as expected. ==> Do you have any idea why "require" does not work? Might this be connected to the security issue with my provider, which prevents my from saving the updated blocking list?? Thanks for all, nounours]]></description>
+			<dc:creator>Gilles</dc:creator>
+			<pubDate>Tue, 22 Apr 2014 08:08:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1702</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1051</link>
+			<description><![CDATA[Hi, DirectPHP is a content plugin. As the name suggests, it's for use ONLY within the Joomla article. It DOES NOT work when it's in module (because it's not an artilce). What you can do is to install some of the modules that I've written, such as the googleMaps module: http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-module.php: http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-module.php Although you will not be using the googleMaps module or plugin, what that module does is that it will make a trigger to the content plugin so that DirectPHP will run. Please give it a try and let me know if it works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 24 May 2013 02:00:47 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1051</guid>
+		</item>
+		<item>
+			<title>labiere says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1047</link>
+			<description><![CDATA[Installed DirectPHP version 2.5 as I run Joomla 2.5 with K2 and Gantry framework. Activated the plugin, changed the filter setting. I see that php code works in the body of an article. When I create a custom HTML module and use the same code, It does not parse as php - I simply see the literal code displaying on the frontend. Any way to change a setting so I can have this working in modules too? :sad:]]></description>
+			<dc:creator>labiere</dc:creator>
+			<pubDate>Wed, 22 May 2013 09:49:28 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-1047</guid>
+		</item>
+		<item>
+			<title>lhooq says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-895</link>
+			<description><![CDATA[Hi. I have a really weird problem... I have two modules with the almost exactly same PHP code on it (only the path changes, but on Joomla if i call module 1, everything goes fine, but if i call module 2, i have a (by 'call' i mean 'loadposition') : PHP Fatal error: Cannot redeclare curPageURL() (previously declared in /plugins/content/DirectPHP/DirectPHP.php(56) : eval()'d code:2) in /plugins/content/DirectPHP/DirectPHP.php(56) : eval()'d code on line 11 I can't understand why the code is correctly parsed on module 1 but not on module 2... Code module 1:]]></description>
+			<dc:creator>lhooq</dc:creator>
+			<pubDate>Wed, 27 Feb 2013 03:41:47 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-895</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-758</link>
+			<description><![CDATA[Hi, DirectPHP uses the standard PHP eval() function. Any standard PHP function should work with eval(). If it works with echo(), there's no reason why it didn't work elsewhere. To test, you can try: $arr = array('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5); $a = json_encode($arr); echo $a; Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 28 Nov 2012 17:27:08 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-758</guid>
+		</item>
+		<item>
+			<title>MattB says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-757</link>
+			<description><![CDATA[:-) Does the json_encode work? Does DirectPHP work with the JSON PHP extension? I only get the coded information printed in the form when I use an echo command.]]></description>
+			<dc:creator>MattB</dc:creator>
+			<pubDate>Wed, 28 Nov 2012 15:27:26 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-debug-php-codes-in-directphp.php#comment-757</guid>
+		</item>
+	</channel>
+</rss>

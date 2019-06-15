@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>376. How to display options of GtkComboBox in a grid without use of set_column_span_column and set_row_span_column?</title>
+		<description>Discuss 376. How to display options of GtkComboBox in a grid without use of set_column_span_column and set_row_span_column?</description>
+		<link>https://kksou.com/php-gtk2/sample-codes/display-options-of-GtkComboBox-in-a-grid-without-use-of-set_column_span_column-and-set_row_span_column.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 08:02:11 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/436.php" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>

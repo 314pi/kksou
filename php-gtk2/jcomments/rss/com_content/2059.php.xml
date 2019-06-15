@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>New Release - DirectPHP plugin for Joomla 2.5</title>
+		<description>Discuss New Release - DirectPHP plugin for Joomla 2.5</description>
+		<link>https://kksou.com/php-gtk2/Joomla-News/new-release-directphp-plugin-for-joomla-2-5.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 07:38:47 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2059.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>lam says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-News/new-release-directphp-plugin-for-joomla-2-5.php#comment-1082</link>
+			<description><![CDATA[Please, I'm new with joomla. How I utility this plugin DirectPHP in my Joomla?]]></description>
+			<dc:creator>lam</dc:creator>
+			<pubDate>Sat, 08 Jun 2013 14:14:58 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-News/new-release-directphp-plugin-for-joomla-2-5.php#comment-1082</guid>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>128. How to create detachable toolbar?</title>
+		<description>Discuss 128. How to create detachable toolbar?</description>
+		<link>https://kksou.com/php-gtk2/sample-codes/create-detachable-toolbar.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:57:39 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/181.php" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>159. How to insert links in GtkTextView - Part 3 - Display Link in Status Bar?</title>
+		<description>Discuss 159. How to insert links in GtkTextView - Part 3 - Display Link in Status Bar?</description>
+		<link>https://kksou.com/php-gtk2/sample-codes/insert-links-in-GtkTextView-Part-3-Display-Link-in-Status-Bar.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 07:01:32 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/216.php" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>

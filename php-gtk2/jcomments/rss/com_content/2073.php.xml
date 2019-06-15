@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>googleDirections - To Here - plugin Tutorial 01: Getting Started</title>
+		<description>Discuss googleDirections - To Here - plugin Tutorial 01: Getting Started</description>
+		<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:58:24 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2073.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php#comment-2012</link>
+			<description><![CDATA[Hi Rene, Would you mind share your URL so that I can do a view source to get more clues as to what might be the problem. If you said you have enabled the plugin and you see tag displayed, it means that the tag has not been processed at all. It could most likely be conflicts with other plugins or modules. Joomla is a very loose framework. Conflicts are quite common in Joomla. By the way, can you please also take a look at the following article: Ordering of Joomla plugins: https://www.kksou.com/php-gtk2/joomla-tips-techniques/ordering-of-joomla-plugins.php Try to change the order of the plugin to be the first one or the last one. Sometimes it solves the problem. Also, go to the plugin manager and make sure that you have, enabled all the 3 plugins - googleMaps, googleDirections and googleDirections_tohere plugins. All 3 need to be installed and enabled for this to work. The downloaded package will install all 3 plugins, but you must make sure that you enable all 3 plugins. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 04 Oct 2018 14:48:07 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php#comment-2012</guid>
+		</item>
+		<item>
+			<title>rene summers says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php#comment-2009</link>
+			<description><![CDATA[just installed and the 'easy' does not seem so. Joomla 3.8.x, install = successful, enabled = successful, article created with the tag's in the quotes as documented. Map will not display. All I get is the code on the page as if it was an article. Things to check would be greatly appreciated.]]></description>
+			<dc:creator>rene summers</dc:creator>
+			<pubDate>Tue, 02 Oct 2018 23:35:04 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php#comment-2009</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php#comment-1157</link>
+			<description><![CDATA[Yes! Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 23 Aug 2013 20:42:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php#comment-1157</guid>
+		</item>
+		<item>
+			<title>Christian Sosa says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php#comment-1154</link>
+			<description><![CDATA[working in joomla 3? :sad:]]></description>
+			<dc:creator>Christian Sosa</dc:creator>
+			<pubDate>Fri, 23 Aug 2013 09:27:00 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php#comment-1154</guid>
+		</item>
+		<item>
+			<title>Hope Kiah says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php#comment-719</link>
+			<description><![CDATA[Hi, THis is a Joomla 2.5.8 site. I've used the tohere plugin extensively with no problem before. We are using this code: {googleDir_tohere width=320 height=360 dir_width=275 home_addr="856 St. Michael's Drive, Santa Fe NM 87505"} Any idea why the map is blank?]]></description>
+			<dc:creator>Hope Kiah</dc:creator>
+			<pubDate>Mon, 12 Nov 2012 12:21:22 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php#comment-719</guid>
+		</item>
+		<item>
+			<title>Sigmund says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php#comment-331</link>
+			<description><![CDATA[Hey mate, firstly thanks for the pluggin I am using the googleDirection -to Here and i want to add a 3 mile radius around a point on the map. I also want the website to display a message if the customers post code is outside the 3 mile radius zone. Any help will be appreciated thanks Sigmund]]></description>
+			<dc:creator>Sigmund</dc:creator>
+			<pubDate>Tue, 05 Jun 2012 11:06:18 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php#comment-331</guid>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>googleDirections - To Here - plugin Tutorial 06: Display Directions below the Map</title>
+		<description>Discuss googleDirections - To Here - plugin Tutorial 06: Display Directions below the Map</description>
+		<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:58:37 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2078.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php#comment-1970</link>
+			<description><![CDATA[Hi Jim, > Well, occasionally there are two copies of the directions shown, one above the other Do you mean when you go to the backend Extensions: Manage and you see 2 different entries there? Or do you mean the frontend where the maps and directions are being displayed? Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 06 Mar 2018 06:57:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php#comment-1970</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php#comment-1959</link>
+			<description><![CDATA[Hi Yellowfuji, Due to the popularity of mobile phones, most websites are now using responsive design. Google SEO also penalize those websites that do not support responsive design. As such, in the latest version, the plugin now supports responsive design (through the use of CSS). You can try it on an iPad. In the landscape mode, the map and directions are displayed side by side. But in the portrait mode, the map and directions are displayed top and bottom. In the desktop version, you can also try changing the browser width to see responsive design in action. With the latest version supporting responsive design, there is now no way to "force" the display of directions to be top and bottom. It's automatically adjusted depending on the width of the browser / mobile device. Thanks for highlighting this. I will update this page over the weekend. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 13 Feb 2018 03:09:58 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php#comment-1959</guid>
+		</item>
+		<item>
+			<title>Jimwpds says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php#comment-1954</link>
+			<description><![CDATA[Hi, I had a previous version but trying that did not make any improvements. So I uninstalled all and reinstalled your latest versions and all is now working perfectly. Well, occasionally there are two copies of the directions shown, one above the other. Best regards Jim]]></description>
+			<dc:creator>Jimwpds</dc:creator>
+			<pubDate>Wed, 07 Feb 2018 16:26:13 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php#comment-1954</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php#comment-1948</link>
+			<description><![CDATA[Hi Jim, (1) In the previous version, I used a standard 2-column HTML table. The map goes on the left and the directions is displayed on the right. Due to the popularity of mobile phones, most websites are now using responsive design. Google SEO also penalize those websites that do not support responsive design. As such, in the latest version, the plugin now supports responsive design (through the use of CSS). You can try it on an iPad. In the landscape mode, the map and directions are displayed side by side. But in the portrait mode, the map and directions are displayed top and bottom. (2) The directions are entirely returned by Google. I did not do any formatting before displaying the directions. For (1), if you require the map and directions to be displayed side by side, you can use back the previous version, or you can change the code yourself back to using HTML table. Let me know if you need any of the previous version of the plugin, ok? Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 03 Feb 2018 10:03:50 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php#comment-1948</guid>
+		</item>
+		<item>
+			<title>Jimwpds says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php#comment-1947</link>
+			<description><![CDATA[Great plug ins thanks. Couple of minor points. 1. How do I get the map and directions box to align horizontally side by side? 2. Also is it possible to word wrap the directions to keep within the display width? the directions wrapped Ok on an early version. Thanks.]]></description>
+			<dc:creator>Jimwpds</dc:creator>
+			<pubDate>Fri, 02 Feb 2018 19:58:29 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php#comment-1947</guid>
+		</item>
+		<item>
+			<title>Bryce says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php#comment-838</link>
+			<description><![CDATA[ Disregard, it didn't work on the first 5 refreshes but now it does. Great extension!]]></description>
+			<dc:creator>Bryce</dc:creator>
+			<pubDate>Fri, 18 Jan 2013 16:42:11 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php#comment-838</guid>
+		</item>
+		<item>
+			<title>Bryce says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php#comment-837</link>
+			<description><![CDATA[This doesn't seem to work on an iPhone. See here: https://lge-ctsmotorsports.com/contact/k2-extra-field-groups/contact Any ideas?]]></description>
+			<dc:creator>Bryce</dc:creator>
+			<pubDate>Fri, 18 Jan 2013 16:41:06 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php#comment-837</guid>
+		</item>
+		<item>
+			<title>apostolos says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php#comment-797</link>
+			<description><![CDATA[i use Directions Below the Map - Full Width but I can't put on the same line "coming from" - "address input"- "get directions" pls help me!!! thanks]]></description>
+			<dc:creator>apostolos</dc:creator>
+			<pubDate>Sat, 29 Dec 2012 12:54:11 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php#comment-797</guid>
+		</item>
+	</channel>
+</rss>

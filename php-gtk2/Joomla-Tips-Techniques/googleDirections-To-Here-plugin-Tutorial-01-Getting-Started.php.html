@@ -1,0 +1,1628 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr" class="com_content view-article itemid-429 j39 responsive-enabled offcanvas-menu">
+<!-- Copied from https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php by Cyotek WebCopy 1.7.0.600, 14 Tháng Sáu 2019, 04:23:30 -->
+<head>
+<link href="googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php.html" rel="canonical">
+
+		
+
+			<meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=yes">
+		<meta name="HandheldFriendly" content="true">
+	<meta name="apple-mobile-web-app-capable" content="YES">
+	<base href="https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Google Maps, driving directions, walking directions, bicycle directions, traffic directions, joomla, plugin, mambot, Google Maps API v3">
+	<meta name="author" content="kksou">
+	<meta name="description" content="googleDirections - To Here - plugin Tutorial 01: Getting Started">
+	<title>googleDirections - To Here - plugin Tutorial 01: Getting Started | Joomla Tips &amp; Techniques</title>
+	<link href="../jcomments/rss/com_content/2073.php.xml" rel="alternate" type="application/rss+xml" title="googleDirections - To Here - plugin Tutorial 01: Getting Started">
+	<link href="../templates/xero/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="../components/com_jcomments/tpl/default/style.css?v=3002" rel="stylesheet" type="text/css">
+	<link href="/templates/xero/css-compiled/master-11597c3e8d7d7a43ddef0800b7379988.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300:latin|Open+Sans:600:latin|Droid+Serif" rel="stylesheet" type="text/css">
+	<link href="../templates/xero/css/theme.flat.php.css" rel="stylesheet" type="text/css">
+	<link href="../templates/xero/css/custom.css" rel="stylesheet" type="text/css">
+	<link href="../media/mod_jcomments_latest/css/style.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+
+@media 
+only screen and (min-width: 414px) and (max-width : 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+only screen and (min-width: 768px) and (max-width : 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2), 
+only screen and (min-width: 768px) and (max-width : 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+only screen and (min-width: 811px) {
+    #gdir_tohere_gmap_body_gmap0 { flex: 0 0 320px; }
+}
+@media 
+only screen and (min-width: 375px) and (max-width: 667px), /* iPhone 6 */
+only screen and (min-width: 320px) and (max-width: 568px), /* iPhone 5 */
+only screen and (min-width: 320px) and (max-width: 480px), /* iPhone 4 */
+only screen and (min-width: 320px) and (max-width: 640px),
+only screen and (min-width: 360px) and (max-width: 640px),
+only screen and (max-width: 810px) and (-webkit-device-pixel-ratio: 1) { /* less than or euqal to 810px, or screen size not greater than 810px) */
+  .gmap_container {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  /*.gmap_body {
+    flex: 0 1 auto;
+  }*/
+
+  .gdir_body {
+    margin-top: 10px;
+  }
+
+  .state-indicator::after { content: 'vertical'; }
+  /*h3::after { content: 'vertical'; }*/
+
+}
+
+@media 
+only screen and (min-width: 414px) and (max-width : 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3), /* iPhone 6 Plus */
+only screen and (min-width: 768px) and (max-width : 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2), /* iPad 1 & 2 */
+only screen and (min-width: 768px) and (max-width : 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3), /* iPad 1 & 2 */
+only screen and (min-width: 811px) { /* greater than or euqal to 811px, or screen size not less than 811px) */
+
+  .gmap_container {
+    padding: 20px 0;
+    display: flex;
+    /*flex-wrap: nowrap;
+    justify-content: flex-start; 
+    justify-content: space-between;*/
+  }
+
+  /*.gmap_body {
+    flex: 0 0 {$width2};
+  }*/
+
+  .gdir_body {
+    margin-left: 10px;
+  }
+
+  .state-indicator::before { content: 'horizontal'; }
+  /*h3::before { content: 'horizontal'; }*/
+
+}
+
+.gDir_table {
+	border-spacing: 0px;
+	border: 0px;
+}
+
+.gDir_table td {
+	padding: 0px;
+}
+
+.poweredby {
+  /*margin-top: 2px;*/
+  text-align: right;
+  padding: 0px;
+  margin: 0px;
+}
+/* CSS for googleDirections_tohere plugin */
+/* add your customized css here */
+#gdir_tohere_gmap0 img { max-width: none; } 
+@media 
+only screen and (min-width: 414px) and (max-width : 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+only screen and (min-width: 768px) and (max-width : 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2), 
+only screen and (min-width: 768px) and (max-width : 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+only screen and (min-width: 811px) {
+    #gdir_tohere_gmap_body_gmap1 { flex: 0 0 300px; }
+}
+#gdir_tohere_gmap1 img { max-width: none; } 
+.article {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.article_desc {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	margin-bottom: 4px;
+}
+
+.article_views {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.infographic {
+   border:2px solid #aaaaaa;
+}
+
+tr.article_tr > td {
+   //padding-top: 2px;
+   padding-bottom: 6px;
+}
+
+
+	</style>
+	<script src="../components/com_jcomments/js/jcomments-v2.3.js?v=12" type="text/javascript"></script>
+	<script src="../components/com_jcomments/libraries/joomlatune/ajax.js?v=4" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-noconflict.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-migrate.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/bootstrap.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../templates/xero/js/template-66.php" type="text/javascript"></script>
+	<script type="text/javascript">
+
+		var j2storeURL = 'https://kksou.com/php-gtk2/';
+		
+jQuery(document).ready(function(){
+
+	jQuery("a.linkstat").click(function(e) {
+		e.preventDefault(); // needed for safari 4.0.5
+
+		jQuery.post("/plugins/content/GetArticles/ajax-linkstat.php", {url: jQuery(this).attr('href'), id: jQuery(this).attr('id')}, function success(data) {
+			window.location = data; // needed for safari 4.0.5
+		});
+		return true;
+	});
+
+		jQuery("a.vote_up").click(function(){
+	//get the id
+	the_id = jQuery(this).attr('id');
+
+	// show the spinner
+	jQuery(this).parent().html("<img src='/plugins/content/GetArticles/images/spinner.gif' style='display:inline'/>");
+
+	//fadeout the vote-count
+	jQuery("span#votes_count"+the_id).fadeOut("fast");
+
+	//the main ajax request
+		jQuery.ajax({
+			type: "POST",
+			data: "action=vote_up&id="+jQuery(this).attr("id"),
+			url: "/plugins/content/GetArticles/votes.php",
+			success: function(msg){
+				jQuery("span#votes_count"+the_id).html(msg);
+				//fadein the vote count
+				jQuery("span#votes_count"+the_id).fadeIn();
+				//remove the spinner
+				jQuery("span#vote_buttons"+the_id).remove();
+			}
+		});
+	});
+
+});
+
+
+jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+	</script>
+
+			
+		
+<style type="text/css">
+			html > body {
+				font-family: 'Open Sans';
+				
+			}
+				h1, h2, h3, h4, h5, h6, blockquote {
+				font-family: 'Open Sans';
+			}
+		
+					#navwrap li a {
+					font-family: 'Open Sans';
+				}
+			
+					#logo h2 {
+					font-family: 'Droid Serif';
+				}
+		
+	</style>	</head>
+    <body>
+<!-- Facebook SDK -->
+<div id='fb-root'></div>
+<script type='text/javascript'>
+
+      // Load the SDK Asynchronously
+      (function(d){
+      var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+      js = d.createElement('script'); js.id = id; js.async = true;
+      js.src = '//connect.facebook.net/en_GB/all.js';
+      d.getElementsByTagName('head')[0].appendChild(js);
+    }(document));
+
+</script>
+<!-- End Facebook SDK -->
+
+		<!-- Required for Slidebar / Offcanvas implementation -->
+		<div id="zen-wrap">
+	
+	   			    	
+	    	<a id="home-link" name="home-link"></a>
+	  
+	    	
+	    	
+	    	
+	<section id="logowrap" class="clearfix stack-phones" role="banner">
+		<div class="zen-container">
+			<div class="zen-row">
+	<div class="zen-spotlight">
+	
+			
+						<div id="logo" class="zg-col zg-col-6">
+			
+							
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					
+
+<div class="custom">
+	<h2>kksou.com</h2>
+<p>Tutorials, Sample Codes and Tips & Techniques for developing<br>Joomla plugins, modules and components.</p>
+<p>Developer of <a href="http://www.kksou.com/php-gtk2/Joomla/DirectPHP-plugin.php">DirectPHP</a>, <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps</a> and <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php">googleSearch</a>.</p>
+<p>Yes, this is also <i>"The Place for PHP-GTK2 sample codes"</i>, since 2005.</p></div>
+				</div>
+			</div>
+		</div>
+	
+		
+						</div>
+		
+							
+						<div id="search" class="zg-col zg-col-6">
+			
+							
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					<!-- SiteSearch Google CSE --><form method="get" action="https://kksou.com/php-gtk2/index.php" id="mod_googleSearch_cse"><input type="hidden" name="option" value="com_googlesearch_cse"><input type="hidden" name="n" value="30"><input type="hidden" name="view" value="googlesearchs"><div class="search hidden-navcollapse"><input type="hidden" name="Itemid" value="382"><input type="hidden" name="cx" value="partner-pub-5032765168656743:ost4rr-en3s"><input type="hidden" name="cof" value="FORID:11"><input type="hidden" name="ie" value="ISO-8859-1"><input type="text" name="q" maxlength="255" value="" class="form-control hidden-navcollapse" size="20"><button class="button hidden-navcollapse btn btn-primary">Search</button></div></form><script type="text/javascript"><!--
+(function() {var f = document.getElementById('mod_googleSearch_cse');if (f && f.q) {var q = f.q;var b = function(){if (q.value == '') {q.style.color = '#AAAAAA';q.style.background = '#FFFFFF url(https://cse.google.com/coop/intl/en/images/google_custom_search_watermark.gif) left no-repeat';}};	var f = function() {q.style.color = '#000000';q.style.background = '#ffffff';};q.onfocus = f;q.onblur = b;b();}})();
+//-->
+</script>				</div>
+			</div>
+		</div>
+	
+		
+						</div>
+		
+						</div>
+</div>		</div>
+	</section>
+	    	
+	    	
+	<!-- NAVBAR HEADER -->
+	
+		<div id="sticky-fill" class="hidden"></div>
+		
+	<section id="navwrap" class="wrap ">
+		<div class="zen-container">
+			<div class="navbar-default zen-row">
+				<div class="zen-spotlight">
+						<div id="menu" class="zen-menu zen-menu-horizontal zen-menu-left zen-menu-fading">
+							<div class="navbar-header ">
+								<nav role="navigation">
+								<!-- NAVBAR MAIN -->
+																					
+													
+									
+
+<ul id="zen-menu-404">
+<li class="item-101"><a href="../index.htm">
+		<span class="fa fa-home zen-icon-home zen-icon"></span>		Home			</a>
+	</li><li class="item-425"><a href="../category/Sample-Codes/index.htm">
+				Sample Codes			</a>
+	</li><li class="item-426 active deeper parent"><a href="../category/Joomla/index.htm">
+				Joomla			</a>
+	<ul class="zen-menu-child cols-1"><li class="item-427"><a href="../category/Joomla-Gadgets/index.htm">
+				Joomla Gadgets			</a>
+	</li><li class="item-429 current active"><a href="../category/Joomla-Tips-Techniques/index.htm">
+				Joomla Tips &amp; Techniques			</a>
+	</li><li class="item-430"><a href="../category/Joomla-News/index.htm">
+				Joomla News 			</a>
+	</li><li class="item-431"><a href="../category/Joomla-FAQs/index.htm">
+				Joomla FAQs			</a>
+	</li><li class="item-432"><a href="../category/Joomla-Developer-FAQs/index.htm">
+				Joomla Developer FAQs			</a>
+	</li></ul></li><li class="item-433"><a href="../geocoder2.php.html">
+				Geocoder2			</a>
+	</li><li class="item-428"><a href="../Feedback.php.html">
+				Feedback			</a>
+	</li></ul> 			
+ 	
+																				
+									<!-- //NAVBAR MAIN -->
+																			<a class="btn off-canvas-trigger sb-toggle-right visible-desktop"><span class="zen-icon zen-icon-bars"></span></a>
+																	</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	    	
+	    	
+	    	
+	    	
+	    	
+	    		
+
+
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
+<!-- MAIN CONTENT -->
+<section id="mainWrap" class="clearfix mr ">
+	<a id="main-link" name="main-link"></a>
+		<section id="breadcrumbwrap" class="clearfix">
+		<div class="zen-container">
+			<div class="zen-row">
+				<div class="zen-spotlight">
+				
+					<!-- Banner-slogan -->
+					<div id="breadcrumb" class="zg-col zg-col-12">
+						  
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					
+<ul class="breadcrumb zen-reset-list ">
+
+	<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../index.htm" class="pathway" itemprop="url"><span itemprop="title">Home</span></a></li><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../category/Joomla/index.htm" class="pathway" itemprop="url"><span itemprop="title">Joomla</span></a></li><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../category/Joomla-Tips-Techniques/index.htm" class="pathway" itemprop="url"><span itemprop="title">Joomla Tips &amp; Techniques</span></a></li><li><span>googleDirections - To Here - plugin Tutorial 01: Getting Started</span></li></ul>				</div>
+			</div>
+		</div>
+	
+					</div>
+					<!-- //breadcrumb -->
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	
+		
+	<div class="zen-container">
+		<div class="zen-row">
+			<div class="mainwrap zen-spotlight">
+				<div id="midCol" class="zg-col zg-col-9 ">
+					
+					 
+
+			
+
+		<main role="main">
+		
+
+<div class="item-page clearfix">
+
+
+<!-- Article -->
+<article itemscope="" itemtype="http://schema.org/Article">
+	<meta itemprop="inLanguage" content="en-GB">
+
+	<header class="article-header clearfix">
+		<h1 class="article-title" itemprop="name">
+			googleDirections - To Here - plugin Tutorial 01: Getting Started				<meta itemprop="url" content="<br />
+<b>Notice</b>:  Undefined variable: url in <b>/var/www/kksou.com/public_html/php-gtk2/templates/xero/html/com_content/article/default.php</b> on line <b>51</b><br />
+<br />
+<b>Notice</b>:  Undefined variable: prefix in <b>/var/www/kksou.com/public_html/php-gtk2/templates/xero/html/com_content/article/default.php</b> on line <b>51</b><br />
+">
+		</h1>
+	
+							</header>
+	
+
+<!-- Aside -->
+<aside class="article-aside clearfix">
+    	<ul class="article-info  muted small flat-list">
+
+		
+			
+			
+						
+			
+					
+		
+										<li class="modified">
+			
+				<time datetime="2015-07-13T10:07:39+00:00" itemprop="dateModified">
+					Last Updated: 13 July 2015				</time>
+			</li>			
+										<li class="hits">
+				
+					<meta itemprop="interactionCount" content="UserPageVisits:19375">
+					Hits: 19375			</li>						</ul>
+    
+  </aside>  
+<!-- //Aside -->
+
+
+
+
+
+	
+
+	
+	
+	<section class="article-content" itemprop="articleBody">
+		
+<script type="text/javascript">
+<!--
+function onload_gdir_tohere(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {window.onload = func;} else {
+    window.onload = function() {if (oldonload){oldonload();}func();}
+  }
+}
+
+function display_gdir_tohere_gmap(id, centerLatitude, centerLongitude, startZoom, description, kml, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview) {
+    var latlng = new google.maps.LatLng(centerLatitude, centerLongitude);
+    if (startZoom==0 || startZoom=='') startZoom=10;
+    var mapdiv = document.getElementById("gdir_tohere_gmap"+id);
+    var myOptions = {
+      zoom: startZoom,
+      center: latlng
+    };
+    var map = new google.maps.Map(mapdiv, myOptions);
+    if (kml!='') {
+    	var myKMLOptions = {
+		  //suppressInfoWindows: true,
+          map: map,
+          preserveViewport: true
+		};
+    	var georssLayer = new google.maps.KmlLayer(kml, myKMLOptions);
+  		georssLayer.setMap(map);
+    }
+    format_gdir_tohere(map, control, maptype, show_marker, addoverview, addscale, addgoogle);
+    format2_gdir_tohere(map, id, streetview);
+
+    if (show_marker) show_gmap_marker(map, latlng, centerLatitude, centerLongitude, description);
+    return map;
+}
+
+function format_gdir_tohere(map, control, maptype, show_marker, addoverview, addscale, addgoogle) {
+	if (addscale==1) map.setOptions({scaleControl: true});
+	//if (addoverview=='1') {map.setOptions({overviewMapControl: true, overviewMapControlOptions:{opened: true}});} else {map.setOptions({overviewMapControl: false});}
+	if (addoverview==1) map.setOptions({overviewMapControl: true, overviewMapControlOptions:{opened: true}});
+	//map.setOptions({google.maps.MapTypeId: ROADMAP});
+	if (maptype=='SATELLITE') {map.setOptions({MapTypeId: google.maps.MapTypeId.SATELLITE});}
+	else if (maptype=='TERRAIN') {map.setOptions({MapTypeId: google.maps.MapTypeId.TERRAIN});}
+	else if (maptype=='HYBRID') {map.setOptions({MapTypeId: google.maps.MapTypeId.HYBRID});}
+	else {map.setOptions({MapTypeId: google.maps.MapTypeId.ROADMAP});}
+}
+
+function format2_gdir_tohere(map, id, streetview) {
+	if (streetview==1) {map.setOptions({streetViewControl: true});}
+	else {map.setOptions({streetViewControl: false});}
+	
+}
+
+function show_gmap_marker(map, latlng, centerLatitude, centerLongitude, description) {
+    var desc = description;
+    if (desc=='') desc = '('+centerLatitude+', '+centerLongitude+')';
+    var title_desc = desc.replace(/<br \/>/g, ' ');
+    title_desc = title_desc.replace(/~/g, '');
+    var marker = new google.maps.Marker({
+        position:latlng,
+        map:map,
+		labelClass: "googleMaps_label",
+        title:title_desc
+    });
+    var infowindow = new google.maps.InfoWindow({content:desc.replace(/~/g, '<br />')});
+    google.maps.event.addListener(marker, 'click', function() {infowindow.open(map, marker);});
+}
+
+-->
+</script>
+
+
+<!-- 
+Powered by Joomla Gadgets from kksou.com
+http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php
+-->
+
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1jVdW_ZAHcCOycz6uxnvAyZf1cOH94jI&language="></script>
+<script type="text/javascript">
+<!--
+function init_gdir_tohere_gmap(id, addr, centerLatitude, centerLongitude, startZoom, description, kml, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview) {
+    var map;
+	if (addr!='') {
+		var addr2 = addr.replace(/~/g, '');
+		var latlng_RegExp = /(-?\d+\.\d+)\s*,\s*(-?\d+\.\d+)/;
+		if (latlng_RegExp.test(addr2)) {
+			var str = addr2.match(latlng_RegExp);
+    		map = display_gdir_tohere_gmap(id, str[1], str[2], startZoom, description, kml, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview);
+		} else {
+			var geocoder = new google.maps.Geocoder();
+			geocoder.geocode( { 'address': addr2}, function(results, status) {
+		      if (status == google.maps.GeocoderStatus.OK) {
+		        if (description=='') description = addr;
+		      	map = display_gdir_tohere_gmap(id, results[0].geometry.location.lat(), results[0].geometry.location.lng(), startZoom, description, kml, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview);
+		      } else {
+		        alert('Google cannot decode your address: '+addr);
+		      }
+	   		});
+	   	}
+    } else {
+    	map = display_gdir_tohere_gmap(id, centerLatitude, centerLongitude, startZoom, description, kml, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview);
+    }
+}
+
+-->
+</script>
+
+<script type="text/javascript">
+<!--
+function format_gdir_tohere_from(from, centerLatitude, centerLongitude) {
+	if (from!='') {
+	    return from;
+	} else {
+		return new google.maps.LatLng(centerLatitude, centerLongitude);
+	}
+}
+
+function format_gdir_tohere_from2(from, centerLatitude, centerLongitude) {
+	if (from!='') {
+		var latlng_RegExp = /(-?\d+\.\d+)\s*,\s*(-?\d+\.\d+)/;
+		if (latlng_RegExp.test(from)) {
+			var str = from.match(latlng_RegExp);
+			return new google.maps.LatLng(str[1], str[2]);
+		} else {
+	    	return from;
+		}
+	} else {
+		return new google.maps.LatLng(centerLatitude, centerLongitude);
+	}
+}
+
+function display_gdir_tohere(id, centerLatitude, centerLongitude, startZoom, kml, from, to, mode, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview, stopover, unit) {
+	var latlng_RegExp = /(-?\d+\.\d+)\s*,\s*(-?\d+\.\d+)/;
+	if (latlng_RegExp.test(from)) {
+		var str = from.match(latlng_RegExp);
+		//console.log('bp301. mode = '+mode);
+		display_gdir_tohere_gmap_and_gdir(id, str[1], str[2], startZoom, kml, from, to, mode, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview, stopover, unit)
+	} else {
+		var geocoder = new google.maps.Geocoder();
+	    geocoder.geocode( { 'address': format_gdir_tohere_from(from, centerLatitude, centerLongitude)}, function(results, status) {
+	    if (status == google.maps.GeocoderStatus.OK) {
+	    	//console.log('bp302. mode = '+mode);
+	    	display_gdir_tohere_gmap_and_gdir(id, results[0].geometry.location.lat(), results[0].geometry.location.lng(), startZoom, kml, from, to, mode, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview, stopover, unit);
+	      } else {
+	        alert('Google cannot decode your address: '+addr);
+	        return;
+	      }
+   		});
+   	}
+}
+
+function display_gdir_tohere_gmap_and_gdir(id, lat, lng, startZoom, kml, from, to, mode, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview, stopover, unit) {
+	show_marker = 0;
+	var map = display_gdir_tohere_gmap(id, lat, lng, startZoom, from, kml, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview);
+	var directionsDisplay = new google.maps.DirectionsRenderer();
+	directionsDisplay.setMap(map);
+	//console.log('bp221. display_gdir_tohere_gmap_and_gdir::mode = '+ mode );
+	gdir_tohere_calcRoute(id, directionsDisplay, lat, lng, from, to, mode, stopover, unit);
+}
+
+function gdir_tohere_calcWaypts(waypoints) {
+	var waypts = [];
+	if (waypoints!='') {
+	    var waypts_str_array = waypoints.split(';');
+    	for (i = 0; i < waypts_str_array.length; i++) {
+    		var myRegExp = /\(nostop\)/;
+    		var str = waypts_str_array[i];
+    		var matchPos1 = str.search(myRegExp);
+    		if(matchPos1 != -1) {
+    			var str2 = str.replace(myRegExp, '');
+    			//waypts.push({location:str2, stopover:false});
+    			waypts.push({location:format_gdir_tohere_from2(str2, 0, 0), stopover:false});
+    		} else {
+     	    	//waypts.push({location:waypts_str_array[i], stopover:true});
+     	    	waypts.push({location:format_gdir_tohere_from2(waypts_str_array[i], 0, 0), stopover:true});
+     	    }
+    	}
+	}
+    return waypts;
+}
+
+function gdir_tohere_calcRoute(id, directionsDisplay, centerLatitude, centerLongitude, from, to, mode, stopover, unit) {
+	var waypts = gdir_tohere_calcWaypts(stopover);
+	//console.log('bp231. _calcRoute::mode = '+ mode );
+
+	if (unit=='METRIC') {unit2 = 0;}
+	else if (unit=='IMPERIAL') { unit2 = 1; }
+
+	var request = {
+	    origin: format_gdir_tohere_from2(from, centerLatitude, centerLongitude),
+	    destination: format_gdir_tohere_from2(to, centerLatitude, centerLongitude),
+	    waypoints: waypts
+	    //optimizeWaypoints: true,
+	    //travelMode: google.maps.TravelMode[mode]
+	};
+	if (unit) request.unitSystem = unit2;
+	request.travelMode = 'DRIVING';
+	//if (mode=='DRIVING') request.travelMode = 'DRIVING';
+	if (mode=='BICYCLING') request.travelMode = 'BICYCLING';
+	else if (mode=='TRANSIT') request.travelMode = 'TRANSIT';
+	else if (mode=='WALKING') request.travelMode = 'WALKING';
+
+	//request.travelMode = google.maps.TravelMode[mode];
+
+    var directionsService = new google.maps.DirectionsService();
+    var directionsPanel = document.getElementById("gdir_tohere_gdir"+id);
+  	directionsDisplay.setPanel(directionsPanel);
+    directionsService.route(request, function(response, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            directionsDisplay.setDirections(response);
+        }
+    });
+
+    //format2_gdir(map, id, streetview);
+
+}
+-->
+</script>
+
+<script type="text/javascript">
+<!--
+function submitenter(myfield,e,id) {
+	var keycode;
+	if (window.event) keycode = window.event.keyCode;
+	else if (e) keycode = e.which;
+	else return true;
+
+	if (keycode == 13) {
+	   var button = document.getElementById("gdir_button"+id);
+	   //myfield.form.submit();
+	   button.click();
+	   return false;
+	} else {
+	   return true;
+	}
+}
+
+function init_gdir_tohere(id, home_label, centerLatitude, centerLongitude, home_addr, startZoom, kml, mode, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview) {
+	init_gdir_tohere_gmap(id, home_addr, centerLatitude, centerLongitude, startZoom, home_label, kml, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview);
+}
+
+function get_dir(id, home_label, centerLatitude, centerLongitude, home_addr, startZoom, kml, to, mode, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview, stopover, unit) {
+    var to2 = to.replace(/<br \/>/g, ', ');
+    var from_addr = document.getElementById('start'+id).value + '';
+    var len = from_addr.length;
+    if (from_addr=='') {
+        document.getElementById("gdir_tohere_gdir"+id).innerHTML = '';
+        document.getElementById("gdir_tohere_errmsg"+id).innerHTML = '';
+    	init_gdir_tohere_gmap(id, home_addr, centerLatitude, centerLongitude, startZoom, home_label, kml, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview);
+    } else {
+    	var geocoder = new google.maps.Geocoder();
+ 	    geocoder.geocode( { 'address': from_addr}, function(results, status) {
+		    if (status == google.maps.GeocoderStatus.OK) {
+		    	console.log('bp201. address ok - ', from_addr);
+		    	document.getElementById("gdir_tohere_errmsg"+id).innerHTML = '';
+			    document.getElementById("gdir_tohere_gdir"+id).innerHTML = '';
+			    var e = document.getElementById('mode1');
+			    var mode12 = 'DRIVING';
+			    if (e) {mode12 = e.options[e.selectedIndex].value;}
+				//console.log('bp201. mode12 = '+mode12);
+		      	display_gdir_tohere(id, centerLatitude, centerLongitude, startZoom, kml, from_addr, home_addr, mode12, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview, stopover, unit);
+		    } else {
+		    	document.getElementById("gdir_tohere_errmsg"+id).innerHTML = '<br /><p><font color=#F74873>Google cannot decode your address:</font> <b style="background:#ffff00">'+from_addr+'</b></p>';
+			    document.getElementById("gdir_tohere_gdir"+id).innerHTML = '';
+		        init_gdir_tohere_gmap(id, home_addr, centerLatitude, centerLongitude, startZoom, home_label, kml, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview);
+		    }
+	    });
+
+    }
+}
+-->
+</script>
+<p>This is part 1 of a series of tutorial for the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php">googleDirections - To Here - plugin</a>.</p>
+
+<p>Using the googleDirections plugin is as easy as 1-2-3:</p>
+<ol>
+<li>Specify your <b>Home Address</b> - i.e. the end point, or where you want your customer to go to. This can be real address or in latitude/longitude.</li><p></p>
+<li>Specify the <code>width</code>, <code>height</code> and <code>dir_width</code>. This sets the size of your map (<code>width</code> and <code>height</code>), and also the width of the directions (<code>dir_width</code>).</li><p></p>
+</ol>
+
+ <br clear="all">
+
+<a id="demo"></a>
+<h3>Different ways of specifying Start and End points</h3>
+
+<ol>
+<li>You can specify the start and end point using <b style="background:#ffff00">real address</b></li><p></p>
+
+<ul type="disc">
+<li>Enclose from and to in <b style="background:#ffff00">double quotes (")</b></li>
+<li>Enter the full address in one line. If you're not in US, specify your country too.</li>
+</ul>
+<p></p>
+
+<pre>
+&#123;googleDir_tohere width=320 height=360 dir_width=275
+home_addr="1600 Amphitheatre Parkway, Mountain View CA 94043"&#125;
+</pre>
+
+
+<div class="gmap_container">
+  <div class="gmap_body" id="gdir_tohere_gmap_body_gmap0">
+    <table class="gDir_table">
+    <tr><td><div class="gmap_body_td" id="gdir_tohere_gmap0" style="width: 320px; height: 360px"></div></td></tr><tr><td><div class="poweredby" style="width: 320px;"><a href="https://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></div></td></tr></table>
+   </div>
+<div class="gdir_body" id="gdir_tohere_gdir_body_gmap0"><table class="gDir_table"><tr><td><div id="gdir_tohere_form0"><span id="gdir_tohere_form_label0">Coming from: </span>
+		<span id="gdir_tohere_form_input0"><input type="text" id="start0" size="42" value="" onkeypress="return submitenter(this,event,0)"></span><br><select id="mode1" class="mode_transport"><option value="DRIVING">Driving</option><option value="TRANSIT">Transit</option><option value="BICYCLING">Bicycling</option><option value="WALKING">Walking</option></select> <button id="gdir_button0" onclick="get_dir('0', '', 0, 0, '1600 Amphitheatre Parkway, Mountain View CA 94043', 15, '', '', 'DRIVING', '', '', '1', '0', '0', '', '1', '', '')"><span id="gdir_tohere_form_button_label0">Get Directions</span></button></div></td></tr><tr><td><div id="gdir_tohere_gdir0"></div></td></tr><tr><td><div id="gdir_tohere_errmsg0"></div></td></tr></table></div></div><p>
+
+<li>You can specify the start and end point using <b style="background:#ffff00">latitude / longitude</b></li><p></p>
+
+<ul type="disc">
+
+<li>This method allows you to pinpoint very accurately to the exact start and end points that you want, especially when Google cannot decode your address correctly.</li><p></p>
+
+<li>If you need to know the latitude and longitude of the start or end point, you can find out here: <a href="http://www.kksou.com/php-gtk2/google-geocoder-v2/">Free Geocoder v2.0 by kksou</a>.</li><p></p>
+
+<li>Enclose the latitude/longitude in <b style="background:#ffff00">double quotes (")</b></li>
+
+</ul>
+
+<pre>
+&#123;googleDir_tohere width=300 height=360 dir_width=275
+home_addr="37.4211444, -122.0853032"&#125;
+</pre>
+
+
+<div class="gmap_container">
+  <div class="gmap_body" id="gdir_tohere_gmap_body_gmap1">
+    <table class="gDir_table">
+    <tr><td><div class="gmap_body_td" id="gdir_tohere_gmap1" style="width: 300px; height: 360px"></div></td></tr><tr><td><div class="poweredby" style="width: 300px;"><a href="https://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></div></td></tr></table>
+   </div>
+<div class="gdir_body" id="gdir_tohere_gdir_body_gmap1"><table class="gDir_table"><tr><td><div id="gdir_tohere_form1"><span id="gdir_tohere_form_label1">Coming from: </span>
+		<span id="gdir_tohere_form_input1"><input type="text" id="start1" size="42" value="" onkeypress="return submitenter(this,event,1)"></span><br><select id="mode1" class="mode_transport"><option value="DRIVING">Driving</option><option value="TRANSIT">Transit</option><option value="BICYCLING">Bicycling</option><option value="WALKING">Walking</option></select> <button id="gdir_button1" onclick="get_dir('1', '', 0, 0, '37.4211444, -122.0853032', 15, '', '', 'DRIVING', '', '', '1', '0', '0', '', '1', '', '')"><span id="gdir_tohere_form_button_label1">Get Directions</span></button></div></td></tr><tr><td><div id="gdir_tohere_gdir1"></div></td></tr><tr><td><div id="gdir_tohere_errmsg1"></div></td></tr></table></div></div><p>
+
+</p></ol>
+
+<h3>Width and Height of the Map and Directions</h3>
+
+<ul>
+
+<li>Note that for Google Map with directions, you cannot specify the width and height in percentages. All dimensions are in px.</li><p></p>
+
+<li>Please make sure you set all the 3 dimensions: <code>width</code>, <code>height</code> and <code>dir_width</code>, otherwise no map or direction will appear on your page.</li><p></p>
+
+</ul>
+
+<h3>Zoom Level</h3>
+
+<p>You do not need to specify any zoom level.</p>
+
+<p>The default zoom level of the map is automatically set by Google such that the start point and end point are being displayed optimally on the map.</p>
+
+
+
+<h3>Tutorials for the googleMaps plugin</h3><ul>
+<li><a href="googleMaps-plugin-Tutorial-01-Getting-Started.php.html">googleMaps plugin Tutorial 01: Getting Started</a></li>
+<li><a href="googleMaps-plugin-Tutorial-02-Zoom-Level.php.html">googleMaps plugin Tutorial 02: Zoom Level</a></li>
+<li><a href="googleMaps-plugin-Tutorial-03-Language.php.html">googleMaps plugin Tutorial 03: Language</a></li>
+<li><a href="googleMaps-plugin-Tutorial-04-Map-Type.php.html">googleMaps plugin Tutorial 04: Map Type</a></li>
+<li><a href="googleMaps-plugin-Tutorial-05-KML-Files.php.html">googleMaps plugin Tutorial 05: KML Files</a></li>
+
+</ul>
+<h3>Tutorials for the googleDirections plugin</h3><ul>
+<li><a href="googleDirections-plugin-Tutorial-01-Getting-Started.php.html">googleDirections plugin Tutorial 01: Getting Started</a></li>
+<li><a href="googleDirections-plugin-Tutorial-02-Specifying-Stopover-Points.php.html">googleDirections plugin Tutorial 02: Specifying Stopover Points</a></li>
+<li><a href="googleDirections-plugin-Tutorial-03-Travel-Modes.php.html">googleDirections plugin Tutorial 03: Travel Modes</a></li>
+<li><a href="googleDirections-plugin-Tutorial-04-Unit-Systems-miles-or-km.php.html">googleDirections plugin Tutorial 04: Unit Systems - miles or km</a></li>
+<li><a href="googleDirections-plugin-Tutorial-05-Display-Directions-on-the-Left.php.html">googleDirections plugin Tutorial 05: Display Directions on the Left</a></li>
+<li><a href="googleDirections-plugin-Tutorial-06-Display-Directions-below-the-Map.php.html">googleDirections plugin Tutorial 06: Display Directions below the Map</a></li>
+<li><a href="googleDirections-plugin-Tutorial-07-Display-Directions-in-your-Local-Language.php.html">googleDirections plugin Tutorial 07: Display Directions in your Local Language</a></li>
+<li><a href="googleDirections-plugin-Tutorial-08-Specifying-Stopover-Points.php.html">googleDirections plugin Tutorial 08: Specifying Stopover Points </a></li>
+
+</ul>
+<h3>Tutorials for the googleDirections_to_here plugin</h3><ul>
+
+<li><a href="googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php.html">googleDirections - To Here - plugin Tutorial 01: Getting Started</a></li>
+<li><a href="googleDirections-To-Here-plugin-Tutorial-02-Adding-Label-to-Home-Address.php.html">googleDirections - To Here - plugin Tutorial 02: Adding Label to Home Address</a></li>
+<li><a href="googleDirections-To-Here-plugin-Tutorial-03-Travel-Modes.php.html">googleDirections - To Here - plugin Tutorial 03: Travel Modes</a></li>
+<li><a href="googleDirections-To-Here-plugin-Tutorial-04-Unit-Systems-miles-or-km.php.html">googleDirections - To Here - plugin Tutorial 04: Unit Systems - miles or km</a></li>
+<li><a href="googleDirections-To-Here-plugin-Tutorial-05-Display-Directions-on-the-Left.php.html">googleDirections - To Here - plugin Tutorial 05: Display Directions on the Left</a></li>
+<li><a href="googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php.html">googleDirections - To Here - plugin Tutorial 06: Display Directions below the Map</a></li>
+<li><a href="googleDirections-To-Here-plugin-Tutorial-07-Display-Directions-in-your-Local-Language.php.html">googleDirections - To Here - plugin Tutorial 07: Display Directions in your Local Language</a></li>
+<li><a href="googleDirections-To-Here-plugin-Tutorial-08-Specifying-Stopover-Points.php.html">googleDirections - To Here - plugin Tutorial 08: Specifying Stopover Points</a></li>
+
+</ul>
+
+
+
+
+<script type="text/javascript">
+<!--
+
+function load_gdir_tohere() {
+init_gdir_tohere('0', '', 0, 0, '1600 Amphitheatre Parkway, Mountain View CA 94043', 15, '', 'DRIVING', '', '', '1', '0', '0', '', '1', '');
+init_gdir_tohere('1', '', 0, 0, '37.4211444, -122.0853032', 15, '', 'DRIVING', '', '', '1', '0', '0', '', '1', '');
+
+}
+-->
+</script>
+
+<script type="text/javascript">
+<!--
+jQuery(document).ready(function() {
+    load_gdir_tohere();
+});
+-->
+</script>
+	</section>
+
+  <!-- footer -->
+    <!-- //footer -->
+
+					
+			<ul class="pager pagenav">
+	<li class="previous">
+		<a class="hasTooltip" title="Google Maps - display multiple markers" aria-label="Previous article: Google Maps - display multiple markers" href="Google-Maps-display-multiple-markers.php.html" rel="prev">
+			<span class="icon-chevron-left" aria-hidden="true"></span> <span aria-hidden="true">Prev</span>		</a>
+	</li>
+	<li class="next">
+		<a class="hasTooltip" title="googleDirections - To Here - plugin Tutorial 02: Adding Label to Home Address" aria-label="Next article: googleDirections - To Here - plugin Tutorial 02: Adding Label to Home Address" href="googleDirections-To-Here-plugin-Tutorial-02-Adding-Label-to-Home-Address.php.html" rel="next">
+			<span aria-hidden="true">Next</span> <span class="icon-chevron-right" aria-hidden="true"></span>		</a>
+	</li>
+</ul>
+	
+	
+	
+</article>
+<!-- //Article -->
+
+<div class="clearfix"></div>
+
+<script type="text/javascript">
+<!--
+var jcomments=new JComments(2073, 'com_content','/php-gtk2/jcomments/');
+jcomments.setList('comments-list');
+//-->
+</script>
+<div id="jc">
+<div id="comments"><h4>Comments <a class="rss" href="../jcomments/rss/com_content/2073.php.xml" title="RSS feed for comments to this post" target="_blank">&nbsp;</a><a class="refresh" href="#" title="Refresh comments list" onclick="jcomments.showPage(2073,'com_content',0);return false;">&nbsp;</a></h4>
+<div class="comments-list" id="comments-list-0">
+		<div class="even" id="comment-item-331">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-331">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(331, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(331, -1);return false;"></a>
+<span class="vote-good">+1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php.html#comment-331" id="comment-331">#</a>
+<span class="comment-author">Sigmund</span>
+<span class="comment-date">2012-06-05 11:06</span>
+<div class="comment-body" id="comment-body-331">Hey mate,<br>firstly thanks for the pluggin<br><br>I am using the googleDirection -to Here and i want to add a 3 mile radius around a point on the map.<br>I also want the website to display a message if the customers post code is outside the 3 mile radius zone.<br><br>Any help will be appreciated<br><br>thanks<br>Sigmund</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(331); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(331,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(331); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-719">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-719">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(719, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(719, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php.html#comment-719" id="comment-719">#</a>
+<span class="comment-author">Hope Kiah</span>
+<span class="comment-date">2012-11-12 12:21</span>
+<div class="comment-body" id="comment-body-719">Hi, THis is a Joomla 2.5.8 site. I've used the tohere plugin extensively with no problem before. We are using this code:<br>{googleDir_tohere width=320 height=360 dir_width=275 home_addr="856 St. Michael's Drive, Santa Fe NM 87505"}<br>Any idea why the map is blank?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(719); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(719,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(719); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-1154">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1154">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1154, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1154, -1);return false;"></a>
+<span class="vote-good">+1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php.html#comment-1154" id="comment-1154">#</a>
+<span class="comment-author">Christian Sosa</span>
+<span class="comment-date">2013-08-23 09:27</span>
+<div class="comment-body" id="comment-body-1154">working in joomla 3?  <img src="../components/com_jcomments/images/smilies/sad.gif" alt=":sad:"> </div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1154); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1154,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1154); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-1154">
+		<div class="odd" id="comment-item-1157">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1157">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1157, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1157, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php.html#comment-1157" id="comment-1157">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-08-23 20:42</span>
+<div class="comment-body" id="comment-body-1157">Yes!<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1157); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1157,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1157); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-2009">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-2009">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(2009, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(2009, -1);return false;"></a>
+<span class="vote-good">+2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php.html#comment-2009" id="comment-2009">#</a>
+<span class="comment-author">rene summers</span>
+<span class="comment-date">2018-10-02 23:35</span>
+<div class="comment-body" id="comment-body-2009">just installed and the 'easy' does not seem so. Joomla 3.8.x, install = successful, enabled = successful, article created with the tag's in the quotes as documented. Map will not display. All I get is the code on the page as if it was an article. Things to check would be greatly appreciated.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(2009); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(2009,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(2009); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-2009">
+		<div class="odd" id="comment-item-2012">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-2012">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(2012, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(2012, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php.html#comment-2012" id="comment-2012">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2018-10-04 14:48</span>
+<div class="comment-body" id="comment-body-2012">Hi Rene,<br><br>Would you mind share your URL so that I can do a view source to get more clues as to what might be the problem.<br><br>If you said you have enabled the plugin and you see tag displayed, it means that the tag has not been processed at all. It could most likely be conflicts with other plugins or modules. Joomla is a very loose framework. Conflicts are quite common in Joomla.<br><br>By the way, can you please also take a look at the following article: <a href="https://www.kksou.com/php-gtk2/joomla-tips-techniques/ordering-of-joomla-plugins.php" rel="external nofollow" target="_blank">Ordering of Joomla plugins</a><br><br>Try to change the order of the plugin to be the first one or the last one. Sometimes it solves the problem.<br><br>Also, go to the plugin manager and make sure that you have, enabled all the 3 plugins - googleMaps, googleDirections and googleDirections_tohere plugins. All 3 need to be installed and enabled for this to work. The downloaded package will install all 3 plugins, but you must make sure that you enable all 3 plugins.<br><br>Warm Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(2012); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(2012,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(2012); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+</div>
+<div id="comments-list-footer"><a class="refresh" href="#" title="Refresh comments list" onclick="jcomments.showPage(2073,'com_content',0);return false;">Refresh comments list</a><br><a class="rss" href="../jcomments/rss/com_content/2073.php.xml" title="RSS feed for comments to this post" target="_blank">RSS feed for comments to this post</a></div>
+</div>
+<h4>Add comment</h4>
+<a id="addcomments" href="#addcomments"></a>
+<form id="comments-form" name="comments-form" action="javascript:void(null);">
+<p>
+	<span>
+		<input id="comments-form-name" type="text" name="name" value="" maxlength="20" size="22" tabindex="1">
+		<label for="comments-form-name">Name (required)</label>
+	</span>
+</p>
+<p>
+	<span>
+		<input id="comments-form-email" type="text" name="email" value="" size="22" tabindex="2">
+		<label for="comments-form-email">E-mail (required, but will not display)</label>
+	</span>
+</p>
+<p>
+	<span>
+		<textarea id="comments-form-comment" name="comment" cols="65" rows="8" tabindex="5"></textarea>
+	</span>
+</p>
+<p>
+	<span>
+		<input class="checkbox" id="comments-form-subscribe" type="checkbox" name="subscribe" value="1" tabindex="5">
+		<label for="comments-form-subscribe">Notify me of follow-up comments</label><br>
+	</span>
+</p>
+<p>
+	<span>
+		<img class="captcha" onclick="jcomments.clear('captcha');" id="comments-form-captcha-image" src="../jcomments/captcha.php-65.jpeg?ac=10131" width="121" height="60" alt="Security code"><br>
+		<span class="captcha" onclick="jcomments.clear('captcha');">Refresh</span><br>
+		<input class="captcha" id="comments-form-captcha" type="text" name="captcha_refid" value="" size="5" tabindex="6"><br>
+	</span>
+</p>
+<div id="comments-form-buttons">
+	<div class="btn" id="comments-form-send"><div><a href="#" tabindex="7" onclick="jcomments.saveComment();return false;" title="Send (Ctrl+Enter)">Send</a></div></div>
+	<div class="btn" id="comments-form-cancel" style="display:none;"><div><a href="#" tabindex="8" onclick="return false;" title="Cancel">Cancel</a></div></div>
+	<div style="clear:both;"></div>
+</div>
+<div>
+	<input type="hidden" name="object_id" value="2073">
+	<input type="hidden" name="object_group" value="com_content">
+</div>
+</form>
+<script type="text/javascript">
+<!--
+function JCommentsInitializeForm()
+{
+	var jcEditor = new JCommentsEditor('comments-form-comment', true);
+	jcEditor.initSmiles('/php-gtk2/components/com_jcomments/images/smilies/');
+	jcEditor.addSmile(':D','laugh.gif');
+	jcEditor.addSmile(':lol:','lol.gif');
+	jcEditor.addSmile(':-)','smile.gif');
+	jcEditor.addSmile(';-)','wink.gif');
+	jcEditor.addSmile('8)','cool.gif');
+	jcEditor.addSmile(':-|','normal.gif');
+	jcEditor.addSmile(':-*','whistling.gif');
+	jcEditor.addSmile(':oops:','redface.gif');
+	jcEditor.addSmile(':sad:','sad.gif');
+	jcEditor.addSmile(':cry:','cry.gif');
+	jcEditor.addSmile(':o','surprised.gif');
+	jcEditor.addSmile(':-?','confused.gif');
+	jcEditor.addSmile(':-x','sick.gif');
+	jcEditor.addSmile(':eek:','shocked.gif');
+	jcEditor.addSmile(':zzz','sleeping.gif');
+	jcEditor.addSmile(':P','tongue.gif');
+	jcEditor.addSmile(':roll:','rolleyes.gif');
+	jcEditor.addSmile(':sigh:','unsure.gif');
+	jcEditor.addCounter(1000, '', ' symbols left', 'counter');
+	jcomments.setForm(new JCommentsForm('comments-form', jcEditor));
+}
+
+if (window.addEventListener) {window.addEventListener('load',JCommentsInitializeForm,false);}
+else if (document.addEventListener){document.addEventListener('load',JCommentsInitializeForm,false);}
+else if (window.attachEvent){window.attachEvent('onload',JCommentsInitializeForm);}
+else {if (typeof window.onload=='function'){var oldload=window.onload;window.onload=function(){oldload();JCommentsInitializeForm();}} else window.onload=JCommentsInitializeForm;} 
+//-->
+</script>
+<div id="comments-footer" align="center"><a href="http://www.joomlatune.com" title="JComments" target="_blank">JComments</a></div>
+<script type="text/javascript">
+<!--
+jcomments.setAntiCache(1,0,0);
+//-->
+</script> 
+</div></div>
+	</main>
+		
+	<!-- //MAIN CONTENT -->				</div>
+												<div id="sidebar-2" class="sidebar zg-col zg-col-3  " role="complementary">
+					
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+					<div class="zen-module-title">
+						<h3><span>Latest Comments</span><h3>
+					</h3></h3></div>
+							
+				<div class="zen-module-body">
+					<ul class="jcomments-latest">
+	
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">16.05.2019 15:18</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Patrick, I developed this plugin initially so that I can place a map on my website easily. I thought ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2184">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">Patrick</span>
+						<span class="date">13.05.2019 17:29</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi there, will it be possible to just show a link to the popup map? I don't want to show the map on my ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2180">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							DirectPHP plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">21.04.2019 16:05</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Mark, Sorry for the late reply. Recently there has been a huge influx of spam posts, and your post ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla/directphp-plugin.php.html#comment-2166">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							DirectPHP plugin					</h4>
+		
+		
+				<span class="author">Mark Hobbs</span>
+						<span class="date">08.04.2019 17:16</span>
+		
+		<div class="comment rounded ">
+					<div>
+				I've used DirectPHP for a few years... it's beautifully simple and convenient. I recently decided to ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla/directphp-plugin.php.html#comment-2160">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleDirections - To Here - plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">23.03.2019 09:35</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Greg, 1) First, make sure you have entered the Google Maps API key. You can apply it here ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleDirections-To-Here-plugin.php.html#comment-2146">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleDirections - To Here - plugin					</h4>
+		
+		
+				<span class="author">GREG</span>
+						<span class="date">22.03.2019 22:04</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi, I have installed all 3 plugins and when i enter my current location i get the error Google cannot ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleDirections-To-Here-plugin.php.html#comment-2145">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">15.01.2019 00:06</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Christian, Yes, you're right. For this plugin, you can show multiple KML files in a web page (using ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2094">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">Christian Teuber</span>
+						<span class="date">14.01.2019 16:30</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Can you point me to the sample map, I see only maps with one kml file on one map. I want to show 2 ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2093">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							New version of DirectPHP - support for PHP 7					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">14.01.2019 14:51</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Björn, Thanks for your support over so many years! I'm not running php 7.1, and I do not currently ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla-news/new-version-of-directphp-support-for-php-7.php.html#comment-2091">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">14.01.2019 14:44</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Christian, I have a sample page here with many KML files on it: googleMaps plugin Tutorial 05: KML ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2090">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+			</li>
+		</ul>
+
+				</div>
+			</div>
+		</div>
+	
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+					<div class="zen-module-title">
+						<h3><span>kksou Weather</span><h3>
+					</h3></h3></div>
+							
+				<div class="zen-module-body">
+					<script type="text/javascript">
+var headID = document.getElementsByTagName("head")[0];
+var cssNode = document.createElement('link');
+cssNode.type = 'text/css';
+cssNode.rel = 'stylesheet';
+cssNode.href = 'https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather.css';
+cssNode.media = 'screen';
+headID.appendChild(cssNode);
+</script><script type="text/javascript">
+//var mod_id = "301";
+var gw_lib_url301="https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather_lib.php";
+var gw_progress_gif301="https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather_progress.gif";
+var joomla_root301='|_%$var|_%$www|_%$kksou.com|_%$public_html|_%$php-gtk2';
+var label_city301="City";
+var popup_city301="Please enter zip code, state (in US) or city name, country (for other countries)";
+var popup_deg_F301="Click here to convert to degree F";
+var popup_deg_C301="Click here to convert to degree C";
+var size_city301="20";
+var hide_input301="0";
+var lang301="en";
+var googleweather_unit301="US";
+var default_location301="San Francisco, CA";
+var googleweather_use_curl301="1";
+var request_interval301="3";
+var hide_humidity301="0";
+var hide_wind301="0";
+var hide_forecast301="0";
+var focus_on_city301="0";
+var api_key301="90d34681236de382";
+var default_country301="";
+var label_humidity301="Humidity: ";
+var refresh_time301="60";
+var admin_mode301="0";
+var joomla_ver301="3.0";
+</script><script type="text/javascript" src="../modules/mod_kksouweather/mod_kksouWeather_ajax.js"></script><div id="googleWeather_container301"><form action="index.php" method="get" id="WeatherForm301"><div class="googleWeather"><span class="input_label">City: </span><input name="gw_a" id="str_gw_a301" class="inputbox" maxlength="255" size="20" value="" title="">&nbsp;<span id="gw_loading301"></span><br><input type="hidden" name="a_org" id="str_gw_a_org301" class="inputbox" value=""><div align="left" style="padding-top:2px;"><p align="left" style="padding:0 0 0 0;margin:0 0 0 0"><a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Weather-AJAX-version.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p></div><input type="hidden" name="process" value="1"><input type="hidden" name="temp_unit" id="temp_unit301" value="US"><input type="hidden" name="option" value="com_content"><input type="hidden" name="task" value=""><input type="hidden" name="id" value="2073"><input type="hidden" name="sectionid" value=""><input type="hidden" name="catid" value="42"><input type="hidden" name="Itemid" value="429"></div></form></div><script type="text/javascript">
+
+if (window.jQuery) {
+jQuery(document).ready(function() {
+	gw_prepareForm('301');
+	gw_submitform('301', 1);
+});
+} else {
+	gw_prepareForm('301');
+	gw_submitform('301', 1);
+}
+
+</script>
+				</div>
+			</div>
+		</div>
+	
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					<p>It's not that difficult to learn <a href="http://www.greengeeks.com/website-transfer/" title="how to transfer a website" target="_blank">how to transfer a website</a>.</p>				</div>
+			</div>
+		</div>
+	
+				</div>
+							</div>
+		</div>
+	</div>
+	
+		
+</section>	    	
+	    		    	
+	    	
+	    	
+	    	
+			
+			
+			
+			
+<!-- FOOTER -->
+<footer id="footerwrap" class="wrap zen-footer stack-tablets stack-phones" role="contentinfo">
+  <section class="zen-copyright">
+    <div class="zen-container">
+      <div class="zen-row">
+        	<div class="zg-col zg-col-9">
+	          
+
+<ul id="zen-menu-119">
+<li class="item-382"><a href="../index.php.html?option=com_googlesearch_cse&amp;view=googlesearchs&amp;Itemid=382&amp;lang=en">
+				Google Search			</a>
+	</li><li class="item-447"><a href="http://logistics-innovations.org/">Logistics Innovations</a></li><li class="item-456"><a href="https://www.rpa-sg.org/">RPA</a></li><li class="item-455"><a href="../category/joomla-version-history/index.htm">
+				Joomla Version History			</a>
+	</li><li class="item-457"><a href="https://ask.rpa-sg.org/">RPA Community Forum</a></li></ul>
+
+<div class="custom">
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-700099-1', 'auto');
+  ga('send', 'pageview');
+
+</script></div>
+
+        	</div>
+        	<div class="zg-col zg-col-3">
+        		<div id="zen-copyright">
+        			
+        			        				Copyright © 2005-2015. kksou.com. All Rights Reserved         		</div>
+        	</div>
+      	</div>
+	</div>
+  </section>
+</footer>
+<!-- //FOOTER -->			
+			
+
+
+			
+		</div>	
+	
+		
+
+	<div class="social-wrap fixed">
+
+		
+		
+
+		
+		
+<a id="social-twitter123" href="https://twitter.com/kksou" target="_blank">
+			<span class="zen-animate fadeInRightBig animated-faster fa fa-twitter zen-icon zen-icon-twitter"></span>
+	</a>
+
+	<script>
+		jQuery(document).ready(function ($) {
+			// Twitter Link Constructor
+			var twitter_link = $('#social-twitter').attr('href');
+
+			// Get title on page
+			// Made it broad for anumber of use cases but will retrieve h1 or h2 if not available
+			var title = $('#midCol h1:first').text();
+
+				if(typeof title ==="undefined") {
+					description = $('h2:first').text();
+				}
+
+			twitter_link += title;
+
+			$('#social-twitter').attr('href', twitter_link);
+		});
+	</script>
+
+		 	</div>
+	<script>
+		jQuery(document).ready(function ($) {
+
+			$('.popup').live( 'click', function(){
+				newwindow=window.open($(this).attr('href'),'','height=200,width=450');
+			    if (window.focus) {newwindow.focus()}
+			    return false;
+			 });
+		});
+	</script>
+		
+		
+<div class="sb-slidebar off-canvas-right sb-width-wide">
+	<div class="off-canvas-inner">
+		<div class="off-canvas-heading">
+			<span class="sb-close"><span class="zen-icon-remove zen-icon fa fa-icon-remove"></span></span>
+		</div>
+		<div class="off-canvas-body">
+			<div id="off-canvas-menu"><ul></ul></div>
+			
+		</div>
+	</div>
+</div>
+  
+ 
+ 
+<script>
+	
+	jQuery(document).ready(function($) {
+			
+			
+			
+				// Append nav if required
+				$('body').append_nav('787');	
+						
+				$(window).resize(function() {
+					$('body').append_nav('787');			
+				});
+			
+			 						
+				 		$('#off-canvas-menu').zenaccordion({
+				 		
+				 							 				 openfirst: true,
+				 				 				 				 selector: '.off-canvas-body',
+				 				 openicon: 'plus',
+				 				 closeicon: 'minus',
+				 				 type:"panel"
+				 		});
+			 			
+			 				
+			 
+			
+			
+			
+			$.slidebars();
+		});
+
+</script>
+ 		
+				
+		
+	<script>
+		jQuery(document).ready(function($){
+			$("img").not(".none").lazyload({
+				effect : "fadeIn"
+		});
+	});
+	</script>
+
+
+
+
+
+<div id="toTop" class="hidden-phone"><a id="toTopLink"><span class="fa fa-icon-arrow-up zen-icon zen-icon-arrow-up"></span><span id="toTopText"> Back to top</span></a></div>
+<script>
+	jQuery(document).ready(function($){
+			
+			$(window).scroll(function () {
+			
+				if ($(this).scrollTop() >200) {
+				 	$("#toTop").fadeIn();
+				}
+				else {
+				 	$("#toTop").fadeOut();
+				}
+			});
+		
+			$("#toTop").click(function() {
+				$("html, body").animate({ scrollTop: 0 }, "slow");
+				 return false;
+			});
+	});
+</script>
+
+
+
+
+
+<script>
+jQuery(document).ready(function($){
+	
+	
+	$('.sidebar').zenaccordion({
+	
+		  		 openfirst: true,
+  		   		 type:"panel"
+ 	});
+ 	
+
+});
+</script>
+
+
+
+
+
+
+
+<script>
+jQuery(document).ready(function($){
+	
+	var win      = $(window),
+	    fxel     = $('#navwrap'),
+	    fill     = $('#sticky-fill'),
+	    navheight = $('#menu').height(),
+	    eloffset = fxel.offset().top;
+	 
+	    $(fill).height(navheight);
+
+	win.scroll(function() {
+	    if (eloffset < win.scrollTop()) {
+	        fxel.addClass("fixed");
+	        $('html').addClass("fixed");
+	        $(fill).addClass('visible').removeClass('hidden');
+	    } else {
+	        fxel.removeClass("fixed");
+	        $('html').removeClass("fixed");
+	        $(fill).removeClass('visible').addClass('hidden');
+	    }
+	});
+});
+</script>
+
+
+
+
+
+	<script>
+	 new WOW().init();
+	</script>
+
+
+
+
+<!-- Fonts -->
+
+		
+			
+	</body>
+<!-- Copied from https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php by Cyotek WebCopy 1.7.0.600, 14 Tháng Sáu 2019, 04:23:30 -->
+</html>

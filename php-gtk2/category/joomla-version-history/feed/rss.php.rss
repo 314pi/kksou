@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Joomla Version History</title>
+		<description><![CDATA[The Joy of Sharing and Learning Together]]></description>
+		<link>https://kksou.com/php-gtk2/category/joomla-version-history/</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:16:10 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="https://kksou.com/php-gtk2/category/joomla-version-history/feed/rss.php"/>
+		<language>en-gb</language>
+		<managingEditor>admin@kksou.com (kksou)</managingEditor>
+		<item>
+			<title>googleDirections - To Here plugin - Version History</title>
+			<link>https://kksou.com/php-gtk2/joomla-version-history/googledirections-to-here-plugin-version-history.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/joomla-version-history/googledirections-to-here-plugin-version-history.php</guid>
+			<description><![CDATA[<h3>Latest Version</h3>
+<p>You can download the latest version of the googleDirections here: <a href="https://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php#download">googleDirections_tohere_v3.0.11.zip</a></p>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Version History</category>
+			<pubDate>Fri, 14 Jul 2017 13:28:18 +0000</pubDate>
+		</item>
+		<item>
+			<title>googleDirections plugin - Version History</title>
+			<link>https://kksou.com/php-gtk2/joomla-version-history/googledirections-plugin-version-history.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/joomla-version-history/googledirections-plugin-version-history.php</guid>
+			<description><![CDATA[<h3>Latest Version</h3>
+<p>You can download the latest version of the googleDirections here: <a href="https://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#download">googleDirections_v3.0.19.zip</a></p>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Version History</category>
+			<pubDate>Sat, 08 Jul 2017 09:18:42 +0000</pubDate>
+		</item>
+		<item>
+			<title> googleMaps plugin - Version History</title>
+			<link>https://kksou.com/php-gtk2/joomla-version-history/googlemaps-plugin-version-history.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/joomla-version-history/googlemaps-plugin-version-history.php</guid>
+			<description><![CDATA[<h3>Latest Version</h3>
+<p>You can download the latest version of the googleMaps here: <a href="https://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php#download">googleMaps_v3.0.28.zip</a></p>
+
+]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Version History</category>
+			<pubDate>Sat, 08 Jul 2017 09:18:16 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Home</title>
+		<description><![CDATA[The Joy of Sharing and Learning Together]]></description>
+		<link>https://kksou.com/php-gtk2/category/About-Us/Meet-the-team/</link>
+		<lastBuildDate>Fri, 14 Jun 2019 08:36:21 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="https://kksou.com/php-gtk2/category/About-Us/Meet-the-team/feed/rss.php"/>
+		<language>en-gb</language>
+		<managingEditor>admin@kksou.com (kksou)</managingEditor>
+		<item>
+			<title>Walter Brown</title>
+			<link>https://kksou.com/php-gtk2/Meet-the-team/walter-brown.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Meet-the-team/walter-brown.php</guid>
+			<description><![CDATA[<p><img src="https://kksou.com/php-gtk2/images/democontent/imfree/8587724648_24926df337_b.jpg" /></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia sem sed sem lobortis viverra.</p>
+]]></description>
+			<author>admin@yuchenkuang.com (Super User)</author>
+			<category>Meet the team</category>
+			<pubDate>Thu, 20 Dec 2012 16:40:36 +0000</pubDate>
+		</item>
+		<item>
+			<title>Thomas Ewing</title>
+			<link>https://kksou.com/php-gtk2/Meet-the-team/thomas-ewing.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Meet-the-team/thomas-ewing.php</guid>
+			<description><![CDATA[<p><img src="https://kksou.com/php-gtk2/images/democontent/imfree/8282489023_95bb196caa_b.jpg" /></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia sem sed sem lobortis viverra.</p>
+]]></description>
+			<author>admin@yuchenkuang.com (Super User)</author>
+			<category>Meet the team</category>
+			<pubDate>Thu, 20 Dec 2012 16:40:27 +0000</pubDate>
+		</item>
+		<item>
+			<title>Samantha Cook</title>
+			<link>https://kksou.com/php-gtk2/Meet-the-team/samantha-cook.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Meet-the-team/samantha-cook.php</guid>
+			<description><![CDATA[<p><img src="https://kksou.com/php-gtk2/images/democontent/imfree/8097356048_d8b1e70afe_b.jpg" /></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia sem sed sem lobortis viverra.</p>
+]]></description>
+			<author>admin@yuchenkuang.com (Super User)</author>
+			<category>Meet the team</category>
+			<pubDate>Thu, 20 Dec 2012 16:40:07 +0000</pubDate>
+		</item>
+		<item>
+			<title>Patrick Johnson</title>
+			<link>https://kksou.com/php-gtk2/Meet-the-team/patrick-johnson.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Meet-the-team/patrick-johnson.php</guid>
+			<description><![CDATA[<p><img src="https://kksou.com/php-gtk2/images/democontent/imfree/6738710915_a72064f7d8_b.jpg" /></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia sem sed sem lobortis viverra.</p>
+]]></description>
+			<author>admin@yuchenkuang.com (Super User)</author>
+			<category>Meet the team</category>
+			<pubDate>Thu, 20 Dec 2012 16:39:35 +0000</pubDate>
+		</item>
+		<item>
+			<title>Julie Sanders</title>
+			<link>https://kksou.com/php-gtk2/Meet-the-team/julie-sanders.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Meet-the-team/julie-sanders.php</guid>
+			<description><![CDATA[<p><img src="https://kksou.com/php-gtk2/images/democontent/imfree/9526431261_e7ea5d6acd_b.jpg" /></p><p>Integer elit lectus, porttitor eget aliquet ut, rhoncus sed dui. Sed sollicitudin ligula a nisi volutpat pretium. Quisque vitae nibh dolor, eu molestie tortor. Integer lobortis orci sit amet felis euismod semper. Etiam consectetur sem sagittis enim bibendum blandit.</p>
+]]></description>
+			<author>admin@yuchenkuang.com (Super User)</author>
+			<category>Meet the team</category>
+			<pubDate>Thu, 20 Dec 2012 16:39:16 +0000</pubDate>
+		</item>
+		<item>
+			<title>Carol Smith</title>
+			<link>https://kksou.com/php-gtk2/Meet-the-team/carol-smith.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Meet-the-team/carol-smith.php</guid>
+			<description><![CDATA[<p><img src="https://kksou.com/php-gtk2/images/democontent/imfree/5594281402_5dec82d035_b.jpg" /></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia sem sed sem lobortis viverra.</p>
+]]></description>
+			<author>admin@yuchenkuang.com (Super User)</author>
+			<category>Meet the team</category>
+			<pubDate>Thu, 20 Dec 2012 16:38:59 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

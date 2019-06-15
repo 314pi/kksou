@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>kksou</title>
+		<description><![CDATA[The Joy of Sharing and Learning Together]]></description>
+		<link>https://kksou.com/php-gtk2/tag/5.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 08:54:46 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="https://kksou.com/php-gtk2/tag/5-voluptate.php?format=feed&amp;lang=en&amp;type=rss"/>
+		<language>en-gb</language>
+		<managingEditor>admin@kksou.com (kksou)</managingEditor>
+		<item>
+			<title>About The Company</title>
+			<link>https://kksou.com/php-gtk2/About-the-company/about-the-company.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/About-the-company/about-the-company.php</guid>
+			<description><![CDATA[<p>Pharetra eu eget nibh. Aliquam a quam ipsum. Ut viverra ultricies urna sit amet bibendum. In sapien turpis, mattis ut sagittis a, interdum id felis. Suspendisse potenti. Fusce scelerisque laoreet leo a porttitor. Cras condimentum facilisis dignissim. Nullam quam felis, varius non dictum ornare, volutpat sed est.</p>
+<p>{zen-quote}Nulla in elit dolor. Quisque ullamcorper, nisi ac pharetra dictum, orci leo porttitor orci, at vehicula leo magna vel orci. Praesent sit amet quam tellus. Nullam ut dictum massa. Ut pulvinar sollicitudin eros. Duis vehicula.{/zen-quote}</p>
+<p>{zen-author}A Happy Customer{/zen-author}</p>
+]]></description>
+			<category>About The Company</category>
+			<pubDate>Thu, 20 Dec 2012 16:38:41 +0000</pubDate>
+		</item>
+		<item>
+			<title>Class aptent taciti </title>
+			<link>https://kksou.com/php-gtk2/Services/class-aptent-taciti.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Services/class-aptent-taciti.php</guid>
+			<description><![CDATA[<p>Cras nec lorem eget ligula varius aliquet at et mi. Fusce id quam in justo suscipit porta. Fusce non nisl nunc, id vestibulum augue. Donec interdum sapien vitae sem condimentum vel adipiscing leo consequat. In quis nisi sed velit lobortis congue in vulputate risus. Aliquam molestie, risus sed congue ullamcorper, mauris lacus volutpat mauris, nec luctus est risus in libero.</p>
+]]></description>
+			<category>Class aptent taciti </category>
+			<pubDate>Thu, 20 Dec 2012 16:24:20 +0000</pubDate>
+		</item>
+		<item>
+			<title>Edison</title>
+			<link>https://kksou.com/php-gtk2/Quotes/edison.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Quotes/edison.php</guid>
+			<description><![CDATA[<p>{jb_quote} Many of life's failures are people who did not realize how close they were to success when they gave up. {/jb_quote} {jb_author}Henry David Thoreau{/jb_author}</p>]]></description>
+			<category>Edison</category>
+			<pubDate>Thu, 20 Dec 2012 16:45:35 +0000</pubDate>
+		</item>
+		<item>
+			<title>Julie Sanders</title>
+			<link>https://kksou.com/php-gtk2/Meet-the-team/julie-sanders.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Meet-the-team/julie-sanders.php</guid>
+			<description><![CDATA[<p>Integer elit lectus, porttitor eget aliquet ut, rhoncus sed dui. Sed sollicitudin ligula a nisi volutpat pretium. Quisque vitae nibh dolor, eu molestie tortor. Integer lobortis orci sit amet felis euismod semper. Etiam consectetur sem sagittis enim bibendum blandit.</p>
+]]></description>
+			<category>Julie Sanders</category>
+			<pubDate>Thu, 20 Dec 2012 16:39:16 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

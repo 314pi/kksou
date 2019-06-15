@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>googleDirections plugin Tutorial 03: Travel Modes</title>
+		<description>Discuss googleDirections plugin Tutorial 03: Travel Modes</description>
+		<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-plugin-Tutorial-03-Travel-Modes.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:00:16 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2049.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-plugin-Tutorial-03-Travel-Modes.php#comment-1966</link>
+			<description><![CDATA[Hi Athena, As long as it's supported by the Google Maps API, you can do it. You actually have the complete source code in the Joomla - plugins - content directory. Once you have found out which API to use, you can then add in the code to the source code. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 06 Mar 2018 02:54:51 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-plugin-Tutorial-03-Travel-Modes.php#comment-1966</guid>
+		</item>
+		<item>
+			<title>Athena Maliora says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-plugin-Tutorial-03-Travel-Modes.php#comment-1964</link>
+			<description><![CDATA[Hello! Great plugin! s there any way to hide the travel mode drop down?]]></description>
+			<dc:creator>Athena Maliora</dc:creator>
+			<pubDate>Wed, 28 Feb 2018 13:08:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-plugin-Tutorial-03-Travel-Modes.php#comment-1964</guid>
+		</item>
+		<item>
+			<title>Lacho says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-plugin-Tutorial-03-Travel-Modes.php#comment-703</link>
+			<description><![CDATA[Hello, In my country the "By bus" travel mode is not available and it seems that it will take years before the transportation companies arrange something with google to add it. The reason why I am writing is because I want to ask you if there is a way of adding the routes by myself and use your extension to show directions with the "Custom Route" (regarding buses routes of my city). If it is possible could you tell how to make it possible, maybe a specific manual of "how to" using your app or an app customization applies. I know that this is not exactly what you offer with this extension, but I'm sure you have the expertise to do that and since the app accepts Google API v3 it should be possible. I'm open to receive a quotation and evaluate if I can afford it or donate (of course I'm an individual, not big money in the pocket, just wanting to make something good for my city). Thank you!]]></description>
+			<dc:creator>Lacho</dc:creator>
+			<pubDate>Tue, 30 Oct 2012 16:26:40 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-plugin-Tutorial-03-Travel-Modes.php#comment-703</guid>
+		</item>
+	</channel>
+</rss>

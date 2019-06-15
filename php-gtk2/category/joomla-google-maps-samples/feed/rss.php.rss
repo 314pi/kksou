@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Home</title>
+		<description><![CDATA[The Joy of Sharing and Learning Together]]></description>
+		<link>https://kksou.com/php-gtk2/category/joomla-google-maps-samples/</link>
+		<lastBuildDate>Fri, 14 Jun 2019 08:31:21 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="https://kksou.com/php-gtk2/category/joomla-google-maps-samples/feed/rss.php"/>
+		<language>en-gb</language>
+		<managingEditor>admin@kksou.com (kksou)</managingEditor>
+		<item>
+			<title>test of googleDirections 130403</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Google-Maps-Samples/test-of-googleDirections-130403.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Google-Maps-Samples/test-of-googleDirections-130403.php</guid>
+			<description><![CDATA[test of googleDirections 130403
+<br clear=all>
+
+<p><b>id=59</b></p>
+<pre>&#123;googleDir width=657 height=400 dir_on_right=1 from="Catania" to="Catania CT" stopover="94015 Piazza Armerina EN (nostop); Selinunte (nostop); Palermo (nostop); Tindari (nostop); Mount Etna&nbsp;(nostop); Taormina(nostop)" hide_direction_text=1 maptype=G_TERRAIN&#125;</pre>
+
+{googleDir width=657 height=400 dir_on_right=1 from="Catania" to="Catania CT" stopover="94015 Piazza Armerina EN (nostop); Selinunte (nostop); Palermo (nostop); Tindari (nostop); Mount Etna&nbsp;(nostop); Taormina(nostop)" hide_direction_text=1 maptype=G_TERRAIN}]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Google Maps Samples</category>
+			<pubDate>Fri, 05 Apr 2013 14:38:52 +0000</pubDate>
+		</item>
+		<item>
+			<title>test of Drop Down Menu Apple style 130316</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Google-Maps-Samples/test-of-Drop-Down-Menu-Apple-style-130316.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Google-Maps-Samples/test-of-Drop-Down-Menu-Apple-style-130316.php</guid>
+			<description><![CDATA[<p>this is test of Drop Down Menu Apple style 130316</p>
+<br clear=all>
+
+{DropDown_Menu_Apple_style}
+<a href="https://kksou.com/php-gtk2/test1.html">Test1</a>
++ <a href="https://kksou.com/php-gtk2/#">Item 1a</a>
++ <a href="https://kksou.com/php-gtk2/#">Item 2a</a>
++ <a href="https://kksou.com/php-gtk2/#">Item Folder 3a</a>
+++ <a href="https://kksou.com/php-gtk2/#">Sub Item 3.1a</a>
+++ <a href="https://kksou.com/php-gtk2/#">Sub Item 3.2a</a>
+++ <a href="https://kksou.com/php-gtk2/#">Sub Item 3.3a</a>
+++ <a href="https://kksou.com/php-gtk2/#">Sub Item 3.4a</a>
++ <a href="https://kksou.com/php-gtk2/#">Item 4a</a>
++ <a href="https://kksou.com/php-gtk2/#">Item Folder 5a</a>
+++ <a href="https://kksou.com/php-gtk2/#">Sub Item 5.1a</a>
+++ <a href="https://kksou.com/php-gtk2/#">Item Folder 5.2a</a>
++++ <a href="https://kksou.com/php-gtk2/#">Sub Item 5.2.1a</a>
++++ <a href="https://kksou.com/php-gtk2/#">Sub Item 5.2.2a</a>
++++ <a href="https://kksou.com/php-gtk2/#">Sub Item 5.2.3a</a>
++++ <a href="https://kksou.com/php-gtk2/#">Sub Item 5.2.4a</a>
++ <a href="https://kksou.com/php-gtk2/#">Item 6a</a>
+
+<a href="https://kksou.com/php-gtk2/test2.html">Test2</a>
++ <a href="https://kksou.com/php-gtk2/#">Item 1b</a>
++ <a href="https://kksou.com/php-gtk2/#">Item 2b</a>
++ <a href="https://kksou.com/php-gtk2/#">Item Folder 3b</a>
+++ <a href="https://kksou.com/php-gtk2/#">Sub Item 3.1b</a>
+++ <a href="https://kksou.com/php-gtk2/#">Sub Item 3.2b</a>
+++ <a href="https://kksou.com/php-gtk2/#">Sub Item 3.3b</a>
+++ <a href="https://kksou.com/php-gtk2/#">Sub Item 3.4b</a>
++ <a href="https://kksou.com/php-gtk2/#">Item 4b</a>
++ <a href="https://kksou.com/php-gtk2/#">Item Folder 5b</a>
+++ <a href="https://kksou.com/php-gtk2/#">Sub Item 5.1b</a>
+++ <a href="https://kksou.com/php-gtk2/#">Item Folder 5.2b</a>
++++ <a href="https://kksou.com/php-gtk2/#">Sub Item 5.2.1b</a>
++++ <a href="https://kksou.com/php-gtk2/#">Sub Item 5.2.2b</a>
++++ <a href="https://kksou.com/php-gtk2/#">Sub Item 5.2.3b</a>
++ <a href="https://kksou.com/php-gtk2/#">Item 6b</a>
+
+<a href="https://kksou.com/php-gtk2/test3.html">Test3</a>
+
+<a href="http://www.kksou.com">Test4</a>
++ <a href="https://kksou.com/php-gtk2/test31.html">test4.1</a>
++ <a href="https://kksou.com/php-gtk2/test32.html">test4.2</a>
++ <a href="https://kksou.com/php-gtk2/test33.html">test4.3</a>
+{/DropDown_Menu_Apple_style}
+
+]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Google Maps Samples</category>
+			<pubDate>Tue, 19 Mar 2013 13:45:06 +0000</pubDate>
+		</item>
+		<item>
+			<title>googleMaps with search bar and Overview Map Control hidden</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Google-Maps-Samples/googleMaps-with-search-bar-and-Overview-Map-Control-hidden.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Google-Maps-Samples/googleMaps-with-search-bar-and-Overview-Map-Control-hidden.php</guid>
+			<description><![CDATA[<p>This article shows how to hide the search bar and overview map control in googleMaps.</p>
+<br clear=all>
+<h3>Google Search Bar and Overview Map Control hidden</h3>
+<p>Tag used:</p>
+<code>
+&#123;googlemaps lat=42.3466734 long=-71.0988844 width=600 height=480 zoom=15 <br />
+<b style="background:#ffff00">addgoogle=0</b> <b style="background:#ffff00">addoverview=0</b> label="4 Yawkey Way~Boston, MA 02215" <br />
+control=GLargeMapControl3D|GMapTypeControl|GScaleControl&#125;
+</code>
+<p></p>
+<p>{googlemaps lat=42.3466734 long=-71.0988844 width=600 height=480 zoom=15 
+addgoogle=0 addoverview=0 label="4 Yawkey Way~Boston, MA 02215" control=GLargeMapControl3D|GMapTypeControl|GScaleControl}</p>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Google Maps Samples</category>
+			<pubDate>Tue, 08 Sep 2009 16:01:35 +0000</pubDate>
+		</item>
+		<item>
+			<title>googleMaps with Overview Map Control hidden</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Google-Maps-Samples/googleMaps-with-Overview-Map-Control-hidden.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Google-Maps-Samples/googleMaps-with-Overview-Map-Control-hidden.php</guid>
+			<description><![CDATA[<h3>Overview Map Control hidden</h3>
+<p>This article shows how to hide the overview map control in googleMaps.</p>
+<br clear=all>
+<p>Tag used:</p>
+<code>
+&#123;googlemaps lat=42.3466734 long=-71.0988844 width=600 height=480 zoom=15 <b style="background:#ffff00">addoverview=0</b><br />
+label="4 Yawkey Way~Boston, MA 02215" <br />
+control=GLargeMapControl3D|GMapTypeControl|GScaleControl&#125;
+</code>
+<p></p>
+<p>{googlemaps lat=42.3466734 long=-71.0988844 width=600 height=480 zoom=15 addoverview=0
+label="4 Yawkey Way~Boston, MA 02215" control=GLargeMapControl3D|GMapTypeControl|GScaleControl}</p>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Google Maps Samples</category>
+			<pubDate>Tue, 08 Sep 2009 15:54:49 +0000</pubDate>
+		</item>
+		<item>
+			<title>googleMaps with search bar hidden</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Google-Maps-Samples/googleMaps-with-search-bar-hidden.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Google-Maps-Samples/googleMaps-with-search-bar-hidden.php</guid>
+			<description><![CDATA[<p>This article shows how to hide the google search bar in googleMaps.</p>
+<br clear=all>
+<h3>Google Search Bar Hidden</h3>
+<p>Tag used:</p>
+<code>
+&#123;googlemaps lat=42.3466734 long=-71.0988844 width=600 height=480 zoom=15 <b style="background:#ffff00">addgoogle=0</b><br />
+label="4 Yawkey Way~Boston, MA 02215" <br />
+control=GLargeMapControl3D|GMapTypeControl|GOverviewMapControl|GScaleControl&#125;
+</code>
+<p></p>
+<p>{googlemaps lat=42.3466734 long=-71.0988844 width=600 height=480 zoom=15 addgoogle=0
+label="4 Yawkey Way~Boston, MA 02215" control=GLargeMapControl3D|GMapTypeControl|GOverviewMapControl|GScaleControl}</p>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Google Maps Samples</category>
+			<pubDate>Tue, 08 Sep 2009 15:51:39 +0000</pubDate>
+		</item>
+		<item>
+			<title>How to place numbered markers in Google Maps using KML file?</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Google-Maps-Samples/How-to-place-numbered-markers-in-Google-Maps-using-KML-file.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Google-Maps-Samples/How-to-place-numbered-markers-in-Google-Maps-using-KML-file.php</guid>
+			<description><![CDATA[<p>This article shows you how to place numbered markers on Google Maps with the use of KML file.</p>
+
+<p>The demo below is similar to that of: <a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Samples/Use-KML-file-to-place-multiple-markers-on-Google-Maps.php">Use KML file to place multiple markers on Google Maps</a>.</p>
+
+<p>The only difference is that the markers are displayed in as numbered markers.</p>
+
+<br clear=all>
+<a id="demo">
+<h3>Demo</h3></a>
+
+<p>The following map is produced with the tag:</p>
+<pre>&#123;googleMaps lat=37.4219720 long=-122.0841430 zoom=12 width=100% height=480
+kml=http://www.kksou.com/gmap/test/kml_sample3.kml&#125;</pre>
+
+<p>You can download a copy of the KML file here: <a href="http://www.kksou.com/gmap/test/kml_sample1.kml">http://www.kksou.com/gmap/test/kml_sample3.kml</a><br>
+(right click on the link and choose Save As...)</p>
+
+{googleMaps lat=37.4219720 long=-122.0841430 zoom=12 width=100% height=480 kml=http://www.kksou.com/gmap/test/kml_sample3.kml}]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Google Maps Samples</category>
+			<pubDate>Fri, 15 May 2009 17:24:25 +0000</pubDate>
+		</item>
+		<item>
+			<title>How to display multiple markers in different colors in Google Maps using KML file?</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Google-Maps-Samples/How-to-display-multiple-markers-in-different-colors-in-Google-Maps-using-KML-file.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Google-Maps-Samples/How-to-display-multiple-markers-in-different-colors-in-Google-Maps-using-KML-file.php</guid>
+			<description><![CDATA[<p>This article shows you how to place multiple markers in different colors on Google Maps with the use of KML file.</p>
+
+<p>The demo below is similar to that of: <a href="http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Samples/Use-KML-file-to-place-multiple-markers-on-Google-Maps.php">Use KML file to place multiple markers on Google Maps</a>.</p>
+
+<p>The only difference is that the markers are displayed in different colors.</p>
+
+<br clear=all>
+<a id="demo">
+<h3>Demo</h3></a>
+
+<p>The following map is produced with the tag:</p>
+<pre>&#123;googleMaps lat=37.4219720 long=-122.0841430 zoom=12 width=100% height=480
+kml=http://www.kksou.com/gmap/test/kml_sample2.kml&#125;</pre>
+
+<p>You can download a copy of the KML file here: <a href="http://www.kksou.com/gmap/test/kml_sample1.kml">http://www.kksou.com/gmap/test/kml_sample1.kml</a><br>
+(right click on the link and choose Save As...)</p>
+
+{googleMaps lat=37.4219720 long=-122.0841430 zoom=12 width=100% height=480 kml=http://www.kksou.com/gmap/test/kml_sample2.kml?t101}]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Google Maps Samples</category>
+			<pubDate>Fri, 15 May 2009 16:59:31 +0000</pubDate>
+		</item>
+		<item>
+			<title>How to display multiple markers in Google Maps using KML file?</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Google-Maps-Samples/How-to-display-multiple-markers-in-Google-Maps-using-KML-file.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/Joomla-Google-Maps-Samples/How-to-display-multiple-markers-in-Google-Maps-using-KML-file.php</guid>
+			<description><![CDATA[<p>By default, the <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps plugin</a> allows you to place only one marker on the map.</p>
+
+<p>If you wish to place multiple markers on a googleMap, you can easily do so with the help of a KML (Keyhole Markup Language) file.</p>
+
+<p>In this article, I'll show you how easy it is to set up a KML file to place multiple markers on Google Maps.</p>
+
+<p>First, let us take a look at a real sample.</p>
+
+<br clear=all>
+<a id="demo">
+<h3>Demo</h3></a>
+
+<p>The following map is produced with the tag:</p>
+<pre>&#123;googleMaps lat=37.4219720 long=-122.0841430 zoom=12 width=100% height=480
+kml=http://www.kksou.com/gmap/samples/kml_sample1.kml&#125;</pre>
+
+<p>You can download a copy of the KML file here: <a href="http://www.kksou.com/gmap/samples/kml_sample1.kml">http://www.kksou.com/gmap/samples/kml_sample1.kml</a><br>
+(right click on the link and choose Save As...)</p>
+
+{googleMaps lat=37.4219720 long=-122.0841430 zoom=12 width=100% height=480 kml=http://www.kksou.com/gmap/samples/kml_sample1.kml}
+
+<h3>The Structure of a KML File</h3>
+<p>A sample KML file with only one marker looks like below:</p>
+<pre>
+&lt;kml xmlns="http://www.google.com/earth/kml/2"&gt;
+&lt;Placemark&gt;
+  &lt;name&gt;Google Inc.&lt;/name&gt;
+  &lt;description&gt;1600 Amphitheatre Parkway, Mountain View, CA 94043&lt;/description&gt;
+  &lt;Point&gt;
+    &lt;coordinates&gt;-122.0841430, 37.4219720, 0&lt;/coordinates&gt;
+  &lt;/Point&gt;
+&lt;/Placemark&gt;
+&lt;/kml&gt;
+</pre>
+
+]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>Joomla Google Maps Samples</category>
+			<pubDate>Fri, 15 May 2009 15:27:57 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>googleDirections - To Here - plugin Tutorial 02: Adding Label to Home Address</title>
+		<description>Discuss googleDirections - To Here - plugin Tutorial 02: Adding Label to Home Address</description>
+		<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-02-Adding-Label-to-Home-Address.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:58:27 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2074.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>tm_1605 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-02-Adding-Label-to-Home-Address.php#comment-729</link>
+			<description><![CDATA[is there any possibility to integrate a print-button?]]></description>
+			<dc:creator>tm_1605</dc:creator>
+			<pubDate>Fri, 16 Nov 2012 01:43:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-02-Adding-Label-to-Home-Address.php#comment-729</guid>
+		</item>
+		<item>
+			<title>herrycandi says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-02-Adding-Label-to-Home-Address.php#comment-524</link>
+			<description><![CDATA[Thank you, very nice plagin.]]></description>
+			<dc:creator>herrycandi</dc:creator>
+			<pubDate>Fri, 03 Aug 2012 01:15:43 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-02-Adding-Label-to-Home-Address.php#comment-524</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-02-Adding-Label-to-Home-Address.php#comment-494</link>
+			<description><![CDATA[Hi, 1) Can show some sample pages so that I can do a view source? 2) What are the tags that you've used to produce the result? You need to help us to help you. So please provide a bit more information so that we have more clues. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 20 Jul 2012 01:42:14 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-02-Adding-Label-to-Home-Address.php#comment-494</guid>
+		</item>
+		<item>
+			<title>G.v.d.Tuuk says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-02-Adding-Label-to-Home-Address.php#comment-492</link>
+			<description><![CDATA[Please help, some of my dir_width's are exactly the size I want them. And some of them just go their own way.]]></description>
+			<dc:creator>G.v.d.Tuuk</dc:creator>
+			<pubDate>Thu, 19 Jul 2012 15:51:41 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleDirections-To-Here-plugin-Tutorial-02-Adding-Label-to-Home-Address.php#comment-492</guid>
+		</item>
+	</channel>
+</rss>

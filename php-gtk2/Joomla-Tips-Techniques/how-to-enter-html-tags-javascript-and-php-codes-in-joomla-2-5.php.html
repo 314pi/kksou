@@ -1,0 +1,2701 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr" class="com_content view-article itemid-429 j39 responsive-enabled offcanvas-menu">
+<!-- Copied from https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php by Cyotek WebCopy 1.7.0.600, 14 Tháng Sáu 2019, 04:23:30 -->
+<head>
+<link href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html" rel="canonical">
+
+		
+
+			<meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=yes">
+		<meta name="HandheldFriendly" content="true">
+	<meta name="apple-mobile-web-app-capable" content="YES">
+	<base href="https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="enter PHP codes, DirectPHP, joomla, javascript, HTML tags">
+	<meta name="author" content="kksou">
+	<meta name="description" content="&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The following applies to &lt;strong style=&quot;background: none repeat scroll 0% 0% #ffff00&quot;&gt;Joomla 2.5&lt;/strong&gt; and above only.&lt;/p&gt;  &lt;p&gt;By default, the Joomla editor strips away any HTML tags, javascript and PHP codes in a Joomla article.&lt;/p&gt; ">
+	<title>How to enter HTML tags, javascript and PHP codes in Joomla 2.5? | Joomla Tips &amp; Techniques</title>
+	<link href="../jcomments/rss/com_content/2058.php.xml" rel="alternate" type="application/rss+xml" title="How to enter HTML tags, javascript and PHP codes in Joomla 2.5?">
+	<link href="../templates/xero/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="../components/com_jcomments/tpl/default/style.css?v=3002" rel="stylesheet" type="text/css">
+	<link href="/templates/xero/css-compiled/master-11597c3e8d7d7a43ddef0800b7379988.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300:latin|Open+Sans:600:latin|Droid+Serif" rel="stylesheet" type="text/css">
+	<link href="../templates/xero/css/theme.flat.php.css" rel="stylesheet" type="text/css">
+	<link href="../templates/xero/css/custom.css" rel="stylesheet" type="text/css">
+	<link href="../media/mod_jcomments_latest/css/style.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+
+.article {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.article_desc {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	margin-bottom: 4px;
+}
+
+.article_views {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.infographic {
+   border:2px solid #aaaaaa;
+}
+
+tr.article_tr > td {
+   //padding-top: 2px;
+   padding-bottom: 6px;
+}
+
+
+	</style>
+	<script src="../components/com_jcomments/js/jcomments-v2.3.js?v=12" type="text/javascript"></script>
+	<script src="../components/com_jcomments/libraries/joomlatune/ajax.js?v=4" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-noconflict.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-migrate.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/bootstrap.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../templates/xero/js/template-66.php" type="text/javascript"></script>
+	<script type="text/javascript">
+
+		var j2storeURL = 'https://kksou.com/php-gtk2/';
+		
+jQuery(document).ready(function(){
+
+	jQuery("a.linkstat").click(function(e) {
+		e.preventDefault(); // needed for safari 4.0.5
+
+		jQuery.post("/plugins/content/GetArticles/ajax-linkstat.php", {url: jQuery(this).attr('href'), id: jQuery(this).attr('id')}, function success(data) {
+			window.location = data; // needed for safari 4.0.5
+		});
+		return true;
+	});
+
+		jQuery("a.vote_up").click(function(){
+	//get the id
+	the_id = jQuery(this).attr('id');
+
+	// show the spinner
+	jQuery(this).parent().html("<img src='/plugins/content/GetArticles/images/spinner.gif' style='display:inline'/>");
+
+	//fadeout the vote-count
+	jQuery("span#votes_count"+the_id).fadeOut("fast");
+
+	//the main ajax request
+		jQuery.ajax({
+			type: "POST",
+			data: "action=vote_up&id="+jQuery(this).attr("id"),
+			url: "/plugins/content/GetArticles/votes.php",
+			success: function(msg){
+				jQuery("span#votes_count"+the_id).html(msg);
+				//fadein the vote count
+				jQuery("span#votes_count"+the_id).fadeIn();
+				//remove the spinner
+				jQuery("span#vote_buttons"+the_id).remove();
+			}
+		});
+	});
+
+});
+
+
+jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+	</script>
+
+			
+		
+<style type="text/css">
+			html > body {
+				font-family: 'Open Sans';
+				
+			}
+				h1, h2, h3, h4, h5, h6, blockquote {
+				font-family: 'Open Sans';
+			}
+		
+					#navwrap li a {
+					font-family: 'Open Sans';
+				}
+			
+					#logo h2 {
+					font-family: 'Droid Serif';
+				}
+		
+	</style>	</head>
+    <body>
+<!-- Facebook SDK -->
+<div id='fb-root'></div>
+<script type='text/javascript'>
+
+      // Load the SDK Asynchronously
+      (function(d){
+      var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+      js = d.createElement('script'); js.id = id; js.async = true;
+      js.src = '//connect.facebook.net/en_GB/all.js';
+      d.getElementsByTagName('head')[0].appendChild(js);
+    }(document));
+
+</script>
+<!-- End Facebook SDK -->
+
+		<!-- Required for Slidebar / Offcanvas implementation -->
+		<div id="zen-wrap">
+	
+	   			    	
+	    	<a id="home-link" name="home-link"></a>
+	  
+	    	
+	    	
+	    	
+	<section id="logowrap" class="clearfix stack-phones" role="banner">
+		<div class="zen-container">
+			<div class="zen-row">
+	<div class="zen-spotlight">
+	
+			
+						<div id="logo" class="zg-col zg-col-6">
+			
+							
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					
+
+<div class="custom">
+	<h2>kksou.com</h2>
+<p>Tutorials, Sample Codes and Tips & Techniques for developing<br>Joomla plugins, modules and components.</p>
+<p>Developer of <a href="http://www.kksou.com/php-gtk2/Joomla/DirectPHP-plugin.php">DirectPHP</a>, <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps</a> and <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php">googleSearch</a>.</p>
+<p>Yes, this is also <i>"The Place for PHP-GTK2 sample codes"</i>, since 2005.</p></div>
+				</div>
+			</div>
+		</div>
+	
+		
+						</div>
+		
+							
+						<div id="search" class="zg-col zg-col-6">
+			
+							
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					<!-- SiteSearch Google CSE --><form method="get" action="https://kksou.com/php-gtk2/index.php" id="mod_googleSearch_cse"><input type="hidden" name="option" value="com_googlesearch_cse"><input type="hidden" name="n" value="30"><input type="hidden" name="view" value="googlesearchs"><div class="search hidden-navcollapse"><input type="hidden" name="Itemid" value="382"><input type="hidden" name="cx" value="partner-pub-5032765168656743:ost4rr-en3s"><input type="hidden" name="cof" value="FORID:11"><input type="hidden" name="ie" value="ISO-8859-1"><input type="text" name="q" maxlength="255" value="" class="form-control hidden-navcollapse" size="20"><button class="button hidden-navcollapse btn btn-primary">Search</button></div></form><script type="text/javascript"><!--
+(function() {var f = document.getElementById('mod_googleSearch_cse');if (f && f.q) {var q = f.q;var b = function(){if (q.value == '') {q.style.color = '#AAAAAA';q.style.background = '#FFFFFF url(https://cse.google.com/coop/intl/en/images/google_custom_search_watermark.gif) left no-repeat';}};	var f = function() {q.style.color = '#000000';q.style.background = '#ffffff';};q.onfocus = f;q.onblur = b;b();}})();
+//-->
+</script>				</div>
+			</div>
+		</div>
+	
+		
+						</div>
+		
+						</div>
+</div>		</div>
+	</section>
+	    	
+	    	
+	<!-- NAVBAR HEADER -->
+	
+		<div id="sticky-fill" class="hidden"></div>
+		
+	<section id="navwrap" class="wrap ">
+		<div class="zen-container">
+			<div class="navbar-default zen-row">
+				<div class="zen-spotlight">
+						<div id="menu" class="zen-menu zen-menu-horizontal zen-menu-left zen-menu-fading">
+							<div class="navbar-header ">
+								<nav role="navigation">
+								<!-- NAVBAR MAIN -->
+																					
+													
+									
+
+<ul id="zen-menu-404">
+<li class="item-101"><a href="../index.htm">
+		<span class="fa fa-home zen-icon-home zen-icon"></span>		Home			</a>
+	</li><li class="item-425"><a href="../category/Sample-Codes/index.htm">
+				Sample Codes			</a>
+	</li><li class="item-426 active deeper parent"><a href="../category/Joomla/index.htm">
+				Joomla			</a>
+	<ul class="zen-menu-child cols-1"><li class="item-427"><a href="../category/Joomla-Gadgets/index.htm">
+				Joomla Gadgets			</a>
+	</li><li class="item-429 current active"><a href="../category/Joomla-Tips-Techniques/index.htm">
+				Joomla Tips &amp; Techniques			</a>
+	</li><li class="item-430"><a href="../category/Joomla-News/index.htm">
+				Joomla News 			</a>
+	</li><li class="item-431"><a href="../category/Joomla-FAQs/index.htm">
+				Joomla FAQs			</a>
+	</li><li class="item-432"><a href="../category/Joomla-Developer-FAQs/index.htm">
+				Joomla Developer FAQs			</a>
+	</li></ul></li><li class="item-433"><a href="../geocoder2.php.html">
+				Geocoder2			</a>
+	</li><li class="item-428"><a href="../Feedback.php.html">
+				Feedback			</a>
+	</li></ul> 			
+ 	
+																				
+									<!-- //NAVBAR MAIN -->
+																			<a class="btn off-canvas-trigger sb-toggle-right visible-desktop"><span class="zen-icon zen-icon-bars"></span></a>
+																	</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	    	
+	    	
+	    	
+	    	
+	    	
+	    		
+
+
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
+<!-- MAIN CONTENT -->
+<section id="mainWrap" class="clearfix mr ">
+	<a id="main-link" name="main-link"></a>
+		<section id="breadcrumbwrap" class="clearfix">
+		<div class="zen-container">
+			<div class="zen-row">
+				<div class="zen-spotlight">
+				
+					<!-- Banner-slogan -->
+					<div id="breadcrumb" class="zg-col zg-col-12">
+						  
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					
+<ul class="breadcrumb zen-reset-list ">
+
+	<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../index.htm" class="pathway" itemprop="url"><span itemprop="title">Home</span></a></li><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../category/Joomla/index.htm" class="pathway" itemprop="url"><span itemprop="title">Joomla</span></a></li><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../category/Joomla-Tips-Techniques/index.htm" class="pathway" itemprop="url"><span itemprop="title">Joomla Tips &amp; Techniques</span></a></li><li><span>How to enter HTML tags, javascript and PHP codes in Joomla 2.5?</span></li></ul>				</div>
+			</div>
+		</div>
+	
+					</div>
+					<!-- //breadcrumb -->
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	
+		
+	<div class="zen-container">
+		<div class="zen-row">
+			<div class="mainwrap zen-spotlight">
+				<div id="midCol" class="zg-col zg-col-9 ">
+					
+					 
+
+			
+
+		<main role="main">
+		
+
+<div class="item-page clearfix">
+
+
+<!-- Article -->
+<article itemscope="" itemtype="http://schema.org/Article">
+	<meta itemprop="inLanguage" content="en-GB">
+
+	<header class="article-header clearfix">
+		<h1 class="article-title" itemprop="name">
+			How to enter HTML tags, javascript and PHP codes in Joomla 2.5?				<meta itemprop="url" content="<br />
+<b>Notice</b>:  Undefined variable: url in <b>/var/www/kksou.com/public_html/php-gtk2/templates/xero/html/com_content/article/default.php</b> on line <b>51</b><br />
+<br />
+<b>Notice</b>:  Undefined variable: prefix in <b>/var/www/kksou.com/public_html/php-gtk2/templates/xero/html/com_content/article/default.php</b> on line <b>51</b><br />
+">
+		</h1>
+	
+							</header>
+	
+
+<!-- Aside -->
+<aside class="article-aside clearfix">
+    	<ul class="article-info  muted small flat-list">
+
+		
+			
+			
+						
+			
+					
+		
+										<li class="modified">
+			
+				<time datetime="2015-06-20T03:39:58+00:00" itemprop="dateModified">
+					Last Updated: 20 June 2015				</time>
+			</li>			
+										<li class="hits">
+				
+					<meta itemprop="interactionCount" content="UserPageVisits:300223">
+					Hits: 300223			</li>						</ul>
+    
+  </aside>  
+<!-- //Aside -->
+
+
+
+
+
+	
+
+	
+	
+	<section class="article-content" itemprop="articleBody">
+		<span class="info">The following works for Joomla 3.0 and above too.</span>
+
+<p>If you are using <a href="../joomla/directphp-plugin.php.html">DirectPHP</a>, you can use the following to enter PHP codes in your article:</p>  
+<ol>  
+<li>Login as administrator.</li><p></p>
+<li>Goto Global Configuration.</li><p></p> 
+<li>Click the tab &quot;Text Filters&quot; (first one from the right).</li><p></p> 
+<li>For all Filter Groups, the default is &quot;Black List&quot;. For the respective Filter Groups, change the <strong>Filter Type</strong> from &quot;Black List&quot; to <strong style="background: none repeat scroll 0% 0% #ffff00">&quot;No Filtering&quot;</strong>.</li><p>&nbsp;</p>  <li>For example, if you are only administrator, change the Filter Type of the <strong>Super Users</strong> to &quot;No Filtering&quot;. Leave all other remain as &quot;Black List&quot;.</li><p>&nbsp;</p> <li>Don&#39;t forget to click &quot;Save &amp; Close&quot;</li><p>&nbsp;</p> </ol>  <p>That&#39;s it! You should now be able to enter PHP codes in your Joomla article.</p>  <p><strong>Note:</strong> The above applies to <strong style="background: none repeat scroll 0% 0% #ffff00">Joomla 2.5</strong> and above only.</p> 	</section>
+
+  <!-- footer -->
+    <!-- //footer -->
+
+					
+			<ul class="pager pagenav">
+	<li class="previous">
+		<a class="hasTooltip" title="How to enter HTML tags, javascript and PHP codes in Joomla 1.6 and 1.7?" aria-label="Previous article: How to enter HTML tags, javascript and PHP codes in Joomla 1.6 and 1.7?" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-1-6-and-1-7.php.html" rel="prev">
+			<span class="icon-chevron-left" aria-hidden="true"></span> <span aria-hidden="true">Prev</span>		</a>
+	</li>
+	<li class="next">
+		<a class="hasTooltip" title="include googleMaps tutorials" aria-label="Next article: include googleMaps tutorials" href="include-googlemaps-tutorials.php.html" rel="next">
+			<span aria-hidden="true">Next</span> <span class="icon-chevron-right" aria-hidden="true"></span>		</a>
+	</li>
+</ul>
+	
+	
+	
+</article>
+<!-- //Article -->
+
+<div class="clearfix"></div>
+
+<script type="text/javascript">
+<!--
+var jcomments=new JComments(2058, 'com_content','/php-gtk2/jcomments/');
+jcomments.setList('comments-list');
+//-->
+</script>
+<div id="jc">
+<div id="comments"><h4>Comments <a class="rss" href="../jcomments/rss/com_content/2058.php.xml" title="RSS feed for comments to this post" target="_blank">&nbsp;</a><a class="refresh" href="#" title="Refresh comments list" onclick="jcomments.showPage(2058,'com_content',0);return false;">&nbsp;</a></h4>
+<div class="comments-list" id="comments-list-0">
+		<div class="even" id="comment-item-25">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-25">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(25, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(25, -1);return false;"></a>
+<span class="vote-good">+3</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-25" id="comment-25">#</a>
+<span class="comment-author">Phoebez</span>
+<span class="comment-date">2012-01-27 21:59</span>
+<div class="comment-body" id="comment-body-25">And don't forget to enable the plug in so you don't feel foolish for half an hour like I did.  <img src="../components/com_jcomments/images/smilies/redface.gif" alt=":oops:"> </div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(25); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(25,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(25); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-32">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-32">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(32, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(32, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-32" id="comment-32">#</a>
+<span class="comment-author">azerty989</span>
+<span class="comment-date">2012-02-02 16:53</span>
+<div class="comment-body" id="comment-body-32">Hey,<br><br>It does work for me, I have joomla 2.5.1, and did set up as above.<br>- plug in is published;<br>- text filters in global config sets up to "no filter";<br><br>after typing into the article:<br><br>the editor uses html comments like :<br><br>Is direct php working for 2.5.1 ? or I forgot to do something else?<br>Thank you</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(32); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(32,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(32); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-33">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-33">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(33, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(33, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-33" id="comment-33">#</a>
+<span class="comment-author">azerty989</span>
+<span class="comment-date">2012-02-02 16:54</span>
+<div class="comment-body" id="comment-body-33">Sorry all,<br><br>I forgot "NOT" in my previous comment.<br>It does NOT work for me with joomla 2.5.1.<br><br>Looking forward to hearing from you guys.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(33); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(33,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(33); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-34">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-34">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(34, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(34, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-34" id="comment-34">#</a>
+<span class="comment-author">azerty989</span>
+<span class="comment-date">2012-02-02 17:05</span>
+<div class="comment-body" id="comment-body-34">Never mind it seems to work now.<br>I figured out that you cannot type your code into the html source editor.<br>copy and paste the php code straight into the editor and it works.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(34); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(34,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(34); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-34">
+		<div class="even" id="comment-item-36">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-36">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(36, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(36, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-36" id="comment-36">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-02-02 17:11</span>
+<div class="comment-body" id="comment-body-36">Hi,<br><br>Yes, you should enter the code in the WYSIWYG editor. DO NOT click the "HTML" button and enter the code in the html source editor.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(36); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(36,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(36); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-44">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-44">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(44, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(44, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-44" id="comment-44">#</a>
+<span class="comment-author">Wooshtek</span>
+<span class="comment-date">2012-02-07 00:35</span>
+<div class="comment-body" id="comment-body-44">Can a it do PHP forms like e.g. registration form? If yes, can provide a sample code.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(44); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(44,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(44); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-44">
+		<div class="even" id="comment-item-45">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-45">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(45, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(45, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-45" id="comment-45">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-02-07 01:26</span>
+<div class="comment-body" id="comment-body-45">Hi,<br><br>Please refer to: How to display and process forms in a Joomla article using DirectPHP?<br><br><a href="http://www.kksou.com/php-gtk2/Joomla/How-to-display-and-process-forms-in-a-Joomla-article-using-DirectPHP.php" rel="external nofollow" target="_blank">www.kksou.com/php-gtk2/Joomla/How-to-display-and-process-forms-in-a-Joomla-article-using-DirectPHP.php</a><br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(45); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(45,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(45); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-74">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-74">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(74, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(74, -1);return false;"></a>
+<span class="vote-good">+1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-74" id="comment-74">#</a>
+<span class="comment-author">sunanda</span>
+<span class="comment-date">2012-02-22 22:16</span>
+<div class="comment-body" id="comment-body-74">after entering code into article where should we check the output of php file</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(74); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(74,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(74); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-74">
+		<div class="even" id="comment-item-75">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-75">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(75, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(75, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-75" id="comment-75">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-02-22 22:22</span>
+<div class="comment-body" id="comment-body-75">Hi,<br><br>I suppose you are referring to using DirectPHP.<br><br>This is a plugin. As name suggests, it's for use within a Joomla article.<br><br>So try entering<br>echo "test123";<br>in an article.<br><br>You should be able to see "test123" somewhere in your article.<br><br>Once you see that it works, you can slowly add more complicated PHP commands within your article.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(75); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(75,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(75); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-89">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-89">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(89, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(89, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-89" id="comment-89">#</a>
+<span class="comment-author">double-dee</span>
+<span class="comment-date">2012-02-27 19:01</span>
+<div class="comment-body" id="comment-body-89">I have to enter in the php open tag on every line. Is this the intended design or am have not configured the plugin fully.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(89); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(89,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(89); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-89">
+		<div class="even" id="comment-item-90">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-90">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(90, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(90, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-90" id="comment-90">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-02-27 19:04</span>
+<div class="comment-body" id="comment-body-90">Hi,<br><br>Have you tried using multi-lines? It should work.<br><br>If not, what's the error messages that you see on the screen?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(90); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(90,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(90); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-90">
+		<div class="odd" id="comment-item-91">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-91">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(91, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(91, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-91" id="comment-91">#</a>
+<span class="comment-author">double-dee</span>
+<span class="comment-date">2012-02-27 19:14</span>
+<div class="comment-body" id="comment-body-91">No error message. The php code is displayed.<br>Is multi-lines a settings?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(91); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(91,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(91); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-91">
+		<div class="even" id="comment-item-92">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-92">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(92, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(92, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-92" id="comment-92">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-02-27 23:48</span>
+<div class="comment-body" id="comment-body-92">Hi,<br><br>Are you saying that if you enter:<br>echo 'test123';<br><br>It works ok.<br><br>But if you enter:<br>echo 'this is line1';<br>echo 'this is line2';<br><br>Can you show me the URL displaying the 2 lines above, i.e.<br>echo 'this is line1';<br>echo 'this is line2';<br><br>It doesn't work?<br><br>Also, what are the PHP commands that you are trying to run?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(92); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(92,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(92); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+	</div>
+	</div>
+		<div class="odd" id="comment-item-237">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-237">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(237, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(237, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-237" id="comment-237">#</a>
+<span class="comment-author">Shaun</span>
+<span class="comment-date">2012-04-19 06:40</span>
+<div class="comment-body" id="comment-body-237">Hi,<br><br>Nice little tool but the \ of "\n" for newline is being stripped out of my code. I've turned filtering off. Anything else I can do?<br><br>Thanks, Shaun</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(237); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(237,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(237); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-237">
+		<div class="even" id="comment-item-243">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-243">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(243, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(243, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-243" id="comment-243">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-04-23 07:11</span>
+<div class="comment-body" id="comment-body-243">Hi,<br><br>If you take a look at the source code, there's no lines that strip the \n. So guess it's by the Joomla editor.<br><br>You might want to try some other Joomla editor that allows direct editing in raw HTML.<br><br>By the way, why would you need the \n? They are "transparent" in an HTML page, isn't it?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(243); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(243,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(243); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-272">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-272">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(272, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(272, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-272" id="comment-272">#</a>
+<span class="comment-author">Mortenjs</span>
+<span class="comment-date">2012-05-02 05:57</span>
+<div class="comment-body" id="comment-body-272">Hi I have tried to paste in this line.<br><br>Portfirmaet.dk Anmeldelser<br><br>Should it work with this module/plugin?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(272); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(272,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(272); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-368">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-368">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(368, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(368, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-368" id="comment-368">#</a>
+<span class="comment-author">Obaeissa</span>
+<span class="comment-date">2012-06-13 17:12</span>
+<div class="comment-body" id="comment-body-368">Hi I'm using Joomla 2.5, I'm using customise form result will be send to another php file to processed with DB connection and do the query is it possible to use DirectPHP in an article to connect to DB and do the query?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(368); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(368,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(368); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-368">
+		<div class="odd" id="comment-item-378">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-378">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(378, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(378, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-378" id="comment-378">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-06-15 08:07</span>
+<div class="comment-body" id="comment-body-378">Hi,<br><br>If you know PHP well and know what you're doing, you should be able to do it.<br><br>There's no magic in DirectPHP. The plugin simply grabs all the PHP statements that you've written within the PHP tag and pumped them through the standard PHP eval() function.<br><br>Just remember that you are running DirectPHP within the Joomla article and Joomla framework. What this means is that if you connect the DB to another mysql database, you MUST make sure that you connect the DB back to the joomla database at the end of the DirectPHP statement.<br><br>Otherwise, you will find that your entire Joomla DB connection is gone and your Joomla page will not render properly.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(378); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(378,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(378); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-425">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-425">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(425, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(425, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-425" id="comment-425">#</a>
+<span class="comment-author">Jens</span>
+<span class="comment-date">2012-06-30 02:14</span>
+<div class="comment-body" id="comment-body-425">It don't seem to work in Joomla 2.5.6. The plugin is installed and enabled, and Super Users has no fliter. <br>I'm pasting my code in a standart article with the standart editor, and the output is just the code as text.  <img src="../components/com_jcomments/images/smilies/sad.gif" alt=":sad:"> </div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(425); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(425,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(425); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-426">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-426">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(426, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(426, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-426" id="comment-426">#</a>
+<span class="comment-author">Jens</span>
+<span class="comment-date">2012-06-30 04:09</span>
+<div class="comment-body" id="comment-body-426"><span class="quote">Quoting Jens:</span><blockquote><div>It don't seem to work in Joomla 2.5.6. The plugin is installed and enabled, and Super Users has no fliter. <br>I'm pasting my code in a standart article with the standart editor, and the output is just the code as text.  <img src="../components/com_jcomments/images/smilies/sad.gif" alt=":sad:"> </div></blockquote><br><br>The problem is solved. Apparently the start and end tags is supposed to be on the same line as the commands.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(426); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(426,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(426); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-426">
+		<div class="even" id="comment-item-461">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-461">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(461, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(461, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-461" id="comment-461">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-07-08 19:31</span>
+<div class="comment-body" id="comment-body-461">Hi Jens,<br><br>It does not need to be all on the same line.<br><br>1) Please use the WYSIWYG mode (not the HTML mode). <br><br>2) Instead of , use shift-. will generate . shift- will generate <br><br>Internally, DirectPHP will convert all and to \n.<br><br>Please try the multiple lines one more time and let me know if it works.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(461); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(461,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(461); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-447">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-447">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(447, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(447, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-447" id="comment-447">#</a>
+<span class="comment-author">Anithagutta</span>
+<span class="comment-date">2012-07-04 23:04</span>
+<div class="comment-body" id="comment-body-447">dircetPHP is not working with joomla2.5.4<br>it's not showing form in articles</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(447); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(447,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(447); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-447">
+		<div class="even" id="comment-item-462">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-462">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(462, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(462, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-462" id="comment-462">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-07-08 19:36</span>
+<div class="comment-body" id="comment-body-462">Hi,<br><br>1) Please try a simple PHP statement first e.g. echo "test 123";<br><br>Does it work?<br><br>2) If (1) works, then the problem is with your PHP statements producing the form.<br><br>What's the error messages that you see on the screen? (You might need to turn on error_display in php.ini.) <br><br>By the way, DirectPHP uses the standard PHP eval() function. If you have played with this function before, you will know that the error messages returned by eval() is not useful at all. It's almost impossible to debug based on the error messages returned by eval().<br><br>As such, if you really want to debug errors in your PHP statements, you might want to copy and paste your entire PHP scripts into a standalone .PHP file, and use DirectPHP to do a require_once() or include() to include that .PHP file. In this way, you will find that the error messages (if there's any) will be a lot more meaningful.<br><br>Once your scripts runs ok in the standalone file, you can then copy and paste the entire script back into DirectPHP.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(462); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(462,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(462); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-463">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-463">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(463, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(463, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-463" id="comment-463">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-07-08 19:41</span>
+<div class="comment-body" id="comment-body-463">Hi,<br><br>You might also want to take a look at this article: How to display and process forms in a Joomla article using DirectPHP?<br>Link here: http://www.kksou.com/php-gtk2/Joomla/How-to-display-and-process-forms-in-a-Joomla-article-using-DirectPHP.php<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(463); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(463,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(463); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-527">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-527">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(527, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(527, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-527" id="comment-527">#</a>
+<span class="comment-author">michael_e</span>
+<span class="comment-date">2012-08-08 12:35</span>
+<div class="comment-body" id="comment-body-527">I am trying to embed the phpfreechat chat engine in the page but i get this error:<br><br>Parse error: syntax error, unexpected '</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(527); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(527,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(527); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-532">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-532">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(532, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(532, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-532" id="comment-532">#</a>
+<span class="comment-author">Smuj</span>
+<span class="comment-date">2012-08-11 14:48</span>
+<div class="comment-body" id="comment-body-532">Great plug-in! I'm using Joomla 2.5 and I'm unable to use FROM in quotations while inside a php bracket. I've currently solved this by using FR"."OM but it's going to get messy if I'm going to continue to write sql commands like that. Any ideas?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(532); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(532,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(532); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-532">
+		<div class="even" id="comment-item-542">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-542">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(542, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(542, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-542" id="comment-542">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-08-17 01:40</span>
+<div class="comment-body" id="comment-body-542">Hi,<br><br>That's strange. If you take a look at the source code, it doesn't detect the string "FROM".<br><br>It might be due to your other plugins.<br><br>Alternatively, you can do something like<br>$a = 'FROM";<br><br>Then every time you need to use "FROM", you can use $a.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(542); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(542,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(542); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-566">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-566">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(566, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(566, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-566" id="comment-566">#</a>
+<span class="comment-author">millsy</span>
+<span class="comment-date">2012-09-03 03:19</span>
+<div class="comment-body" id="comment-body-566">Hi,<br>I've just installed this in 2.5. activated and 'no filtered' the superuser but code only seems to work when logged into the frontend as superuser.It just displays the code when not logged it. put 'no filter' on public (temporarily) and it still just displays the code and doesn't run.<br>I'm using JCE editor if there's some setting within this addon i need to alter<br>Have i missed something</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(566); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(566,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(566); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-583">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-583">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(583, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(583, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-583" id="comment-583">#</a>
+<span class="comment-author">tibbus</span>
+<span class="comment-date">2012-09-10 13:36</span>
+<div class="comment-body" id="comment-body-583">Hi, with my php code i connect to another DB and how you said my page it show now SERVER ERROR, how i connect back to joomla DB to work properly ?<br><br><br><span class="quote">Quoting kksou:</span><blockquote><div>Hi,<br><br>If you know PHP well and know what you're doing, you should be able to do it.<br><br>There's no magic in DirectPHP. The plugin simply grabs all the PHP statements that you've written within the PHP tag and pumped them through the standard PHP eval() function.<br><br>Just remember that you are running DirectPHP within the Joomla article and Joomla framework. What this means is that if you connect the DB to another mysql database, you MUST make sure that you connect the DB back to the joomla database at the end of the DirectPHP statement.<br><br>Otherwise, you will find that your entire Joomla DB connection is gone and your Joomla page will not render properly.<br><br>Regards,<br>/kksou</div></blockquote></div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(583); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(583,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(583); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-588">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-588">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(588, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(588, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-588" id="comment-588">#</a>
+<span class="comment-author">tibbus</span>
+<span class="comment-date">2012-09-13 17:43</span>
+<div class="comment-body" id="comment-body-588">nvm, now it works ok, so seems like it's no problem to connect to another database from joomla via php, i used sourcerer not directphp but anyway.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(588); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(588,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(588); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-697">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-697">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(697, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(697, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-697" id="comment-697">#</a>
+<span class="comment-author">auto title loans</span>
+<span class="comment-date">2012-10-28 20:38</span>
+<div class="comment-body" id="comment-body-697">I just read your article on How to enter HTML tags, javascript and PHP codes in Joomla 2.5? | Joomla Tips &amp; Techniques and want to thank you for it.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(697); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(697,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(697); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-698">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-698">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(698, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(698, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-698" id="comment-698">#</a>
+<span class="comment-author">Smuj</span>
+<span class="comment-date">2012-10-28 21:02</span>
+<div class="comment-body" id="comment-body-698"><span class="quote">Quoting kksou:</span><blockquote><div>Hi,<br><br>That's strange. If you take a look at the source code, it doesn't detect the string "FROM".<br>...<br>Regards,<br>/kksou</div></blockquote><br><br>Turns out it's a theme problem. I think they theme is trying to stop SQL injections and it's messing with your plug-in.<br>You're plug-in is quite perfect for many of my uses. I use custom PHP and SQL through modules instead of components every time I have an idea. Probably should still learn.<br>Awesome plug-in still! ^_^</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(698); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(698,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(698); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-736">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-736">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(736, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(736, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-736" id="comment-736">#</a>
+<span class="comment-author">azza</span>
+<span class="comment-date">2012-11-21 03:32</span>
+<div class="comment-body" id="comment-body-736">this plugin does it work with joomla 2.5.8 ? i've installed but the code appears idem in frontend</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(736); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(736,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(736); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-736">
+		<div class="odd" id="comment-item-749">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-749">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(749, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(749, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-749" id="comment-749">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-11-26 00:51</span>
+<div class="comment-body" id="comment-body-749">Yes, it works. Did you enable the plugin?<br><br>Please don't try with long codes first. Try something simple like<br>echo "test123"; <br>and see if it works first.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(749); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(749,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(749); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-754">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-754">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(754, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(754, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-754" id="comment-754">#</a>
+<span class="comment-author">Basil Clarke</span>
+<span class="comment-date">2012-11-27 14:48</span>
+<div class="comment-body" id="comment-body-754">Tried it out for the first time today. I could only get it to work by writing the php on a single line - and because I had code that queries a database and then writes out the contents of particular fields, I had to put the code in a separate php file, then insert an include in a Joomla module. But the end result is that it does work!</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(754); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(754,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(754); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-754">
+		<div class="odd" id="comment-item-755">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-755">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(755, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(755, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-755" id="comment-755">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-11-28 01:14</span>
+<div class="comment-body" id="comment-body-755">Hi Basil,<br><br>Since the one-line version works, this is what you can try.<br><br>1) When you enter multiple lines, if you are using the default Joomla editor, try to use shift-enter instead of enter between lines. Enter will generate [p] and [/p]. Shift-enter will generate [br]<br><br>2) Try 2 lines first:<br>echo 'this is line 1';<br>echo 'this is line 2';<br><br>3) If (2) works, you can slowly add more lines and replace with your codes. Do it bit by bit, so that it's easier to debug if there's anything wrong.<br><br>Of course, if you're ok with the one-line version to include your other .php files, that's fine too!<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(755); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(755,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(755); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-786">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-786">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(786, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(786, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-786" id="comment-786">#</a>
+<span class="comment-author">syed rizvi</span>
+<span class="comment-date">2012-12-19 17:46</span>
+<div class="comment-body" id="comment-body-786">Hi,<br><br>I have 2 questions. First of all, I have downloaded the DirectPhP for Joomla 2.5 and set it up mentioned in this article. I'm new to Joomla. I don't know where should I put DirectPhp.php file to see the effects. In other words, I want complete instructions on printing "hello world" on my website using DirectPhp.<br><br>Secondly, I have a new website built on Asp.net which requires Single sign on from my Joomla 2.5 website. So, when a person has logged into my Joomla website, a menu item should appear which will direct him to my asp.net website along with passing username in encrypted form. I'm really struggling with how to do this and need solution for this ASAP. Please, I would highly appreciate your suggestions. Thanks</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(786); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(786,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(786); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-786">
+		<div class="odd" id="comment-item-789">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-789">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(789, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(789, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-789" id="comment-789">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-12-19 22:34</span>
+<div class="comment-body" id="comment-body-789">Hi,<br><br>1) For your first question, DirectPHP is a plugin. As the name suggests, a plugin is for use within a Joomla article. So to use DirectPHP, you go to the Article Manager, create a new article, and plugin in your PHP codes within the article.<br><br>2) I'm not familar with .net. So it's difficult for me to help you here. Would suggest you post your question in the official joomla.org forum. Someone might be able to help you there.<br><br>By the way, if you're thinking of using DirectPHP to resolve your second question, then this might not be the right tool. As mentioned in (1), DirectPHP is for use within a Joomla article. For your situation, you should be looking at creating your own module or plugin.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(789); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(789,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(789); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-792">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-792">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(792, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(792, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-792" id="comment-792">#</a>
+<span class="comment-author">syed rizvi</span>
+<span class="comment-date">2012-12-20 10:07</span>
+<div class="comment-body" id="comment-body-792">Hi kksou,<br><br>Thanks for your reply. I appreciate it. You don't have to know anything about .Net. Just that I have a session variable "username" in joomla 2.5 that I need to pass as parameter to www.hapw.com/PLW/Default.aspx?username=value. I want this to be done with a menu item in joomla 2.5 that will contain hyperlink to the .Net website. The thing I don't understand is that even if I create a new menu item, where should I insert the underlying php code to get my session variable value and add append to the above query string. Thanks.<br><br>Regards,<br>Syed</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(792); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(792,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(792); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-806">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-806">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(806, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(806, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-806" id="comment-806">#</a>
+<span class="comment-author">KarenL</span>
+<span class="comment-date">2013-01-03 17:39</span>
+<div class="comment-body" id="comment-body-806">Hi kksou, <br><br>Not sure whether it's the plugin or some php set up issue. <br>I'm on Joomla 2.5.8.<br>Plugin is enabled, no filtering for superuser. <br>All I want to do is to put a copyright date using php date function but it doesn't work. <br><br>When I try in WYSISYG<br>echo "test123"; <br><br>What appears on the screen is<br>echo "test123"; <br><br>Any ideas what could be wrong?<br><br>Thanks,<br>Karen</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(806); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(806,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(806); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-806">
+		<div class="even" id="comment-item-807">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-807">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(807, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(807, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-807" id="comment-807">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-01-03 17:45</span>
+<div class="comment-body" id="comment-body-807">Hi Karen,<br><br>Did you put the php tag:<br><br>[?php echo "test123;" ?]<br><br>note: please replace square bracket above with angle brackets.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(807); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(807,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(807); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-832">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-832">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(832, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(832, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-832" id="comment-832">#</a>
+<span class="comment-author">sohal</span>
+<span class="comment-date">2013-01-15 09:05</span>
+<div class="comment-body" id="comment-body-832">another issue found....<br>it didnt work for me when i used capital letters in (</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(832); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(832,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(832); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-844">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-844">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(844, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(844, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-844" id="comment-844">#</a>
+<span class="comment-author">hadsub</span>
+<span class="comment-date">2013-01-23 07:43</span>
+<div class="comment-body" id="comment-body-844">'m have developed a web site using joomla1.5 and it has MYSQL DB php code of my own. it works well in joomla1.5. but the same code of php, the form that i have used in joomla1.5 is not working in joomla2.5? any one have any idea about this Help .....</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(844); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(844,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(844); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-844">
+		<div class="odd" id="comment-item-848">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-848">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(848, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(848, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-848" id="comment-848">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-01-25 19:34</span>
+<div class="comment-body" id="comment-body-848">Hi,<br><br>You need to give people more clues in order to know where might be the problem e.g.<br><br>1) What's not working?<br><br>2) Are there error messages that you see? If yes, what are the error messages?<br><br>3) Any other things that you see on the screen? (e.g. your PHP codes)<br><br>4) Are the code still there when you edit the article?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(848); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(848,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(848); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-849">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-849">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(849, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(849, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-849" id="comment-849">#</a>
+<span class="comment-author">KarenL</span>
+<span class="comment-date">2013-01-26 12:30</span>
+<div class="comment-body" id="comment-body-849"><span class="quote">Quoting kksou:</span><blockquote><div>Hi Karen,<br><br>Did you put the php tag:<br><br>[?php echo "test123;" ?]<br><br>note: please replace square bracket above with angle brackets.<br><br>Regards,<br>/kksou</div></blockquote><br><br>I had missed out the < > but when I put replaced the square brackets with angle brackets I received the following error:<br><br>Parse error: syntax error, unexpected $end, expecting ',' or ';' in /home/XXXXXX/public_html/plugins/content/DirectPHP<span style="font-size:0;padding:0;margin:0;"> </span>/DirectPHP.php(58) : eval()'d code on line 1<br><br>Any other suggestions? <br><br>Cheers,<br>Karen</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(849); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(849,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(849); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-849">
+		<div class="odd" id="comment-item-850">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-850">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(850, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(850, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-850" id="comment-850">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-01-26 17:25</span>
+<div class="comment-body" id="comment-body-850">Hi Karen,<br><br>Sorry, my typo.<br><br>It should be: <br>[?php echo "test123"; ?]<br>note: please replace square bracket above with angle brackets.<br><br>Please give it a try one more time and let me know if it works.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(850); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(850,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(850); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-857">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-857">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(857, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(857, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-857" id="comment-857">#</a>
+<span class="comment-author">Rob Genspoon</span>
+<span class="comment-date">2013-01-30 10:31</span>
+<div class="comment-body" id="comment-body-857">If I use something like<br><br>[?php echo "blah"; ?]<br><br>all is well.<br><br>If I get "fancy" like<br><br>[?php <br> $x="blah";<br> echo $x;<br>?]<br><br>Nothing happens.<br><br>Please advise?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(857); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(857,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(857); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-857">
+		<div class="odd" id="comment-item-861">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-861">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(861, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(861, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-861" id="comment-861">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-01-31 05:10</span>
+<div class="comment-body" id="comment-body-861">Hi,<br><br>Can you please try:<br><br>[?php $x="blah"; echo $x;?]<br><br>and see if it works?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(861); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(861,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(861); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-859">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-859">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(859, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(859, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-859" id="comment-859">#</a>
+<span class="comment-author">Jaderson</span>
+<span class="comment-date">2013-01-31 03:36</span>
+<div class="comment-body" id="comment-body-859">Olá, eu estou precisando colocar código PHP em uma widgetkit mas alguns códigos desaparecem e os que ficam não aparecem o resultado. somente o código.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(859); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(859,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(859); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-859">
+		<div class="odd" id="comment-item-860">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-860">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(860, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(860, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-860" id="comment-860">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-01-31 05:09</span>
+<div class="comment-body" id="comment-body-860">Hi,<br><br>Sorry. Have only learned English. Would you mind to write your question in English?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(860); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(860,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(860); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-866">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-866">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(866, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(866, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-866" id="comment-866">#</a>
+<span class="comment-author">ganesh2k</span>
+<span class="comment-date">2013-02-01 02:53</span>
+<div class="comment-body" id="comment-body-866">plz help i am running a joonla Virtue-Mart<br>site a local store in India i need to change Rs symbol to rupee symbol they i have java-script http://cdn.webrupee.com/js which convert all Rs or RS to that symbol plz help me how to add the script to site r any other method. my site is www.nalam.in(under development)mail me so i can send username-password for site plzzz reply back...  <img src="../components/com_jcomments/images/smilies/unsure.gif" alt=":sigh:">  <img src="../components/com_jcomments/images/smilies/unsure.gif" alt=":sigh:"></div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(866); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(866,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(866); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-899">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-899">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(899, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(899, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-899" id="comment-899">#</a>
+<span class="comment-author">Harris Marfel</span>
+<span class="comment-date">2013-03-03 02:40</span>
+<div class="comment-body" id="comment-body-899">This plugin only work if you use basic PHP code. not the advance php code.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(899); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(899,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(899); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-899">
+		<div class="even" id="comment-item-904">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-904">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(904, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(904, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-904" id="comment-904">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-03-07 07:08</span>
+<div class="comment-body" id="comment-body-904">Hi,<br><br>If you look at the source code, this plugin simply grabs all your PHP codes and pump them into the standard PHP eval() function.<br><br>The PHP eval() function is not that smart to differentiate between simple or advanced plugin. Any valid PHP code that can be processed by eval() can also be processed by DirectPHP.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(904); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(904,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(904); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-900">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-900">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(900, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(900, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-900" id="comment-900">#</a>
+<span class="comment-author">sawan gupta</span>
+<span class="comment-date">2013-03-04 02:43</span>
+<div class="comment-body" id="comment-body-900">hi frnd<br>how i can override k2 components which convert to the list from to menu tab.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(900); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(900,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(900); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-900">
+		<div class="even" id="comment-item-905">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-905">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(905, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(905, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-905" id="comment-905">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-03-07 07:09</span>
+<div class="comment-body" id="comment-body-905">Hi,<br><br>You cannot do this with DirectPHP. DirectPHP is a content plugin. It's supposed to be used within a Joomla article.<br><br>You need to change the source code of the k2 components.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(905); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(905,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(905); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-901">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-901">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(901, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(901, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-901" id="comment-901">#</a>
+<span class="comment-author">sawan gupta</span>
+<span class="comment-date">2013-03-04 02:45</span>
+<div class="comment-body" id="comment-body-901">hi frnd<br>how can i edit normal html or php form to joomla 2.5</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(901); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(901,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(901); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-940">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-940">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(940, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(940, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-940" id="comment-940">#</a>
+<span class="comment-author">AlexMitvix</span>
+<span class="comment-date">2013-04-07 14:56</span>
+<div class="comment-body" id="comment-body-940">Great plugin!!! I love it!</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(940); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(940,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(940); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-962">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-962">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(962, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(962, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-962" id="comment-962">#</a>
+<span class="comment-author">Se</span>
+<span class="comment-date">2013-04-12 03:04</span>
+<div class="comment-body" id="comment-body-962">Very neat plugin. A lot of the problems mentioned in this board can be solved by simply going to Joomla "Global configuration", change the default Joomla editor to "Code Mirror" and everything works a treat. Thanks.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(962); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(962,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(962); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-982">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-982">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(982, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(982, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-982" id="comment-982">#</a>
+<span class="comment-author">Zadra Design</span>
+<span class="comment-date">2013-05-01 17:01</span>
+<div class="comment-body" id="comment-body-982">I have used this plugin for years and love it; however, I cannot get it to work in Joomla! 3.1. Any idea on when it will be updated? I have set it to no filtering and tried both with and without the text editor, but on the front end the triangle brackets are replaced with HTML comments, for example:</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(982); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(982,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(982); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-982">
+		<div class="odd" id="comment-item-986">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-986">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(986, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(986, -1);return false;"></a>
+<span class="vote-good">+2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-986" id="comment-986">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-05-01 21:25</span>
+<div class="comment-body" id="comment-body-986">Hi,<br><br>I'm using DirectPHP on my Joomla3 site without any problem.<br><br>Have you tried other editors and see if it works?<br><br>If possible, try setup a fresh install of Joomla3 somewhere on your site and then DirectPHP. This will allow you to see if it works on your machine at all, or if it's conflicts with your other plugins.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(986); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(986,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(986); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-1091">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1091">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1091, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1091, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-1091" id="comment-1091">#</a>
+<span class="comment-author">peterson10011</span>
+<span class="comment-date">2013-06-17 23:19</span>
+<div class="comment-body" id="comment-body-1091">This is a very useful information. Thanks for sharing.<br>PHP training in Chennai</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1091); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1091,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1091); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-1102">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1102">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1102, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1102, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-1102" id="comment-1102">#</a>
+<span class="comment-author">alex0098</span>
+<span class="comment-date">2013-07-05 09:21</span>
+<div class="comment-body" id="comment-body-1102">verry nice share i like it<br>cam a cam.<br>cam a cam.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1102); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1102,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1102); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-1105">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1105">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1105, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1105, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-1105" id="comment-1105">#</a>
+<span class="comment-author">bogi</span>
+<span class="comment-date">2013-07-11 08:42</span>
+<div class="comment-body" id="comment-body-1105">how can I use the user's session?<br>for example, I want to create a php script that if it is user A that access the script it will echo "apple", and if it is user B it will echo "orange"<br><br>thanks in advance<br>bogi.imtelkom.ac.id</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1105); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1105,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1105); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-1105">
+		<div class="odd" id="comment-item-1106">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1106">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1106, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1106, -1);return false;"></a>
+<span class="vote-good">+1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-1106" id="comment-1106">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-07-11 23:59</span>
+<div class="comment-body" id="comment-body-1106">Hi,<br><br>DirectPHP is not used for such a purpose.<br><br>For your case, you might need to develop your own plugins and incorporate those PHP codes right inside your plugin, instead of through another layer of content plugins such as DirectPHP or any others.<br><br>For user sessions, you can google for "PHP sessions tutorial" and there will be many resources and sample codes for your use.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1106); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1106,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1106); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-1118">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1118">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1118, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1118, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-1118" id="comment-1118">#</a>
+<span class="comment-author">Bob Scott</span>
+<span class="comment-date">2013-07-19 17:28</span>
+<div class="comment-body" id="comment-body-1118">I am also having problems with the multiline php code:<br>Today's date (according to this web server) is<br><br><br><br>It produces the following parsing error:<br>Parse error: syntax error, unexpected '</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1118); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1118,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1118); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-1119">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1119">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1119, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1119, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-1119" id="comment-1119">#</a>
+<span class="comment-author">Bob Scott</span>
+<span class="comment-date">2013-07-19 17:46</span>
+<div class="comment-body" id="comment-body-1119">Sorry, previoius comment meaningless - it stripped my code so I'll try again. I'm having trouble with multiline line like others - Shift-Enter didn't solve it using TinyMCE. I get a Parsing error. <br>Single line works OK with TinyMCE and multiline works if I use CodeMirror editor. Joomla 2.5.11, MySQL 5.0<br>[?php<br>echo date('l, F jS Y.');<br>?]<br>Any advice (any more info needed)?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1119); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1119,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1119); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-1119">
+		<div class="even" id="comment-item-1121">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1121">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1121, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1121, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-1121" id="comment-1121">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-07-20 17:27</span>
+<div class="comment-body" id="comment-body-1121">Hi Bob,<br><br>That's strange. It should work.<br><br>I couldn't know the problem without further info.<br><br>Are you ok with mysql? If yes, can you go to the backend mysql of your joomla, and locate the record of this article in the table jos_content.<br><br>Please email me the entire content of the 2 fields: introtext and fulltext - this should give me enough clue to know where the problem is.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1121); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1121,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1121); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-1123">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1123">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1123, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1123, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-1123" id="comment-1123">#</a>
+<span class="comment-author">fredas</span>
+<span class="comment-date">2013-07-22 15:15</span>
+<div class="comment-body" id="comment-body-1123">It's not working with Joomla 3.1.1. <br><br>I installed the plugin and set settings: to "no filter", plugin is activated and i put simple code in to wysiswyg (tinymce) and get the hole code as a plain text: <br>Now is: <br><br>and I get this code displayed on the frontpage.  <img src="../components/com_jcomments/images/smilies/normal.gif" alt=":-|"> </div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1123); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1123,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1123); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-1123">
+		<div class="even" id="comment-item-1125">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1125">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1125, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1125, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-1125" id="comment-1125">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-07-24 01:37</span>
+<div class="comment-body" id="comment-body-1125">Hi,<br><br>If you see the entire code displayed, it means the code has not been processed at all (i.e. DirectPHP is not running).<br><br>If your plugin is enabled, it could mean that it's conflicts with some other plugins.<br><br>To only way to ascertain this is to install a fresh install of Joomla somewhere on your site and then install just the DirectPHP plugin. This will allow you to see if DirectPHP run on your server at all.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1125); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1125,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1125); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-1177">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1177">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1177, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1177, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-1177" id="comment-1177">#</a>
+<span class="comment-author">lisaedward</span>
+<span class="comment-date">2013-09-19 01:53</span>
+<div class="comment-body" id="comment-body-1177">This is really nice. Thanks for sharing this article<br>PHP training in Chennai</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1177); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1177,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1177); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-1179">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1179">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1179, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1179, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-1179" id="comment-1179">#</a>
+<span class="comment-author">Ole M</span>
+<span class="comment-date">2013-09-23 02:03</span>
+<div class="comment-body" id="comment-body-1179">Hi,<br><br>I will use directPHP on my joomla 3.1.5 installation. If I use the following php () in an article - it works. But if I take it in an own module it doesn´t work. I use directPHP in my joomla 2.5.x in an own module too and there it works. Any help? thx</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1179); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1179,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1179); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-1208">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1208">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1208, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1208, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-1208" id="comment-1208">#</a>
+<span class="comment-author">jrrabi</span>
+<span class="comment-date">2013-10-26 14:48</span>
+<div class="comment-body" id="comment-body-1208"><span class="quote">Quoting Phoebez:</span><blockquote><div>And don't forget to enable the plug in so you don't feel foolish for half an hour like I did.  <img src="../components/com_jcomments/images/smilies/redface.gif" alt=":oops:"> </div></blockquote><br>  <img src="../components/com_jcomments/images/smilies/whistling.gif" alt=":-*">  hehe, so often to me  <img src="../components/com_jcomments/images/smilies/cool.gif" alt="8)"> </div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1208); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1208,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1208); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-1215">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1215">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1215, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1215, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-1215" id="comment-1215">#</a>
+<span class="comment-author">John Fidge</span>
+<span class="comment-date">2013-11-10 13:56</span>
+<div class="comment-body" id="comment-body-1215">Hi,<br>What have I done wrong?<br>I am using Joomla 3.1.5.<br>I downloaded your zip file, used Extension Manager to install it,enabled DirectPHP in the Plugin Manager and checked that the Super User Filter Type was set to No Filtering.<br>I then opened one of my articles and hit the Toggle Editor button and added a separate line with on it. On saving the article, TinyMCE had put comment braces around my PHP code.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1215); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1215,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1215); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-1215">
+		<div class="odd" id="comment-item-1216">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1216">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1216, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1216, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-1216" id="comment-1216">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-11-10 14:47</span>
+<div class="comment-body" id="comment-body-1216">Hi John,<br><br>Try to enter the code from the backend Article Manager and see if it works.<br><br>Also, when you enter the PHP code in the Article Manager, please use the default WYSIWYG mode (as oppose to the HTML mode).<br><br>Please enter something simple first for testing e.g. echo 'test123';<br><br>If it works, then you can start entering more lines. It's difficult to debug in this mode (the PHP codes are run using PHP's standard eval() function). So try entering a couple of lines at a time.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1216); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1216,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1216); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-1217">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1217">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1217, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1217, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-1217" id="comment-1217">#</a>
+<span class="comment-author">John Fidge</span>
+<span class="comment-date">2013-11-10 15:04</span>
+<div class="comment-body" id="comment-body-1217">Hi,<br>Found it. You don't go into the Editor, but do it on the WYSIWYG page.<br>No need to reply now, thanks.<br>I found the answer in one of your other posts above.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1217); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1217,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1217); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-1256">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1256">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1256, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1256, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-1256" id="comment-1256">#</a>
+<span class="comment-author">Rhys Crawford</span>
+<span class="comment-date">2013-12-12 12:16</span>
+<div class="comment-body" id="comment-body-1256">I cannot get this to work in Joomla 3.2. I am using the codemirror editor, and I have checked that the code is being inserted into the database correclty. However on displaying the page Joomla (or a template) is commenting out my PHP. Although it might be the template, I have tried multiple templates, so I think it's the Joomla core. Any ideas?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1256); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1256,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1256); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-1260">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1260">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1260, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1260, -1);return false;"></a>
+<span class="vote-good">+1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-1260" id="comment-1260">#</a>
+<span class="comment-author">Rdel</span>
+<span class="comment-date">2014-01-01 06:09</span>
+<div class="comment-body" id="comment-body-1260">Inside the TinyMCE, I'm trying to display "More Info" text that links to the article's title. Is it possible using this plugin or is it something beyond the scope of this plugin?<br><br>I'm using Joomla 3.x.<br><br>Thanks</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1260); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1260,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1260); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-1813">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1813">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1813, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1813, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php.html#comment-1813" id="comment-1813">#</a>
+<span class="comment-author">Smithk293</span>
+<span class="comment-date">2016-08-13 15:40</span>
+<div class="comment-body" id="comment-body-1813">Valuable information. Lucky me I found your site by accident, and I am shocked why this accident did not happened earlier! I bookmarked it. fgfccfekeaceccff</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1813); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1813,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1813); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+</div>
+<div id="comments-list-footer"><a class="refresh" href="#" title="Refresh comments list" onclick="jcomments.showPage(2058,'com_content',0);return false;">Refresh comments list</a><br><a class="rss" href="../jcomments/rss/com_content/2058.php.xml" title="RSS feed for comments to this post" target="_blank">RSS feed for comments to this post</a></div>
+</div>
+<h4>Add comment</h4>
+<a id="addcomments" href="#addcomments"></a>
+<form id="comments-form" name="comments-form" action="javascript:void(null);">
+<p>
+	<span>
+		<input id="comments-form-name" type="text" name="name" value="" maxlength="20" size="22" tabindex="1">
+		<label for="comments-form-name">Name (required)</label>
+	</span>
+</p>
+<p>
+	<span>
+		<input id="comments-form-email" type="text" name="email" value="" size="22" tabindex="2">
+		<label for="comments-form-email">E-mail (required, but will not display)</label>
+	</span>
+</p>
+<p>
+	<span>
+		<textarea id="comments-form-comment" name="comment" cols="65" rows="8" tabindex="5"></textarea>
+	</span>
+</p>
+<p>
+	<span>
+		<input class="checkbox" id="comments-form-subscribe" type="checkbox" name="subscribe" value="1" tabindex="5">
+		<label for="comments-form-subscribe">Notify me of follow-up comments</label><br>
+	</span>
+</p>
+<p>
+	<span>
+		<img class="captcha" onclick="jcomments.clear('captcha');" id="comments-form-captcha-image" src="../jcomments/captcha.php-90.jpeg?ac=65676" width="121" height="60" alt="Security code"><br>
+		<span class="captcha" onclick="jcomments.clear('captcha');">Refresh</span><br>
+		<input class="captcha" id="comments-form-captcha" type="text" name="captcha_refid" value="" size="5" tabindex="6"><br>
+	</span>
+</p>
+<div id="comments-form-buttons">
+	<div class="btn" id="comments-form-send"><div><a href="#" tabindex="7" onclick="jcomments.saveComment();return false;" title="Send (Ctrl+Enter)">Send</a></div></div>
+	<div class="btn" id="comments-form-cancel" style="display:none;"><div><a href="#" tabindex="8" onclick="return false;" title="Cancel">Cancel</a></div></div>
+	<div style="clear:both;"></div>
+</div>
+<div>
+	<input type="hidden" name="object_id" value="2058">
+	<input type="hidden" name="object_group" value="com_content">
+</div>
+</form>
+<script type="text/javascript">
+<!--
+function JCommentsInitializeForm()
+{
+	var jcEditor = new JCommentsEditor('comments-form-comment', true);
+	jcEditor.initSmiles('/php-gtk2/components/com_jcomments/images/smilies/');
+	jcEditor.addSmile(':D','laugh.gif');
+	jcEditor.addSmile(':lol:','lol.gif');
+	jcEditor.addSmile(':-)','smile.gif');
+	jcEditor.addSmile(';-)','wink.gif');
+	jcEditor.addSmile('8)','cool.gif');
+	jcEditor.addSmile(':-|','normal.gif');
+	jcEditor.addSmile(':-*','whistling.gif');
+	jcEditor.addSmile(':oops:','redface.gif');
+	jcEditor.addSmile(':sad:','sad.gif');
+	jcEditor.addSmile(':cry:','cry.gif');
+	jcEditor.addSmile(':o','surprised.gif');
+	jcEditor.addSmile(':-?','confused.gif');
+	jcEditor.addSmile(':-x','sick.gif');
+	jcEditor.addSmile(':eek:','shocked.gif');
+	jcEditor.addSmile(':zzz','sleeping.gif');
+	jcEditor.addSmile(':P','tongue.gif');
+	jcEditor.addSmile(':roll:','rolleyes.gif');
+	jcEditor.addSmile(':sigh:','unsure.gif');
+	jcEditor.addCounter(1000, '', ' symbols left', 'counter');
+	jcomments.setForm(new JCommentsForm('comments-form', jcEditor));
+}
+
+if (window.addEventListener) {window.addEventListener('load',JCommentsInitializeForm,false);}
+else if (document.addEventListener){document.addEventListener('load',JCommentsInitializeForm,false);}
+else if (window.attachEvent){window.attachEvent('onload',JCommentsInitializeForm);}
+else {if (typeof window.onload=='function'){var oldload=window.onload;window.onload=function(){oldload();JCommentsInitializeForm();}} else window.onload=JCommentsInitializeForm;} 
+//-->
+</script>
+<div id="comments-footer" align="center"><a href="http://www.joomlatune.com" title="JComments" target="_blank">JComments</a></div>
+<script type="text/javascript">
+<!--
+jcomments.setAntiCache(1,0,0);
+//-->
+</script> 
+</div></div>
+	</main>
+		
+	<!-- //MAIN CONTENT -->				</div>
+												<div id="sidebar-2" class="sidebar zg-col zg-col-3  " role="complementary">
+					
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+					<div class="zen-module-title">
+						<h3><span>Latest Comments</span><h3>
+					</h3></h3></div>
+							
+				<div class="zen-module-body">
+					<ul class="jcomments-latest">
+	
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">16.05.2019 15:18</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Patrick, I developed this plugin initially so that I can place a map on my website easily. I thought ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2184">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">Patrick</span>
+						<span class="date">13.05.2019 17:29</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi there, will it be possible to just show a link to the popup map? I don't want to show the map on my ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2180">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							DirectPHP plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">21.04.2019 16:05</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Mark, Sorry for the late reply. Recently there has been a huge influx of spam posts, and your post ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla/directphp-plugin.php.html#comment-2166">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							DirectPHP plugin					</h4>
+		
+		
+				<span class="author">Mark Hobbs</span>
+						<span class="date">08.04.2019 17:16</span>
+		
+		<div class="comment rounded ">
+					<div>
+				I've used DirectPHP for a few years... it's beautifully simple and convenient. I recently decided to ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla/directphp-plugin.php.html#comment-2160">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleDirections - To Here - plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">23.03.2019 09:35</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Greg, 1) First, make sure you have entered the Google Maps API key. You can apply it here ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleDirections-To-Here-plugin.php.html#comment-2146">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleDirections - To Here - plugin					</h4>
+		
+		
+				<span class="author">GREG</span>
+						<span class="date">22.03.2019 22:04</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi, I have installed all 3 plugins and when i enter my current location i get the error Google cannot ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleDirections-To-Here-plugin.php.html#comment-2145">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">15.01.2019 00:06</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Christian, Yes, you're right. For this plugin, you can show multiple KML files in a web page (using ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2094">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">Christian Teuber</span>
+						<span class="date">14.01.2019 16:30</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Can you point me to the sample map, I see only maps with one kml file on one map. I want to show 2 ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2093">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							New version of DirectPHP - support for PHP 7					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">14.01.2019 14:51</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Björn, Thanks for your support over so many years! I'm not running php 7.1, and I do not currently ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla-news/new-version-of-directphp-support-for-php-7.php.html#comment-2091">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">14.01.2019 14:44</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Christian, I have a sample page here with many KML files on it: googleMaps plugin Tutorial 05: KML ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2090">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+			</li>
+		</ul>
+
+				</div>
+			</div>
+		</div>
+	
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+					<div class="zen-module-title">
+						<h3><span>kksou Weather</span><h3>
+					</h3></h3></div>
+							
+				<div class="zen-module-body">
+					<script type="text/javascript">
+var headID = document.getElementsByTagName("head")[0];
+var cssNode = document.createElement('link');
+cssNode.type = 'text/css';
+cssNode.rel = 'stylesheet';
+cssNode.href = 'https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather.css';
+cssNode.media = 'screen';
+headID.appendChild(cssNode);
+</script><script type="text/javascript">
+//var mod_id = "301";
+var gw_lib_url301="https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather_lib.php";
+var gw_progress_gif301="https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather_progress.gif";
+var joomla_root301='|_%$var|_%$www|_%$kksou.com|_%$public_html|_%$php-gtk2';
+var label_city301="City";
+var popup_city301="Please enter zip code, state (in US) or city name, country (for other countries)";
+var popup_deg_F301="Click here to convert to degree F";
+var popup_deg_C301="Click here to convert to degree C";
+var size_city301="20";
+var hide_input301="0";
+var lang301="en";
+var googleweather_unit301="US";
+var default_location301="San Francisco, CA";
+var googleweather_use_curl301="1";
+var request_interval301="3";
+var hide_humidity301="0";
+var hide_wind301="0";
+var hide_forecast301="0";
+var focus_on_city301="0";
+var api_key301="90d34681236de382";
+var default_country301="";
+var label_humidity301="Humidity: ";
+var refresh_time301="60";
+var admin_mode301="0";
+var joomla_ver301="3.0";
+</script><script type="text/javascript" src="../modules/mod_kksouweather/mod_kksouWeather_ajax.js"></script><div id="googleWeather_container301"><form action="index.php" method="get" id="WeatherForm301"><div class="googleWeather"><span class="input_label">City: </span><input name="gw_a" id="str_gw_a301" class="inputbox" maxlength="255" size="20" value="" title="">&nbsp;<span id="gw_loading301"></span><br><input type="hidden" name="a_org" id="str_gw_a_org301" class="inputbox" value=""><div align="left" style="padding-top:2px;"><p align="left" style="padding:0 0 0 0;margin:0 0 0 0"><a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Weather-AJAX-version.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p></div><input type="hidden" name="process" value="1"><input type="hidden" name="temp_unit" id="temp_unit301" value="US"><input type="hidden" name="option" value="com_content"><input type="hidden" name="task" value=""><input type="hidden" name="id" value="2058"><input type="hidden" name="sectionid" value=""><input type="hidden" name="catid" value="42"><input type="hidden" name="Itemid" value="429"></div></form></div><script type="text/javascript">
+
+if (window.jQuery) {
+jQuery(document).ready(function() {
+	gw_prepareForm('301');
+	gw_submitform('301', 1);
+});
+} else {
+	gw_prepareForm('301');
+	gw_submitform('301', 1);
+}
+
+</script>
+				</div>
+			</div>
+		</div>
+	
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					<p>It's not that difficult to learn <a href="http://www.greengeeks.com/website-transfer/" title="how to transfer a website" target="_blank">how to transfer a website</a>.</p>				</div>
+			</div>
+		</div>
+	
+				</div>
+							</div>
+		</div>
+	</div>
+	
+		
+</section>	    	
+	    		    	
+	    	
+	    	
+	    	
+			
+			
+			
+			
+<!-- FOOTER -->
+<footer id="footerwrap" class="wrap zen-footer stack-tablets stack-phones" role="contentinfo">
+  <section class="zen-copyright">
+    <div class="zen-container">
+      <div class="zen-row">
+        	<div class="zg-col zg-col-9">
+	          
+
+<ul id="zen-menu-119">
+<li class="item-382"><a href="../index.php.html?option=com_googlesearch_cse&amp;view=googlesearchs&amp;Itemid=382&amp;lang=en">
+				Google Search			</a>
+	</li><li class="item-447"><a href="http://logistics-innovations.org/">Logistics Innovations</a></li><li class="item-456"><a href="https://www.rpa-sg.org/">RPA</a></li><li class="item-455"><a href="../category/joomla-version-history/index.htm">
+				Joomla Version History			</a>
+	</li><li class="item-457"><a href="https://ask.rpa-sg.org/">RPA Community Forum</a></li></ul>
+
+<div class="custom">
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-700099-1', 'auto');
+  ga('send', 'pageview');
+
+</script></div>
+
+        	</div>
+        	<div class="zg-col zg-col-3">
+        		<div id="zen-copyright">
+        			
+        			        				Copyright © 2005-2015. kksou.com. All Rights Reserved         		</div>
+        	</div>
+      	</div>
+	</div>
+  </section>
+</footer>
+<!-- //FOOTER -->			
+			
+
+
+			
+		</div>	
+	
+		
+
+	<div class="social-wrap fixed">
+
+		
+		
+
+		
+		
+<a id="social-twitter123" href="https://twitter.com/kksou" target="_blank">
+			<span class="zen-animate fadeInRightBig animated-faster fa fa-twitter zen-icon zen-icon-twitter"></span>
+	</a>
+
+	<script>
+		jQuery(document).ready(function ($) {
+			// Twitter Link Constructor
+			var twitter_link = $('#social-twitter').attr('href');
+
+			// Get title on page
+			// Made it broad for anumber of use cases but will retrieve h1 or h2 if not available
+			var title = $('#midCol h1:first').text();
+
+				if(typeof title ==="undefined") {
+					description = $('h2:first').text();
+				}
+
+			twitter_link += title;
+
+			$('#social-twitter').attr('href', twitter_link);
+		});
+	</script>
+
+		 	</div>
+	<script>
+		jQuery(document).ready(function ($) {
+
+			$('.popup').live( 'click', function(){
+				newwindow=window.open($(this).attr('href'),'','height=200,width=450');
+			    if (window.focus) {newwindow.focus()}
+			    return false;
+			 });
+		});
+	</script>
+		
+		
+<div class="sb-slidebar off-canvas-right sb-width-wide">
+	<div class="off-canvas-inner">
+		<div class="off-canvas-heading">
+			<span class="sb-close"><span class="zen-icon-remove zen-icon fa fa-icon-remove"></span></span>
+		</div>
+		<div class="off-canvas-body">
+			<div id="off-canvas-menu"><ul></ul></div>
+			
+		</div>
+	</div>
+</div>
+  
+ 
+ 
+<script>
+	
+	jQuery(document).ready(function($) {
+			
+			
+			
+				// Append nav if required
+				$('body').append_nav('787');	
+						
+				$(window).resize(function() {
+					$('body').append_nav('787');			
+				});
+			
+			 						
+				 		$('#off-canvas-menu').zenaccordion({
+				 		
+				 							 				 openfirst: true,
+				 				 				 				 selector: '.off-canvas-body',
+				 				 openicon: 'plus',
+				 				 closeicon: 'minus',
+				 				 type:"panel"
+				 		});
+			 			
+			 				
+			 
+			
+			
+			
+			$.slidebars();
+		});
+
+</script>
+ 		
+				
+		
+	<script>
+		jQuery(document).ready(function($){
+			$("img").not(".none").lazyload({
+				effect : "fadeIn"
+		});
+	});
+	</script>
+
+
+
+
+
+<div id="toTop" class="hidden-phone"><a id="toTopLink"><span class="fa fa-icon-arrow-up zen-icon zen-icon-arrow-up"></span><span id="toTopText"> Back to top</span></a></div>
+<script>
+	jQuery(document).ready(function($){
+			
+			$(window).scroll(function () {
+			
+				if ($(this).scrollTop() >200) {
+				 	$("#toTop").fadeIn();
+				}
+				else {
+				 	$("#toTop").fadeOut();
+				}
+			});
+		
+			$("#toTop").click(function() {
+				$("html, body").animate({ scrollTop: 0 }, "slow");
+				 return false;
+			});
+	});
+</script>
+
+
+
+
+
+<script>
+jQuery(document).ready(function($){
+	
+	
+	$('.sidebar').zenaccordion({
+	
+		  		 openfirst: true,
+  		   		 type:"panel"
+ 	});
+ 	
+
+});
+</script>
+
+
+
+
+
+
+
+<script>
+jQuery(document).ready(function($){
+	
+	var win      = $(window),
+	    fxel     = $('#navwrap'),
+	    fill     = $('#sticky-fill'),
+	    navheight = $('#menu').height(),
+	    eloffset = fxel.offset().top;
+	 
+	    $(fill).height(navheight);
+
+	win.scroll(function() {
+	    if (eloffset < win.scrollTop()) {
+	        fxel.addClass("fixed");
+	        $('html').addClass("fixed");
+	        $(fill).addClass('visible').removeClass('hidden');
+	    } else {
+	        fxel.removeClass("fixed");
+	        $('html').removeClass("fixed");
+	        $(fill).removeClass('visible').addClass('hidden');
+	    }
+	});
+});
+</script>
+
+
+
+
+
+	<script>
+	 new WOW().init();
+	</script>
+
+
+
+
+<!-- Fonts -->
+
+		
+			
+	</body>
+<!-- Copied from https://kksou.com/php-gtk2/Joomla-Tips-Techniques/how-to-enter-html-tags-javascript-and-php-codes-in-joomla-2-5.php by Cyotek WebCopy 1.7.0.600, 14 Tháng Sáu 2019, 04:23:30 -->
+</html>

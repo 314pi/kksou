@@ -1,0 +1,1748 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr" class="com_content view-article itemid-429 j39 responsive-enabled offcanvas-menu">
+<!-- Copied from https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php by Cyotek WebCopy 1.7.0.600, 14 Tháng Sáu 2019, 04:23:30 -->
+<head>
+<link href="googleMaps-plugin-Tutorial-05-KML-Files.php.html" rel="canonical">
+
+		
+
+			<meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=yes">
+		<meta name="HandheldFriendly" content="true">
+	<meta name="apple-mobile-web-app-capable" content="YES">
+	<base href="https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="author" content="kksou">
+	<meta name="description" content="The Joy of Sharing and Learning Together">
+	<title>googleMaps plugin Tutorial 05: KML Files | Joomla Tips &amp; Techniques</title>
+	<link href="../jcomments/rss/com_content/2084.php.xml" rel="alternate" type="application/rss+xml" title="googleMaps plugin Tutorial 05: KML Files">
+	<link href="../templates/xero/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="../components/com_jcomments/tpl/default/style.css?v=3002" rel="stylesheet" type="text/css">
+	<link href="/templates/xero/css-compiled/master-11597c3e8d7d7a43ddef0800b7379988.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300:latin|Open+Sans:600:latin|Droid+Serif" rel="stylesheet" type="text/css">
+	<link href="../templates/xero/css/theme.flat.php.css" rel="stylesheet" type="text/css">
+	<link href="../templates/xero/css/custom.css" rel="stylesheet" type="text/css">
+	<link href="../media/mod_jcomments_latest/css/style.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+#gmap_gmap0 img { max-width: none; } #gmap_gmap1 img { max-width: none; } #gmap_gmap2 img { max-width: none; } #gmap_gmap3 img { max-width: none; } #gmap_gmap4 img { max-width: none; } #gmap_gmap5 img { max-width: none; } 
+.article {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.article_desc {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	margin-bottom: 4px;
+}
+
+.article_views {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.infographic {
+   border:2px solid #aaaaaa;
+}
+
+tr.article_tr > td {
+   //padding-top: 2px;
+   padding-bottom: 6px;
+}
+
+
+	</style>
+	<script src="../components/com_jcomments/js/jcomments-v2.3.js?v=12" type="text/javascript"></script>
+	<script src="../components/com_jcomments/libraries/joomlatune/ajax.js?v=4" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-noconflict.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-migrate.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../media/jui/js/bootstrap.min.js?596267d3e020643fb1fdcd29ce7924ae" type="text/javascript"></script>
+	<script src="../templates/xero/js/template-66.php" type="text/javascript"></script>
+	<script type="text/javascript">
+
+		var j2storeURL = 'https://kksou.com/php-gtk2/';
+		
+jQuery(document).ready(function(){
+
+	jQuery("a.linkstat").click(function(e) {
+		e.preventDefault(); // needed for safari 4.0.5
+
+		jQuery.post("/plugins/content/GetArticles/ajax-linkstat.php", {url: jQuery(this).attr('href'), id: jQuery(this).attr('id')}, function success(data) {
+			window.location = data; // needed for safari 4.0.5
+		});
+		return true;
+	});
+
+		jQuery("a.vote_up").click(function(){
+	//get the id
+	the_id = jQuery(this).attr('id');
+
+	// show the spinner
+	jQuery(this).parent().html("<img src='/plugins/content/GetArticles/images/spinner.gif' style='display:inline'/>");
+
+	//fadeout the vote-count
+	jQuery("span#votes_count"+the_id).fadeOut("fast");
+
+	//the main ajax request
+		jQuery.ajax({
+			type: "POST",
+			data: "action=vote_up&id="+jQuery(this).attr("id"),
+			url: "/plugins/content/GetArticles/votes.php",
+			success: function(msg){
+				jQuery("span#votes_count"+the_id).html(msg);
+				//fadein the vote count
+				jQuery("span#votes_count"+the_id).fadeIn();
+				//remove the spinner
+				jQuery("span#vote_buttons"+the_id).remove();
+			}
+		});
+	});
+
+});
+
+
+jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+	</script>
+
+			
+		
+<style type="text/css">
+			html > body {
+				font-family: 'Open Sans';
+				
+			}
+				h1, h2, h3, h4, h5, h6, blockquote {
+				font-family: 'Open Sans';
+			}
+		
+					#navwrap li a {
+					font-family: 'Open Sans';
+				}
+			
+					#logo h2 {
+					font-family: 'Droid Serif';
+				}
+		
+	</style>	</head>
+    <body>
+<!-- Facebook SDK -->
+<div id='fb-root'></div>
+<script type='text/javascript'>
+
+      // Load the SDK Asynchronously
+      (function(d){
+      var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+      js = d.createElement('script'); js.id = id; js.async = true;
+      js.src = '//connect.facebook.net/en_GB/all.js';
+      d.getElementsByTagName('head')[0].appendChild(js);
+    }(document));
+
+</script>
+<!-- End Facebook SDK -->
+
+		<!-- Required for Slidebar / Offcanvas implementation -->
+		<div id="zen-wrap">
+	
+	   			    	
+	    	<a id="home-link" name="home-link"></a>
+	  
+	    	
+	    	
+	    	
+	<section id="logowrap" class="clearfix stack-phones" role="banner">
+		<div class="zen-container">
+			<div class="zen-row">
+	<div class="zen-spotlight">
+	
+			
+						<div id="logo" class="zg-col zg-col-6">
+			
+							
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					
+
+<div class="custom">
+	<h2>kksou.com</h2>
+<p>Tutorials, Sample Codes and Tips & Techniques for developing<br>Joomla plugins, modules and components.</p>
+<p>Developer of <a href="http://www.kksou.com/php-gtk2/Joomla/DirectPHP-plugin.php">DirectPHP</a>, <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php">googleMaps</a> and <a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleSearch-CSE-component.php">googleSearch</a>.</p>
+<p>Yes, this is also <i>"The Place for PHP-GTK2 sample codes"</i>, since 2005.</p></div>
+				</div>
+			</div>
+		</div>
+	
+		
+						</div>
+		
+							
+						<div id="search" class="zg-col zg-col-6">
+			
+							
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					<!-- SiteSearch Google CSE --><form method="get" action="https://kksou.com/php-gtk2/index.php" id="mod_googleSearch_cse"><input type="hidden" name="option" value="com_googlesearch_cse"><input type="hidden" name="n" value="30"><input type="hidden" name="view" value="googlesearchs"><div class="search hidden-navcollapse"><input type="hidden" name="Itemid" value="382"><input type="hidden" name="cx" value="partner-pub-5032765168656743:ost4rr-en3s"><input type="hidden" name="cof" value="FORID:11"><input type="hidden" name="ie" value="ISO-8859-1"><input type="text" name="q" maxlength="255" value="" class="form-control hidden-navcollapse" size="20"><button class="button hidden-navcollapse btn btn-primary">Search</button></div></form><script type="text/javascript"><!--
+(function() {var f = document.getElementById('mod_googleSearch_cse');if (f && f.q) {var q = f.q;var b = function(){if (q.value == '') {q.style.color = '#AAAAAA';q.style.background = '#FFFFFF url(https://cse.google.com/coop/intl/en/images/google_custom_search_watermark.gif) left no-repeat';}};	var f = function() {q.style.color = '#000000';q.style.background = '#ffffff';};q.onfocus = f;q.onblur = b;b();}})();
+//-->
+</script>				</div>
+			</div>
+		</div>
+	
+		
+						</div>
+		
+						</div>
+</div>		</div>
+	</section>
+	    	
+	    	
+	<!-- NAVBAR HEADER -->
+	
+		<div id="sticky-fill" class="hidden"></div>
+		
+	<section id="navwrap" class="wrap ">
+		<div class="zen-container">
+			<div class="navbar-default zen-row">
+				<div class="zen-spotlight">
+						<div id="menu" class="zen-menu zen-menu-horizontal zen-menu-left zen-menu-fading">
+							<div class="navbar-header ">
+								<nav role="navigation">
+								<!-- NAVBAR MAIN -->
+																					
+													
+									
+
+<ul id="zen-menu-404">
+<li class="item-101"><a href="../index.htm">
+		<span class="fa fa-home zen-icon-home zen-icon"></span>		Home			</a>
+	</li><li class="item-425"><a href="../category/Sample-Codes/index.htm">
+				Sample Codes			</a>
+	</li><li class="item-426 active deeper parent"><a href="../category/Joomla/index.htm">
+				Joomla			</a>
+	<ul class="zen-menu-child cols-1"><li class="item-427"><a href="../category/Joomla-Gadgets/index.htm">
+				Joomla Gadgets			</a>
+	</li><li class="item-429 current active"><a href="../category/Joomla-Tips-Techniques/index.htm">
+				Joomla Tips &amp; Techniques			</a>
+	</li><li class="item-430"><a href="../category/Joomla-News/index.htm">
+				Joomla News 			</a>
+	</li><li class="item-431"><a href="../category/Joomla-FAQs/index.htm">
+				Joomla FAQs			</a>
+	</li><li class="item-432"><a href="../category/Joomla-Developer-FAQs/index.htm">
+				Joomla Developer FAQs			</a>
+	</li></ul></li><li class="item-433"><a href="../geocoder2.php.html">
+				Geocoder2			</a>
+	</li><li class="item-428"><a href="../Feedback.php.html">
+				Feedback			</a>
+	</li></ul> 			
+ 	
+																				
+									<!-- //NAVBAR MAIN -->
+																			<a class="btn off-canvas-trigger sb-toggle-right visible-desktop"><span class="zen-icon zen-icon-bars"></span></a>
+																	</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	    	
+	    	
+	    	
+	    	
+	    	
+	    		
+
+
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
+<!-- MAIN CONTENT -->
+<section id="mainWrap" class="clearfix mr ">
+	<a id="main-link" name="main-link"></a>
+		<section id="breadcrumbwrap" class="clearfix">
+		<div class="zen-container">
+			<div class="zen-row">
+				<div class="zen-spotlight">
+				
+					<!-- Banner-slogan -->
+					<div id="breadcrumb" class="zg-col zg-col-12">
+						  
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					
+<ul class="breadcrumb zen-reset-list ">
+
+	<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../index.htm" class="pathway" itemprop="url"><span itemprop="title">Home</span></a></li><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../category/Joomla/index.htm" class="pathway" itemprop="url"><span itemprop="title">Joomla</span></a></li><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../category/Joomla-Tips-Techniques/index.htm" class="pathway" itemprop="url"><span itemprop="title">Joomla Tips &amp; Techniques</span></a></li><li><span>googleMaps plugin Tutorial 05: KML Files</span></li></ul>				</div>
+			</div>
+		</div>
+	
+					</div>
+					<!-- //breadcrumb -->
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	
+		
+	<div class="zen-container">
+		<div class="zen-row">
+			<div class="mainwrap zen-spotlight">
+				<div id="midCol" class="zg-col zg-col-9 ">
+					
+					 
+
+			
+
+		<main role="main">
+		
+
+<div class="item-page clearfix">
+
+
+<!-- Article -->
+<article itemscope="" itemtype="http://schema.org/Article">
+	<meta itemprop="inLanguage" content="en-GB">
+
+	<header class="article-header clearfix">
+		<h1 class="article-title" itemprop="name">
+			googleMaps plugin Tutorial 05: KML Files				<meta itemprop="url" content="<br />
+<b>Notice</b>:  Undefined variable: url in <b>/var/www/kksou.com/public_html/php-gtk2/templates/xero/html/com_content/article/default.php</b> on line <b>51</b><br />
+<br />
+<b>Notice</b>:  Undefined variable: prefix in <b>/var/www/kksou.com/public_html/php-gtk2/templates/xero/html/com_content/article/default.php</b> on line <b>51</b><br />
+">
+		</h1>
+	
+							</header>
+	
+
+<!-- Aside -->
+<aside class="article-aside clearfix">
+    	<ul class="article-info  muted small flat-list">
+
+		
+			
+			
+						
+			
+					
+		
+										<li class="modified">
+			
+				<time datetime="2016-01-01T12:36:13+00:00" itemprop="dateModified">
+					Last Updated: 01 January 2016				</time>
+			</li>			
+										<li class="hits">
+				
+					<meta itemprop="interactionCount" content="UserPageVisits:46979">
+					Hits: 46979			</li>						</ul>
+    
+  </aside>  
+<!-- //Aside -->
+
+
+
+
+
+	
+
+	
+	
+	<section class="article-content" itemprop="articleBody">
+		
+<script type="text/javascript">
+<!--
+function onload_gmap(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {window.onload = func;} else {
+    window.onload = function() {if (oldonload){oldonload();}func();}
+  }
+}
+
+function display_gmap_gmap(id, centerLatitude, centerLongitude, startZoom, description, kml, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview) {
+    var latlng = new google.maps.LatLng(centerLatitude, centerLongitude);
+    if (startZoom==0 || startZoom=='') startZoom=10;
+    var mapdiv = document.getElementById("gmap_gmap"+id);
+    var myOptions = {
+      zoom: startZoom,
+      center: latlng
+    };
+    var map = new google.maps.Map(mapdiv, myOptions);
+    if (kml!='') {
+    	var myKMLOptions = {
+		  //suppressInfoWindows: true,
+          map: map,
+          preserveViewport: true
+		};
+    	var georssLayer = new google.maps.KmlLayer(kml, myKMLOptions);
+  		georssLayer.setMap(map);
+    }
+    format_gmap(map, control, maptype, show_marker, addoverview, addscale, addgoogle);
+    format2_gmap(map, id, streetview);
+
+    if (show_marker) show_gmap_marker(map, latlng, centerLatitude, centerLongitude, description);
+    return map;
+}
+
+function format_gmap(map, control, maptype, show_marker, addoverview, addscale, addgoogle) {
+	if (addscale==1) map.setOptions({scaleControl: true});
+	//if (addoverview=='1') {map.setOptions({overviewMapControl: true, overviewMapControlOptions:{opened: true}});} else {map.setOptions({overviewMapControl: false});}
+	if (addoverview==1) map.setOptions({overviewMapControl: true, overviewMapControlOptions:{opened: true}});
+	//map.setOptions({google.maps.MapTypeId: ROADMAP});
+	if (maptype=='SATELLITE') {map.setOptions({MapTypeId: google.maps.MapTypeId.SATELLITE});}
+	else if (maptype=='TERRAIN') {map.setOptions({MapTypeId: google.maps.MapTypeId.TERRAIN});}
+	else if (maptype=='HYBRID') {map.setOptions({MapTypeId: google.maps.MapTypeId.HYBRID});}
+	else {map.setOptions({MapTypeId: google.maps.MapTypeId.ROADMAP});}
+}
+
+function format2_gmap(map, id, streetview) {
+	if (streetview==1) {map.setOptions({streetViewControl: true});}
+	else {map.setOptions({streetViewControl: false});}
+	
+}
+
+function show_gmap_marker(map, latlng, centerLatitude, centerLongitude, description) {
+    var desc = description;
+    if (desc=='') desc = '('+centerLatitude+', '+centerLongitude+')';
+    var title_desc = desc.replace(/<br \/>/g, ' ');
+    title_desc = title_desc.replace(/~/g, '');
+    var marker = new google.maps.Marker({
+        position:latlng,
+        map:map,
+		labelClass: "googleMaps_label",
+        title:title_desc
+    });
+    var infowindow = new google.maps.InfoWindow({content:desc.replace(/~/g, '<br />')});
+    google.maps.event.addListener(marker, 'click', function() {infowindow.open(map, marker);});
+}
+
+-->
+</script>
+
+
+<!-- 
+Powered by Joomla Gadgets from kksou.com
+https://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php
+-->
+
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1jVdW_ZAHcCOycz6uxnvAyZf1cOH94jI&language="></script>
+<script type="text/javascript">
+<!--
+function init_gmap_gmap(id, addr, centerLatitude, centerLongitude, startZoom, description, kml, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview) {
+    var map;
+	if (addr!='') {
+		var addr2 = addr.replace(/~/g, '');
+		var latlng_RegExp = /(-?\d+\.\d+)\s*,\s*(-?\d+\.\d+)/;
+		if (latlng_RegExp.test(addr2)) {
+			var str = addr2.match(latlng_RegExp);
+    		map = display_gmap_gmap(id, str[1], str[2], startZoom, description, kml, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview);
+		} else {
+			var geocoder = new google.maps.Geocoder();
+			geocoder.geocode( { 'address': addr2}, function(results, status) {
+		      if (status == google.maps.GeocoderStatus.OK) {
+		        if (description=='') description = addr;
+		      	map = display_gmap_gmap(id, results[0].geometry.location.lat(), results[0].geometry.location.lng(), startZoom, description, kml, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview);
+		      } else {
+		        alert('Google cannot decode your address: '+addr);
+		      }
+	   		});
+	   	}
+    } else {
+    	map = display_gmap_gmap(id, centerLatitude, centerLongitude, startZoom, description, kml, control, maptype, show_marker, addoverview, addscale, addgoogle, streetview);
+    }
+}
+
+-->
+</script>
+<p>This is part 5 of a series of tutorial for the googleMaps plugin.</p>
+
+<p>KML files allow you to do things such as displaying multiple markers or customized markers in your google maps.</p>
+
+<h3>KML Elements Supported in Google Maps</h3>
+
+<p>Not all KML elements are supported in Google Maps. Please refer to the following 2 documents for details:</p>
+
+<ul>
+<li><a href="https://developers.google.com/kml/documentation/mapsSupport">KML in Google Maps</a></li><p></p>
+<li><a href="https://developers.google.com/kml/documentation/kmlelementsinmaps">KML Elements Supported in Google Maps</a></li><p></p>
+</ul><p></p>
+ <br clear="all">
+
+<a id="kml"></a>
+<h3>Specifying KML files</h3>
+
+<p>To use kml files, use the following syntax:</p>
+
+<pre>&#123;googleMaps lat=37.4319720 long=-122.0941430
+zoom=12 width=100% height=480
+kml=http://www.kksou.com/php-gtk2/gmap/samples/kml_sample1.kml&#125;</pre>
+
+<p>Note that you still need to specify the latitude and longitude of the <b>center of the map</b>.</p>
+
+
+<div id="gmap_gmap0" style="width: 100%; height: 480px;"></div>
+<div style="width: 100%;"><p align="right" style="padding:0 0 0 0;margin:0 0 0 0"><a href="https://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p></div>
+<p>
+
+<h3>Sample 2</h3>
+
+
+<div id="gmap_gmap1" style="width: 100%; height: 480px;"></div>
+<div style="width: 100%;"><p align="right" style="padding:0 0 0 0;margin:0 0 0 0"><a href="https://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p></div>
+<p>
+<p>The above sample code is produced by using the following syntax:</p>
+<pre>&#123;googleMaps lat=53.763325 long=-2.579041 zoom=8 width=100% height=480 <br>kml=http://www.kksou.com/php-gtk2/gmap/test/KML_Samples12.kml&#125;
+</pre>
+
+<a id="marker"></a>
+<h3>Turning off the Marker</h3>
+
+<ul>
+<li>By default, a red marker will appear at the point where you specify the center of the map</li><p></p>
+<li>You can turn off the red marker by using the parameter <code style="background:#ffff00">marker=0</code></li><p></p>
+</ul>
+<p></p>
+
+<table border="1" cellpadding="4" cellpadding="4">
+<tr valign="top"><th>Default Red Marker</th><th>Marker Turned Off</th></tr>
+
+<tr valign="top">
+<td>&#123;googleMaps lat=37.4219720 long=-122.0841430<br>
+width=100% height=480 zoom=11
+kml=http://www.kksou.com/php-gtk2/gmap/samples/kml_sample1.kml&#125;</td>
+<td>&#123;googleMaps lat=37.4219720 long=-122.0841430<br>
+width=100% height=480 zoom=11 <b style="background:#ffff00">marker=0</b>
+kml=http://www.kksou.com/php-gtk2/gmap/samples/kml_sample1.kml&#125;</td>
+</tr>
+
+<tr valign="top">
+<td>
+<div id="gmap_gmap2" style="width: 320px; height: 240px;"></div>
+<div style="width: 320px;"><p align="right" style="padding:0 0 0 0;margin:0 0 0 0"><a href="https://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p></div>
+<p></p></td>
+<td>
+<div id="gmap_gmap3" style="width: 320px; height: 240px;"></div>
+<div style="width: 320px;"><p align="right" style="padding:0 0 0 0;margin:0 0 0 0"><a href="https://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p></div>
+<p></p></td>
+</tr>
+</table>
+
+<p></p>
+
+<a id="zoom"></a>
+<h3>Specifying Zoom Level</h3>
+
+<p>You can specify the zoom level in displaying the KML file.</p>
+
+<table border="1" cellpadding="4" cellpadding="4">
+<tr valign="top"><th>Zoom = 12</th><th>Zoom = 10</th></tr>
+
+<tr valign="top">
+<td>&#123;googleMaps lat=37.4219720 long=-122.0841430<br>
+marker=0 width=100% height=480 <b style="background:#ffff00">zoom=12</b>
+kml=http://www.kksou.com/php-gtk2/gmap/samples/kml_sample1.kml&#125;</td>
+<td>&#123;googleMaps lat=37.4219720 long=-122.0841430<br>
+marker=0 width=100% height=480 <b style="background:#ffff00">zoom=10</b>
+kml=http://www.kksou.com/php-gtk2/gmap/samples/kml_sample1.kml&#125;</td>
+</tr>
+
+<tr valign="top">
+<td>
+<div id="gmap_gmap4" style="width: 320px; height: 240px;"></div>
+<div style="width: 320px;"><p align="right" style="padding:0 0 0 0;margin:0 0 0 0"><a href="https://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p></div>
+<p></p></td>
+<td>
+<div id="gmap_gmap5" style="width: 320px; height: 240px;"></div>
+<div style="width: 320px;"><p align="right" style="padding:0 0 0 0;margin:0 0 0 0"><a href="https://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p></div>
+<p></p></td>
+</tr>
+</table>
+
+<p></p>
+
+<h3>References for KML files</h3>
+<p>Here are some references if you wish to learn more about the KML files:</p>
+<ul>
+<li><a href="http://code.google.com/apis/kml/documentation/kml_tut.html">Google's KML Tutorial</a></li><p></p>
+<li><a href="http://code.google.com/apis/kml/documentation/kmlreference.html">KML Reference</a></li><p></p>
+<li><a href="http://en.wikipedia.org/wiki/KML">Wiki - Keyhole Markup Language</a></li><p></p>
+
+<li><a href="https://developers.google.com/maps/documentation/javascript/layers#KMLLayers">Google Maps JavaScript API v3 Developer's Guide - KML and GeoRSS Layers</a></li><p></p>
+
+<li><a href="https://developers.google.com/maps/documentation/javascript/overlays">Google Maps JavaScript API v3 Developer's Guide - Overlays</a></li><p></p>
+
+<li><a href="http://sites.google.com/site/gdevelopercodelabs/geo/creating-kml">Google Developer Codelabs - Creating KML</a></li><p></p>
+
+<li><a href="http://sites.google.com/site/gdevelopercodelabs/geo/maps">Google Developer Codelabs - Maps API V3</a></li><p></p>
+
+
+</ul>
+
+
+
+<h3>Tutorials for the googleMaps plugin</h3><ul>
+<li><a href="googleMaps-plugin-Tutorial-01-Getting-Started.php.html">googleMaps plugin Tutorial 01: Getting Started</a></li>
+<li><a href="googleMaps-plugin-Tutorial-02-Zoom-Level.php.html">googleMaps plugin Tutorial 02: Zoom Level</a></li>
+<li><a href="googleMaps-plugin-Tutorial-03-Language.php.html">googleMaps plugin Tutorial 03: Language</a></li>
+<li><a href="googleMaps-plugin-Tutorial-04-Map-Type.php.html">googleMaps plugin Tutorial 04: Map Type</a></li>
+<li><a href="googleMaps-plugin-Tutorial-05-KML-Files.php.html">googleMaps plugin Tutorial 05: KML Files</a></li>
+
+</ul>
+<h3>Tutorials for the googleDirections plugin</h3><ul>
+<li><a href="googleDirections-plugin-Tutorial-01-Getting-Started.php.html">googleDirections plugin Tutorial 01: Getting Started</a></li>
+<li><a href="googleDirections-plugin-Tutorial-02-Specifying-Stopover-Points.php.html">googleDirections plugin Tutorial 02: Specifying Stopover Points</a></li>
+<li><a href="googleDirections-plugin-Tutorial-03-Travel-Modes.php.html">googleDirections plugin Tutorial 03: Travel Modes</a></li>
+<li><a href="googleDirections-plugin-Tutorial-04-Unit-Systems-miles-or-km.php.html">googleDirections plugin Tutorial 04: Unit Systems - miles or km</a></li>
+<li><a href="googleDirections-plugin-Tutorial-05-Display-Directions-on-the-Left.php.html">googleDirections plugin Tutorial 05: Display Directions on the Left</a></li>
+<li><a href="googleDirections-plugin-Tutorial-06-Display-Directions-below-the-Map.php.html">googleDirections plugin Tutorial 06: Display Directions below the Map</a></li>
+<li><a href="googleDirections-plugin-Tutorial-07-Display-Directions-in-your-Local-Language.php.html">googleDirections plugin Tutorial 07: Display Directions in your Local Language</a></li>
+<li><a href="googleDirections-plugin-Tutorial-08-Specifying-Stopover-Points.php.html">googleDirections plugin Tutorial 08: Specifying Stopover Points </a></li>
+
+</ul>
+<h3>Tutorials for the googleDirections_to_here plugin</h3><ul>
+
+<li><a href="googleDirections-To-Here-plugin-Tutorial-01-Getting-Started.php.html">googleDirections - To Here - plugin Tutorial 01: Getting Started</a></li>
+<li><a href="googleDirections-To-Here-plugin-Tutorial-02-Adding-Label-to-Home-Address.php.html">googleDirections - To Here - plugin Tutorial 02: Adding Label to Home Address</a></li>
+<li><a href="googleDirections-To-Here-plugin-Tutorial-03-Travel-Modes.php.html">googleDirections - To Here - plugin Tutorial 03: Travel Modes</a></li>
+<li><a href="googleDirections-To-Here-plugin-Tutorial-04-Unit-Systems-miles-or-km.php.html">googleDirections - To Here - plugin Tutorial 04: Unit Systems - miles or km</a></li>
+<li><a href="googleDirections-To-Here-plugin-Tutorial-05-Display-Directions-on-the-Left.php.html">googleDirections - To Here - plugin Tutorial 05: Display Directions on the Left</a></li>
+<li><a href="googleDirections-To-Here-plugin-Tutorial-06-Display-Directions-below-the-Map.php.html">googleDirections - To Here - plugin Tutorial 06: Display Directions below the Map</a></li>
+<li><a href="googleDirections-To-Here-plugin-Tutorial-07-Display-Directions-in-your-Local-Language.php.html">googleDirections - To Here - plugin Tutorial 07: Display Directions in your Local Language</a></li>
+<li><a href="googleDirections-To-Here-plugin-Tutorial-08-Specifying-Stopover-Points.php.html">googleDirections - To Here - plugin Tutorial 08: Specifying Stopover Points</a></li>
+
+</ul>
+
+
+
+<script type="text/javascript">
+<!--
+
+function load_gmap() {
+init_gmap_gmap('0', '', 37.4319720, -122.0941430, 12, '', 'http://www.kksou.com/php-gtk2/gmap/samples/kml_sample1.kml', '', '', 1, '1', '0', '1', '1');
+init_gmap_gmap('1', '', 53.763325, -2.579041, 8, '', 'http://www.kksou.com/php-gtk2/gmap/test/KML_Samples12.kml', '', '', 1, '1', '0', '1', '1');
+init_gmap_gmap('2', '', 37.4319720, -122.0941430, 11, '', 'http://www.kksou.com/php-gtk2/gmap/samples/kml_sample1.kml', '', '', 1, '0', '0', '1', '1');
+init_gmap_gmap('3', '', 37.4319720, -122.0941430, 11, '', 'http://www.kksou.com/php-gtk2/gmap/samples/kml_sample1.kml', '', '', 0, '0', '0', '1', '1');
+init_gmap_gmap('4', '', 37.40793727801396, -122.06171035766603, 12, '', 'http://www.kksou.com/php-gtk2/gmap/samples/kml_sample1.kml', '', '', 0, '0', '0', '1', '1');
+init_gmap_gmap('5', '', 37.40793727801396, -122.06171035766603, 10, '', 'http://www.kksou.com/php-gtk2/gmap/samples/kml_sample1.kml', '', '', 0, '0', '0', '1', '1');
+
+}
+-->
+</script>
+
+<script type="text/javascript">
+<!--
+jQuery(document).ready(function() {
+    load_gmap();
+});
+-->
+</script>
+	</section>
+
+  <!-- footer -->
+    <!-- //footer -->
+
+					
+			<ul class="pager pagenav">
+	<li class="previous">
+		<a class="hasTooltip" title="googleMaps plugin Tutorial 04: Map Type" aria-label="Previous article: googleMaps plugin Tutorial 04: Map Type" href="googleMaps-plugin-Tutorial-04-Map-Type.php.html" rel="prev">
+			<span class="icon-chevron-left" aria-hidden="true"></span> <span aria-hidden="true">Prev</span>		</a>
+	</li>
+	<li class="next">
+		<a class="hasTooltip" title="googleSearch component - a large gap appeared after the search result" aria-label="Next article: googleSearch component - a large gap appeared after the search result" href="googleSearch-component-a-large-gap-appeared-after-the-search-result.php.html" rel="next">
+			<span aria-hidden="true">Next</span> <span class="icon-chevron-right" aria-hidden="true"></span>		</a>
+	</li>
+</ul>
+	
+	
+	
+</article>
+<!-- //Article -->
+
+<div class="clearfix"></div>
+
+<script type="text/javascript">
+<!--
+var jcomments=new JComments(2084, 'com_content','/php-gtk2/jcomments/');
+jcomments.setList('comments-list');
+//-->
+</script>
+<div id="jc">
+<div id="comments"><h4>Comments <a class="rss" href="../jcomments/rss/com_content/2084.php.xml" title="RSS feed for comments to this post" target="_blank">&nbsp;</a><a class="refresh" href="#" title="Refresh comments list" onclick="jcomments.showPage(2084,'com_content',0);return false;">&nbsp;</a></h4>
+<div class="comments-list" id="comments-list-0">
+		<div class="even" id="comment-item-266">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-266">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(266, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(266, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-266" id="comment-266">#</a>
+<span class="comment-author">StefanoP.</span>
+<span class="comment-date">2012-04-30 23:52</span>
+<div class="comment-body" id="comment-body-266">Gentle Staff,<br>i have put the html code this {mosmap kml='http://..........kml'|overview='1'}<br>but the kml file with zoom is to 2 size..why?<br>Where's the mistake?<br>Thank you<br>Stefano</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(266); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(266,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(266); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-266">
+		<div class="odd" id="comment-item-269">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-269">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(269, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(269, -1);return false;"></a>
+<span class="vote-poor">-2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-269" id="comment-269">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-05-01 08:29</span>
+<div class="comment-body" id="comment-body-269">Hi,<br><br>You are using a different plugin!<br><br>Please check the starting thttp://www.kksou.com/php-gtk2/#ag. Yours different from the one listed on this page, isn't it?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(269); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(269,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(269); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-269">
+		<div class="even" id="comment-item-270">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-270">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(270, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(270, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-270" id="comment-270">#</a>
+<span class="comment-author">StefanoP</span>
+<span class="comment-date">2012-05-01 09:25</span>
+<div class="comment-body" id="comment-body-270">I search nothing into http://www.kksou.com/php-gtk2/#ag .....pls help me :S</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(270); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(270,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(270); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+	</div>
+		<div class="odd" id="comment-item-546">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-546">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(546, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(546, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-546" id="comment-546">#</a>
+<span class="comment-author">Rcrdop</span>
+<span class="comment-date">2012-08-27 08:17</span>
+<div class="comment-body" id="comment-body-546">Thank you for great Plugin. Is there a way to not show thew bubble when you click on the marker, or change the text color. Mine comes in a very light color hard to read, so I need to either not show or make text readable</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(546); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(546,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(546); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-581">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-581">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(581, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(581, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-581" id="comment-581">#</a>
+<span class="comment-author">Ricardo Quartier</span>
+<span class="comment-date">2012-09-09 01:42</span>
+<div class="comment-body" id="comment-body-581">Dear friend, how are you?<br><br>Well i am following your lessons, everything works except lesson 5 with KML<br><br>Everything loads markers, etc, except the maps. Where the maps should be just a white background appears.<br><br>Even if I try:<br><br>{googleMaps lat=37.4319720 long=-122.0941430 zoom=12 width=100% height=480 kml=http://www.kksou.com/gmap/samples/kml_sample1.kml}<br><br>It does not work.<br><br>If i take the kml out.. works normally.<br><br>Do you have any clue, anything i can be missing?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(581); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(581,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(581); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-581">
+		<div class="odd" id="comment-item-597">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-597">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(597, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(597, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-597" id="comment-597">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-09-17 08:56</span>
+<div class="comment-body" id="comment-body-597">Hi,<br><br>I used the same tag as you've written:<br>http://www.kksou.com/t1510/index.php?option=com_content&view=article&id=107:test-of-googlemaps-120916&catid=34:googlemaps&Itemid=54<br><br>Not sure why it didn't work on your site...<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(597); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(597,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(597); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-635">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-635">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(635, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(635, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-635" id="comment-635">#</a>
+<span class="comment-author">Diego MF.</span>
+<span class="comment-date">2012-09-26 22:55</span>
+<div class="comment-body" id="comment-body-635">Hi guys, your plug in is plain amazing, congratulations. I just want to know if I can add a detailed adress in the message that pops up when you mouse over the red marker. I mean it just show the Lat and Log numbers. Thanks for any help on this one. Greetings.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(635); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(635,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(635); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-635">
+		<div class="odd" id="comment-item-636">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-636">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(636, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(636, -1);return false;"></a>
+<span class="vote-good">+1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-636" id="comment-636">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-09-27 05:25</span>
+<div class="comment-body" id="comment-body-636">Hi,<br><br>Please refer to: googleMaps plugin Tutorial 01: Getting Started<br>http://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php<br><br>Item #2: Specifying Label for the Marker<br><br>I suppose you have specified the address using latitude and longitude. That's why you see lat and long being displayed. All you need to do is to add the tag "label".<br><br>Please give it a try and let me know if it works, ok?<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(636); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(636,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(636); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-681">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-681">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(681, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(681, -1);return false;"></a>
+<span class="vote-good">+1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-681" id="comment-681">#</a>
+<span class="comment-author">geronimous</span>
+<span class="comment-date">2012-10-18 05:05</span>
+<div class="comment-body" id="comment-body-681">Hi,<br><br>I've tried your plugin and I say "excellent"  <img src="../components/com_jcomments/images/smilies/lol.gif" alt=":lol:">  I'd like to know if is possible change the icon markers with others (personal labels). I've tried to do that but I'can't. Sorry for my english I hope that you understand. Bye</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(681); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(681,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(681); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-681">
+		<div class="odd" id="comment-item-682">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-682">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(682, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(682, -1);return false;"></a>
+<span class="vote-good">+1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-682" id="comment-682">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2012-10-18 07:43</span>
+<div class="comment-body" id="comment-body-682">Hi,<br><br>For display different markers, you need to use KML files as outlined in this tutorial.<br><br>You may want to refer to some of the references above: "References for KML files" for more details about KML.<br><br>You can also refer to the following article for a sample code: How to display multiple markers in different colors in Google Maps using KML file? http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Samples/How-to-display-multiple-markers-in-different-colors-in-Google-Maps-using-KML-file.php<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(682); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(682,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(682); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-683">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-683">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(683, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(683, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-683" id="comment-683">#</a>
+<span class="comment-author">geronimous</span>
+<span class="comment-date">2012-10-18 08:25</span>
+<div class="comment-body" id="comment-body-683">yes i've already seen that example but I would like to display my own markers (I'm getting crazy but nothing....). Thanks a lot in advance</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(683); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(683,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(683); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-783">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-783">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(783, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(783, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-783" id="comment-783">#</a>
+<span class="comment-author">ruelluis</span>
+<span class="comment-date">2012-12-12 10:17</span>
+<div class="comment-body" id="comment-body-783">I tried the following code, my map displays but the 10 markers in the kml does not.<br>{googleMaps lat=10.273983 long=124.005428 width=870 height=700 maptype=SATELLITE zoom=13 kml=http://ruelluis.podserver.info/Evacenter.kml}</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(783); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(783,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(783); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-845">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-845">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(845, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(845, -1);return false;"></a>
+<span class="vote-good">+1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-845" id="comment-845">#</a>
+<span class="comment-author">Karol</span>
+<span class="comment-date">2013-01-24 10:32</span>
+<div class="comment-body" id="comment-body-845">How does the "kml" part work? After diplaying the map it generates the KML file in specified address, right? I cannot find any KML file at the location of my site.<br>I'm trying this at localhost.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(845); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(845,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(845); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-845">
+		<div class="odd" id="comment-item-847">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-847">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(847, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(847, -1);return false;"></a>
+<span class="vote-good">+2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-847" id="comment-847">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2013-01-24 17:33</span>
+<div class="comment-body" id="comment-body-847">Hi Karol,<br><br>No, this plugin does not generate the KML file. But it can be used to display a KML file that you have generated somewhere else.<br><br>Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(847); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(847,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(847); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="even" id="comment-item-893">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-893">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(893, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(893, -1);return false;"></a>
+<span class="vote-poor">-3</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-893" id="comment-893">#</a>
+<span class="comment-author">NickC</span>
+<span class="comment-date">2013-02-22 00:36</span>
+<div class="comment-body" id="comment-body-893">Great plugin, I've used it a few times. Can't get markers from KML files to display, though. This is my code:<br><br>{googleMaps lat=52.766077 long=-1.214676 zoom=12 marker=0 kml=http://lfrs.nanagram.co.uk/maps/lfrs.kml}</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(893); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(893,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(893); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-1743">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1743">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1743, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1743, -1);return false;"></a>
+<span class="vote-poor">-2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-1743" id="comment-1743">#</a>
+<span class="comment-author">Paquyphoenix</span>
+<span class="comment-date">2015-09-27 12:56</span>
+<div class="comment-body" id="comment-body-1743">Hi Kksou,<br>Great plugins. We use it to display the location of our members. But since few weeks, the kml informations are not displayed anymore. Is there a problem with latest google maps kml files ?<br>Regards,<br>Paquy</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1743); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1743,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1743); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="even" id="comment-item-1812">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1812">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1812, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1812, -1);return false;"></a>
+<span class="vote-good">+1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-1812" id="comment-1812">#</a>
+<span class="comment-author">Nik</span>
+<span class="comment-date">2016-08-11 10:27</span>
+<div class="comment-body" id="comment-body-1812">After chaning a category that had a map and a kml file, no map is displayed. Even if I paste code that works elsewhere on the site, nothing is displayed in this category. <br>Now I am afraid of changing other places if something brakes. Or can it be that Google needs to chache the kml-file?</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1812); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1812,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1812); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+		<div class="odd" id="comment-item-1997">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1997">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1997, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1997, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-1997" id="comment-1997">#</a>
+<span class="comment-author">Wolfgang</span>
+<span class="comment-date">2018-06-28 15:01</span>
+<div class="comment-body" id="comment-body-1997">Thanks for the Plugin. I think I will use this instead of the mapsplugin from reumer what i used for the last years but now itl isn't under development.<br><br>I'm missing one feature at the moment: How to display more than one kml-file in single map? Reumer solved this by using kml[0]=.... kml[1]=.... kml[2]=..... and so on.<br>I tried different synthax but can't find out if or how it works.<br><br>Thanks for Help<br><br>Wolfgang</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1997); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1997,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1997); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-1997">
+		<div class="even" id="comment-item-1999">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-1999">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(1999, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(1999, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-1999" id="comment-1999">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2018-06-29 09:42</span>
+<div class="comment-body" id="comment-body-1999">Hi Wolfgang,<br><br>If you look at the article:<a href="https://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php" rel="external nofollow" target="_blank">googleMaps plugin Tutorial 05: KML Files</a><br><br>As you can see on this page, you can display multiple KML files, but it will be across multiple maps using multiple tags like this:<br><br>[googleMaps lat=37.4319720 long=-122.0941430<br>zoom=12 width=100% height=480<br>kml=http://www.kksou.com/php-gtk2/gmap/samples/kml_sample1.kml]<br><br>[googleMaps lat=53.763325 long=-2.579041 zoom=8 width=100% height=480<br>kml=http://www.kksou.com/php-gtk2/gmap/test/KML_Samples12.kml]<br><br>I believe what you want is multiple KML files into one map. For this, my plugin does not support this. <br><br>When I designed the plugin, I only wanted a very light-weight plugin for me to display maps on my website. I thought it might be useful, so I decided to share with others in Joomla! Extensions Directory. It's never intended as a replacement for the very powerful reumer's google plugin that I know support many advanced features.<br><br>KML files are just plain text file. One thing I can think of is to combine your multiple KML files into just one KML file.<br><br>You can google for: combining multiple KML files into one<br>I see many resources on how to do this.<br><br>Saw this<br>KML Merger: https://kmlmerger.com/<br>Not sure if it will work for you.<br><br>Once you have combined your multiple KML files into one, you can then display the KML file using googleMaps plugiin.<br><br>Hope this helps.<br><br>Warm Regards,<br>/kksou</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(1999); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(1999,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(1999); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+		<div class="odd" id="comment-item-2018">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-2018">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(2018, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(2018, -1);return false;"></a>
+<span class="vote-poor">-2</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-2018" id="comment-2018">#</a>
+<span class="comment-author">dixet</span>
+<span class="comment-date">2018-10-20 19:18</span>
+<div class="comment-body" id="comment-body-2018">Does the plugin somehow cache kml files? I have changed my kml file but the changes are not reflected on the page<br>link to page: http://www.mwanamaji.nl/index.php?option=com_joodb&view=catalog&Itemid=199<br>(click the divemap tab)<br>link to kml: http://www.mwanamaji.nl/kml/sites.kml <br>used plugin code: {googleMaps lat=10 long=0 zoom=2 width=100% height=480 kml=http://www.mwanamaji.nl/kml/sites.kml marker=0}<br><br>Thank you!</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(2018); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(2018,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(2018); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+	</div>
+	<div class="comments-list" id="comments-list-2018">
+		<div class="even" id="comment-item-2019">
+<div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-2019">
+<a href="#" class="vote-good" title="Good comment!" onclick="jcomments.voteComment(2019, 1);return false;"></a><a href="#" class="vote-poor" title="Bad comment!" onclick="jcomments.voteComment(2019, -1);return false;"></a>
+<span class="vote-poor">-1</span>
+	</span>
+</span>
+<a class="comment-anchor" href="googleMaps-plugin-Tutorial-05-KML-Files.php.html#comment-2019" id="comment-2019">#</a>
+<span class="comment-author">kksou</span>
+<span class="comment-date">2018-10-23 02:47</span>
+<div class="comment-body" id="comment-body-2019">Hi,<br><br>The googleMaps plugin does not cache anything.<br><br>But usually your Joomla backend does. Also the browser does. If you uses some other cache-related plugin (e.g. for fast loading), those plugins will also cache the page.<br><br>If you change the kml file, then you might need to clear the cache of all these to display the new kml file.<br><br>Warm Regards,<br>/CK</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.showReply(2019); return false;">Reply</a>
+ | <a href="#" onclick="jcomments.showReply(2019,1); return false;">Reply with quote</a> | 
+<a href="#" onclick="jcomments.quoteComment(2019); return false;">Quote</a>
+</span>
+</div><div class="clear"></div>
+</div>
+		</div>
+	</div>
+</div>
+<div id="comments-list-footer"><a class="refresh" href="#" title="Refresh comments list" onclick="jcomments.showPage(2084,'com_content',0);return false;">Refresh comments list</a><br><a class="rss" href="../jcomments/rss/com_content/2084.php.xml" title="RSS feed for comments to this post" target="_blank">RSS feed for comments to this post</a></div>
+</div>
+<h4>Add comment</h4>
+<a id="addcomments" href="#addcomments"></a>
+<form id="comments-form" name="comments-form" action="javascript:void(null);">
+<p>
+	<span>
+		<input id="comments-form-name" type="text" name="name" value="" maxlength="20" size="22" tabindex="1">
+		<label for="comments-form-name">Name (required)</label>
+	</span>
+</p>
+<p>
+	<span>
+		<input id="comments-form-email" type="text" name="email" value="" size="22" tabindex="2">
+		<label for="comments-form-email">E-mail (required, but will not display)</label>
+	</span>
+</p>
+<p>
+	<span>
+		<textarea id="comments-form-comment" name="comment" cols="65" rows="8" tabindex="5"></textarea>
+	</span>
+</p>
+<p>
+	<span>
+		<input class="checkbox" id="comments-form-subscribe" type="checkbox" name="subscribe" value="1" tabindex="5">
+		<label for="comments-form-subscribe">Notify me of follow-up comments</label><br>
+	</span>
+</p>
+<p>
+	<span>
+		<img class="captcha" onclick="jcomments.clear('captcha');" id="comments-form-captcha-image" src="../jcomments/captcha.php-86.jpeg?ac=55320" width="121" height="60" alt="Security code"><br>
+		<span class="captcha" onclick="jcomments.clear('captcha');">Refresh</span><br>
+		<input class="captcha" id="comments-form-captcha" type="text" name="captcha_refid" value="" size="5" tabindex="6"><br>
+	</span>
+</p>
+<div id="comments-form-buttons">
+	<div class="btn" id="comments-form-send"><div><a href="#" tabindex="7" onclick="jcomments.saveComment();return false;" title="Send (Ctrl+Enter)">Send</a></div></div>
+	<div class="btn" id="comments-form-cancel" style="display:none;"><div><a href="#" tabindex="8" onclick="return false;" title="Cancel">Cancel</a></div></div>
+	<div style="clear:both;"></div>
+</div>
+<div>
+	<input type="hidden" name="object_id" value="2084">
+	<input type="hidden" name="object_group" value="com_content">
+</div>
+</form>
+<script type="text/javascript">
+<!--
+function JCommentsInitializeForm()
+{
+	var jcEditor = new JCommentsEditor('comments-form-comment', true);
+	jcEditor.initSmiles('/php-gtk2/components/com_jcomments/images/smilies/');
+	jcEditor.addSmile(':D','laugh.gif');
+	jcEditor.addSmile(':lol:','lol.gif');
+	jcEditor.addSmile(':-)','smile.gif');
+	jcEditor.addSmile(';-)','wink.gif');
+	jcEditor.addSmile('8)','cool.gif');
+	jcEditor.addSmile(':-|','normal.gif');
+	jcEditor.addSmile(':-*','whistling.gif');
+	jcEditor.addSmile(':oops:','redface.gif');
+	jcEditor.addSmile(':sad:','sad.gif');
+	jcEditor.addSmile(':cry:','cry.gif');
+	jcEditor.addSmile(':o','surprised.gif');
+	jcEditor.addSmile(':-?','confused.gif');
+	jcEditor.addSmile(':-x','sick.gif');
+	jcEditor.addSmile(':eek:','shocked.gif');
+	jcEditor.addSmile(':zzz','sleeping.gif');
+	jcEditor.addSmile(':P','tongue.gif');
+	jcEditor.addSmile(':roll:','rolleyes.gif');
+	jcEditor.addSmile(':sigh:','unsure.gif');
+	jcEditor.addCounter(1000, '', ' symbols left', 'counter');
+	jcomments.setForm(new JCommentsForm('comments-form', jcEditor));
+}
+
+if (window.addEventListener) {window.addEventListener('load',JCommentsInitializeForm,false);}
+else if (document.addEventListener){document.addEventListener('load',JCommentsInitializeForm,false);}
+else if (window.attachEvent){window.attachEvent('onload',JCommentsInitializeForm);}
+else {if (typeof window.onload=='function'){var oldload=window.onload;window.onload=function(){oldload();JCommentsInitializeForm();}} else window.onload=JCommentsInitializeForm;} 
+//-->
+</script>
+<div id="comments-footer" align="center"><a href="http://www.joomlatune.com" title="JComments" target="_blank">JComments</a></div>
+<script type="text/javascript">
+<!--
+jcomments.setAntiCache(1,0,0);
+//-->
+</script> 
+</div></div>
+	</main>
+		
+	<!-- //MAIN CONTENT -->				</div>
+												<div id="sidebar-2" class="sidebar zg-col zg-col-3  " role="complementary">
+					
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+					<div class="zen-module-title">
+						<h3><span>Latest Comments</span><h3>
+					</h3></h3></div>
+							
+				<div class="zen-module-body">
+					<ul class="jcomments-latest">
+	
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">16.05.2019 15:18</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Patrick, I developed this plugin initially so that I can place a map on my website easily. I thought ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2184">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">Patrick</span>
+						<span class="date">13.05.2019 17:29</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi there, will it be possible to just show a link to the popup map? I don't want to show the map on my ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2180">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							DirectPHP plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">21.04.2019 16:05</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Mark, Sorry for the late reply. Recently there has been a huge influx of spam posts, and your post ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla/directphp-plugin.php.html#comment-2166">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							DirectPHP plugin					</h4>
+		
+		
+				<span class="author">Mark Hobbs</span>
+						<span class="date">08.04.2019 17:16</span>
+		
+		<div class="comment rounded ">
+					<div>
+				I've used DirectPHP for a few years... it's beautifully simple and convenient. I recently decided to ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla/directphp-plugin.php.html#comment-2160">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleDirections - To Here - plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">23.03.2019 09:35</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Greg, 1) First, make sure you have entered the Google Maps API key. You can apply it here ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleDirections-To-Here-plugin.php.html#comment-2146">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleDirections - To Here - plugin					</h4>
+		
+		
+				<span class="author">GREG</span>
+						<span class="date">22.03.2019 22:04</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi, I have installed all 3 plugins and when i enter my current location i get the error Google cannot ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleDirections-To-Here-plugin.php.html#comment-2145">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">15.01.2019 00:06</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Christian, Yes, you're right. For this plugin, you can show multiple KML files in a web page (using ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2094">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">Christian Teuber</span>
+						<span class="date">14.01.2019 16:30</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Can you point me to the sample map, I see only maps with one kml file on one map. I want to show 2 ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2093">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							New version of DirectPHP - support for PHP 7					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">14.01.2019 14:51</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Björn, Thanks for your support over so many years! I'm not running php 7.1, and I do not currently ...								<p class="jcomments-latest-readmore">
+					<a href="../joomla-news/new-version-of-directphp-support-for-php-7.php.html#comment-2091">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+				<span class="comment-separator">&#160;</span>
+			</li>
+			<li>
+				<h4>
+							googleMaps plugin					</h4>
+		
+		
+				<span class="author">kksou</span>
+						<span class="date">14.01.2019 14:44</span>
+		
+		<div class="comment rounded ">
+					<div>
+				Hi Christian, I have a sample page here with many KML files on it: googleMaps plugin Tutorial 05: KML ...								<p class="jcomments-latest-readmore">
+					<a href="../Joomla-Gadgets/googleMaps-plugin.php.html#comment-2090">Read more...</a>
+				</p>
+							</div>
+		</div>
+
+			</li>
+		</ul>
+
+				</div>
+			</div>
+		</div>
+	
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+					<div class="zen-module-title">
+						<h3><span>kksou Weather</span><h3>
+					</h3></h3></div>
+							
+				<div class="zen-module-body">
+					<script type="text/javascript">
+var headID = document.getElementsByTagName("head")[0];
+var cssNode = document.createElement('link');
+cssNode.type = 'text/css';
+cssNode.rel = 'stylesheet';
+cssNode.href = 'https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather.css';
+cssNode.media = 'screen';
+headID.appendChild(cssNode);
+</script><script type="text/javascript">
+//var mod_id = "301";
+var gw_lib_url301="https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather_lib.php";
+var gw_progress_gif301="https://kksou.com/php-gtk2/modules/mod_kksouweather/mod_kksouWeather_progress.gif";
+var joomla_root301='|_%$var|_%$www|_%$kksou.com|_%$public_html|_%$php-gtk2';
+var label_city301="City";
+var popup_city301="Please enter zip code, state (in US) or city name, country (for other countries)";
+var popup_deg_F301="Click here to convert to degree F";
+var popup_deg_C301="Click here to convert to degree C";
+var size_city301="20";
+var hide_input301="0";
+var lang301="en";
+var googleweather_unit301="US";
+var default_location301="San Francisco, CA";
+var googleweather_use_curl301="1";
+var request_interval301="3";
+var hide_humidity301="0";
+var hide_wind301="0";
+var hide_forecast301="0";
+var focus_on_city301="0";
+var api_key301="90d34681236de382";
+var default_country301="";
+var label_humidity301="Humidity: ";
+var refresh_time301="60";
+var admin_mode301="0";
+var joomla_ver301="3.0";
+</script><script type="text/javascript" src="../modules/mod_kksouweather/mod_kksouWeather_ajax.js"></script><div id="googleWeather_container301"><form action="index.php" method="get" id="WeatherForm301"><div class="googleWeather"><span class="input_label">City: </span><input name="gw_a" id="str_gw_a301" class="inputbox" maxlength="255" size="20" value="" title="">&nbsp;<span id="gw_loading301"></span><br><input type="hidden" name="a_org" id="str_gw_a_org301" class="inputbox" value=""><div align="left" style="padding-top:2px;"><p align="left" style="padding:0 0 0 0;margin:0 0 0 0"><a href="http://www.kksou.com/php-gtk2/Joomla-Gadgets/Google-Weather-AJAX-version.php" style="color:#aaa;text-decoration: none;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:7pt;font-weight: normal;">Powered by JoomlaGadgets</a></p></div><input type="hidden" name="process" value="1"><input type="hidden" name="temp_unit" id="temp_unit301" value="US"><input type="hidden" name="option" value="com_content"><input type="hidden" name="task" value=""><input type="hidden" name="id" value="2084"><input type="hidden" name="sectionid" value=""><input type="hidden" name="catid" value="42"><input type="hidden" name="Itemid" value="429"></div></form></div><script type="text/javascript">
+
+if (window.jQuery) {
+jQuery(document).ready(function() {
+	gw_prepareForm('301');
+	gw_submitform('301', 1);
+});
+} else {
+	gw_prepareForm('301');
+	gw_submitform('301', 1);
+}
+
+</script>
+				</div>
+			</div>
+		</div>
+	
+		<div class="moduletable ">
+			<div class="module-inner">
+							
+				<div class="zen-module-body">
+					<p>It's not that difficult to learn <a href="http://www.greengeeks.com/website-transfer/" title="how to transfer a website" target="_blank">how to transfer a website</a>.</p>				</div>
+			</div>
+		</div>
+	
+				</div>
+							</div>
+		</div>
+	</div>
+	
+		
+</section>	    	
+	    		    	
+	    	
+	    	
+	    	
+			
+			
+			
+			
+<!-- FOOTER -->
+<footer id="footerwrap" class="wrap zen-footer stack-tablets stack-phones" role="contentinfo">
+  <section class="zen-copyright">
+    <div class="zen-container">
+      <div class="zen-row">
+        	<div class="zg-col zg-col-9">
+	          
+
+<ul id="zen-menu-119">
+<li class="item-382"><a href="../index.php.html?option=com_googlesearch_cse&amp;view=googlesearchs&amp;Itemid=382&amp;lang=en">
+				Google Search			</a>
+	</li><li class="item-447"><a href="http://logistics-innovations.org/">Logistics Innovations</a></li><li class="item-456"><a href="https://www.rpa-sg.org/">RPA</a></li><li class="item-455"><a href="../category/joomla-version-history/index.htm">
+				Joomla Version History			</a>
+	</li><li class="item-457"><a href="https://ask.rpa-sg.org/">RPA Community Forum</a></li></ul>
+
+<div class="custom">
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-700099-1', 'auto');
+  ga('send', 'pageview');
+
+</script></div>
+
+        	</div>
+        	<div class="zg-col zg-col-3">
+        		<div id="zen-copyright">
+        			
+        			        				Copyright © 2005-2015. kksou.com. All Rights Reserved         		</div>
+        	</div>
+      	</div>
+	</div>
+  </section>
+</footer>
+<!-- //FOOTER -->			
+			
+
+
+			
+		</div>	
+	
+		
+
+	<div class="social-wrap fixed">
+
+		
+		
+
+		
+		
+<a id="social-twitter123" href="https://twitter.com/kksou" target="_blank">
+			<span class="zen-animate fadeInRightBig animated-faster fa fa-twitter zen-icon zen-icon-twitter"></span>
+	</a>
+
+	<script>
+		jQuery(document).ready(function ($) {
+			// Twitter Link Constructor
+			var twitter_link = $('#social-twitter').attr('href');
+
+			// Get title on page
+			// Made it broad for anumber of use cases but will retrieve h1 or h2 if not available
+			var title = $('#midCol h1:first').text();
+
+				if(typeof title ==="undefined") {
+					description = $('h2:first').text();
+				}
+
+			twitter_link += title;
+
+			$('#social-twitter').attr('href', twitter_link);
+		});
+	</script>
+
+		 	</div>
+	<script>
+		jQuery(document).ready(function ($) {
+
+			$('.popup').live( 'click', function(){
+				newwindow=window.open($(this).attr('href'),'','height=200,width=450');
+			    if (window.focus) {newwindow.focus()}
+			    return false;
+			 });
+		});
+	</script>
+		
+		
+<div class="sb-slidebar off-canvas-right sb-width-wide">
+	<div class="off-canvas-inner">
+		<div class="off-canvas-heading">
+			<span class="sb-close"><span class="zen-icon-remove zen-icon fa fa-icon-remove"></span></span>
+		</div>
+		<div class="off-canvas-body">
+			<div id="off-canvas-menu"><ul></ul></div>
+			
+		</div>
+	</div>
+</div>
+  
+ 
+ 
+<script>
+	
+	jQuery(document).ready(function($) {
+			
+			
+			
+				// Append nav if required
+				$('body').append_nav('787');	
+						
+				$(window).resize(function() {
+					$('body').append_nav('787');			
+				});
+			
+			 						
+				 		$('#off-canvas-menu').zenaccordion({
+				 		
+				 							 				 openfirst: true,
+				 				 				 				 selector: '.off-canvas-body',
+				 				 openicon: 'plus',
+				 				 closeicon: 'minus',
+				 				 type:"panel"
+				 		});
+			 			
+			 				
+			 
+			
+			
+			
+			$.slidebars();
+		});
+
+</script>
+ 		
+				
+		
+	<script>
+		jQuery(document).ready(function($){
+			$("img").not(".none").lazyload({
+				effect : "fadeIn"
+		});
+	});
+	</script>
+
+
+
+
+
+<div id="toTop" class="hidden-phone"><a id="toTopLink"><span class="fa fa-icon-arrow-up zen-icon zen-icon-arrow-up"></span><span id="toTopText"> Back to top</span></a></div>
+<script>
+	jQuery(document).ready(function($){
+			
+			$(window).scroll(function () {
+			
+				if ($(this).scrollTop() >200) {
+				 	$("#toTop").fadeIn();
+				}
+				else {
+				 	$("#toTop").fadeOut();
+				}
+			});
+		
+			$("#toTop").click(function() {
+				$("html, body").animate({ scrollTop: 0 }, "slow");
+				 return false;
+			});
+	});
+</script>
+
+
+
+
+
+<script>
+jQuery(document).ready(function($){
+	
+	
+	$('.sidebar').zenaccordion({
+	
+		  		 openfirst: true,
+  		   		 type:"panel"
+ 	});
+ 	
+
+});
+</script>
+
+
+
+
+
+
+
+<script>
+jQuery(document).ready(function($){
+	
+	var win      = $(window),
+	    fxel     = $('#navwrap'),
+	    fill     = $('#sticky-fill'),
+	    navheight = $('#menu').height(),
+	    eloffset = fxel.offset().top;
+	 
+	    $(fill).height(navheight);
+
+	win.scroll(function() {
+	    if (eloffset < win.scrollTop()) {
+	        fxel.addClass("fixed");
+	        $('html').addClass("fixed");
+	        $(fill).addClass('visible').removeClass('hidden');
+	    } else {
+	        fxel.removeClass("fixed");
+	        $('html').removeClass("fixed");
+	        $(fill).removeClass('visible').addClass('hidden');
+	    }
+	});
+});
+</script>
+
+
+
+
+
+	<script>
+	 new WOW().init();
+	</script>
+
+
+
+
+<!-- Fonts -->
+
+		
+			
+	</body>
+<!-- Copied from https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-05-KML-Files.php by Cyotek WebCopy 1.7.0.600, 14 Tháng Sáu 2019, 04:23:30 -->
+</html>

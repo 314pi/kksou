@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>How to pass variables or parameters from one Joomla article to another using DirectPHP?</title>
+		<description>Discuss How to pass variables or parameters from one Joomla article to another using DirectPHP?</description>
+		<link>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:43:26 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2013.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Marc says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-1779</link>
+			<description><![CDATA[I'am using joomla vers 3.4.8. I added the plugin, and php part is working. but i tried to pass variables as above but it doesn't work. I typed the url in the browser. the page with article shows up, but not my variable. did I miss any setting in Joomla? Regards Marc]]></description>
+			<dc:creator>Marc</dc:creator>
+			<pubDate>Sun, 24 Jan 2016 20:12:06 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-1779</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-1777</link>
+			<description><![CDATA[Hi Paul, You can pass any parameters. The key thing is whether your module can receive that. So you need to look at your module how it retrieves those parameters. E.g. if it uses $_GET, then you can use DirectPHP to pass the variables as method=GET. However, if it uses $_POST, then you have to use method=POST. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 22 Jan 2016 02:34:33 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-1777</guid>
+		</item>
+		<item>
+			<title>Paul Seyler says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-1775</link>
+			<description><![CDATA[Is it possible to use this technique to pass values from a page to a module ON the page? I have a Salesforce WebToLead form that needs to have different values for campaign ID, Lead Source, etc. every time it's used on a different landing page. Could I use this tool/approach to pass those values to the module containing the form? If not, is there another approach that would work? Thanks!]]></description>
+			<dc:creator>Paul Seyler</dc:creator>
+			<pubDate>Wed, 20 Jan 2016 19:41:13 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-1775</guid>
+		</item>
+		<item>
+			<title>hsnin says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-1251</link>
+			<description><![CDATA[Heloo, I am using: $itemid =JRequest::getVar('Itemid'); $id = JRequest::getVar('id'); to get the itemid en id, thats working but how do I pass the variables with directPHP in the INPUT statement? Regards, Hans]]></description>
+			<dc:creator>hsnin</dc:creator>
+			<pubDate>Sun, 08 Dec 2013 04:53:28 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-1251</guid>
+		</item>
+		<item>
+			<title>Stormy says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-1222</link>
+			<description><![CDATA[This is what I launch, sorry it did not show in the last note. 'index.php?option=com_content&Itemid=258&id=52&lan g=en&task=view&mth=$a[$z]&d_id=$d_id&year_id=$year _id'>$tout[$n]]]></description>
+			<dc:creator>Stormy</dc:creator>
+			<pubDate>Sun, 10 Nov 2013 20:09:19 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-1222</guid>
+		</item>
+		<item>
+			<title>Stormy says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-1221</link>
+			<description><![CDATA[This is the $tout[$n} Is the command in the field in a table with URL http://www.ciuhet.net/index.php/index.php?option=com_content&Itemid=258&id=52&lang=en&task=view&mth=January&d_id=2&year_id=12]]></description>
+			<dc:creator>Stormy</dc:creator>
+			<pubDate>Sun, 10 Nov 2013 20:07:36 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-1221</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-1220</link>
+			<description><![CDATA[Hi, You said "when I launch the command below". What is that "command" that you are referring to? Also, for "the page is not found 404 error", what is the complete url that you see at the top of the browser? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 10 Nov 2013 18:52:05 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-1220</guid>
+		</item>
+		<item>
+			<title>Stormy says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-1218</link>
+			<description><![CDATA[I am using joomla 3.2 with directphp, I have set filtering to no but when I launch the command below but the page is not found 404 error though the values display in the URL line]]></description>
+			<dc:creator>Stormy</dc:creator>
+			<pubDate>Sun, 10 Nov 2013 18:00:42 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-1218</guid>
+		</item>
+		<item>
+			<title>potro says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-926</link>
+			<description><![CDATA[Hello, i am using directPHP IN joomla2.5, i SET no filtering. Its jumping form FORM page to action page,but nothing is showing when I echo $_POST['var1'], and i want to interact with database also, can you pleas help me?]]></description>
+			<dc:creator>potro</dc:creator>
+			<pubDate>Sat, 30 Mar 2013 19:35:58 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-926</guid>
+		</item>
+		<item>
+			<title>Krutika says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-761</link>
+			<description><![CDATA[Thanks a lot! Was boggling my head for hours over this..]]></description>
+			<dc:creator>Krutika</dc:creator>
+			<pubDate>Thu, 06 Dec 2012 05:19:51 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla/how-to-pass-variables-or-parameters-from-one-joomla-article-to-another-using-directphp.php#comment-761</guid>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>googleDirections plugin</title>
+		<description>Discuss googleDirections plugin</description>
+		<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 04:56:43 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/1285.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-1924</link>
+			<description><![CDATA[Hi, As the error message says, it literally means Google cannot decode your address. Not sure which plugin your are using. If you are using googleMaps plugin, then please refer to the tutorial: googleMaps plugin Tutorial 01: Getting Started: https://www.kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php Please try the address in the tutorial and see if any map appears. This will allow you to know if the map works on your machine. If the plugin is working ok, you can try your own address again. If you are not in US, then don't forget to put in country name. Please give the above a try and let me know if it works. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 04 Sep 2017 02:03:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-1924</guid>
+		</item>
+		<item>
+			<title>christos says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-1923</link>
+			<description><![CDATA[I get the following error when I try to enter a location in the coming from field. Google cannot decode your address:]]></description>
+			<dc:creator>christos</dc:creator>
+			<pubDate>Sun, 03 Sep 2017 21:49:42 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-1923</guid>
+		</item>
+		<item>
+			<title>HEDEN Juster says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-1706</link>
+			<description><![CDATA[Hi Kksou, This plug-in Is it available for JOOMLA 3.3? Best Regards]]></description>
+			<dc:creator>HEDEN Juster</dc:creator>
+			<pubDate>Thu, 10 Jul 2014 03:34:07 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-1706</guid>
+		</item>
+		<item>
+			<title>Killerwhale says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-1267</link>
+			<description><![CDATA[Can I use this plugin with Joomla 3.2 version?]]></description>
+			<dc:creator>Killerwhale</dc:creator>
+			<pubDate>Sat, 11 Jan 2014 12:19:11 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-1267</guid>
+		</item>
+		<item>
+			<title>marfim says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-1249</link>
+			<description><![CDATA[Hi kksou, there is a procedure to install google dir on Joomla 3.2 ? Regards]]></description>
+			<dc:creator>marfim</dc:creator>
+			<pubDate>Mon, 02 Dec 2013 16:51:51 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-1249</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-1103</link>
+			<description><![CDATA[Hi Milan, Have just emailed you the installer for googleDirections v3.0 Please give it a try and let me know if it works. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 05 Jul 2013 17:29:53 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-1103</guid>
+		</item>
+		<item>
+			<title>Milan says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-1101</link>
+			<description><![CDATA[Hi, I've also Joomla 3.x installed. The Installation worked fine, but the frame isn't correctly sized (directions text goes over frame) Is there also a Version for Joomla 3.x? Milan]]></description>
+			<dc:creator>Milan</dc:creator>
+			<pubDate>Fri, 05 Jul 2013 01:37:48 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-1101</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-1057</link>
+			<description><![CDATA[Hi, Have just emailed you. Please let me know if you didn't receive it. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 27 May 2013 22:46:29 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-1057</guid>
+		</item>
+		<item>
+			<title>Geert D. says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-1056</link>
+			<description><![CDATA[IS it availeble for JOOMLA 3.1 Thnks]]></description>
+			<dc:creator>Geert D.</dc:creator>
+			<pubDate>Mon, 27 May 2013 09:48:42 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-1056</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-953</link>
+			<description><![CDATA[Hi, Please refer to the following google page in the heading "Usage Limits": developers.google.com/.../... "Individual requests for driving, walking or cycling directions may contain up to 8 intermediate waypoints in the request." Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 10 Apr 2013 08:32:47 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-953</guid>
+		</item>
+		<item>
+			<title>Johny R. says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-951</link>
+			<description><![CDATA[I'm trying to trace a complex direction and after 8 stopovers (4 in the same avenue), the map stops to be displayed. Is the any kind of limitation to trace directions? I'm using Joomla 2.5 with googleDirection 2.5.7]]></description>
+			<dc:creator>Johny R.</dc:creator>
+			<pubDate>Wed, 10 Apr 2013 06:56:20 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-951</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-818</link>
+			<description><![CDATA[Hi, You have asked similar question in the article "Google Maps directions using geographical coordinates (i.e. longitude and latitude)": http://www.kksou.com/php-gtk2/Joomla-Google-Maps-Directions-Samples/Google-Maps-directions-using-geographical-coordinates-i.e.-longitude-and-latitude.php?Itemid=0#comment-814 1) As described there, this is a Joomla plugin. As the name suggests, you use a plugin within a Joomla article. So you create a new article and place the code within the article. 2) Please do not use the source code view. Please simply enter the code in the default WYSISYG (what-you-see-is-what-you-get) mode. 3) Please also make sure that you have enabled the plugin. When you see the tag on your screen, it could mean the plugin is not enabled. 4) With the latest version which uses the Google Maps API v3, you DO NOT need to key in the API key. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 09 Jan 2013 05:52:18 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-818</guid>
+		</item>
+		<item>
+			<title>eventide says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-816</link>
+			<description><![CDATA[I don't understand WHERE to put the map code - putting the code in the article text, including source view, just shows the code on the web page. Also, which API key do I need to get - there are FIVE separate API services that can be enabled in the Google API Console. Please clarify these things if you want your plug-in to be used more!]]></description>
+			<dc:creator>eventide</dc:creator>
+			<pubDate>Wed, 09 Jan 2013 03:38:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-816</guid>
+		</item>
+		<item>
+			<title>remco says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-577</link>
+			<description><![CDATA[hey is it posible that it wont open google maps website it self ?]]></description>
+			<dc:creator>remco</dc:creator>
+			<pubDate>Wed, 05 Sep 2012 14:44:43 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-577</guid>
+		</item>
+		<item>
+			<title>Mdev says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-522</link>
+			<description><![CDATA[Install + paste code to an article = error 500 Uninstall = Failed loading XML file]]></description>
+			<dc:creator>Mdev</dc:creator>
+			<pubDate>Mon, 30 Jul 2012 07:01:54 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-522</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-401</link>
+			<description><![CDATA[Hi, You can use the standard browser File Print. The latest googleMaps API v3 now renders correctly when using the browser's print function. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 24 Jun 2012 17:15:20 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-401</guid>
+		</item>
+		<item>
+			<title>dr3wski says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-399</link>
+			<description><![CDATA[Is possible to add a print direction button/link?]]></description>
+			<dc:creator>dr3wski</dc:creator>
+			<pubDate>Fri, 22 Jun 2012 16:27:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php#comment-399</guid>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Joomla 3.0</title>
+		<description>Discuss Joomla 3.0</description>
+		<link>https://kksou.com/php-gtk2/Joomla-News/joomla-3-0.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:16:33 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2104.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>ermiz says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-News/joomla-3-0.php#comment-1060</link>
+			<description><![CDATA[Please when you will be ready convert it to J3.0. Tnx! Best Reegards]]></description>
+			<dc:creator>ermiz</dc:creator>
+			<pubDate>Tue, 28 May 2013 06:20:32 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-News/joomla-3-0.php#comment-1060</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-News/joomla-3-0.php#comment-1059</link>
+			<description><![CDATA[Hi, This is a component. Can only do modules and plugins for now. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 28 May 2013 06:15:04 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-News/joomla-3-0.php#comment-1059</guid>
+		</item>
+		<item>
+			<title>ermiz says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-News/joomla-3-0.php#comment-992</link>
+			<description><![CDATA[Hi kksou, Can you convert this extension Woman Calendar by Sameh Fakoua http://www.kksou.com/php-gtk2/Joomla-Extension-Conversions-to-native-1.5/Woman-Calendar-by-Sameh-Fakoua.php to J 3.0 ? tnx]]></description>
+			<dc:creator>ermiz</dc:creator>
+			<pubDate>Mon, 06 May 2013 00:45:00 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-News/joomla-3-0.php#comment-992</guid>
+		</item>
+	</channel>
+</rss>

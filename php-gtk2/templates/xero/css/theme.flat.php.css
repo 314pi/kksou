@@ -1,0 +1,5900 @@
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated-slower {
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated-faster {
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes rotateIn {
+  0% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(-200deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+}
+@-moz-keyframes rotateIn {
+  0% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(-200deg);
+    opacity: 0;
+  }
+  100% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+}
+@-o-keyframes rotateIn {
+  0% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(-200deg);
+    opacity: 0;
+  }
+  100% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes rotateIn {
+  0% {
+    transform-origin: center center;
+    transform: rotate(-200deg);
+    opacity: 0;
+  }
+  100% {
+    transform-origin: center center;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+.rotateIn {
+  -webkit-animation-name: rotateIn;
+  -moz-animation-name: rotateIn;
+  -o-animation-name: rotateIn;
+  animation-name: rotateIn;
+}
+@-webkit-keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(2000px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+@-o-keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(2000px);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+@keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeInUpBig {
+  -webkit-animation-name: fadeInUpBig;
+  -moz-animation-name: fadeInUpBig;
+  -o-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
+}
+@-webkit-keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(2000px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+@-o-keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(2000px);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+@keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fadeInRightBig {
+  -webkit-animation-name: fadeInRightBig;
+  -moz-animation-name: fadeInRightBig;
+  -o-animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig;
+}
+@-webkit-keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-2000px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+@-o-keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-2000px);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+@keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fadeInLeftBig {
+  -webkit-animation-name: fadeInLeftBig;
+  -moz-animation-name: fadeInLeftBig;
+  -o-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+/* joomla 3.x 400px */
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code_org,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+/* Reset the margin on menu items - Not really sure why this is necessary */
+ul,
+menu,
+dir,
+ol {
+  padding-left: 0;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
+div,
+ul,
+li {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+.span12 {
+  margin: 0 !important;
+}
+.hidden {
+  display: none !important;
+}
+/* Reset DD things in Joomla */
+dd {
+  padding: 0;
+  margin: 0;
+}
+/* Indent on ul */
+ul,
+ol {
+  margin-left: 16px;
+}
+fieldset {
+  min-width: 0;
+}
+/* Sidebar margin ul reset */
+.items-more ol {
+  margin-left: 0;
+  padding: 0;
+}
+/* Dont like Hr styling */
+hr {
+  border: 0;
+}
+/* Puts default margin on content items */
+article {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.btn-group a {
+  margin-right: 8px;
+}
+.btn-group > .dropdown-toggle,
+.btn-group > .btn:first-child,
+.btn-group > .btn:last-child {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#system-message {
+  margin: 0 !important;
+}
+legend {
+  margin: 0;
+}
+.alert {
+  padding: 30px;
+  margin-bottom: 12px;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+.alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.alert .alert-link {
+  font-weight: bold;
+}
+.alert > p,
+.alert > ul {
+  margin-bottom: 0;
+}
+.alert > p + p {
+  margin-top: 5px;
+}
+.alert .close {
+  float: right;
+  background: #d9edf7;
+  border: 0;
+  padding: 4px;
+  color: #5bb1dc;
+}
+.alert-dismissable,
+.alert-dismissible {
+  padding-right: 35px;
+}
+.alert-dismissable .close,
+.alert-dismissible .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+}
+.alert-success hr {
+  border-top-color: #c9e2b3;
+}
+.alert-success .alert-link {
+  color: #356635;
+}
+.alert-info,
+.alert-block {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #3a87ad;
+}
+.alert-info hr,
+.alert-block hr {
+  border-top-color: #a6e1ec;
+}
+.alert-info .alert-link,
+.alert-block .alert-link {
+  color: #2d6987;
+}
+.alert-warning {
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  color: #c09853;
+}
+.alert-warning hr {
+  border-top-color: #f7e1b5;
+}
+.alert-warning .alert-link {
+  color: #a47e3c;
+}
+.alert-danger,
+.alert-error {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #b94a48;
+}
+.alert-danger hr,
+.alert-error hr {
+  border-top-color: #e4b9c0;
+}
+.alert-danger .alert-link,
+.alert-error .alert-link {
+  color: #953b39;
+}
+.container {
+  max-width: 100%;
+}
+main .container {
+  padding: 0;
+  width: 100%;
+}
+div.modal {
+  display: none;
+}
+div.modal.in {
+  display: block;
+}
+.bootstrap2 input.uneditable-input,
+.bootstrap2 span.uneditable-input {
+  box-sizing: content-box;
+}
+.navbar-nav,
+.navbar-collapse,
+.collapse,
+.navbar-responsive-collapse {
+  clear: none !important;
+}
+.nav-tabs .dropdown-menu {
+  border: 0;
+  padding: 0;
+}
+.nav-tabs .dropdown-menu li,
+.nav-tabs .dropdown-menu a {
+  width: 100%;
+  margin: 0;
+}
+.nav-tabs .dropdown-menu .divider {
+  margin: 0;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  color: #ffffff !important;
+  background: #2980b9 !important;
+  border: 1px solid #409ad5 !important;
+  border-radius: 0px !important;
+}
+.nav-pills,
+.list-group,
+ul.breadcrumb {
+  margin-left: 0;
+}
+.list-unstyled {
+  margin: 60px 0;
+}
+.breadcrumb > li + li:before {
+  content: "";
+}
+.well-lg {
+  padding: 60px !important;
+}
+.well-sm {
+  padding: 15px !important;
+}
+.navbar-search {
+  margin-top: 8.5px;
+}
+.navbar-inverse input {
+  border-color: rgba(0, 0, 0, 0.3) !important;
+}
+main ul.breadcrumb {
+  float: left;
+  width: 100%;
+  margin: 0;
+}
+main ul.breadcrumb .divider {
+  clear: none;
+  display: inline;
+  float: right;
+  border: 0;
+}
+main ul.breadcrumb li {
+  float: left;
+}
+main ul.breadcrumb li:after {
+  content: "";
+}
+/**
+ * Zen Grid Framework 4
+ * Grid Pattern
+ *
+ */
+/* Reusable column setup */
+.mixin-col {
+  border: 0px solid rgba(0, 0, 0, 0);
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+}
+.zg-col {
+  border: 0px solid rgba(0, 0, 0, 0);
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+}
+.mixin-span_first,
+.no-margin {
+  margin-left: 0;
+}
+.zenlast {
+  float: right !important;
+  margin-left: 0 !important;
+}
+.zg-col {
+  margin-left: 0;
+  padding: 0;
+  width: 100%;
+}
+@media screen and (min-width: 787px) {
+  .zg-col {
+    margin-left: 0;
+  }
+  /* --- Gridpak variables ---*/
+  .zen-row .zg-col:first-child {
+    margin-left: 0;
+  }
+  /*
+        Add your semantic classnames in alongside their corresponding spans here. e.g.
+
+        */
+  .zg-col-1 {
+    width: 6.5%;
+    border-left-width: 0;
+    padding: 0;
+    margin-left: 2%;
+  }
+  .zg-col-2,
+  .one-sixth {
+    width: 15%;
+    border-left-width: 0;
+    padding: 0;
+    margin-left: 2%;
+  }
+  .zg-col-3,
+  .one-quarter {
+    width: 23.5%;
+    border-left-width: 0;
+    padding: 0;
+    margin-left: 2%;
+  }
+  .zg-col-4,
+  .one-third {
+    width: 32%;
+    border-left-width: 0;
+    padding: 0;
+    margin-left: 2%;
+  }
+  .zg-col-5 {
+    width: 40.5%;
+    border-left-width: 0;
+    padding: 0;
+    margin-left: 2%;
+  }
+  .zg-col-6,
+  .one-half {
+    width: 49%;
+    border-left-width: 0;
+    padding: 0;
+    margin-left: 2%;
+  }
+  .zg-col-7 {
+    width: 57.5%;
+    border-left-width: 0;
+    padding: 0;
+    margin-left: 2%;
+  }
+  .zg-col-8,
+  .two-thirds {
+    width: 66%;
+    border-left-width: 0;
+    padding: 0;
+    margin-left: 2%;
+  }
+  .zg-col-9,
+  .three-quarters {
+    width: 74.5%;
+    border-left-width: 0;
+    padding: 0;
+    margin-left: 2%;
+  }
+  .zg-col-10 {
+    width: 83%;
+    border-left-width: 0;
+    padding: 0;
+    margin-left: 2%;
+  }
+  .zg-col-11 {
+    width: 91.5%;
+    border-left-width: 0;
+    padding: 0;
+    margin-left: 2%;
+  }
+  .zg-col-12,
+  .one-whole {
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .zen-push,
+  .zen-pull {
+    position: relative;
+    z-index: 1;
+  }
+  .zen-push-11 {
+    left: 93.42666667%;
+  }
+  .zen-push-10 {
+    left: 84.93333333%;
+  }
+  .zen-push-9 {
+    left: 76.44%;
+  }
+  .zen-push-8 {
+    left: 67.94666667%;
+  }
+  .zen-push-7 {
+    left: 59.45333333%;
+  }
+  .zen-push-6 {
+    left: 50.96%;
+  }
+  .zen-push-5 {
+    left: 42.46666667%;
+  }
+  .zen-push-4 {
+    left: 33.97333333%;
+  }
+  .zen-push-3 {
+    left: 25.48%;
+  }
+  .zen-push-2 {
+    left: 16.98666667%;
+  }
+  .zen-push-1 {
+    left: 8.49333333%;
+  }
+  .zen-pull-11 {
+    left: -93.42666667%;
+  }
+  .zen-pull-10 {
+    left: -84.93333333%;
+  }
+  .zen-pull-9 {
+    left: -76.44%;
+  }
+  .zen-pull-8 {
+    left: -67.94666667%;
+  }
+  .zen-pull-7 {
+    left: -59.45333333%;
+  }
+  .zen-pull-6 {
+    left: -50.96%;
+  }
+  .zen-pull-5 {
+    left: -42.46666667%;
+  }
+  .zen-pull-4 {
+    left: -33.97333333%;
+  }
+  .zen-pull-3 {
+    left: -25.48%;
+  }
+  .zen-pull-2 {
+    left: -16.98666667%;
+  }
+  .zen-pull-1 {
+    left: -8.49333333%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .stack-tablets .zg-col {
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .stack-phones .zg-col {
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+.zen-row {
+  margin: 0 -30px;
+}
+.no-row-margin {
+  margin: 0;
+}
+.row {
+  margin: 0;
+}
+.container .row {
+  margin: 0 -20px;
+}
+.zen-container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 !important;
+}
+.responsive-enabled .zen-container {
+  width: 80%;
+  max-width: 900px;
+}
+.responsive-enabled .zen-container .zen-container {
+  width: 100%;
+}
+.tab-content {
+  clear: both;
+}
+.top25 {
+  margin-top: 25px;
+}
+.top50 {
+  margin-top: 50px;
+}
+.top75 {
+  margin-top: 75px;
+}
+.top100 {
+  margin-top: 100px;
+}
+.top125 {
+  margin-top: 125px;
+}
+.top150 {
+  margin-top: 150px;
+}
+.top175 {
+  margin-top: 175px;
+}
+.top200 {
+  margin-top: 200px;
+}
+.top225 {
+  margin-top: 225px;
+}
+.top250 {
+  margin-top: 250px;
+}
+.top275 {
+  margin-top: 275px;
+}
+.top300 {
+  margin-top: 300px;
+}
+.top325 {
+  margin-top: 325px;
+}
+.top350 {
+  margin-top: 350px;
+}
+.top375 {
+  margin-top: 375px;
+}
+.top400 {
+  margin-top: 400px;
+}
+.top425 {
+  margin-top: 425px;
+}
+.top450 {
+  margin-top: 450px;
+}
+.top475 {
+  margin-top: 475px;
+}
+.top500 {
+  margin-top: 500px;
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+#topwrap {
+  padding-top: 2px;
+}
+#topwrap ul {
+  margin: 0;
+}
+#topwrap ul li {
+  list-style-type: none;
+  float: left;
+  margin-right: 10px;
+}
+@media screen and (min-width: 787px) {
+  #topwrap #top4 ul {
+    float: right;
+  }
+}
+#belowcontent {
+  margin-top: 30px;
+}
+#abovecontent {
+  margin-bottom: 30px;
+}
+#footerwrap {
+  margin-bottom: 45px;
+  padding-top: 30px;
+  font-size: 90%;
+}
+#footerwrap .moduletable {
+  clear: both;
+  margin-bottom: 30px;
+  float: left;
+  width: 100%;
+}
+#footerwrap ul {
+  clear: both;
+  margin: 0;
+}
+#footerwrap ul li {
+  list-style-type: none;
+  float: left;
+  margin-right: 10px;
+}
+@media screen and (max-width: 787px) {
+  #footerwrap #zen-copyright {
+    text-align: left;
+    margin: 15px 0;
+  }
+}
+#tabwrap {
+  margin-top: 30px;
+  float: left;
+  width: 100%;
+}
+@media screen and (max-width: 787px) {
+  #tabwrap .nav-tabs li {
+    margin-bottom: 4px;
+    display: block;
+    float: left;
+    width: 100%;
+  }
+  #tabwrap .nav-tabs li a {
+    float: left;
+    width: 100%;
+  }
+}
+.sidebar .moduletable {
+  margin-bottom: 30px;
+}
+.sidebar .moduletable ul,
+.sidebar .moduletable ul.unstyled {
+  margin: 0;
+  margin-top: 10px;
+}
+.sidebar .moduletable ul li,
+.sidebar .moduletable ul.unstyled li {
+  list-style-type: none;
+  padding: 4px 0;
+}
+.sidebar .moduletable ul li li,
+.sidebar .moduletable ul.unstyled li li {
+  background: none !important;
+}
+.sidebar .moduletable ul ol,
+.sidebar .moduletable ul.unstyled ol {
+  list-style-type: decimal;
+}
+.sidebar .moduletable ul li,
+.sidebar .moduletable ul.unstyled li {
+  padding: 4px 0;
+}
+.sidebar .moduletable ul ul,
+.sidebar .moduletable ul.unstyled ul {
+  margin-left: 16px !important;
+  margin-top: 4px;
+}
+.sidebar .moduletable ul ul li,
+.sidebar .moduletable ul.unstyled ul li {
+  list-style-type: disc;
+  padding: 4px 0;
+}
+.sidebar .zen-menu-caption {
+  display: block;
+  font-style: italic;
+  font-size: 90%;
+  color: #666666;
+  line-height: 1.2em;
+}
+.sidebar .nav-header,
+.sidebar .zen-menu-heading {
+  display: block !important;
+  padding: 4px 0 !important;
+  font-size: 100% !important;
+  font-weight: inherit !important;
+  line-height: 1em !important;
+  color: #0c2436 !important;
+  text-shadow: none !important;
+  text-transform: none !important;
+}
+.sidebar .nav > li > a {
+  padding-left: 0;
+}
+.sidebar ul.menu {
+  margin-bottom: 30px;
+}
+.sidebar ul.menu ul {
+  margin-left: 16px;
+}
+.sidebar li.divider {
+  border: 0;
+}
+/**
+ * Zen Grid Framework 4
+ *
+ *
+ */
+/*------------------------------------*\
+	FORMS
+\*------------------------------------*/
+fieldset {
+  margin: 0;
+  max-width: 100%;
+  border: 0;
+  padding: 0;
+}
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.2em;
+  width: 100%;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eeeeee;
+}
+label {
+  display: block;
+  cursor: pointer;
+}
+input,
+textarea {
+  font-family: inherit;
+  font-size: 1em;
+  line-height: 2em;
+  padding: 6px 12px;
+  background: #ffffff;
+  color: #0c2436;
+  border: 1px solid #eeeeee;
+}
+input:hover,
+textarea:hover {
+  background: #fbfbfb;
+}
+input.button {
+  width: auto;
+  -webkit-appearance: none;
+}
+button {
+  background: #eeeeee;
+  border: 0;
+}
+label {
+  font-weight: normal;
+  margin-bottom: 4px;
+}
+.control-label {
+  margin-bottom: 0;
+}
+.simple-list {
+  margin: 0;
+}
+.simple-list li {
+  list-style-type: none;
+  padding: 4px 0;
+}
+.simple-list li li {
+  background: none !important;
+}
+.simple-list ol {
+  list-style-type: decimal;
+}
+.flat-list {
+  margin: 0;
+  margin-bottom: 30px;
+}
+.flat-list li {
+  list-style-type: none;
+  float: left;
+  margin-right: 10px;
+}
+button {
+  padding: 10px;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+input:-webkit-autofill:hover {
+  -webkit-box-shadow: 0 0 0px 1000px #fbfbfb inset;
+}
+.control-label {
+  float: left;
+  padding-top: 5px;
+  text-align: right;
+}
+.control-group {
+  display: table;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.control-group .optional {
+  font-size: 85%;
+}
+dl {
+  clear: both;
+  margin: 30px 0;
+}
+input {
+  min-height: 42px;
+  border-radius: 0 !important;
+  border: 1px solid #eeeeee !important;
+  box-shadow: none !important;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  min-height: 0;
+}
+textarea {
+  border-radius: 0 !important;
+}
+.table-bordered {
+  border-radius: 0 !important;
+}
+.form-control {
+  height: auto;
+}
+.form-group {
+  margin-bottom: 30px;
+}
+#off-canvas-menu {
+  margin-top: 40px;
+}
+#off-canvas-menu ul {
+  float: left;
+  width: 100% !important;
+  margin-bottom: 60px;
+}
+#off-canvas-menu ul ul {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  overflow: auto;
+  height: auto;
+  background: none;
+  padding: 0;
+  min-width: none;
+}
+/**
+ * Zen Grid Framework 4
+ *
+ *
+ */
+/*------------------------------------*\
+	Buttons
+\*------------------------------------*/
+/**
+ * Zen Grid Framework 4
+ *
+ *
+ */
+/*------------------------------------*\
+	Pagination
+\*------------------------------------*/
+.pagenav,
+.pagination,
+.pager {
+  margin: 0;
+  float: left;
+  width: 100%;
+  padding: 20px 0;
+}
+.pagenav li,
+.pagination li,
+.pager li {
+  list-style-type: none;
+  float: left;
+  margin-right: 10px;
+}
+.pagenav li a,
+.pagination li a,
+.pager li a {
+  color: #ffffff;
+  background: #2574a8;
+  border: 1px solid #1c577e;
+  padding: 10px;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  background: none;
+  color: #1c577e;
+  background: #none;
+  border: 1px solid #999999;
+  color: #999999;
+  min-height: 42px;
+  line-height: 42px;
+}
+.pagenav li a:hover,
+.pagination li a:hover,
+.pager li a:hover {
+  color: #ffffff !important;
+  background: #2980b9;
+  border: 1px solid #409ad5;
+  text-decoration: none;
+}
+.pagenav li a:hover,
+.pagination li a:hover,
+.pager li a:hover {
+  color: #ffffff !important;
+  background: #2980b9;
+  border: 1px solid #409ad5;
+  text-decoration: none;
+}
+.pagenav li a.active,
+.pagination li a.active,
+.pager li a.active {
+  color: #ffffff !important;
+  background: #2980b9 !important;
+  border: 1px solid #409ad5 !important;
+  border-radius: 0px !important;
+  border-radius: 0 !important;
+}
+.pagenav li.active a,
+.pagination li.active a,
+.pager li.active a {
+  color: #ffffff;
+  background: #2574a8;
+  border: 1px solid #1c577e;
+  padding: 10px;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.pagenav li.active a:hover,
+.pagination li.active a:hover,
+.pager li.active a:hover {
+  color: #ffffff !important;
+  background: #2980b9;
+  border: 1px solid #409ad5;
+  text-decoration: none;
+}
+.pagenav li.active a:hover,
+.pagination li.active a:hover,
+.pager li.active a:hover {
+  color: #ffffff !important;
+  background: #2980b9;
+  border: 1px solid #409ad5;
+  text-decoration: none;
+}
+.pagenav li.active a.active,
+.pagination li.active a.active,
+.pager li.active a.active {
+  color: #ffffff !important;
+  background: #2980b9 !important;
+  border: 1px solid #409ad5 !important;
+  border-radius: 0px !important;
+  border-radius: 0 !important;
+}
+.pagenav li.active a:hover,
+.pagination li.active a:hover,
+.pager li.active a:hover {
+  background: #2574a8;
+  border: 1px solid #1c577e;
+  color: #ffffff;
+}
+.pagenav li.next,
+.pagination li.next,
+.pager li.next {
+  float: right;
+  margin-right: 0;
+}
+.pagenav li.disabled a,
+.pagination li.disabled a,
+.pager li.disabled a {
+  border-color: #999999;
+}
+.pagenav li.disabled a:hover,
+.pagination li.disabled a:hover,
+.pager li.disabled a:hover {
+  background: #none;
+  border-color: #8f8f8f;
+  color: #999999;
+}
+.pagination-wrap .counter {
+  font-size: 90%;
+  color: #999999;
+}
+/* -----------------------------------
+ * Slidebars
+ * Version 0..10
+ * http://plugins.adchsm.me/slidebars/
+ *
+ * Written by Adam Smith
+ * http://www.adchsm.me/
+ *
+ * Released under MIT License
+ * http://plugins.adchsm.me/slidebars/license.txt
+ *
+ * -------------------
+ * Slidebars CSS Index
+ *
+ * 001 - Box Model, Html & Body
+ * 002 - Site
+ * 003 - Slidebars
+ * 004 - Animation
+ * 005 - Helper Classes
+ *
+
+
+
+
+/* ----------
+ * 002 - Site
+ */
+.off-canvas-trigger {
+  cursor: pointer;
+}
+.off-canvas-inner {
+  padding-top: 0;
+}
+#zen-wrap {
+  /* You may now use class .sb-site-container instead of #sb-site and use your own id. However please make sure you don't set any of the following styles any differently on your id. */
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  /* Site sits above Slidebars */
+  background-color: #ffffff;
+  /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible. */
+}
+/* ---------------
+ * 003 - Slidebars
+ */
+.sb-slidebar {
+  height: 100%;
+  overflow-y: auto;
+  /* Enable vertical scrolling on Slidebars when needed. */
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  /* Slidebars sit behind sb-site. */
+  display: none;
+  /* Initially hide the Slidebars. Changed from visibility to display to allow -webkit-overflow-scrolling. */
+  background-color: #2980b9;
+  /* Default Slidebars background colour, overwrite this with your own css. */
+  -webkit-transform: translate(0px);
+  /* Fixes issues with translated and z-indexed elements on iOS 7. */
+}
+.off-canvas-left {
+  left: 0;
+  /* Set Slidebar to the left. */
+}
+.off-canvas-right {
+  right: 0;
+  /* Set Slidebar to the right. */
+}
+html.sb-static .sb-slidebar,
+.sb-slidebar.sb-static {
+  position: absolute;
+  /* Makes Slidebars scroll naturally with the site, and unfixes them for Android Browser < 3 and iOS < 5. */
+}
+.sb-slidebar.sb-active {
+  display: block;
+  /* Makes Slidebars visibile when open. Changed from visibility to display to allow -webkit-overflow-scrolling. */
+}
+.sb-style-overlay {
+  z-index: 9999;
+  /* Set z-index high to ensure it overlays any other site elements. */
+}
+.sb-momentum-scrolling {
+  -webkit-overflow-scrolling: touch;
+  /* Adds native momentum scrolling for iOS & Android devices. */
+}
+/* Slidebar widths for browsers/devices that don't support media queries. */
+.sb-slidebar {
+  width: 35%;
+}
+.sb-width-thin {
+  width: 25%;
+}
+.sb-width-wide {
+  width: 45%;
+}
+@media (max-width: 480px) {
+  /* Slidebar widths on extra small screens. */
+  .sb-slidebar {
+    width: 45%;
+  }
+  .sb-width-thin {
+    width: 45%;
+  }
+  .sb-width-wide {
+    width: 65%;
+  }
+}
+@media (min-width: 481px) {
+  /* Slidebar widths on small screens. */
+  .sb-slidebar {
+    width: 45%;
+  }
+  .sb-width-thin {
+    width: 35%;
+  }
+  .sb-width-wide {
+    width: 65%;
+  }
+}
+@media (min-width: 768px) {
+  /* Slidebar widths on medium screens. */
+  .sb-slidebar {
+    width: 45%;
+  }
+  .sb-width-thin {
+    width: 35%;
+  }
+  .sb-width-wide {
+    width: 65%;
+  }
+}
+@media (min-width: 992px) {
+  /* Slidebar widths on large screens. */
+  .sb-slidebar {
+    width: 35%;
+  }
+  .sb-width-thin {
+    width: 25%;
+  }
+  .sb-width-wide {
+    width: 45%;
+  }
+}
+@media (min-width: 1200px) {
+  /* Slidebar widths on extra large screens. */
+  .sb-slidebar {
+    width: 35%;
+  }
+  .sb-width-thin {
+    width: 25%;
+  }
+  .sb-width-wide {
+    width: 45%;
+  }
+}
+/* ---------------
+ * 004 - Animation
+ */
+.sb-slide,
+#zen-wrap,
+.sb-site-container,
+.sb-slidebar {
+  -webkit-transition: -webkit-transform 400ms ease;
+  -moz-transition: -moz-transform 400ms ease;
+  -o-transition: -o-transform 400ms ease;
+  transition: transform 400ms ease;
+  -webkit-transition-property: -webkit-transform, left, right;
+  /* Add left/right for Android < 4.4. */
+  -webkit-backface-visibility: hidden;
+  /* Prevents flickering. This is non essential, and you may remove it if your having problems with fixed background images in Chrome. */
+}
+/* --------------------
+ * 005 - Helper Classes
+ */
+.sb-hide {
+  display: none;
+  /* Optionally applied to control classes when Slidebars is disabled over a certain width. */
+}
+/**
+ * Zen Grid Framework 4
+ * Grid Pattern
+ *
+ */
+/* Hidden panel */
+.zen-panel {
+  display: none;
+  padding: 30px;
+  background: #ffffff;
+  color: #333333;
+  position: absolute;
+  top: 100px;
+  z-index: 100;
+  max-width: 50%;
+  min-width: 50%;
+  left: 50%;
+  margin-left: -25%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 700px) {
+  .zen-panel {
+    top: 30px;
+    max-width: 90%;
+    left: 5%;
+    margin-left: 0;
+  }
+}
+.zen-panel h1,
+.zen-panel h2,
+.zen-panel h3,
+.zen-panel h4,
+.zen-panel h5,
+.zen-panel h6,
+.zen-panel p,
+.zen-panel li {
+  color: #333333;
+}
+.zen-panel a {
+  color: #999999;
+}
+.zen-panel .zen-panel-close {
+  float: right;
+}
+#zen-overlay {
+  position: fixed;
+  z-index: 99;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.open-panel span {
+  background: #2980b9;
+  color: #fff;
+}
+.open-panel span:before {
+  font-size: 80%;
+  margin-left: 3px !important;
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+/* Tools
+-----------------------------------------------------------------------------*/
+.floatleft {
+  float: left;
+  margin: 0 3% 30px 0;
+}
+.floatright {
+  float: right;
+  margin: 0 0 30px 3%;
+}
+.divider {
+  clear: both;
+}
+.divider:before,
+.divider:after {
+  content: " ";
+  display: table;
+}
+.divider:after {
+  clear: both;
+}
+.divider:before,
+.divider:after {
+  content: " ";
+  display: table;
+}
+.divider:after {
+  clear: both;
+}
+/* A legacy rule because we used clear so much before */
+.clear,
+.clearfix {
+  clear: both;
+}
+.clear:before,
+.clearfix:before,
+.clear:after,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clear:after,
+.clearfix:after {
+  clear: both;
+}
+/* Position on nav and logo etc */
+.zenleft {
+  float: left;
+}
+.zencenter {
+  float: none;
+  text-align: center;
+}
+.zenright {
+  float: right;
+}
+.hide {
+  display: none !important;
+}
+.zen-reset-list {
+  margin: 0;
+  padding: 0;
+}
+.zen-reset-list li,
+.zen-reset-list span {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 4px;
+}
+.padding {
+  padding: 10px 3%;
+}
+.zen-spotlight {
+  float: left;
+  width: 100%;
+}
+.breadcrumb {
+  margin-bottom: 30px;
+}
+.breadcrumb li:after {
+  content: '/';
+  margin-left: 8px;
+  color: #102f47;
+}
+.breadcrumb li:last-child:after {
+  content: '';
+}
+#zen-copyright {
+  text-align: right;
+}
+.zen-menu {
+  margin: 0;
+}
+.zen-menu *,
+.zen-menu *:before,
+.zen-menu *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.zen-menu li {
+  list-style-type: none;
+  margin: 0;
+}
+.zen-menu li a,
+.zen-menu li .zen-menu-heading {
+  cursor: pointer;
+}
+.zen-menu li a:hover,
+.zen-menu li .zen-menu-heading:hover {
+  text-decoration: none;
+}
+.zen-menu li.parent > a:before,
+.zen-menu li.parent > .zen-menu-heading:before {
+  width: 0;
+  height: 0;
+  float: left;
+  content: "";
+  margin-top: 16px;
+  margin-right: 8px;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: #fff transparent transparent transparent;
+}
+.zen-menu li.parent.active > a:before,
+.zen-menu li.parent.active > .zen-menu-heading:before {
+  border-color: #0c2436 transparent transparent transparent;
+}
+.zen-menu li ul li.parent > a:before,
+.zen-menu li ul li.parent > .zen-menu-heading:before {
+  float: right;
+  content: "";
+  width: 0;
+  height: 0;
+  margin: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 4px;
+  border-color: transparent transparent transparent #999;
+}
+.zen-menu ul {
+  margin: 0 0 0 16px;
+}
+.zen-menu ul li {
+  list-style-type: disc;
+}
+.zen-menu .zen-menu-caption {
+  display: block;
+  font-size: 90%;
+  padding: 4px 0;
+}
+/* menus in the middle */
+.zen-menu-center {
+  text-align: center;
+  float: none !important;
+  width: 100%;
+}
+.zen-menu-center li {
+  display: inline-table;
+  float: none !important;
+}
+.zen-menu-center li li {
+  display: block;
+  float: left !important;
+  text-align: left;
+  width: 100%;
+  text-indent: 0 !important;
+}
+.zen-menu-center li li a {
+  width: 100%;
+}
+/* menus in the middle */
+.zen-menu-right {
+  text-align: right;
+  float: right !important;
+}
+.zen-menu-right li {
+  display: inline-table;
+  float: none !important;
+}
+.zen-menu-right li li {
+  display: block;
+  float: left !important;
+  text-align: left;
+  width: 100%;
+  text-indent: 0 !important;
+}
+.zen-menu ul .zen-group ul {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  left: 0;
+  margin: 0;
+  height: auto;
+  box-shadow: none;
+  margin-top: 30px;
+  border: 1px solid #cfd9db;
+  margin-bottom: 30px;
+  display: block !important;
+  margin-left: 0 !important;
+}
+.zen-menu ul .zen-group ul ul {
+  border: 0;
+  margin-bottom: 0;
+  font-size: 90%;
+  overflow: visible !important;
+}
+.zen-menu ul .zen-group ul ul li {
+  list-style-type: disc !important;
+}
+.zen-menu ul .zen-group.parent > a:before,
+.zen-menu ul .zen-group.parent > .zen-menu-heading:before,
+.zen-menu ul .zen-group li.parent > a:before,
+.zen-menu ul .zen-group li.parent > .zen-menu-heading:before {
+  border: 0;
+  display: none;
+}
+.zen-menu ul .zen-group ul {
+  padding: 10px;
+}
+.zen-menu ul .zen-group ul ul {
+  padding: 0;
+  margin-left: 20px !important;
+  padding-bottom: 0 !important;
+}
+.zen-menu-horizontal.zen-menu-no-animation ul {
+  -webkit-transition: all 0s;
+  -moz-transition: all 0s;
+  transition: all 0s;
+}
+.zen-menu-horizontal .zen-menu-offscreen ul {
+  margin-left: -100% !important;
+  left: -100%;
+}
+.zen-menu-horizontal .zen-menu-offscreen ul ul {
+  margin-left: -20px !important;
+  left: 100% !important;
+}
+.zen-menu-horizontal ul {
+  width: 100%;
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.zen-menu-horizontal ul:before,
+.zen-menu-horizontal ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.zen-menu-horizontal ul li {
+  position: relative;
+  z-index: 10000;
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.zen-menu-horizontal ul a,
+.zen-menu-horizontal ul .zen-menu-heading {
+  display: block;
+  color: #333;
+  float: left;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0 15px;
+}
+.zen-menu-horizontal ul ul {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+  position: absolute;
+  z-index: 98;
+  top: 100%;
+  left: -20px;
+  margin-top: -10px;
+  background: #fff;
+  padding: 30px;
+  min-width: 300px;
+}
+.zen-menu-horizontal ul ul li {
+  width: 100%;
+}
+.zen-menu-horizontal ul ul ul {
+  top: 0;
+  left: 100%;
+}
+.zen-menu-horizontal ul .moduletable {
+  margin-bottom: 0;
+}
+.zen-menu-horizontal ul .moduletable ul {
+  height: auto;
+  opacity: 1;
+  overflow: visible;
+  visibility: visible;
+  display: block;
+  position: inherit;
+  left: auto;
+  top: auto;
+  padding: 0;
+  margin-bottom: 0 !important;
+  clear: both;
+}
+.zen-menu-horizontal ul .moduletable ul li {
+  padding: 0 !important;
+  line-height: 1em;
+}
+.zen-menu-horizontal ul .justify {
+  position: static;
+}
+.zen-menu-horizontal ul .justify ul {
+  min-width: 0;
+  margin-top: -7px !important;
+}
+.zen-menu-horizontal ul .justify ul ul {
+  margin-top: 0 !important;
+}
+.zen-menu-horizontal ul li:hover > ul {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+  overflow: visible;
+}
+.zen-menu-horizontal ul li:hover > ul .zen-group ul {
+  overflow: visible;
+  height: auto;
+}
+.zen-menu-above ul ul {
+  top: -40px;
+}
+.zen-menu-below ul ul {
+  margin: 100px 0 0 0 !important;
+}
+.zen-menu-below ul li:hover ul {
+  margin: 0 !important;
+}
+.zen-menu-below ul .justify ul {
+  margin: 100px 0 0 0 !important;
+}
+.zen-menu-below ul .justify:hover ul {
+  margin: -7px 0 0 0 !important;
+}
+.zen-menu-below ul .justify:hover ul ul {
+  margin: 0 !important;
+}
+.zen-menu-below ul ul {
+  top: 100%;
+}
+.zen-menu-zoom li > ul {
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  transform: scale(0.4);
+}
+.zen-menu-zoom li > ul .zen-menu-child {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+.zen-menu-zoom li:hover > ul {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+.zen-menu-zoom ul ul {
+  margin: 100px 0 0 0 !important;
+}
+.zen-menu-zoom ul li:hover ul {
+  margin: 0 !important;
+}
+.zen-menu-zoom ul .justify ul {
+  margin: 100px 0 0 0 !important;
+}
+.zen-menu-zoom ul .justify:hover ul {
+  margin: -7px 0 0 0 !important;
+}
+.zen-menu-zoom ul .justify:hover ul ul {
+  margin: 0 !important;
+}
+.zen-menu-tabs {
+  float: left;
+  width: 100%;
+}
+.zen-menu-tabs:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #eee;
+  z-index: 1;
+}
+.zen-menu-tabs li {
+  margin: 0;
+  z-index: 2;
+}
+.zen-menu-tabs li > a,
+.zen-menu-tabs li > .zen-menu-heading {
+  padding: 10px 30px;
+  border-bottom: 0;
+  border-left: 0;
+}
+.zen-menu-tabs li.active > a,
+.zen-menu-tabs li.active > .zen-menu-heading {
+  border: 1px solid #eee;
+  border-bottom-color: #fff;
+  border-radius: 4px 4px 0 0;
+}
+.zen-menu-tabs li li > a,
+.zen-menu-tabs li li > .zen-menu-heading {
+  border: 0;
+  padding: 0;
+}
+.zen-menu-tabs li li.active > a,
+.zen-menu-tabs li li.active > .zen-menu-heading {
+  border: 0;
+}
+.zen-menu-navbar {
+  border: 1px solid #eeeeee;
+  border-width: 1px 0;
+  width: 100%;
+}
+.zen-menu-navbar li {
+  margin: 0;
+}
+.zen-menu-navbar li > a,
+.zen-menu-navbar li > .zen-menu-heading {
+  border-right: 1px solid #eeeeee;
+  padding: 10px 20px;
+}
+.zen-menu-navbar li:last-child a,
+.zen-menu-navbar li:last-child .zen-menu-heading {
+  border-right: 0;
+}
+.zen-menu-navbar li ul a,
+.zen-menu-navbar li ul .zen-menu-heading {
+  border: 0;
+  box-shadow: none;
+  background-image: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style-type: none !important;
+}
+.zen-menu-navbar li .zen-menu-caption {
+  padding: 0;
+}
+.zen-menu-vertical ul {
+  margin: 0;
+}
+.zen-menu-vertical ul li {
+  list-style-type: none;
+  padding: 4px 0;
+}
+.zen-menu-vertical ul li li {
+  background: none !important;
+}
+.zen-menu-vertical ul ol {
+  list-style-type: decimal;
+}
+.zen-menu .zen-menu-module {
+  padding: 10px 0 20px;
+}
+.zen-menu .zen-menu-module h3 {
+  margin: 0;
+}
+.zen-menu .zen-menu-module #modlgn-remember {
+  margin-left: 0 !important;
+}
+.zen-menu-pills li > a,
+.zen-menu-pills li > .zen-menu-heading {
+  padding: 10px 20px 0;
+  border-radius: 4px;
+}
+.zen-menu-pills li > a:hover,
+.zen-menu-pills li > .zen-menu-heading:hover {
+  color: #fff;
+  background: #999;
+}
+.zen-menu-pills li.active > a,
+.zen-menu-pills li.active > .zen-menu-heading {
+  background: #999;
+  color: #fff;
+  padding: 10px 20px 0;
+  border-radius: 4px;
+}
+.zen-menu-pills li.active ul li > a,
+.zen-menu-pills li.active ul li > .zen-menu-heading {
+  border: 0;
+  box-shadow: none;
+  background-image: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style-type: none !important;
+}
+.zen-menu-pills li ul a,
+.zen-menu-pills li ul .zen-menu-heading {
+  border: 0;
+  box-shadow: none;
+  background-image: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style-type: none !important;
+}
+.zen-menu-pills li ul li a:hover,
+.zen-menu-pills li ul li .zen-menu-heading:hover {
+  color: #999;
+}
+@media (min-width: 787px) {
+  .zen-menu-toggle {
+    display: none;
+  }
+  .zen-menu-toggle li {
+    display: block;
+    float: none;
+  }
+  .zen-menu-toggle li ul {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    left: 0;
+    margin: 0;
+    height: auto;
+    margin-left: 0;
+    float: left;
+    width: 100%;
+  }
+  .zen-menu-toggle li:hover > ul {
+    margin-left: 0px;
+  }
+  .zen-menu-toggle li:hover > ul ul {
+    margin-left: 20px;
+  }
+  .zen-menu-toggle .zen-group ul {
+    margin-left: 0px !important;
+  }
+  .zen-menu-toggle .zen-group:hover > ul {
+    margin-left: 0px;
+  }
+  .zen-menu-toggle .zen-group:hover > ul ul {
+    margin-left: 0;
+  }
+}
+@media (min-width: 787px) {
+  .zen-menu {
+    clear: both;
+  }
+}
+@media (max-width: 787px) {
+  .zen-menu-btn {
+    display: block;
+  }
+}
+@media (min-width: 787px) {
+  .zen-menu-btn {
+    display: none;
+  }
+}
+.responsive_menu select {
+  display: block;
+  width: 100%;
+  height: 36px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border-color: 1px solid #eeeeee;
+}
+/* hide the link until viewport size is reached */
+a.meanmenu-reveal {
+  display: none;
+}
+/* when under viewport size, .mean-container is added to body */
+.mean-container .mean-bar {
+  float: left;
+  width: 100%;
+  position: relative;
+  background: #2980b9;
+  padding: 4px 0 0;
+  min-height: 42px;
+  margin-bottom: 10px;
+  z-index: 99;
+}
+.mean-container li.parent .zen-icon-plus,
+.mean-container li.parent .zen-icon-minus {
+  float: right;
+  color: #0c2436;
+}
+.mean-container a.meanmenu-reveal {
+  width: 22px;
+  height: 22px;
+  padding: 13px 13px 11px 13px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  text-indent: -9999em;
+  line-height: 22px;
+  font-size: 1px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.mean-container a.meanmenu-reveal:hover {
+  color: #0c2436;
+}
+.mean-container a.meanmenu-reveal span {
+  display: block;
+  background: #ffffff;
+  height: 3px;
+  margin-top: 3px;
+}
+.mean-container a.meanmenu-reveal span:hover {
+  color: #0c2436;
+}
+.mean-container .mean-nav {
+  float: left;
+  width: 100%;
+  margin-top: 44px;
+}
+.mean-container .mean-nav ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style-type: none;
+}
+.mean-container .mean-nav ul li {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 0;
+}
+.mean-container .mean-nav ul li a,
+.mean-container .mean-nav ul li span.zen-menu-heading {
+  display: block;
+  float: left;
+  width: 90%;
+  padding: 1em 5%;
+  margin: 0;
+  text-align: left;
+  color: #0c2436;
+  border-top: 1px solid #383838;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.mean-container .mean-nav ul li a:hover,
+.mean-container .mean-nav ul li span.zen-menu-heading:hover {
+  color: #2c3e50;
+}
+.mean-container .mean-nav ul li li a,
+.mean-container .mean-nav ul li li span.zen-menu-heading {
+  width: 80%;
+  padding: 0.9em 10%;
+  border-top: 1px solid #f1f1f1;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  text-shadow: none !important;
+  visibility: visible;
+}
+.mean-container .mean-nav ul li.mean-last a,
+.mean-container .mean-nav ul li.mean-last span.zen-menu-heading {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.mean-container .mean-nav ul li li li a,
+.mean-container .mean-nav ul li li li span.zen-menu-heading {
+  width: 70%;
+  padding: 1em 15%;
+}
+.mean-container .mean-nav ul li li li li a,
+.mean-container .mean-nav ul li li li li span.zen-menu-heading {
+  width: 60%;
+  padding: 1em 20%;
+}
+.mean-container .mean-nav ul li li li li li a,
+.mean-container .mean-nav ul li li li li li span.zen-menu-heading {
+  width: 50%;
+  padding: 1em 25%;
+}
+.mean-container .mean-nav ul li a:hover {
+  background: #252525;
+  background: rgba(255, 255, 255, 0.05);
+}
+.mean-container .mean-nav ul li a.mean-expand {
+  margin-top: 1px;
+  width: 20px;
+  height: 20px;
+  padding: 12px !important;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  font-weight: 700;
+  font-size: 1.4em !important;
+  border: none !important;
+}
+.mean-container .mean-nav ul li a.mean-expand:hover {
+  color: #2c3e50;
+}
+.mean-container .mean-push {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+.mean-nav .wrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+/* Fix for box sizing on Foundation Framework etc. */
+.mean-container .mean-bar,
+.mean-container .mean-bar * {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.mean-remove {
+  display: none !important;
+}
+.mean-container .zen-menu-caption {
+  font-size: 11px;
+  font-style: italic;
+  color: #999;
+  margin-left: 10px;
+}
+.mean-nav .moduletable {
+  box-sizing: border-box;
+  padding: 20px;
+}
+.mean-nav .moduletable #login-form ul {
+  margin-bottom: 60px;
+}
+.mean-nav .moduletable .form-group {
+  margin-bottom: 0;
+}
+.mean-nav .moduletable input {
+  width: 100%;
+  box-sizing: border-box;
+}
+.mean-nav .moduletable input[type="checkbox"],
+.mean-nav .moduletable input[type="radio"] {
+  width: auto;
+}
+#off-canvas-menu {
+  margin: 0 !important;
+}
+#off-canvas-menu ul {
+  margin: 0 !important;
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+@media screen and (min-width: 700px) {
+  .hidden-desktop {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+  .visible-desktop {
+    display: block !important;
+    visibility: visible;
+  }
+  .visible-tablets {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+}
+@media screen and (min-width: 620px) and (max-width: 700px) {
+  .stack-tablets .zg-col {
+    width: 100% !important;
+    margin-left: 0;
+  }
+  .hidden-tablets {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+  .visible-tablets {
+    display: block !important;
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 620px) {
+  .stack-phones .zg-col {
+    width: 100%;
+  }
+  .hidden-phones {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+  .visible-phone {
+    display: block !important;
+    visibility: visible;
+  }
+  .responsive-enabled .zen-container {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 787px) {
+  .visible-navcollapse,
+  #off-canvas-menu .simple-list {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+}
+@media screen and (max-width: 787px) {
+  .visible-navcollapse {
+    display: block !important;
+    visibility: visible;
+  }
+  .hidden-navcollapse {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+  #menu ul {
+    display: none;
+  }
+  .default-menu #menu ul,
+  .stacked-menu #menu ul {
+    display: block;
+  }
+  .default-menu #menu ul ul,
+  .stacked-menu #menu ul ul {
+    display: none;
+  }
+  .default-menu #navwrap.fixed,
+  .stacked-menu #navwrap.fixed {
+    position: relative;
+  }
+  .stacked-menu #menu ul li {
+    width: 100%;
+  }
+  #menu {
+    position: inherit !important;
+  }
+  #menu .off-canvas-trigger {
+    position: absolute !important;
+    top: -50px;
+    padding: 15px 12px 15px 18px !important;
+  }
+  #menu .off-canvas-trigger span:before {
+    font-size: 100% !important;
+    line-height: 1.2em !important;
+  }
+  .fixed .off-canvas-trigger {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 787px) {
+  .visible-gridcollapse {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+}
+@media screen and (max-width: 787px) {
+  .visible-gridcollapse {
+    display: block !important;
+    visibility: visible;
+  }
+  .hidden-gridcollapse {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+.article-footer {
+  margin-bottom: 30px;
+}
+.article-aside {
+  margin-bottom: 30px;
+}
+.items-leading,
+.item-row .item {
+  margin-bottom: 60px;
+}
+.item-row {
+  margin-bottom: 30px;
+  float: left;
+  width: 100%;
+}
+.items-more {
+  margin-bottom: 30px;
+  float: left;
+  width: 100%;
+}
+.zg-col-3 .article-info,
+.zg-col-4 .article-info {
+  margin-bottom: 4px;
+}
+.zg-col-3 .article-info li,
+.zg-col-4 .article-info li {
+  display: block;
+  float: none;
+}
+.zg-col-3 .article-title,
+.zg-col-4 .article-title {
+  font-size: 1.8em;
+}
+.zg-col-3 .readmore a,
+.zg-col-4 .readmore a {
+  display: inline-block;
+}
+.zg-col-3 .item,
+.zg-col-4 .item {
+  margin-bottom: 30px;
+}
+.category-list ul {
+  margin-bottom: 30px;
+}
+.category-list li {
+  padding: 8px 0;
+}
+.category-list .btn {
+  margin-top: 20px;
+}
+table.category {
+  width: 100%;
+}
+table.category th {
+  text-align: left;
+  font-weight: bold;
+}
+.item-image {
+  margin: 30px 0;
+}
+.img-left {
+  float: left;
+  max-width: 100%;
+  margin: 0 30px 30px 0;
+}
+.img-right {
+  float: right;
+  max-width: 100%;
+  margin: 0 0 30px 30px;
+}
+.img-none img {
+  margin: 0 auto 30px;
+}
+@media screen and (max-width: 700px) {
+  .img-right,
+  .img-left {
+    margin: 30px 0;
+  }
+}
+#login-form fieldset {
+  padding: 0;
+  border: 0;
+}
+#login-form input {
+  margin-bottom: 30px;
+}
+#login-form ul {
+  margin: 30px 0 0 0;
+}
+#login-form ul li {
+  list-style-type: none;
+  padding: 2px 0;
+}
+#login-form input#remember,
+#login-form label {
+  display: inline;
+}
+.search-results {
+  padding-top: 30px;
+  border-top: 1px solid #eeeeee;
+}
+.search-results li:last-child,
+.search-results li:last-child a {
+  border-bottom: 0;
+}
+.search-results h3,
+.search-results p {
+  margin: 0;
+}
+.search-results .small {
+  font-size: 90%;
+}
+.search-results li {
+  border-bottom: 1px solid #eeeeee;
+  padding: 30px 0;
+}
+#searchForm .no-margin {
+  margin-left: 0 !important;
+}
+#searchForm input[type="radio"],
+#searchForm input[type="checkbox"] {
+  margin-right: 10px;
+}
+#searchForm legend {
+  margin-bottom: 30px;
+}
+/* Tooltips
+-----------------------------------------------------------------------------*/
+.control-group {
+  position: relative;
+  z-index: 1;
+}
+.tip-wrap {
+  background: #2980b9;
+  border: 1px solid #2574a8;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  max-width: 300px;
+  z-index: 999;
+  color: #fff;
+}
+.tip-title {
+  border-bottom: 1px solid #2574a8;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+.tip-text {
+  font-size: 12px;
+  margin: 0;
+  padding: 5px 10px;
+}
+.hasTip img {
+  border: none;
+  margin: 0 5px 0 0;
+}
+.tooltip {
+  position: absolute;
+  z-index: 1030;
+  display: block;
+  font-size: 11px;
+  line-height: 1.4;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: visible;
+}
+.tooltip.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.tooltip.top {
+  padding: 5px 0;
+  margin-top: -3px;
+}
+.tooltip.right {
+  padding: 0 5px;
+  margin-left: 3px;
+}
+.tooltip.bottom {
+  padding: 5px 0;
+  margin-top: 3px;
+}
+.tooltip.left {
+  padding: 0 5px;
+  margin-left: -3px;
+}
+.tooltip-inner {
+  max-width: 200px;
+  padding: 8px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #2980b9;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+}
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-top-color: #2574a8;
+  border-width: 5px 5px 0;
+}
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-right-color: #2574a8;
+  border-width: 5px 5px 5px 0;
+}
+.tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-left-color: #2574a8;
+  border-width: 5px 0 5px 5px;
+}
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-bottom-color: #2574a8;
+  border-width: 0 5px 5px;
+}
+.profile-edit fieldset {
+  margin-bottom: 30px;
+}
+.content_rating {
+  clear: both;
+  margin-bottom: 30px;
+}
+.content_rating img {
+  float: left;
+}
+.content_rating p {
+  margin-bottom: 0;
+}
+.content_rating .content_vote label {
+  display: block;
+}
+.btn-toolbar {
+  margin-bottom: 30px;
+}
+/* Pagenav - Tabs
+-----------------------------------------------------------------------------*/
+dl.tabs {
+  padding-bottom: 20px;
+  border: 0 !important;
+  clear: both;
+}
+dl.tabs:before,
+dl.tabs:after {
+  content: " ";
+  display: table;
+}
+dl.tabs:after {
+  clear: both;
+}
+dl.tabs:before,
+dl.tabs:after {
+  content: " ";
+  display: table;
+}
+dl.tabs:after {
+  clear: both;
+}
+dl.tabs h3 {
+  float: left;
+  margin-right: 2px;
+  font-size: 1.3em;
+  font-weight: normal;
+  margin-bottom: 20px !important;
+}
+dl.tabs h3 a {
+  color: #ffffff;
+  background: #2574a8;
+  border: 1px solid #1c577e;
+  padding: 10px;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-bottom: 10px !important;
+}
+dl.tabs h3 a:hover {
+  color: #ffffff !important;
+  background: #2980b9;
+  border: 1px solid #409ad5;
+  text-decoration: none;
+}
+dl.tabs h3 a:hover {
+  color: #ffffff !important;
+  background: #2980b9;
+  border: 1px solid #409ad5;
+  text-decoration: none;
+}
+dl.tabs h3 a.active {
+  color: #ffffff !important;
+  background: #2980b9 !important;
+  border: 1px solid #409ad5 !important;
+  border-radius: 0px !important;
+  border-radius: 0 !important;
+}
+dl.tabs .open h3 a {
+  color: #ffffff !important;
+  background: #2980b9 !important;
+  border: 1px solid #409ad5 !important;
+  border-radius: 0px !important;
+}
+.contact .nav-tabs {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+}
+.contact .tab-content {
+  padding-top: 30px;
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.contact .tab-pane {
+  top: 0;
+}
+.contact .thumbnail {
+  margin-bottom: 60px;
+}
+.contact [itemprop="jobTitle"] {
+  margin: 10px 0;
+  font-size: 36px;
+  line-height: 1.4em;
+  word-break: break-word;
+}
+.contact [itemprop="jobTitle"] small {
+  font-size: 24px;
+}
+.contact dd {
+  padding: 4px 0;
+}
+.contact legend {
+  margin-bottom: 60px;
+}
+.contact input,
+.contact textarea {
+  width: 75%;
+  margin-bottom: 30px;
+}
+.contact #jform_contact_email_copy {
+  width: auto;
+}
+.contact label {
+  display: inline-block;
+  text-align: left !important;
+}
+.contact .panel-heading {
+  padding: 10px;
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
+}
+.contact .zen-collapse,
+.contact .tab-pane {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+.contact .zen-collapse.in,
+.contact .tab-pane.active {
+  max-height: 1000px;
+  opacity: 1;
+}
+.contact .contact-address {
+  padding-bottom: 30px;
+}
+.login input {
+  margin-bottom: 30px;
+}
+.login .col-sm-3 {
+  width: auto;
+}
+.other-links {
+  margin: 0;
+  margin-top: 30px;
+}
+.other-links li {
+  list-style-type: none;
+  padding: 4px 0;
+}
+.other-links li li {
+  background: none !important;
+}
+.other-links ol {
+  list-style-type: decimal;
+}
+.profile-edit .form-group {
+  width: 100%;
+  clear: both;
+}
+.profile-edit .form-group input {
+  margin-bottom: 30px;
+}
+.profile-edit legend {
+  margin-bottom: 30px;
+}
+.tab-pane {
+  display: none;
+}
+.tab-pane.active {
+  display: block;
+}
+.zen-collapse-trigger {
+  border: 1px solid #eeeeee;
+  padding: 8px 20px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.zen-collapse-trigger:hover {
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  background: #2980b9;
+  border: 1px solid #20638f;
+}
+.zen-collapse-trigger:hover h1,
+.zen-collapse-trigger:hover h2,
+.zen-collapse-trigger:hover h3,
+.zen-collapse-trigger:hover h4 {
+  color: #fff;
+}
+.zen-collapse-trigger .toggler {
+  float: right;
+}
+.zen-collapse-trigger .zen-icon {
+  float: right;
+}
+.slide-content {
+  padding: 30px 0;
+}
+.slide-content .moduletable {
+  margin-bottom: 0;
+}
+.slide-content p {
+  margin: 0;
+}
+.tags a {
+  margin-right: 10px;
+}
+.tag-category li {
+  border-bottom: 1px solid #eeeeee;
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         http://t3-framework.org
+ *------------------------------------------------------------------------------
+ */
+.edit .btn-group {
+  float: left;
+  margin-top: 30px;
+  margin-right: 4px;
+}
+.edit .btn-group button {
+  border: 0;
+}
+.edit label {
+  width: 20%;
+  float: left;
+  margin-right: 10px;
+  text-align: right;
+}
+.edit .form-group {
+  margin-bottom: 30px;
+}
+.edit .tab-content {
+  padding-top: 30px;
+  float: left;
+  width: 100%;
+}
+.edit .chzn-choices {
+  padding: 10px;
+  border: 1px solid #eeeeee;
+  box-shadow: none;
+}
+.edit .modal-button {
+  margin-right: 4px;
+}
+.edit textarea {
+  width: 70%;
+}
+.edit .input-append,
+.edit .input-prepend {
+  float: left;
+  width: auto;
+}
+.edit .input-append .btn,
+.edit .input-prepend .btn {
+  border: 1px solid #2574a8;
+  background-color: #2980b9;
+  text-shadow: 0;
+}
+.edit .tab-pane {
+  display: none;
+}
+.edit .tab-pane.active {
+  display: block;
+}
+.edit #jform_title {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.edit #jform_title-lbl {
+  text-align: left;
+}
+.edit .nav-tabs {
+  margin: 30px 0 60px;
+}
+.edit .btn-toolbar {
+  margin: 0 0 30px;
+}
+.edit .form-group {
+  margin-bottom: 30px;
+}
+.edit .chzn-container {
+  width: 70% !important;
+}
+.edit .nav-tabs {
+  margin-bottom: 30px;
+}
+.edit .tab-pane {
+  clear: both;
+}
+.edit .tab-pane:before,
+.edit .tab-pane:after {
+  content: " ";
+  display: table;
+}
+.edit .tab-pane:after {
+  clear: both;
+}
+.edit .tab-pane:before,
+.edit .tab-pane:after {
+  content: " ";
+  display: table;
+}
+.edit .tab-pane:after {
+  clear: both;
+}
+#editor-xtd-buttons,
+.toggle-editor {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+#editor-xtd-buttons .btn,
+.toggle-editor .btn {
+  background-color: #2980b9;
+  border-color: #2574a8;
+}
+#editor-xtd-buttons {
+  margin-right: 40px;
+}
+#sbox-window {
+  padding: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.btn.jmodedit {
+  padding: 0;
+}
+.btn.jmodedit:focus,
+.btn.jmodedit:active {
+  box-shadow: none;
+}
+.jfedit-menu + .tooltip {
+  min-width: 100px;
+}
+.window form table {
+  border: 1px solid #dddddd;
+  background: #f9f9f9;
+  margin-bottom: 12px;
+}
+.window form table td {
+  padding: 8px;
+}
+.window form .help-block {
+  font-size: 11px;
+  clear: both;
+  padding-top: 5px;
+}
+.chzn-container {
+  float: left;
+  min-width: 300px;
+}
+.window #imageForm {
+  margin: 0;
+  width: auto;
+}
+.window #imageForm .chzn-container {
+  float: left;
+  min-width: 300px;
+}
+.window #imageForm #upbutton {
+  border: 1px solid #2574a8;
+  float: left;
+  padding: 3px 12px;
+  margin-left: 5px;
+}
+.window #imageForm .pull-right {
+  margin-right: 40px;
+}
+.window #uploadForm {
+  width: auto;
+}
+.window #uploadForm #upload-file {
+  margin: 10px 0;
+}
+.window .manager {
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+.window .manager:before,
+.window .manager:after {
+  content: " ";
+  display: table;
+}
+.window .manager:after {
+  clear: both;
+}
+.window .manager:before,
+.window .manager:after {
+  content: " ";
+  display: table;
+}
+.window .manager:after {
+  clear: both;
+}
+.window .manager .thumbnail {
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.t3onoff {
+  width: 90px;
+  height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  padding: 0;
+  position: relative;
+  border: 1px solid #aaa;
+  border-radius: 0;
+  /* use before as background */
+  /* use after as switch */
+  /* active label should be under => so inactive can be clickable */
+  /* off background */
+  /* off switch */
+}
+.t3onoff input[type=radio] {
+  display: none;
+}
+.t3onoff label {
+  width: 90px;
+  height: 30px;
+  overflow: hidden;
+  display: block;
+  border-radius: 0;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  z-index: 1;
+  text-transform: uppercase;
+  background: url(../imgs/blank.gif) no-repeat transparent;
+  text-indent: -999em;
+}
+.t3onoff label:before,
+.t3onoff label:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  border-radius: 0;
+  border: 1px solid #aaa;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+.t3onoff label:before {
+  content: "ON";
+  width: 100%;
+  height: 100%;
+  text-indent: 0;
+  color: white;
+  padding: 4px 18px;
+  font-weight: normal;
+}
+.t3onoff label:after {
+  content: "";
+  width: 40%;
+  height: 100%;
+  background: #fff;
+}
+.t3onoff label.off:before {
+  content: "OFF";
+  text-align: right;
+  color: #555;
+}
+.t3onoff label.active {
+  z-index: 0;
+}
+.t3onoff label.off:before {
+  background: #eee;
+  left: 100%;
+}
+.t3onoff label.off.active:before {
+  left: 0%;
+}
+.t3onoff label.on:before {
+  background: #690;
+  left: -100%;
+}
+.t3onoff label.on.active:before {
+  left: -0%;
+}
+.t3onoff label.off:after {
+  left: 60%;
+}
+.t3onoff label.off.active:after {
+  left: 0%;
+}
+.t3onoff label.on:after {
+  left: 0%;
+}
+.t3onoff label.on.active:after {
+  left: 60%;
+}
+/* radio btn group */
+fieldset.radio.btn-group {
+  padding: 0;
+}
+fieldset.radio.btn-group input {
+  display: none;
+}
+fieldset.radio.btn-group label {
+  display: inline-block;
+  min-width: 54px;
+  padding: 0 12px;
+  border: 1px solid #aaa;
+  line-height: 28px;
+  background: #eee;
+  color: #555;
+  border-radius: 0;
+  text-align: center;
+  border-right-width: 0px;
+  text-transform: uppercase;
+}
+fieldset.radio.btn-group label:last-child {
+  border-right-width: 1px;
+}
+fieldset.radio.btn-group label.active {
+  background: #690;
+  border-color: #5c8b00;
+  color: #fff;
+}
+.icon-eye-open:before,
+.icon-eye:before {
+  content: "\f06e";
+  font-family: "FontAwesome";
+}
+.icon-file-add:before {
+  content: "\f0f6";
+  font-family: "FontAwesome";
+}
+.icon-cancel:before {
+  content: "\f00d";
+  font-family: "FontAwesome";
+}
+.button2-left,
+.button2-left div {
+  float: left;
+}
+.button2-right,
+.button2-right div {
+  float: right;
+}
+.button2-left {
+  margin: 5px 5px 0 0;
+}
+.button2-right {
+  margin: 5px 0 0 5px;
+}
+.button2-left a,
+.button2-right a,
+.button2-left span,
+.button2-right span {
+  background: #eee;
+  border: 1px solid #ccc;
+  color: #999999;
+  cursor: pointer;
+  display: block;
+  float: left;
+  padding: 2px 10px;
+  border-radius: 0;
+}
+.button2-left span,
+.button2-right span {
+  color: #999999;
+  cursor: default;
+}
+.button2-left .page a,
+.button2-right .page a,
+.button2-left .page span,
+.button2-right .page span {
+  padding: 0 6px;
+}
+.button2-left a:hover,
+.button2-right a:hover {
+  background: #ccc;
+  color: #444444;
+  text-decoration: none;
+}
+.edit.item-page a.modal,
+.com_config form a.modal {
+  display: inline-block;
+  position: inherit;
+  width: auto !important;
+  top: auto !important;
+  overflow: hidden;
+}
+.edit.item-page a.modal.btn,
+.com_config form a.modal.btn {
+  background: #2980b9;
+  text-shadow: none;
+  border-color: #2574a8;
+  overflow: hidden;
+  margin-top: 10px;
+  display: inline;
+}
+.icon-remove {
+  padding-right: 10px !important;
+}
+.media-preview .icon-eye {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+input.input-small {
+  text-indent: 20px;
+  padding-left: 30px;
+}
+.form-group {
+  float: left;
+  width: 100%;
+}
+a.btn.hasTooltip {
+  width: 35px;
+  float: right;
+}
+.controls img.calendar {
+  cursor: pointer;
+  margin-left: 5px;
+}
+.thumbnails {
+  margin-top: 30px;
+  margin-left: -20px;
+  list-style: none;
+  *zoom: 1;
+}
+.thumbnails:before,
+.thumbnails:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.thumbnails:after {
+  clear: both;
+}
+.row-fluid .thumbnails {
+  margin-left: 0;
+}
+.thumbnails > li {
+  float: left !important;
+  margin-bottom: 18px !important;
+  margin-left: 20px !important;
+  height: 100px !important;
+  width: 100px !important;
+  background: #fff;
+}
+.thumbnails > li img {
+  width: 100%;
+}
+.thumbnails > li .small {
+  padding: 8px;
+  font-size: 90%;
+}
+.thumbnail {
+  display: block;
+  padding: 4px;
+  line-height: 18px;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a.thumbnail:hover,
+a.thumbnail:focus {
+  border-color: #08c;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+  -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+  box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+}
+.thumbnail > img {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.thumbnail .caption {
+  padding: 9px;
+  color: #555;
+}
+.well {
+  padding: 20px;
+}
+.span9 {
+  width: 70%;
+  float: left;
+}
+.bootstrap2 .edit .btn {
+  border: 1px solid #2574a8;
+  background-color: #2980b9;
+  text-shadow: 0;
+  position: relative !important;
+  margin-top: 0 !important;
+  top: 0 !important;
+  left: auto;
+  display: inline-block !important;
+}
+.bootstrap2 .edit .input-prepend.input-append .add-on:first-child,
+.bootstrap2 .edit .input-prepend.input-append .btn:first-child {
+  height: 42px;
+  width: 36px;
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+.zen-menu-btn-wrap a {
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 4px 0 12px;
+  float: left;
+  width: 100%;
+}
+.zen-menu-btn-wrap :before {
+  font-size: 1.2em;
+}
+#menu {
+  background: #2980b9;
+  padding: 0 20px;
+  border: 0;
+  float: left;
+  width: 100%;
+  min-height: 65px;
+}
+#menu.zen-menu-center {
+  height: 65px;
+}
+#menu .zen-menu-caption {
+  margin-top: -14px;
+  margin-bottom: 8px;
+  font-weight: 300;
+  line-height: 1em;
+  font-size: 11px;
+  font-style: italic;
+  color: #eeeeee;
+}
+#menu .with-caption {
+  margin-top: -6px;
+}
+#menu ul ul .with-caption {
+  margin-top: 0;
+}
+#menu ul {
+  margin-left: 0;
+}
+#menu ul > li {
+  line-height: 42.5px;
+}
+#menu ul > li a,
+#menu ul > li .zen-menu-heading {
+  color: #ffffff;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 12px 20px 4px;
+  background: none;
+  text-shadow: none;
+  box-shadow: none;
+}
+#menu ul > li a:hover,
+#menu ul > li .zen-menu-heading:hover {
+  color: #0c2436;
+}
+#menu ul > li.active > a,
+#menu ul > li.active > .zen-menu-heading {
+  color: #0c2436;
+  background: #none;
+}
+#menu ul ul {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);
+  background: #ecf0f1;
+  padding-bottom: 20px;
+  margin: 0 0 0 20px;
+}
+@media screen and (max-width: 787px) {
+  #menu ul ul {
+    width: auto !important;
+  }
+}
+#menu ul ul .zen-menu-caption {
+  margin-top: 0;
+}
+#menu ul ul > li {
+  line-height: 1em;
+  padding: 4px 0;
+}
+#menu ul ul > li a,
+#menu ul ul > li .zen-menu-heading {
+  margin-bottom: 10px;
+  color: #333333;
+  padding: 0;
+  display: block;
+  width: 90%;
+}
+#menu ul ul > li a:hover,
+#menu ul ul > li .zen-menu-heading:hover {
+  color: #2980b9;
+}
+#menu ul ul > li.active > a,
+#menu ul ul > li.active > .zen-menu-heading {
+  color: inherit;
+  background: #ecf0f1;
+}
+#menu ul ul ul {
+  top: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  min-width: 0px;
+}
+#menu ul ul p,
+#menu ul ul ul,
+#menu ul ul h1,
+#menu ul ul h2,
+#menu ul ul h3,
+#menu ul ul h4,
+#menu ul ul h5,
+#menu ul ul h6,
+#menu ul ul .zen-menu-caption {
+  color: #333333;
+}
+#menu ul ul .moduletable {
+  width: 100%;
+  float: left;
+}
+#menu ul ul input {
+  text-indent: 12px;
+  width: 100%;
+}
+#menu ul ul input[type="checkbox"],
+#menu ul ul input[type="radio"] {
+  width: auto;
+}
+#menu ul .cols-2 > li {
+  width: 45% !important;
+  float: left;
+  margin-right: 5%;
+}
+#menu ul .cols-2 > li li {
+  width: 100% !important;
+}
+#menu ul .cols-3 > li {
+  width: 31% !important;
+  float: left;
+  margin-right: 2.3%;
+}
+#menu ul .cols-3 > li li {
+  width: 100% !important;
+}
+#menu ul .cols-4 > li {
+  width: 21% !important;
+  float: left;
+  margin-right: 4%;
+}
+#menu ul .cols-4 > li li {
+  width: 100% !important;
+}
+.offcanvas-menu #menu.zen-menu-right {
+  padding-right: 80px;
+}
+#navwrap.fixed {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0;
+  z-index: 10;
+  -webkit-transform: translateZ(0);
+}
+#navwrap.fixed .zen-spotlight {
+  margin-top: 0;
+  padding-top: 0;
+}
+.nav-tabs {
+  border-bottom: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  float: left;
+  width: 100%;
+}
+.nav-tabs li {
+  list-style-type: none;
+  float: left;
+  margin-right: 10px;
+}
+.nav-tabs li a {
+  color: #ffffff;
+  background: #2574a8;
+  border: 1px solid #1c577e;
+  padding: 10px;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.nav-tabs li a:hover {
+  color: #ffffff !important;
+  background: #2980b9;
+  border: 1px solid #409ad5;
+  text-decoration: none;
+}
+.nav-tabs li a:hover {
+  color: #ffffff !important;
+  background: #2980b9;
+  border: 1px solid #409ad5;
+  text-decoration: none;
+}
+.nav-tabs li a.active {
+  color: #ffffff !important;
+  background: #2980b9 !important;
+  border: 1px solid #409ad5 !important;
+  border-radius: 0px !important;
+  border-radius: 0 !important;
+}
+.nav-tabs li.active a {
+  color: #ffffff !important;
+  background: #2980b9 !important;
+  border: 1px solid #409ad5 !important;
+  border-radius: 0px !important;
+}
+.accordion ul ul {
+  display: none;
+}
+.accordion li.parent {
+  cursor: pointer;
+}
+.accordion li.parent .expand {
+  position: absolute;
+  margin-top: 4px;
+  cursor: pointer;
+  right: 0;
+}
+.accordion li.parent .expand:before {
+  float: right;
+}
+.sidebar ul ul {
+  margin-bottom: 0;
+}
+.sidebar ul li a:hover {
+  background: none;
+}
+#menu #onepage li a {
+  padding-bottom: 12px;
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+.off-canvas-heading h3 {
+  color: #fff;
+}
+.sb-close {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  padding: 16px 10px 16px 18px;
+  background: #409ad5;
+  color: #fff;
+  cursor: pointer;
+}
+.sb-close:hover {
+  background: #2c3e50;
+}
+.mean-bar .sb-close {
+  display: none;
+}
+.off-canvas-body {
+  padding: 30px;
+  float: left;
+  width: 100%;
+  background: #2980b9;
+}
+.off-canvas-body h1,
+.off-canvas-body h2,
+.off-canvas-body h3,
+.off-canvas-body h4,
+.off-canvas-body h5,
+.off-canvas-body h6 {
+  color: #ffffff;
+}
+.off-canvas-body p,
+.off-canvas-body label {
+  color: #ffffff;
+}
+.off-canvas-body a,
+.off-canvas-body .zen-menu-heading,
+.off-canvas-body .separator {
+  color: #eeeeee;
+}
+.off-canvas-body a:hover,
+.off-canvas-body .zen-menu-heading:hover,
+.off-canvas-body .separator:hover {
+  color: #2c3e50;
+}
+.off-canvas-body input {
+  width: 100%;
+}
+.off-canvas-body input[type="checkbox"] {
+  width: auto;
+}
+.off-canvas-body .moduletable #login-form ul {
+  margin-bottom: 60px;
+}
+.mean-nav .off-canvas-trigger {
+  display: none !important;
+}
+#off-canvas-menu .zen-menu-caption {
+  display: block;
+  font-style: italic;
+  color: #ffffff;
+}
+#off-canvas-menu label,
+#off-canvas-menu .expand {
+  color: #ffffff;
+}
+#off-canvas-menu ul li {
+  padding: 6px 0;
+  clear: both;
+}
+#off-canvas-menu ul a,
+#off-canvas-menu ul .zen-menu-heading {
+  display: block;
+}
+#off-canvas-menu ul ul {
+  padding-left: 16px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 90% !important;
+}
+#off-canvas-menu ul ul li {
+  border: 0;
+}
+#off-canvas-menu ul ul ul {
+  margin-bottom: 0;
+}
+#off-canvas-menu p {
+  margin: 0 0 15px;
+}
+#off-canvas-menu h3 {
+  margin-bottom: 0;
+}
+#off-canvas-menu .moduletable {
+  width: 100%;
+}
+#off-canvas-menu .moduletable input {
+  width: 100%;
+}
+#off-canvas-menu .moduletable input[type="radio"],
+#off-canvas-menu .moduletable input[type="checkbox"] {
+  width: auto;
+  margin-tight: 10px;
+}
+#menu {
+  position: relative;
+}
+#menu .off-canvas-trigger {
+  position: absolute;
+  z-index: 90;
+  right: 0;
+  border: 0;
+  padding: 11px 20px 11px 25px;
+  background: #2574a8;
+}
+#menu .off-canvas-trigger:hover {
+  background: #2d8cca;
+}
+#menu .off-canvas-trigger span:before {
+  font-size: 130%;
+  line-height: 42.5px;
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+/* =Buttons
+ -----------------------------------------------------------------------------*/
+.btn,
+button,
+input.button,
+ul#filters a {
+  color: #ffffff;
+  background: #2574a8;
+  border: 1px solid #1c577e;
+  padding: 10px;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.btn:hover,
+button:hover,
+input.button:hover,
+ul#filters a:hover {
+  color: #ffffff !important;
+  background: #2980b9;
+  border: 1px solid #409ad5;
+  text-decoration: none;
+}
+.btn.active,
+button.active,
+input.button.active,
+ul#filters a.active {
+  color: #ffffff !important;
+  background: #2980b9 !important;
+  border: 1px solid #409ad5 !important;
+  border-radius: 0px !important;
+  border-radius: 0 !important;
+}
+.btn.btn-large {
+  padding: 11px 40px;
+}
+.btn.btn-small {
+  padding: 2px 4px;
+}
+.btn.disabled {
+  border: 1px solid #ccc;
+  background: #d0d0d0;
+  color: #aaaaaa;
+}
+.btn-mini {
+  padding: 4px 8px;
+  font-size: 90%;
+  line-height: 1em;
+}
+.btn-success {
+  color: #ffffff;
+  background-color: #3e9b52;
+  border-color: #378948;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  color: #ffffff;
+  background-color: #327e43;
+  border-color: #255d31;
+}
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  background-image: none;
+}
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
+  background-color: #3e9b52;
+  border-color: #378948;
+}
+.btn-success .badge {
+  color: #3e9b52;
+  background-color: #ffffff;
+}
+.btn-info {
+  color: #ffffff;
+  background-color: #0099cc;
+  border-color: #0086b3;
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {
+  color: #ffffff;
+  background-color: #007aa3;
+  border-color: #005875;
+}
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {
+  background-image: none;
+}
+.btn-info.disabled,
+.btn-info[disabled],
+fieldset[disabled] .btn-info,
+.btn-info.disabled:hover,
+.btn-info[disabled]:hover,
+fieldset[disabled] .btn-info:hover,
+.btn-info.disabled:focus,
+.btn-info[disabled]:focus,
+fieldset[disabled] .btn-info:focus,
+.btn-info.disabled:active,
+.btn-info[disabled]:active,
+fieldset[disabled] .btn-info:active,
+.btn-info.disabled.active,
+.btn-info[disabled].active,
+fieldset[disabled] .btn-info.active {
+  background-color: #0099cc;
+  border-color: #0086b3;
+}
+.btn-info .badge {
+  color: #0099cc;
+  background-color: #ffffff;
+}
+.btn-warning {
+  color: #ffffff;
+  background-color: #ff8800;
+  border-color: #e67a00;
+}
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+  color: #ffffff;
+  background-color: #d67200;
+  border-color: #a85a00;
+}
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+  background-image: none;
+}
+.btn-warning.disabled,
+.btn-warning[disabled],
+fieldset[disabled] .btn-warning,
+.btn-warning.disabled:hover,
+.btn-warning[disabled]:hover,
+fieldset[disabled] .btn-warning:hover,
+.btn-warning.disabled:focus,
+.btn-warning[disabled]:focus,
+fieldset[disabled] .btn-warning:focus,
+.btn-warning.disabled:active,
+.btn-warning[disabled]:active,
+fieldset[disabled] .btn-warning:active,
+.btn-warning.disabled.active,
+.btn-warning[disabled].active,
+fieldset[disabled] .btn-warning.active {
+  background-color: #ff8800;
+  border-color: #e67a00;
+}
+.btn-warning .badge {
+  color: #ff8800;
+  background-color: #ffffff;
+}
+.btn-danger {
+  color: #ffffff;
+  background-color: #cc0000;
+  border-color: #b30000;
+}
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open .dropdown-toggle.btn-danger {
+  color: #ffffff;
+  background-color: #a30000;
+  border-color: #750000;
+}
+.btn-danger:active,
+.btn-danger.active,
+.open .dropdown-toggle.btn-danger {
+  background-image: none;
+}
+.btn-danger.disabled,
+.btn-danger[disabled],
+fieldset[disabled] .btn-danger,
+.btn-danger.disabled:hover,
+.btn-danger[disabled]:hover,
+fieldset[disabled] .btn-danger:hover,
+.btn-danger.disabled:focus,
+.btn-danger[disabled]:focus,
+fieldset[disabled] .btn-danger:focus,
+.btn-danger.disabled:active,
+.btn-danger[disabled]:active,
+fieldset[disabled] .btn-danger:active,
+.btn-danger.disabled.active,
+.btn-danger[disabled].active,
+fieldset[disabled] .btn-danger.active {
+  background-color: #cc0000;
+  border-color: #b30000;
+}
+.btn-danger .badge {
+  color: #cc0000;
+  background-color: #ffffff;
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+/* Logo
+ -----------------------------------------------------------------------------*/
+#logo h1,
+#logo h2,
+#logo h3,
+#logo h4,
+#logo h5,
+#logo h6 {
+  font-weight: 300;
+  font-size: 4em;
+  line-height: 1.2em;
+  color: #333333;
+  margin: 0;
+}
+#logo h1 a,
+#logo h2 a,
+#logo h3 a,
+#logo h4 a,
+#logo h5 a,
+#logo h6 a {
+  color: #333333;
+}
+#logo h1 a:hover,
+#logo h2 a:hover,
+#logo h3 a:hover,
+#logo h4 a:hover,
+#logo h5 a:hover,
+#logo h6 a:hover {
+  color: #2c3e50;
+}
+#logo p {
+  margin-bottom: 0;
+}
+#logowrap .zen-spotlight {
+  padding-top: 30px;
+  padding-bottom: 0;
+  border: 0;
+}
+@media screen and (max-width: 787px) {
+  #logowrap .moduletable {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 787px) {
+  #logowrap .moduletable {
+    margin-bottom: 0;
+  }
+}
+#logowrap #search form {
+  padding-top: 30px;
+  float: right;
+  width: 100%;
+}
+#logowrap #search input {
+  width: 72%;
+  float: left;
+}
+#logowrap #search button {
+  width: 25%;
+  float: right;
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+html,
+body {
+  font-weight: 300;
+  font-size: 12px;
+}
+/* Typography
+-----------------------------------------------------------------------------*/
+h1 {
+  margin: 10px 0;
+  font-size: 36px;
+  line-height: 1.4em;
+  word-break: break-word;
+}
+h1 small {
+  font-size: 24px;
+}
+.article-title {
+  border-bottom: 1px solid #eeeeee;
+  margin-top: 0;
+  line-height: 1.4em;
+  margin-bottom: 30px;
+}
+h2 {
+  margin: 10px 0;
+  font-size: 36px;
+  line-height: 1.4em;
+  word-break: break-word;
+  clear: both;
+}
+h2 small {
+  font-size: 18px;
+}
+h3 {
+  margin: 10px 0;
+  font-size: 19.2px;
+  line-height: 1.96em;
+  word-break: break-word;
+}
+h3 small {
+  font-size: 14px;
+}
+h3 i {
+  margin-right: 10px;
+}
+h4 {
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 1.4em;
+  word-break: break-word;
+}
+h4 small {
+  font-size: 12px;
+}
+h5 {
+  margin: 10px 0;
+  font-size: 13px;
+  line-height: 1.4em;
+}
+h5 small {
+  font-size: 10px;
+}
+h6 {
+  margin: 10px 0;
+  font-size: 12px;
+  line-height: 1.4em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  color: #010c14;
+}
+ul,
+legend {
+  margin-bottom: 30px;
+}
+.small {
+  font-size: 90%;
+}
+.margins {
+  margin: 30px 0;
+}
+/* Special Headings
+-----------------------------------------------------------------------------*/
+.headline {
+  padding: 30px 0;
+  border-bottom: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
+  font-size: 2em;
+  text-align: center;
+}
+p.subheading {
+  text-align: center;
+  margin-bottom: 90px;
+  font-style: italic;
+}
+/* Paragraph
+-----------------------------------------------------------------------------*/
+p {
+  /*margin: 0 0 30px;
+  line-height: 1.2em;
+  font-weight: 300;
+  font-size: 12px;
+  color: #0c2436;*/
+
+  margin: 0 0 10px;
+  line-height: 1.2em;
+  font-weight: 300;
+  font-size: 12px;
+  color: #0c2436;
+}
+p small,
+p .small {
+  font-size: 11px;
+  color: #999999;
+}
+blockquote {
+  font-weight: 300;
+  line-height: 1.1;
+  border: 0;
+  font-size: 16.8px;
+  border-left: 4px solid #eeeeee;
+  margin-left: 0;
+  padding-left: 30px;
+}
+blockquote p {
+  font-size: 125%;
+  line-height: 125%;
+}
+.badge {
+  border-radius: 0 !important;
+}
+/* Emphasis and Misc
+-----------------------------------------------------------------------------*/
+small {
+  font-size: 85%;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+cite {
+  font-style: normal;
+}
+.muted {
+  color: #999999;
+}
+.highlight {
+  background-color: #FFC;
+  font-weight: bold;
+  padding: 1px 4px;
+}
+code_org {
+  display: block;
+  max-height: 400px;
+  overflow: scroll;
+  margin: 20px 0;
+}
+/* Images
+-----------------------------------------------------------------------------*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+main .thumbnail {
+  border-radius: 0;
+}
+/* Links
+-----------------------------------------------------------------------------*/
+a {
+  color: #3498db;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+a:hover {
+  color: #2c3e50;
+}
+#topwrap a {
+  color: #3498db;
+}
+#topwrap a:hover {
+  color: #2c3e50;
+}
+#footerwrap a {
+  color: #3498db;
+}
+#footerwrap a:hover {
+  color: #2c3e50;
+}
+/* Dividers
+-----------------------------------------------------------------------------*/
+.divider,
+hr {
+  border-bottom: 1px solid #eeeeee;
+}
+hr {
+  margin: 30px 0;
+}
+/* Zebra styling
+-----------------------------------------------------------------------------*/
+.list-striped li,
+.table-striped li,
+.list-striped tr,
+.table-striped tr {
+  padding: 10px 20px !important;
+}
+.list-striped li:nth-child(2n + 1),
+.table-striped li:nth-child(2n + 1),
+.list-striped tr:nth-child(2n + 1),
+.table-striped tr:nth-child(2n + 1) {
+  background: #ffffff;
+}
+.list-striped th,
+.table-striped th {
+  padding: 10px 20px !important;
+  background: #f6f6f6;
+}
+.list-striped td,
+.table-striped td {
+  padding: 10px 20px !important;
+}
+.list-striped {
+  margin: 0;
+}
+.list-striped li {
+  list-style-type: none;
+  padding: 4px 0;
+}
+.list-striped li li {
+  background: none !important;
+}
+.list-striped ol {
+  list-style-type: decimal;
+}
+/* Buffer on zen icons
+-----------------------------------------------------------------------------*/
+.zen-icon {
+  margin-right: 8px;
+}
+.tags .zen-icon {
+  margin-right: 0;
+}
+/* Anvil
+-----------------------------------------------------------------------------*/
+.anvil,
+#mainWrap .anvil {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  text-align: right;
+  font: 30px/100px Arial, sans-serif;
+  color: white;
+  border: 0 !important;
+  padding-right: 10px;
+}
+.anvil::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 0 0 80px 80px;
+  border-style: solid;
+  border-color: transparent #ffffff;
+}
+.anvil.primary1 {
+  background: #2980b9;
+}
+.anvil.primary2 {
+  background: #1b557a;
+}
+.anvil.primary3 {
+  background: #55a5d9;
+}
+.anvil.secondary1 {
+  background: #2c3e50;
+}
+.anvil.secondary2 {
+  background: #11181f;
+}
+.anvil.secondary3 {
+  background: #476481;
+}
+/* Large Rounded numbers
+-----------------------------------------------------------------------------*/
+.rounded-big {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 10px;
+  font-size: 2em;
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+}
+.rounded-big.primary1 {
+  background: #2980b9;
+}
+.rounded-big.primary2 {
+  background: #1b557a;
+}
+.rounded-big.primary3 {
+  background: #55a5d9;
+}
+.rounded-big.secondary1 {
+  background: #2c3e50;
+}
+.rounded-big.secondary2 {
+  background: #11181f;
+}
+.rounded-big.secondary3 {
+  background: #476481;
+}
+pre,
+code_org {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border: 1px solid #eeeeee;
+  padding: 30px;
+  background: #fafafa;
+  font-family: monospace;
+  position: relative;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05) inset;
+}
+pre p,
+code_org p {
+  margin: 0;
+}
+pre span.code-title {
+  position: absolute;
+  display: block;
+  background: #FFF;
+  top: 0;
+  right: 0;
+  border-radius: 0px;
+  padding: 3px 5px;
+  font-size: 12px;
+  box-shadow: -2px 2px 1px rgba(0, 0, 0, 0.1);
+  color: #999;
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+/* Panel
+-----------------------------------------------------------------------------*/
+.block {
+  background: #fafafa;
+  border: 1px solid #eee;
+  padding: 30px;
+}
+.block.primary1 {
+  background: #2980b9;
+  border: 1px solid #2574a8;
+}
+.block.primary1 p,
+.block.primary1 h1,
+.block.primary1 h2,
+.block.primary1 h3,
+.block.primary1 h4,
+.block.primary1 h5,
+.block.primary1 h6 {
+  color: #fff;
+}
+.block.primary2 {
+  background: #1b557a;
+  border: 1px solid #17496a;
+}
+.block.primary2 p,
+.block.primary2 h1,
+.block.primary2 h2,
+.block.primary2 h3,
+.block.primary2 h4,
+.block.primary2 h5,
+.block.primary2 h6 {
+  color: #fff;
+}
+.block.primary3 {
+  background: #55a5d9;
+  border: 1px solid #449cd6;
+}
+.block.primary3 p,
+.block.primary3 h1,
+.block.primary3 h2,
+.block.primary3 h3,
+.block.primary3 h4,
+.block.primary3 h5,
+.block.primary3 h6 {
+  color: #fff;
+}
+.block.secondary1 {
+  background: #2c3e50;
+  border: 1px solid #253443;
+}
+.block.secondary1 p,
+.block.secondary1 h1,
+.block.secondary1 h2,
+.block.secondary1 h3,
+.block.secondary1 h4,
+.block.secondary1 h5,
+.block.secondary1 h6 {
+  color: #fff;
+}
+.block.secondary2 {
+  background: #11181f;
+  border: 1px solid #0a0e11;
+}
+.block.secondary2 p,
+.block.secondary2 h1,
+.block.secondary2 h2,
+.block.secondary2 h3,
+.block.secondary2 h4,
+.block.secondary2 h5,
+.block.secondary2 h6 {
+  color: #fff;
+}
+.block.secondary3 {
+  background: #476481;
+  border: 1px solid #405a74;
+}
+.block.secondary3 p,
+.block.secondary3 h1,
+.block.secondary3 h2,
+.block.secondary3 h3,
+.block.secondary3 h4,
+.block.secondary3 h5,
+.block.secondary3 h6 {
+  color: #fff;
+}
+.block.border {
+  background: none;
+}
+.block.border p {
+  color: #0c2436;
+}
+.block.border p,
+.block.border h1,
+.block.border h2,
+.block.border h3,
+.block.border h4,
+.block.border h5,
+.block.border h6 {
+  color: #010c14;
+}
+.block.rounded {
+  border-radius: 2px;
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+/* Social Icons
+-----------------------------------------------------------------------------*/
+#socialicons {
+  padding: 0;
+}
+#socialicons span {
+  padding: 0px 4px 0 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+#socialicons li,
+#socialicons a {
+  padding: 0 !important;
+}
+#socialicons li a:hover {
+  text-decoration: none;
+}
+#socialicons li a:hover span {
+  color: #2c3e50 !important;
+}
+#socialicons.zenleft ul {
+  margin: 20px 0 20px -10px !important;
+}
+#socialicons.zencenter ul li {
+  border: 0 !important;
+  margin: 10px 0;
+}
+#socialicons.zencenter ul li a:hover,
+#socialicons.zencenter ul li span:hover {
+  color: #2c3e50;
+}
+.sb-active .social-wrap.fixed {
+  display: none;
+}
+@media screen and (max-width: 787px) {
+  .fixed .social-wrap.fixed {
+    display: none;
+  }
+}
+.social-wrap {
+  float: right;
+  padding: 0 0 20px 20px;
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  top: 170px;
+  width: 44px;
+}
+.social-wrap span {
+  padding: 10px 6px;
+  display: block;
+  clear: both;
+  float: right;
+  width: 44px;
+  height: auto;
+  line-height: 30px;
+  font-size: 1.3em;
+  margin-right: -17px;
+  transition: all 0.2s;
+}
+.social-wrap span:before {
+  margin-left: 1px;
+}
+.social-wrap span:hover {
+  margin-right: -10px;
+  color: #fff;
+}
+@media screen and (max-width: 787px) {
+  .social-wrap span:hover {
+    margin-right: 0 !important;
+    color: #0c2436;
+  }
+}
+.social-wrap .zen-icon-facebook,
+.social-wrap .fa-facebook {
+  background: #3b5998;
+  color: #fff;
+}
+.social-wrap .zen-icon-pinterest,
+.social-wrap .fa-pinterest {
+  background: #cb2027;
+  color: #fff;
+}
+.social-wrap .zen-icon-twitter,
+.social-wrap .fa-twitter {
+  background: #00aced;
+  color: #fff;
+}
+.social-wrap .zen-icon-google-plus,
+.social-wrap .fa-google-plus {
+  background: #d34836;
+  color: #fff;
+}
+@media screen and (max-width: 787px) {
+  .responsive-enabled .social-wrap {
+    top: 0;
+    left: 0;
+    width: 50%;
+    padding: 0 0 0 10px;
+  }
+  .responsive-enabled .social-wrap span {
+    float: left;
+    margin: 0;
+    clear: none;
+    background: none !important;
+    padding: 10px;
+    width: 30px;
+  }
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+.zen-module-title {
+  margin-bottom: 10px;
+}
+.zen-module-title h3 {
+  margin: 0;
+  text-transform: uppercase;
+}
+/* Primary1, Primary2, Primary3, Secondary1, Secondary2, Secondary3
+-----------------------------------------------------------------------------*/
+.moduletable {
+  clear: both;
+}
+.moduletable.primary1 .zen-module-title {
+  border-left: 4px solid #2980b9;
+  padding: 0 0 0 20px;
+}
+.moduletable.primary2 .zen-module-title {
+  border-left: 4px solid #1b557a;
+  padding: 0px 0 0px 20px;
+}
+.moduletable.primary3 .zen-module-title {
+  border-left: 4px solid #55a5d9;
+  padding: 0px 0 0px 20px;
+}
+.moduletable.secondary1 .zen-module-title {
+  border-left: 4px solid #2c3e50;
+  padding: 0px 0 0px 20px;
+}
+.moduletable.secondary2 .zen-module-title {
+  border-left: 4px solid #11181f;
+  padding: 0px 0 0px 20px;
+}
+.moduletable.secondary3 .zen-module-title {
+  border-left: 4px solid #476481;
+  padding: 0px 0 0px 20px;
+}
+.moduletable.border {
+  padding: 30px;
+  border: 1px solid #eeeeee;
+}
+.moduletable.border.primary1 {
+  background: none;
+  border-color: #2980b9;
+}
+.moduletable.border.primary1 p,
+.moduletable.border.primary1 h3 {
+  color: #0c2436;
+}
+.moduletable.border.primary2 {
+  background: none;
+  border-color: #1b557a;
+}
+.moduletable.border.primary2 p,
+.moduletable.border.primary2 h3 {
+  color: #0c2436;
+}
+.moduletable.border.primary3 {
+  background: none;
+  border-color: #55a5d9;
+}
+.moduletable.border.primary3 p,
+.moduletable.border.primary3 h3 {
+  color: #0c2436;
+}
+.moduletable.border.secondary1 {
+  background: none;
+  border-color: #2c3e50;
+}
+.moduletable.border.secondary1 p,
+.moduletable.border.secondary1 h3 {
+  color: #0c2436;
+}
+.moduletable.border.secondary2 {
+  background: none;
+  border-color: #11181f;
+}
+.moduletable.border.secondary2 p,
+.moduletable.border.secondary2 h3 {
+  color: #0c2436;
+}
+.moduletable.border.secondary3 {
+  background: none;
+  border-color: #476481;
+}
+.moduletable.border.secondary3 p,
+.moduletable.border.secondary3 h3 {
+  color: #0c2436;
+}
+/* Dark
+-----------------------------------------------------------------------------*/
+.moduletable.dark {
+  background: #555;
+  border: 1px solid #111;
+  color: #fff;
+  padding: 20px;
+}
+.moduletable.dark p,
+.moduletable.dark h3 {
+  color: #fff;
+}
+/* Light
+-----------------------------------------------------------------------------*/
+.moduletable.light {
+  background: #fff;
+  border: 1px solid #eee;
+  color: #fff;
+  padding: 20px;
+}
+.moduletable.light p,
+.moduletable.light h3 {
+  color: #333;
+}
+/* Heading Alignments
+-----------------------------------------------------------------------------*/
+.right-heading h3 {
+  text-align: right;
+}
+.center-heading h3 {
+  text-align: center;
+}
+.small-heading h3 {
+  font-size: 100%;
+}
+/* Centered
+-----------------------------------------------------------------------------*/
+.moduletable.centered h1,
+.moduletable.centered h2,
+.moduletable.centered h3,
+.moduletable.centered h4,
+.moduletable.centered h5,
+.moduletable.centered h6,
+.moduletable.centered p {
+  text-align: center;
+}
+/* Shadow Styling
+-----------------------------------------------------------------------------*/
+.moduletable.shadow,
+.inset.shadow .zen-module-body,
+div.shadow {
+  box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+}
+.moduletable.shadow2,
+.inset.shadow2 .zen-module-body,
+div.shadow2 {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+}
+.inset .zen-module-body {
+  background: #f5f5f5;
+  color: #0c2436;
+  border: 1px solid #eeeeee;
+  padding: 20px 20px 0;
+}
+.moduletable.shadow.inset,
+.moduletable.shadow2.inset {
+  padding: 0;
+  box-shadow: none;
+}
+/* Image Border
+-----------------------------------------------------------------------------*/
+img.border,
+.zenborder img {
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  background: #fff !important;
+  padding: 4px;
+  max-width: 98%;
+  margin-bottom: 20px;
+}
+/* Corner
+-----------------------------------------------------------------------------*/
+.corner {
+  position: relative;
+  margin: 0 auto;
+  border: 1px solid #eeeeee;
+  border-width: 0 0 1px 0;
+}
+.corner.primary1,
+.corner.primary2,
+.corner.primary3,
+.corner.secondary1,
+.corner.secondary2,
+.corner.secondary3 {
+  padding: 20px;
+  background: #f5f5f5;
+}
+.corner.primary1 .zen-module-title,
+.corner.primary2 .zen-module-title,
+.corner.primary3 .zen-module-title,
+.corner.secondary1 .zen-module-title,
+.corner.secondary2 .zen-module-title,
+.corner.secondary3 .zen-module-title {
+  background: none;
+  padding: 0 !important;
+  border: 0;
+}
+.corner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0px;
+  border-width: 0 16px 16px 0;
+  border-style: solid;
+  border-color: #658e15 #ffffff;
+}
+.corner.primary1::after {
+  border-color: #1b557a #ffffff;
+}
+.corner.primary2::after {
+  border-color: #2980b9 #ffffff;
+}
+.corner.primary3::after {
+  border-color: #0d293c #ffffff;
+}
+.corner.secondary1::after {
+  border-color: #11181f #ffffff;
+}
+.corner.secondary2::after {
+  border-color: #2c3e50 #ffffff;
+}
+.corner.secondary3::after {
+  border-color: #000000 #ffffff;
+}
+/* Icons
+-----------------------------------------------------------------------------*/
+.moduletable.zen-icon {
+  position: relative;
+  float: left;
+  width: 100% !important;
+}
+.moduletable.zen-icon:before {
+  font-size: 2em;
+  opacity: 0.3;
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  top: 10px;
+}
+.moduletable.zen-iconsmall:before {
+  font-size: 1em;
+}
+.moduletable.zen-icon.medium:before {
+  font-size: 4em;
+}
+.moduletable.zen-icon.large:before {
+  font-size: 6em;
+}
+.moduletable.zen-icon.top:before {
+  top: 6px;
+}
+.moduletable.zen-icon.bottom:before {
+  bottom: 6px;
+  top: auto;
+}
+.moduletable.icon {
+  height: auto;
+  width: auto;
+}
+/* Large icons
+-----------------------------------------------------------------------------*/
+.largeicons i {
+  height: 100px;
+  width: 100px;
+  border: 4px solid #333;
+  border-radius: 200px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.largeicons i:before {
+  font-size: 2em;
+  color: #333;
+  position: absolute;
+  width: 100px;
+  text-align: center;
+  display: block;
+  margin-left: 0px;
+  margin-top: 27px;
+}
+.largeicons i:hover:before {
+  color: #2c3e50;
+}
+.largeicons i:hover {
+  border: 4px solid #2c3e50;
+}
+/* Hot new etc
+-----------------------------------------------------------------------------*/
+.hot,
+.new {
+  position: relative;
+  z-index: 1;
+}
+.hot h3:after,
+.new h3:after,
+.hot h3:after,
+.new h3:after {
+  position: absolute;
+  z-index: 20;
+  padding: 0px 4px;
+  font-size: 10px;
+  top: -6px;
+  right: 0px;
+  font-style: italic;
+  background: #333;
+  color: #fff;
+  line-height: 1.4;
+}
+.sidebar .hot h3:after,
+.sidebar .new h3:after,
+.sidebar .hot h3:after,
+.sidebar .new h3:after {
+  top: -10px;
+}
+.hot h3:after {
+  content: "Hot";
+  background: #2980b9;
+}
+.new h3:after {
+  content: "New";
+  background: #2c3e50;
+}
+.primary1 h3:after {
+  background: #55a5d9 !important;
+}
+.primary1 h3:after {
+  background: #94c6e7;
+}
+.primary2 h3:after {
+  background: #2980b9;
+}
+.primary3 h3:after {
+  background: #0d293c;
+}
+.secondary1 h3:after {
+  background: #3e5771;
+}
+.secondary2 h3:after {
+  background: #2c3e50;
+}
+.secondary3 h3:after {
+  background: #000000;
+}
+.moduletable.nopadding {
+  padding: 0;
+}
+.moduletable.large .zen-icon:before {
+  font-size: 6em;
+}
+.moduletable.rounded {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #f5f5f5;
+  padding: 20px;
+}
+.moduletable.rounded p {
+  margin-bottom: 0;
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+.zen-spotlight {
+  padding: 30px 0;
+}
+.zen-spotlight .moduletable {
+  margin-bottom: 30px;
+}
+#topwrap .zen-spotlight,
+#navwrap .zen-spotlight {
+  border-bottom: 0;
+  padding: 10px 0 0;
+}
+#breadcrumbwrap .zen-spotlight {
+  padding: 10px 0 0;
+  padding: 10px;
+}
+@media screen and (max-width: 787px) {
+  #breadcrumbwrap .zen-spotlight {
+    padding: 10px 0;
+  }
+  #breadcrumbwrap .zen-spotlight li,
+  #breadcrumbwrap .zen-spotlight a,
+  #breadcrumbwrap .zen-spotlight span {
+    padding: 0;
+  }
+  #breadcrumbwrap .zen-spotlight li:after {
+    margin-right: 8px;
+  }
+}
+#breadcrumbwrap .zen-spotlight .moduletable {
+  margin-bottom: 0;
+}
+#midCol {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 787px) {
+  .select-menu #zen-wrap,
+  .offcanvas-menu #zen-wrap {
+    padding-top: 15px;
+    border-top: 50px solid #2980b9;
+  }
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+html,
+body {
+  background: #ffffff;
+}
+.zen-spotlight {
+  border-bottom: 1px solid #eeeeee;
+}
+#breadcrumbwrap .zen-spotlight {
+  border-bottom: 0;
+}
+#breadcrumb {
+  color: #999999;
+  font-size: 90%;
+  background: none;
+}
+#breadcrumb :after {
+  color: #999999;
+}
+#breadcrumb ul {
+  margin: 0;
+  background: none;
+}
+#banner {
+  background: #fafafa;
+  border: 1px solid #eeeeee;
+  padding: 30px;
+  border-radius: 4px;
+}
+#banner p,
+#banner h1,
+#banner h2,
+#banner h3,
+#banner h4,
+#banner h5,
+#banner h6 {
+  color: #333333;
+}
+#banner a {
+  color: #3498db;
+}
+@media screen and (max-width: 787px) {
+  #banner h2 {
+    font-size: 240%;
+  }
+}
+@media screen and (max-width: 620px) {
+  #banner h2 {
+    font-size: 180%;
+  }
+}
+@media screen and (max-width: 787px) {
+  #bannerwrap .zen-spotlight {
+    padding-top: 0;
+  }
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+/* Back to top
+ -----------------------------------------------------------------------------*/
+#toTop {
+  position: fixed;
+  z-index: 100;
+  right: 0px;
+  bottom: 0px;
+  display: none;
+  cursor: pointer;
+  width: 60px;
+  text-align: center;
+  height: 60px;
+  font-size: 1.4em;
+  line-height: 60px;
+  background: #2c3e50;
+  color: #fff;
+}
+#toTop span {
+  color: #fff;
+  margin-right: 0;
+}
+#toTop [class^="icon-"],
+#toTop [class*=" icon-"] {
+  line-height: 45px;
+}
+#toTop:hover {
+  background: #333;
+}
+#toTop:hover a {
+  color: #fff;
+}
+#toTop:hover a:hover {
+  color: #fff;
+}
+#toTopText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 100%;
+  display: block;
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+.zentools.grid [class^="grid_"] {
+  margin-left: 0;
+}
+.zentools.grid h3 {
+  margin-top: 0;
+}
+.zentools.list h3 {
+  margin-top: 0;
+}
+.zentools .zentitle {
+  padding: 0;
+}
+.zentools .zentitle h2 {
+  margin-top: 0;
+}
+.zentools .zen-boxed .zentitle {
+  padding: 0 10px;
+}
+.zentools.slideshow .zentitle a {
+  font-size: 60%;
+  padding: 0px;
+}
+.zentools.slideshow .zentitle h2 {
+  margin: 0 !important;
+  line-height: 0.8em;
+  padding-bottom: 0;
+}
+.zentools.slideshow .zenmore a {
+  display: inline;
+}
+.zentools.accordion .allitems.container {
+  padding: 30px;
+}
+.zentools.accordion.zen-boxed .zen-title {
+  border: 0 !important;
+}
+.zentools.accordion.zen-boxed .zeninner {
+  padding-bottom: 0;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 30px;
+  box-shadow: 0px 1px 1px 0px rgba(180, 180, 180, 0.1);
+}
+.zentools.zen-flat .zentitle {
+  border-bottom: 1px solid #eeeeee !important;
+}
+.accordion.zen-boxed .zentitle {
+  border: 0 !important;
+}
+#bannerwrap .slideshowstandard ul.flex-direction-nav li {
+  margin-top: -20px;
+}
+#bannerwrap .slideshowstandard ul.flex-direction-nav li a {
+  padding: 20px !important;
+  border-radius: 0;
+}
+#bannerwrap .slideshowstandard ul.flex-direction-nav li a:before {
+  margin: -8px 0 0 -8px !important;
+  float: left;
+}
+ul#filters li {
+  margin: 0 10px 20px 0 !important;
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+/* Back to top
+ -----------------------------------------------------------------------------*/
+.mean-container .mean-nav,
+.mean-container .off-canvas-body {
+  background: #ffffff;
+  color: #0c2436;
+  float: left;
+  width: 100%;
+}
+.mean-container .mean-nav p,
+.mean-container .off-canvas-body p {
+  color: inherit;
+}
+.mean-container .mean-nav h1,
+.mean-container .off-canvas-body h1,
+.mean-container .mean-nav h2,
+.mean-container .off-canvas-body h2,
+.mean-container .mean-nav h3,
+.mean-container .off-canvas-body h3,
+.mean-container .mean-nav h4,
+.mean-container .off-canvas-body h4,
+.mean-container .mean-nav h5,
+.mean-container .off-canvas-body h5,
+.mean-container .mean-nav h6,
+.mean-container .off-canvas-body h6 {
+  color: inherit;
+}
+.mean-container .mean-nav a,
+.mean-container .off-canvas-body a {
+  color: #3498db;
+}
+.mean-container .mean-nav a:hover,
+.mean-container .off-canvas-body a:hover {
+  color: #2c3e50;
+}
+.mean-container .mean-nav .zen-menu-caption,
+.mean-container .off-canvas-body .zen-menu-caption {
+  display: block;
+  margin-left: 0;
+}
+.mean-container .mean-nav .expand,
+.mean-container .off-canvas-body .expand {
+  position: absolute;
+  z-index: 10;
+  width: 30px;
+  background: #ffffff;
+  padding: 4px 0;
+  text-align: center;
+  right: 30px;
+  top: 4px;
+  font-weight: 300;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.mean-container .mean-nav .expand:hover,
+.mean-container .off-canvas-body .expand:hover {
+  background: #f7f7f7;
+}
+.mean-container .mean-nav li:last-child,
+.mean-container .off-canvas-body li:last-child {
+  margin-bottom: 10px;
+}
+.mean-container .mean-nav {
+  border-bottom: 1px solid #eeeeee;
+}
+.mean-container .off-canvas-body {
+  background: #f5f5f5;
+  box-sizing: border-box !important;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #eeeeee;
+}
+/**
+ *------------------------------------------------------------------------------
+ * @package       Zen Grid Framework
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2006-2014 Joomlabamboo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later;
+ * @Link:         http://www.joomlabamboo.com
+ *------------------------------------------------------------------------------
+ */
+@media screen and (max-width: 787px) {
+  .select-menu #menu {
+    background: none;
+    padding: 30px 0;
+  }
+  .toggle-menu #menu {
+    background: none;
+  }
+}
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../zengrid/libs/zengrid/fonts/fontawesome-webfont.eot');
+  src: url('../zengrid/libs/zengrid/fonts/fontawesome-webfont-1.eot') format('embedded-opentype'), url('../zengrid/libs/zengrid/fonts/fontawesome-webfont.woff') format('woff'), url('../zengrid/libs/zengrid/fonts/fontawesome-webfont.ttf') format('truetype'), url('../zengrid/libs/zengrid/fonts/fontawesome-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.zen-icon:before,
+.icon-envelope:before,
+.icon-print:before,
+.icon-calendar:before,
+.icon-remove:before,
+.icon-edit:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* makes the font 33% larger relative to the icon container */
+.zen-icon-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.zen-icon-2x {
+  font-size: 2em;
+}
+.zen-icon-3x {
+  font-size: 3em;
+}
+.zen-icon-4x {
+  font-size: 4em;
+}
+.zen-icon-5x {
+  font-size: 5em;
+}
+.zen-icon-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.zen-icon-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.zen-icon-ul > li {
+  position: relative;
+}
+.zen-icon-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.zen-icon-li.zen-icon-lg {
+  left: -1.85714286em;
+}
+.zen-icon-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.zen-icon.pull-left {
+  margin-right: .3em;
+}
+.zen-icon.pull-right {
+  margin-left: .3em;
+}
+.zen-icon-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.zen-icon-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.zen-icon-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.zen-icon-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.zen-icon-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.zen-icon-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+:root .zen-icon-rotate-90,
+:root .zen-icon-rotate-180,
+:root .zen-icon-rotate-270,
+:root .zen-icon-flip-horizontal,
+:root .zen-icon-flip-vertical {
+  filter: none;
+}
+.zen-icon-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.zen-icon-stack-1x,
+.zen-icon-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.zen-icon-stack-1x {
+  line-height: inherit;
+}
+.zen-icon-stack-2x {
+  font-size: 2em;
+}
+.zen-icon-inverse {
+  color: #ffffff;
+}
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+.zen-icon-search:before {
+  content: "\f002";
+}
+.zen-icon-envelope-o:before {
+  content: "\f003";
+}
+.zen-icon-heart:before {
+  content: "\f004";
+}
+.zen-icon-star:before {
+  content: "\f005";
+}
+.zen-icon-user:before {
+  content: "\f007";
+}
+.zen-icon-th-large:before {
+  content: "\f009";
+}
+.zen-icon-th:before {
+  content: "\f00a";
+}
+.zen-icon-th-list:before {
+  content: "\f00b";
+}
+.zen-icon-remove:before,
+.zen-icon-close:before,
+.zen-icon-times:before,
+.icon-remove:before {
+  content: "\f00d";
+}
+.zen-icon-cog:before {
+  content: "\f013";
+}
+.zen-icon-home:before {
+  content: "\f015";
+}
+.zen-icon-lock:before {
+  content: "\f023";
+}
+.zen-icon-tag:before {
+  content: "\f02b";
+}
+.zen-icon-tags:before {
+  content: "\f02c";
+}
+.zen-icon-print:before {
+  content: "\f02f";
+}
+.zen-icon-camera:before {
+  content: "\f030";
+}
+.zen-icon-edit:before,
+.icon-edit:before,
+.zen-icon-chevron-left:before {
+  content: "\f053";
+}
+.zen-icon-chevron-right:before {
+  content: "\f054";
+}
+.zen-icon-plus:before {
+  content: "\f067";
+}
+.zen-icon-minus:before {
+  content: "\f068";
+}
+.zen-icon-eye:before {
+  content: "\f06e";
+}
+.zen-icon-eye-slash:before {
+  content: "\f070";
+}
+.zen-icon-chevron-up:before {
+  content: "\f077";
+}
+.zen-icon-chevron-down:before {
+  content: "\f078";
+}
+.zen-icon-bars:before {
+  content: "\f0c9";
+}
+.zen-icon-arrow-up:before {
+  content: "\f062";
+}
+.zen-icon-tags:before {
+  content: "\f02c";
+}
+.zen-icon-print:before,
+.icon-print:before {
+  content: "\f02f";
+}
+.zen-icon-mail:before,
+.icon-envelope:before {
+  content: "\f0e0";
+}
+.zen-icon-plus:before {
+  content: "\f067";
+}
+.zen-icon-minus:before {
+  content: "\f068";
+}
+.zen-icon-calendar:before,
+.icon-calendar:before {
+  content: "\f073";
+}
+.zen-icon-twitter:before {
+  content: "\f099";
+}
+.zen-icon-facebook:before {
+  content: "\f09a";
+}
+.zen-icon-google-plus:before {
+  content: "\f0d5";
+}
+.zen-icon-pinterest:before {
+  content: "\f0d2";
+}
+

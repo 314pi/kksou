@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Joomla</title>
+		<description><![CDATA[The Joy of Sharing and Learning Together]]></description>
+		<link>https://kksou.com/php-gtk2/category/include/</link>
+		<lastBuildDate>Fri, 14 Jun 2019 07:42:00 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="https://kksou.com/php-gtk2/category/include/feed/rss.php"/>
+		<language>en-gb</language>
+		<managingEditor>admin@kksou.com (kksou)</managingEditor>
+		<item>
+			<title>include_content_item 01</title>
+			<link>https://kksou.com/php-gtk2/include/include-content-item-01.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/include/include-content-item-01.php</guid>
+			<description><![CDATA[Sample 1: Click the ReadMore link to display the full article...<br />]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>include</category>
+			<pubDate>Wed, 01 Jul 2009 02:09:33 +0000</pubDate>
+		</item>
+		<item>
+			<title>include_content_item 02</title>
+			<link>https://kksou.com/php-gtk2/include/include-content-item-02.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/include/include-content-item-02.php</guid>
+			<description><![CDATA[Sample 2: Click the ReadMore link to display the full article...<br />]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>include</category>
+			<pubDate>Wed, 01 Jul 2009 02:11:36 +0000</pubDate>
+		</item>
+		<item>
+			<title>include_content_item 03</title>
+			<link>https://kksou.com/php-gtk2/include/include-content-item-03.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/include/include-content-item-03.php</guid>
+			<description><![CDATA[<p>Sample 3: Click the ReadMore image link to display the full article...</p>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>include</category>
+			<pubDate>Wed, 01 Jul 2009 02:21:37 +0000</pubDate>
+		</item>
+		<item>
+			<title>include_content_item 04</title>
+			<link>https://kksou.com/php-gtk2/include/include-content-item-04.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/include/include-content-item-04.php</guid>
+			<description><![CDATA[<p>Sample 4: Click the ReadMore button to display the full article...</p>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>include</category>
+			<pubDate>Wed, 01 Jul 2009 02:45:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>include_content_item 05</title>
+			<link>https://kksou.com/php-gtk2/include/include-content-item-05.php</link>
+			<guid isPermaLink="true">https://kksou.com/php-gtk2/include/include-content-item-05.php</guid>
+			<description><![CDATA[<p>Sample 5: Click the ReadMore button to display the full article...</p>]]></description>
+			<author>kksou@kksou.com (kksou)</author>
+			<category>include</category>
+			<pubDate>Wed, 01 Jul 2009 03:02:16 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

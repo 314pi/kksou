@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>320. How to display progress bar while processing long task - Part 3 - auto begin processing when program starts?</title>
+		<description>Discuss 320. How to display progress bar while processing long task - Part 3 - auto begin processing when program starts?</description>
+		<link>https://kksou.com/php-gtk2/sample-codes/display-progress-bar-while-processing-long-task-Part-3-auto-begin-processing-when-program-starts.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 08:42:47 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/377.php" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>

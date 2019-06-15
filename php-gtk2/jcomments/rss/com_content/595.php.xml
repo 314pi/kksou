@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>416. How to switch signal handlers on the fly - Part 3 - using state machine?</title>
+		<description>Discuss 416. How to switch signal handlers on the fly - Part 3 - using state machine?</description>
+		<link>https://kksou.com/php-gtk2/sample-codes/switch-signal-handlers-on-the-fly-Part-3-using-state-machine.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 08:11:16 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/595.php" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>

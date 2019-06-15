@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>kksou Joomla Weather Module (formerly Google Weather Module) - AJAX and built-in cache version </title>
+		<description>Discuss kksou Joomla Weather Module (formerly Google Weather Module) - AJAX and built-in cache version </description>
+		<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 05:53:10 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/1751.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Shabnam says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-1184</link>
+			<description><![CDATA[I am so grateful for your blog article.Really looking forward to read more. Really Cool.http://www.clippingfactoryindia.com/]]></description>
+			<dc:creator>Shabnam</dc:creator>
+			<pubDate>Tue, 01 Oct 2013 04:48:30 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-1184</guid>
+		</item>
+		<item>
+			<title>Shabnam says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-1183</link>
+			<description><![CDATA[I have joined your rss feed and look forward to seeking more of your fantastic post. Clippinh factory india]]></description>
+			<dc:creator>Shabnam</dc:creator>
+			<pubDate>Tue, 01 Oct 2013 04:47:08 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-1183</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-959</link>
+			<description><![CDATA[Hi Marko, The language "seems" to be not working because of the cache. I added a built-in cache because wunderground.com allows only 500 requests per day, which is about 10 requests per hour (note: each weather search requires 2 requests - one to get the current weather info, and the other to get the weather forecast for the following 4 days.) The default time for cache is 60 min - i.e. if any users search for the same city within 60 min, it will retrieve the value from the cache. To see whether the language works, you can change the cache time to 1 min temporarily. Change the language setting and reload the page after 1 min. You should be able to see the new weather info in the new language. By the way, wunderground.com uses a different language code than the standard ISO. The language code setting is here: http://www.wunderground.com/weather/api/d/docs?d=language-support. Please give it a try and let me know if it works. Don't forget to change the cache time back to 60 min after you see that the language works. Otherwise you will use up the 500 requests very fast. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 12 Apr 2013 00:46:30 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-959</guid>
+		</item>
+		<item>
+			<title>Okram says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-957</link>
+			<description><![CDATA[Hi, thanks for the support. That little snipped did the trick! Now things are working on my server. Another thing that seems strange to me, is that no language code works. Tried de, fr and zh-cn, what should change? Greetz, Marko]]></description>
+			<dc:creator>Okram</dc:creator>
+			<pubDate>Thu, 11 Apr 2013 12:11:52 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-957</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-956</link>
+			<description><![CDATA[Hi Marko, That's really strange. Joomla defines DS by dfault to '/' or '\' depending on which OS you are running. I'm running this module on one of my other sites running Joomla 3.0.3 and it's ok. In any case, here's what you can do: 1) Go to your [Joomla_root_folder]/modules/mod_kksouGoogleWeathe r 2) Edit the file: mod_kksouGoogleWeather.php 3) Go to line 14. You should see defined('_JEXEC') or die('Restricted access'); require_once (dirname(__FILE__).DS.'helper.php'); 4) Please add one more line to define DS just before the require_once so that it becomes: defined('_JEXEC') or die('Restricted access'); if (!defined('DS')) define( 'DS', '/' ); require_once (dirname(__FILE__).DS.'helper.php'); 4) Save and close the file. Now reload the page. Please let me know if it's working now. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 10 Apr 2013 18:28:28 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-956</guid>
+		</item>
+		<item>
+			<title>Okram says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-954</link>
+			<description><![CDATA[Hi, just installed latest Version to Joomla 3.0.3. Get a missing file failure: Warning: require_once(xxxx/xxxx/modules/mod_kksouGoogleWeat herDShelper.php) [function.require-once]: failed to open stream: No such file or directory in /xxxx/xxxx/modules/mod_kksouGoogleWeather/mod_kkso uGoogleWeather.php on line 16 Fatal error: require_once() [function.require]: Failed opening required '/xxxx/xxxx/modules/mod_kksouGoogleWeatherDShelper .php' (include_path='.:/usr/local/lib/php') in /xxxx/xxxx/webseiten/maasholm_303/modules/mod_kkso uGoogleWeather/mod_kksouGoogleWeather.php on line 16 File's not in the modules directory! What to do? Regards, Marko]]></description>
+			<dc:creator>Okram</dc:creator>
+			<pubDate>Wed, 10 Apr 2013 12:31:24 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-954</guid>
+		</item>
+		<item>
+			<title>Guillaume Trempe says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-950</link>
+			<description><![CDATA[ Joomla! 2.5.9]]></description>
+			<dc:creator>Guillaume Trempe</dc:creator>
+			<pubDate>Tue, 09 Apr 2013 09:42:47 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-950</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-949</link>
+			<description><![CDATA[Which Joomla version are you using? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 09 Apr 2013 09:41:59 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-949</guid>
+		</item>
+		<item>
+			<title>Guillaume Trempe says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-948</link>
+			<description><![CDATA[ non not working ... module still searching]]></description>
+			<dc:creator>Guillaume Trempe</dc:creator>
+			<pubDate>Tue, 09 Apr 2013 09:39:46 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-948</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-947</link>
+			<description><![CDATA[Hi Guillaume, Have just emailed you. Let me know if it works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 09 Apr 2013 09:15:49 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-947</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-946</link>
+			<description><![CDATA[Hi Apesz, Have just emailed you. Let me know if it works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 09 Apr 2013 09:15:20 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-946</guid>
+		</item>
+		<item>
+			<title>Guillaume Trempe says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-945</link>
+			<description><![CDATA[ here is the url of my test website http://www.domainederouville.com/dev/]]></description>
+			<dc:creator>Guillaume Trempe</dc:creator>
+			<pubDate>Tue, 09 Apr 2013 09:08:49 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-945</guid>
+		</item>
+		<item>
+			<title>Guillaume Trempe says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-944</link>
+			<description><![CDATA[module not working I have create a module and put it on the left and it never stop searching I have php5 and curl on my server I am using NANO template from yootheme nonumber component like advance module management and module anywhere etc ... but for that test I am only put my module on the left (side-b) of the template I am testing with San Francisco, CA help me please and I will buy the 10$ remove created by license thx]]></description>
+			<dc:creator>Guillaume Trempe</dc:creator>
+			<pubDate>Tue, 09 Apr 2013 09:07:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-944</guid>
+		</item>
+		<item>
+			<title>Apesz says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-943</link>
+			<description><![CDATA[Hi kksou, I tried the following locations, don't work none of them San Francisco, CA Budapest, HU Rome, IT Amsterdam, NL I enabled the input field of modul, so you can test it (www.annabar.hu - left colum: Weather report modul)]]></description>
+			<dc:creator>Apesz</dc:creator>
+			<pubDate>Tue, 09 Apr 2013 06:24:34 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-943</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-942</link>
+			<description><![CDATA[Hi Apesz, What is the city and zip code that you've tried? Can you try "San Francisco, CA" and let me know if it works? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 09 Apr 2013 01:12:31 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-942</guid>
+		</item>
+		<item>
+			<title>Apesz says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-941</link>
+			<description><![CDATA[Hello, I need help. I downloaded and installed mod_kksouGoogleWeather 1.5.9 modul (on Joomla 1.5.26), but it does not work correctly for me. it just displays "There was no response from the weather server." If admin mode is set on, it displays: > city NOT FOUND in cache > number of calls = 260 > retrieve fresh data from server "There was no response from the weather server." - cURL enabled (cURL Information: libcurl/7.21.0 GnuTLS/2.8.6 zlib/1.2.3.4 libidn/1.15) - I have registered in wunderground.com for API Key and set in the modul configuration (www.annabar.hu). - I tried more than one city and zip code, but the same result Please give me some advise, why modul not working? What is the problem? Thanks Apesz]]></description>
+			<dc:creator>Apesz</dc:creator>
+			<pubDate>Tue, 09 Apr 2013 00:46:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-941</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-830</link>
+			<description><![CDATA[Hi, You can send via the feedback form. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 14 Jan 2013 07:01:07 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-830</guid>
+		</item>
+		<item>
+			<title>Aaron Toth says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-829</link>
+			<description><![CDATA[Where can we contact the team for support questions? I do not want to leave an error message here.]]></description>
+			<dc:creator>Aaron Toth</dc:creator>
+			<pubDate>Mon, 14 Jan 2013 06:38:31 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-829</guid>
+		</item>
+		<item>
+			<title>Mikerr3 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-794</link>
+			<description><![CDATA[I want to call different cities. The old google plugin was {weather 07465} {weather 12500} How do I call multiple cities with new module? Thanks.]]></description>
+			<dc:creator>Mikerr3</dc:creator>
+			<pubDate>Sat, 22 Dec 2012 08:21:41 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-794</guid>
+		</item>
+		<item>
+			<title>Branko says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-733</link>
+			<description><![CDATA[ Hi, I haven't replied before because I am not sure why it is working now. I changed it as you said but it did not help so I reverted file to original one and it works since then :) Regards, Branko]]></description>
+			<dc:creator>Branko</dc:creator>
+			<pubDate>Tue, 20 Nov 2012 00:39:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-733</guid>
+		</item>
+		<item>
+			<title>Camaleon says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-716</link>
+			<description><![CDATA[Hi, If I specify the city "Ayamonte, Spain" in your web it does display the weather forecast, however in my website it just displays "There was no response from the weather server." Admin mode displays: > city NOT FOUND in cache > number of calls = 460 > retrieve fresh data from server using Joomla! 1.5.26, therefore mod_kksouGoogleWeather_v1.59 version. Any idea? Thanks!]]></description>
+			<dc:creator>Camaleon</dc:creator>
+			<pubDate>Thu, 08 Nov 2012 04:59:04 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-716</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-710</link>
+			<description><![CDATA[Hi Branko, Do not have enough clues based on the information you've provided to know what's the cause of the problem. In the meantime, this is what you can do: 1) Edit the file: /home/udica/public_html/modules/mod_kksouGoogle Weather/mod_kksouGoogle Weather_setup.php 2) In Line 15, you will see: $includes = $joomla_root.DS.'includes'; 3) Just before this line, add this: $joomla_root = '/home/udica/public_html'; Save the file and see if it works now. By right, $joomla_root should be automatically set in the program. But seems like it's not working properly. So what (3) does above is to set the path to the joomla_root manually. Let me know if it works, ok? Regards, /kkosu]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 02 Nov 2012 08:16:40 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-710</guid>
+		</item>
+		<item>
+			<title>Branko says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-708</link>
+			<description><![CDATA[After upgrade to 2.59 (from 2.58) I am getting the following error: Warning: require_once(/includes/defines.php) [function.require-once]: failed to open stream: No such file or directory in /home/udica/public_html/modules/mod_kksouGoogleWea ther/mod_kksouGoogleWeather_setup.php on line 17 Fatal error: require_once() [function.require]: Failed opening required '/includes/defines.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/udica/public_html/modules/mod_kksouGoogleWea ther/mod_kksouGoogleWeather_setup.php on line 17 Regards, Branko]]></description>
+			<dc:creator>Branko</dc:creator>
+			<pubDate>Fri, 02 Nov 2012 02:11:30 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-708</guid>
+		</item>
+		<item>
+			<title>SeanMS says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-625</link>
+			<description><![CDATA[thanks for the quick reply - here is system info, and I downloaded 1.58 of your weather: PHP Built on:	Linux js1.joomlaservices.ca 2.6.18-194.el5 #1 SMP Fri Apr 2 14:58:14 EDT 2010 x86_64 Database Version:	5.1.63-cll Database Collation:	utf8_general_ci PHP Version:	5.2.17 Web Server:	Apache Web Server to PHP interface:	cgi Joomla! Version:	Joomla! 1.5.15 Stable [ Wojmamni Ama Mamni ] 05-November-2009 04:00 GMT User Agent:	Mozilla/5.0 (Windows NT 6.1; rv:15.0) Gecko/20100101 Firefox/15.0.1]]></description>
+			<dc:creator>SeanMS</dc:creator>
+			<pubDate>Tue, 25 Sep 2012 06:01:35 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-625</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-624</link>
+			<description><![CDATA[Hi, Any other clues you can give? Looks like conflict with your other modules, plugins or even the Joomla template. Without any other info, it's really difficult to infer anything. The only surest way to try if it's a conflict is to install a fresh copy of Joomla somewhere on your server, then install only the module (using the standard Joomla template). This will allow you to see if the module works at all on your machine. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 25 Sep 2012 05:46:12 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-624</guid>
+		</item>
+		<item>
+			<title>SeanMS says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-623</link>
+			<description><![CDATA[Hello! I followed the instructions, but when I endabled the module, the site does not load at all - just a blank screen. When I diabled the module, the site works again. Any idea? thank you]]></description>
+			<dc:creator>SeanMS</dc:creator>
+			<pubDate>Tue, 25 Sep 2012 04:36:37 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-623</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-613</link>
+			<description><![CDATA[Hi, Glad to know that you find it useful. Yes, I'm fully aware of the 500 calls limit per day. I'm currently improving on the module to cache the weather result so that it will only make a call, say once every 15 minutes to stay within the limit. It's almost done and I'm in the midst of testing to make sure that everything's working fine. Should be able to roll out the new version by this weekend. Will let you know once it's released, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 21 Sep 2012 01:56:22 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-613</guid>
+		</item>
+		<item>
+			<title>straka says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-612</link>
+			<description><![CDATA[Hi, kksou weather module is the best Joomla weather module. Unfortunately important difference between previous Google version and this wunderground version is that this version is free only if the module on the site calls to wunderground.com less then 500 times per day or 10 calls per min. Otherwise API is disabled and module is out of order to the rest of the day.]]></description>
+			<dc:creator>straka</dc:creator>
+			<pubDate>Fri, 21 Sep 2012 01:36:36 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-612</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-594</link>
+			<description><![CDATA[Hi, On surface, the googleWeather module looks the same. At the backend, it now retrieves the weather info from wunderground.com instead of google.com. All you need to do is to uninstall the previous version of googleWeather and then install the latest version. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 17 Sep 2012 08:49:37 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-594</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-591</link>
+			<description><![CDATA[Hi, The entire weather info is returned by wunderground.com. You may want to contact wunderground.com directly to tell them that the translation is wrong. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 17 Sep 2012 08:41:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-591</guid>
+		</item>
+		<item>
+			<title>Eranda says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-590</link>
+			<description><![CDATA[:-) Thanks Man!]]></description>
+			<dc:creator>Eranda</dc:creator>
+			<pubDate>Sun, 16 Sep 2012 22:41:52 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-590</guid>
+		</item>
+		<item>
+			<title>Rodolphe says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-586</link>
+			<description><![CDATA[hi, There is a mistake with the japanese language : sunday is ??? and not ??. Can you fix it? How can i do it by myself? thanks!]]></description>
+			<dc:creator>Rodolphe</dc:creator>
+			<pubDate>Thu, 13 Sep 2012 06:29:48 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-586</guid>
+		</item>
+		<item>
+			<title>Lasco says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-573</link>
+			<description><![CDATA[I had the weather extention on alot of websites, but ofcourse this no longer work. I saw in some of the discussions the reason was that Google Weather Api is no longer operational, but that the extention now works with Wunderground.com. However, how do I now my my extentions workable again? I did try to download the extention again, thinking it was updated to now work with wunderground but it's clearly still the 'old' extention? HOw do I go about making it work again?]]></description>
+			<dc:creator>Lasco</dc:creator>
+			<pubDate>Tue, 04 Sep 2012 23:17:32 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-573</guid>
+		</item>
+		<item>
+			<title>Olasunkanmi says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-570</link>
+			<description><![CDATA[The same problem applies on wunderground's website ! when the search form is active and you type lagos, nigeria, it brings out 2 results..that's where the problem comes from !]]></description>
+			<dc:creator>Olasunkanmi</dc:creator>
+			<pubDate>Tue, 04 Sep 2012 09:58:25 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-570</guid>
+		</item>
+		<item>
+			<title>Olasunkanmi says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-569</link>
+			<description><![CDATA[here's the Link http://http://eventsinnigeria.com/ scroll down and you'll see multiple city(Lagos, Nigeria) whereas city like Ibadan, Nigeria and Ilorin, Nigeria are being updated..what can be done??]]></description>
+			<dc:creator>Olasunkanmi</dc:creator>
+			<pubDate>Tue, 04 Sep 2012 09:56:28 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-569</guid>
+		</item>
+		<item>
+			<title>Jordi Caralt says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-568</link>
+			<description><![CDATA[Could I get the URLs from where this modules retrieves all data? My hosting provider seems to be a bit lost configuring FW rules]]></description>
+			<dc:creator>Jordi Caralt</dc:creator>
+			<pubDate>Tue, 04 Sep 2012 08:00:11 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-568</guid>
+		</item>
+		<item>
+			<title>Olasunkanmi says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-567</link>
+			<description><![CDATA[Please, on the website, we have 2 cities for lagos and i want to use it in the module.please we need to developer to fix this issue about multiple cities(Lagos, Nigeria).]]></description>
+			<dc:creator>Olasunkanmi</dc:creator>
+			<pubDate>Tue, 04 Sep 2012 05:10:35 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-567</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-565</link>
+			<description><![CDATA[Hi Branko, Thanks for the feedback. All weather info, including the translations, are direct from wunderground.com, not from within the Jooomla module. You might want to feedback this direct to wunderground.com so that they can make the improvement. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 02 Sep 2012 21:50:08 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-565</guid>
+		</item>
+		<item>
+			<title>Branko says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-563</link>
+			<description><![CDATA[Hi Kksou, I am using Croatian language. Sunday and Monday are using english abbreviation (sun, mon) while tuesday and wednesday are using proper croatian abbreviation (uto, sri). Regards, Branko]]></description>
+			<dc:creator>Branko</dc:creator>
+			<pubDate>Sun, 02 Sep 2012 09:32:08 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-563</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-554</link>
+			<description><![CDATA[Hi Jeroen, Please refer to the article: The new Google Weather module http://www.kksou.com/php-gtk2/Joomla-News/The-new-Google-Weather-module.php Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 29 Aug 2012 10:38:14 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-554</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-548</link>
+			<description><![CDATA[Hi Jeroen, Google has stopped its Google Weather API service entirely since August 7th! For more information, please refer to the following article: http://www.kksou.com/php-gtk2/Joomla-News/Google-has-stopped-its-Google-Weather-API.php Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Tue, 28 Aug 2012 08:22:15 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-548</guid>
+		</item>
+		<item>
+			<title>Jeroen says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-547</link>
+			<description><![CDATA[Hello Kksou, At the moment, it's down completly. The errors you are having atm, are the same as mine. Can you fix it if possible? Jeroen]]></description>
+			<dc:creator>Jeroen</dc:creator>
+			<pubDate>Tue, 28 Aug 2012 08:08:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-547</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-539</link>
+			<description><![CDATA[Hi, This usually means there's no result returned from the Google Weather server. Which city are you trying to search? Does this happen to every city? Sometimes it could be just that the Google Weather server is not running. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 17 Aug 2012 01:31:28 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-539</guid>
+		</item>
+		<item>
+			<title>guest2012 says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-538</link>
+			<description><![CDATA[In your demo: Warning: simplexml_load_string() [function.simplexml-load-string]: in /home/fann/kksou.com/t1510/modules/mod_googleWeath er/mod_kksouGoogleWeather_libclass.php on line 26 any advise on how to fix?]]></description>
+			<dc:creator>guest2012</dc:creator>
+			<pubDate>Thu, 16 Aug 2012 11:29:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-538</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-292</link>
+			<description><![CDATA[Hi Toni , By the way, just for your info, while the google weather information can be in many different languages, Google only allows you to enter the city name in English. Yes, English only. It's Google. They set the rule. So there's nothing much we can do about this... Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 13 May 2012 23:57:23 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-292</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-291</link>
+			<description><![CDATA[Hi Toni, Just went to your site. Did a view source. Think the only difference between your page and my page (kksou.com) is in your header, in which yours is lang="fi-fi". Can you try setting the lang to other settings, such as utf-8? This will allow you to see if it's the problem with the language setting. Interesting, I did a view source for some Finnish language websites e.g. http://www.gps-waypoints.net/gps/?language=fi http://www.infopankki.fi/en-gb/finnish_language/ Both did not have the setting lang="fi-fi". Instead, one has: content="text/html;charset=ISO-8859-1" The other has: content="text/html;charset=UTF-8" So would suggest you do some testing with the content and lang settings and see if your web pages display correctly, and the weather information returned by google also displayed correctly. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 13 May 2012 23:52:25 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-291</guid>
+		</item>
+		<item>
+			<title>Toni Rauma says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-290</link>
+			<description><![CDATA[I think it's a server related problem cause it seems to work on this demo site. Any suggestions how to get rid of it? :-? Here's an URL: http://www.sivutuote.com/sivut/metsa/]]></description>
+			<dc:creator>Toni Rauma</dc:creator>
+			<pubDate>Sun, 13 May 2012 23:23:51 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-290</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-289</link>
+			<description><![CDATA[Hi, Just tested the download link. It works fine. For your convenience, have emailed a copy of the module to you. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sun, 13 May 2012 17:48:13 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-289</guid>
+		</item>
+		<item>
+			<title>broken link says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-288</link>
+			<description><![CDATA[Joomla 1.5.x: mod_kksouGoogleWeather_v1.57.zip broken link. doesnt end.]]></description>
+			<dc:creator>broken link</dc:creator>
+			<pubDate>Sun, 13 May 2012 13:57:36 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-288</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-286</link>
+			<description><![CDATA[Hi Toni, Are you referring to 1) the city input field, or 2) the weather result returned by Google? You have an URL to show the actual output? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 11 May 2012 07:19:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-286</guid>
+		</item>
+		<item>
+			<title>Toni Rauma says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-284</link>
+			<description><![CDATA[Hi, I have a problem with scandic letters (åäö) with finnish language. The module displays them wrong and it becomes messy :/]]></description>
+			<dc:creator>Toni Rauma</dc:creator>
+			<pubDate>Fri, 11 May 2012 05:35:48 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-284</guid>
+		</item>
+		<item>
+			<title>Gerardo Bredfeldt says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-280</link>
+			<description><![CDATA[Hi, I migrate my page from Fatcow to Arvixe and your module stop working. It searches endless for the city. Arvixe has support for Php4 and 5. CURl is enabled. My Joomla is 1.5.25 and I'd install "mod_kksouGoogleWeather_v1.57.zip". Tryed twice, no success. Installed a few other free weather modules ---> ok, but I would prefer yours. Thanks for possible help.]]></description>
+			<dc:creator>Gerardo Bredfeldt</dc:creator>
+			<pubDate>Wed, 09 May 2012 16:43:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-280</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-143</link>
+			<description><![CDATA[Hi, The css file is in the folder: [Joomla_root_folder]/modules/mod_kksouGoogleWeathe r css file: mod_kksouGoogleWeather.css Please note that most browsers cache the css style sheets. So after editing and saving the css file, remember to clear the browser cache. The best way I find is to point your browser to your css file and load the css file in the browser. You can see very clearly if the browser is still using the old cached version or your latest edited version. (Just keep hitting refresh until the browser reloads the fresh copy.) Let me know if it works, ok? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 15 Mar 2012 17:49:44 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-143</guid>
+		</item>
+		<item>
+			<title>dora says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-139</link>
+			<description><![CDATA[I've downloaded the module(2.5, all is good on that end. Where do I fine the CSS info to make changes in the font? thanks]]></description>
+			<dc:creator>dora</dc:creator>
+			<pubDate>Thu, 15 Mar 2012 15:22:27 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-139</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-121</link>
+			<description><![CDATA[Hi, Thanks a lot for informing me about this. Appreciate this greatly. Have updated the demo link and informed Joomla.org. Guess it will take them a couple of days for review and reactive the page. Thanks once again! Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 09 Mar 2012 07:14:34 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-121</guid>
+		</item>
+		<item>
+			<title>Czech Cricket says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-120</link>
+			<description><![CDATA[Thank you, the module was very easy to set up on our website and provides a very useful service. No problems at all so far! I wanted to leave a nice review for you on the JED but your link there is down, it says the link to downloading this module is broken. Hope you get that fixed soon - you deserve the product to be used more. Thank you again]]></description>
+			<dc:creator>Czech Cricket</dc:creator>
+			<pubDate>Thu, 08 Mar 2012 04:38:37 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-120</guid>
+		</item>
+		<item>
+			<title>Scott Alexander says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-27</link>
+			<description><![CDATA[This is what I am searching for. I would really like to know if Google has a weather module. I'm glad that it has.]]></description>
+			<dc:creator>Scott Alexander</dc:creator>
+			<pubDate>Sat, 28 Jan 2012 20:02:35 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-27</guid>
+		</item>
+		<item>
+			<title>Sean Lee says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-13</link>
+			<description><![CDATA[Thanks]]></description>
+			<dc:creator>Sean Lee</dc:creator>
+			<pubDate>Mon, 23 Jan 2012 10:05:30 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Gadgets/kksou-google-weather-module.php#comment-13</guid>
+		</item>
+	</channel>
+</rss>

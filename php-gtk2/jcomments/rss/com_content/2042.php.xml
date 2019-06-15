@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>googleMaps plugin Tutorial 01: Getting Started</title>
+		<description>Discuss googleMaps plugin Tutorial 01: Getting Started</description>
+		<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php</link>
+		<lastBuildDate>Fri, 14 Jun 2019 06:01:28 +0000</lastBuildDate>
+		<generator>JComments</generator>
+		<atom:link href="https://kksou.com/php-gtk2/jcomments/rss/com_content/2042.php" rel="self" type="application/rss+xml" />
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-1946</link>
+			<description><![CDATA[Hi Kingsley, 1) If the "From" and "To" are both fixed, you can use the other plugin I've written: googleDirections plugin : https://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-plugin.php 2) If the "To" is fixed and "From" is input from user, then you can use the other plugin I've written: googleDirections - To Here - plugin: https://www.kksou.com/php-gtk2/Joomla-Gadgets/googleDirections-To-Here-plugin.php 3) If both "From" and "To" are variable, then you have to customize the code or look for some other plugins. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 02 Feb 2018 05:27:02 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-1946</guid>
+		</item>
+		<item>
+			<title>Kingsley says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-1943</link>
+			<description><![CDATA[Hi, An amazing plugin you have, i would like to inquire if it is possible to get user address and also destination address to be displayed. i am using chronoforms to get users information on a "MOVING" site i am working on. i want the routes displayed automatically but not to a designated or predefined address. Thank you]]></description>
+			<dc:creator>Kingsley</dc:creator>
+			<pubDate>Fri, 26 Jan 2018 18:20:18 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-1943</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-1940</link>
+			<description><![CDATA[Hi Bill, Happy New Year! Sincerely apologize for the late reply. Was on a long leave with little access to the Internet If you still have Mike Reumer's Google Maps plugin running somewhere on your local machine, can you do a view source and try to do a compare to see where are the differences? I can help you change my code, but I'm not sure what to change. So you have to do that digging part and let me know which part to change. Warm Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 03 Jan 2018 03:22:00 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-1940</guid>
+		</item>
+		<item>
+			<title>Bill Egerton says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-1933</link>
+			<description><![CDATA[Trying to find a replacement for Mike Reumer's Google Maps plugin which I have used with great success but is not supported now. Yours looks the best alternative although I shall have to merge KML files where I did use multiple KML's in the same map, and more significant will have to find ways around not having KML sidebars. Got my first map displayed very quickly, but having an annoying problem. My KML files have Placemarks whose description consists of a clickable thumbnail image linked to an anchor point further down the page. With Mike Reumer's plugin, the link to the anchor point stayed in the same browser tab, as though target="_self" had been specified. With your plugin, a new tab is opened for the link, which is not what I want. I have tried adding target="_self" and also target="_parent" to the link, but without success. Does anyone have any thoughts?]]></description>
+			<dc:creator>Bill Egerton</dc:creator>
+			<pubDate>Wed, 15 Nov 2017 00:00:42 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-1933</guid>
+		</item>
+		<item>
+			<title>Olivia says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-1137</link>
+			<description><![CDATA[Very useful and easy to install and use. Congratulations! :lol:]]></description>
+			<dc:creator>Olivia</dc:creator>
+			<pubDate>Thu, 01 Aug 2013 07:36:22 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-1137</guid>
+		</item>
+		<item>
+			<title>newbee says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-812</link>
+			<description><![CDATA[Hi, I m pretty new to google map and Joomla. Just trying to get my hand dirty. I found your pluggin easy to use. However, just need some help in passing directions from forms. Suppose, I have a form that captures the address in a text field. How could I use use the value of that field as "addr=". Thanks newbee]]></description>
+			<dc:creator>newbee</dc:creator>
+			<pubDate>Sun, 06 Jan 2013 09:22:10 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-812</guid>
+		</item>
+		<item>
+			<title>Gilles LG says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-517</link>
+			<description><![CDATA[Hello, First thank you for your work! It seems I have an issue as I try to include your plugin into the text of a component (actually the component displays events, and ther eis a text window available. This is wher eI try to put the plugin). http://www.kz83rt94msri.com/index.php/calendar/detailed-list?view=event&id=15 But it does not work so far. Do you see a reason? Thank you again!]]></description>
+			<dc:creator>Gilles LG</dc:creator>
+			<pubDate>Fri, 27 Jul 2012 06:20:19 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-517</guid>
+		</item>
+		<item>
+			<title>Hozefa Saleh says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-454</link>
+			<description><![CDATA[Ok, I have findout the solution. Actually I am using seblod CCK to create the joomla articles, and your plugin doesn't support it. So I have open the article in normal joomla mode, removed the cck code and now its start working. So I just want to let others know if they are using CCK like seblod be careful about this. I would like to request the owner of the plugin to make it compatible with SEBLOD cck, as its a popular one and also make core joomla articles. Thanks Hozefa]]></description>
+			<dc:creator>Hozefa Saleh</dc:creator>
+			<pubDate>Fri, 06 Jul 2012 22:54:28 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-454</guid>
+		</item>
+		<item>
+			<title>Hozefa Saleh says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-453</link>
+			<description><![CDATA[Hi, I have downloaded Joomla 2.5.x: googleMaps_v2.5.19.zip from your site and installed it on my website mehsanainfo.com. I am using joomla 2.5.6 and added the google api key and enabled the plugin. But when I insert the code like you provided in your example I just get the code written on the webpage like here -> http://mehsanainfo.com/36-my-map So please help me what would be the problem? Thanks Hozefa]]></description>
+			<dc:creator>Hozefa Saleh</dc:creator>
+			<pubDate>Fri, 06 Jul 2012 22:19:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-453</guid>
+		</item>
+		<item>
+			<title>livingdead says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-312</link>
+			<description><![CDATA[Hi, Really big thank you for this usefull plugin. I like to know how to configure the label display. I'll like to make it a little more visible, how can I specify a style for it. Regards Livingdead]]></description>
+			<dc:creator>livingdead</dc:creator>
+			<pubDate>Tue, 29 May 2012 00:34:03 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-312</guid>
+		</item>
+		<item>
+			<title>Eric L says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-173</link>
+			<description><![CDATA[Absolutely perfect! :lol: thank again for your rare concern. Really, I mean it ;° )]]></description>
+			<dc:creator>Eric L</dc:creator>
+			<pubDate>Thu, 22 Mar 2012 11:47:53 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-173</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-171</link>
+			<description><![CDATA[Thanks for the tags. That's what I need. Let me do some testing on my end and will get back to you asap. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Thu, 22 Mar 2012 01:35:25 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-171</guid>
+		</item>
+		<item>
+			<title>Eric L says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-168</link>
+			<description><![CDATA[looks like MP are nor delivered (when I reply your direct email on kksou mp.... anti spam? ) here's the email I sended the 19th here it is: and the test page is still: http://www.dormirenvalleedechevreuse.com/CAT1/Carte-des-hebergements.html {googleMaps width=620 height=330 lat=48.698028564453 long=1.916768312454 marker=0 label="Hébergements~Dormir en Vallée de Chevreuse~Les limites du parc sont matérialisées." zoom=11 addp=1 kml=http://www.dormirenvalleedechevreuse.com/image s/stories/file/kml/DormirenVC01.kml control=GLargeMapContro l3D|GMapTypeContr ol lang=fr} This make the bubbles comes up with the previous zip (I mean n-1) jsut before your very last post. Regards]]></description>
+			<dc:creator>Eric L</dc:creator>
+			<pubDate>Thu, 22 Mar 2012 00:53:41 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-168</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-167</link>
+			<description><![CDATA[Hi, No, I'm still waiting for the email. Didn't receive anything from you. Would you mind resend the email again? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 21 Mar 2012 17:34:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-167</guid>
+		</item>
+		<item>
+			<title>Eric L says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-166</link>
+			<description><![CDATA[hi again did you receive my last email (reply) 2 days ago ?]]></description>
+			<dc:creator>Eric L</dc:creator>
+			<pubDate>Wed, 21 Mar 2012 11:19:46 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-166</guid>
+		</item>
+		<item>
+			<title>Eric L says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-164</link>
+			<description><![CDATA[If I reinstall this previous zip then the bubbles comes right. (with no zoom support)]]></description>
+			<dc:creator>Eric L</dc:creator>
+			<pubDate>Mon, 19 Mar 2012 06:49:45 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-164</guid>
+		</item>
+		<item>
+			<title>Eric L says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-163</link>
+			<description><![CDATA[but... It was working fine until the last zip you sended :o]]></description>
+			<dc:creator>Eric L</dc:creator>
+			<pubDate>Mon, 19 Mar 2012 06:47:56 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-163</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-162</link>
+			<description><![CDATA[Hi, If you do a view source, or take a look at the source code of the googleMaps plugin, you will find that when you use the googleMaps API, you have to manually add the event.addListener and display the InfoWindow for any point you want to display. Unlike the Google Maps app (http://maps.google.com/), the Google Maps API will only display the KML file. If you want to display a InfoWindow when you click on a point, you have to manually add the event.addListener for each point. As mentioned in the page where you download the plugin, there are many other very powerful googlemaps plugins you can find in joomla.org. But I found them a bit too complicated to use. All I want is to display a simple map in my article. That's the reason why I wrote this as a very light-weight plugin to allow users to easily embed a google map in an article. For your case, you might be able to find some of those googlemaps plugins from joomla.org that may process your KML files automatically. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 19 Mar 2012 06:45:57 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-162</guid>
+		</item>
+		<item>
+			<title>Eric L says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-161</link>
+			<description><![CDATA[Didn't know the marker=0. Thanks again What about the new issue about lost of the bubbles ?]]></description>
+			<dc:creator>Eric L</dc:creator>
+			<pubDate>Mon, 19 Mar 2012 06:39:07 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-161</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-160</link>
+			<description><![CDATA[Hi, As noted in "How to Use" #6 http://www.kksou.com/php-gtk2/Joomla-Gadgets/googleMaps-plugin.php#how_to_use When you use the KML option, the Google Maps API requires you to specify the latitude and longitude of the center of the map. As for the marker, you can add the parameter "marker=0" to hide the marker. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Mon, 19 Mar 2012 06:27:17 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-160</guid>
+		</item>
+		<item>
+			<title>Eric L says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-158</link>
+			<description><![CDATA[yes I confirm (I compared with the n-1 version) The very last release, if it adds the zoom support, lost the kml point's bubbles (no more reaction at click and Description does not pops up)]]></description>
+			<dc:creator>Eric L</dc:creator>
+			<pubDate>Mon, 19 Mar 2012 03:26:46 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-158</guid>
+		</item>
+		<item>
+			<title>Eric L says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-157</link>
+			<description><![CDATA[Ok. I see the plugin working only if I call it with a long/lat ..but why !? This will cause a parasite point to appear, and wich is precisely not a good idea when using a kml. Mostly because this unwanted point is not stylable (?) . At least can we assign a transparent icon to it ? It should not be shown. Thank again]]></description>
+			<dc:creator>Eric L</dc:creator>
+			<pubDate>Mon, 19 Mar 2012 02:44:56 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-157</guid>
+		</item>
+		<item>
+			<title>Eric L says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-154</link>
+			<description><![CDATA[May be a cache issue; The plugin is actually running now. BUT I 'm still unable to use the zoom parameter, it's always opening at the same level (wich I don't know but probably something auto calculated by google to display the whole polygon. You can try to use my kml as you have its path now. Thank again ;-)]]></description>
+			<dc:creator>Eric L</dc:creator>
+			<pubDate>Sun, 18 Mar 2012 02:47:53 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-154</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-151</link>
+			<description><![CDATA[Hi, This means that the plugin has not been processed. 1) Can you please install back googleMaps_v1.0.17 and see if it still works fine? 2) Can you please double check that the plugin is enabled? Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 17 Mar 2012 19:42:14 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-151</guid>
+		</item>
+		<item>
+			<title>Eric L says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-149</link>
+			<description><![CDATA[whao. Really nice. thank you. I uninstalled the mambot. The "for J 1.0" zip you sended to me is named the same (googleMaps_v1.0.18) and I've insatlled this new zip. hmmm.. now the rendered article displays the plugin code but does not executes it. ( this: {googleMaps width=620 height=360 zoom=12 kml=http://www.dormirenvalleedechevreuse.com/image s/stories/file/kml/DormirenVC.kml control=GLargeMapControl3D|GMapTypeControl lang=fr} ) Did I made something wrong ?? thaks again]]></description>
+			<dc:creator>Eric L</dc:creator>
+			<pubDate>Sat, 17 Mar 2012 10:50:40 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-149</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-147</link>
+			<description><![CDATA[Hi, Have just emailed you the Joomla 1.0 version. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Sat, 17 Mar 2012 06:45:55 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-147</guid>
+		</item>
+		<item>
+			<title>Eric L says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-146</link>
+			<description><![CDATA[That was really cool from you. As I emailed, unfortunately this site on which I do a little maintenance is still an old Joomla 1.0. May you post the corresponding zip ? Thank you so much]]></description>
+			<dc:creator>Eric L</dc:creator>
+			<pubDate>Sat, 17 Mar 2012 02:01:22 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-146</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-145</link>
+			<description><![CDATA[Hi, Have modified the code so that zoom now works with kml file. Have just emailed you the modified version. Please give it a try and let me know if it works. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Fri, 16 Mar 2012 09:06:18 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-145</guid>
+		</item>
+		<item>
+			<title>Eric L says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-144</link>
+			<description><![CDATA[Hi, I'm trying to use a kml file, because I need whatever number of placemark. This is achieved, with a polygon too. Everything would be great if the default zoom at initial page loading would be controlled. The zoom = xx param is only working when using a simple call (with an address directly in the plugin call). Using a kml file zoom is not functional, even manipulating you php to force this param to another default value. I tried to add some with inside my kml that give **good result directly in G Earth**, but that is **absolutely not useful with the plugin**. :sad: Can you help please ? Thank you]]></description>
+			<dc:creator>Eric L</dc:creator>
+			<pubDate>Fri, 16 Mar 2012 04:23:07 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-144</guid>
+		</item>
+		<item>
+			<title>Gerardo Sanchez says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-137</link>
+			<description><![CDATA[Thanks, it worked very well. regards]]></description>
+			<dc:creator>Gerardo Sanchez</dc:creator>
+			<pubDate>Wed, 14 Mar 2012 19:44:49 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-137</guid>
+		</item>
+		<item>
+			<title>kksou says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-136</link>
+			<description><![CDATA[Hi Gerardo, If you do a view source, you can see that I use standard HTML tables to make the 2 maps side by side. There are many plugins available in joomla.org that allows you to add HTML codes in your article. So pick one that you like, add a HTML table, then put the googleMaps tags within a pair of [td][/td]. Regards, /kksou]]></description>
+			<dc:creator>kksou</dc:creator>
+			<pubDate>Wed, 14 Mar 2012 19:40:40 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-136</guid>
+		</item>
+		<item>
+			<title>Gerardo Sanchez says:</title>
+			<link>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-134</link>
+			<description><![CDATA[Hi, the googleMaps plugin is really easy to to use, the issue is that i want the same as you have here: one map in each column, but i can not get it to do so, i always get one below the other, any ideas of how to do it?]]></description>
+			<dc:creator>Gerardo Sanchez</dc:creator>
+			<pubDate>Wed, 14 Mar 2012 16:34:45 +0000</pubDate>
+			<guid>https://kksou.com/php-gtk2/Joomla-Tips-Techniques/googleMaps-plugin-Tutorial-01-Getting-Started.php#comment-134</guid>
+		</item>
+	</channel>
+</rss>
